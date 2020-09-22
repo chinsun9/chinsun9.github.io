@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 22 Sep 2020 05:14:09 GMT</pubDate>
+    <pubDate>Tue, 22 Sep 2020 08:59:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -51,8 +51,8 @@
     
     <item>
       <title>내가 블로그에서 마크다운 쓰는법</title>
-      <link>https://chinsun9.github.io/2020/09/22/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%93%B0%EB%8A%94%EB%B2%95/</link>
-      <guid>https://chinsun9.github.io/2020/09/22/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%93%B0%EB%8A%94%EB%B2%95/</guid>
+      <link>https://chinsun9.github.io/2020/09/22/%EB%82%B4%EA%B0%80-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%93%B0%EB%8A%94%EB%B2%95/</link>
+      <guid>https://chinsun9.github.io/2020/09/22/%EB%82%B4%EA%B0%80-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%93%B0%EB%8A%94%EB%B2%95/</guid>
       <pubDate>Tue, 22 Sep 2020 02:33:58 GMT</pubDate>
       
         
@@ -73,7 +73,7 @@
       <category domain="https://chinsun9.github.io/tags/markdown/">markdown</category>
       
       
-      <comments>https://chinsun9.github.io/2020/09/22/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%93%B0%EB%8A%94%EB%B2%95/#disqus_thread</comments>
+      <comments>https://chinsun9.github.io/2020/09/22/%EB%82%B4%EA%B0%80-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%93%B0%EB%8A%94%EB%B2%95/#disqus_thread</comments>
       
     </item>
     
@@ -646,8 +646,8 @@
     
     <item>
       <title>vscode 카테고리 생성</title>
-      <link>https://chinsun9.github.io/2020/09/18/vscode%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</link>
-      <guid>https://chinsun9.github.io/2020/09/18/vscode%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</guid>
+      <link>https://chinsun9.github.io/2020/09/18/vscode-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</link>
+      <guid>https://chinsun9.github.io/2020/09/18/vscode-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</guid>
       <pubDate>Fri, 18 Sep 2020 05:05:44 GMT</pubDate>
       
         
@@ -669,7 +669,7 @@
       <category domain="https://chinsun9.github.io/tags/category/">category</category>
       
       
-      <comments>https://chinsun9.github.io/2020/09/18/vscode%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/#disqus_thread</comments>
+      <comments>https://chinsun9.github.io/2020/09/18/vscode-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/#disqus_thread</comments>
       
     </item>
     
