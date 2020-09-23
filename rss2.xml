@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 23 Sep 2020 00:38:12 GMT</pubDate>
+    <pubDate>Wed, 23 Sep 2020 01:07:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>코드 스니펫 안에 ``` 포함하기</title>
+      <link>https://chinsun9.github.io/2020/09/23/%EC%BD%94%EB%93%9C-%EC%8A%A4%EB%8B%88%ED%8E%AB-%EC%95%88%EC%97%90-%EC%BD%94%EB%93%9C-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%8F%AC%ED%95%A8%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/09/23/%EC%BD%94%EB%93%9C-%EC%8A%A4%EB%8B%88%ED%8E%AB-%EC%95%88%EC%97%90-%EC%BD%94%EB%93%9C-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%8F%AC%ED%95%A8%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Wed, 23 Sep 2020 00:58:20 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight md&quot;&gt;&lt;figcaption&gt;&lt;span&gt;tmp.md&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight md"><figcaption><span>tmp.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">오호호</span><br><span class="line"></span><br><span class="line"><span class="code">```js tmp.js</span></span><br><span class="line"><span class="code">console.log(1);</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure><ul><li>이렇게 스니펫으로 ``` 을 표현할 수 있다.</li></ul><h2 id="하는-법"><a href="#하는-법" class="headerlink" title="하는 법"></a>하는 법</h2><figure class="highlight md"><figcaption><span>하는법</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">````md tmp.md</span></span><br><span class="line"><span class="code">오호호</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">```js tmp.js</span></span><br><span class="line"><span class="code">console.log(1);</span></span><br><span class="line"><span class="code">```</span></span><br><span class="line"><span class="code">````</span></span><br></pre></td></tr></table></figure><ul><li>바깐 스니펫의 ` 개수를 4개</li><li>안쪽 스니펫의 ` 개수를 3개로 하면 된다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/markdown/">markdown</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/md/">md</category>
+      
+      <category domain="https://chinsun9.github.io/tags/code-snippet/">code snippet</category>
+      
+      <category domain="https://chinsun9.github.io/tags/markdown/">markdown</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/09/23/%EC%BD%94%EB%93%9C-%EC%8A%A4%EB%8B%88%ED%8E%AB-%EC%95%88%EC%97%90-%EC%BD%94%EB%93%9C-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%8F%AC%ED%95%A8%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vscode에서 마크다운 미리보기</title>
@@ -63,7 +93,7 @@
       
       
       
-      <content:encoded><![CDATA[<img src="/images/hexo에서-초안-작성중-사용하기20200922/preview.jpg" ><ul><li>너무 많은 포스트들 속에.. 파묻혀있는 새 글</li></ul><h2 id="draft-사용하기"><a href="#draft-사용하기" class="headerlink" title="draft 사용하기"></a>draft 사용하기</h2><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft &quot;hexo에서 초안, 작성중 사용하기&quot;</span><br></pre></td></tr></table></figure><h3 id="layout"><a href="#layout" class="headerlink" title="layout"></a>layout</h3><ul><li>hexo에서는 새 포스트를 생서할때 layout이라는 것을 지정할 수 있다.</li><li>기본적으로 3개의 레이아웃이 있다. <code>post</code>, <code>draft</code>, <code>page</code></li><li><code>post</code>레이아웃은 기본값이다. source/_posts/ 아래에 생성되게 만든다.</li><li><code>page</code>레이아웃은 페이지를 생성한다. source/ 아래에 생성되게 만든다.</li><li><code>draft</code>레이아웃은 source/_drafts/ 아래에 생성되게 만든다.</li></ul><h3 id="Draft"><a href="#Draft" class="headerlink" title="Draft"></a>Draft</h3><ul><li>source/_drafts/ 아래에 생성된 md들은 기본적으로 렌더링 되지 않는다.</li><li>즉, 배포해도 블로그에 표시되지 않는다.</li><li>따라서 작성중인 글을 노출시키지 않을 수 있다.</li><li>또 포스트가 많아지면서 source/_posts 디렉터리가 복잡해지는데, 여기서 스크롤해가면서 작성중인 글을 힘들게 찾을 필요가 없다.</li></ul><h4 id="작성완료하는-법"><a href="#작성완료하는-법" class="headerlink" title="작성완료하는 법"></a>작성완료하는 법</h4><ul><li>포스팅이 끝나면 이제 _posts 디렉터리로 옮기면 된다.</li></ul><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] [작성 완료한 포스트 파일명]</span><br><span class="line"></span><br><span class="line">hexo publish aws aws-공부</span><br></pre></td></tr></table></figure><ul><li>드래그 앤 드랍으로 직접 posts 폴더로 옮겨줄 수도 있는데</li><li>publish 명령을 사용하게 되면 layout을 지정할 수 있다.</li><li>scaffolds 디렉터리에 만들어준 틀대로 front-matter가 바뀐다.</li><li>layout은 생략하면 기본값으로 post가 적용된다.</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<img src="/images/hexo에서-초안-작성중-사용하기20200922/preview.jpg" ><ul><li>너무 많은 포스트들 속에.. 파묻혀있는 새 글</li></ul><h2 id="draft-사용하기"><a href="#draft-사용하기" class="headerlink" title="draft 사용하기"></a>draft 사용하기</h2><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft &quot;hexo에서 초안, 작성중 사용하기&quot;</span><br></pre></td></tr></table></figure><h3 id="layout"><a href="#layout" class="headerlink" title="layout"></a>layout</h3><ul><li>hexo에서는 새 포스트를 생서할때 layout이라는 것을 지정할 수 있다.</li><li>기본적으로 3개의 레이아웃이 있다. <code>post</code>, <code>draft</code>, <code>page</code></li><li><code>post</code>레이아웃은 기본값이다. source/_posts/ 아래에 생성되게 만든다.</li><li><code>page</code>레이아웃은 페이지를 생성한다. source/ 아래에 생성되게 만든다.</li><li><code>draft</code>레이아웃은 source/_drafts/ 아래에 생성되게 만든다.</li></ul><h3 id="Draft"><a href="#Draft" class="headerlink" title="Draft"></a>Draft</h3><ul><li>source/_drafts/ 아래에 생성된 md들은 기본적으로 렌더링 되지 않는다.</li><li>즉, 배포해도 블로그에 표시되지 않는다.</li><li>따라서 작성중인 글을 노출시키지 않을 수 있다.</li><li>또 포스트가 많아지면서 source/_posts 디렉터리가 복잡해지는데, 여기서 스크롤해가면서 작성중인 글을 힘들게 찾을 필요가 없다.</li></ul><h4 id="작성완료하는-법"><a href="#작성완료하는-법" class="headerlink" title="작성완료하는 법"></a>작성완료하는 법</h4><ul><li>포스팅이 끝나면 이제 _posts 디렉터리로 옮기면 된다.</li></ul><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] [작성 완료한 포스트 파일명]</span><br><span class="line"></span><br><span class="line">hexo publish aws aws-공부</span><br></pre></td></tr></table></figure><ul><li>드래그 앤 드랍으로 직접 posts 폴더로 옮겨줄 수도 있는데</li><li>publish 명령을 사용하게 되면 layout을 지정할 수 있다.</li><li>scaffolds 디렉터리에 만들어준 틀대로 front-matter가 바뀐다.</li><li>layout은 생략하면 기본값으로 post가 적용된다.</li></ul><h4 id="로컬에서-테스트하기"><a href="#로컬에서-테스트하기" class="headerlink" title="로컬에서 테스트하기"></a>로컬에서 테스트하기</h4><ul><li>아쉽게도 우리가 알고 있는 <code>hexo server</code>로는 draft가 노출되지 않는다.</li></ul><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server --draft</span><br></pre></td></tr></table></figure><ul><li>근데 <code>--draft</code> 옵션을 사용하면 source/_drafts 디렉터리에 있는 md파일도 렌더링되어 나타나게 된다.</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
@@ -642,38 +672,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/09/18/124-%EB%82%98%EB%9D%BC-%EC%88%AB%EC%9E%90/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>가장 큰 정사각형 찾기</title>
-      <link>https://chinsun9.github.io/2020/09/18/%EA%B0%80%EC%9E%A5-%ED%81%B0-%EC%A0%95%EC%82%AC%EA%B0%81%ED%98%95-%EC%B0%BE%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/09/18/%EA%B0%80%EC%9E%A5-%ED%81%B0-%EC%A0%95%EC%82%AC%EA%B0%81%ED%98%95-%EC%B0%BE%EA%B8%B0/</guid>
-      <pubDate>Fri, 18 Sep 2020 05:15:51 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// https://programmers.co.kr/learn/courses/30/lessons/12905</span></span><br><span class="line"><span class="comment">//   가장 큰 정사각형 찾기</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">board</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> answer = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> lownum = board.length;</span><br><span class="line">  <span class="keyword">var</span> colnum = board[<span class="number">0</span>].length;</span><br><span class="line">  <span class="built_in">console</span>.log(lownum, colnum);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (lownum == <span class="number">1</span> || colnum == <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> maxRow = board.map(<span class="function"><span class="keyword">function</span> (<span class="params">row</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="built_in">Math</span>.max.apply(<span class="literal">null</span>, row);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">var</span> max = <span class="built_in">Math</span>.max.apply(<span class="literal">null</span>, maxRow);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> max;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> max = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> q = <span class="number">1</span>; q &lt; board.length; q++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> w = <span class="number">1</span>; w &lt; board[<span class="number">0</span>].length; w++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (board[q][w] == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">var</span> arr = [board[q - <span class="number">1</span>][w - <span class="number">1</span>], board[q - <span class="number">1</span>][w], board[q][w - <span class="number">1</span>]];</span><br><span class="line">      board[q][w] = <span class="built_in">Math</span>.min.apply(<span class="literal">null</span>, arr) + <span class="number">1</span>;</span><br><span class="line">      max = <span class="built_in">Math</span>.max(max, board[q][w]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  answer = max * max;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//   console.log(maxRow, max);</span></span><br><span class="line">  <span class="built_in">console</span>.log(answer);</span><br><span class="line">  <span class="keyword">return</span> answer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><img src="/images/가장-큰-정사각형-찾기20200918/preview.jpg"><h2 id="해설"><a href="#해설" class="headerlink" title="해설"></a>해설</h2><ul><li><p>2차원 배열이 입력으로 들어온다</p></li><li><p>2차월 연속된 1 이 이루는 가장 큰 정사각형의 넓이를 반환해야 한다</p></li><li><p>먼저 입력된 보드가 행과 열 어느 하나가 1인 경우 1또는 0을 반환한다.</p></li><li><p>이제 1이 아닌 경우에 복잡해 지는데..</p></li><li><p>0과 1로만 이루어진 보드를 갱신해 나갈거다.</p></li><li><p>board[1][1] 부터 시작해서 이전 3개를 살펴볼것이다.</p></li><li><p>이떄 board[1][1]이 0 이면 패스한다. 1이면 ㄱㄱ</p></li><li><p>위, 왼쪽, 왼쪽 대각선위를 살펴서 가장 작은 숫자를 찾는다.</p></li><li><p>그런다음에 board[1][1]에 가장 작은 숫자 + 1을 대입한다</p></li><li><p>board[1][2] 로 이동해서 같은 것을 반복한다.</p></li><li><p>그림으로 보면 이렇다.</p></li><li><p>step1] board[1][1] 일때</p><img src="/images/가장-큰-정사각형-찾기20200918/step1.jpg"></li><li><p>step1] board[1][2] 일때</p><img src="/images/가장-큰-정사각형-찾기20200918/step2.jpg"></li><li><p>반복…</p></li><li><p>결과]</p><img src="/images/가장-큰-정사각형-찾기20200918/result.jpg"></li><li><p>위 처럼 계속 갱신하고 보드에 마지막에 도달하면 끝이 난다</p></li><li><p>이후에 board 내에서 가장 높은 숫자를 찾는다. 그러면 3이라는 숫자를 얻을 수 있다.</p></li><li><p>넓이를 반환하고 했으니까 <code>3*3</code> 해서 <code>9</code>를 반환하면 된다.</p></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/programmers/">programmers</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/programmers/">programmers</category>
-      
-      <category domain="https://chinsun9.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/">프로그래머스</category>
-      
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/18/%EA%B0%80%EC%9E%A5-%ED%81%B0-%EC%A0%95%EC%82%AC%EA%B0%81%ED%98%95-%EC%B0%BE%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
