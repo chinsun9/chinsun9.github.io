@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 23 Sep 2020 00:35:03 GMT</pubDate>
+    <pubDate>Wed, 23 Sep 2020 00:38:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -20,17 +20,17 @@
       
         
         
-      <description>&lt;img src=&quot;../images/vscode에서-마크다운-미리보기20200923/preview.jpg&quot; &gt;
+      <description>&lt;img src=&quot;/images/vscode에서-마크다운-미리보기20200923/preview.jpg&quot; &gt;
 
 &lt;ul&gt;
 &lt;li&gt;vscode에서 markdown open preview를 사용하면된다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;markdown-</description>
+&lt;h2 id=&quot;markdown-op</description>
         
       
       
       
-      <content:encoded><![CDATA[<img src="../images/vscode에서-마크다운-미리보기20200923/preview.jpg" ><ul><li>vscode에서 markdown open preview를 사용하면된다.</li></ul><h2 id="markdown-open-preview"><a href="#markdown-open-preview" class="headerlink" title="markdown open preview"></a>markdown open preview</h2><ul><li><code>ctrl shift v</code> 를 누르면 마크다운 미리보기를 할 수 있다.</li><li>마크다운 미리보기창이 열리면 <code>ctrl alt →</code>키를 통해 옆으로 옮겨서 볼 수 있다.</li><li>실시간으로 반영되니 마크 다운 쓸때 엄청 유용하다!</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<img src="/images/vscode에서-마크다운-미리보기20200923/preview.jpg" ><ul><li>vscode에서 markdown open preview를 사용하면된다.</li></ul><h2 id="markdown-open-preview"><a href="#markdown-open-preview" class="headerlink" title="markdown open preview"></a>markdown open preview</h2><ul><li><code>ctrl shift v</code> 를 누르면 마크다운 미리보기를 할 수 있다.</li><li>마크다운 미리보기창이 열리면 <code>ctrl alt →</code>키를 통해 옆으로 옮겨서 볼 수 있다.</li><li>실시간으로 반영되니 마크 다운 쓸때 엄청 유용하다!</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
