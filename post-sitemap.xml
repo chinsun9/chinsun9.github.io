@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/09/23/disqus%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%8C%93%EA%B8%80-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2020-09-23T02:15:48.660Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/23/vscode%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/</loc>
+        <lastmod>2020-09-23T01:14:16.742Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/09/22/hexo%EC%97%90%EC%84%9C-%EC%B4%88%EC%95%88-%EC%9E%91%EC%84%B1%EC%A4%91-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2020-09-23T01:11:08.639Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -26,14 +42,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/09/18/vscode-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</loc>
         <lastmod>2020-09-23T00:47:45.984Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/23/vscode%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/</loc>
-        <lastmod>2020-09-23T00:38:12.028Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

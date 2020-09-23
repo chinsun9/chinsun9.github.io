@@ -43,6 +43,38 @@
     </item>
     
     <item>
+      <title>disqus로 블로그 댓글 사용하기</title>
+      <link>https://chinsun9.github.io/2020/09/23/disqus%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%8C%93%EA%B8%80-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/09/23/disqus%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%8C%93%EA%B8%80-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Wed, 23 Sep 2020 00:51:20 GMT</pubDate>
+      
+        
+        
+      <description>&lt;img src=&quot;/images/disqus로-블로그-댓글-사용하기20200923/preview.jpg&quot; &gt;
+
+&lt;ul&gt;
+&lt;li&gt;hexo icarus theme 에서는 disqus를 기본으로 지원한다.&lt;/li&gt;
+&lt;li&gt;우리는 disqus에서 &lt;code&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/images/disqus로-블로그-댓글-사용하기20200923/preview.jpg" ><ul><li>hexo icarus theme 에서는 disqus를 기본으로 지원한다.</li><li>우리는 disqus에서 <code>shortname</code>을 알아내서 적어주기만 하면 된다.</li><li>너무 간편하다!</li></ul><h2 id="따라하기"><a href="#따라하기" class="headerlink" title="따라하기"></a>따라하기</h2><ul><li>hexo icarus theme 기준입니다!</li><li>스샷아래 설명이 있는데</li><li>그냥 스샷 그대로 따라가면 됩니다.</li></ul><h3 id="DISQUS-회원가입"><a href="#DISQUS-회원가입" class="headerlink" title="DISQUS 회원가입"></a>DISQUS 회원가입</h3><ul><li><a href="https://disqus.com/">DISQUS</a>에 회원가입하고 로그인한다.</li></ul><h3 id="DISQUS에서-사이트-추가-Shortname만들고-확인하기"><a href="#DISQUS에서-사이트-추가-Shortname만들고-확인하기" class="headerlink" title="DISQUS에서 사이트 추가(Shortname만들고 확인하기)"></a>DISQUS에서 사이트 추가(Shortname만들고 확인하기)</h3><img src="/images/disqus로-블로그-댓글-사용하기20200923/1.jpg" ><ul><li><code>GET STARTED</code> 버튼 클릭</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/2.jpg" ><ul><li><code>I want to install Disqus on my site</code> 버튼 클릭</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/3.jpg" ><ul><li>항목 작성</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/4.jpg" ><ul><li>스크롤을 내려서 <code>Basic</code> 선택</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/5.jpg" ><ul><li>스크롤을 내려서 <code>...with Universal Code</code> 선택</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/6.jpg" ><ul><li>뭐라뭐라 막 나오는데, 다 무시하고 스크롤을 내려서 <code>Configure</code> 버튼 클릭</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/7.jpg" ><ul><li>Website URL 항목만 채우고 <code>Complete Setup</code> 버튼 클릭</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/8.jpg" ><ul><li>하단 <code>Dismiss Setup</code> 버튼을 클릭하고,</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/9.jpg" ><ul><li>상단에 <code>Edit Settings</code> 버튼 클릭</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/10.jpg" ><ul><li>Shortname 항목에서 내 <code>Shortname</code>을 확인하고 복사한다.</li></ul><br><h3 id="config-icarus-yml에-Shortname-설정하기"><a href="#config-icarus-yml에-Shortname-설정하기" class="headerlink" title="_config.icarus.yml에 Shortname 설정하기"></a>_config.icarus.yml에 Shortname 설정하기</h3><img src="/images/disqus로-블로그-댓글-사용하기20200923/11.jpg" ><figure class="highlight yml"><figcaption><span>_config.icarus.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">disqus</span></span><br><span class="line">  <span class="comment"># Disqus shortname</span></span><br><span class="line">  <span class="attr">shortname:</span> <span class="string">&#x27;chinsun9&#x27;</span></span><br></pre></td></tr></table></figure><ul><li>이렇게 설정해주면 끝..!</li><li>놀랍게도 적용이 완료되었다!</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://chinsun9.github.io/tags/disqus/">disqus</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/09/23/disqus%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%8C%93%EA%B8%80-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>vscode에서 마크다운 미리보기</title>
       <link>https://chinsun9.github.io/2020/09/23/vscode%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/</link>
       <guid>https://chinsun9.github.io/2020/09/23/vscode%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/</guid>
@@ -65,6 +97,10 @@
       
       <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
       
+      
+      <category domain="https://chinsun9.github.io/tags/md/">md</category>
+      
+      <category domain="https://chinsun9.github.io/tags/markdown/">markdown</category>
       
       <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
       
@@ -640,38 +676,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/09/21/%EC%BB%A4%EC%8A%A4%ED%85%80-404-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>124 나라 숫자</title>
-      <link>https://chinsun9.github.io/2020/09/18/124-%EB%82%98%EB%9D%BC-%EC%88%AB%EC%9E%90/</link>
-      <guid>https://chinsun9.github.io/2020/09/18/124-%EB%82%98%EB%9D%BC-%EC%88%AB%EC%9E%90/</guid>
-      <pubDate>Fri, 18 Sep 2020 05:40:31 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;124 나라 숫자&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;b</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>124 나라 숫자</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// https://programmers.co.kr/learn/courses/30/lessons/12899</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution12909</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> answer = [];</span><br><span class="line">  <span class="keyword">var</span> arr = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">  <span class="keyword">var</span> N = n;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> seq = [<span class="string">&#x27;4&#x27;</span>, <span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>];</span><br><span class="line">  <span class="comment">// console.log(seq[seq.length - 1]);</span></span><br><span class="line">  <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> tmp = n % <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">    answer.push(tmp);</span><br><span class="line">    <span class="comment">// if (n &lt;= 2) &#123;</span></span><br><span class="line">    <span class="comment">//   break;</span></span><br><span class="line">    <span class="comment">// &#125;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (tmp == <span class="number">0</span>) &#123;</span><br><span class="line">      n = (n - tmp - <span class="number">3</span>) / <span class="number">3</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      n = (n - tmp) / <span class="number">3</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (answer.length != <span class="number">0</span>) &#123;</span><br><span class="line">    arr += seq[answer.pop()];</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// console.log(answer);</span></span><br><span class="line">  <span class="comment">// console.log(N, arr);</span></span><br><span class="line">  <span class="comment">// console.log(&quot;------------&quot;);</span></span><br><span class="line">  <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><img src="/images/124-나라-숫자20200918/preview.jpg" ><h2 id="해설"><a href="#해설" class="headerlink" title="해설"></a>해설</h2><ul><li>124라는 나라의 이상한 진법으로 변환해야 하는 문제이다.</li><li><table ><thead><tr>  <th>10진법</th>  <th>124 나라</th>  <th>10진법</th>  <th>124 나라</th>  </tr>  </thead><tbody><tr><td>1</td>  <td>1</td>  <td>6</td>  <td>14</td>  </tr><tr>  <td>2</td>  <td>2</td>  <td>7</td>  <td>21</td>  </tr><tr>  <td>3</td>  <td>4</td>  <td>8</td>  <td>22</td>  </tr><tr>  <td>4</td>  <td>11</td>  <td>9</td>  <td>24</td>  </tr><tr>  <td>5</td>  <td>12</td>  <td>10</td>  <td>41</td>  </tr></tbody></table></li><li>이렇게 이상한 숫자로 변환시키는 문제이다</li><li>3진법 같아 보이지만 여기에는 함정이 있다….</li><li>3진법이 아닌데 3개 숫자로만 표현해야한다.</li><li>경험으로 알게된.. 자릿수가 바뀔때 이상하게 바뀐다는 건데..</li><li>나머지가 0이 될 경우에 == n이 3의 배수의 경우에 추가로 처리해줘야한다.</li><li>이해?를 돕기위해 그림을 그렸다</li></ul><img src="/images/124-나라-숫자20200918/1.jpg"><ul><li>왼쪽이 일반적인.. 상식적인 3진수이고</li><li>오른쪽이 124 나라의 수이다.</li><li>중간은 124 나라의 수인데, 3진수와 시작을 똑같이 하기 위해 조작한 것이다.</li><li>3진수와 중간을 비교해보면 중간중간 정신나간 부분이 보인다</li><li>이런 특징? 때문에 124나라는 적은 자릿수로 더 많은 숫자를 표현할 수 있다.</li></ul><br><ul><li>이문제는 해결법을 짠하고 알아냈다기보다</li><li>계속 해보면서 알게된 규칙들을 적용시키면서 풀린거라</li><li>설명을 잘 못하겠다..</li></ul><br><ul><li>숫자 때문에 헷갈려 죽을뻔..</li><li>아무튼 정신나간 124 나라이다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/programmers/">programmers</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/programmers/">programmers</category>
-      
-      <category domain="https://chinsun9.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/">프로그래머스</category>
-      
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/18/124-%EB%82%98%EB%9D%BC-%EC%88%AB%EC%9E%90/#disqus_thread</comments>
       
     </item>
     
