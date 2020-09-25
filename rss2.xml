@@ -303,6 +303,39 @@ article img {
     </item>
     
     <item>
+      <title>no follow</title>
+      <link>https://chinsun9.github.io/2020/09/22/no-follow/</link>
+      <guid>https://chinsun9.github.io/2020/09/22/no-follow/</guid>
+      <pubDate>Tue, 22 Sep 2020 07:40:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;nofollow&quot;&gt;&lt;a href=&quot;#nofollow&quot; class=&quot;headerlink&quot; title=&quot;nofollow&quot;&gt;&lt;/a&gt;nofollow&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/N</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="nofollow"><a href="#nofollow" class="headerlink" title="nofollow"></a>nofollow</h2><ul><li><a href="https://ko.wikipedia.org/wiki/Nofollow">https://ko.wikipedia.org/wiki/Nofollow</a></li><li>SEO 설정을 하면서 알게된 것이다.</li><li><em>hexo-autonofollow</em> 모듈을 설치해</li><li>외부 링크에 nofollow 속성을 넣어준다.</li><li>참고 ; <a href="https://support.google.com/webmasters/answer/96569?hl=ko">구글 서치 콘솔 가이드</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
+      
+      <category domain="https://chinsun9.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/nofollow/">nofollow</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/09/22/no-follow/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>hexo에서 초안, 작성중 사용하기</title>
       <link>https://chinsun9.github.io/2020/09/22/hexo%EC%97%90%EC%84%9C-%EC%B4%88%EC%95%88-%EC%9E%91%EC%84%B1%EC%A4%91-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
       <guid>https://chinsun9.github.io/2020/09/22/hexo%EC%97%90%EC%84%9C-%EC%B4%88%EC%95%88-%EC%9E%91%EC%84%B1%EC%A4%91-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
@@ -672,36 +705,6 @@ article img {
       
       
       <comments>https://chinsun9.github.io/2020/09/21/%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-sam-%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>windows10 home에서 docker 설치하기</title>
-      <link>https://chinsun9.github.io/2020/09/21/windows10-home%EC%97%90%EC%84%9C-docker-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/09/21/windows10-home%EC%97%90%EC%84%9C-docker-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Mon, 21 Sep 2020 03:58:24 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;home 버전에서 docker가 설치된다고?&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.docker.com/docker-for-windows/install-windows-home/#system-requirements&quot;&gt;wi</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>home 버전에서 docker가 설치된다고?</li><li><a href="https://docs.docker.com/docker-for-windows/install-windows-home/#system-requirements">windows10 home도 버전 2004로 업데이트하면 가능</a></li><li>bios에서 가상화 설정</li><li>wsl 활성화</li></ul><h2 id="설치하기"><a href="#설치하기" class="headerlink" title="설치하기"></a>설치하기</h2><img src="/images/windows10-home에서-docker-설치하기20200921/1.jpg"><ul><li><p>먼저 자신의 윈도우 버전을 확인합니다.</p></li><li><p>win + R 키로 실행창 여시고 <code>winver</code> 실행</p></li><li><p>2004 버전이 아니라면! 윈도우 업데이트를 열어서 2004 버전 업데이트를 해줍니다.</p></li><li><p>시간이 쫌 걸린다</p></li></ul><img src="/images/windows10-home에서-docker-설치하기20200921/2.jpg"><br><ul><li>이제 BIOS에서 가상화 설정을 활성화를 해줍니다.</li><li>asus bios 기준 ; 고급 &gt; cpu &gt; 가상화 기술 enable</li><li>아마 다른 보드들도 cpu 하위 메뉴에 있을거다.</li></ul><br><img src="/images/windows10-home에서-docker-설치하기20200921/3.jpg"><ul><li>wsl 기능을 활성화 합니다. (재부팅 필요)</li></ul><br><p><a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows/">https://hub.docker.com/editions/community/docker-ce-desktop-windows/</a></p><ul><li>docker 인스톨러 다운받기, get stable 클릭해서 받는다.</li><li>인스톨러를 실행한다.</li><li>끝</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/docker/">docker</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/docker/">docker</category>
-      
-      <category domain="https://chinsun9.github.io/tags/install/">install</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/21/windows10-home%EC%97%90%EC%84%9C-docker-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
