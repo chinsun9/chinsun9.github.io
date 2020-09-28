@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 28 Sep 2020 00:50:25 GMT</pubDate>
+    <pubDate>Mon, 28 Sep 2020 04:02:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>System.out.println(); 빠르게 치기</title>
+      <link>https://chinsun9.github.io/2020/09/28/System-out-println-%EB%B9%A0%EB%A5%B4%EA%B2%8C-%EC%B9%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/09/28/System-out-println-%EB%B9%A0%EB%A5%B4%EA%B2%8C-%EC%B9%98%EA%B8%B0/</guid>
+      <pubDate>Mon, 28 Sep 2020 03:59:09 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/TGtsT4QRk2Q&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/TGtsT4QRk2Q" frameborder="0" loading="lazy" allowfullscreen></iframe></div><img src="https://img.youtube.com/vi/TGtsT4QRk2Q/0.jpg" ><h2 id="sysout"><a href="#sysout" class="headerlink" title="sysout"></a>sysout</h2><ul><li><code>ctrl space</code></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/java/">java</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/java/">java</category>
+      
+      <category domain="https://chinsun9.github.io/tags/sysout/">sysout</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/09/28/System-out-println-%EB%B9%A0%EB%A5%B4%EA%B2%8C-%EC%B9%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>블로그 이미지 업데이트</title>
@@ -668,32 +696,6 @@ article img {
       
       
       <comments>https://chinsun9.github.io/2020/09/21/sam%EC%97%90%EC%84%9C-%EB%85%B8%EB%93%9C-%EB%AA%A8%EB%93%88%EC%9D%84-%EB%A0%88%EC%9D%B4%EC%96%B4%EB%A1%9C-%EB%B9%BC%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>cmd 이전 내용 지우기 cls</title>
-      <link>https://chinsun9.github.io/2020/09/21/cmd-%EC%9D%B4%EC%A0%84-%EB%82%B4%EC%9A%A9-%EC%A7%80%EC%9A%B0%EA%B8%B0-cls/</link>
-      <guid>https://chinsun9.github.io/2020/09/21/cmd-%EC%9D%B4%EC%A0%84-%EB%82%B4%EC%9A%A9-%EC%A7%80%EC%9A%B0%EA%B8%B0-cls/</guid>
-      <pubDate>Mon, 21 Sep 2020 04:48:09 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;cmd&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/p</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cls</span></span><br></pre></td></tr></table></figure><ul><li>linux terminal는 <code>clear</code></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/cmd/">cmd</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/21/cmd-%EC%9D%B4%EC%A0%84-%EB%82%B4%EC%9A%A9-%EC%A7%80%EC%9A%B0%EA%B8%B0-cls/#disqus_thread</comments>
       
     </item>
     
