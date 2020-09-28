@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 24 Sep 2020 05:46:23 GMT</pubDate>
+    <pubDate>Mon, 28 Sep 2020 00:50:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>블로그 이미지 업데이트</title>
+      <link>https://chinsun9.github.io/2020/09/28/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link>
+      <guid>https://chinsun9.github.io/2020/09/28/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid>
+      <pubDate>Mon, 28 Sep 2020 00:06:59 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;favicon&quot;&gt;&lt;a href=&quot;#favicon&quot; class=&quot;headerlink&quot; title=&quot;favicon&quot;&gt;&lt;/a&gt;favicon&lt;/h2&gt;&lt;img src=&quot;/img/favicon20200926.ico&quot; &gt;
+
+&lt;h2 id=&quot;logo&quot;&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="favicon"><a href="#favicon" class="headerlink" title="favicon"></a>favicon</h2><img src="/img/favicon20200926.ico" ><h2 id="logo"><a href="#logo" class="headerlink" title="logo"></a>logo</h2><img src="/img/logo20200926.png" ><h2 id="avatar"><a href="#avatar" class="headerlink" title="avatar"></a>avatar</h2><img src="/img/avatar20200926.png" >]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/etc/">etc</category>
+      
+      <category domain="https://chinsun9.github.io/tags/img/">img</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/09/28/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>.gitignore 써서 커밋 가볍게 하기</title>
@@ -664,47 +694,6 @@ article img {
       
       
       <comments>https://chinsun9.github.io/2020/09/21/cmd-%EC%9D%B4%EC%A0%84-%EB%82%B4%EC%9A%A9-%EC%A7%80%EC%9A%B0%EA%B8%B0-cls/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>로컬에서 sam 테스트하기</title>
-      <link>https://chinsun9.github.io/2020/09/21/%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-sam-%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/09/21/%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-sam-%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Mon, 21 Sep 2020 04:27:41 GMT</pubDate>
-      
-        
-        
-      <description>&lt;img src=&quot;/images/로컬에서-sam-테스트하기20200921/preview.jpg&quot; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;이제 테스트할 때 build, deploy 기다리기… 할 필요가 없다!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;전제조건&quot;&gt;&lt;a href=&quot;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<img src="/images/로컬에서-sam-테스트하기20200921/preview.jpg" ><ul><li>이제 테스트할 때 build, deploy 기다리기… 할 필요가 없다!</li></ul><h2 id="전제조건"><a href="#전제조건" class="headerlink" title="전제조건"></a>전제조건</h2><ul><li>docker 설치</li><li>참고 ; <a href="https://chinsun9.github.io/2020/09/21/windows10-home%EC%97%90%EC%84%9C-docker-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">windows10 home에서 docker 설치하기</a></li></ul><br><ul><li>지난번에 만든 <a href="https://chinsun9.github.io/2020/09/21/sam-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">hello-world sam project</a>에서 테스트해보자</li></ul><h2 id="sam-local-start-api"><a href="#sam-local-start-api" class="headerlink" title="sam local start-api"></a><a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-local-start-api.html">sam local start-api</a></h2><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sam local <span class="built_in">start</span>-api --skip-pull-image</span><br></pre></td></tr></table></figure><figure class="highlight cmd"><figcaption><span>cmd log</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">C:\<span class="title">tmp</span>\<span class="title">hello</span>-<span class="title">world</span>&gt;<span class="title">sam</span> <span class="title">local</span> <span class="title">start</span>-<span class="title">api</span> --<span class="title">skip</span>-<span class="title">pull</span>-<span class="title">image</span></span></span><br><span class="line"><span class="function"><span class="title">Mounting</span> <span class="title">HelloWorldFunction</span> <span class="title">at</span> <span class="title">http</span>://127.0.0.1:3000/<span class="title">hello</span> [<span class="title">GET</span>]</span></span><br><span class="line"><span class="function"><span class="title">You</span> <span class="title">can</span> <span class="title">now</span> <span class="title">browse</span> <span class="title">to</span> <span class="title">the</span> <span class="title">above</span> <span class="title">endpoints</span> <span class="title">to</span> <span class="title">invoke</span> <span class="title">your</span> <span class="title">functions</span>. <span class="title">You</span> <span class="title">do</span> <span class="title">not</span> <span class="title">need</span> <span class="title">to</span> <span class="title">restart</span>/<span class="title">reload</span> <span class="title">SAM</span> <span class="title">CLI</span> <span class="title">while</span> <span class="title">working</span> <span class="title">on</span> <span class="title">your</span> <span class="title">functions</span>, <span class="title">changes</span> <span class="title">will</span> <span class="title">be</span> <span class="title">reflected</span> <span class="title">instantly</span>/<span class="title">automatically</span>. <span class="title">You</span> <span class="title">only</span> <span class="title">need</span> <span class="title">to</span> <span class="title">restart</span> <span class="title">SAM</span></span></span><br><span class="line"><span class="function"><span class="title">CLI</span> <span class="title">if</span> <span class="title">you</span> <span class="title">update</span> <span class="title">your</span> <span class="title">AWS</span> <span class="title">SAM</span> <span class="title">template</span></span></span><br><span class="line"><span class="function">2020-09-21 13:40:36  * <span class="title">Running</span> <span class="title">on</span> <span class="title">http</span>://127.0.0.1:3000/ (<span class="title">Press</span> <span class="title">CTRL</span>+<span class="title">C</span> <span class="title">to</span> <span class="title">quit</span>)</span></span><br><span class="line"><span class="function">2020-09-21 13:40:41 127.0.0.1 - - [21/<span class="title">Sep</span>/2020 13:40:41] &quot;<span class="title">GET</span> / <span class="title">HTTP</span>/1.1&quot; 403 -</span></span><br><span class="line"><span class="function">2020-09-21 13:40:41 127.0.0.1 - - [21/<span class="title">Sep</span>/2020 13:40:41] &quot;<span class="title">GET</span> /<span class="title">favicon.ico</span> <span class="title">HTTP</span>/1.1&quot; 403 -</span></span><br><span class="line"><span class="function"><span class="title">Invoking</span> <span class="title">app.lambdaHandler</span> (<span class="title">nodejs12.x</span>)</span></span><br><span class="line"><span class="function"><span class="title">Requested</span> <span class="title">to</span> <span class="title">skip</span> <span class="title">pulling</span> <span class="title">images</span> ...</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="title">Mounting</span> <span class="title">C</span>:\<span class="title">tmp</span>\<span class="title">hello</span>-<span class="title">world</span>\.<span class="title">aws</span>-<span class="title">sam</span>\<span class="title">build</span>\<span class="title">HelloWorldFunction</span> <span class="title">as</span> /<span class="title">var</span>/<span class="title">task:ro</span>,<span class="title">delegated</span> <span class="title">inside</span> <span class="title">runtime</span> <span class="title">container</span></span></span><br><span class="line"><span class="function"><span class="title">START</span> <span class="title">RequestId</span>: 00<span class="title">b5b190</span>-1<span class="title">c8d</span>-184<span class="title">f</span>-5<span class="title">ab5</span>-<span class="title">c0e0764041d3</span> <span class="title">Version</span>: $<span class="title">LATEST</span></span></span><br><span class="line"><span class="function"><span class="title">END</span> <span class="title">RequestId</span>: 00<span class="title">b5b190</span>-1<span class="title">c8d</span>-184<span class="title">f</span>-5<span class="title">ab5</span>-<span class="title">c0e0764041d3</span></span></span><br><span class="line"><span class="function"><span class="title">REPORT</span> <span class="title">RequestId</span>: 00<span class="title">b5b190</span>-1<span class="title">c8d</span>-184<span class="title">f</span>-5<span class="title">ab5</span>-<span class="title">c0e0764041d3</span>  <span class="title">Init</span> <span class="title">Duration</span>: 438.88 <span class="title">ms</span></span></span><br><span class="line"><span class="function"><span class="title">Duration</span>: 4.53 <span class="title">ms</span>        <span class="title">Billed</span> <span class="title">Duration</span>: 100 <span class="title">ms</span> <span class="title">Memory</span> <span class="title">Size</span>: 128 <span class="title">MB</span>     <span class="title">Max</span> <span class="title">Memory</span> <span class="title">Used</span>: 44 <span class="title">MB</span></span></span><br><span class="line"><span class="function"><span class="title">No</span> <span class="title">Content</span>-<span class="title">Type</span> <span class="title">given</span>. <span class="title">Defaulting</span> <span class="title">to</span> &#x27;<span class="title">application</span>/<span class="title">json</span>&#x27;.</span></span><br><span class="line"><span class="function">2020-09-21 13:40:48 127.0.0.1 - - [21/<span class="title">Sep</span>/2020 13:40:48] &quot;<span class="title">GET</span> /<span class="title">hello</span> <span class="title">HTTP</span>/1.1&quot; 200 -</span></span><br><span class="line"><span class="function">2020-09-21 13:40:48 127.0.0.1 - - [21/<span class="title">Sep</span>/2020 13:40:48] &quot;<span class="title">GET</span> /<span class="title">favicon.ico</span> <span class="title">HTTP</span>/1.1&quot; 403 -</span></span><br></pre></td></tr></table></figure><ul><li>나는 이렇게 명령을 쓴다.</li><li>나는 보통 매 실행마다 3-4초 정도 걸린다.</li><li>build, deploy 하면서 테스트할때보다 획기적으로 빠르게 로컬에서 테스트 해볼 수 있다.</li><li><code>--skip-pull-image</code>옵션을 주는 이유는 매 실행마다 이미지를 받아오는 과정이 있는게 그걸 스킵하면 2초정도 빨라진다.</li><li>변경 사항은 자동으로 반영된다.</li><li>단점 ; 근데 변경사항이 없어도 매 실행 3초이상 걸린다.</li><li>template.yaml 파일을 수정하면 수동으로 재시작 해줘야한다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/sam/">sam</category>
-      
-      <category domain="https://chinsun9.github.io/tags/docker/">docker</category>
-      
-      <category domain="https://chinsun9.github.io/tags/local-start-api/">local start api</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/21/%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-sam-%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
