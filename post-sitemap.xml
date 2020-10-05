@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/09/24/%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B2%80%EC%83%89-api-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2020-10-05T00:04:28.458Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/09/28/System-out-println-%EB%B9%A0%EB%A5%B4%EA%B2%8C-%EC%B9%98%EA%B8%B0/</loc>
         <lastmod>2020-09-28T04:02:31.908Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -42,14 +50,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/09/24/TypeDoc-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2020-09-24T04:30:41.332Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/24/%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B2%80%EC%83%89-api-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2020-09-24T01:27:19.647Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
