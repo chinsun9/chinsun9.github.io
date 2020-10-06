@@ -9,8 +9,43 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 06 Oct 2020 06:49:49 GMT</pubDate>
+    <pubDate>Tue, 06 Oct 2020 06:57:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>윈도우10에서 선택영역 캡처하기</title>
+      <link>https://chinsun9.github.io/2020/10/06/%EC%9C%88%EB%8F%84%EC%9A%B010%EC%97%90%EC%84%9C-%EC%84%A0%ED%83%9D%EC%98%81%EC%97%AD-%EC%BA%A1%EC%B2%98%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/10/06/%EC%9C%88%EB%8F%84%EC%9A%B010%EC%97%90%EC%84%9C-%EC%84%A0%ED%83%9D%EC%98%81%EC%97%AD-%EC%BA%A1%EC%B2%98%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Tue, 06 Oct 2020 06:50:56 GMT</pubDate>
+      
+        
+        
+      <description>&lt;style&gt;
+article img {
+  margin-top: 30px;
+}
+&lt;/style&gt;
+
+&lt;img src=&quot;/images/윈도우10에서-선택영역-캡처하기20201006/preview.jpg&quot; &gt;
+
+&lt;ul&gt;
+&lt;li&gt;더이상 print screen </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<style>article img {  margin-top: 30px;}</style><img src="/images/윈도우10에서-선택영역-캡처하기20201006/preview.jpg" ><ul><li>더이상 print screen key 그림판 ctrl v, crop, ctrl c, ctrl v 할 필요가없다.</li></ul><h2 id="Win-Shift-S"><a href="#Win-Shift-S" class="headerlink" title="Win + Shift + S"></a>Win + Shift + S</h2><ul><li>단축키를 누르면 중앙 상단에 ui가 나오면서 드래그로 원하는 영역을 캡처할 수 있다.</li><li>스크린샷은 클립보드에 저장되면 원하는 곳에 붙여넣어 사용할 수 있다.</li></ul><h2 id="다른-캡쳐-단축키"><a href="#다른-캡쳐-단축키" class="headerlink" title="다른 캡쳐 단축키"></a>다른 캡쳐 단축키</h2><h3 id="Alt-PrintScreen"><a href="#Alt-PrintScreen" class="headerlink" title="Alt + PrintScreen"></a>Alt + PrintScreen</h3><ul><li>현재 활성화된창을 캡처한다.</li><li>이것도 많이 쓴다.</li></ul><h3 id="PrintScreen"><a href="#PrintScreen" class="headerlink" title="PrintScreen"></a>PrintScreen</h3><ul><li>전체화면 캡처</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/%E3%85%81/">ㅁ</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/%E3%85%81/">ㅁ</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/06/%EC%9C%88%EB%8F%84%EC%9A%B010%EC%97%90%EC%84%9C-%EC%84%A0%ED%83%9D%EC%98%81%EC%97%AD-%EC%BA%A1%EC%B2%98%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>윈도우10에서 클립보드 사용하기</title>
@@ -665,34 +700,6 @@ article img {
       
       
       <comments>https://chinsun9.github.io/2020/09/21/sam-template-yaml-%EC%9D%B5%ED%9E%88%EB%8A%94-%EB%B9%A0%EB%A5%B8-%EB%B0%A9%EB%B2%95/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>cmd 폴더 생성</title>
-      <link>https://chinsun9.github.io/2020/09/21/cmd-%ED%8F%B4%EB%8D%94-%EC%83%9D%EC%84%B1/</link>
-      <guid>https://chinsun9.github.io/2020/09/21/cmd-%ED%8F%B4%EB%8D%94-%EC%83%9D%EC%84%B1/</guid>
-      <pubDate>Mon, 21 Sep 2020 06:56:05 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;cmd&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;sp</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> new-folder</span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> a\b\c</span><br></pre></td></tr></table></figure><ul><li>mkdir [폴더명]</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/cmd/">cmd</category>
-      
-      <category domain="https://chinsun9.github.io/tags/mkdir/">mkdir</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/21/cmd-%ED%8F%B4%EB%8D%94-%EC%83%9D%EC%84%B1/#disqus_thread</comments>
       
     </item>
     
