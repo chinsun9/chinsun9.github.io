@@ -175,6 +175,45 @@ article img {
     </item>
     
     <item>
+      <title>sample-img</title>
+      <link>https://chinsun9.github.io/2020/10/05/sample-img/</link>
+      <guid>https://chinsun9.github.io/2020/10/05/sample-img/</guid>
+      <pubDate>Mon, 05 Oct 2020 01:40:21 GMT</pubDate>
+      
+        
+        
+      <description>&lt;style&gt;
+article img {
+  margin-top: 30px;
+}
+&lt;/style&gt;
+
+&lt;img src=&quot;https://via.placeholder.com/468x200?text=Sample+Image&quot; /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;web 개발하면</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<style>article img {  margin-top: 30px;}</style><img src="https://via.placeholder.com/468x200?text=Sample+Image" /><ul><li>web 개발하면서 샘플 이미지를 넣어보고 싶을 때..</li></ul><h2 id="Placeholder-com"><a href="#Placeholder-com" class="headerlink" title="Placeholder.com"></a>Placeholder.com</h2><ul><li><a href="https://placeholder.com/#How_To_Use_Our_Placeholders">https://placeholder.com/#How_To_Use_Our_Placeholders</a> &lt;- 사용법</li></ul><figure class="highlight html"><figcaption><span>index.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://via.placeholder.com/468x200?text=Sample+Image&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://via.placeholder.com/&#123;가로&#125;x&#123;세로&#125;?text=&#123;문자열&#125;&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/placehold/">placehold</category>
+      
+      <category domain="https://chinsun9.github.io/tags/sample-image/">sample image</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/05/sample-img/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>System.out.println(); 빠르게 치기</title>
       <link>https://chinsun9.github.io/2020/09/28/System-out-println-%EB%B9%A0%EB%A5%B4%EA%B2%8C-%EC%B9%98%EA%B8%B0/</link>
       <guid>https://chinsun9.github.io/2020/09/28/System-out-println-%EB%B9%A0%EB%A5%B4%EA%B2%8C-%EC%B9%98%EA%B8%B0/</guid>
@@ -683,46 +722,6 @@ article img {
       
       
       <comments>https://chinsun9.github.io/2020/09/22/javadoc-%EB%A7%8C%EB%93%A4%EA%B3%A0-github%EC%97%90%EC%84%9C-%EB%B3%B4%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>RDS 비공개하는 방법</title>
-      <link>https://chinsun9.github.io/2020/09/22/RDS-%EB%B9%84%EA%B3%B5%EA%B0%9C%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/</link>
-      <guid>https://chinsun9.github.io/2020/09/22/RDS-%EB%B9%84%EA%B3%B5%EA%B0%9C%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/</guid>
-      <pubDate>Tue, 22 Sep 2020 00:11:34 GMT</pubDate>
-      
-        
-        
-      <description>&lt;img src=&quot;/images/RDS-비공개하는-방법20200922/preview.jpg&quot; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;내 RDS 지키기&lt;/li&gt;
-&lt;li&gt;내가 지정한 IP에서만 접근가능하도록 설정하자&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;따라하기&quot;&gt;&lt;a hre</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<img src="/images/RDS-비공개하는-방법20200922/preview.jpg" ><ul><li>내 RDS 지키기</li><li>내가 지정한 IP에서만 접근가능하도록 설정하자</li></ul><h2 id="따라하기"><a href="#따라하기" class="headerlink" title="따라하기"></a>따라하기</h2><img src="/images/RDS-비공개하는-방법20200922/1.jpg" ><ul><li>설정하고싶은 RDS 화면에 들어간다</li><li>연결 &amp; 보안 &gt; 보안 &gt; vpc 보안 그룹</li><li>을 눌러서 현재 rds에 적용되어 있는 보안그룹 설정으로 들어간다.</li></ul><img src="/images/RDS-비공개하는-방법20200922/2.jpg" ><ul><li>인바운드 규칙 &gt; 인바운드 규칙 편집으로 들어간다</li></ul><img src="/images/RDS-비공개하는-방법20200922/3.jpg" ><ul><li>아마 이런식으로 위치무관으로 되어있을 수 있는데</li><li>이 규칙으로 인해 모든 컴퓨터에서 접근가능하게 해준다.</li><li>이 규칙을 이제 내 컴퓨터에서만 접근가능하도록 고쳐보자.</li></ul><img src="/images/RDS-비공개하는-방법20200922/4.jpg" ><ul><li><ol><li><code>MySQL/Aurora</code> 를 선택해서 포트를 제한한다</li></ol></li><li><ol start="2"><li>소스 유형에 <code>내 IP</code> 를 선택한다</li></ol></li><li><ol start="3"><li>내 공인 IP 주소로 바뀌었는지 확인한다.</li></ol></li><li>이렇게하면 내 IP에서 MySQL 접근 포트인 3306 포트로만 접근을 허용하는 세팅이 된 것이다.</li></ul><img src="/images/RDS-비공개하는-방법20200922/5.jpg" ><ul><li>규칙 저장을 눌러 적용시켜준다.</li><li>끝!</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/rds/">rds</category>
-      
-      <category domain="https://chinsun9.github.io/tags/sg/">sg</category>
-      
-      <category domain="https://chinsun9.github.io/tags/security-group/">security group</category>
-      
-      <category domain="https://chinsun9.github.io/tags/vpc/">vpc</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/22/RDS-%EB%B9%84%EA%B3%B5%EA%B0%9C%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/#disqus_thread</comments>
       
     </item>
     
