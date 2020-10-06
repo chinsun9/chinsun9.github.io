@@ -54,6 +54,45 @@ article img {
     </item>
     
     <item>
+      <title>cmd 관리자 권한</title>
+      <link>https://chinsun9.github.io/2020/10/06/cmd-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C/</link>
+      <guid>https://chinsun9.github.io/2020/10/06/cmd-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C/</guid>
+      <pubDate>Tue, 06 Oct 2020 06:59:27 GMT</pubDate>
+      
+        
+        
+      <description>&lt;style&gt;
+article img {
+  margin-top: 30px;
+}
+&lt;/style&gt;
+
+&lt;img src=&quot;/images/cmd-관리자-권한20201006/preview.jpg&quot; &gt;
+
+&lt;ul&gt;
+&lt;li&gt;관리자 권한으로 배치파일을 실행했을때 경로가</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<style>article img {  margin-top: 30px;}</style><img src="/images/cmd-관리자-권한20201006/preview.jpg" ><ul><li>관리자 권한으로 배치파일을 실행했을때 경로가 바뀌는 것을 해결할 수 있다.</li></ul><h2 id="pushd-“-dp0”"><a href="#pushd-“-dp0”" class="headerlink" title="pushd “%~dp0”"></a>pushd “%~dp0”</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pushd &quot;%~dp0&quot;</span><br></pre></td></tr></table></figure><ul><li>위 명령은 .bat 파일이 있는 경로로 자동 <code>cd</code>해주는 명령이다.</li><li>보통 .bat 파일을 만들때 관리자 권한이 필요한 명령이 있을 수 있다.</li><li>.bat을 기준하여 상대경로로 멋지게 로직을 쫘놨는데..</li><li>관리자 권한으로 실행하면 제멋대로 <code>C:\WINDOWS\system32</code> 경로로 실행해버리는 바람에 원하는 결과가 나오지 않는다.</li><li>위 명령으로 해결!</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/cmd/">cmd</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89/">관리자 권한 실행</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C/">관리자 권한</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/06/cmd-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>윈도우10에서 선택영역 캡처하기</title>
       <link>https://chinsun9.github.io/2020/10/06/%EC%9C%88%EB%8F%84%EC%9A%B010%EC%97%90%EC%84%9C-%EC%84%A0%ED%83%9D%EC%98%81%EC%97%AD-%EC%BA%A1%EC%B2%98%ED%95%98%EA%B8%B0/</link>
       <guid>https://chinsun9.github.io/2020/10/06/%EC%9C%88%EB%8F%84%EC%9A%B010%EC%97%90%EC%84%9C-%EC%84%A0%ED%83%9D%EC%98%81%EC%97%AD-%EC%BA%A1%EC%B2%98%ED%95%98%EA%B8%B0/</guid>
@@ -684,35 +723,6 @@ article img {
       
       
       <comments>https://chinsun9.github.io/2020/09/22/RDS-%EB%B9%84%EA%B3%B5%EA%B0%9C%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>java 카테고리 생성</title>
-      <link>https://chinsun9.github.io/2020/09/21/java-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</link>
-      <guid>https://chinsun9.github.io/2020/09/21/java-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</guid>
-      <pubDate>Mon, 21 Sep 2020 09:04:59 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;java 공부한 내용 올리기&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>java 공부한 내용 올리기</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/java/">java</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/category/">category</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/21/java-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/#disqus_thread</comments>
       
     </item>
     
