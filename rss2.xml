@@ -9,8 +9,49 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 06 Oct 2020 06:58:25 GMT</pubDate>
+    <pubDate>Tue, 06 Oct 2020 07:07:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode 터미널 토글 단축키</title>
+      <link>https://chinsun9.github.io/2020/10/06/%ED%84%B0%EB%AF%B8%EB%84%90-%ED%86%A0%EA%B8%80-%EB%8B%A8%EC%B6%95%ED%82%A4/</link>
+      <guid>https://chinsun9.github.io/2020/10/06/%ED%84%B0%EB%AF%B8%EB%84%90-%ED%86%A0%EA%B8%80-%EB%8B%A8%EC%B6%95%ED%82%A4/</guid>
+      <pubDate>Tue, 06 Oct 2020 07:03:55 GMT</pubDate>
+      
+        
+        
+      <description>&lt;style&gt;
+article img {
+  margin-top: 30px;
+}
+&lt;/style&gt;
+
+&lt;img src=&quot;/images/터미널-토글-단축키20201006/preview.jpg&quot; &gt;
+
+&lt;ul&gt;
+&lt;li&gt;vscode 내장 터미널영역을 토글할 수 있</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<style>article img {  margin-top: 30px;}</style><img src="/images/터미널-토글-단축키20201006/preview.jpg" ><ul><li>vscode 내장 터미널영역을 토글할 수 있다.</li></ul><h2 id="Ctrl-J"><a href="#Ctrl-J" class="headerlink" title="Ctrl + J"></a>Ctrl + J</h2><ul><li>vscode 내장 터미널 토글</li></ul><h2 id="ctrl-shift-c"><a href="#ctrl-shift-c" class="headerlink" title="ctrl shift c"></a>ctrl shift c</h2><ul><li>cmd 열기</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%EB%8B%A8%EC%B6%95%ED%82%A4/">단축키</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%ED%84%B0%EB%AF%B8%EB%84%90/">터미널</category>
+      
+      <category domain="https://chinsun9.github.io/tags/terminal/">terminal</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/06/%ED%84%B0%EB%AF%B8%EB%84%90-%ED%86%A0%EA%B8%80-%EB%8B%A8%EC%B6%95%ED%82%A4/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>윈도우10에서 선택영역 캡처하기</title>
@@ -672,42 +713,6 @@ article img {
       
       
       <comments>https://chinsun9.github.io/2020/09/21/java-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>sam template.yaml 익히는 빠른 방법</title>
-      <link>https://chinsun9.github.io/2020/09/21/sam-template-yaml-%EC%9D%B5%ED%9E%88%EB%8A%94-%EB%B9%A0%EB%A5%B8-%EB%B0%A9%EB%B2%95/</link>
-      <guid>https://chinsun9.github.io/2020/09/21/sam-template-yaml-%EC%9D%B5%ED%9E%88%EB%8A%94-%EB%B9%A0%EB%A5%B8-%EB%B0%A9%EB%B2%95/</guid>
-      <pubDate>Mon, 21 Sep 2020 08:45:39 GMT</pubDate>
-      
-        
-        
-      <description>&lt;img src=&quot;/images/sam-template-yaml-익히는-빠른-방법20200921/preview.jpg&quot; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;브라우저에서 aws console 통해 람다 수정해보고&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;작업 &amp;gt; 내보내기 &amp;g</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<img src="/images/sam-template-yaml-익히는-빠른-방법20200921/preview.jpg" ><ul><li>브라우저에서 aws console 통해 람다 수정해보고</li><li><code>작업 &gt; 내보내기 &gt; aws sam 파일 다운로드</code> 하기</li><li>여기서 <code>aws sam 파일</code>은 <code>template.yaml</code>이다.</li></ul><h2 id="익히는-법"><a href="#익히는-법" class="headerlink" title="익히는 법"></a>익히는 법</h2><ul><li>처음에 할때는 gui만큼 쉬운게 없다.</li><li>sam을 시작하면 yaml을 어떻게 건드려야할지 감이 안올 것이다.</li><li>그럴때는 역으로 브라우저에서 내가 설정할 권한들을 설정하고 저장한다.</li></ul><img src="/images/sam-template-yaml-익히는-빠른-방법20200921/1.jpg" ><ul><li>그리고 <code>작업 &gt; 내보내기 &gt; aws sam 파일 다운로드</code>를 통해 어떻게 yaml이 수정되었는지 확인해보면 된다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/sam/">sam</category>
-      
-      <category domain="https://chinsun9.github.io/tags/lambda/">lambda</category>
-      
-      <category domain="https://chinsun9.github.io/tags/template-yaml/">template.yaml</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/21/sam-template-yaml-%EC%9D%B5%ED%9E%88%EB%8A%94-%EB%B9%A0%EB%A5%B8-%EB%B0%A9%EB%B2%95/#disqus_thread</comments>
       
     </item>
     
