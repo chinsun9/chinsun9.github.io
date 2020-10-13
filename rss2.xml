@@ -9,8 +9,37 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 07 Oct 2020 02:09:34 GMT</pubDate>
+    <pubDate>Tue, 13 Oct 2020 07:23:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>마크다운에서 이미지 표시하는 법</title>
+      <link>https://chinsun9.github.io/2020/10/13/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/</link>
+      <guid>https://chinsun9.github.io/2020/10/13/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/</guid>
+      <pubDate>Tue, 13 Oct 2020 07:19:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/img/avatar20200926.png&quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight md&quot;&gt;&lt;figcaption&gt;&lt;span&gt;md&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/img/avatar20200926.png"></p><figure class="highlight md"><figcaption><span>md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![](/img/avatar20200926.png)</span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;&quot;</span> &gt;</span></span></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- 더이상 이거 안써도된다. --&gt;</span></span></span><br></pre></td></tr></table></figure><ul><li><code>![]()</code> 이게 훨씬 간편한 것 같다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/markdown/">markdown</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/md/">md</category>
+      
+      <category domain="https://chinsun9.github.io/tags/markdown/">markdown</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/13/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>현재 디렉터리에서 cmd열기</title>
@@ -651,40 +680,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/09/22/%EB%82%B4%EA%B0%80-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%93%B0%EB%8A%94%EB%B2%95/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>hexo 포스트 CRUD</title>
-      <link>https://chinsun9.github.io/2020/09/22/hexo-%ED%8F%AC%EC%8A%A4%ED%8A%B8-CRUD/</link>
-      <guid>https://chinsun9.github.io/2020/09/22/hexo-%ED%8F%AC%EC%8A%A4%ED%8A%B8-CRUD/</guid>
-      <pubDate>Tue, 22 Sep 2020 02:08:51 GMT</pubDate>
-      
-        
-        
-      <description>&lt;img src=&quot;/images/hexo-포스트-CRUD20200922/preview.svg&quot; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;hexo에서 포스트 하는법!&lt;/li&gt;
-&lt;li&gt;CRUD로 비유하여 알려줍니다&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;C&quot;&gt;&lt;a href=&quot;#C</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<img src="/images/hexo-포스트-CRUD20200922/preview.svg" ><ul><li>hexo에서 포스트 하는법!</li><li>CRUD로 비유하여 알려줍니다</li></ul><h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><ul><li><p>새 포스트 쓰기</p><p><code>hexo new &quot;새 포스트&quot;</code></p></li><li><p>위 명령으로 새 포스트를 만든다.</p></li><li><p>source/_posts/새-포스트.md</p></li><li><p>경로에 새로운 md가 만들어 진다.</p></li><li><p>해당 md를 열어 마크다운을 활용해서 글을 쓴다.</p></li><li><p>마크 다운 사용법은 <a href="https://chinsun9.github.io/categories/markdown/">여기</a> 참고한다.</p></li><li><p>hexo 사용법은 <a href="https://chinsun9.github.io/categories/blog/">여기</a> 참고한다.</p></li></ul><h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><ul><li>포스트 읽기<br><code>hexo server</code></li><li>위 명령으로 로컬에서 내가 쓴 포스트가 잘 나오는지 확인해본다.</li></ul><h2 id="U"><a href="#U" class="headerlink" title="U"></a>U</h2><ul><li>포스트 수정하기</li><li>source/_posts 경로에서 수정하고 싶은 포스트를 찾아 수정한다.</li></ul><img src="/images/hexo-포스트-CRUD20200922/1.jpg" ><ul><li>업데이트 시각은 자동 갱신되니까 걱정하지 말도록.</li></ul><h2 id="D"><a href="#D" class="headerlink" title="D"></a>D</h2><ul><li>포스트 삭제하기</li></ul><img src="/images/hexo-포스트-CRUD20200922/2.jpg" ><ul><li>source/_posts 경로에서 삭제하고 싶은 포스트를 찾아 삭제한다.</li><li>그냥 글을 숨기고 싶다면 source 디렉터리 바깥으로 뺀다.</li></ul><h2 id="APPLY"><a href="#APPLY" class="headerlink" title="APPLY"></a>APPLY</h2><ul><li>위 과정을 통해서 포스트를 CRUD 해봤다.</li><li>이제 깃허브 페이지에 적용시키고 싶다면 아래 명령을 사용한다.<br><code>hexo generate &amp; hexo deploy</code></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/hexo/">hexo</category>
-      
-      <category domain="https://chinsun9.github.io/tags/md/">md</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/22/hexo-%ED%8F%AC%EC%8A%A4%ED%8A%B8-CRUD/#disqus_thread</comments>
       
     </item>
     
