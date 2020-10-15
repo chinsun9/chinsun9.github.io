@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 13 Oct 2020 07:23:00 GMT</pubDate>
+    <pubDate>Thu, 15 Oct 2020 07:46:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode 항상 관리자 권한 실행하기</title>
+      <link>https://chinsun9.github.io/2020/10/15/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/10/15/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Thu, 15 Oct 2020 07:01:50 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B020201015/p</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B020201015/preview.jpg" alt=" "></p><ul><li>관리자 권한이 필요한 상황이 있는데.. vscode를 항상 관리자 권한으로 실행해보자.</li></ul><h2 id="따라하기"><a href="#따라하기" class="headerlink" title="따라하기"></a>따라하기</h2><p><img src="/images/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B020201015/2.jpg" alt=" "></p><ul><li>윈도우키(검색창) &gt; <code>code</code> 검색 &gt; 우클릭 &gt; 파일 위치 열기</li></ul><p><img src="/images/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B020201015/3.jpg" alt=" "></p><ul><li><code>Visual Studio Code</code> 바로가기를 우클릭 &gt; 속성</li></ul><p><img src="/images/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B020201015/4.jpg" alt=" "></p><ul><li>호환성탭 &gt; 모든 사용자에 대한 설정 변경 &gt; 관리자 권한으로 이 프로그램 실행 체크 &gt; 확인 &gt; 확인</li><li>이렇게하면 항상 관리자 권한 상태로 vscode가 실행된다.</li></ul><h2 id="사용자-게정-컨트롤-창-없애기"><a href="#사용자-게정-컨트롤-창-없애기" class="headerlink" title="사용자 게정 컨트롤 창 없애기"></a>사용자 게정 컨트롤 창 없애기</h2><p><img src="/images/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B020201015/1.jpg" alt=" "></p><ul><li>관리자 권한 실행으로 실행할때 나오는 <code>사용자 계정 컨트롤 : 이 앱이 디바이스를 변경할 수 있도록 허용하시겠어요?</code>까지 안나오게 해보자.</li><li>윈도우키(검색창) &gt; 사용자 게정 컨트롤 설정 변경 &gt; 알리지 않음 으로 설정</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%EA%B4%80%EB%A6%AC%EC%9E%90%EA%B6%8C%ED%95%9C/">관리자권한</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/15/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>마크다운에서 이미지 표시하는 법</title>
@@ -652,34 +680,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/09/22/hexo%EC%97%90%EC%84%9C-%EC%B4%88%EC%95%88-%EC%9E%91%EC%84%B1%EC%A4%91-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>내가 블로그에서 마크다운 쓰는법</title>
-      <link>https://chinsun9.github.io/2020/09/22/%EB%82%B4%EA%B0%80-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%93%B0%EB%8A%94%EB%B2%95/</link>
-      <guid>https://chinsun9.github.io/2020/09/22/%EB%82%B4%EA%B0%80-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%93%B0%EB%8A%94%EB%B2%95/</guid>
-      <pubDate>Tue, 22 Sep 2020 02:33:58 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight md&quot;&gt;&lt;figcaption&gt;&lt;span&gt;포스트.md&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight md"><figcaption><span>포스트.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://chinsun9.github.io/img/avatar.png&quot;</span> &gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> 상세 설명1</span><br><span class="line"><span class="bullet">-</span> 상세 설명2</span><br><span class="line"></span><br><span class="line"><span class="section">## h2</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> 그러하다</span><br><span class="line"></span><br><span class="line"><span class="section">### h3</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> 그러하다</span><br><span class="line"><span class="bullet">-</span> 종종 [<span class="string">링크</span>](<span class="link">https://chinsun9.github.io/img/avatar.png</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## 코드 스니펫</span></span><br><span class="line"></span><br><span class="line"><span class="code">```js tmp.js</span></span><br><span class="line"><span class="code">console.log(hi);</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure><ul><li><p>나는 블로그에 글 쓸때 이렇게만 쓴다.</p></li><li><p>위 처럼 작성하면 결과는…</p><img src="https://chinsun9.github.io/img/avatar.png" ><ul><li>상세 설명1</li><li>상세 설명2</li></ul><h2 id="h2"><a href="#h2" class="headerlink" title="h2"></a>h2</h2><ul><li>그러하다</li></ul><h3 id="h3"><a href="#h3" class="headerlink" title="h3"></a>h3</h3><ul><li>그러하다</li><li>종종 <a href="https://chinsun9.github.io/img/avatar.png">링크</a></li></ul><h2 id="코드-스니펫"><a href="#코드-스니펫" class="headerlink" title="코드 스니펫"></a>코드 스니펫</h2><figure class="highlight js"><figcaption><span>tmp.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(hi);</span><br></pre></td></tr></table></figure></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/markdown/">markdown</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/md/">md</category>
-      
-      <category domain="https://chinsun9.github.io/tags/markdown/">markdown</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/22/%EB%82%B4%EA%B0%80-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%93%B0%EB%8A%94%EB%B2%95/#disqus_thread</comments>
       
     </item>
     
