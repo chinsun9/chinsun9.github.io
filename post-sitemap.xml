@@ -8,6 +8,46 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/10/08/a-tag-no-color/</loc>
+        <lastmod>2020-10-16T01:15:00.327Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/10/14/%EA%B0%95%EB%A0%A5-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8/</loc>
+        <lastmod>2020-10-16T00:50:37.289Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/10/16/%EC%A0%95%EC%B2%98%EA%B8%B0/</loc>
+        <lastmod>2020-10-16T00:40:55.952Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/17/swift%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</loc>
+        <lastmod>2020-10-16T00:39:41.267Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/17/etc-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</loc>
+        <lastmod>2020-10-16T00:39:30.686Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/10/16/js%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D/</loc>
         <lastmod>2020-10-16T00:36:21.009Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -472,14 +512,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/09/17/swift%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</loc>
-        <lastmod>2020-09-22T09:00:10.996Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/09/21/sam%EC%97%90%EC%84%9C-%EB%85%B8%EB%93%9C-%EB%AA%A8%EB%93%88%EC%9D%84-%EB%A0%88%EC%9D%B4%EC%96%B4%EB%A1%9C-%EB%B9%BC%EA%B8%B0/</loc>
         <lastmod>2020-09-22T09:00:08.890Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -626,14 +658,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/09/17/favicon%EC%9D%B4-%EC%95%88%EB%82%98%EC%98%A4%EB%8A%94-%EB%AC%B8%EC%A0%9C/</loc>
         <lastmod>2020-09-22T08:59:22.482Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/17/etc-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</loc>
-        <lastmod>2020-09-22T08:59:20.468Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

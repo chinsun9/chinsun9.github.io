@@ -9,8 +9,37 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 16 Oct 2020 00:36:21 GMT</pubDate>
+    <pubDate>Fri, 16 Oct 2020 00:40:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>정보처리기사 카테고리 생성</title>
+      <link>https://chinsun9.github.io/2020/10/16/%EC%A0%95%EC%B2%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/10/16/%EC%A0%95%EC%B2%98%EA%B8%B0/</guid>
+      <pubDate>Fri, 16 Oct 2020 00:25:59 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;정보처리기사 공부한 내용 올리기&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>정보처리기사 공부한 내용 올리기</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/">정보처리기사</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/">정보처리기사</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/16/%EC%A0%95%EC%B2%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>nodejs 파일 목록 출력하기</title>
@@ -69,6 +98,37 @@
     </item>
     
     <item>
+      <title>chrome 강력 새로고침</title>
+      <link>https://chinsun9.github.io/2020/10/14/%EA%B0%95%EB%A0%A5-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8/</link>
+      <guid>https://chinsun9.github.io/2020/10/14/%EA%B0%95%EB%A0%A5-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8/</guid>
+      <pubDate>Wed, 14 Oct 2020 08:52:30 GMT</pubDate>
+      
+        
+        
+      <description>&lt;img src=&quot;/images/강력-새로고침20201014/preview.jpg&quot; &gt;
+
+&lt;ul&gt;
+&lt;li&gt;웹을 수정할때 가끔 브라우저 캐시때문에 원하는 모양이 안나오는 경우가 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;강력-새로고침하는-법&quot;&gt;&lt;a hre</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/images/강력-새로고침20201014/preview.jpg" ><ul><li>웹을 수정할때 가끔 브라우저 캐시때문에 원하는 모양이 안나오는 경우가 있다.</li></ul><h2 id="강력-새로고침하는-법"><a href="#강력-새로고침하는-법" class="headerlink" title="강력 새로고침하는 법"></a>강력 새로고침하는 법</h2><ul><li>F12로 크롬 개발자 도구창을 킨다.</li><li>브라우저 상단 새로고침 아이콘에 우클릭을하면 3개의 새로고침 메뉴가 나온다. (개발자 도구창이 안켜져있으면 안나옴)</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/chrome/">chrome</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/14/%EA%B0%95%EB%A0%A5-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>마크다운에서 이미지 표시하는 법</title>
       <link>https://chinsun9.github.io/2020/10/13/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/</link>
       <guid>https://chinsun9.github.io/2020/10/13/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/</guid>
@@ -94,6 +154,35 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/13/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>a tag no color</title>
+      <link>https://chinsun9.github.io/2020/10/08/a-tag-no-color/</link>
+      <guid>https://chinsun9.github.io/2020/10/08/a-tag-no-color/</guid>
+      <pubDate>Thu, 08 Oct 2020 05:28:18 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/a-tag-no-color20201008/preview.gif&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;figcaption&gt;&lt;span&gt;css&lt;/span&gt;&lt;/figcaption</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/a-tag-no-color20201008/preview.gif" alt=" "></p><figure class="highlight css"><figcaption><span>css</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: inherit;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>a tag는 보통 파란색으로 표시되고, 해당링크에 방문한적이 있으면 색이 달라진다.</li><li>아이콘 같은 곳에 링크를 걸었을때 이러한 특징으로 인해 약간 보기싫어지는 경우가 있는데 이를 해결할 수 있다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      <category domain="https://chinsun9.github.io/tags/a-tag/">a tag</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/08/a-tag-no-color/#disqus_thread</comments>
       
     </item>
     
@@ -569,108 +658,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/09/23/%EC%BD%94%EB%93%9C-%EC%8A%A4%EB%8B%88%ED%8E%AB-%EC%95%88%EC%97%90-%EC%BD%94%EB%93%9C-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%8F%AC%ED%95%A8%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>disqus로 블로그 댓글 사용하기</title>
-      <link>https://chinsun9.github.io/2020/09/23/disqus%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%8C%93%EA%B8%80-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/09/23/disqus%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%8C%93%EA%B8%80-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Wed, 23 Sep 2020 00:51:20 GMT</pubDate>
-      
-        
-        
-      <description>&lt;img src=&quot;/images/disqus로-블로그-댓글-사용하기20200923/preview.jpg&quot; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;hexo icarus theme 에서는 disqus를 기본으로 지원한다.&lt;/li&gt;
-&lt;li&gt;우리는 disqus에서 &lt;code&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<img src="/images/disqus로-블로그-댓글-사용하기20200923/preview.jpg" ><ul><li>hexo icarus theme 에서는 disqus를 기본으로 지원한다.</li><li>우리는 disqus에서 <code>shortname</code>을 알아내서 적어주기만 하면 된다.</li><li>너무 간편하다!</li></ul><h2 id="따라하기"><a href="#따라하기" class="headerlink" title="따라하기"></a>따라하기</h2><ul><li>hexo icarus theme 기준입니다!</li><li>스샷아래 설명이 있는데</li><li>그냥 스샷 그대로 따라가면 됩니다.</li></ul><h3 id="DISQUS-회원가입"><a href="#DISQUS-회원가입" class="headerlink" title="DISQUS 회원가입"></a>DISQUS 회원가입</h3><ul><li><a href="https://disqus.com/">DISQUS</a>에 회원가입하고 로그인한다.</li></ul><h3 id="DISQUS에서-사이트-추가-Shortname만들고-확인하기"><a href="#DISQUS에서-사이트-추가-Shortname만들고-확인하기" class="headerlink" title="DISQUS에서 사이트 추가(Shortname만들고 확인하기)"></a>DISQUS에서 사이트 추가(Shortname만들고 확인하기)</h3><img src="/images/disqus로-블로그-댓글-사용하기20200923/1.jpg" ><ul><li><code>GET STARTED</code> 버튼 클릭</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/2.jpg" ><ul><li><code>I want to install Disqus on my site</code> 버튼 클릭</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/3.jpg" ><ul><li>항목 작성</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/4.jpg" ><ul><li>스크롤을 내려서 <code>Basic</code> 선택</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/5.jpg" ><ul><li>스크롤을 내려서 <code>...with Universal Code</code> 선택</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/6.jpg" ><ul><li>뭐라뭐라 막 나오는데, 다 무시하고 스크롤을 내려서 <code>Configure</code> 버튼 클릭</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/7.jpg" ><ul><li>Website URL 항목만 채우고 <code>Complete Setup</code> 버튼 클릭</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/8.jpg" ><ul><li>하단 <code>Dismiss Setup</code> 버튼을 클릭하고,</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/9.jpg" ><ul><li>상단에 <code>Edit Settings</code> 버튼 클릭</li></ul><br><img src="/images/disqus로-블로그-댓글-사용하기20200923/10.jpg" ><ul><li>Shortname 항목에서 내 <code>Shortname</code>을 확인하고 복사한다.</li></ul><br><h3 id="config-icarus-yml에-Shortname-설정하기"><a href="#config-icarus-yml에-Shortname-설정하기" class="headerlink" title="_config.icarus.yml에 Shortname 설정하기"></a>_config.icarus.yml에 Shortname 설정하기</h3><img src="/images/disqus로-블로그-댓글-사용하기20200923/11.jpg" ><figure class="highlight yml"><figcaption><span>_config.icarus.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">disqus</span></span><br><span class="line">  <span class="comment"># Disqus shortname</span></span><br><span class="line">  <span class="attr">shortname:</span> <span class="string">&#x27;chinsun9&#x27;</span></span><br></pre></td></tr></table></figure><ul><li>이렇게 설정해주면 끝..!</li><li>놀랍게도 적용이 완료되었다!</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/hexo/">hexo</category>
-      
-      <category domain="https://chinsun9.github.io/tags/disqus/">disqus</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/23/disqus%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%8C%93%EA%B8%80-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode에서 마크다운 미리보기</title>
-      <link>https://chinsun9.github.io/2020/09/23/vscode%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/09/23/vscode%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/</guid>
-      <pubDate>Wed, 23 Sep 2020 00:15:53 GMT</pubDate>
-      
-        
-        
-      <description>&lt;img src=&quot;/images/vscode에서-마크다운-미리보기20200923/preview.jpg&quot; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;vscode에서 markdown open preview를 사용하면된다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;markdown-op</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<img src="/images/vscode에서-마크다운-미리보기20200923/preview.jpg" ><ul><li>vscode에서 markdown open preview를 사용하면된다.</li></ul><h2 id="markdown-open-preview"><a href="#markdown-open-preview" class="headerlink" title="markdown open preview"></a>markdown open preview</h2><ul><li><code>ctrl shift v</code> 를 누르면 마크다운 미리보기를 할 수 있다.</li><li>마크다운 미리보기창이 열리면 <code>ctrl alt →</code>키를 통해 옆으로 옮겨서 볼 수 있다.</li><li>실시간으로 반영되니 마크 다운 쓸때 엄청 유용하다!</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/md/">md</category>
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/markdown-open-preview/">markdown open preview</category>
-      
-      <category domain="https://chinsun9.github.io/tags/markdown/">markdown</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/23/vscode%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>no follow</title>
-      <link>https://chinsun9.github.io/2020/09/22/no-follow/</link>
-      <guid>https://chinsun9.github.io/2020/09/22/no-follow/</guid>
-      <pubDate>Tue, 22 Sep 2020 07:40:23 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;nofollow&quot;&gt;&lt;a href=&quot;#nofollow&quot; class=&quot;headerlink&quot; title=&quot;nofollow&quot;&gt;&lt;/a&gt;nofollow&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/N</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="nofollow"><a href="#nofollow" class="headerlink" title="nofollow"></a>nofollow</h2><ul><li><a href="https://ko.wikipedia.org/wiki/Nofollow">https://ko.wikipedia.org/wiki/Nofollow</a></li><li>SEO 설정을 하면서 알게된 것이다.</li><li><em>hexo-autonofollow</em> 모듈을 설치해</li><li>외부 링크에 nofollow 속성을 넣어준다.</li><li>참고 ; <a href="https://support.google.com/webmasters/answer/96569?hl=ko">구글 서치 콘솔 가이드</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
-      
-      <category domain="https://chinsun9.github.io/tags/hexo/">hexo</category>
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/nofollow/">nofollow</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/22/no-follow/#disqus_thread</comments>
       
     </item>
     
