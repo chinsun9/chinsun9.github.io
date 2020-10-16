@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 15 Oct 2020 07:46:13 GMT</pubDate>
+    <pubDate>Fri, 16 Oct 2020 00:36:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>nodejs 파일 목록 출력하기</title>
+      <link>https://chinsun9.github.io/2020/10/16/js%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D/</link>
+      <guid>https://chinsun9.github.io/2020/10/16/js%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D/</guid>
+      <pubDate>Fri, 16 Oct 2020 00:25:46 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;printFileList.js&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>printFileList.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> dirPath = <span class="string">&#x27;.&#x27;</span>;</span><br><span class="line"></span><br><span class="line">fs.readdir(dirPath, <span class="function">(<span class="params">error, filelist</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(filelist);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>은근히 자주 쓴다.</li><li><code>dirPath</code> 변수에 원하는 디렉터리의 경로를 적어주어 확인할 수 있다.</li></ul><h2 id="내가-활용한-곳"><a href="#내가-활용한-곳" class="headerlink" title="내가 활용한 곳"></a>내가 활용한 곳</h2><ul><li><ol><li><code>.dockerignore</code> 파일을 추가했는데 동작할까? 궁금해서</li></ol></li><li><ol start="2"><li>람다 실행환경 디렉터리 구조 파악</li></ol></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/fs/">fs</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/16/js%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vscode 항상 관리자 권한 실행하기</title>
@@ -643,43 +671,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/09/22/no-follow/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>hexo에서 초안, 작성중 사용하기</title>
-      <link>https://chinsun9.github.io/2020/09/22/hexo%EC%97%90%EC%84%9C-%EC%B4%88%EC%95%88-%EC%9E%91%EC%84%B1%EC%A4%91-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/09/22/hexo%EC%97%90%EC%84%9C-%EC%B4%88%EC%95%88-%EC%9E%91%EC%84%B1%EC%A4%91-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Tue, 22 Sep 2020 04:52:42 GMT</pubDate>
-      
-        
-        
-      <description>&lt;img src=&quot;/images/hexo에서-초안-작성중-사용하기20200922/preview.jpg&quot; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;너무 많은 포스트들 속에.. 파묻혀있는 새 글&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;draft-사용하기&quot;&gt;&lt;a href=&quot;#dra</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<img src="/images/hexo에서-초안-작성중-사용하기20200922/preview.jpg" ><ul><li>너무 많은 포스트들 속에.. 파묻혀있는 새 글</li></ul><h2 id="draft-사용하기"><a href="#draft-사용하기" class="headerlink" title="draft 사용하기"></a>draft 사용하기</h2><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft &quot;hexo에서 초안, 작성중 사용하기&quot;</span><br></pre></td></tr></table></figure><h3 id="layout"><a href="#layout" class="headerlink" title="layout"></a>layout</h3><ul><li>hexo에서는 새 포스트를 생서할때 layout이라는 것을 지정할 수 있다.</li><li>기본적으로 3개의 레이아웃이 있다. <code>post</code>, <code>draft</code>, <code>page</code></li><li><code>post</code>레이아웃은 기본값이다. source/_posts/ 아래에 생성되게 만든다.</li><li><code>page</code>레이아웃은 페이지를 생성한다. source/ 아래에 생성되게 만든다.</li><li><code>draft</code>레이아웃은 source/_drafts/ 아래에 생성되게 만든다.</li></ul><h3 id="Draft"><a href="#Draft" class="headerlink" title="Draft"></a>Draft</h3><ul><li>source/_drafts/ 아래에 생성된 md들은 기본적으로 렌더링 되지 않는다.</li><li>즉, 배포해도 블로그에 표시되지 않는다.</li><li>따라서 작성중인 글을 노출시키지 않을 수 있다.</li><li>또 포스트가 많아지면서 source/_posts 디렉터리가 복잡해지는데, 여기서 스크롤해가면서 작성중인 글을 힘들게 찾을 필요가 없다.</li></ul><h4 id="작성완료하는-법"><a href="#작성완료하는-법" class="headerlink" title="작성완료하는 법"></a>작성완료하는 법</h4><ul><li>포스팅이 끝나면 이제 _posts 디렉터리로 옮기면 된다.</li></ul><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] [작성 완료한 포스트 파일명]</span><br><span class="line"></span><br><span class="line">hexo publish aws aws-공부</span><br></pre></td></tr></table></figure><ul><li>드래그 앤 드랍으로 직접 posts 폴더로 옮겨줄 수도 있는데</li><li>publish 명령을 사용하게 되면 layout을 지정할 수 있다.</li><li>scaffolds 디렉터리에 만들어준 틀대로 front-matter가 바뀐다.</li><li>layout은 생략하면 기본값으로 post가 적용된다.</li></ul><h4 id="로컬에서-테스트하기"><a href="#로컬에서-테스트하기" class="headerlink" title="로컬에서 테스트하기"></a>로컬에서 테스트하기</h4><ul><li>아쉽게도 우리가 알고 있는 <code>hexo server</code>로는 draft가 노출되지 않는다.</li></ul><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server --draft</span><br></pre></td></tr></table></figure><ul><li>근데 <code>--draft</code> 옵션을 사용하면 source/_drafts 디렉터리에 있는 md파일도 렌더링되어 나타나게 된다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
-      
-      <category domain="https://chinsun9.github.io/tags/hexo/">hexo</category>
-      
-      <category domain="https://chinsun9.github.io/tags/draft/">draft</category>
-      
-      <category domain="https://chinsun9.github.io/tags/layout/">layout</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/22/hexo%EC%97%90%EC%84%9C-%EC%B4%88%EC%95%88-%EC%9E%91%EC%84%B1%EC%A4%91-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
