@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 19 Oct 2020 06:43:01 GMT</pubDate>
+    <pubDate>Mon, 19 Oct 2020 06:45:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -25,7 +25,7 @@
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">taskkill</span> /IM &quot;process name&quot; /F</span><br><span class="line"></span><br><span class="line"><span class="built_in">taskkill</span> /IM &quot;oCam.exe&quot; /F</span><br></pre></td></tr></table></figure><ul><li>나는 주로 정상 종료할 때 광고 뜨는 프로그램을 종료하거나,</li><li>한번에 여러 프로그램을 종료하려고 배치파일로 만들어 사용했다.</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">taskkill</span> /IM &quot;process name&quot; /F</span><br><span class="line"></span><br><span class="line"><span class="built_in">taskkill</span> /IM &quot;oCam.exe&quot; /F</span><br></pre></td></tr></table></figure><ul><li>나는 주로 정상 종료할 때 광고 뜨는 프로그램을 종료하거나,</li><li>한번에 여러 프로그램을 종료하려고 배치파일로 만들어 사용했다.</li><li>실행해도 안꺼지는 경우, 관리자 권한이 필요할 수도있다.</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
