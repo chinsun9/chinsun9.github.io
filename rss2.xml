@@ -59,7 +59,7 @@
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -f</span><br></pre></td></tr></table></figure><ul><li><a href="https://chinsun9.github.io/2020/10/18/%EB%B0%94%EB%A1%9C-%EC%A7%81%EC%A0%84-%EC%BB%A4%EB%B0%8B-%EC%B7%A8%EC%86%8C/">바로 직전 커밋 취소</a>를 했는데 소쉬하니가 멀쥐가 되었다…?</li></ul><h2 id="git-push-f"><a href="#git-push-f" class="headerlink" title="git push -f"></a>git push -f</h2><ul><li><code>-f</code>, <code>--force</code>옵션은 푸쉬하는데 원격 저장소를 아예 덮어쓰는 옵션이다.</li><li>따라서 이미 원격 저장소에 올렸는데 커밋을 수정한 경우에 사용할 수 있다.</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -f</span><br></pre></td></tr></table></figure><ul><li><a href="https://chinsun9.github.io/2020/10/18/%EB%B0%94%EB%A1%9C-%EC%A7%81%EC%A0%84-%EC%BB%A4%EB%B0%8B-%EC%B7%A8%EC%86%8C/">바로 직전 커밋 취소</a>를 했는데 푸쉬하니가 멀쥐가 되었다…?</li></ul><h2 id="git-push-f"><a href="#git-push-f" class="headerlink" title="git push -f"></a>git push -f</h2><ul><li><code>-f</code>, <code>--force</code>옵션은 푸쉬하는데 원격 저장소를 아예 덮어쓰는 옵션이다.</li><li>따라서 이미 원격 저장소에 올렸는데 커밋을 수정한 경우에 사용할 수 있다.</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/git/">git</category>
