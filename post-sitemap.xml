@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/09/18/github-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</loc>
+        <lastmod>2020-10-20T02:38:55.133Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/10/19/git-push-f/</loc>
         <lastmod>2020-10-20T00:14:56.325Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -666,14 +674,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/09/17/hexo-new-%ED%95%A0%EB%95%8C-%EA%B8%B0%EB%B3%B8%ED%8B%80-%EC%A7%80%EC%A0%95%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2020-09-22T08:59:33.715Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/18/github-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</loc>
-        <lastmod>2020-09-22T08:59:30.287Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
