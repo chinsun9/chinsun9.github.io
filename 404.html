@@ -4,25 +4,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap"
-      rel="stylesheet"
+    <title>친성의 블로그</title>
+    <meta description="친성의 개발 블로그" />
+    <meta property="og:title" content="친성의 블로그" />
+    <meta property="og:url" content="https://chinsun9.github.io/" />
+    <meta property="og:site_name" content="친성의 블로그" />
+    <meta property="og:description" content="친성의 개발 블로그" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta
+      property="og:image"
+      content="https://chinsun9.github.io/img/logo20200926.png"
     />
-    <script
-      src="https://kit.fontawesome.com/4b9ba14b0f.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <div class="mainbox">
-      <iframe src="/react-banner-maker/" style="width: 100%; height: 300px">
-      </iframe>
-
       <div class="msg">
-        Opps! Page Not Found
+        <h2>Opps! Page Not Found</h2>
         <p>Let's go <a href="/">home</a></p>
       </div>
+      <style>
+        .msg {
+          text-align: center;
+        }
+
+        iframe {
+          width: 100%;
+          height: 820px;
+          border: 0;
+        }
+      </style>
+
+      <iframe title="react-banner-maker" src="/react-banner-maker/"> </iframe>
     </div>
   </body>
 </html>
