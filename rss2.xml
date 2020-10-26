@@ -9,8 +9,62 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 21 Oct 2020 06:09:50 GMT</pubDate>
+    <pubDate>Mon, 26 Oct 2020 01:25:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>도커 실행 명령어</title>
+      <link>https://chinsun9.github.io/2020/10/23/%EB%8F%84%EC%BB%A4-%EC%8B%A4%ED%96%89-%EB%AA%85%EB%A0%B9%EC%96%B4/</link>
+      <guid>https://chinsun9.github.io/2020/10/23/%EB%8F%84%EC%BB%A4-%EC%8B%A4%ED%96%89-%EB%AA%85%EB%A0%B9%EC%96%B4/</guid>
+      <pubDate>Fri, 23 Oct 2020 07:56:08 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span cla</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service docker start</span><br></pre></td></tr></table></figure><h2 id="sudo-service-docker-start"><a href="#sudo-service-docker-start" class="headerlink" title="sudo service docker start"></a>sudo service docker start</h2><ul><li>ec2 리눅스에서 도커 실행할때 주로 쓴다</li><li>윈도우에서는 그냥 docker desktop을 실행시킨다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/docker/">docker</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/docker/">docker</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/23/%EB%8F%84%EC%BB%A4-%EC%8B%A4%ED%96%89-%EB%AA%85%EB%A0%B9%EC%96%B4/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>유용한 탐색기 explorer 단축키</title>
+      <link>https://chinsun9.github.io/2020/10/21/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%83%90%EC%83%89%EA%B8%B0-explorer-%EB%8B%A8%EC%B6%95%ED%82%A4/</link>
+      <guid>https://chinsun9.github.io/2020/10/21/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%83%90%EC%83%89%EA%B8%B0-explorer-%EB%8B%A8%EC%B6%95%ED%82%A4/</guid>
+      <pubDate>Wed, 21 Oct 2020 06:48:30 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/15WP2s6Zfhg&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/15WP2s6Zfhg" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>클릭 클릭해서 바꿨었는데, 이제는 단축키로.!</li><li>탐색기를 돌아다니다보면 보기옵션이 이상해서 보기힘들다.</li></ul><h2 id="Ctrl-Shift-12345678"><a href="#Ctrl-Shift-12345678" class="headerlink" title="Ctrl + Shift + [12345678]"></a>Ctrl + Shift + [12345678]</h2><ul><li>나는 주로 ctrl shift 6 인 자세히 옵션을 주로 이용한다.</li><li>1~8까지 옵션이 있다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/windows/">windows</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/windows/">windows</category>
+      
+      <category domain="https://chinsun9.github.io/tags/explorer/">explorer</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/21/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%83%90%EC%83%89%EA%B8%B0-explorer-%EB%8B%A8%EC%B6%95%ED%82%A4/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>sqldump</title>
@@ -568,64 +622,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/05/sample-img/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>System.out.println(); 빠르게 치기</title>
-      <link>https://chinsun9.github.io/2020/09/28/System-out-println-%EB%B9%A0%EB%A5%B4%EA%B2%8C-%EC%B9%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/09/28/System-out-println-%EB%B9%A0%EB%A5%B4%EA%B2%8C-%EC%B9%98%EA%B8%B0/</guid>
-      <pubDate>Mon, 28 Sep 2020 03:59:09 GMT</pubDate>
-      
-        
-        
-      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/TGtsT4QRk2Q&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/TGtsT4QRk2Q" frameborder="0" loading="lazy" allowfullscreen></iframe></div><img src="https://img.youtube.com/vi/TGtsT4QRk2Q/0.jpg" ><h2 id="sysout"><a href="#sysout" class="headerlink" title="sysout"></a>sysout</h2><ul><li><code>ctrl space</code></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/java/">java</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/java/">java</category>
-      
-      <category domain="https://chinsun9.github.io/tags/sysout/">sysout</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/28/System-out-println-%EB%B9%A0%EB%A5%B4%EA%B2%8C-%EC%B9%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>블로그 이미지 업데이트</title>
-      <link>https://chinsun9.github.io/2020/09/28/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link>
-      <guid>https://chinsun9.github.io/2020/09/28/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid>
-      <pubDate>Mon, 28 Sep 2020 00:06:59 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;favicon&quot;&gt;&lt;a href=&quot;#favicon&quot; class=&quot;headerlink&quot; title=&quot;favicon&quot;&gt;&lt;/a&gt;favicon&lt;/h2&gt;&lt;img src=&quot;/img/favicon20200926.ico&quot; &gt;
-
-&lt;h2 id=&quot;logo&quot;&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="favicon"><a href="#favicon" class="headerlink" title="favicon"></a>favicon</h2><img src="/img/favicon20200926.ico" ><h2 id="logo"><a href="#logo" class="headerlink" title="logo"></a>logo</h2><img src="/img/logo20200926.png" ><h2 id="avatar"><a href="#avatar" class="headerlink" title="avatar"></a>avatar</h2><img src="/img/avatar20200926.png" >]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/etc/">etc</category>
-      
-      <category domain="https://chinsun9.github.io/tags/img/">img</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/09/28/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/#disqus_thread</comments>
       
     </item>
     
