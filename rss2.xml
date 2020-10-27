@@ -109,6 +109,38 @@
     </item>
     
     <item>
+      <title>denied: requested access to the resource is denied</title>
+      <link>https://chinsun9.github.io/2020/10/22/denied-requested-access-to-the-resource-is-denied/</link>
+      <guid>https://chinsun9.github.io/2020/10/22/denied-requested-access-to-the-resource-is-denied/</guid>
+      <pubDate>Thu, 22 Oct 2020 00:22:30 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/denied-requested-access-to-the-resource-is-denied/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;denied: requested access to</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/denied-requested-access-to-the-resource-is-denied/preview.jpg" alt=" "></p><blockquote><p>denied: requested access to the resource is denied</p></blockquote><ul><li>docker hub에 내가 연습했던 이미지를 업로드하려고 했는데 실패했다.</li></ul><h2 id="이미지명-변경"><a href="#이미지명-변경" class="headerlink" title="이미지명 변경"></a>이미지명 변경</h2><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker image tag &#123;이미지&#125; &#123;내 유저명&#125;/&#123;이미지&#125;</span><br><span class="line"></span><br><span class="line">docker image tag my-react:<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span> chinsung/my-react:<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span></span><br></pre></td></tr></table></figure><ul><li>이런식으로 <code>&#123;내 유저명&#125;/</code>을 붙여주면 된다.</li></ul><p><img src="/images/denied-requested-access-to-the-resource-is-denied/1.jpg" alt=" "></p><ul><li>음 성공!</li><li>참고한 곳 ; <a href="https://nirsa.tistory.com/53">[Docker CE] 도커 이미지 업로드 권한 에러 (denied: requested access to the resource is denied)</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/docker/">docker</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/push/">push</category>
+      
+      <category domain="https://chinsun9.github.io/tags/docker/">docker</category>
+      
+      <category domain="https://chinsun9.github.io/tags/docker-hub/">docker hub</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/22/denied-requested-access-to-the-resource-is-denied/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>유용한 탐색기 explorer 단축키</title>
       <link>https://chinsun9.github.io/2020/10/21/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%83%90%EC%83%89%EA%B8%B0-explorer-%EB%8B%A8%EC%B6%95%ED%82%A4/</link>
       <guid>https://chinsun9.github.io/2020/10/21/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%83%90%EC%83%89%EA%B8%B0-explorer-%EB%8B%A8%EC%B6%95%ED%82%A4/</guid>
@@ -574,36 +606,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/08/a-tag-no-color/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>현재 디렉터리에서 cmd열기</title>
-      <link>https://chinsun9.github.io/2020/10/07/%ED%98%84%EC%9E%AC-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC%EC%97%90%EC%84%9C-cmd%EC%97%B4%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/10/07/%ED%98%84%EC%9E%AC-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC%EC%97%90%EC%84%9C-cmd%EC%97%B4%EA%B8%B0/</guid>
-      <pubDate>Wed, 07 Oct 2020 02:00:19 GMT</pubDate>
-      
-        
-        
-      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/QUeXaqr0fsU&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/QUeXaqr0fsU" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>꿀꿀</li></ul><h2 id="탐색기-주소에-cmd"><a href="#탐색기-주소에-cmd" class="headerlink" title="탐색기 주소에 cmd"></a>탐색기 주소에 cmd</h2><ul><li>탐색기를 돌아다니다가 해당 디렉터리에서 터미널을 열고 싶을 때</li><li>탐색기 주소창에다 <code>cmd</code></li></ul><h2 id="반대의-경우"><a href="#반대의-경우" class="headerlink" title="반대의 경우"></a>반대의 경우</h2><ul><li>터미널에서 작업하다가 해당 디렉터리를 탐색기에서 보고 싶을 때 <code>explorer .</code></li><li><code>cmd</code>와 다르게 <code>.</code>을 써줘야한다.</li></ul><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">explorer .</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/windows/">windows</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/cmd/">cmd</category>
-      
-      <category domain="https://chinsun9.github.io/tags/windows/">windows</category>
-      
-      <category domain="https://chinsun9.github.io/tags/explorer/">explorer</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/07/%ED%98%84%EC%9E%AC-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC%EC%97%90%EC%84%9C-cmd%EC%97%B4%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
