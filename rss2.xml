@@ -367,6 +367,38 @@
     </item>
     
     <item>
+      <title>rds sqldump 하기</title>
+      <link>https://chinsun9.github.io/2020/10/21/rds-sqldump-%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/10/21/rds-sqldump-%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Wed, 21 Oct 2020 06:07:54 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;cmd&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;sp</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mysqldump -h database-<span class="number">1</span>.aaaaaaaaaaaa.ap-northeast-<span class="number">2</span>.rds.amazonaws.com ^</span><br><span class="line">    -u root ^</span><br><span class="line">    -p12341234  ^</span><br><span class="line">    --port=<span class="number">3306</span> ^</span><br><span class="line">    --single-transaction ^</span><br><span class="line">    --routines ^</span><br><span class="line">    --triggers ^</span><br><span class="line">    --databases TestDB &gt; aaaa.sql</span><br></pre></td></tr></table></figure><ul><li>윈도우 cmd에서 aws rds mysqldump를 해보았다.</li></ul><h2 id="윈도우-따라하기"><a href="#윈도우-따라하기" class="headerlink" title="윈도우 따라하기"></a>윈도우 따라하기</h2><ul><li>cmd를 관리자 권한으로 실행한다</li></ul><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> C:\Program Files\MariaDB <span class="number">10</span>.<span class="number">5</span>\bin</span><br></pre></td></tr></table></figure><ul><li><code>mysqldump.exe</code>가 있는 경로까지 이동한다. (나는 로컬에 마리아 디비가 설치되어 있어서..)</li></ul><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">mysqldump -h &#123;rds 엔드포인트&#125; ^</span><br><span class="line">    -u root ^</span><br><span class="line">    -p&#123;rds 비밀번호&#125;  ^</span><br><span class="line">    --port=<span class="number">3306</span> ^</span><br><span class="line">    --single-transaction ^</span><br><span class="line">    --routines ^</span><br><span class="line">    --triggers ^</span><br><span class="line">    --databases &#123;db명&#125; &gt; &#123;백업파일위치&#125;</span><br><span class="line"></span><br><span class="line">mysqldump -h database-<span class="number">1</span>.aaaaaaaaaaaa.ap-northeast-<span class="number">2</span>.rds.amazonaws.com ^</span><br><span class="line">    -u root ^</span><br><span class="line">    -p12341234  ^</span><br><span class="line">    --port=<span class="number">3306</span> ^</span><br><span class="line">    --single-transaction ^</span><br><span class="line">    --routines ^</span><br><span class="line">    --triggers ^</span><br><span class="line">    --databases TestDB &gt; aaaa.sql</span><br></pre></td></tr></table></figure><ul><li>자신에 맞게 설정하고 명령을 붙여넣는다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/sqldump/">sqldump</category>
+      
+      <category domain="https://chinsun9.github.io/tags/rds/">rds</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/21/rds-sqldump-%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>sqldump</title>
       <link>https://chinsun9.github.io/2020/10/21/sqldump/</link>
       <guid>https://chinsun9.github.io/2020/10/21/sqldump/</guid>
@@ -599,34 +631,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/16/js%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode 항상 관리자 권한 실행하기</title>
-      <link>https://chinsun9.github.io/2020/10/15/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/10/15/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Thu, 15 Oct 2020 07:01:50 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B020201015/p</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B020201015/preview.jpg" alt=" "></p><ul><li>관리자 권한이 필요한 상황이 있는데.. vscode를 항상 관리자 권한으로 실행해보자.</li></ul><h2 id="따라하기"><a href="#따라하기" class="headerlink" title="따라하기"></a>따라하기</h2><p><img src="/images/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B020201015/2.jpg" alt=" "></p><ul><li>윈도우키(검색창) &gt; <code>code</code> 검색 &gt; 우클릭 &gt; 파일 위치 열기</li></ul><p><img src="/images/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B020201015/3.jpg" alt=" "></p><ul><li><code>Visual Studio Code</code> 바로가기를 우클릭 &gt; 속성</li></ul><p><img src="/images/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B020201015/4.jpg" alt=" "></p><ul><li>호환성탭 &gt; 모든 사용자에 대한 설정 변경 &gt; 관리자 권한으로 이 프로그램 실행 체크 &gt; 확인 &gt; 확인</li><li>이렇게하면 항상 관리자 권한 상태로 vscode가 실행된다.</li></ul><h2 id="사용자-게정-컨트롤-창-없애기"><a href="#사용자-게정-컨트롤-창-없애기" class="headerlink" title="사용자 게정 컨트롤 창 없애기"></a>사용자 게정 컨트롤 창 없애기</h2><p><img src="/images/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B020201015/1.jpg" alt=" "></p><ul><li>관리자 권한 실행으로 실행할때 나오는 <code>사용자 계정 컨트롤 : 이 앱이 디바이스를 변경할 수 있도록 허용하시겠어요?</code>까지 안나오게 해보자.</li><li>윈도우키(검색창) &gt; 사용자 게정 컨트롤 설정 변경 &gt; 알리지 않음 으로 설정</li></ul><h2 id="팁"><a href="#팁" class="headerlink" title="팁"></a>팁</h2><ul><li>vscode는 관리자권한이 아닌창이 켜져있을 때, 새로이 관리자권한으로 새 창(New Window)을 실행시킬 수 없다.</li><li>관리자권한으로 실행중인 vscode 창이 있을 때, 새로이 관리자권한이 아닌 새 창(New Window)을 실행시킬 수 없다.</li><li>즉, 처음에 관리자권한으로 실행시키면, 나중에 새로켜는 창은 모두 관리자 권한이여야 한다.</li><li>반대로 처음에 관리자권한이 아닌 기본권한으로 실행시키면, 나중에 새로켜는 창은 모두 관리자 권한이 아니다. (주의! : vscode 우클릭 관리자 권한 실행을 하더라도 기본권한으로 실행됨.)</li><li>그러므로 vscode 창 상단에 [Administrator] 표시가있는지 확인하자!</li><li>관리자권한으로 접근가능한 파일이 계속 접근이 안되서 뭐지 했는데, 이 문제였다..</li><li>결국 켜져있는 모든 vscode창을 종료하고 새로이 관리자권한으로 실행시키니 관리자권한으로 켜졌다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/%EA%B4%80%EB%A6%AC%EC%9E%90%EA%B6%8C%ED%95%9C/">관리자권한</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/15/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
