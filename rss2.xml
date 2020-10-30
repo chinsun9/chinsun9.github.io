@@ -9,8 +9,46 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 30 Oct 2020 07:14:39 GMT</pubDate>
+    <pubDate>Fri, 30 Oct 2020 07:53:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>깃허브 자기 닉네임 저장소 special repository</title>
+      <link>https://chinsun9.github.io/2020/10/30/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%9E%90%EA%B8%B0-%EB%8B%89%EB%84%A4%EC%9E%84-%EC%A0%80%EC%9E%A5%EC%86%8C/</link>
+      <guid>https://chinsun9.github.io/2020/10/30/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%9E%90%EA%B8%B0-%EB%8B%89%EB%84%A4%EC%9E%84-%EC%A0%80%EC%9E%A5%EC%86%8C/</guid>
+      <pubDate>Fri, 30 Oct 2020 07:38:10 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%9E%90%EA%B8%B0-%EB%8B%89%EB%84%A4%EC%9E%84-%EC%A0%80%EC%9E%A5%EC%86%8C20201030/preview.</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%9E%90%EA%B8%B0-%EB%8B%89%EB%84%A4%EC%9E%84-%EC%A0%80%EC%9E%A5%EC%86%8C20201030/preview.jpg" alt=" "></p><ul><li><a href="https://github.com/chinsun9">https://github.com/chinsun9</a> 자기 깃허브 메인화면에 가장 처음 표시되는 readme파일의 저장소다!</li><li>내가 어떤 개발자인지 보여주는 용도이다.</li><li>GitHub Readme Stats를 통해 자기 깃허브 활동을 시각적으로 보여주면 더 좋다!</li></ul><h2 id="special-repository"><a href="#special-repository" class="headerlink" title="special repository"></a>special repository</h2><ul><li>github에서 저장소명을 자신의 닉네임이랑 똑같이 하면 special repository 라는 것이 만들어진다.</li><li>이 special repository는 내 깃허브 메인 화면에서 가장 처음으로 보여지는데,</li><li>여기서 내 프로필을 적어서 나를 자랑?할 수 있다.</li></ul><h2 id="GitHub-Readme-Stats"><a href="#GitHub-Readme-Stats" class="headerlink" title="GitHub Readme Stats"></a><a href="https://github.com/anuraghazra/github-readme-stats">GitHub Readme Stats</a></h2><ul><li><a href="https://github-readme-stats.vercel.app/api?username=%7B%EB%82%B4">https://github-readme-stats.vercel.app/api?username={내</a> 깃허브닉네임}</li><li><a href="https://github-readme-stats.vercel.app/api/top-langs/?username=%7B%EB%82%B4">https://github-readme-stats.vercel.app/api/top-langs/?username={내</a> 깃허브닉네임}</li><li>아무 설치없이 간단하게 내 깃허브 활동 통계를 볼 수 있다..!</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/readme/">readme</category>
+      
+      <category domain="https://chinsun9.github.io/tags/github-readme-stats/">github readme stats</category>
+      
+      <category domain="https://chinsun9.github.io/tags/special-repository/">special repository</category>
+      
+      <category domain="https://chinsun9.github.io/tags/github-profile/">github profile</category>
+      
+      <category domain="https://chinsun9.github.io/tags/profile/">profile</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/30/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%9E%90%EA%B8%B0-%EB%8B%89%EB%84%A4%EC%9E%84-%EC%A0%80%EC%9E%A5%EC%86%8C/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>ec2 web app https 적용하기</title>
@@ -589,37 +627,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/15/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>chrome 강력 새로고침</title>
-      <link>https://chinsun9.github.io/2020/10/14/%EA%B0%95%EB%A0%A5-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8/</link>
-      <guid>https://chinsun9.github.io/2020/10/14/%EA%B0%95%EB%A0%A5-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8/</guid>
-      <pubDate>Wed, 14 Oct 2020 08:52:30 GMT</pubDate>
-      
-        
-        
-      <description>&lt;img src=&quot;/images/강력-새로고침20201014/preview.jpg&quot; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;웹을 수정할때 가끔 브라우저 캐시때문에 원하는 모양이 안나오는 경우가 있다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;강력-새로고침하는-법&quot;&gt;&lt;a hre</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<img src="/images/강력-새로고침20201014/preview.jpg" ><ul><li>웹을 수정할때 가끔 브라우저 캐시때문에 원하는 모양이 안나오는 경우가 있다.</li></ul><h2 id="강력-새로고침하는-법"><a href="#강력-새로고침하는-법" class="headerlink" title="강력 새로고침하는 법"></a>강력 새로고침하는 법</h2><ul><li>F12로 크롬 개발자 도구창을 킨다.</li><li>브라우저 상단 새로고침 아이콘에 우클릭을하면 3개의 새로고침 메뉴가 나온다. (개발자 도구창이 안켜져있으면 안나옴)</li><li>그밖에도 단축키를 이용하는 방법이 있다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/chrome/">chrome</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/14/%EA%B0%95%EB%A0%A5-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8/#disqus_thread</comments>
       
     </item>
     
