@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 28 Oct 2020 05:48:54 GMT</pubDate>
+    <pubDate>Fri, 30 Oct 2020 00:32:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>hexo db.json 초기화</title>
+      <link>https://chinsun9.github.io/2020/10/30/hexo-db-json-%EC%B4%88%EA%B8%B0%ED%99%94/</link>
+      <guid>https://chinsun9.github.io/2020/10/30/hexo-db-json-%EC%B4%88%EA%B8%B0%ED%99%94/</guid>
+      <pubDate>Fri, 30 Oct 2020 00:29:49 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;가끔 삭제한 페이지가 검색되거나 하는데,&lt;/li&gt;
+&lt;li&gt;db.json을 삭제하면 알아서 갱신해준다.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>가끔 삭제한 페이지가 검색되거나 하는데,</li><li>db.json을 삭제하면 알아서 갱신해준다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://chinsun9.github.io/tags/db-json/">db.json</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/30/hexo-db-json-%EC%B4%88%EA%B8%B0%ED%99%94/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>fetch api 연습</title>
@@ -576,35 +608,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/14/copy-con-name-txt/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>마크다운에서 이미지 표시하는 법</title>
-      <link>https://chinsun9.github.io/2020/10/13/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/</link>
-      <guid>https://chinsun9.github.io/2020/10/13/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/</guid>
-      <pubDate>Tue, 13 Oct 2020 07:19:01 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/img/avatar20200926.png&quot;&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight md&quot;&gt;&lt;figcaption&gt;&lt;span&gt;md&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/img/avatar20200926.png"></p><figure class="highlight md"><figcaption><span>md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![](/img/avatar20200926.png)</span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;&quot;</span> &gt;</span></span></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- 더이상 이거 안써도된다. --&gt;</span></span></span><br></pre></td></tr></table></figure><ul><li><code>![]()</code> 이게 훨씬 간편한 것 같다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/markdown/">markdown</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/md/">md</category>
-      
-      <category domain="https://chinsun9.github.io/tags/markdown/">markdown</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/13/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/#disqus_thread</comments>
       
     </item>
     
