@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 30 Oct 2020 07:53:27 GMT</pubDate>
+    <pubDate>Fri, 30 Oct 2020 08:25:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -25,7 +25,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%9E%90%EA%B8%B0-%EB%8B%89%EB%84%A4%EC%9E%84-%EC%A0%80%EC%9E%A5%EC%86%8C20201030/preview.jpg" alt=" "></p><ul><li><a href="https://github.com/chinsun9">https://github.com/chinsun9</a> 자기 깃허브 메인화면에 가장 처음 표시되는 readme파일의 저장소다!</li><li>내가 어떤 개발자인지 보여주는 용도이다.</li><li>GitHub Readme Stats를 통해 자기 깃허브 활동을 시각적으로 보여주면 더 좋다!</li></ul><h2 id="special-repository"><a href="#special-repository" class="headerlink" title="special repository"></a>special repository</h2><ul><li>github에서 저장소명을 자신의 닉네임이랑 똑같이 하면 special repository 라는 것이 만들어진다.</li><li>이 special repository는 내 깃허브 메인 화면에서 가장 처음으로 보여지는데,</li><li>여기서 내 프로필을 적어서 나를 자랑?할 수 있다.</li></ul><h2 id="GitHub-Readme-Stats"><a href="#GitHub-Readme-Stats" class="headerlink" title="GitHub Readme Stats"></a><a href="https://github.com/anuraghazra/github-readme-stats">GitHub Readme Stats</a></h2><ul><li><a href="https://github-readme-stats.vercel.app/api?username=%7B%EB%82%B4">https://github-readme-stats.vercel.app/api?username={내</a> 깃허브닉네임}</li><li><a href="https://github-readme-stats.vercel.app/api/top-langs/?username=%7B%EB%82%B4">https://github-readme-stats.vercel.app/api/top-langs/?username={내</a> 깃허브닉네임}</li><li>아무 설치없이 간단하게 내 깃허브 활동 통계를 볼 수 있다..!</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="/images/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%9E%90%EA%B8%B0-%EB%8B%89%EB%84%A4%EC%9E%84-%EC%A0%80%EC%9E%A5%EC%86%8C20201030/preview.jpg" alt=" "></p><ul><li><a href="https://github.com/chinsun9">https://github.com/chinsun9</a> 자기 깃허브 메인화면에 가장 처음 표시되는 readme파일의 저장소다!</li><li>내가 어떤 개발자인지 보여주는 용도이다.</li><li>GitHub Readme Stats를 통해 자기 깃허브 활동을 시각적으로 보여주면 더 좋다!</li></ul><h2 id="special-repository"><a href="#special-repository" class="headerlink" title="special repository"></a>special repository</h2><ul><li>github에서 저장소명을 자신의 닉네임이랑 똑같이 하면 special repository 라는 것이 만들어진다.</li><li>이 special repository는 내 깃허브 메인 화면에서 가장 처음으로 보여지는데,</li><li>여기서 내 프로필을 적어서 나를 자랑?할 수 있다.</li></ul><h2 id="GitHub-Readme-Stats"><a href="#GitHub-Readme-Stats" class="headerlink" title="GitHub Readme Stats"></a><a href="https://github.com/anuraghazra/github-readme-stats">GitHub Readme Stats</a></h2><ul><li><a href="https://github-readme-stats.vercel.app/api?username=%7B%EB%82%B4">https://github-readme-stats.vercel.app/api?username={내</a> 깃허브닉네임}</li><li><a href="https://github-readme-stats.vercel.app/api/top-langs/?username=%7B%EB%82%B4">https://github-readme-stats.vercel.app/api/top-langs/?username={내</a> 깃허브닉네임}</li><li>아무 설치없이 간단하게 내 깃허브 활동 통계를 볼 수 있다..!</li></ul><h2 id="chinsung-chinsung"><a href="#chinsung-chinsung" class="headerlink" title="chinsung/chinsung"></a>chinsung/chinsung</h2><ul><li><a href="https://github.com/chinsun9/chinsun9">https://github.com/chinsun9/chinsun9</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/git/">git</category>
