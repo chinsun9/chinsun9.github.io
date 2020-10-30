@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/10/16/%EB%8F%84%EC%BB%A4-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%B0%A8%EC%A7%80/</loc>
+        <lastmod>2020-10-30T08:06:38.097Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/10/21/rds-sqldump-%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2020-10-30T07:55:19.508Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -26,14 +34,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/10/30/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2020-10-30T07:14:39.913Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/10/16/%EB%8F%84%EC%BB%A4-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%B0%A8%EC%A7%80/</loc>
-        <lastmod>2020-10-30T07:08:46.223Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
