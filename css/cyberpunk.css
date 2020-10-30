@@ -10794,6 +10794,11 @@ article.article .content {
   word-wrap: break-word;
   font-size: 1.1rem;
 }
+article.article .content img {
+  margin-top: 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}
 article.article .content h1 {
   font-size: 1.75em;
 }
