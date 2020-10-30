@@ -492,7 +492,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/%EB%8F%84%EC%BB%A4-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%B0%A8%EC%A7%8020201016/preview.jpg" alt=" "></p><ul><li>윽… 도커를 쓰다보면 메모리가 부족해서 마우스가 끊기고 막 그런다…</li><li>윈도우에 8GB램을 쓰고잇다..</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://meaownworld.tistory.com/160">WSL2 기반 docker 사용시 vmmem 프로세스 메모리 소모량 줄이기</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="/images/%EB%8F%84%EC%BB%A4-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%B0%A8%EC%A7%8020201016/preview.jpg" alt=" "></p><ul><li>윽… 도커를 쓰다보면 메모리가 부족해서 마우스가 끊기고 막 그런다…</li><li>참고로 나는 윈도우에 8GB램을 쓰고잇다..</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://meaownworld.tistory.com/160">WSL2 기반 docker 사용시 vmmem 프로세스 메모리 소모량 줄이기</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
