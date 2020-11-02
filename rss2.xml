@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 02 Nov 2020 02:19:39 GMT</pubDate>
+    <pubDate>Mon, 02 Nov 2020 02:50:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode 라인 이동 단축키</title>
+      <link>https://chinsun9.github.io/2020/11/02/vscode-%EB%9D%BC%EC%9D%B8-%EC%9D%B4%EB%8F%99-%EB%8B%A8%EC%B6%95%ED%82%A4/</link>
+      <guid>https://chinsun9.github.io/2020/11/02/vscode-%EB%9D%BC%EC%9D%B8-%EC%9D%B4%EB%8F%99-%EB%8B%A8%EC%B6%95%ED%82%A4/</guid>
+      <pubDate>Mon, 02 Nov 2020 02:47:12 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;Ctrl-G&quot;&gt;&lt;a href=&quot;#Ctrl-G&quot; class=&quot;headerlink&quot; title=&quot;Ctrl + G&quot;&gt;&lt;/a&gt;Ctrl + G&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;오류 라인을 갈 떄,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + G&lt;/code&gt; 로</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="Ctrl-G"><a href="#Ctrl-G" class="headerlink" title="Ctrl + G"></a>Ctrl + G</h2><ul><li>오류 라인을 갈 떄,</li><li><code>Ctrl + G</code> 로 마우스 손안대고 이동할 수 있다.</li></ul><p>##</p><ul><li><code>Ctrl + left|right arrow key</code> 로 단어단위로 커서를 이동시킬 수 있다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%EB%8B%A8%EC%B6%95%ED%82%A4/">단축키</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%ED%84%B0%EB%AF%B8%EB%84%90/">터미널</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/02/vscode-%EB%9D%BC%EC%9D%B8-%EC%9D%B4%EB%8F%99-%EB%8B%A8%EC%B6%95%ED%82%A4/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>shell script 경로에서 실행</title>
@@ -608,35 +640,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/16/%EB%8F%84%EC%BB%A4-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%B0%A8%EC%A7%80/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>정보처리기사 카테고리 생성</title>
-      <link>https://chinsun9.github.io/2020/10/16/%EC%A0%95%EC%B2%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/10/16/%EC%A0%95%EC%B2%98%EA%B8%B0/</guid>
-      <pubDate>Fri, 16 Oct 2020 00:25:59 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;정보처리기사 공부한 내용 올리기&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>정보처리기사 공부한 내용 올리기</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/">정보처리기사</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/">정보처리기사</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/16/%EC%A0%95%EC%B2%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
