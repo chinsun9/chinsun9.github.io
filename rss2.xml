@@ -9,8 +9,42 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 30 Oct 2020 08:25:27 GMT</pubDate>
+    <pubDate>Mon, 02 Nov 2020 02:19:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>shell script 경로에서 실행</title>
+      <link>https://chinsun9.github.io/2020/11/02/shell-script-%EA%B2%BD%EB%A1%9C%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89/</link>
+      <guid>https://chinsun9.github.io/2020/11/02/shell-script-%EA%B2%BD%EB%A1%9C%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89/</guid>
+      <pubDate>Mon, 02 Nov 2020 02:04:43 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;bash&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight bash"><figcaption><span>bash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dirpath=`dirname <span class="variable">$0</span>`</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$dirpath</span></span><br><span class="line"><span class="built_in">cd</span> <span class="variable">$dirpath</span></span><br></pre></td></tr></table></figure><ul><li>셸 스크립트 파일 경로로부터 명령을 실행할 수 있다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/linux/">linux</category>
+      
+      <category domain="https://chinsun9.github.io/tags/shell-script/">shell script</category>
+      
+      <category domain="https://chinsun9.github.io/tags/bash/">bash</category>
+      
+      <category domain="https://chinsun9.github.io/tags/dirpath/">dirpath</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/02/shell-script-%EA%B2%BD%EB%A1%9C%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>깃허브 자기 닉네임 저장소 special repository</title>
@@ -603,34 +637,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/16/%EC%A0%95%EC%B2%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>nodejs 파일 목록 출력하기</title>
-      <link>https://chinsun9.github.io/2020/10/16/js%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D/</link>
-      <guid>https://chinsun9.github.io/2020/10/16/js%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D/</guid>
-      <pubDate>Fri, 16 Oct 2020 00:25:46 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;printFileList.js&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>printFileList.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> dirPath = <span class="string">&#x27;.&#x27;</span>;</span><br><span class="line"></span><br><span class="line">fs.readdir(dirPath, <span class="function">(<span class="params">error, filelist</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(filelist);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>은근히 자주 쓴다.</li><li><code>dirPath</code> 변수에 원하는 디렉터리의 경로를 적어주어 확인할 수 있다.</li></ul><h2 id="내가-활용한-곳"><a href="#내가-활용한-곳" class="headerlink" title="내가 활용한 곳"></a>내가 활용한 곳</h2><ul><li><ol><li><code>.dockerignore</code> 파일을 추가했는데 동작할까? 궁금해서</li></ol></li><li><ol start="2"><li>람다 실행환경 디렉터리 구조 파악</li></ol></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/fs/">fs</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/16/js%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D/#disqus_thread</comments>
       
     </item>
     
