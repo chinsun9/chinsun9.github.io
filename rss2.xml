@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 02 Nov 2020 04:17:06 GMT</pubDate>
+    <pubDate>Mon, 02 Nov 2020 07:03:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>awesome button css</title>
+      <link>https://chinsun9.github.io/2020/11/02/awesome-button-css/</link>
+      <guid>https://chinsun9.github.io/2020/11/02/awesome-button-css/</guid>
+      <pubDate>Mon, 02 Nov 2020 06:58:52 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/4DkMKyWJlvk&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/4DkMKyWJlvk" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li><a href="https://www.youtube.com/watch?v=4DkMKyWJlvk">Button With Awesome Hover Effects using Html CSS &amp; jQuery | mouseenter and mouseout events</a></li><li>위 영상을 보고 따라 만들었다.</li><li>영상에서는 제이쿼리를 사용해서 구현하지만, 나는 제이쿼리없이 구현해보았다.</li></ul><h2 id="결과"><a href="#결과" class="headerlink" title="결과"></a>결과</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/xGTjTFfy4N4" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>참고 ; <a href="https://github.com/chinsun9/awesome-button-css">소스코드</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/02/awesome-button-css/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>github api로 특정 저장소의 커밋내역 불러오기</title>
@@ -620,40 +648,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/20/%EB%82%B4%EA%B0%80-%EC%8B%AB%EC%96%B4%ED%95%98%EB%8A%94-%EA%B2%83/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>cmd로 프로세스 죽이기</title>
-      <link>https://chinsun9.github.io/2020/10/19/cmd-kill-process/</link>
-      <guid>https://chinsun9.github.io/2020/10/19/cmd-kill-process/</guid>
-      <pubDate>Mon, 19 Oct 2020 06:31:58 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;cmd&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;sp</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">taskkill</span> /IM &quot;process name&quot; /F</span><br><span class="line"></span><br><span class="line"><span class="built_in">taskkill</span> /IM &quot;oCam.exe&quot; /F</span><br></pre></td></tr></table></figure><ul><li>나는 주로 정상 종료할 때 광고 뜨는 프로그램을 종료하거나,</li><li>한번에 여러 프로그램을 종료하려고 배치파일로 만들어 사용했다.</li><li>실행해도 안꺼지는 경우, 관리자 권한이 필요할 수도있다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/cmd/">cmd</category>
-      
-      <category domain="https://chinsun9.github.io/tags/taskkill/">taskkill</category>
-      
-      <category domain="https://chinsun9.github.io/tags/process/">process</category>
-      
-      <category domain="https://chinsun9.github.io/tags/bat/">bat</category>
-      
-      <category domain="https://chinsun9.github.io/tags/batch-file/">batch file</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/19/cmd-kill-process/#disqus_thread</comments>
       
     </item>
     
