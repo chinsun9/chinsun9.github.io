@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 02 Nov 2020 07:03:16 GMT</pubDate>
+    <pubDate>Mon, 02 Nov 2020 07:49:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>nodemon 변화감지 디렉터리 지정</title>
+      <link>https://chinsun9.github.io/2020/11/02/nodemon-%EB%B3%80%ED%99%94%EA%B0%90%EC%A7%80-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC-%EC%A7%80%EC%A0%95/</link>
+      <guid>https://chinsun9.github.io/2020/11/02/nodemon-%EB%B3%80%ED%99%94%EA%B0%90%EC%A7%80-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC-%EC%A7%80%EC%A0%95/</guid>
+      <pubDate>Mon, 02 Nov 2020 07:33:37 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;cmd&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/p</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nodemon --watch app app/server.js</span><br></pre></td></tr></table></figure><ul><li>nodemon을 사용해서 코드수정마다 서버를 자동으로 재시작하는데,</li><li>view와 관련한 코드를 수정할 때 서버가 재시작되는 것은 불필요하고, 세션이 날라가는 등 오히려 불편할 수 있다.</li><li>nodemon이 모든 프로젝트 디렉터리가 아닌 특정 디렉터리의 변화를 감시하고 재시작되는 것을 알아보자</li></ul><h2 id="명령어"><a href="#명령어" class="headerlink" title="명령어"></a>명령어</h2><figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nodemon ./bin/www</span><br></pre></td></tr></table></figure><ul><li>보통 이렇게 아무것도 없이 사용하면, 거의 모든 변화마다 서버가 재시작된다.</li></ul><figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nodemon --watch routes ./bin/www</span><br></pre></td></tr></table></figure><ul><li><code>--watch routes</code> watch옵션을 넣어줌으로써 해당 디렉터리에서 변화가 있으면 재시작하도록 할 수 있다.</li></ul><figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nodemon --watch routes --watch libs ./bin/www</span><br></pre></td></tr></table></figure><ul><li>이런식으로 나열할 수 있다.</li><li>기본적으로 디렉터리명을 적어야하며, 하위디렉터리는 자동으로 포함된다.</li></ul><ul><li>그런데 여러개의 디렉터리를 나열을 해야하면은</li><li>반대로 무시할 디렉터리를 설정하는게 빠를 수 있다.</li></ul><h2 id="config-file로-설정"><a href="#config-file로-설정" class="headerlink" title="config file로 설정"></a>config file로 설정</h2><figure class="highlight json"><figcaption><span>nodemon.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;restartable&quot;</span>: <span class="string">&quot;rs&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;ignore&quot;</span>: [<span class="string">&quot;.git&quot;</span>, <span class="string">&quot;node_modules/**/node_modules&quot;</span>],</span><br><span class="line">  <span class="attr">&quot;verbose&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">&quot;execMap&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;js&quot;</span>: <span class="string">&quot;node --harmony&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;events&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;restart&quot;</span>: <span class="string">&quot;osascript -e &#x27;display notification \&quot;App restarted due to:\n&#x27;$FILENAME&#x27;\&quot; with title \&quot;nodemon\&quot;&#x27;&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;watch&quot;</span>: [<span class="string">&quot;test/fixtures/&quot;</span>, <span class="string">&quot;test/samples/&quot;</span>],</span><br><span class="line">  <span class="attr">&quot;env&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;NODE_ENV&quot;</span>: <span class="string">&quot;development&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;ext&quot;</span>: <span class="string">&quot;js,json&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>nodemon.json</code>이름으로 파일을 하나 만들고 커스텀할 수 있다.</li><li>무시할 디렉터리를 <code>ignore</code> 배열에 나열하면 된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/remy/nodemon#monitoring-multiple-directories">https://github.com/remy/nodemon#monitoring-multiple-directories</a></li><li><a href="https://github.com/remy/nodemon/blob/master/doc/sample-nodemon.md">https://github.com/remy/nodemon/blob/master/doc/sample-nodemon.md</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/js/">js</category>
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/nodemon/">nodemon</category>
+      
+      <category domain="https://chinsun9.github.io/tags/watch/">watch</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/02/nodemon-%EB%B3%80%ED%99%94%EA%B0%90%EC%A7%80-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC-%EC%A7%80%EC%A0%95/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>awesome button css</title>
@@ -620,34 +652,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/21/sqldump/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>내가 싫어하는 것</title>
-      <link>https://chinsun9.github.io/2020/10/20/%EB%82%B4%EA%B0%80-%EC%8B%AB%EC%96%B4%ED%95%98%EB%8A%94-%EA%B2%83/</link>
-      <guid>https://chinsun9.github.io/2020/10/20/%EB%82%B4%EA%B0%80-%EC%8B%AB%EC%96%B4%ED%95%98%EB%8A%94-%EA%B2%83/</guid>
-      <pubDate>Tue, 20 Oct 2020 04:23:52 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;싫어하는-것&quot;&gt;&lt;a href=&quot;#싫어하는-것&quot; class=&quot;headerlink&quot; title=&quot;싫어하는 것&quot;&gt;&lt;/a&gt;싫어하는 것&lt;/h2&gt;&lt;p&gt;-&amp;gt; 선호하는 것&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;글자 읽기 : 3줄이상 빼곡히 붙어있는 글자&lt;ul&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="싫어하는-것"><a href="#싫어하는-것" class="headerlink" title="싫어하는 것"></a>싫어하는 것</h2><p>-&gt; 선호하는 것</p><ul><li>글자 읽기 : 3줄이상 빼곡히 붙어있는 글자<ul><li>-&gt; 이미지, 동영상, 오디오</li></ul></li><li>흥미 없는 것 자료조사 또는 공부<ul><li>-&gt; 관심있는 것 조사</li></ul></li><li>이론<ul><li>-&gt; 실기</li></ul></li><li>~하기위한 방법/절차<ul><li>-&gt; ~을 했을때 결과 예제</li></ul></li></ul><h2 id="좋아하는-것"><a href="#좋아하는-것" class="headerlink" title="좋아하는 것"></a>좋아하는 것</h2><ul><li>단순한 것</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/%EC%83%9D%EA%B0%81/">생각</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/%EC%83%9D%EA%B0%81/">생각</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/20/%EB%82%B4%EA%B0%80-%EC%8B%AB%EC%96%B4%ED%95%98%EB%8A%94-%EA%B2%83/#disqus_thread</comments>
       
     </item>
     
