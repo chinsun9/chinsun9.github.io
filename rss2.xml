@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 03 Nov 2020 00:47:53 GMT</pubDate>
+    <pubDate>Tue, 03 Nov 2020 04:35:56 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>li point remove</title>
+      <link>https://chinsun9.github.io/2020/11/03/li-point-remove/</link>
+      <guid>https://chinsun9.github.io/2020/11/03/li-point-remove/</guid>
+      <pubDate>Tue, 03 Nov 2020 04:29:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight css&quot;&gt;&lt;figcaption&gt;&lt;span&gt;default.css&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight css"><figcaption><span>default.css</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">li</span> &#123;</span><br><span class="line">  <span class="attribute">list-style-type</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/images/li-point-remove20201103/preview.jpg" alt=" "></p><ul><li>li의 앞에 붙는 . 을 없앨 수 있다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      <category domain="https://chinsun9.github.io/tags/li-tag/">li tag</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/03/li-point-remove/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>hexo tag plugin 유튜브 재생목록 넣는법</title>
@@ -619,34 +649,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/21/%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%83%90%EC%83%89%EA%B8%B0-explorer-%EB%8B%A8%EC%B6%95%ED%82%A4/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>cmd 폴더 삭제 rmdir</title>
-      <link>https://chinsun9.github.io/2020/10/21/cmd-%ED%8F%B4%EB%8D%94-%EC%82%AD%EC%A0%9C-rmdir/</link>
-      <guid>https://chinsun9.github.io/2020/10/21/cmd-%ED%8F%B4%EB%8D%94-%EC%82%AD%EC%A0%9C-rmdir/</guid>
-      <pubDate>Wed, 21 Oct 2020 06:42:11 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight bat&quot;&gt;&lt;figcaption&gt;&lt;span&gt;cmd&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;sp</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight bat"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rmdir</span> /s &#123;디렉터리&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">rmdir</span> /s folder_name</span><br><span class="line"></span><br><span class="line"><span class="built_in">rmdir</span> /s folder1_name folder2_name</span><br></pre></td></tr></table></figure><h2 id="rmdir-s-디렉터리"><a href="#rmdir-s-디렉터리" class="headerlink" title="rmdir /s {디렉터리}"></a>rmdir /s {디렉터리}</h2><ul><li>/s 옵션으로 빈 디렉터리가 아니더라도 삭제할 수 있다.</li><li>디렉터리를 나열해서 여러개를 한번에 지울 수 있다</li></ul><h2 id="auto-yes"><a href="#auto-yes" class="headerlink" title="auto yes"></a>auto yes</h2><ul><li>지울때 y를 입력해줘야하는데..</li></ul><figure class="highlight bat"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> y|<span class="built_in">rmdir</span> /s folder1_name</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> yy|<span class="built_in">rmdir</span> /s folder1_name folder2_name</span><br></pre></td></tr></table></figure><ul><li>이런식으로 사용하면 자동 수락한다</li><li>약간 귀찮긴하다.. 그냥 여러 파일, 폴더 삭제는 탐색기 열어서 하는게 빠름..</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/cmd/">cmd</category>
-      
-      <category domain="https://chinsun9.github.io/tags/rmdir/">rmdir</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/21/cmd-%ED%8F%B4%EB%8D%94-%EC%82%AD%EC%A0%9C-rmdir/#disqus_thread</comments>
       
     </item>
     
