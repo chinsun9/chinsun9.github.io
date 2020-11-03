@@ -561,6 +561,44 @@
     </item>
     
     <item>
+      <title>Promise 연습, js 비동기 연습</title>
+      <link>https://chinsun9.github.io/2020/10/28/Promise-%EC%97%B0%EC%8A%B5/</link>
+      <guid>https://chinsun9.github.io/2020/10/28/Promise-%EC%97%B0%EC%8A%B5/</guid>
+      <pubDate>Wed, 28 Oct 2020 07:33:39 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;js&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 프로미스 병렬처리 ; all</span></span><br><span class="line"><span class="keyword">await</span> <span class="built_in">Promise</span>.all([delay2(<span class="number">1000</span>), delay2(<span class="number">2000</span>)]).then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(result.join(<span class="string">&#x27; + &#x27;</span>));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>처음에는 익숙해지기 어렵지만, 꿀인 비동기</li></ul><h2 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h2><ul><li>js에는 promise라는게 있다.</li><li>비동기 흐름에서 중요하다.</li><li>프로미스는 선언과 동시에 실행이된다.</li><li>프로미스 결과를 처리하려면 then을 통해 받아 볼 수 있다.</li></ul><h2 id="async-await"><a href="#async-await" class="headerlink" title="async await"></a>async await</h2><figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">delay2</span>(<span class="params">ms</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">await</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      resolve(ms);</span><br><span class="line">    &#125;, ms);</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> ms;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>await</code> 키워드는 async 함수 내에서만 사용가능하다.</li><li><code>await</code> 를 통해서 promise가 Fulfilled상태가 되야지만 다음줄의 코드가 실행된다.</li></ul><h2 id="병렬처리"><a href="#병렬처리" class="headerlink" title="병렬처리"></a>병렬처리</h2><h3 id="Promise-race"><a href="#Promise-race" class="headerlink" title="Promise.race"></a>Promise.race</h3><figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">await</span> <span class="built_in">Promise</span>.race([delay2(<span class="number">1000</span>), delay2(<span class="number">2000</span>)]).then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(result);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>1초뒤에 <code>1000</code>만 반환하는 코드이다.</li></ul><h3 id="Promise-all"><a href="#Promise-all" class="headerlink" title="Promise.all"></a>Promise.all</h3><figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">await</span> <span class="built_in">Promise</span>.all([delay2(<span class="number">1000</span>), delay2(<span class="number">2000</span>)]).then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(result.join(<span class="string">&#x27; + &#x27;</span>));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>2초뒤에 <code>1000 + 2000</code>을 반환하는 코드이다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/js/">js</category>
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/">비동기</category>
+      
+      <category domain="https://chinsun9.github.io/tags/async/">async</category>
+      
+      <category domain="https://chinsun9.github.io/tags/await/">await</category>
+      
+      <category domain="https://chinsun9.github.io/tags/resolve/">resolve</category>
+      
+      <category domain="https://chinsun9.github.io/tags/reject/">reject</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/10/28/Promise-%EC%97%B0%EC%8A%B5/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>fetch api 연습</title>
       <link>https://chinsun9.github.io/2020/10/28/fetch-%EC%97%B0%EC%8A%B5/</link>
       <guid>https://chinsun9.github.io/2020/10/28/fetch-%EC%97%B0%EC%8A%B5/</guid>
@@ -619,42 +657,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/26/aws-ec2-keypair-%EC%84%A4%EC%A0%95/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>aws 아마존 리눅스2 인스턴스 생성 및 리모트</title>
-      <link>https://chinsun9.github.io/2020/10/26/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B8/</link>
-      <guid>https://chinsun9.github.io/2020/10/26/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B8/</guid>
-      <pubDate>Mon, 26 Oct 2020 01:43:24 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%E</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/preview.jpg" alt=" "></p><ul><li>ec2 인스턴스를 하나 만들고, vscode로 원격접속해보겠다.</li></ul><h2 id="따라하기"><a href="#따라하기" class="headerlink" title="따라하기"></a>따라하기</h2><h3 id="준비물"><a href="#준비물" class="headerlink" title="준비물"></a>준비물</h3><ul><li>ec2 keypair</li><li>vscode</li></ul><h3 id="ec2-인스턴스-생성하기"><a href="#ec2-인스턴스-생성하기" class="headerlink" title="ec2 인스턴스 생성하기"></a>ec2 인스턴스 생성하기</h3><p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/1.png" alt=" ec2 &gt; 인스턴스 &gt; 인스턴스 시작 버튼 클릭 "><br><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/2.png" alt=" AMI 선택 "><br><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/3.png" alt=" 인스턴스 유형 선택. 기본값 사용. 검토 및 시작 버튼 클릭 "><br><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/4.png" alt=" 시작하기 버튼 클릭 "><br><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/5.png" alt=" 키페어를 생성하거나 기존 키페어 사용 "></p><ul><li>예전에는 인스턴스 하나 생성하는 것도 겁이 났었는데, 지금은 옵션 안보고 그냥 기본값으로 생성..</li></ul><h3 id="ec2-인스턴스-리모트하기"><a href="#ec2-인스턴스-리모트하기" class="headerlink" title="ec2 인스턴스 리모트하기"></a>ec2 인스턴스 리모트하기</h3><ul><li>ssh 클라이언트로 푸티 putty가 대표적이다</li><li>근데 나는 푸티는 잘 안쓰고… vscode의 Remote - SSH 확장도구를 사용한다.</li><li>vscode를 관리자권한으로 실행한다. (열려있는 vscode가 있다면 모두 종료하고 관리자 권한으로 새로 실행한다)</li></ul><p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/6.png" alt=" 확장도구가 안깔린 경우 설치한다 "></p><p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/7.png" alt=" "></p><ul><li>Ctrl + Shift + P 를 눌러 커맨드창을 열고 <code>remote</code>를 입력하고,</li><li><code>Remete-SSH: Connect to Host...</code> 를 누른다</li></ul><p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/8.png" alt=" Configure SSH Hosts... 클릭 "></p><p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/9.png" alt=" Users\user.ssh\config 클릭 "></p><figure class="highlight plain"><figcaption><span>.ssh\config</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Read more about SSH config files: https:&#x2F;&#x2F;linux.die.net&#x2F;man&#x2F;5&#x2F;ssh_config</span><br><span class="line">Host ec2-asdf</span><br><span class="line">  HostName ec2-0-00-000-000.ap-northeast-2.compute.amazonaws.com</span><br><span class="line">  User ec2-user</span><br><span class="line">  IdentityFile &quot;C:\key\KeyPair.pem&quot;</span><br></pre></td></tr></table></figure><ul><li>config 파일을 채워줘야하는데,</li></ul><p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/10.png" alt=" "></p><ul><li>브라우저로 ec2 인스턴스 화면으로 돌아가서 우클릭 연결을 누른다</li></ul><p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/11.png" alt=" "></p><ul><li>위 화면에서 복사를 해서 붙여넣어주면된다.</li><li>HostName에 <code>ec2-0-00-000-000.ap-northeast-2.compute.amazonaws.com</code></li><li>User에 <code>@</code>앞에 있는 유저명을 적어주면된다. 나는 ec2-user가 기본값이 였다</li><li>Host에는 그냥 자기가 원하는 식별문자를 적어주면된다. 나는 아무렇게나 <code>ec2-asdf</code>로 했다.</li><li>IdentityFile에는 키페어 <code>.pem</code> 파일의 경로를 적어주면된다. 절대경로를 사용했다</li><li>Ctrl + S 로 저장한다.</li></ul><ul><li>참고 : HostName<code>ec2-0-00-000-000.ap-northeast-2.compute.amazonaws.com</code> 이 값은 인스턴스를 중지했다가 다시켜면 바뀐다. 다음번에 접속할 때 탄력적 IP를 사용하는게 아니라면 계속 수정하면서 접속해야한다.</li></ul><p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/12.png" alt=" "></p><ul><li>Ctrl + Shift + P 를 눌러 커맨드창을 열고 <code>Remote-SSH: Connect to Host</code>를 실행하고</li><li>방금 설정한 호스트가 보일 것이다. 클릭한다</li><li>그러면 새창이 열린다.</li></ul><ul><li>참고 : keypair 권한 관련 오류가 나면 <a href="/2020/10/26/aws-ec2-keypair-%EC%84%A4%EC%A0%95/">윈도우에서 aws ec2 keypair 설정</a>를 확인한다</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[14:56:31.053] &gt; @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">&gt; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">&gt; Permissions for &#39;C:\\key\\KeyPair.pem&#39; are too open.</span><br><span class="line">&gt; It is required that your private key files are NOT accessible by others.</span><br><span class="line">&gt; This private key will be ignored.</span><br><span class="line">&gt; Load key &quot;C:\\key\\a.pem&quot;: bad permissions</span><br></pre></td></tr></table></figure><p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/13.png" alt=" "></p><ul><li>운영체제를 고르라고하는데 당연히 리눅스를 선택한다.</li></ul><p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/preview.jpg" alt=" "></p><ul><li>이렇게 vscode로 리모트에 성공했다.</li></ul><p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/14.png" alt=" "></p><ul><li>폴더를 열어보자. 나는 홈디렉터리를 열어보겠다.</li><li>그러면 창이 리로드 되면서 좌측 탐색기가 업데이트된다.</li></ul><figure class="highlight bash"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir a b c</span><br><span class="line"></span><br><span class="line">ls</span><br></pre></td></tr></table></figure><ul><li>mkdir 로 a,b,c 3개의 디렉터리를 생성한다</li></ul><p><img src="/images/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B820201026/15.png" alt=" "></p><ul><li>그러면 좌측 탐색기도 업데이트되는게 보일 것이다. 끝!</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/remote/">remote</category>
-      
-      <category domain="https://chinsun9.github.io/tags/pem/">pem</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ec2/">ec2</category>
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ssh/">ssh</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/26/aws-%EC%95%84%EB%A7%88%EC%A1%B4-%EB%A6%AC%EB%88%85%EC%8A%A42-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EB%A6%AC%EB%AA%A8%ED%8A%B8/#disqus_thread</comments>
       
     </item>
     
