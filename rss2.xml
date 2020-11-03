@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 03 Nov 2020 05:52:05 GMT</pubDate>
+    <pubDate>Tue, 03 Nov 2020 06:30:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>포트 포워딩 체크 웹 클론코딩</title>
+      <link>https://chinsun9.github.io/2020/11/03/%ED%8F%AC%ED%8A%B8-%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%B2%B4%ED%81%AC-%EC%9B%B9-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</link>
+      <guid>https://chinsun9.github.io/2020/11/03/%ED%8F%AC%ED%8A%B8-%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%B2%B4%ED%81%AC-%EC%9B%B9-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</guid>
+      <pubDate>Tue, 03 Nov 2020 06:11:51 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/4IMSpyKuhL4&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/4IMSpyKuhL4" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>서버를 열어놨는데, 외부에서 접근이 가능한지 불가능한지,</li><li>포트포워딩을 확인하고 싶으면</li><li>핸드폰을 열고 데이터를 켜서 내 서버로 접속해서 확인하는 등 번거롭게 확인했다.</li><li><a href="https://www.yougetsignal.com/tools/open-ports/">https://www.yougetsignal.com/tools/open-ports/</a> 라는 포트포워딩 체크 웹이 있는데</li><li>이거를 한번 클론 코딩해보았다.</li></ul><h2 id="영상설명"><a href="#영상설명" class="headerlink" title="영상설명"></a>영상설명</h2><ul><li><p>나는 ec2에 올려서 테스트해봤다</p></li><li><p>주소창에 보면 <code>15.165.000.000:4000</code> 으로 나오는데 내 ec2 ip인데 일부러 뒷부분을 000.000으로 바꿔놨다.</p></li><li><p>이 앱은 ec2의 4000포트에서 동작중이다.</p></li><li><p>도메인명이나 ip를 입력하고 포트입력란에 원하는 포트를 입력한다.</p></li><li><p>그리고 <code>check</code> 버튼을 누르면 해당 포트가 열려있는지 확인한다.</p></li><li><p>당연히 해당 포트를 리슨하는 서버가 동작하고 있어야한다.</p></li><li><p>우측 common ports 에서 원하는 포트를 클릭하면 해당 포트로 요청을 보낸다.</p></li><li><p><code>Scan All Common Ports</code> 버튼을 눌러 모든 common port를 스캔한다.</p></li></ul><ul><li><code>0:18</code> 중간에는 마인크래프트 서버를 체크해본다.</li><li><code>0:35</code> localhost로 적으면 내 ec2의 포트를 스캔하게된다.</li><li>localhost를 common port를 모두 스캔해보니 3000번이 열려있다는 것을 알 수 있다</li><li><code>0:48</code> 이 앱이 실행되고 있는 4000번 포트를 스캔해보니</li><li>당연하게 열려있는 모습을 확인할 수 있다</li></ul><h2 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h2><ul><li><a href="https://github.com/chinsun9/open-port-check-web">open-port-check-web</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/is-port-reachable/">is-port-reachable</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/03/%ED%8F%AC%ED%8A%B8-%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%B2%B4%ED%81%AC-%EC%9B%B9-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>리눅스에서 특정 포트를 사용하는 프로세스 확인하기</title>
@@ -619,38 +647,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/23/%EB%8F%84%EC%BB%A4-%EC%8B%A4%ED%96%89-%EB%AA%85%EB%A0%B9%EC%96%B4/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>denied: requested access to the resource is denied</title>
-      <link>https://chinsun9.github.io/2020/10/22/denied-requested-access-to-the-resource-is-denied/</link>
-      <guid>https://chinsun9.github.io/2020/10/22/denied-requested-access-to-the-resource-is-denied/</guid>
-      <pubDate>Thu, 22 Oct 2020 00:22:30 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/denied-requested-access-to-the-resource-is-denied/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;denied: requested access to</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/denied-requested-access-to-the-resource-is-denied/preview.jpg" alt=" "></p><blockquote><p>denied: requested access to the resource is denied</p></blockquote><ul><li>docker hub에 내가 연습했던 이미지를 업로드하려고 했는데 실패했다.</li></ul><h2 id="이미지명-변경"><a href="#이미지명-변경" class="headerlink" title="이미지명 변경"></a>이미지명 변경</h2><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker image tag &#123;이미지&#125; &#123;내 유저명&#125;/&#123;이미지&#125;</span><br><span class="line"></span><br><span class="line">docker image tag my-react:<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span> chinsung/my-react:<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span></span><br></pre></td></tr></table></figure><ul><li>이런식으로 <code>&#123;내 유저명&#125;/</code>을 붙여주면 된다.</li></ul><p><img src="/images/denied-requested-access-to-the-resource-is-denied/1.jpg" alt=" "></p><ul><li>음 성공!</li><li>참고한 곳 ; <a href="https://nirsa.tistory.com/53">[Docker CE] 도커 이미지 업로드 권한 에러 (denied: requested access to the resource is denied)</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/docker/">docker</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/docker/">docker</category>
-      
-      <category domain="https://chinsun9.github.io/tags/docker-hub/">docker hub</category>
-      
-      <category domain="https://chinsun9.github.io/tags/push/">push</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/22/denied-requested-access-to-the-resource-is-denied/#disqus_thread</comments>
       
     </item>
     
