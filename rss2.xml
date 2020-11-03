@@ -9,11 +9,11 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 03 Nov 2020 07:21:58 GMT</pubDate>
+    <pubDate>Tue, 03 Nov 2020 07:23:14 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>nodejs + socketio 로 만드는 채팅 앱</title>
+      <title>nodejs + socketio 로 만드는 채팅 앱, 카카오톡 클론코딩?</title>
       <link>https://chinsun9.github.io/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/</link>
       <guid>https://chinsun9.github.io/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/</guid>
       <pubDate>Tue, 03 Nov 2020 07:17:59 GMT</pubDate>
