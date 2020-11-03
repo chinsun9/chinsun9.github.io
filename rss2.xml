@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 03 Nov 2020 06:57:15 GMT</pubDate>
+    <pubDate>Tue, 03 Nov 2020 07:21:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>nodejs + socketio 로 만드는 채팅 앱</title>
+      <link>https://chinsun9.github.io/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/</link>
+      <guid>https://chinsun9.github.io/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/</guid>
+      <pubDate>Tue, 03 Nov 2020 07:17:59 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/9_1ujY4Flb4&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/9_1ujY4Flb4" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>Web Dev Simplified의 <a href="https://youtu.be/rxzOqP9YwmM">Build a Real Time Chat App With Node.js And Socket.io</a>을 보고 따라만들기</li><li>nodejs에서 html과 socket.io로 간단하게 챗앱을 만드는 것을 따라해보았다.</li><li>Web Dev Simplified 정말 심플하게 잘알려준다.. ㄷㄷ 따라 만들면서 행복했다.</li><li>따라만들고 카카오톡같은 css를 입히고,</li><li>디테일한 기능을 추가 해줬다.</li></ul><h2 id="추가한-기능"><a href="#추가한-기능" class="headerlink" title="추가한 기능"></a>추가한 기능</h2><ul><li>고유한 프로필 사진 생성(랜덤색 + 이니셜)</li><li>현재 채팅에 참가한 유저 목록 위젯</li><li>width값이 작아지면 유저 목록 위젯 숨김</li><li>width값이 작아지면 프로필 사진 영역 숨김</li><li>같은 사람이 연달아 올릴 때 프로필 사진 생략</li><li>같은 사람이 같은 시간에 연달아 올릴 때 가장 최근 메시지에만 시간표시</li><li>메시지는 plain text로 표시</li></ul><h2 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h2><ul><li><a href="https://github.com/chinsun9/chat-app-nodejs-and-socketio">chat-app-nodejs-and-socketio</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/socketio/">socketio</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>reqres.in으로 ajax 연습하기</title>
@@ -623,40 +651,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/28/fetch-%EC%97%B0%EC%8A%B5/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>윈도우에서 aws ec2 keypair 설정</title>
-      <link>https://chinsun9.github.io/2020/10/26/aws-ec2-keypair-%EC%84%A4%EC%A0%95/</link>
-      <guid>https://chinsun9.github.io/2020/10/26/aws-ec2-keypair-%EC%84%A4%EC%A0%95/</guid>
-      <pubDate>Mon, 26 Oct 2020 01:49:47 GMT</pubDate>
-      
-        
-        
-      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/POUIbGP1jSA&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/POUIbGP1jSA" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>윈도우 10에서 aws ec2를 리모트할 때 <code>.pem</code>파일의 권한을 아무나 볼 수 없게 설정해줘야 한다.</li><li>관리자만 볼 수 있도록 설정해야 리모트를 할 수 있다.</li><li>속성 &gt; 보안탭 &gt; 고급 &gt; 상속사용안함 &gt; 명시적 사용 권한 &gt; SYSTEM, Administrators 남기고 다 삭제 &gt; 확인 &gt; 확인</li><li>SYSTEM, Administrators만 남은걸 확인한다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/keypair/">keypair</category>
-      
-      <category domain="https://chinsun9.github.io/tags/remote/">remote</category>
-      
-      <category domain="https://chinsun9.github.io/tags/windows/">windows</category>
-      
-      <category domain="https://chinsun9.github.io/tags/pem/">pem</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/26/aws-ec2-keypair-%EC%84%A4%EC%A0%95/#disqus_thread</comments>
       
     </item>
     

@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/</loc>
+        <lastmod>2020-11-03T07:21:58.052Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/10/28/Promise-%EC%97%B0%EC%8A%B5/</loc>
         <lastmod>2020-11-03T07:16:11.568Z</lastmod>
         <changefreq>weekly</changefreq>
