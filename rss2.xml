@@ -45,6 +45,62 @@
     </item>
     
     <item>
+      <title>playlist 202011</title>
+      <link>https://chinsun9.github.io/2020/11/03/playlist-202011/</link>
+      <guid>https://chinsun9.github.io/2020/11/03/playlist-202011/</guid>
+      <pubDate>Tue, 03 Nov 2020 00:23:58 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/videoseries?list=PLdEiQV70x8ZGjg6ONGRZcZKIXMosQ6k-B&quot; frameborder=&quot;0&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/videoseries?list=PLdEiQV70x8ZGjg6ONGRZcZKIXMosQ6k-B" frameborder="0" loading="lazy" allowfullscreen></iframe></div><blockquote><p>~</p></blockquote>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/playlist/">playlist</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/playlist/">playlist</category>
+      
+      <category domain="https://chinsun9.github.io/tags/music/">music</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/03/playlist-202011/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>playlist 201906</title>
+      <link>https://chinsun9.github.io/2020/11/03/playlist-201906/</link>
+      <guid>https://chinsun9.github.io/2020/11/03/playlist-201906/</guid>
+      <pubDate>Tue, 03 Nov 2020 00:22:08 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/videoseries?list=PLdEiQV70x8ZEWuCfVjNkkwJJmhw1DzwG0&quot; frameborder=&quot;0&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/videoseries?list=PLdEiQV70x8ZEWuCfVjNkkwJJmhw1DzwG0" frameborder="0" loading="lazy" allowfullscreen></iframe></div><blockquote><p>~</p></blockquote>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/playlist/">playlist</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/playlist/">playlist</category>
+      
+      <category domain="https://chinsun9.github.io/tags/music/">music</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/03/playlist-201906/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>nodemon 변화감지 디렉터리 지정</title>
       <link>https://chinsun9.github.io/2020/11/02/nodemon-%EB%B3%80%ED%99%94%EA%B0%90%EC%A7%80-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC-%EC%A7%80%EC%A0%95/</link>
       <guid>https://chinsun9.github.io/2020/11/02/nodemon-%EB%B3%80%ED%99%94%EA%B0%90%EC%A7%80-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC-%EC%A7%80%EC%A0%95/</guid>
@@ -591,68 +647,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/21/cmd-%ED%8F%B4%EB%8D%94-%EC%82%AD%EC%A0%9C-rmdir/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>특정 브랜치 클론하기</title>
-      <link>https://chinsun9.github.io/2020/10/21/%ED%8A%B9%EC%A0%95-%EB%B8%8C%EB%9E%9C%EC%B9%98-%ED%81%B4%EB%A1%A0%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/10/21/%ED%8A%B9%EC%A0%95-%EB%B8%8C%EB%9E%9C%EC%B9%98-%ED%81%B4%EB%A1%A0%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Wed, 21 Oct 2020 06:33:08 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone -b &#123;브랜치명&#125; --single-branch &#123;저장소&#125;</span><br><span class="line"></span><br><span class="line">git clone -b docker --single-branch https:&#x2F;&#x2F;github.com&#x2F;chinsun9&#x2F;2020-web-test.git</span><br></pre></td></tr></table></figure><ul><li>저장소에 여러 브랜치가 있는데, 특정 하나의 브랜치만 클론하고 싶을때!</li></ul><h2 id="git-clone-b-docker-–single-branch-https-github-com-chinsun9-2020-web-test-git"><a href="#git-clone-b-docker-–single-branch-https-github-com-chinsun9-2020-web-test-git" class="headerlink" title="git clone -b docker –single-branch https://github.com/chinsun9/2020-web-test.git"></a>git clone -b docker –single-branch <a href="https://github.com/chinsun9/2020-web-test.git">https://github.com/chinsun9/2020-web-test.git</a></h2><ul><li><a href="https://github.com/chinsun9/2020-web-test.git">https://github.com/chinsun9/2020-web-test.git</a> 저장소의 docker라는 브랜치를 클론하는 명령이다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/clone/">clone</category>
-      
-      <category domain="https://chinsun9.github.io/tags/branch/">branch</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/21/%ED%8A%B9%EC%A0%95-%EB%B8%8C%EB%9E%9C%EC%B9%98-%ED%81%B4%EB%A1%A0%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>rds sqldump 하기</title>
-      <link>https://chinsun9.github.io/2020/10/21/rds-sqldump-%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/10/21/rds-sqldump-%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Wed, 21 Oct 2020 06:07:54 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;cmd&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;sp</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mysqldump -h database-<span class="number">1</span>.aaaaaaaaaaaa.ap-northeast-<span class="number">2</span>.rds.amazonaws.com ^</span><br><span class="line">    -u root ^</span><br><span class="line">    -p12341234  ^</span><br><span class="line">    --port=<span class="number">3306</span> ^</span><br><span class="line">    --single-transaction ^</span><br><span class="line">    --routines ^</span><br><span class="line">    --triggers ^</span><br><span class="line">    --databases TestDB &gt; aaaa.sql</span><br></pre></td></tr></table></figure><ul><li>윈도우 cmd에서 aws rds mysqldump를 해보았다.</li></ul><h2 id="윈도우-따라하기"><a href="#윈도우-따라하기" class="headerlink" title="윈도우 따라하기"></a>윈도우 따라하기</h2><ul><li>cmd를 관리자 권한으로 실행한다</li></ul><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> C:\Program Files\MariaDB <span class="number">10</span>.<span class="number">5</span>\bin</span><br></pre></td></tr></table></figure><ul><li><code>mysqldump.exe</code>가 있는 경로까지 이동한다. (나는 로컬에 마리아 디비가 설치되어 있어서..)</li></ul><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">mysqldump -h &#123;rds 엔드포인트&#125; ^</span><br><span class="line">    -u root ^</span><br><span class="line">    -p&#123;rds 비밀번호&#125;  ^</span><br><span class="line">    --port=<span class="number">3306</span> ^</span><br><span class="line">    --single-transaction ^</span><br><span class="line">    --routines ^</span><br><span class="line">    --triggers ^</span><br><span class="line">    --databases &#123;db명&#125; &gt; &#123;백업파일위치&#125;</span><br><span class="line"></span><br><span class="line">mysqldump -h database-<span class="number">1</span>.aaaaaaaaaaaa.ap-northeast-<span class="number">2</span>.rds.amazonaws.com ^</span><br><span class="line">    -u root ^</span><br><span class="line">    -p12341234  ^</span><br><span class="line">    --port=<span class="number">3306</span> ^</span><br><span class="line">    --single-transaction ^</span><br><span class="line">    --routines ^</span><br><span class="line">    --triggers ^</span><br><span class="line">    --databases TestDB &gt; aaaa.sql</span><br></pre></td></tr></table></figure><ul><li>자신에 맞게 설정하고 명령을 붙여넣는다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
-      
-      <category domain="https://chinsun9.github.io/tags/sqldump/">sqldump</category>
-      
-      <category domain="https://chinsun9.github.io/tags/rds/">rds</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/21/rds-sqldump-%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
