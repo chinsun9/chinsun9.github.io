@@ -9,8 +9,49 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 06 Nov 2020 04:50:26 GMT</pubDate>
+    <pubDate>Fri, 06 Nov 2020 07:10:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Banner Maker 클론코딩</title>
+      <link>https://chinsun9.github.io/2020/11/06/Banner-maker-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</link>
+      <guid>https://chinsun9.github.io/2020/11/06/Banner-maker-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</guid>
+      <pubDate>Fri, 06 Nov 2020 07:08:33 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/banner-maker/banner-maker&quot;&gt;banner-maker/banner-maker&lt;/a&gt;를 클론코딩해보았다.&lt;/li&gt;
+&lt;li&gt;내 두번째 리액트 프로젝트..!&lt;/li&gt;
+&lt;/u</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li><a href="https://github.com/banner-maker/banner-maker">banner-maker/banner-maker</a>를 클론코딩해보았다.</li><li>내 두번째 리액트 프로젝트..!</li></ul><h2 id="데모"><a href="#데모" class="headerlink" title="데모"></a>데모</h2><p><img src="/images/Banner-maker-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A920201106/preview.jpg" alt=" "></p><ul><li><a href="https://chinsun9.github.io/react-banner-maker/" target="_blank">Banner Maker (React)</a></li></ul><h2 id="기능"><a href="#기능" class="headerlink" title="기능"></a>기능</h2><ul><li>캔버스 크기 조절</li><li>실시간 캔버스 업데이트</li><li>폰트 사이즈 조절</li><li>폰트색 조절</li><li>캔버스색에 따른 폰트색 자동조절</li><li>캔버스색 조절</li><li>랜덤 캠버스색</li><li>이미지로 다운로드</li><li>클립보드로 카피</li><li>컬러 히스토리 기능</li><li>컬러 히스토리 임포트, 익스포트 기능</li></ul><h2 id="후기"><a href="#후기" class="headerlink" title="후기"></a>후기</h2><ul><li>타입스크립트 공부 겸 리액트도 같이 하자는 생각으로 리액트 타입스크립트를 시작했다.</li><li>velopert님의 <a href="https://velog.io/@velopert/using-react-with-typescript">리액트 프로젝트에서 타입스크립트 사용하기</a> 글을 보고 따라하다가</li><li>튜토리얼을 통해 잘 만들어진 프로젝트 구조를 기반으로 만들었다.</li><li>리액트가 아직 익숙하지 않은데 리액트의 훅이라던지 처음부터 고급??개념들을 사용하니까</li><li>사실 뭐가 좋은지, 이렇게 써서 좋은점이 무엇인지..</li><li>이 개념을 도입하기전의 것들을 시도해보지 않았기 때문에 막연한 감이 있었다.</li><li>나는 공부할때 이론보단 무조건 실기이고, 일단 만들어보면서 익히고 이해하자라는 주의이다.</li><li>그래서 이것저것 쉽게만들 수 있다고 생각한다. (나중에 보면 코드가 엄청 구릴지라도..)</li></ul><ul><li>이번에 만들면서 신경쎃던 것은</li><li>사용성..?? 인 것같다.</li></ul><p><img src="/images/Banner-maker-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A920201106/1.jpg" alt=" "></p><ul><li>나는 보통 이미지를 ctrl c 카톡에다가 ctrl v 하여 톡방에 올리는데</li><li>그걸위한 copy clipboard 버튼을 만들었다. 저장후 이미지 올리기는 귀찮기 때문에..</li></ul><p><img src="/images/Banner-maker-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A920201106/2.jpg" alt=" "></p><ul><li>또 랜덤 칼러 버튼을 만들어서 색을 쇼핑했다.</li></ul><figure class="highlight js"><figcaption><span>js/index.js</span><a href="https://github.com/chinsun9/html-banner-maker/commit/5cccc1594309f732ea8edd8ca08c91800d97d317">html-banner-maker/commit/5cccc1594309f732ea8edd8ca08c91800d97d317</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// https://stackoverflow.com/questions/3942878/how-to-decide-font-color-in-white-or-black-depending-on-background-color</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Get color (black/white) depending on bgColor so it would be clearly seen.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="variable">bgColor</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns <span class="type">&#123;string&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getColorByBgColor</span>(<span class="params">bgColor</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!bgColor) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">parseInt</span>(bgColor.replace(<span class="string">&#x27;#&#x27;</span>, <span class="string">&#x27;&#x27;</span>), <span class="number">16</span>) &gt; <span class="number">0xffffff</span> / <span class="number">2</span></span><br><span class="line">    ? <span class="string">&#x27;#000&#x27;</span></span><br><span class="line">    : <span class="string">&#x27;#fff&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>사용해보면 알겠지만 랜덤으로 생성된 배경색에 따라 폰트색도 검정색/흰색 적절한게 선택된다.</li></ul><p><img src="/images/Banner-maker-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A920201106/3.jpg" alt=" "></p><ul><li>컬러 히스토리 기능이다.</li><li>copy 버튼이나 download 버튼을 누르면 해당 배경색과, 폰트색이 히스토리에 저장된다.</li><li>만약에 같은 최근 히스토리에 저장된 색과 같은 색이면 저장하지 않도록 하였다. 버튼을 누를때마다 증식되지 않도록..</li><li>export 버튼을 눌러 현재 저장된 컬러 히스토리를 json 파일로 내보내는 기능도있다.</li><li>깃허브 페이지를 이용해 호스팅하기때문에, 내 앱은 정적이다.</li><li>어떻게 히스토리를 저장하고 불러올까 생각하다가 json 파일로 내보내고 다시 불러오도록 만들게 되었다.</li></ul><h2 id="개선방향"><a href="#개선방향" class="headerlink" title="개선방향"></a>개선방향</h2><ul><li>칼러픽커에서 알파값을 바꿀 수 있도록 하기</li><li>폰트 변경 기능</li><li>textarea를 div안에 넣어버리기..? (html2canvas 사용해보기)</li><li>json파일로부터 컬러히스토리 임포트할때 덮어쓰기가 아니라 병합으로 불러오기</li></ul><figure class="highlight js"><figcaption><span>src/modules/common/copyToClipboard.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">copyToClipboard</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> canvas = <span class="built_in">document</span>.querySelector(<span class="string">`#myCanvas`</span>);</span><br><span class="line">  <span class="keyword">if</span> (!canvas) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  canvas.toBlob(<span class="function"><span class="keyword">function</span> (<span class="params">blob</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// eslint-disable-next-line no-undef</span></span><br><span class="line">    <span class="keyword">const</span> item = <span class="keyword">new</span> ClipboardItem(&#123; <span class="string">&#x27;image/png&#x27;</span>: blob &#125;);</span><br><span class="line">    navigator.clipboard.write([item]);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>클립보드 복사 js 코드를 ts로 변환하지 못한 코드..</li></ul><h2 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h2><ul><li><a href="https://github.com/chinsun9/react-banner-maker">react-banner-maker</a></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>리액트 타입스크립트 공부 ; <a href="https://velog.io/@velopert/using-react-with-typescript">리액트 프로젝트에서 타입스크립트 사용하기</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/react/">react</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/hook/">hook</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/">클론코딩</category>
+      
+      <category domain="https://chinsun9.github.io/tags/clone-coding/">clone coding</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/06/Banner-maker-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>정처기 으악</title>
@@ -601,40 +642,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/02/vscode-%EB%9D%BC%EC%9D%B8-%EC%9D%B4%EB%8F%99-%EB%8B%A8%EC%B6%95%ED%82%A4/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>shell script 경로에서 실행</title>
-      <link>https://chinsun9.github.io/2020/11/02/shell-script-%EA%B2%BD%EB%A1%9C%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89/</link>
-      <guid>https://chinsun9.github.io/2020/11/02/shell-script-%EA%B2%BD%EB%A1%9C%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89/</guid>
-      <pubDate>Mon, 02 Nov 2020 02:04:43 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;bash&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight bash"><figcaption><span>bash</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dirpath=`dirname <span class="variable">$0</span>`</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$dirpath</span></span><br><span class="line"><span class="built_in">cd</span> <span class="variable">$dirpath</span></span><br></pre></td></tr></table></figure><ul><li>셸 스크립트 파일 경로로부터 명령을 실행할 수 있다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/linux/">linux</category>
-      
-      <category domain="https://chinsun9.github.io/tags/shell-script/">shell script</category>
-      
-      <category domain="https://chinsun9.github.io/tags/bash/">bash</category>
-      
-      <category domain="https://chinsun9.github.io/tags/dirpath/">dirpath</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/02/shell-script-%EA%B2%BD%EB%A1%9C%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89/#disqus_thread</comments>
       
     </item>
     
