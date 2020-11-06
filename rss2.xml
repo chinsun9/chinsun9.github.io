@@ -581,13 +581,13 @@
         
         
       <description>&lt;h2 id=&quot;Ctrl-G&quot;&gt;&lt;a href=&quot;#Ctrl-G&quot; class=&quot;headerlink&quot; title=&quot;Ctrl + G&quot;&gt;&lt;/a&gt;Ctrl + G&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;오류 라인을 갈 떄,&lt;/li&gt;
+&lt;li&gt;오류 라인을 갈 때,&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Ctrl + G&lt;/code&gt; 로</description>
         
       
       
       
-      <content:encoded><![CDATA[<h2 id="Ctrl-G"><a href="#Ctrl-G" class="headerlink" title="Ctrl + G"></a>Ctrl + G</h2><ul><li>오류 라인을 갈 떄,</li><li><code>Ctrl + G</code> 로 마우스 손안대고 이동할 수 있다.</li></ul><h2 id="Ctrl-rightArrow"><a href="#Ctrl-rightArrow" class="headerlink" title="Ctrl + rightArrow"></a>Ctrl + rightArrow</h2><h2 id="Ctrl-leftArrow"><a href="#Ctrl-leftArrow" class="headerlink" title="Ctrl + leftArrow"></a>Ctrl + leftArrow</h2><ul><li><code>Ctrl + left|right arrow key</code> 로 단어단위로 커서를 이동시킬 수 있다.</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="Ctrl-G"><a href="#Ctrl-G" class="headerlink" title="Ctrl + G"></a>Ctrl + G</h2><ul><li>오류 라인을 갈 때,</li><li><code>Ctrl + G</code> 로 마우스 손안대고 이동할 수 있다.</li></ul><h2 id="Ctrl-rightArrow"><a href="#Ctrl-rightArrow" class="headerlink" title="Ctrl + rightArrow"></a>Ctrl + rightArrow</h2><h2 id="Ctrl-leftArrow"><a href="#Ctrl-leftArrow" class="headerlink" title="Ctrl + leftArrow"></a>Ctrl + leftArrow</h2><ul><li><code>Ctrl + left|right arrow key</code> 로 단어단위로 커서를 이동시킬 수 있다.</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
