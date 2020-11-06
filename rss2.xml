@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 05 Nov 2020 06:29:15 GMT</pubDate>
+    <pubDate>Fri, 06 Nov 2020 00:22:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>RDS 삭제시 주의사항</title>
+      <link>https://chinsun9.github.io/2020/11/06/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/</link>
+      <guid>https://chinsun9.github.io/2020/11/06/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/</guid>
+      <pubDate>Fri, 06 Nov 2020 00:14:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD20201106/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ㅠㅠ&lt;/li&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD20201106/preview.jpg" alt=" "></p><ul><li>ㅠㅠ</li></ul><h2 id="RDS-삭제-시-자동으로-스냅샷-생성"><a href="#RDS-삭제-시-자동으로-스냅샷-생성" class="headerlink" title="RDS 삭제 시 자동으로 스냅샷 생성"></a>RDS 삭제 시 자동으로 스냅샷 생성</h2><ul><li>RDS를 삭제하면 자동으로 스냅샷? 백업같은 것을 생성한다.</li></ul><p><img src="/images/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD20201106/1.jpg" alt=" "></p><ul><li>RDS를 사용중도아니고, 삭제하니까 비용이 생긴게 삭제하면서 생긴 스냅샷 보관 비용이였다.</li></ul><p><img src="/images/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD20201106/2.jpg" alt=" "></p><ul><li>RDS를 삭제한다면 RDS 삭제 후 꼭 <code>RDS &gt; 스냅샷</code> 에서 생성된 스냅샷도 같이 삭제..</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/rds/">rds</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%EB%B9%84%EC%9A%A9/">비용</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/06/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>일렉트론으로 OBS input overlay 클론코딩</title>
@@ -617,44 +647,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/10/30/hexo-db-json-%EC%B4%88%EA%B8%B0%ED%99%94/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Promise 연습, js 비동기 연습</title>
-      <link>https://chinsun9.github.io/2020/10/28/Promise-%EC%97%B0%EC%8A%B5/</link>
-      <guid>https://chinsun9.github.io/2020/10/28/Promise-%EC%97%B0%EC%8A%B5/</guid>
-      <pubDate>Wed, 28 Oct 2020 07:33:39 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;js&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 프로미스 병렬처리 ; all</span></span><br><span class="line"><span class="keyword">await</span> <span class="built_in">Promise</span>.all([delay2(<span class="number">1000</span>), delay2(<span class="number">2000</span>)]).then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(result.join(<span class="string">&#x27; + &#x27;</span>));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>처음에는 익숙해지기 어렵지만, 꿀인 비동기</li></ul><h2 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h2><ul><li>js에는 promise라는게 있다.</li><li>비동기 흐름에서 중요하다.</li><li>프로미스는 선언과 동시에 실행이된다.</li><li>프로미스 결과를 처리하려면 then을 통해 받아 볼 수 있다.</li></ul><h2 id="async-await"><a href="#async-await" class="headerlink" title="async await"></a>async await</h2><figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">delay2</span>(<span class="params">ms</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">await</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      resolve(ms);</span><br><span class="line">    &#125;, ms);</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> ms;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>await</code> 키워드는 async 함수 내에서만 사용가능하다.</li><li><code>await</code> 를 통해서 promise가 Fulfilled상태가 되야지만 다음줄의 코드가 실행된다.</li></ul><h2 id="병렬처리"><a href="#병렬처리" class="headerlink" title="병렬처리"></a>병렬처리</h2><h3 id="Promise-race"><a href="#Promise-race" class="headerlink" title="Promise.race"></a>Promise.race</h3><figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">await</span> <span class="built_in">Promise</span>.race([delay2(<span class="number">1000</span>), delay2(<span class="number">2000</span>)]).then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(result);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>1초뒤에 <code>1000</code>만 반환하는 코드이다.</li></ul><h3 id="Promise-all"><a href="#Promise-all" class="headerlink" title="Promise.all"></a>Promise.all</h3><figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">await</span> <span class="built_in">Promise</span>.all([delay2(<span class="number">1000</span>), delay2(<span class="number">2000</span>)]).then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(result.join(<span class="string">&#x27; + &#x27;</span>));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>2초뒤에 <code>1000 + 2000</code>을 반환하는 코드이다.</li></ul><h2 id="요상한-문법"><a href="#요상한-문법" class="headerlink" title="요상한 문법"></a>요상한 문법</h2><figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">await</span> delay2(<span class="number">1000</span>));</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/">비동기</category>
-      
-      <category domain="https://chinsun9.github.io/tags/async/">async</category>
-      
-      <category domain="https://chinsun9.github.io/tags/await/">await</category>
-      
-      <category domain="https://chinsun9.github.io/tags/resolve/">resolve</category>
-      
-      <category domain="https://chinsun9.github.io/tags/reject/">reject</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/28/Promise-%EC%97%B0%EC%8A%B5/#disqus_thread</comments>
       
     </item>
     
