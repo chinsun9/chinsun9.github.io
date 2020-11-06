@@ -8,6 +8,46 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/11/06/vscode-search-exclude-setting/</loc>
+        <lastmod>2020-11-06T04:47:09.989Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/</loc>
+        <lastmod>2020-11-06T03:56:10.149Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</loc>
+        <lastmod>2020-11-06T03:55:48.458Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/03/%ED%8F%AC%ED%8A%B8-%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%B2%B4%ED%81%AC-%EC%9B%B9-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</loc>
+        <lastmod>2020-11-06T03:54:53.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/06/%EC%A0%95%EC%B2%98%EA%B8%B0-%EC%9C%BC%EC%95%85/</loc>
+        <lastmod>2020-11-06T03:49:02.285Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/10/05/gradle/</loc>
         <lastmod>2020-11-06T02:18:28.599Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -40,14 +80,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</loc>
-        <lastmod>2020-11-05T06:29:15.256Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/10/27/ubuntu-ec2-remote-ssh-%ED%8A%95%EA%B9%80/</loc>
         <lastmod>2020-11-04T06:32:39.854Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -64,24 +96,8 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/</loc>
-        <lastmod>2020-11-03T07:23:14.141Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/11/03/reqres-in%EC%9C%BC%EB%A1%9C-ajax-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2020-11-03T06:57:15.549Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/03/%ED%8F%AC%ED%8A%B8-%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%B2%B4%ED%81%AC-%EC%9B%B9-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</loc>
-        <lastmod>2020-11-03T06:38:10.320Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

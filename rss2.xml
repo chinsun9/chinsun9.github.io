@@ -9,8 +9,71 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 06 Nov 2020 02:17:21 GMT</pubDate>
+    <pubDate>Fri, 06 Nov 2020 03:49:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>정처기 으악</title>
+      <link>https://chinsun9.github.io/2020/11/06/%EC%A0%95%EC%B2%98%EA%B8%B0-%EC%9C%BC%EC%95%85/</link>
+      <guid>https://chinsun9.github.io/2020/11/06/%EC%A0%95%EC%B2%98%EA%B8%B0-%EC%9C%BC%EC%95%85/</guid>
+      <pubDate>Fri, 06 Nov 2020 04:46:12 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;정보처리기사 책을 펴고 30분 봣는데 모니터 보는 것 보다 눈이 아파서 때려쳤다.&lt;/li&gt;
+&lt;li&gt;막연한 이론은 공부할 엄두가 안난다..&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>정보처리기사 책을 펴고 30분 봣는데 모니터 보는 것 보다 눈이 아파서 때려쳤다.</li><li>막연한 이론은 공부할 엄두가 안난다..</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/">정보처리기사</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/">정보처리기사</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/06/%EC%A0%95%EC%B2%98%EA%B8%B0-%EC%9C%BC%EC%95%85/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>vscode search exclude setting</title>
+      <link>https://chinsun9.github.io/2020/11/06/vscode-search-exclude-setting/</link>
+      <guid>https://chinsun9.github.io/2020/11/06/vscode-search-exclude-setting/</guid>
+      <pubDate>Fri, 06 Nov 2020 04:27:26 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;검색결과에서 제외할 디렉터리, 파일 설정하기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;세팅창-화면으로&quot;&gt;&lt;a href=&quot;#세팅창-화면으로&quot; class=&quot;headerlink&quot; title=&quot;세팅창 화면으로&quot;&gt;&lt;/a&gt;세팅창 화면으로&lt;/h2&gt;&lt;ul&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>검색결과에서 제외할 디렉터리, 파일 설정하기</li></ul><h2 id="세팅창-화면으로"><a href="#세팅창-화면으로" class="headerlink" title="세팅창 화면으로"></a>세팅창 화면으로</h2><ul><li><code>Ctrl + Shift + P</code> 를 누르고 setting을 입력한다</li><li><code>Preferences: Open Settings (UI)</code>로 들어간다</li></ul><h2 id="search-exclude-설정"><a href="#search-exclude-설정" class="headerlink" title="search: exclude 설정"></a>search: exclude 설정</h2><p><img src="/images/vscode-search-exclude-setting20201106/preview.jpg" alt=" "></p><ul><li>검색에서 제외할 패턴들을 입력한다.</li></ul><h2 id="검색-제외-적용하기"><a href="#검색-제외-적용하기" class="headerlink" title="검색 제외 적용하기"></a>검색 제외 적용하기</h2><p><img src="/images/vscode-search-exclude-setting20201106/3.jpg" alt=" "></p><ul><li>… 을 클릭해서 디테일 표시</li></ul><p><img src="/images/vscode-search-exclude-setting20201106/1.jpg" alt=" "></p><ul><li>file to exclude 영역에 아이콘 활성화</li></ul><p><img src="/images/vscode-search-exclude-setting20201106/2.jpg" alt=" "></p><ul><li>왼쪽이 비활성화일 떄</li><li>오른쪽이 활성화일 떄</li><li></li></ul><h2 id="상위-옵션-files-exclude"><a href="#상위-옵션-files-exclude" class="headerlink" title="상위 옵션 ; files.exclude"></a>상위 옵션 ; files.exclude</h2><ul><li>vscode 탐색기에서 존재자체를 없애버리는 얘다.</li><li>여기서 제외된 디렉터리는 당연히 검색에서도 제외됨으로</li><li>search.exclude의 상위 호환이라고 볼 수 있다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/files-exclude/">files.exclude</category>
+      
+      <category domain="https://chinsun9.github.io/tags/search-exclude/">search.exclude</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/06/vscode-search-exclude-setting/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>gradle project 에서 runnable jar 생성하기</title>
@@ -132,6 +195,10 @@
       
       <category domain="https://chinsun9.github.io/tags/input-overlay/">input overlay</category>
       
+      <category domain="https://chinsun9.github.io/tags/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/">클론코딩</category>
+      
+      <category domain="https://chinsun9.github.io/tags/clone-coding/">clone coding</category>
+      
       
       <comments>https://chinsun9.github.io/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/#disqus_thread</comments>
       
@@ -159,6 +226,10 @@
       <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
       
       <category domain="https://chinsun9.github.io/tags/socketio/">socketio</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/">클론코딩</category>
+      
+      <category domain="https://chinsun9.github.io/tags/clone-coding/">clone coding</category>
       
       
       <comments>https://chinsun9.github.io/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/#disqus_thread</comments>
@@ -221,6 +292,8 @@
       <category domain="https://chinsun9.github.io/tags/is-port-reachable/">is-port-reachable</category>
       
       <category domain="https://chinsun9.github.io/tags/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/">클론코딩</category>
+      
+      <category domain="https://chinsun9.github.io/tags/clone-coding/">clone coding</category>
       
       
       <comments>https://chinsun9.github.io/2020/11/03/%ED%8F%AC%ED%8A%B8-%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%B2%B4%ED%81%AC-%EC%9B%B9-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/#disqus_thread</comments>
@@ -562,80 +635,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/02/shell-script-%EA%B2%BD%EB%A1%9C%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>깃허브 자기 닉네임 저장소 special repository</title>
-      <link>https://chinsun9.github.io/2020/10/30/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%9E%90%EA%B8%B0-%EB%8B%89%EB%84%A4%EC%9E%84-%EC%A0%80%EC%9E%A5%EC%86%8C/</link>
-      <guid>https://chinsun9.github.io/2020/10/30/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%9E%90%EA%B8%B0-%EB%8B%89%EB%84%A4%EC%9E%84-%EC%A0%80%EC%9E%A5%EC%86%8C/</guid>
-      <pubDate>Fri, 30 Oct 2020 07:38:10 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%9E%90%EA%B8%B0-%EB%8B%89%EB%84%A4%EC%9E%84-%EC%A0%80%EC%9E%A5%EC%86%8C20201030/preview.</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%9E%90%EA%B8%B0-%EB%8B%89%EB%84%A4%EC%9E%84-%EC%A0%80%EC%9E%A5%EC%86%8C20201030/preview.jpg" alt=" "></p><ul><li><a href="https://github.com/chinsun9">https://github.com/chinsun9</a> 자기 깃허브 메인화면에 가장 처음 표시되는 readme파일의 저장소다!</li><li>내가 어떤 개발자인지 보여주는 용도이다.</li><li>GitHub Readme Stats를 통해 자기 깃허브 활동을 시각적으로 보여주면 더 좋다!</li></ul><h2 id="special-repository"><a href="#special-repository" class="headerlink" title="special repository"></a>special repository</h2><ul><li>github에서 저장소명을 자신의 닉네임이랑 똑같이 하면 special repository 라는 것이 만들어진다.</li><li>이 special repository는 내 깃허브 메인 화면에서 가장 처음으로 보여지는데,</li><li>여기서 내 프로필을 적어서 나를 자랑?할 수 있다.</li></ul><h2 id="GitHub-Readme-Stats"><a href="#GitHub-Readme-Stats" class="headerlink" title="GitHub Readme Stats"></a><a href="https://github.com/anuraghazra/github-readme-stats">GitHub Readme Stats</a></h2><ul><li><a href="https://github-readme-stats.vercel.app/api?username=%7B%EB%82%B4">https://github-readme-stats.vercel.app/api?username={내</a> 깃허브닉네임}</li><li><a href="https://github-readme-stats.vercel.app/api/top-langs/?username=%7B%EB%82%B4">https://github-readme-stats.vercel.app/api/top-langs/?username={내</a> 깃허브닉네임}</li><li>아무 설치없이 간단하게 내 깃허브 활동 통계를 볼 수 있다..!</li></ul><h2 id="chinsung-chinsung"><a href="#chinsung-chinsung" class="headerlink" title="chinsung/chinsung"></a>chinsung/chinsung</h2><ul><li><a href="https://github.com/chinsun9/chinsun9">https://github.com/chinsun9/chinsun9</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/readme/">readme</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github-readme-stats/">github readme stats</category>
-      
-      <category domain="https://chinsun9.github.io/tags/special-repository/">special repository</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github-profile/">github profile</category>
-      
-      <category domain="https://chinsun9.github.io/tags/profile/">profile</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/30/%EA%B9%83%ED%97%88%EB%B8%8C-%EC%9E%90%EA%B8%B0-%EB%8B%89%EB%84%A4%EC%9E%84-%EC%A0%80%EC%9E%A5%EC%86%8C/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>linux node app 백그라운드 실행</title>
-      <link>https://chinsun9.github.io/2020/10/30/linux-node-app-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%8B%A4%ED%96%89/</link>
-      <guid>https://chinsun9.github.io/2020/10/30/linux-node-app-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%8B%A4%ED%96%89/</guid>
-      <pubDate>Fri, 30 Oct 2020 07:01:54 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span cla</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup npm start &amp;</span><br></pre></td></tr></table></figure><ul><li>ec2에서 24시간 돌아가는 웹 앱을 돌릴일이 생겼다.</li><li>그런데 처음에 그냥 마지막에 &amp;만 붙여주면 되겠지 하고</li><li><code>npm start &amp;</code> 명령을 치고 리모트를 종료했더니, 리모트를 종료하는 순간 앱 실행도 멈췄다.</li><li>왜 그런가 했더니 단순히 <code>&amp;</code>을 붙이고 실행한 프로세스는 터미널이 종료하면 같이 꺼진다고 한다.</li></ul><h2 id="nohup"><a href="#nohup" class="headerlink" title="nohup"></a>nohup</h2><ul><li>리눅스에서는 특별한 패키지 설치없이도 완전한? 백그라운드 실행을 가능하게해주는 명령이 있다.</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nohup npm start &amp;</span><br><span class="line">exit</span><br></pre></td></tr></table></figure><ul><li>이렇게 실행하고 exit을 눌러 나와주면 터미널이 자동으로 닫힌다.</li><li>하지만 앱은 계속해서 실행되고 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://jahong.tistory.com/entry/EC2-deploy-server-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EB%A5%BC-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89%EC%8B%9C%ED%82%A4%EA%B8%B0">https://jahong.tistory.com/entry/EC2-deploy-server-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EB%A5%BC-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89%EC%8B%9C%ED%82%A4%EA%B8%B0</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ec2/">ec2</category>
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/linux/">linux</category>
-      
-      <category domain="https://chinsun9.github.io/tags/nohup/">nohup</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/10/30/linux-node-app-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%8B%A4%ED%96%89/#disqus_thread</comments>
       
     </item>
     
