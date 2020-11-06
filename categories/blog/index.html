@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>카테고리: blog - 친성의 블로그</title><meta description="친성의 개발 블로그"><meta property="og:type" content="blog"><meta property="og:title" content="친성의 블로그"><meta property="og:url" content="https://chinsun9.github.io/"><meta property="og:site_name" content="친성의 블로그"><meta property="og:description" content="친성의 개발 블로그"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://chinsun9.github.io/img/logo20200926.png"><meta property="article:author" content="chinsung"><meta property="article:tag" content="dev"><meta property="article:tag" content="developer"><meta property="article:tag" content="coding"><meta property="article:tag" content="sw"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/logo20200926.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://chinsun9.github.io"},"headline":"친성의 블로그","image":["https://chinsun9.github.io/img/og_image.png"],"author":{"@type":"Person","name":"chinsung"},"description":"친성의 개발 블로그"}</script><link rel="icon" href="/img/favicon20200926.ico?"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/rss2.xml" title="친성의 블로그" type="application/rss+xml">
+</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo20200926.png" alt="친성의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/project">Project</a></div><div class="navbar-end"><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">카테고리</a></li><li class="is-active"><a href="#" aria-current="page">blog</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-11-03T00:36:19.000Z" title="2020-11-03T00:36:19.000Z">2020-11-03</time>게시 됨</span><span class="level-item"><time datetime="2020-11-03T00:47:53.875Z" title="2020-11-03T00:47:53.875Z">2020-11-03</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/blog/">blog</a></span><span class="level-item">2분안에 읽기 (약 280 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/11/03/hexo-tag-plugin-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%9E%AC%EC%83%9D%EB%AA%A9%EB%A1%9D-%EB%84%A3%EB%8A%94%EB%B2%95/">hexo tag plugin 유튜브 재생목록 넣는법</a></h1><div class="content"><figure class="highlight md"><figcaption><span>hexo post.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo &#x27;playlist&#x27; %&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>게시하고싶은 재생목록의 id값을 알아온다.</li>
+<li>재생목록을 가져온경우에는 id 뒤에 <code>&#39;playlist&#39;</code>를 붙여주면 된다.</li>
+<li>나는 playlist라는 카테고리를 만들고 내가 듣는 노래를 이달의 재생목록처럼 업로드할려고</li>
+<li>hexo에서 재생목록 표현하는 방법이 없나하고 알아보았다.</li>
+</ul>
+<h2 id="유튜브-재생목록-id-알아내기"><a href="#유튜브-재생목록-id-알아내기" class="headerlink" title="유튜브 재생목록 id 알아내기"></a>유튜브 재생목록 id 알아내기</h2><blockquote>
+<p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.youtube.com/playlist?list=PLdEiQV70x8ZGjg6ONGRZcZKIXMosQ6k-B">https://www.youtube.com/playlist?list=PLdEiQV70x8ZGjg6ONGRZcZKIXMosQ6k-B</a><br>id : PLdEiQV70x8ZGjg6ONGRZcZKIXMosQ6k-B</p>
+</blockquote>
+<ul>
+<li>게시하고싶은 재생목록에 들어가면 url에 list라는 파라매터가 있는데 그게 id이다.</li>
+</ul>
+<h2 id="hexo-tag-plugin"><a href="#hexo-tag-plugin" class="headerlink" title="hexo tag-plugin"></a>hexo tag-plugin</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube lJIrF4YjHfQ %&#125;</span><br><span class="line">&#123;% youtube PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo &#39;playlist&#39; %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% youtube lJIrF4YjHfQ false %&#125;</span><br><span class="line">&#123;% youtube PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo &#39;playlist&#39; false %&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>기본 md에서는 표현하지 못하는 것을 표현하게 해줌</li>
+<li>당연히 hexo 블로그에서만 사용가능</li>
+<li>맨 마지막에 <code>false</code>를 붙여주면 Enable privacy-enhanced mode 라고 유튜브 쿠키를 사용하지 않도록 한다.</li>
+</ul>
+<h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/ko/docs/tag-plugins.html#Examples">https://hexo.io/ko/docs/tag-plugins.html#Examples</a></li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-10-30T00:29:49.000Z" title="2020-10-30T00:29:49.000Z">2020-10-30</time>게시 됨</span><span class="level-item"><time datetime="2020-10-30T00:32:00.027Z" title="2020-10-30T00:32:00.027Z">2020-10-30</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/blog/">blog</a></span><span class="level-item">몇 초안에 읽기 (약 32 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/10/30/hexo-db-json-%EC%B4%88%EA%B8%B0%ED%99%94/">hexo db.json 초기화</a></h1><div class="content"><ul>
+<li>가끔 삭제한 페이지가 검색되거나 하는데,</li>
+<li>db.json을 삭제하면 알아서 갱신해준다.</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-09-23T02:20:04.000Z" title="2020-09-23T02:20:04.000Z">2020-09-23</time>게시 됨</span><span class="level-item"><time datetime="2020-09-23T05:18:02.620Z" title="2020-09-23T05:18:02.620Z">2020-09-23</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/blog/">blog</a></span><span class="level-item">8분안에 읽기 (약 1131 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/09/23/%EB%82%B4-github-blog-%EA%B8%80%EC%9D%B4-%EA%B5%AC%EA%B8%80-%EA%B2%80%EC%83%89%EC%97%90-%EB%82%98%EC%98%A4%EB%8A%94-%EB%B2%95/">내 github blog 글이 구글 검색에 나오는 법</a></h1><div class="content"><img src="/images/내-github-blog-글이-구글-검색에-나오는-법20200923/preview.jpg">
+
+<ul>
+<li>깃허브 블로그는 네이버 블로그와 같이 자동으로 검색엔진을 통해 검색되지 않는다!</li>
+<li>내가 쓴 글이 구글 검색에 노출되려면 설정을 해줘야한다!</li>
+</ul>
+<h2 id="따라하기"><a href="#따라하기" class="headerlink" title="따라하기"></a>따라하기</h2><ul>
+<li>hexo icarus theme (react) 기준입니다!</li>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://iseongho.github.io/posts/hexo-seo/">Hexo SEO - 하루 만에 검색 엔진 최적화 시키기 | Seongho’s Dev Story</a>를 참고하였다</li>
+</ul>
+<h3 id="SEO-설정"><a href="#SEO-설정" class="headerlink" title="SEO 설정"></a>SEO 설정</h3><ul>
+<li>seo, search engine optimization</li>
+</ul>
+<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-autonofollow</span><br><span class="line">npm i hexo-generator-feed</span><br><span class="line">npm i hexo-generator-seo-friendly-sitemap</span><br><span class="line">npm i hexo-generator-robotstxt</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>hexo에서 seo 관련 플러그인이 있는데 설치한다.</li>
+<li>참고 ; 다른 seo관련 글에서는 <code>hexo-auto-canonical</code>을 설치하라고 하는데 react로 되어있는 최신버전의 icarus 테마에서는 표준링크을 자동으로 생성한다. 그래서 설치하지 않아도 된다!</li>
+</ul>
+<br>
+
+<figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&#x27;https://github.com/chinsun9/chinsun9.github.io&#x27;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line"><span class="comment"># 새로 추가</span></span><br><span class="line"><span class="attr">nofollow:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">exclude1.com</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">exclude2.com</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">rss2</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">rss2.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br><span class="line">  <span class="attr">tag:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">category:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">robotstxt:</span></span><br><span class="line">  <span class="attr">useragent:</span> <span class="string">&#x27;*&#x27;</span></span><br><span class="line">  <span class="attr">allow:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">/</span></span><br><span class="line">  <span class="attr">sitemap:</span> <span class="string">https://chinsun9.github.io/sitemap.xml</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>_config.yml 최 하단에 deploy 설정 밑에 새로 추가한다.</li>
+<li><code>sitemap: https://여러분의깃헙유저네임.github.io/sitemap.xml</code> 주의!</li>
+</ul>
+<br>
+
+<ul>
+<li><p>나는 위 과정에서 <code>hexo-component-inferno</code> 패키지를 설치하라고 해서 설치했다.</p>
+</li>
+<li><p>또 패키지 4개를 설치하면서 warn 경고 메시지가 자꾸 출력되는데 나는 무시했다.</p>
+</li>
+<li><p>여기까지 했다면 <code>hexo d -g</code>명령으로 배포한다.</p>
+</li>
+<li><p>참고 ; <code>hexo d -g</code>는 <code>hexo deploy --generate</code>명령과 동일하다.</p>
+</li>
+<li><p>참고 ; <code>hexo deploy --generate</code>는 <code>hexo generate &amp; hexo deploy</code>와 동일하다.</p>
+</li>
+</ul>
+<br>
+
+<ul>
+<li>그러면 public 디렉터리에 rss2.xml, sitemap.xml, robots.txt 이 3개의 파일이 보이면 성공이다.</li>
+</ul>
+<h3 id="검색-엔진-등록하기"><a href="#검색-엔진-등록하기" class="headerlink" title="검색 엔진 등록하기"></a>검색 엔진 등록하기</h3><h4 id="구글"><a href="#구글" class="headerlink" title="구글"></a>구글</h4><img src="/images/내-github-blog-글이-구글-검색에-나오는-법20200923/1.jpg">
+
+<ul>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://search.google.com/search-console/about">구글 서치 콘솔</a>로 이동하여 시작하기를 누른다.</li>
+</ul>
+<br>
+<img src="/images/내-github-blog-글이-구글-검색에-나오는-법20200923/2.jpg">
+
+<ul>
+<li>URL 접두어를 선택하고, 자신의 깃헙 주소를 입력하고 계속한다.</li>
+</ul>
+<br>
+<img src="/images/내-github-blog-글이-구글-검색에-나오는-법20200923/3.jpg">
+
+<ul>
+<li>소유권 확인 과정이 있는데, html 파일을 다운받고,</li>
+<li>hexo 디렉터리에서 public 디렉터리 밑에 다운받은 파일을 위치시키고</li>
+<li><code>hexo d</code>하려 배포한다.</li>
+<li>잠시 기다렸다가 확인버튼을 누른다.</li>
+</ul>
+<br>
+<img src="/images/내-github-blog-글이-구글-검색에-나오는-법20200923/4.jpg">
+
+<ul>
+<li>소유권이 확인되면 <code>속성으로 이동</code> 버튼을 누른다.</li>
+</ul>
+<br>
+<img src="/images/내-github-blog-글이-구글-검색에-나오는-법20200923/5.jpg">
+
+<ul>
+<li><ol>
+<li>sitemaps 메뉴를 클릭한다</li>
+</ol>
+</li>
+<li>2-1. 사이트맵 URL 입력에 sitemap.xml을 입력하고 제출 버튼을 누른다.</li>
+<li>2-2. 사이트맵 URL 입력에 rss2.xml을 입력하고 제출 버튼을 누른다.</li>
+<li>상태에 보면 성공이 아닐 수도 있는데 새로고침 해보면 성공으로 보일 것이다.</li>
+<li>하루정도? 지나면 구글에서 내 글을 검색할 수 있다!</li>
+</ul>
+<br>
+<br>
+<br>
+
+<h4 id="네이버"><a href="#네이버" class="headerlink" title="네이버"></a>네이버</h4><ul>
+<li>네이버도 구글과 비슷하므로 간단하게 넘어간다.</li>
+</ul>
+<br>
+
+<img src="/images/내-github-blog-글이-구글-검색에-나오는-법20200923/6.jpg">
+
+<ul>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://searchadvisor.naver.com/console/board">네이버 웹마스터 도구</a>에 들어간다.</li>
+<li>사이트 등록에 내 깃헙 블로그 주소를 입력하면 소유권확인 과정이 나온다</li>
+<li>구글과 똑같이 html파일을 다운받고 public 디렉터리에 파일을 옮기고 <code>hexo d</code>하여 갱신한다.</li>
+</ul>
+<br>
+<img src="/images/내-github-blog-글이-구글-검색에-나오는-법20200923/7.jpg">
+
+<ul>
+<li>왼쪽 메뉴를 보면 <code>요청 &gt; rss제출</code>로 들어가</li>
+<li>자신의 rss2.xml 주소를 입력하고 확인버튼을 누른다.</li>
+</ul>
+<br>
+<img src="/images/내-github-blog-글이-구글-검색에-나오는-법20200923/8.jpg">
+
+<ul>
+<li><code>요청 &gt; 사이트맵 제출</code>로 들어가</li>
+<li><em>sitemap.xml</em>을 입력하고 확인버튼을 누른다.</li>
+<li>네이버 등록도 끝이 났다!</li>
+</ul>
+<br>
+<br>
+<br>
+
+<h4 id="다음"><a href="#다음" class="headerlink" title="다음"></a>다음</h4><ul>
+<li>다음은 약간 다르다</li>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://register.search.daum.net/index.daum">다음 검색등록</a>에 들어간다.</li>
+<li>신규등록하기 버튼을 누른다</li>
+<li>약관에 동의한다.</li>
+</ul>
+<br>
+<img src="/images/내-github-blog-글이-구글-검색에-나오는-법20200923/9.jpg">
+
+<ul>
+<li>폼을 작성한다. <code>*</code> 마크가 붙어있는 것은 필수 항목이다.</li>
+</ul>
+<br>
+<img src="/images/내-github-blog-글이-구글-검색에-나오는-법20200923/10.jpg">
+
+<ul>
+<li>심사가 끝나면 이메일로 알려준다고 하니 기다리자..</li>
+<li>여기까지 다음 등록도 끝났다!</li>
+</ul>
+<br>
+<br>
+<br>
+
+<h3 id="팁"><a href="#팁" class="headerlink" title="팁"></a>팁</h3><h4 id="언제부터-검색이-될까"><a href="#언제부터-검색이-될까" class="headerlink" title="언제부터 검색이 될까..?"></a>언제부터 검색이 될까..?</h4><ul>
+<li>검색 엔진에 등록하면 바로 검색 노출은 안되고, 시간이 필요하다.</li>
+<li>하루 정도 걸린다고 생각하자.</li>
+</ul>
+<h4 id="표준링크-확인하기"><a href="#표준링크-확인하기" class="headerlink" title="표준링크 확인하기"></a>표준링크 확인하기</h4><ul>
+<li>hexo-auto-canonical를 설치하지 않아도 된다고 했는데, 알아보니까 자동으로 생성해주고 있었다!</li>
+<li>확인하는 방법은..</li>
+</ul>
+<img src="/images/내-github-blog-글이-구글-검색에-나오는-법20200923/11.jpg">
+
+<ul>
+<li>내 블로그에서 아무 글이나 클릭해서 들어간다.</li>
+<li>F12로 개발자도구를 연다.</li>
+<li>ctrl f 로 검색창을 연다음에 <code>canonical</code>를 검색한다. 그러면 위와같은 link 태그가 있으면 된다!</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-09-23T00:51:20.000Z" title="2020-09-23T00:51:20.000Z">2020-09-23</time>게시 됨</span><span class="level-item"><time datetime="2020-09-23T02:15:48.660Z" title="2020-09-23T02:15:48.660Z">2020-09-23</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/blog/">blog</a></span><span class="level-item">2분안에 읽기 (약 277 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/09/23/disqus%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%8C%93%EA%B8%80-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">disqus로 블로그 댓글 사용하기</a></h1><div class="content"><img src="/images/disqus로-블로그-댓글-사용하기20200923/preview.jpg">
+
+<ul>
+<li>hexo icarus theme 에서는 disqus를 기본으로 지원한다.</li>
+<li>우리는 disqus에서 <code>shortname</code>을 알아내서 적어주기만 하면 된다.</li>
+<li>너무 간편하다!</li>
+</ul>
+<h2 id="따라하기"><a href="#따라하기" class="headerlink" title="따라하기"></a>따라하기</h2><ul>
+<li>hexo icarus theme 기준입니다!</li>
+<li>스샷아래 설명이 있는데</li>
+<li>그냥 스샷 그대로 따라가면 됩니다.</li>
+</ul>
+<h3 id="DISQUS-회원가입"><a href="#DISQUS-회원가입" class="headerlink" title="DISQUS 회원가입"></a>DISQUS 회원가입</h3><ul>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://disqus.com/">DISQUS</a>에 회원가입하고 로그인한다.</li>
+</ul>
+<h3 id="DISQUS에서-사이트-추가-Shortname만들고-확인하기"><a href="#DISQUS에서-사이트-추가-Shortname만들고-확인하기" class="headerlink" title="DISQUS에서 사이트 추가(Shortname만들고 확인하기)"></a>DISQUS에서 사이트 추가(Shortname만들고 확인하기)</h3><img src="/images/disqus로-블로그-댓글-사용하기20200923/1.jpg">
+
+<ul>
+<li><code>GET STARTED</code> 버튼 클릭</li>
+</ul>
+<br>
+
+<img src="/images/disqus로-블로그-댓글-사용하기20200923/2.jpg">
+
+<ul>
+<li><code>I want to install Disqus on my site</code> 버튼 클릭</li>
+</ul>
+<br>
+
+<img src="/images/disqus로-블로그-댓글-사용하기20200923/3.jpg">
+
+<ul>
+<li>항목 작성</li>
+</ul>
+<br>
+
+<img src="/images/disqus로-블로그-댓글-사용하기20200923/4.jpg">
+
+<ul>
+<li>스크롤을 내려서 <code>Basic</code> 선택</li>
+</ul>
+<br>
+
+<img src="/images/disqus로-블로그-댓글-사용하기20200923/5.jpg">
+
+<ul>
+<li>스크롤을 내려서 <code>...with Universal Code</code> 선택</li>
+</ul>
+<br>
+
+<img src="/images/disqus로-블로그-댓글-사용하기20200923/6.jpg">
+
+<ul>
+<li>뭐라뭐라 막 나오는데, 다 무시하고 스크롤을 내려서 <code>Configure</code> 버튼 클릭</li>
+</ul>
+<br>
+
+<img src="/images/disqus로-블로그-댓글-사용하기20200923/7.jpg">
+
+<ul>
+<li>Website URL 항목만 채우고 <code>Complete Setup</code> 버튼 클릭</li>
+</ul>
+<br>
+
+<img src="/images/disqus로-블로그-댓글-사용하기20200923/8.jpg">
+
+<ul>
+<li>하단 <code>Dismiss Setup</code> 버튼을 클릭하고,</li>
+</ul>
+<br>
+
+<img src="/images/disqus로-블로그-댓글-사용하기20200923/9.jpg">
+
+<ul>
+<li>상단에 <code>Edit Settings</code> 버튼 클릭</li>
+</ul>
+<br>
+
+<img src="/images/disqus로-블로그-댓글-사용하기20200923/10.jpg">
+
+<ul>
+<li>Shortname 항목에서 내 <code>Shortname</code>을 확인하고 복사한다.</li>
+</ul>
+<br>
+
+<h3 id="config-icarus-yml에-Shortname-설정하기"><a href="#config-icarus-yml에-Shortname-설정하기" class="headerlink" title="_config.icarus.yml에 Shortname 설정하기"></a>_config.icarus.yml에 Shortname 설정하기</h3><img src="/images/disqus로-블로그-댓글-사용하기20200923/11.jpg">
+
+<figure class="highlight yml"><figcaption><span>_config.icarus.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">disqus</span></span><br><span class="line">  <span class="comment"># Disqus shortname</span></span><br><span class="line">  <span class="attr">shortname:</span> <span class="string">&#x27;chinsun9&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>이렇게 설정해주면 끝..!</li>
+<li>놀랍게도 적용이 완료되었다!</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-09-22T07:40:23.000Z" title="2020-09-22T07:40:23.000Z">2020-09-22</time>게시 됨</span><span class="level-item"><time datetime="2020-09-25T08:27:28.072Z" title="2020-09-25T08:27:28.072Z">2020-09-25</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/blog/">blog</a></span><span class="level-item">몇 초안에 읽기 (약 60 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/09/22/no-follow/">no follow</a></h1><div class="content"><h2 id="nofollow"><a href="#nofollow" class="headerlink" title="nofollow"></a>nofollow</h2><ul>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://ko.wikipedia.org/wiki/Nofollow">https://ko.wikipedia.org/wiki/Nofollow</a></li>
+<li>SEO 설정을 하면서 알게된 것이다.</li>
+<li><em>hexo-autonofollow</em> 모듈을 설치해</li>
+<li>외부 링크에 nofollow 속성을 넣어준다.</li>
+<li>참고 ; <a target="_blank" rel="external nofollow noopener noreferrer" href="https://support.google.com/webmasters/answer/96569?hl=ko">구글 서치 콘솔 가이드</a></li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-09-22T04:52:42.000Z" title="2020-09-22T04:52:42.000Z">2020-09-22</time>게시 됨</span><span class="level-item"><time datetime="2020-09-23T01:11:08.639Z" title="2020-09-23T01:11:08.639Z">2020-09-23</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/blog/">blog</a></span><span class="level-item">3분안에 읽기 (약 454 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/09/22/hexo%EC%97%90%EC%84%9C-%EC%B4%88%EC%95%88-%EC%9E%91%EC%84%B1%EC%A4%91-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">hexo에서 초안, 작성중 사용하기</a></h1><div class="content"><img src="/images/hexo에서-초안-작성중-사용하기20200922/preview.jpg">
+
+<ul>
+<li>너무 많은 포스트들 속에.. 파묻혀있는 새 글</li>
+</ul>
+<h2 id="draft-사용하기"><a href="#draft-사용하기" class="headerlink" title="draft 사용하기"></a>draft 사용하기</h2><figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft &quot;hexo에서 초안, 작성중 사용하기&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="layout"><a href="#layout" class="headerlink" title="layout"></a>layout</h3><ul>
+<li>hexo에서는 새 포스트를 생서할때 layout이라는 것을 지정할 수 있다.</li>
+<li>기본적으로 3개의 레이아웃이 있다. <code>post</code>, <code>draft</code>, <code>page</code></li>
+<li><code>post</code>레이아웃은 기본값이다. source/_posts/ 아래에 생성되게 만든다.</li>
+<li><code>page</code>레이아웃은 페이지를 생성한다. source/ 아래에 생성되게 만든다.</li>
+<li><code>draft</code>레이아웃은 source/_drafts/ 아래에 생성되게 만든다.</li>
+</ul>
+<h3 id="Draft"><a href="#Draft" class="headerlink" title="Draft"></a>Draft</h3><ul>
+<li>source/_drafts/ 아래에 생성된 md들은 기본적으로 렌더링 되지 않는다.</li>
+<li>즉, 배포해도 블로그에 표시되지 않는다.</li>
+<li>따라서 작성중인 글을 노출시키지 않을 수 있다.</li>
+<li>또 포스트가 많아지면서 source/_posts 디렉터리가 복잡해지는데, 여기서 스크롤해가면서 작성중인 글을 힘들게 찾을 필요가 없다.</li>
+</ul>
+<h4 id="작성완료하는-법"><a href="#작성완료하는-법" class="headerlink" title="작성완료하는 법"></a>작성완료하는 법</h4><ul>
+<li>포스팅이 끝나면 이제 _posts 디렉터리로 옮기면 된다.</li>
+</ul>
+<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] [작성 완료한 포스트 파일명]</span><br><span class="line"></span><br><span class="line">hexo publish aws aws-공부</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>드래그 앤 드랍으로 직접 posts 폴더로 옮겨줄 수도 있는데</li>
+<li>publish 명령을 사용하게 되면 layout을 지정할 수 있다.</li>
+<li>scaffolds 디렉터리에 만들어준 틀대로 front-matter가 바뀐다.</li>
+<li>layout은 생략하면 기본값으로 post가 적용된다.</li>
+</ul>
+<h4 id="로컬에서-테스트하기"><a href="#로컬에서-테스트하기" class="headerlink" title="로컬에서 테스트하기"></a>로컬에서 테스트하기</h4><ul>
+<li>아쉽게도 우리가 알고 있는 <code>hexo server</code>로는 draft가 노출되지 않는다.</li>
+</ul>
+<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server --draft</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>근데 <code>--draft</code> 옵션을 사용하면 source/_drafts 디렉터리에 있는 md파일도 렌더링되어 나타나게 된다.</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-09-22T02:08:51.000Z" title="2020-09-22T02:08:51.000Z">2020-09-22</time>게시 됨</span><span class="level-item"><time datetime="2020-10-21T07:13:50.182Z" title="2020-10-21T07:13:50.182Z">2020-10-21</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/blog/">blog</a></span><span class="level-item">2분안에 읽기 (약 304 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/09/22/hexo-%ED%8F%AC%EC%8A%A4%ED%8A%B8-CRUD/">hexo 포스트 CRUD</a></h1><div class="content"><img src="/images/hexo-포스트-CRUD20200922/preview.svg">
+
+<ul>
+<li>hexo에서 포스트 하는법!</li>
+<li>CRUD로 비유하여 알려줍니다</li>
+</ul>
+<h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><ul>
+<li><p>새 포스트 쓰기</p>
+<p><code>hexo new &quot;새 포스트&quot;</code></p>
+</li>
+<li><p>위 명령으로 새 포스트를 만든다.</p>
+</li>
+<li><p>source/_posts/새-포스트.md</p>
+</li>
+<li><p>경로에 새로운 md가 만들어 진다.</p>
+</li>
+<li><p>해당 md를 열어 마크다운을 활용해서 글을 쓴다.</p>
+</li>
+<li><p>마크 다운 사용법은 <a href="https://chinsun9.github.io/categories/markdown/">여기</a> 참고한다.</p>
+</li>
+<li><p>hexo 사용법은 <a href="https://chinsun9.github.io/categories/blog/">여기</a> 참고한다.</p>
+</li>
+</ul>
+<h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><ul>
+<li>포스트 읽기<br><code>hexo server</code></li>
+<li>위 명령으로 로컬에서 내가 쓴 포스트가 잘 나오는지 확인해본다.</li>
+</ul>
+<h2 id="U"><a href="#U" class="headerlink" title="U"></a>U</h2><ul>
+<li>포스트 수정하기</li>
+<li>source/_posts 경로에서 수정하고 싶은 포스트를 찾아 수정한다.</li>
+</ul>
+<img src="/images/hexo-포스트-CRUD20200922/1.jpg">
+
+<ul>
+<li>업데이트 시각은 자동 갱신되니까 걱정하지 말도록.</li>
+</ul>
+<h2 id="D"><a href="#D" class="headerlink" title="D"></a>D</h2><ul>
+<li>포스트 삭제하기</li>
+</ul>
+<img src="/images/hexo-포스트-CRUD20200922/2.jpg">
+
+<ul>
+<li>source/_posts 경로에서 삭제하고 싶은 포스트를 찾아 삭제한다.</li>
+<li>그냥 글을 숨기고 싶다면 source 디렉터리 바깥으로 뺀다.</li>
+</ul>
+<h2 id="APPLY"><a href="#APPLY" class="headerlink" title="APPLY"></a>APPLY</h2><ul>
+<li>위 과정을 통해서 포스트를 CRUD 해봤다.</li>
+<li>이제 깃허브 페이지에 적용시키고 싶다면 아래 명령을 사용한다.<br><code>hexo generate &amp; hexo deploy</code></li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-09-21T00:15:59.000Z" title="2020-09-21T00:15:59.000Z">2020-09-21</time>게시 됨</span><span class="level-item"><time datetime="2020-09-22T09:01:28.530Z" title="2020-09-22T09:01:28.530Z">2020-09-22</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/blog/">blog</a></span><span class="level-item">1분안에 읽기 (약 178 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/09/21/%EC%BB%A4%EC%8A%A4%ED%85%80-404-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0/">커스텀 404 페이지 만들기</a></h1><div class="content"><img src="/images/커스텀-404-페이지-만들기20200921/preview.jpg">
+<img src="/images/커스텀-404-페이지-만들기20200921/1.jpg">
+
+<ul>
+<li><p>루트 디렉터리에 404.html이 존재하면 기존 404 페이지를 대신해 보여준다.</p>
+</li>
+<li><p>hexo에서 적용시키려면 source 디렉터리에 404.html을 만들면된다.</p>
+<img src="/images/커스텀-404-페이지-만들기20200921/2.jpg">
+</li>
+<li><p>그런데 hexo에서 배포할때 자동으로 테마에 맞게 지정된 레이아웃으로 변환한다.</p>
+</li>
+<li><p>이를 막기 위해 404.html의 Front-matter 에 <code>layout: false</code>로 지정한다</p>
+</li>
+</ul>
+<figure class="highlight html"><figcaption><span>source/404.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: false</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a><a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/front-matter.html">Front-matter</a></h2><ul>
+<li>hexo에서 파일 최상단에 적는 yml을 Front-matter라고 한다.</li>
+</ul>
+<figure class="highlight yml"><figcaption><span>Front-matter</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">커스텀</span> <span class="number">404</span> <span class="string">페이지</span> <span class="string">만들기</span></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">category:</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">404</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">custom</span> <span class="string">page</span></span><br><span class="line"><span class="attr">thumbnail:</span> <span class="string">/images/커스텀-404-페이지-만들기20200921/preview.jpg</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2020-09-21 09:15:59</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="404-소스-출처"><a href="#404-소스-출처" class="headerlink" title="404 소스 출처"></a>404 소스 출처</h2><ul>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://codepen.io/purplexmoss/pen/PoPyzMW">https://codepen.io/purplexmoss/pen/PoPyzMW</a></li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-09-17T06:34:50.000Z" title="2020-09-17T06:34:50.000Z">2020-09-17</time>게시 됨</span><span class="level-item"><time datetime="2020-09-22T08:59:43.480Z" title="2020-09-22T08:59:43.480Z">2020-09-22</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/blog/">blog</a></span><span class="level-item">1분안에 읽기 (약 167 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/09/17/hosted-with-%E2%9D%A4-by-GitHub%EB%A1%9C-%EC%BD%94%EB%93%9C-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/">hosted with ❤ by GitHub로 코드 표시하는 법</a></h1><div class="content"><img src="/images/hosted-with-❤-by-GitHub로-코드-표시하는-법20200917/preview.jpg">
+
+<script src="//gist.github.com/5d7714844e6b312c3938223f5dad7d12.js"></script>
+
+<h2 id="Github-Gist"><a href="#Github-Gist" class="headerlink" title="Github Gist"></a><a target="_blank" rel="external nofollow noopener noreferrer" href="https://gist.github.com/">Github Gist</a></h2><ul>
+<li>전문 용어로 Gist 라고 하며, 코드 블럭을 순수 md로도 표현할 수 있는데 Gist로도 할 수 있다.</li>
+<li>여기저기 여러 화면에서 중복되어서 씌여지는 코드가 있다.</li>
+<li>그런데 코드에 오타가 나서 수정을 한다고하자.</li>
+<li>md로 작성했으면 복사 붙여넣기로 인해 일일이 다 수정해야한다.</li>
+<li>그런데 gist로 작성했으면 그냥 gist에 들어가서 수정하면 다 반영이 된다!</li>
+</ul>
+<h2 id="Code-Snippet"><a href="#Code-Snippet" class="headerlink" title="Code Snippet"></a>Code Snippet</h2><ul>
+<li>내용이 되는 코드들을 코드 스니펫이라고 부른다!</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-09-17T06:03:59.000Z" title="2020-09-17T06:03:59.000Z">2020-09-17</time>게시 됨</span><span class="level-item"><time datetime="2020-09-22T09:00:36.663Z" title="2020-09-22T09:00:36.663Z">2020-09-22</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/blog/">blog</a></span><span class="level-item">몇 초안에 읽기 (약 105 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/09/17/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EB%8F%99%EC%98%81%EC%83%81-%EC%82%BD%EC%9E%85%ED%95%98%EA%B8%B0/">마크다운에서 유튜브 동영상 삽입하기</a></h1><div class="content"><div class="video-container"><iframe src="https://www.youtube.com/embed/ycg_Cuse0M4" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<ul>
+<li>와우…</li>
+</ul>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">![미리보기</span>](<span class="link">https://img.youtube.com/vi/J3kUYFFdVc0/0.jpg</span>)](<span class="link">https://www.youtube.com/watch?v=J3kUYFFdVc0</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>이렇게 힘들게 쎃었는데…</li>
+</ul>
+<br>
+
+<h2 id="태그-플러그인"><a href="#태그-플러그인" class="headerlink" title="태그 플러그인"></a><a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/ko/docs/tag-plugins.html">태그 플러그인</a></h2><ul>
+<li>전문 용어로 태그 플러그인이라고 한다.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube ycg_Cuse0M4 %&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>이렇게 간단하게 사용한다</li>
+<li>주의! 순수 마크다운이 아니다! hexo 에서 지원하는 기능이다..</li>
+</ul>
+</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous is-invisible is-hidden-mobile"><a href="/categories/blog/page/0/">이전</a></div><div class="pagination-next"><a href="/categories/blog/page/2/">다음</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link is-current" href="/categories/blog/">1</a></li><li><a class="pagination-link" href="/categories/blog/page/2/">2</a></li></ul></nav></div><div class="column column-left is-3-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar20200926.png" alt="친성"></figure><p class="title is-size-4 is-block line-height-inherit">친성</p><p class="is-size-6 is-block">chinsun9</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>south korea</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">127</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">23</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">163</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/chinsun9" target="_blank" rel="external nofollow noopener noreferrer">팔로우</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="external nofollow noopener noreferrer" title="Github" href="https://github.com/chinsun9"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="external nofollow noopener noreferrer" title="Youtube" href="https://www.youtube.com/user/krCHinSung"><i class="fab fa-youtube"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">링크</h3><ul class="menu-list"><li><a class="level is-mobile is-mobile" href="https://github.com/chinsun9" target="_blank" rel="external nofollow noopener noreferrer"><span class="level-left"><span class="level-item">github</span></span><span class="level-right"><span class="level-item tag">github.com</span></span></a></li><li><a class="level is-mobile is-mobile" href="https://www.youtube.com/user/krCHinSung" target="_blank" rel="external nofollow noopener noreferrer"><span class="level-left"><span class="level-item">youtube</span></span><span class="level-right"><span class="level-item tag">www.youtube.com</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/aws/"><span class="level-start"><span class="level-item">aws</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/blog/"><span class="level-start"><span class="level-item">blog</span></span><span class="level-end"><span class="level-item tag">20</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/cmd/"><span class="level-start"><span class="level-item">cmd</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/docker/"><span class="level-start"><span class="level-item">docker</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/etc/"><span class="level-start"><span class="level-item">etc</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/git/"><span class="level-start"><span class="level-item">git</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/java/"><span class="level-start"><span class="level-item">java</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/kakao-api/"><span class="level-start"><span class="level-item">kakao api</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/markdown/"><span class="level-start"><span class="level-item">markdown</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/nodejs/"><span class="level-start"><span class="level-item">nodejs</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/open-api/"><span class="level-start"><span class="level-item">open api</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/playlist/"><span class="level-start"><span class="level-item">playlist</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/programmers/"><span class="level-start"><span class="level-item">programmers</span></span><span class="level-end"><span class="level-item tag">23</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/react/"><span class="level-start"><span class="level-item">react</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/sql/"><span class="level-start"><span class="level-item">sql</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/swift/"><span class="level-start"><span class="level-item">swift</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/typescript/"><span class="level-start"><span class="level-item">typescript</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/unity/"><span class="level-start"><span class="level-item">unity</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/vscode/"><span class="level-start"><span class="level-item">vscode</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/web/"><span class="level-start"><span class="level-item">web</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/windows/"><span class="level-start"><span class="level-item">windows</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%83%9D%EA%B0%81/"><span class="level-start"><span class="level-item">생각</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/"><span class="level-start"><span class="level-item">정보처리기사</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><a class="media-left" href="/2020/11/06/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/"><p class="image is-64x64"><img class="fill" src="/images/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD20201106/preview.jpg" alt="RDS 삭제시 주의사항"></p></a><div class="media-content size-small"><p><time datetime="2020-11-06T00:14:00.000Z">2020-11-06</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/06/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/">RDS 삭제시 주의사항</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/aws/">aws</a></p></div></article><article class="media"><a class="media-left" href="/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/"><p class="image is-64x64"><img class="fill" src="https://img.youtube.com/vi/VVTzGOGayYA/0.jpg" alt="일렉트론으로 OBS input overlay 클론코딩"></p></a><div class="media-content size-small"><p><time datetime="2020-11-05T06:02:01.000Z">2020-11-05</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/">일렉트론으로 OBS input overlay 클론코딩</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/nodejs/">nodejs</a></p></div></article><article class="media"><a class="media-left" href="/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/"><p class="image is-64x64"><img class="fill" src="https://img.youtube.com/vi/9_1ujY4Flb4/0.jpg" alt="nodejs + socketio 로 만드는 채팅 앱, 카카오톡 클론코딩?"></p></a><div class="media-content size-small"><p><time datetime="2020-11-03T07:17:59.000Z">2020-11-03</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/">nodejs + socketio 로 만드는 채팅 앱, 카카오톡 클론코딩?</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/nodejs/">nodejs</a></p></div></article><article class="media"><a class="media-left" href="/2020/11/03/reqres-in%EC%9C%BC%EB%A1%9C-ajax-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B0/"><p class="image is-64x64"><img class="fill" src="/images/reqres-in%EC%9C%BC%EB%A1%9C-ajax-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B020201103/preview.jpg" alt="reqres.in으로 ajax 연습하기"></p></a><div class="media-content size-small"><p><time datetime="2020-11-03T06:39:59.000Z">2020-11-03</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/03/reqres-in%EC%9C%BC%EB%A1%9C-ajax-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B0/">reqres.in으로 ajax 연습하기</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/web/">web</a></p></div></article><article class="media"><a class="media-left" href="/2020/11/03/%ED%8F%AC%ED%8A%B8-%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%B2%B4%ED%81%AC-%EC%9B%B9-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/"><p class="image is-64x64"><img class="fill" src="https://img.youtube.com/vi/4IMSpyKuhL4/0.jpg" alt="포트 포워딩 체크 웹 클론코딩"></p></a><div class="media-content size-small"><p><time datetime="2020-11-03T06:11:51.000Z">2020-11-03</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/03/%ED%8F%AC%ED%8A%B8-%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%B2%B4%ED%81%AC-%EC%9B%B9-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/">포트 포워딩 체크 웹 클론코딩</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/nodejs/">nodejs</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/11/"><span class="level-start"><span class="level-item">11월 2020</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/10/"><span class="level-start"><span class="level-item">10월 2020</span></span><span class="level-end"><span class="level-item tag">35</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/09/"><span class="level-start"><span class="level-item">9월 2020</span></span><span class="level-end"><span class="level-item tag">76</span></span></a></li></ul></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo20200926.png" alt="친성의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 chinsung</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external nofollow noopener noreferrer">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="external nofollow noopener noreferrer" title="chinsun9&#039;s GitHub" href="https://github.com/chinsun9"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script></body></html>
