@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 06 Nov 2020 03:49:02 GMT</pubDate>
+    <pubDate>Fri, 06 Nov 2020 04:50:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,14 +22,14 @@
         
       <description>&lt;ul&gt;
 &lt;li&gt;정보처리기사 책을 펴고 30분 봣는데 모니터 보는 것 보다 눈이 아파서 때려쳤다.&lt;/li&gt;
-&lt;li&gt;막연한 이론은 공부할 엄두가 안난다..&lt;/li&gt;
+&lt;li&gt;막연한 이론은 공부할 엄두가 안난다…&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         
       
       
       
-      <content:encoded><![CDATA[<ul><li>정보처리기사 책을 펴고 30분 봣는데 모니터 보는 것 보다 눈이 아파서 때려쳤다.</li><li>막연한 이론은 공부할 엄두가 안난다..</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<ul><li>정보처리기사 책을 펴고 30분 봣는데 모니터 보는 것 보다 눈이 아파서 때려쳤다.</li><li>막연한 이론은 공부할 엄두가 안난다…</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/">정보처리기사</category>
@@ -58,7 +58,7 @@
       
       
       
-      <content:encoded><![CDATA[<ul><li>검색결과에서 제외할 디렉터리, 파일 설정하기</li></ul><h2 id="세팅창-화면으로"><a href="#세팅창-화면으로" class="headerlink" title="세팅창 화면으로"></a>세팅창 화면으로</h2><ul><li><code>Ctrl + Shift + P</code> 를 누르고 setting을 입력한다</li><li><code>Preferences: Open Settings (UI)</code>로 들어간다</li></ul><h2 id="search-exclude-설정"><a href="#search-exclude-설정" class="headerlink" title="search: exclude 설정"></a>search: exclude 설정</h2><p><img src="/images/vscode-search-exclude-setting20201106/preview.jpg" alt=" "></p><ul><li>검색에서 제외할 패턴들을 입력한다.</li></ul><h2 id="검색-제외-적용하기"><a href="#검색-제외-적용하기" class="headerlink" title="검색 제외 적용하기"></a>검색 제외 적용하기</h2><p><img src="/images/vscode-search-exclude-setting20201106/3.jpg" alt=" "></p><ul><li>… 을 클릭해서 디테일 표시</li></ul><p><img src="/images/vscode-search-exclude-setting20201106/1.jpg" alt=" "></p><ul><li>file to exclude 영역에 아이콘 활성화</li></ul><p><img src="/images/vscode-search-exclude-setting20201106/2.jpg" alt=" "></p><ul><li>왼쪽이 비활성화일 떄</li><li>오른쪽이 활성화일 떄</li><li></li></ul><h2 id="상위-옵션-files-exclude"><a href="#상위-옵션-files-exclude" class="headerlink" title="상위 옵션 ; files.exclude"></a>상위 옵션 ; files.exclude</h2><ul><li>vscode 탐색기에서 존재자체를 없애버리는 얘다.</li><li>여기서 제외된 디렉터리는 당연히 검색에서도 제외됨으로</li><li>search.exclude의 상위 호환이라고 볼 수 있다.</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<ul><li>검색결과에서 제외할 디렉터리, 파일 설정하기</li></ul><h2 id="세팅창-화면으로"><a href="#세팅창-화면으로" class="headerlink" title="세팅창 화면으로"></a>세팅창 화면으로</h2><ul><li><code>Ctrl + Shift + P</code> 를 누르고 setting을 입력한다</li><li><code>Preferences: Open Settings (UI)</code>로 들어간다</li></ul><h2 id="search-exclude-설정"><a href="#search-exclude-설정" class="headerlink" title="search: exclude 설정"></a>search: exclude 설정</h2><p><img src="/images/vscode-search-exclude-setting20201106/preview.jpg" alt=" "></p><ul><li>검색에서 제외할 패턴들을 입력한다.</li></ul><h2 id="검색-제외-적용하기"><a href="#검색-제외-적용하기" class="headerlink" title="검색 제외 적용하기"></a>검색 제외 적용하기</h2><p><img src="/images/vscode-search-exclude-setting20201106/3.jpg" alt=" "></p><ul><li>… 을 클릭해서 디테일 표시</li></ul><p><img src="/images/vscode-search-exclude-setting20201106/1.jpg" alt=" "></p><ul><li>file to exclude 영역에 아이콘 활성화</li></ul><p><img src="/images/vscode-search-exclude-setting20201106/2.jpg" alt=" "></p><ul><li>왼쪽이 비활성화일 떄</li><li>오른쪽이 활성화일 떄</li><li>쓸때없는 것을 제외함으로써 쾌적한 검색결과를 확인할 수 있다.</li></ul><h2 id="상위-옵션-files-exclude"><a href="#상위-옵션-files-exclude" class="headerlink" title="상위 옵션 ; files.exclude"></a>상위 옵션 ; files.exclude</h2><ul><li>vscode 탐색기에서 존재자체를 없애버리는 얘다.</li><li>여기서 제외된 디렉터리는 당연히 검색에서도 제외됨으로</li><li>search.exclude의 상위 호환이라고 볼 수 있다.</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
