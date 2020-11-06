@@ -1,6 +1,265 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>친성의 블로그</title><meta description="친성의 개발 블로그"><meta property="og:type" content="blog"><meta property="og:title" content="친성의 블로그"><meta property="og:url" content="https://chinsun9.github.io/"><meta property="og:site_name" content="친성의 블로그"><meta property="og:description" content="친성의 개발 블로그"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://chinsun9.github.io/img/logo20200926.png"><meta property="article:author" content="chinsung"><meta property="article:tag" content="dev"><meta property="article:tag" content="developer"><meta property="article:tag" content="coding"><meta property="article:tag" content="sw"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/logo20200926.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://chinsun9.github.io"},"headline":"친성의 블로그","image":["https://chinsun9.github.io/img/og_image.png"],"author":{"@type":"Person","name":"chinsung"},"description":"친성의 개발 블로그"}</script><link rel="icon" href="/img/favicon20200926.ico?"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/rss2.xml" title="친성의 블로그" type="application/rss+xml">
-</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo20200926.png" alt="친성의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/project">Project</a></div><div class="navbar-end"><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-10-30T00:29:49.000Z" title="2020-10-30T00:29:49.000Z">2020-10-30</time>게시 됨</span><span class="level-item"><time datetime="2020-10-30T00:32:00.027Z" title="2020-10-30T00:32:00.027Z">2020-10-30</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/blog/">blog</a></span><span class="level-item">몇 초안에 읽기 (약 32 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/10/30/hexo-db-json-%EC%B4%88%EA%B8%B0%ED%99%94/">hexo db.json 초기화</a></h1><div class="content"><ul>
+</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo20200926.png" alt="친성의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/project">Project</a></div><div class="navbar-end"><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-10-30T00:36:42.000Z" title="2020-10-30T00:36:42.000Z">2020-10-30</time>게시 됨</span><span class="level-item"><time datetime="2020-11-02T02:51:44.250Z" title="2020-11-02T02:51:44.250Z">2020-11-02</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/aws/">aws</a></span><span class="level-item">18분안에 읽기 (약 2729 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/10/30/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/">ec2 web app https 적용하기</a></h1><div class="content"><p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/preview.jpg" alt=" "></p>
+<ul>
+<li>웹에서 위치정보를 활용하고 싶어서 geolocation을 사용했는데,</li>
+<li>geolocation은 localhost 또는 https에서만 동작했다.</li>
+<li>위치정보를 활용하는 이 앱을 다른사람들에게 배포하기 위해서는 https를 사용했어야 했다.</li>
+</ul>
+<ul>
+<li>삽질을 많이했는데, 어떻게 하는지 정리한다. 할게 쫌 많고, 중간중간 대기시간이 길다.</li>
+<li>처음부터 끝까지 무료로 하는 법이다</li>
+<li>따라하면 ec2에서 express로 돌아가는 웹앱에 https를 적용할 수 있다.</li>
+</ul>
+<h2 id="내가-시도한-환경"><a href="#내가-시도한-환경" class="headerlink" title="내가 시도한 환경"></a>내가 시도한 환경</h2><ul>
+<li>aws 프리티어</li>
+<li>ec2 (아마존 리눅스 2)</li>
+<li>탄력적 IP</li>
+</ul>
+<ul>
+<li>주의사항 ; 탄력적 IP는 1개까지 무료다. 탄력적 IP를 사용하면 연결된 ec2 인스턴스를 종료해서는 안된다. 인스턴스는 매월 750시간 무료다. 이 인스턴스를 제외하고 다른 인스턴스를 실행하면 비용이 생길 수 있다.</li>
+</ul>
+<h2 id="해야할일-목록…"><a href="#해야할일-목록…" class="headerlink" title="해야할일 목록…"></a>해야할일 목록…</h2><ul>
+<li>express 웹 앱준비.</li>
+<li>ec2 보안그룹 인바운드 설정 (http, https, 앱에서 사용하는 포트 열기)</li>
+<li>ec2에 탄력적 IP 할당</li>
+<li>ACM(AWS Certificate Manager)에서 SSL/TLS 인증서 발급요청</li>
+<li>freenom에서 도메인 얻기</li>
+<li>cloudflare 가입하고 사이트 추가</li>
+<li>freenom dns 설정 및 SSL/TLS 인증서 발급 완료</li>
+<li>freenom에서 cloudflare로 네임서버 변경</li>
+<li>aws 애플리케이션 로드 밸런서 생성</li>
+<li>cloudflare dns 설정</li>
+</ul>
+<h2 id="따라하기"><a href="#따라하기" class="headerlink" title="따라하기"></a>따라하기</h2><h3 id="express-웹-앱-준비"><a href="#express-웹-앱-준비" class="headerlink" title="express 웹 앱 준비."></a>express 웹 앱 준비.</h3><figure class="highlight bash"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">express https-web-app --view=ejs</span><br><span class="line"><span class="built_in">cd</span> https-web-app</span><br><span class="line">npm i</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>간단하게 익스프레스 제너레이터로 웹앱을 생성한다.</li>
+</ul>
+<ul>
+<li>새로 생성하거나 기존에 있는 웹앱을 ec2 인스턴스에 올려준다.</li>
+</ul>
+<figure class="highlight bash"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PORT=8080&amp;&amp; node ./bin/www</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>앱을 실행한다.</li>
+<li>나는 익스프레스 제너레이터로 만들었기때문에 process.env.PORT로 8080값을 줘서 8080포트로 앱이 실행되도록하였다.</li>
+</ul>
+<h3 id="ec2에-탄력적-IP-할당"><a href="#ec2에-탄력적-IP-할당" class="headerlink" title="ec2에 탄력적 IP 할당"></a>ec2에 탄력적 IP 할당</h3><p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/1.jpg" alt=" "></p>
+<ul>
+<li>ec2 &gt; 탄력적 IP 주소 &gt; 탄력적 IP 주소 할당</li>
+<li>방금 앱을 실행한 인스턴스를 선택하고 할당해준다.</li>
+</ul>
+<ul>
+<li>주의 : 탄력적 IP를 할당한 이상 연결된 EC2가 종료되어 탄력적 IP에 아무것도 연결되어 있지 않으면 비용이 발생한다.</li>
+<li>또, 탄력적 IP는 1개까지 무료이다. EC2도 이제부터 매일 돌아가게됨(750시간 무료)으로 사실상 실행할 수 있는 인스턴스는 1개로 제한된다.</li>
+</ul>
+<h3 id="ec2-보안그룹-인바운드-설정-http-https-앱에서-사용하는-포트-열기"><a href="#ec2-보안그룹-인바운드-설정-http-https-앱에서-사용하는-포트-열기" class="headerlink" title="ec2 보안그룹 인바운드 설정 (http, https, 앱에서 사용하는 포트 열기)"></a>ec2 보안그룹 인바운드 설정 (http, https, 앱에서 사용하는 포트 열기)</h3><p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/2.jpg" alt=" "></p>
+<ul>
+<li>앱이 실행되고있는 ec2 인스턴스 보안그룹으로 들어가 인바운드 규칙을 편집한다.</li>
+<li>http와 https를 어디서나 접근가능하게 한다.</li>
+<li>또 앱을 실행 포트도 어디선 접근가능하게 한다. 나의 경우 8080포트이다.</li>
+</ul>
+<h3 id="freenom에서-도메인-얻기"><a href="#freenom에서-도메인-얻기" class="headerlink" title="freenom에서 도메인 얻기"></a>freenom에서 도메인 얻기</h3><ul>
+<li><p>내가 도메인을 얻을 때 이사이트가 엄청나게 느리기때문에 많은 인내가 필요하다..</p>
+</li>
+<li><p>수시로 404 not found가 뜬다…</p>
+</li>
+<li><p>새로고침을 몇번했는지 모르곘다.</p>
+</li>
+<li><p>freenom에서 나는 처음 도메인을 얻어봤다.</p>
+</li>
+<li><p>그런데 여기서 삽질한 것이</p>
+</li>
+<li><p>당연히 회원가입을 먼저하고 도메인을 얻는 것인줄 알았으나,</p>
+</li>
+<li><p>도메인을 얻는 과정에서 체크아웃을 하면서 회원가입을 진행해야 정상 진행된다.</p>
+</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/3.jpg" alt=" "></p>
+<ul>
+<li>원하는 도메인을 입력한다.</li>
+<li>FREE 라벨이 붙은것중에서 원하는 것을 선택한다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/4.jpg" alt=" "></p>
+<ul>
+<li>원하는 도메인을 선택하면, 체크아웃 버튼이 생긴다.</li>
+<li>체크아웃버튼을 눌러준다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/5.jpg" alt=" "></p>
+<ul>
+<li>기간을 선택하고 Continue버튼을 누른다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/6.jpg" alt=" "></p>
+<ul>
+<li>여기서 드디어 회원가입을 진행한다..</li>
+<li>나는 왼쪽 이메일 인증을 선택하였다.</li>
+<li>이메일 입력하고 버튼을 누르면, 해당 메일로 인증 url이 날라오는데 클릭해서 다음을 진행한다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/7.jpg" alt=" "></p>
+<ul>
+<li>이렇게 회원가입폼이 나오는데 빨간부분을 채워주고 동의체크하고 완료한다.</li>
+<li>이렇게 무료로 도메인 얻기에 성공했다.</li>
+<li>이제 aws로 돌아와서 무료로 인증서를 발급받아보자.</li>
+</ul>
+<h3 id="ACM-AWS-Certificate-Manager-에서-SSL-TLS-인증서-발급요청"><a href="#ACM-AWS-Certificate-Manager-에서-SSL-TLS-인증서-발급요청" class="headerlink" title="ACM(AWS Certificate Manager)에서 SSL/TLS 인증서 발급요청"></a>ACM(AWS Certificate Manager)에서 SSL/TLS 인증서 발급요청</h3><ul>
+<li>ACM(AWS Certificate Manager)에서 인증서 요청 &gt; 공인 인증서 요청 으로 들어간다</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/8.jpg" alt=" "></p>
+<ul>
+<li>도메인 이름을 추가한다.</li>
+<li>나는 이 인증서에 다른 이름 추가 버튼을 통해 *.domainname 도 추가해줬다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/9.jpg" alt=" "></p>
+<ul>
+<li>검증 방법으로 DNS 검증을 선택한다</li>
+</ul>
+<ul>
+<li>다음 검토 화면은 그냥 확인</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/10.jpg" alt=" "></p>
+<ul>
+<li>마지막 단계 검증 화면에서 조금 기다리면 이런 화면이 나온다.</li>
+<li>도메인 이름 옆에 펼치기 버튼을 클릭해주면 이름 유형 값이라는 게 나오는데</li>
+<li>이 값들을 freenom dns 설정에서 레코드로 추가해줄 것이다.</li>
+</ul>
+<h3 id="freenom-dns-설정-및-SSL-TLS-인증서-발급-완료"><a href="#freenom-dns-설정-및-SSL-TLS-인증서-발급-완료" class="headerlink" title="freenom dns 설정 및 SSL/TLS 인증서 발급 완료"></a>freenom dns 설정 및 SSL/TLS 인증서 발급 완료</h3><ul>
+<li>freenom 사이트로 돌아와서 로그인하고</li>
+<li>상단 메뉴에 Services &gt; My domains 클릭</li>
+<li>Manage Domain 버튼을 클릭하고 Manage Freenom DNS를 클릭한다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/12.jpg" alt=" "></p>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/13.jpg" alt=" "></p>
+<ul>
+<li>위같은 화면이 나오면 아까 ACM에서 봤던 이름과 값들을 채워준다.</li>
+<li>주의 : 타입을 CNAME으로 한다.</li>
+<li>위와같이 매칭시켜주면된다.</li>
+<li>나는 *.domainname으로 추가 이름을 지정해줬는데 이 경우에는 이름과 값이 완전히 똑같기 때문에 한개의 레코드만 설정해주면된다.</li>
+<li>*이 아니고, www. 같은 이름을 추가한 경우에는</li>
+<li>레코드를 하나 더 추가하고 똑같이 매칭시켜서 입력해주면 된다.</li>
+<li>저장한다</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/14.jpg" alt=" "></p>
+<ul>
+<li>이제 ACM으로 돌아와서 인증서 상태가 발급 완료로 변할때까지 기다리면서 유튜브 한편을 보고온다.</li>
+<li>나는 약 5-10분정도 기다린 것 같다.</li>
+<li>만약에 20분이 넘도록 검증 보류 상태라면 뭔가 잘못 따라한 것이다.</li>
+<li>이제 DNS 네임서버를 cloudflare로 바꿀 것이다.</li>
+</ul>
+<h3 id="cloudflare-가입하고-사이트-추가"><a href="#cloudflare-가입하고-사이트-추가" class="headerlink" title="cloudflare 가입하고 사이트 추가"></a>cloudflare 가입하고 사이트 추가</h3><p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/15.jpg" alt=" "></p>
+<ul>
+<li>회원가입한다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/16.jpg" alt=" "></p>
+<ul>
+<li>회원가입을 완료하면, 사이트를 추가할 수 있는데, 내 도메인을 입력한다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/17.jpg" alt=" "></p>
+<ul>
+<li>다음화면에서 Free를 선택하고 넘어간다</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/18.jpg" alt=" "></p>
+<ul>
+<li>넘어오면 이렇게 스캔하는 화면이 나온다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/19.jpg" alt=" "></p>
+<ul>
+<li>스캔이 완료되면 이런화면이 나오는데, 비어있다면,</li>
+<li>아까 freenom에서 dns 설정한것처럼 똑같이 타입을 cname으로 하여 이름, 값을 넣어준다.</li>
+<li>완료했다면 다음화면을 넘어간다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/20.jpg" alt=" "></p>
+<ul>
+<li>그러면 네임 서버를 바꾸라는 말이 나온다.</li>
+<li>이제 freenom사이트로 돌아가서 네임서버를 변경해보자.</li>
+</ul>
+<h3 id="freenom에서-cloudflare로-네임서버-변경"><a href="#freenom에서-cloudflare로-네임서버-변경" class="headerlink" title="freenom에서 cloudflare로 네임서버 변경"></a>freenom에서 cloudflare로 네임서버 변경</h3><ul>
+<li>상단 메뉴에 Services &gt; My domains 클릭</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/22.jpg" alt=" "></p>
+<ul>
+<li>Manage Domain 버튼을 클릭하고 Management Tools &gt; Nameservers를 클릭한다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/21.jpg" alt=" "></p>
+<ul>
+<li>네임 서버를 변경해준다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/23.jpg" alt=" "></p>
+<ul>
+<li>성공하면, cloudflare화면으로 돌아와서 완료를 눌러준다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/24.jpg" alt=" "></p>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/25.jpg" alt=" "></p>
+<ul>
+<li>이런화면이 나오는데 나는 항상 https 옵션을 켜주고 완료해주었다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/26.jpg" alt=" "></p>
+<ul>
+<li>해당 사이트의 개요화면으로 넘어가는데 만약에 이런화면이 나오는데 1~5분정도 기다리면,</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/27.jpg" alt=" "></p>
+<ul>
+<li>이런 화면으로 바뀐다.</li>
+<li>이제 aws로 돌아와 로드 밸런서를 생성해줄 것이다.</li>
+</ul>
+<h3 id="aws-애플리케이션-로드-밸런서-생성"><a href="#aws-애플리케이션-로드-밸런서-생성" class="headerlink" title="aws 애플리케이션 로드 밸런서 생성"></a>aws 애플리케이션 로드 밸런서 생성</h3><p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/28.jpg" alt=" "></p>
+<ul>
+<li>ec2 &gt; 로드 밸런서 &gt; 로드 밸런서 생성 &gt; 애플리케이션 로드 밸런서 생성</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/29.jpg" alt=" "></p>
+<ul>
+<li>이름을 정해주고, 리스너에서 https를 추가해준다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/30.jpg" alt=" "></p>
+<ul>
+<li>가용영역 체크하고 다음으로 넘어간다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/31.jpg" alt=" "></p>
+<ul>
+<li>발급받은 도메인 인증서를 선택하고 다음으로 넘어간다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/32.jpg" alt=" "></p>
+<ul>
+<li>ce2 인스턴스가 속해있는 보안그룹을 선택한다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/33.jpg" alt=" "></p>
+<ul>
+<li>적당히 이름을 짓고,</li>
+<li>포트에서 내 앱이 사용하고있는 포트를 입력하고 다음으로 넘어간다.</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/34.jpg" alt=" "></p>
+<ul>
+<li>내 앱이 실행되고있는 인스턴스를 선택하고</li>
+<li>등록된 항목에 추가 버튼을 누른다.</li>
+<li>그러면 3이라고 표시한 주황색 박스에 해당 인스턴스가 추가되는 걸 확인할 수 있다.</li>
+</ul>
+<ul>
+<li>검토화면에서 다음버튼</li>
+</ul>
+<p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/35.jpg" alt=" "></p>
+<ul>
+<li>로드밸런서 메인화면으로 넘어와지면 생성된 로드밸런서의 DNS이름을 복사한다.</li>
+<li>이제 cloudflare dns 설정만 하면 끝이다!</li>
+</ul>
+<h3 id="cloudflare-dns-설정"><a href="#cloudflare-dns-설정" class="headerlink" title="cloudflare dns 설정"></a>cloudflare dns 설정</h3><p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/36.jpg" alt=" "></p>
+<ul>
+<li>cloudflare에 와서 위처럼 새로운 레코드를 추가하고 타입은 CNAME, 이름은 <code>@</code>, 대상은 방금 복사한 로드밸런서 DNS이름을 넣어주고 저장을 누르면 완료다.</li>
+</ul>
+<h3 id="끝"><a href="#끝" class="headerlink" title="끝"></a>끝</h3><p><img src="/images/ec2-web-app-https-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201030/preview.jpg" alt=" "></p>
+<ul>
+<li>이제 자신의 도메인으로 접속을 해보면….</li>
+<li>https..!</li>
+</ul>
+<h3 id="여기서-잠깐"><a href="#여기서-잠깐" class="headerlink" title="여기서 잠깐..!"></a>여기서 잠깐..!</h3><ul>
+<li>처음에 <code>npm start</code>로 웹 앱을 실행시켰는데</li>
+<li>이러면 ec2 리모트를 종료하는 순간 앱도 같이 종료된다.</li>
+<li><code>nohup export PORT=8080&amp;&amp; node ./bin/www &amp;</code> 이런식으로 실행해야 ec2 리모트를 종료해도 웹 앱이 계속 살아 있다.</li>
+<li>참고 ; <a href="/2020/10/30/linux-node-app-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%8B%A4%ED%96%89">linux node app 백그라운드 실행</a></li>
+</ul>
+<h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://youtu.be/dMVy3BQB314">https://youtu.be/dMVy3BQB314</a></li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-10-30T00:29:49.000Z" title="2020-10-30T00:29:49.000Z">2020-10-30</time>게시 됨</span><span class="level-item"><time datetime="2020-10-30T00:32:00.027Z" title="2020-10-30T00:32:00.027Z">2020-10-30</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/blog/">blog</a></span><span class="level-item">몇 초안에 읽기 (약 32 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/10/30/hexo-db-json-%EC%B4%88%EA%B8%B0%ED%99%94/">hexo db.json 초기화</a></h1><div class="content"><ul>
 <li>가끔 삭제한 페이지가 검색되거나 하는데,</li>
 <li>db.json을 삭제하면 알아서 갱신해준다.</li>
 </ul>
@@ -175,22 +434,7 @@
 <li>나는 주로 ctrl shift 6 인 자세히 옵션을 주로 이용한다.</li>
 <li>1~8까지 옵션이 있다.</li>
 </ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-10-21T06:42:11.000Z" title="2020-10-21T06:42:11.000Z">2020-10-21</time>게시 됨</span><span class="level-item"><time datetime="2020-10-26T02:16:52.842Z" title="2020-10-26T02:16:52.842Z">2020-10-26</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/cmd/">cmd</a></span><span class="level-item">1분안에 읽기 (약 142 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/10/21/cmd-%ED%8F%B4%EB%8D%94-%EC%82%AD%EC%A0%9C-rmdir/">cmd 폴더 삭제 rmdir</a></h1><div class="content"><figure class="highlight bat"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rmdir</span> /s &#123;디렉터리&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">rmdir</span> /s folder_name</span><br><span class="line"></span><br><span class="line"><span class="built_in">rmdir</span> /s folder1_name folder2_name</span><br></pre></td></tr></table></figure>
-
-<h2 id="rmdir-s-디렉터리"><a href="#rmdir-s-디렉터리" class="headerlink" title="rmdir /s {디렉터리}"></a>rmdir /s {디렉터리}</h2><ul>
-<li>/s 옵션으로 빈 디렉터리가 아니더라도 삭제할 수 있다.</li>
-<li>디렉터리를 나열해서 여러개를 한번에 지울 수 있다</li>
-</ul>
-<h2 id="auto-yes"><a href="#auto-yes" class="headerlink" title="auto yes"></a>auto yes</h2><ul>
-<li>지울때 y를 입력해줘야하는데..</li>
-</ul>
-<figure class="highlight bat"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> y|<span class="built_in">rmdir</span> /s folder1_name</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> yy|<span class="built_in">rmdir</span> /s folder1_name folder2_name</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>이런식으로 사용하면 자동 수락한다</li>
-<li>약간 귀찮긴하다.. 그냥 여러 파일, 폴더 삭제는 탐색기 열어서 하는게 빠름..</li>
-</ul>
-</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/2/">이전</a></div><div class="pagination-next"><a href="/page/4/">다음</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><a class="pagination-link is-current" href="/page/3/">3</a></li><li><a class="pagination-link" href="/page/4/">4</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/13/">13</a></li></ul></nav></div><div class="column column-left is-3-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar20200926.png" alt="친성"></figure><p class="title is-size-4 is-block line-height-inherit">친성</p><p class="is-size-6 is-block">chinsun9</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>south korea</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">128</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">23</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">163</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/chinsun9" target="_blank" rel="external nofollow noopener noreferrer">팔로우</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="external nofollow noopener noreferrer" title="Github" href="https://github.com/chinsun9"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="external nofollow noopener noreferrer" title="Youtube" href="https://www.youtube.com/user/krCHinSung"><i class="fab fa-youtube"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">링크</h3><ul class="menu-list"><li><a class="level is-mobile is-mobile" href="https://github.com/chinsun9" target="_blank" rel="external nofollow noopener noreferrer"><span class="level-left"><span class="level-item">github</span></span><span class="level-right"><span class="level-item tag">github.com</span></span></a></li><li><a class="level is-mobile is-mobile" href="https://www.youtube.com/user/krCHinSung" target="_blank" rel="external nofollow noopener noreferrer"><span class="level-left"><span class="level-item">youtube</span></span><span class="level-right"><span class="level-item tag">www.youtube.com</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/aws/"><span class="level-start"><span class="level-item">aws</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/blog/"><span class="level-start"><span class="level-item">blog</span></span><span class="level-end"><span class="level-item tag">20</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/cmd/"><span class="level-start"><span class="level-item">cmd</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/docker/"><span class="level-start"><span class="level-item">docker</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/etc/"><span class="level-start"><span class="level-item">etc</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/git/"><span class="level-start"><span class="level-item">git</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/java/"><span class="level-start"><span class="level-item">java</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/kakao-api/"><span class="level-start"><span class="level-item">kakao api</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/markdown/"><span class="level-start"><span class="level-item">markdown</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/nodejs/"><span class="level-start"><span class="level-item">nodejs</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/open-api/"><span class="level-start"><span class="level-item">open api</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/playlist/"><span class="level-start"><span class="level-item">playlist</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/programmers/"><span class="level-start"><span class="level-item">programmers</span></span><span class="level-end"><span class="level-item tag">23</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/react/"><span class="level-start"><span class="level-item">react</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/sql/"><span class="level-start"><span class="level-item">sql</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/swift/"><span class="level-start"><span class="level-item">swift</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/typescript/"><span class="level-start"><span class="level-item">typescript</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/unity/"><span class="level-start"><span class="level-item">unity</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/vscode/"><span class="level-start"><span class="level-item">vscode</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/web/"><span class="level-start"><span class="level-item">web</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/windows/"><span class="level-start"><span class="level-item">windows</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%83%9D%EA%B0%81/"><span class="level-start"><span class="level-item">생각</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/"><span class="level-start"><span class="level-item">정보처리기사</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><a class="media-left" href="/2020/11/06/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/"><p class="image is-64x64"><img class="fill" src="/images/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B020201106/1.jpg" alt="gradle로 외부라이브러리 설치하기"></p></a><div class="media-content size-small"><p><time datetime="2020-11-06T01:22:14.000Z">2020-11-06</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/06/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">gradle로 외부라이브러리 설치하기</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/java/">java</a></p></div></article><article class="media"><a class="media-left" href="/2020/11/06/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/"><p class="image is-64x64"><img class="fill" src="/images/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD20201106/preview.jpg" alt="RDS 삭제시 주의사항"></p></a><div class="media-content size-small"><p><time datetime="2020-11-06T00:14:00.000Z">2020-11-06</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/06/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/">RDS 삭제시 주의사항</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/aws/">aws</a></p></div></article><article class="media"><a class="media-left" href="/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/"><p class="image is-64x64"><img class="fill" src="https://img.youtube.com/vi/VVTzGOGayYA/0.jpg" alt="일렉트론으로 OBS input overlay 클론코딩"></p></a><div class="media-content size-small"><p><time datetime="2020-11-05T06:02:01.000Z">2020-11-05</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/">일렉트론으로 OBS input overlay 클론코딩</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/nodejs/">nodejs</a></p></div></article><article class="media"><a class="media-left" href="/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/"><p class="image is-64x64"><img class="fill" src="https://img.youtube.com/vi/9_1ujY4Flb4/0.jpg" alt="nodejs + socketio 로 만드는 채팅 앱, 카카오톡 클론코딩?"></p></a><div class="media-content size-small"><p><time datetime="2020-11-03T07:17:59.000Z">2020-11-03</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/">nodejs + socketio 로 만드는 채팅 앱, 카카오톡 클론코딩?</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/nodejs/">nodejs</a></p></div></article><article class="media"><a class="media-left" href="/2020/11/03/reqres-in%EC%9C%BC%EB%A1%9C-ajax-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B0/"><p class="image is-64x64"><img class="fill" src="/images/reqres-in%EC%9C%BC%EB%A1%9C-ajax-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B020201103/preview.jpg" alt="reqres.in으로 ajax 연습하기"></p></a><div class="media-content size-small"><p><time datetime="2020-11-03T06:39:59.000Z">2020-11-03</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/03/reqres-in%EC%9C%BC%EB%A1%9C-ajax-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B0/">reqres.in으로 ajax 연습하기</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/web/">web</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/11/"><span class="level-start"><span class="level-item">11월 2020</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/10/"><span class="level-start"><span class="level-item">10월 2020</span></span><span class="level-end"><span class="level-item tag">35</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/09/"><span class="level-start"><span class="level-item">9월 2020</span></span><span class="level-end"><span class="level-item tag">76</span></span></a></li></ul></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo20200926.png" alt="친성의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 chinsung</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external nofollow noopener noreferrer">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="external nofollow noopener noreferrer" title="chinsun9&#039;s GitHub" href="https://github.com/chinsun9"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/2/">이전</a></div><div class="pagination-next"><a href="/page/4/">다음</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><a class="pagination-link is-current" href="/page/3/">3</a></li><li><a class="pagination-link" href="/page/4/">4</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/13/">13</a></li></ul></nav></div><div class="column column-left is-3-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar20200926.png" alt="친성"></figure><p class="title is-size-4 is-block line-height-inherit">친성</p><p class="is-size-6 is-block">chinsun9</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>south korea</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">129</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">23</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">163</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/chinsun9" target="_blank" rel="external nofollow noopener noreferrer">팔로우</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="external nofollow noopener noreferrer" title="Github" href="https://github.com/chinsun9"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="external nofollow noopener noreferrer" title="Youtube" href="https://www.youtube.com/user/krCHinSung"><i class="fab fa-youtube"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">링크</h3><ul class="menu-list"><li><a class="level is-mobile is-mobile" href="https://github.com/chinsun9" target="_blank" rel="external nofollow noopener noreferrer"><span class="level-left"><span class="level-item">github</span></span><span class="level-right"><span class="level-item tag">github.com</span></span></a></li><li><a class="level is-mobile is-mobile" href="https://www.youtube.com/user/krCHinSung" target="_blank" rel="external nofollow noopener noreferrer"><span class="level-left"><span class="level-item">youtube</span></span><span class="level-right"><span class="level-item tag">www.youtube.com</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/aws/"><span class="level-start"><span class="level-item">aws</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/blog/"><span class="level-start"><span class="level-item">blog</span></span><span class="level-end"><span class="level-item tag">20</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/cmd/"><span class="level-start"><span class="level-item">cmd</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/docker/"><span class="level-start"><span class="level-item">docker</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/etc/"><span class="level-start"><span class="level-item">etc</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/git/"><span class="level-start"><span class="level-item">git</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/java/"><span class="level-start"><span class="level-item">java</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/kakao-api/"><span class="level-start"><span class="level-item">kakao api</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/markdown/"><span class="level-start"><span class="level-item">markdown</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/nodejs/"><span class="level-start"><span class="level-item">nodejs</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/open-api/"><span class="level-start"><span class="level-item">open api</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/playlist/"><span class="level-start"><span class="level-item">playlist</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/programmers/"><span class="level-start"><span class="level-item">programmers</span></span><span class="level-end"><span class="level-item tag">23</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/react/"><span class="level-start"><span class="level-item">react</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/sql/"><span class="level-start"><span class="level-item">sql</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/swift/"><span class="level-start"><span class="level-item">swift</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/typescript/"><span class="level-start"><span class="level-item">typescript</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/unity/"><span class="level-start"><span class="level-item">unity</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/vscode/"><span class="level-start"><span class="level-item">vscode</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/web/"><span class="level-start"><span class="level-item">web</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/windows/"><span class="level-start"><span class="level-item">windows</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%83%9D%EA%B0%81/"><span class="level-start"><span class="level-item">생각</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/"><span class="level-start"><span class="level-item">정보처리기사</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><a class="media-left" href="/2020/11/06/gradle-project-%EC%97%90%EC%84%9C-runnable-jar-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/"><p class="image is-64x64"><img class="fill" src="/images/gradle-project-%EC%97%90%EC%84%9C-runnable-jar-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B020201106/preview.jpg" alt="gradle project 에서 runnable jar 생성하기"></p></a><div class="media-content size-small"><p><time datetime="2020-11-06T01:42:42.000Z">2020-11-06</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/06/gradle-project-%EC%97%90%EC%84%9C-runnable-jar-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/">gradle project 에서 runnable jar 생성하기</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/java/">java</a></p></div></article><article class="media"><a class="media-left" href="/2020/11/06/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/"><p class="image is-64x64"><img class="fill" src="/images/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B020201106/1.jpg" alt="gradle로 외부라이브러리 설치하기"></p></a><div class="media-content size-small"><p><time datetime="2020-11-06T01:22:14.000Z">2020-11-06</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/06/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">gradle로 외부라이브러리 설치하기</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/java/">java</a></p></div></article><article class="media"><a class="media-left" href="/2020/11/06/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/"><p class="image is-64x64"><img class="fill" src="/images/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD20201106/preview.jpg" alt="RDS 삭제시 주의사항"></p></a><div class="media-content size-small"><p><time datetime="2020-11-06T00:14:00.000Z">2020-11-06</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/06/rds-%EC%82%AD%EC%A0%9C%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/">RDS 삭제시 주의사항</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/aws/">aws</a></p></div></article><article class="media"><a class="media-left" href="/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/"><p class="image is-64x64"><img class="fill" src="https://img.youtube.com/vi/VVTzGOGayYA/0.jpg" alt="일렉트론으로 OBS input overlay 클론코딩"></p></a><div class="media-content size-small"><p><time datetime="2020-11-05T06:02:01.000Z">2020-11-05</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/">일렉트론으로 OBS input overlay 클론코딩</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/nodejs/">nodejs</a></p></div></article><article class="media"><a class="media-left" href="/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/"><p class="image is-64x64"><img class="fill" src="https://img.youtube.com/vi/9_1ujY4Flb4/0.jpg" alt="nodejs + socketio 로 만드는 채팅 앱, 카카오톡 클론코딩?"></p></a><div class="media-content size-small"><p><time datetime="2020-11-03T07:17:59.000Z">2020-11-03</time></p><p class="title is-6"><a class="link-muted" href="/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/">nodejs + socketio 로 만드는 채팅 앱, 카카오톡 클론코딩?</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/nodejs/">nodejs</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/11/"><span class="level-start"><span class="level-item">11월 2020</span></span><span class="level-end"><span class="level-item tag">18</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/10/"><span class="level-start"><span class="level-item">10월 2020</span></span><span class="level-end"><span class="level-item tag">35</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/09/"><span class="level-start"><span class="level-item">9월 2020</span></span><span class="level-end"><span class="level-item tag">76</span></span></a></li></ul></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo20200926.png" alt="친성의 블로그" height="28"></a><p class="size-small"><span>&copy; 2020 chinsung</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external nofollow noopener noreferrer">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="external nofollow noopener noreferrer" title="chinsun9&#039;s GitHub" href="https://github.com/chinsun9"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
             article: {
                 highlight: {
                     clipboard: true,
