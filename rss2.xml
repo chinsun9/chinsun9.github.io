@@ -619,34 +619,34 @@
     </item>
     
     <item>
-      <title>github api로 특정 저장소의 커밋내역 불러오기</title>
-      <link>https://chinsun9.github.io/2020/11/02/github-api%EB%A1%9C-%ED%8A%B9%EC%A0%95-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%9D%98-%EC%BB%A4%EB%B0%8B%EB%82%B4%EC%97%AD-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/11/02/github-api%EB%A1%9C-%ED%8A%B9%EC%A0%95-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%9D%98-%EC%BB%A4%EB%B0%8B%EB%82%B4%EC%97%AD-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/</guid>
-      <pubDate>Mon, 02 Nov 2020 04:11:22 GMT</pubDate>
+      <title>DB 시작할 때 쓰는 명령어</title>
+      <link>https://chinsun9.github.io/2020/11/02/DB-%EC%8B%9C%EC%9E%91%ED%95%A0-%EB%95%8C-%EC%93%B0%EB%8A%94-%EB%AA%85%EB%A0%B9%EC%96%B4/</link>
+      <guid>https://chinsun9.github.io/2020/11/02/DB-%EC%8B%9C%EC%9E%91%ED%95%A0-%EB%95%8C-%EC%93%B0%EB%8A%94-%EB%AA%85%EB%A0%B9%EC%96%B4/</guid>
+      <pubDate>Mon, 02 Nov 2020 06:18:01 GMT</pubDate>
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;/images/github-api%EB%A1%9C-%ED%8A%B9%EC%A0%95-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%9D%98-%EC%BB%A4%EB%B0%8B%EB%82%B4%EC%97%AD-%EB%B6</description>
+      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;b</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/github-api%EB%A1%9C-%ED%8A%B9%EC%A0%95-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%9D%98-%EC%BB%A4%EB%B0%8B%EB%82%B4%EC%97%AD-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B020201102/preview.jpg" alt=" "></p><ul><li>깃허브 api로 특정 저장소 커밋내역 json으로 받아보기</li><li>나는 내 special repository인 chinsun9 저장소의 커밋내역을 받아와보았다.</li></ul><h2 id="github-api"><a href="#github-api" class="headerlink" title="github api"></a>github api</h2><blockquote><p><a href="https://api.github.com/repos/chinsun9/chinsun9/commits">https://api.github.com/repos/chinsun9/chinsun9/commits</a><br><a href="https://api.github.com/repos/%7B%EC%9C%A0%EC%A0%80%EB%AA%85%7D/%7B%EC%A0%80%EC%9E%A5%EC%86%8C%EB%AA%85%7D/commits">https://api.github.com/repos/{유저명}/{저장소명}/commits</a></p></blockquote><ul><li>js에서는 fetch api로 데이터를 가져와 원하는 로직을 수행하면 될 것 같다.</li><li>github api가 있다는 것을 알아보았고, 맛보기를 해보았다.</li><li>비공개 저장소 접근이나 다른 유용한 api가 있는지 알아보고 활용하면 좋을 것 같다.</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mariadb</span><br></pre></td></tr></table></figure><figure class="highlight sql"><figcaption><span>sql</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- &#x27;webtest&#x27;라는 이름의 db 생성</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">database</span> webtest;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- &#x27;sung&#x27;이름의 비밀번호는 &#x27;1234&#x27;인 유저생성 및 권한 주기</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">user</span> sung@localhost <span class="keyword">identified</span> <span class="keyword">by</span> <span class="string">&#x27;1234&#x27;</span>;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">select</span> <span class="keyword">on</span> webtest._ <span class="keyword">to</span> sung@localhost <span class="keyword">identified</span> <span class="keyword">by</span> <span class="string">&#x27;1234&#x27;</span>;</span><br><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> _.\* <span class="keyword">TO</span> sung@localhost <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">&#x27;1234&#x27;</span> <span class="keyword">WITH</span> <span class="keyword">GRANT</span> <span class="keyword">OPTION</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 수정사항 반영</span></span><br><span class="line"><span class="keyword">flush</span> <span class="keyword">privileges</span>;</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      <category domain="https://chinsun9.github.io/tags/rds/">rds</category>
       
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
       
-      <category domain="https://chinsun9.github.io/tags/github-api/">github api</category>
+      <category domain="https://chinsun9.github.io/tags/db/">db</category>
       
-      <category domain="https://chinsun9.github.io/tags/commits/">commits</category>
+      <category domain="https://chinsun9.github.io/tags/grant/">grant</category>
       
       
-      <comments>https://chinsun9.github.io/2020/11/02/github-api%EB%A1%9C-%ED%8A%B9%EC%A0%95-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%9D%98-%EC%BB%A4%EB%B0%8B%EB%82%B4%EC%97%AD-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/#disqus_thread</comments>
+      <comments>https://chinsun9.github.io/2020/11/02/DB-%EC%8B%9C%EC%9E%91%ED%95%A0-%EB%95%8C-%EC%93%B0%EB%8A%94-%EB%AA%85%EB%A0%B9%EC%96%B4/#disqus_thread</comments>
       
     </item>
     
