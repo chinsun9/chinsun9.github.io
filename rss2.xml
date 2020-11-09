@@ -9,8 +9,43 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 09 Nov 2020 03:52:21 GMT</pubDate>
+    <pubDate>Mon, 09 Nov 2020 06:59:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>CRLF, LF</title>
+      <link>https://chinsun9.github.io/2020/11/09/crlf-lf/</link>
+      <guid>https://chinsun9.github.io/2020/11/09/crlf-lf/</guid>
+      <pubDate>Mon, 09 Nov 2020 06:50:36 GMT</pubDate>
+      
+        
+        
+      <description>&lt;blockquote&gt;
+&lt;p&gt;LF&lt;br&gt;\n&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CRLF = CR + LF&lt;br&gt;\r\n&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;여러줄의 텍스트를 가진 file을 읽고 처리할 때 줄바꿈</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<blockquote><p>LF<br>\n</p></blockquote><blockquote><p>CRLF = CR + LF<br>\r\n</p></blockquote><ul><li>여러줄의 텍스트를 가진 file을 읽고 처리할 때 줄바꿈 형식을 알고 있어야한다.</li><li>윈도우의 경우 CRLF이다.</li></ul><h2 id="vscode에서-쉽게-변환하기"><a href="#vscode에서-쉽게-변환하기" class="headerlink" title="vscode에서 쉽게 변환하기"></a>vscode에서 쉽게 변환하기</h2><p><img src="/images/crlf-lf20201109/preview.jpg" alt=" "></p><ul><li>vscode에서는 우측하단에 보면, 인코딩 형식과 줄바꿈 형식을 알려준다.</li><li>우측하단을 클릭해서 변환할 수 있다.</li><li>또는 ctrl + shift + p 에서 <code>end of line</code>을 검색해서 변환할 수 있다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/crlf/">crlf</category>
+      
+      <category domain="https://chinsun9.github.io/tags/lf/">lf</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/09/crlf-lf/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>게시판 페이지네이션 SQL</title>
@@ -615,38 +650,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/02/awesome-button-css/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>DB 시작할 때 쓰는 명령어</title>
-      <link>https://chinsun9.github.io/2020/11/02/DB-%EC%8B%9C%EC%9E%91%ED%95%A0-%EB%95%8C-%EC%93%B0%EB%8A%94-%EB%AA%85%EB%A0%B9%EC%96%B4/</link>
-      <guid>https://chinsun9.github.io/2020/11/02/DB-%EC%8B%9C%EC%9E%91%ED%95%A0-%EB%95%8C-%EC%93%B0%EB%8A%94-%EB%AA%85%EB%A0%B9%EC%96%B4/</guid>
-      <pubDate>Mon, 02 Nov 2020 06:18:01 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;b</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mariadb</span><br></pre></td></tr></table></figure><figure class="highlight sql"><figcaption><span>sql</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- &#x27;webtest&#x27;라는 이름의 db 생성</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">database</span> webtest;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- &#x27;sung&#x27;이름의 비밀번호는 &#x27;1234&#x27;인 유저생성 및 권한 주기</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">user</span> sung@localhost <span class="keyword">identified</span> <span class="keyword">by</span> <span class="string">&#x27;1234&#x27;</span>;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">select</span> <span class="keyword">on</span> webtest._ <span class="keyword">to</span> sung@localhost <span class="keyword">identified</span> <span class="keyword">by</span> <span class="string">&#x27;1234&#x27;</span>;</span><br><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> _.\* <span class="keyword">TO</span> sung@localhost <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">&#x27;1234&#x27;</span> <span class="keyword">WITH</span> <span class="keyword">GRANT</span> <span class="keyword">OPTION</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 수정사항 반영</span></span><br><span class="line"><span class="keyword">flush</span> <span class="keyword">privileges</span>;</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/rds/">rds</category>
-      
-      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
-      
-      <category domain="https://chinsun9.github.io/tags/db/">db</category>
-      
-      <category domain="https://chinsun9.github.io/tags/grant/">grant</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/02/DB-%EC%8B%9C%EC%9E%91%ED%95%A0-%EB%95%8C-%EC%93%B0%EB%8A%94-%EB%AA%85%EB%A0%B9%EC%96%B4/#disqus_thread</comments>
       
     </item>
     
