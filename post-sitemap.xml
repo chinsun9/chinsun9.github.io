@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/11/10/ts-node/</loc>
+        <lastmod>2020-11-10T00:27:14.876Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/11/09/AWS-ELB%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C-express-morgan-%EB%A1%9C%EA%B9%85-%EC%A3%BC%EC%9D%98%EC%A0%90/</loc>
         <lastmod>2020-11-10T00:20:28.208Z</lastmod>
         <changefreq>weekly</changefreq>

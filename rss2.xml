@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 10 Nov 2020 00:20:28 GMT</pubDate>
+    <pubDate>Tue, 10 Nov 2020 00:27:14 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>ts-node</title>
+      <link>https://chinsun9.github.io/2020/11/10/ts-node/</link>
+      <guid>https://chinsun9.github.io/2020/11/10/ts-node/</guid>
+      <pubDate>Tue, 10 Nov 2020 00:21:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;b</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ts-node src/index.ts</span><br></pre></td></tr></table></figure><ul><li>tsc를 통해 .js파일로 만들고, js파일을 실행하는 것이 아니라</li><li>바로 .ts 파일을 실행하는 것처럼 보여준다.</li><li>따로 .js파일은 생성되지 않는다.</li></ul><h2 id="ts-node-설치"><a href="#ts-node-설치" class="headerlink" title="ts-node 설치"></a>ts-node 설치</h2><figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g ts-node</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/TypeStrong/ts-node">TypeStrong/ts-node</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/ts-node/">ts-node</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/10/ts-node/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>AWS ELB를 사용할 때 express morgan 로깅 주의점</title>
@@ -625,34 +657,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/03/playlist-202011/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>playlist 201906</title>
-      <link>https://chinsun9.github.io/2020/11/03/playlist-201906/</link>
-      <guid>https://chinsun9.github.io/2020/11/03/playlist-201906/</guid>
-      <pubDate>Tue, 03 Nov 2020 00:22:08 GMT</pubDate>
-      
-        
-        
-      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/videoseries?list=PLdEiQV70x8ZEWuCfVjNkkwJJmhw1DzwG0&quot; frameborder=&quot;0&quot;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/videoseries?list=PLdEiQV70x8ZEWuCfVjNkkwJJmhw1DzwG0" frameborder="0" loading="lazy" allowfullscreen></iframe></div><blockquote><p>~</p></blockquote>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/playlist/">playlist</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/playlist/">playlist</category>
-      
-      <category domain="https://chinsun9.github.io/tags/music/">music</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/03/playlist-201906/#disqus_thread</comments>
       
     </item>
     
