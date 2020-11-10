@@ -9,8 +9,45 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 10 Nov 2020 05:55:48 GMT</pubDate>
+    <pubDate>Tue, 10 Nov 2020 06:03:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>connection vs connection pool</title>
+      <link>https://chinsun9.github.io/2020/11/10/conn/</link>
+      <guid>https://chinsun9.github.io/2020/11/10/conn/</guid>
+      <pubDate>Tue, 10 Nov 2020 05:56:38 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;connection pool를 써보자&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Connection-pool&quot;&gt;&lt;a href=&quot;#Connection-pool&quot; class=&quot;headerlink&quot; title=&quot;Connection pool&quot;&gt;&lt;/a&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>connection pool를 써보자</li></ul><h2 id="Connection-pool"><a href="#Connection-pool" class="headerlink" title="Connection pool"></a>Connection pool</h2><ul><li>기존 connection은 데이터베이스에 동시 접속 허용량을 초과하는 연결을 할 경우 에러 발생</li><li>connection pool을 사용하면 대기상태가 되었다가 수행됨</li><li>pool 에 여러 미리 생성되어 있는 connection을 가져가 쓴다</li><li>connection이 미리 생성되어있기 때문에 생성시간 소모되지 않음.</li><li>따라서 속도 빨라짐. 쉽게 다운되지 않음.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.guidearea.com/best-database-practices-single-connection-vs-connection-pool/">Database Tutorial – Single Connection vs Connection Pool</a></li><li><a href="https://brownbears.tistory.com/289">[DB]Connection Pool</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/mysql/">mysql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/mysql2/">mysql2</category>
+      
+      <category domain="https://chinsun9.github.io/tags/connection/">connection</category>
+      
+      <category domain="https://chinsun9.github.io/tags/connection-pool/">connection pool</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/10/conn/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>mysql vs mysql2</title>
@@ -632,38 +669,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/03/li-point-remove/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>hexo tag plugin 유튜브 재생목록 넣는법</title>
-      <link>https://chinsun9.github.io/2020/11/03/hexo-tag-plugin-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%9E%AC%EC%83%9D%EB%AA%A9%EB%A1%9D-%EB%84%A3%EB%8A%94%EB%B2%95/</link>
-      <guid>https://chinsun9.github.io/2020/11/03/hexo-tag-plugin-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%9E%AC%EC%83%9D%EB%AA%A9%EB%A1%9D-%EB%84%A3%EB%8A%94%EB%B2%95/</guid>
-      <pubDate>Tue, 03 Nov 2020 00:36:19 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight md&quot;&gt;&lt;figcaption&gt;&lt;span&gt;hexo post.md&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight md"><figcaption><span>hexo post.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo &#x27;playlist&#x27; %&#125;</span><br></pre></td></tr></table></figure><ul><li>게시하고싶은 재생목록의 id값을 알아온다.</li><li>재생목록을 가져온경우에는 id 뒤에 <code>&#39;playlist&#39;</code>를 붙여주면 된다.</li><li>나는 playlist라는 카테고리를 만들고 내가 듣는 노래를 이달의 재생목록처럼 업로드할려고</li><li>hexo에서 재생목록 표현하는 방법이 없나하고 알아보았다.</li></ul><h2 id="유튜브-재생목록-id-알아내기"><a href="#유튜브-재생목록-id-알아내기" class="headerlink" title="유튜브 재생목록 id 알아내기"></a>유튜브 재생목록 id 알아내기</h2><blockquote><p><a href="https://www.youtube.com/playlist?list=PLdEiQV70x8ZGjg6ONGRZcZKIXMosQ6k-B">https://www.youtube.com/playlist?list=PLdEiQV70x8ZGjg6ONGRZcZKIXMosQ6k-B</a><br>id : PLdEiQV70x8ZGjg6ONGRZcZKIXMosQ6k-B</p></blockquote><ul><li>게시하고싶은 재생목록에 들어가면 url에 list라는 파라매터가 있는데 그게 id이다.</li></ul><h2 id="hexo-tag-plugin"><a href="#hexo-tag-plugin" class="headerlink" title="hexo tag-plugin"></a>hexo tag-plugin</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube lJIrF4YjHfQ %&#125;</span><br><span class="line">&#123;% youtube PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo &#39;playlist&#39; %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% youtube lJIrF4YjHfQ false %&#125;</span><br><span class="line">&#123;% youtube PL9hW1uS6HUfscJ9DHkOSoOX45MjXduUxo &#39;playlist&#39; false %&#125;</span><br></pre></td></tr></table></figure><ul><li>기본 md에서는 표현하지 못하는 것을 표현하게 해줌</li><li>당연히 hexo 블로그에서만 사용가능</li><li>맨 마지막에 <code>false</code>를 붙여주면 Enable privacy-enhanced mode 라고 유튜브 쿠키를 사용하지 않도록 한다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://hexo.io/ko/docs/tag-plugins.html#Examples">https://hexo.io/ko/docs/tag-plugins.html#Examples</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/hexo/">hexo</category>
-      
-      <category domain="https://chinsun9.github.io/tags/tag-pulgin/">tag pulgin</category>
-      
-      <category domain="https://chinsun9.github.io/tags/youtube/">youtube</category>
-      
-      <category domain="https://chinsun9.github.io/tags/youtube-playlist/">youtube playlist</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/03/hexo-tag-plugin-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%9E%AC%EC%83%9D%EB%AA%A9%EB%A1%9D-%EB%84%A3%EB%8A%94%EB%B2%95/#disqus_thread</comments>
       
     </item>
     
