@@ -9,8 +9,43 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 09 Nov 2020 08:47:42 GMT</pubDate>
+    <pubDate>Tue, 10 Nov 2020 00:20:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>AWS ELB를 사용할 때 express morgan 로깅 주의점</title>
+      <link>https://chinsun9.github.io/2020/11/09/AWS-ELB%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C-express-morgan-%EB%A1%9C%EA%B9%85-%EC%A3%BC%EC%9D%98%EC%A0%90/</link>
+      <guid>https://chinsun9.github.io/2020/11/09/AWS-ELB%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C-express-morgan-%EB%A1%9C%EA%B9%85-%EC%A3%BC%EC%9D%98%EC%A0%90/</guid>
+      <pubDate>Mon, 09 Nov 2020 08:50:30 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;morgan 로깅할 때, 사용자의 ip를 기록하는&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:remote-addr&lt;/code&gt; 토큰은 req.ip 를 사용한다.&lt;/li&gt;
+&lt;li&gt;ELB, 로드밸런서를 사용하면 사용자의 ip가 아니라, ELB의 ip가 </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>morgan 로깅할 때, 사용자의 ip를 기록하는</li><li><code>:remote-addr</code> 토큰은 req.ip 를 사용한다.</li><li>ELB, 로드밸런서를 사용하면 사용자의 ip가 아니라, ELB의 ip가 기록된다.</li><li>그래서 사용자의 ip를 가져오려면 <code>x-forwarded-for</code> 헤더의 내용을 봐야한다.</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ip = req.headers[<span class="string">&#x27;x-forwarded-for&#x27;</span>] || req.connection.remoteAddress;</span><br></pre></td></tr></table></figure><h2 id="morgan-custom"><a href="#morgan-custom" class="headerlink" title="morgan custom"></a>morgan custom</h2><figure class="highlight js"><figcaption><span>app.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">(...)</span><br><span class="line"></span><br><span class="line">app.use(</span><br><span class="line">  morgan(</span><br><span class="line">    <span class="function"><span class="keyword">function</span> (<span class="params">tokens, req, res</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> [</span><br><span class="line">        req.headers[<span class="string">&#x27;x-forwarded-for&#x27;</span>] || req.connection.remoteAddress,</span><br><span class="line">        req.ip, <span class="comment">// == :remote-addr</span></span><br><span class="line">        tokens.method(req, res),</span><br><span class="line">        tokens.url(req, res),</span><br><span class="line">        tokens.status(req, res),</span><br><span class="line">      ].join(<span class="string">&#x27; &#x27;</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      skip: <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> res.statusCode &lt; <span class="number">400</span>;</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;</span><br><span class="line">  )</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">(...)</span><br></pre></td></tr></table></figure><ul><li>이런식으로 커스텀할 수 있다.</li><li><code>req.headers[&#39;x-forwarded-for&#39;]</code>의 내용은</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X-Forwarded-For: &lt;client&gt;, &lt;proxy1&gt;, &lt;proxy2&gt;</span><br></pre></td></tr></table></figure><ul><li>이런식으로 가장 앞의 ip가 사용자 ip이다.</li><li>뒤로 <code>,</code>로 나열되는 ip는 프록시임으로 당황하지 말자</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  skip: <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> res.statusCode &lt; <span class="number">400</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>morgan(f(), {})</li><li>morgan 두번째 인자로 옵션을 넣을 수 있다.</li><li>skip을 주면 특정 경우에서 로깅을 하지 않는 옵션이다</li><li><code>return res.statusCode &lt; 400;</code>이런식으로 하면 400이하의 스테이터스 코드일 때,</li><li>로깅을 하지 않는다는 의미이다.</li><li>이 경우 404, 500 같은 에러들만 로깅된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="http://expressjs.com/en/resources/middleware/morgan.html">Express morgan middleware</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/X-Forwarded-For">X-Forwarded-For</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/express/">express</category>
+      
+      <category domain="https://chinsun9.github.io/tags/elb/">elb</category>
+      
+      <category domain="https://chinsun9.github.io/tags/morgan/">morgan</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/09/AWS-ELB%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C-express-morgan-%EB%A1%9C%EA%B9%85-%EC%A3%BC%EC%9D%98%EC%A0%90/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>정규식 : 특정 문자열을 포함하는 줄, 라인 판단</title>
@@ -618,38 +653,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/03/playlist-201906/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>nodemon 변화감지 디렉터리 지정</title>
-      <link>https://chinsun9.github.io/2020/11/02/nodemon-%EB%B3%80%ED%99%94%EA%B0%90%EC%A7%80-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC-%EC%A7%80%EC%A0%95/</link>
-      <guid>https://chinsun9.github.io/2020/11/02/nodemon-%EB%B3%80%ED%99%94%EA%B0%90%EC%A7%80-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC-%EC%A7%80%EC%A0%95/</guid>
-      <pubDate>Mon, 02 Nov 2020 07:33:37 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;cmd&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/p</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nodemon --watch app app/server.js</span><br></pre></td></tr></table></figure><ul><li>nodemon을 사용해서 코드수정마다 서버를 자동으로 재시작하는데,</li><li>view와 관련한 코드를 수정할 때 서버가 재시작되는 것은 불필요하고, 세션이 날라가는 등 오히려 불편할 수 있다.</li><li>nodemon이 모든 프로젝트 디렉터리가 아닌 특정 디렉터리의 변화를 감시하고 재시작되는 것을 알아보자</li></ul><h2 id="명령어"><a href="#명령어" class="headerlink" title="명령어"></a>명령어</h2><figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nodemon ./bin/www</span><br></pre></td></tr></table></figure><ul><li>보통 이렇게 아무것도 없이 사용하면, 거의 모든 변화마다 서버가 재시작된다.</li></ul><figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nodemon --watch routes ./bin/www</span><br></pre></td></tr></table></figure><ul><li><code>--watch routes</code> watch옵션을 넣어줌으로써 해당 디렉터리에서 변화가 있으면 재시작하도록 할 수 있다.</li></ul><figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nodemon --watch routes --watch libs ./bin/www</span><br></pre></td></tr></table></figure><ul><li>이런식으로 나열할 수 있다.</li><li>기본적으로 디렉터리명을 적어야하며, 하위디렉터리는 자동으로 포함된다.</li></ul><ul><li>그런데 여러개의 디렉터리를 나열을 해야하면은</li><li>반대로 무시할 디렉터리를 설정하는게 빠를 수 있다.</li></ul><h2 id="config-file로-설정"><a href="#config-file로-설정" class="headerlink" title="config file로 설정"></a>config file로 설정</h2><figure class="highlight json"><figcaption><span>nodemon.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;restartable&quot;</span>: <span class="string">&quot;rs&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;ignore&quot;</span>: [<span class="string">&quot;.git&quot;</span>, <span class="string">&quot;node_modules/**/node_modules&quot;</span>],</span><br><span class="line">  <span class="attr">&quot;verbose&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">&quot;execMap&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;js&quot;</span>: <span class="string">&quot;node --harmony&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;events&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;restart&quot;</span>: <span class="string">&quot;osascript -e &#x27;display notification \&quot;App restarted due to:\n&#x27;$FILENAME&#x27;\&quot; with title \&quot;nodemon\&quot;&#x27;&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;watch&quot;</span>: [<span class="string">&quot;test/fixtures/&quot;</span>, <span class="string">&quot;test/samples/&quot;</span>],</span><br><span class="line">  <span class="attr">&quot;env&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;NODE_ENV&quot;</span>: <span class="string">&quot;development&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;ext&quot;</span>: <span class="string">&quot;js,json&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>nodemon.json</code>이름으로 파일을 하나 만들고 커스텀할 수 있다.</li><li>무시할 디렉터리를 <code>ignore</code> 배열에 나열하면 된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/remy/nodemon#monitoring-multiple-directories">https://github.com/remy/nodemon#monitoring-multiple-directories</a></li><li><a href="https://github.com/remy/nodemon/blob/master/doc/sample-nodemon.md">https://github.com/remy/nodemon/blob/master/doc/sample-nodemon.md</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/nodemon/">nodemon</category>
-      
-      <category domain="https://chinsun9.github.io/tags/watch/">watch</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/02/nodemon-%EB%B3%80%ED%99%94%EA%B0%90%EC%A7%80-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC-%EC%A7%80%EC%A0%95/#disqus_thread</comments>
       
     </item>
     
