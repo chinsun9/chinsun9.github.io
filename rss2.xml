@@ -259,8 +259,8 @@
     
     <item>
       <title>AWS 네트워크 ACL</title>
-      <link>https://chinsun9.github.io/2020/11/11/AWS/</link>
-      <guid>https://chinsun9.github.io/2020/11/11/AWS/</guid>
+      <link>https://chinsun9.github.io/2020/11/11/AWS-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-ACL/</link>
+      <guid>https://chinsun9.github.io/2020/11/11/AWS-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-ACL/</guid>
       <pubDate>Wed, 11 Nov 2020 08:13:23 GMT</pubDate>
       
         
@@ -293,14 +293,14 @@
       <category domain="https://chinsun9.github.io/tags/security-groups/">security groups</category>
       
       
-      <comments>https://chinsun9.github.io/2020/11/11/AWS/#disqus_thread</comments>
+      <comments>https://chinsun9.github.io/2020/11/11/AWS-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-ACL/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>typescript json import</title>
-      <link>https://chinsun9.github.io/2020/11/10/typescri/</link>
-      <guid>https://chinsun9.github.io/2020/11/10/typescri/</guid>
+      <link>https://chinsun9.github.io/2020/11/10/typescript-json-import/</link>
+      <guid>https://chinsun9.github.io/2020/11/10/typescript-json-import/</guid>
       <pubDate>Tue, 10 Nov 2020 06:32:15 GMT</pubDate>
       
         
@@ -327,14 +327,14 @@
       <category domain="https://chinsun9.github.io/tags/es6/">es6</category>
       
       
-      <comments>https://chinsun9.github.io/2020/11/10/typescri/#disqus_thread</comments>
+      <comments>https://chinsun9.github.io/2020/11/10/typescript-json-import/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>connection vs connection pool</title>
-      <link>https://chinsun9.github.io/2020/11/10/conn/</link>
-      <guid>https://chinsun9.github.io/2020/11/10/conn/</guid>
+      <link>https://chinsun9.github.io/2020/11/10/connection-vs-connection-pool/</link>
+      <guid>https://chinsun9.github.io/2020/11/10/connection-vs-connection-pool/</guid>
       <pubDate>Tue, 10 Nov 2020 05:56:38 GMT</pubDate>
       
         
@@ -364,14 +364,14 @@
       <category domain="https://chinsun9.github.io/tags/connection-pool/">connection pool</category>
       
       
-      <comments>https://chinsun9.github.io/2020/11/10/conn/#disqus_thread</comments>
+      <comments>https://chinsun9.github.io/2020/11/10/connection-vs-connection-pool/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>mysql vs mysql2</title>
-      <link>https://chinsun9.github.io/2020/11/10/mysql/</link>
-      <guid>https://chinsun9.github.io/2020/11/10/mysql/</guid>
+      <link>https://chinsun9.github.io/2020/11/10/mysql-vs-mysql2-/</link>
+      <guid>https://chinsun9.github.io/2020/11/10/mysql-vs-mysql2-/</guid>
       <pubDate>Tue, 10 Nov 2020 05:38:00 GMT</pubDate>
       
         
@@ -399,7 +399,7 @@
       <category domain="https://chinsun9.github.io/tags/npm/">npm</category>
       
       
-      <comments>https://chinsun9.github.io/2020/11/10/mysql/#disqus_thread</comments>
+      <comments>https://chinsun9.github.io/2020/11/10/mysql-vs-mysql2-/#disqus_thread</comments>
       
     </item>
     

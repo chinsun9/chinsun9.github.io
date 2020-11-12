@@ -8,6 +8,38 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/11/10/mysql-vs-mysql2-/</loc>
+        <lastmod>2020-11-12T06:56:26.940Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/10/connection-vs-connection-pool/</loc>
+        <lastmod>2020-11-12T06:55:54.983Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/10/typescript-json-import/</loc>
+        <lastmod>2020-11-12T06:55:28.288Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/11/AWS-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-ACL/</loc>
+        <lastmod>2020-11-12T06:54:56.025Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/11/11/insert-update%EC%8B%9C-%EC%9E%90%EB%8F%99%EA%B0%B1%EC%8B%A0-timestamp/</loc>
         <lastmod>2020-11-12T06:52:43.768Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -80,40 +112,8 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/11/AWS/</loc>
-        <lastmod>2020-11-11T08:40:51.956Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/10/16/aws-ec2-docker/</loc>
         <lastmod>2020-11-11T08:39:21.413Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/10/typescri/</loc>
-        <lastmod>2020-11-10T06:36:01.870Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/10/conn/</loc>
-        <lastmod>2020-11-10T06:03:31.826Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/10/mysql/</loc>
-        <lastmod>2020-11-10T05:55:48.640Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
