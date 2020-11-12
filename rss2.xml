@@ -9,8 +9,46 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 11 Nov 2020 08:54:02 GMT</pubDate>
+    <pubDate>Thu, 12 Nov 2020 02:34:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>react typescript Prettier 적용하기</title>
+      <link>https://chinsun9.github.io/2020/11/12/react/</link>
+      <guid>https://chinsun9.github.io/2020/11/12/react/</guid>
+      <pubDate>Thu, 12 Nov 2020 02:29:49 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight&quot;&gt;&lt;figcaption&gt;&lt;span&gt;settings.json&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight"><figcaption><span>settings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&quot;[typescript]&quot;: &#123;</span><br><span class="line">  &quot;editor.formatOnSave&quot;: true,</span><br><span class="line">  &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;</span><br><span class="line">&#125;,</span><br><span class="line">&quot;[typescriptreact]&quot;: &#123;</span><br><span class="line">  &quot;editor.formatOnSave&quot;: true,</span><br><span class="line">  &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;</span><br></pre></td></tr></table></figure><ul><li>settings.json에 추가시켜준다.</li><li>저장할 때마다 자동으로 포맷팅되는 것을 확인할 수 있다.</li></ul><h2 id="일괄적으로-포맷팅하기"><a href="#일괄적으로-포맷팅하기" class="headerlink" title="일괄적으로 포맷팅하기"></a>일괄적으로 포맷팅하기</h2><ul><li>프리티어없이 개발했다가 코드 포맷팅을 일괄적으로 하고싶을 때가 있다.</li></ul><p><img src="/images/react-typescript-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B020201112/preview.jpg" alt=" "></p><figure class="highlight json"><figcaption><span>.prettierrc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;singleQuote&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">&quot;parser&quot;</span>: <span class="string">&quot;typescript&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;semi&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">&quot;printWidth&quot;</span>: <span class="number">120</span>,</span><br><span class="line">  <span class="attr">&quot;tabWidth&quot;</span>: <span class="number">2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><em>.prettierrc</em> 파일을 생성한다.</li></ul><blockquote><p>npx prettier –write *<em>/</em>.{tsx,ts}</p></blockquote><ul><li>terminal에 위 명령을 치면</li><li>prettier가 일회성으로 설치되면서 지정한 확장자에 대해 포맷팅을 일괄적으로 실행해준다.</li><li><em>.prettierrc</em> prettier config file을 참고해서 실행되니</li><li>원하는 디렉터리만, 또는 무시할 디렉터리, 파일들을 설정해서 사용할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://prettier.io/docs/en/configuration.html">Prettier Configuration File</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/react/">react</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/setting/">setting</category>
+      
+      <category domain="https://chinsun9.github.io/tags/prettier/">prettier</category>
+      
+      <category domain="https://chinsun9.github.io/tags/setting-json/">setting.json</category>
+      
+      <category domain="https://chinsun9.github.io/tags/formatOnSave/">formatOnSave</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/12/react/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>insert, update시 자동갱신 TIMESTAMP</title>
@@ -653,38 +691,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/03/nodejs-socketio-%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%B1%84%ED%8C%85-%EC%95%B1/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>reqres.in으로 ajax 연습하기</title>
-      <link>https://chinsun9.github.io/2020/11/03/reqres-in%EC%9C%BC%EB%A1%9C-ajax-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/11/03/reqres-in%EC%9C%BC%EB%A1%9C-ajax-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Tue, 03 Nov 2020 06:39:59 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;a href=&quot;https://reqres.in/&quot;&gt;&lt;img src=&quot;/images/reqres-in%EC%9C%BC%EB%A1%9C-ajax-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B020201103/preview.jpg&quot;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><a href="https://reqres.in/"><img src="/images/reqres-in%EC%9C%BC%EB%A1%9C-ajax-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B020201103/preview.jpg" alt=" "></a></p><ul><li><a href="https://reqres.in/">Reqres</a> 에서 다양한 api를 제공하고있다.</li><li>cors를 허용하기 때문에 localhost에서도 요청을보내고 응답을 받을 수 있다.</li><li>ajax 연습이나, 간단한 앱을 만들 때, 서버를 만들지 않고,</li><li>reqres에서 제공하는 api를 사용할 수 있겠다.</li></ul><h2 id="get-api"><a href="#get-api" class="headerlink" title="get api"></a>get api</h2><blockquote><p><a href="https://reqres.in/api/users?page=2">https://reqres.in/api/users?page=2</a> // 유저 목록 2페이지 보기<br><a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a> // 2번 유저 보기<br><a href="https://reqres.in/api/users/23">https://reqres.in/api/users/23</a> // 23번 유저 보기(없는 유저)</p></blockquote><blockquote><p>// products보기, products 부분은 어떤 문자열로든 치환이 가능해서 원하는 느낌의 문자열을 적어주면된다.<br><a href="https://reqres.in/api/products">https://reqres.in/api/products</a><br><a href="https://reqres.in/api/products/1">https://reqres.in/api/products/1</a></p></blockquote>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/fetch/">fetch</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ajax/">ajax</category>
-      
-      <category domain="https://chinsun9.github.io/tags/rest-api/">rest api</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/03/reqres-in%EC%9C%BC%EB%A1%9C-ajax-%EC%97%B0%EC%8A%B5%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
