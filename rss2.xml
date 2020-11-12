@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 12 Nov 2020 05:22:56 GMT</pubDate>
+    <pubDate>Thu, 12 Nov 2020 05:28:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>console.log 축약쓰기, 줄여쓰기, 별명 붙여 쓰기</title>
+      <link>https://chinsun9.github.io/2020/11/12/con/</link>
+      <guid>https://chinsun9.github.io/2020/11/12/con/</guid>
+      <pubDate>Thu, 12 Nov 2020 05:25:04 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> log = <span class="built_in">console</span>.log;</span><br><span class="line"></span><br><span class="line">log(<span class="number">12312313</span>);</span><br><span class="line">log(<span class="string">&#x27;안녕&#x27;</span>);</span><br></pre></td></tr></table></figure><ul><li><em>console.</em> 쓰는 수고를 덜어준다.</li><li>log 까지지면 vscode의 경우 console.log(); 자동완성 시켜주는데</li><li>가끔 자동완성 우선순위가 첫번째가 아닌경우가 있다.</li><li>그래서 그냥 별명을 붙여 쓰는게 맘편한 것 같다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/js/">js</category>
+      
+      <category domain="https://chinsun9.github.io/tags/console-log/">console.log</category>
+      
+      <category domain="https://chinsun9.github.io/tags/log/">log</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/12/con/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>chrome dev tool, 크롬 개발자 도구, F12</title>
@@ -672,36 +704,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/06/gradle-project-%EC%97%90%EC%84%9C-runnable-jar-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>gradle로 외부라이브러리 설치하기</title>
-      <link>https://chinsun9.github.io/2020/11/06/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/11/06/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Fri, 06 Nov 2020 01:22:14 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;원하는-라이브러리-명-gadle-키워드로-구글링한다&quot;&gt;&lt;a href=&quot;#원하는-라이브러리-명-gadle-키워드로-구글링한다&quot; class=&quot;headerlink&quot; title=&quot;원하는 라이브러리 명 + gadle 키워드로 구글링한다&quot;&gt;&lt;/a&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="원하는-라이브러리-명-gadle-키워드로-구글링한다"><a href="#원하는-라이브러리-명-gadle-키워드로-구글링한다" class="headerlink" title="원하는 라이브러리 명 + gadle 키워드로 구글링한다"></a>원하는 라이브러리 명 + gadle 키워드로 구글링한다</h2><p><img src="/images/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B020201106/1.jpg" alt=" "></p><ul><li>나는 json-simple 을 받아보겠다.</li></ul><h2 id="카피"><a href="#카피" class="headerlink" title="카피"></a>카피</h2><p><img src="/images/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B020201106/2.jpg" alt=" "></p><ul><li>그래들 탭인지 잘 확인하고 카피한다.</li><li>build.gradle 파일로와서 dependencies에 추가하고 저정한다.</li></ul><h2 id="Gradle-Project-Refresh"><a href="#Gradle-Project-Refresh" class="headerlink" title="Gradle Project Refresh"></a>Gradle Project Refresh</h2><p><img src="/images/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B020201106/3.jpg" alt=" "></p><ul><li>끝!</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/java/">java</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/gradle/">gradle</category>
-      
-      <category domain="https://chinsun9.github.io/tags/build-gradle/">build.gradle</category>
-      
-      <category domain="https://chinsun9.github.io/tags/lib/">lib</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/06/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
