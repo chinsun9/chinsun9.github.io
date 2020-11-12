@@ -45,6 +45,45 @@
     </item>
     
     <item>
+      <title>hexo icarus 테마에 커스텀 레이아웃, 스타일(css) 적용하기</title>
+      <link>https://chinsun9.github.io/2020/11/12/%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/</link>
+      <guid>https://chinsun9.github.io/2020/11/12/%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/</guid>
+      <pubDate>Thu, 12 Nov 2020 06:30:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;icarus 테마를 적용하고 다 좋았지만,&lt;/li&gt;
+&lt;li&gt;커스텀하고 싶었던 것들이, 칼럼들의 비율과 가로 넓이가 너무 좁다는 것이였다.&lt;/li&gt;
+&lt;li&gt;한번 커스텀해보자&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;themes-폴더에-icaru</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>icarus 테마를 적용하고 다 좋았지만,</li><li>커스텀하고 싶었던 것들이, 칼럼들의 비율과 가로 넓이가 너무 좁다는 것이였다.</li><li>한번 커스텀해보자</li></ul><h2 id="themes-폴더에-icarus-테마깔기"><a href="#themes-폴더에-icarus-테마깔기" class="headerlink" title="themes 폴더에 icarus 테마깔기"></a>themes 폴더에 icarus 테마깔기</h2><ul><li><code>npm install hexo-theme-icarus</code> ; npm으로 icarus 테마를 설치할 수 있는데,</li><li>이 방법으로 설치한 테마는 커스텀하여 사용하기에는 구조가 이상한 것 같아서(node_modules 안에서 icarus패키지를 수정..)</li><li>테마 설치는 <em>/themes</em> 디렉터리 아래에서 클론 방식으로 하는 것을 추천한다.</li><li><code>git clone --depth 1 https://github.com/ppoffice/hexo-theme-icarus.git</code></li><li>그냥 클론하게되면 커밋 내역까지 다 불러오느라 용량이 커진다.</li><li><code>--depth 1</code>을 붙여 최신 상태만 받아 올 수 있다.</li><li>필요없는 <em>.git</em> 폴더를 삭제해도된다.</li></ul><ul><li>참고 ; <a href="/2020/11/12/git-clone-%EC%BB%A4%EB%B0%8B-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%97%86%EC%9D%B4-%EA%B0%80%EB%B3%8D%EA%B2%8C-%ED%81%B4%EB%A1%A0%ED%95%98%EA%B8%B0/">git clone 커밋 히스토리없이 가볍게 클론하기</a></li></ul><figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">icarus</span></span><br></pre></td></tr></table></figure><ul><li>위에서 설치한 테마 디렉터리명이랑 <em>_config.yml</em> 의 theme 항목의 값이랑 동일해야한다.</li></ul><blockquote><p>themes<br>└── icarus</p></blockquote><ul><li>디렉터리 구조는 이렇다.</li></ul><h2 id="칼럼-비율-조절하기"><a href="#칼럼-비율-조절하기" class="headerlink" title="칼럼 비율 조절하기"></a>칼럼 비율 조절하기</h2><ul><li>수정하기 용이하도록 <em>themes/icarus</em> 경로에서 vscode를 실행한다.</li><li>지금부터 설명하는 파일의 경로는 <em>themes/icarus</em> 기준의 상대경로이다.</li></ul><figure class="highlight jsx"><figcaption><span>layout/common/widgets.jsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getColumnSizeClass</span>(<span class="params">columnCount</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">switch</span> (columnCount) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">      <span class="keyword">return</span> <span class="string">&#x27;is-3-tablet is-3-desktop is-3-widescreen&#x27;</span>; <span class="comment">// 여기 수정</span></span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">      <span class="keyword">return</span> <span class="string">&#x27;is-4-tablet is-4-desktop is-3-widescreen&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><em>layout/common/widgets.jsx</em> 로 가보면 <code>getColumnSizeClass</code>라는 함수가 있다.</li><li>여기에 자신의 <em>columnCount</em> 에 맞게 수정한다.</li><li><em>columnCount</em> 의 기본값은 2라서 case 2인 경우를 수정한다.</li><li>나는 <code>is-3</code>으로 수정했다.</li></ul><figure class="highlight jsx"><figcaption><span>layout/layout.jsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div</span><br><span class="line">  <span class="class"><span class="keyword">class</span></span>=&#123;classname(&#123;</span><br><span class="line">    column: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&#x27;order-2&#x27;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&#x27;column-main&#x27;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&#x27;is-12&#x27;</span>: columnCount === <span class="number">1</span>,</span><br><span class="line">    <span class="string">&#x27;is-9-tablet is-9-desktop is-9-widescreen&#x27;</span>: columnCount === <span class="number">2</span>, <span class="comment">// 여기 수정</span></span><br><span class="line">    <span class="string">&#x27;is-9-tablet is-9-desktop is-6-widescreen&#x27;</span>: columnCount === <span class="number">3</span>,</span><br><span class="line">  &#125;)&#125;</span><br><span class="line">  dangerouslySetInnerHTML=&#123;&#123; <span class="attr">__html</span>: body &#125;&#125;</span><br><span class="line">&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure><ul><li><em>layout/layout.jsx</em> 하단을 보면 위 코드가 나오는데</li><li>나는 <code>is-9</code>로 수정해주었다.</li></ul><ul><li>전체 12에서 기본값은 프로필이 들어있는 영역이 4, 게시글 영역이 8이였다.</li><li>위처럼 수정하게되면 우선 그 비율을 3, 9로 변경해준 것이다.</li><li>프로필 영역을 좁게, 게시글 영역은 크게 바뀐 것이다.</li><li>이 12라는 것은 칼럼들의 상위에 있는 <code>container</code>의 크기를 기준으로 12등분한 것이다.</li><li>그럼 이 <code>container</code>의 크기를 늘려보자.</li></ul><h2 id="container-크기-늘리기"><a href="#container-크기-늘리기" class="headerlink" title="container 크기 늘리기"></a>container 크기 늘리기</h2><figure class="highlight"><figcaption><span>include/style/base.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$gap ?= 16px</span><br><span class="line">$tablet ?= 769px</span><br><span class="line">$desktop ?= 1288px</span><br><span class="line">$widescreen ?= 1480px</span><br><span class="line">$fullhd ?= 1672px</span><br></pre></td></tr></table></figure><ul><li><em>include/style/base.styl</em> 로 가서 23라인 정도에 이런 코드가 보일 것이다.</li><li>나는 <code>$widescreen</code>, <code>$fullhd</code>의 값을 각각 200px 씩 늘려주었다.</li><li>그랬더니 container가 커졌다!</li></ul><h2 id="커스텀-css-적용하기"><a href="#커스텀-css-적용하기" class="headerlink" title="커스텀 css 적용하기"></a>커스텀 css 적용하기</h2><p><img src="/images/%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%8320201112/preview.jpg" alt=" "></p><ul><li>나는 보통 글을 쓸때, 그림을 먼저보고주고 그 아래에 그에 대한 설명을 하는 편이다.</li><li>그래서 그림 위에있는 글이 아래 사진과 별로 관계가 없다는 것을 마진을 주어 표현하고 싶다.</li><li>그런데 매번 그림이 나올 때 마다, <code>&lt;br&gt;</code>을 할 수도 없고…</li><li>그래서 아예 게시글 영역 안에 있는 이미지 태그에 대한 커스텀 css를 적용시킨다.</li></ul><figure class="highlight scss"><figcaption><span>include/style/article.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&amp;<span class="selector-class">.article</span></span><br><span class="line">    <span class="selector-class">.article-meta</span>, <span class="selector-class">.article-tags</span></span><br><span class="line">        <span class="attribute">color</span>: <span class="variable">$text-light</span></span><br><span class="line"></span><br><span class="line">    .article-meta</span><br><span class="line">        overflow-x: auto</span><br><span class="line">        margin-bottom: .<span class="number">5rem</span></span><br><span class="line"></span><br><span class="line">    .article-more</span><br><span class="line">        @extend .button.is-light</span><br><span class="line"></span><br><span class="line">    .content</span><br><span class="line">        word-wrap: break-word</span><br><span class="line">        font-size: <span class="variable">$article-font-size</span></span><br><span class="line"></span><br><span class="line">        img                     // 여기 추가</span><br><span class="line">            margin-top: <span class="number">30px</span>    // 여기 추가</span><br></pre></td></tr></table></figure><ul><li><em>.styl</em> 에 대한 문법은 잘모르지만,</li><li>들여쓰기로 셀렉터들의 관계가 정의되어있고</li><li>내가 원하는 게시글 영역의 이미지 태그가 적용되려면</li><li><code>.article .content</code> 아래에 img 태그에 대한 css를 정의해주었다.</li></ul><h2 id="배포-적용시키기"><a href="#배포-적용시키기" class="headerlink" title="배포, 적용시키기"></a>배포, 적용시키기</h2><ul><li>이렇게 변경하고 나고 배포를해야는데 그냥 배포하면 적용이 안된다.</li><li>public/css/default.css 를 삭제해준다.</li><li>그리고 배포를 하면, hexo에서 default 파일이 없어짐을 감지하고 새로 생성하게 되는데,</li><li>그때 변경 내역이 적용된다!</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
+      
+      <category domain="https://chinsun9.github.io/tags/icarus/">icarus</category>
+      
+      <category domain="https://chinsun9.github.io/tags/styl/">styl</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/12/%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>console.log 축약쓰기, 줄여쓰기, 별명 붙여 쓰기</title>
       <link>https://chinsun9.github.io/2020/11/12/console-log/</link>
       <guid>https://chinsun9.github.io/2020/11/12/console-log/</guid>
@@ -670,39 +709,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/06/%EC%A0%95%EC%B2%98%EA%B8%B0-%EC%9C%BC%EC%95%85/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode search exclude setting</title>
-      <link>https://chinsun9.github.io/2020/11/06/vscode-search-exclude-setting/</link>
-      <guid>https://chinsun9.github.io/2020/11/06/vscode-search-exclude-setting/</guid>
-      <pubDate>Fri, 06 Nov 2020 04:27:26 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;검색결과에서 제외할 디렉터리, 파일 설정하기&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;세팅창-화면으로&quot;&gt;&lt;a href=&quot;#세팅창-화면으로&quot; class=&quot;headerlink&quot; title=&quot;세팅창 화면으로&quot;&gt;&lt;/a&gt;세팅창 화면으로&lt;/h2&gt;&lt;ul&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>검색결과에서 제외할 디렉터리, 파일 설정하기</li></ul><h2 id="세팅창-화면으로"><a href="#세팅창-화면으로" class="headerlink" title="세팅창 화면으로"></a>세팅창 화면으로</h2><ul><li><code>Ctrl + Shift + P</code> 를 누르고 setting을 입력한다</li><li><code>Preferences: Open Settings (UI)</code>로 들어간다</li></ul><h2 id="search-exclude-설정"><a href="#search-exclude-설정" class="headerlink" title="search: exclude 설정"></a>search: exclude 설정</h2><p><img src="/images/vscode-search-exclude-setting20201106/preview.jpg" alt=" "></p><ul><li>검색에서 제외할 패턴들을 입력한다.</li></ul><h2 id="검색-제외-적용하기"><a href="#검색-제외-적용하기" class="headerlink" title="검색 제외 적용하기"></a>검색 제외 적용하기</h2><p><img src="/images/vscode-search-exclude-setting20201106/3.jpg" alt=" "></p><ul><li>… 을 클릭해서 디테일 표시</li></ul><p><img src="/images/vscode-search-exclude-setting20201106/1.jpg" alt=" "></p><ul><li>file to exclude 영역에 아이콘 활성화</li></ul><p><img src="/images/vscode-search-exclude-setting20201106/2.jpg" alt=" "></p><ul><li>왼쪽이 비활성화일 때</li><li>오른쪽이 활성화일 때</li><li>쓸때없는 것을 제외함으로써 쾌적한 검색결과를 확인할 수 있다.</li></ul><h2 id="상위-옵션-files-exclude"><a href="#상위-옵션-files-exclude" class="headerlink" title="상위 옵션 ; files.exclude"></a>상위 옵션 ; files.exclude</h2><ul><li>vscode 탐색기에서 존재자체를 없애버리는 얘다.</li><li>여기서 제외된 디렉터리는 당연히 검색에서도 제외됨으로</li><li>search.exclude의 상위 호환이라고 볼 수 있다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/files-exclude/">files.exclude</category>
-      
-      <category domain="https://chinsun9.github.io/tags/search-exclude/">search.exclude</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/06/vscode-search-exclude-setting/#disqus_thread</comments>
       
     </item>
     
