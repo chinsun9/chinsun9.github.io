@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 12 Nov 2020 05:28:29 GMT</pubDate>
+    <pubDate>Thu, 12 Nov 2020 06:45:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>git clone 커밋 히스토리없이 가볍게 클론하기</title>
+      <link>https://chinsun9.github.io/2020/11/12/git20201112-1/</link>
+      <guid>https://chinsun9.github.io/2020/11/12/git20201112-1/</guid>
+      <pubDate>Thu, 12 Nov 2020 06:39:02 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;b</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone --depth <span class="number">1</span> https://github.com/chinsun9/refactor-<span class="number">2019</span>T1.git</span><br></pre></td></tr></table></figure><ul><li>git clone을 통해 클론하게되면 .git 폴더도 같이 딸려온다.</li><li>.git 폴더없이 최신 상태만 가져오고싶을 때 어떻게 할까 찾아보다가</li><li><code>--depth</code> 옵션을 알게되었다.</li></ul><ul><li><code>--depth 1</code> 하게되면 가장 마지막 상태만 클론하게된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://qastack.kr/programming/29368837/copy-a-git-repo-without-history">copy-a-git-repo-without-history</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/clone/">clone</category>
+      
+      <category domain="https://chinsun9.github.io/tags/depth/">depth</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/12/git20201112-1/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>console.log 축약쓰기, 줄여쓰기, 별명 붙여 쓰기</title>
@@ -671,39 +703,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/06/vscode-search-exclude-setting/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>gradle project 에서 runnable jar 생성하기</title>
-      <link>https://chinsun9.github.io/2020/11/06/gradle-project-%EC%97%90%EC%84%9C-runnable-jar-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/11/06/gradle-project-%EC%97%90%EC%84%9C-runnable-jar-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Fri, 06 Nov 2020 01:42:42 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/gradle-project-%EC%97%90%EC%84%9C-runnable-jar-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B020201106/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/gradle-project-%EC%97%90%EC%84%9C-runnable-jar-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B020201106/preview.jpg" alt=" "></p><ul><li>일반 자바 프로젝트 처럼 <code>Export &gt; Runnable JAR file</code>로 jar을 만들게 되면 생성된 jar파일의 용량이 매우 작은것을 확인할 수 있다.</li><li>내가 추가한 외부 라이브러리들이 전부 빠져서 동작하지 않는다</li><li>gradle project에서는 어떤방식으로 runable jar을 만들어야 할까?</li></ul><h2 id="build-gradle-수정하기"><a href="#build-gradle-수정하기" class="headerlink" title="build.gradle 수정하기"></a>build.gradle 수정하기</h2><figure class="highlight plain"><figcaption><span>build.gradle</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">jar &#123;</span><br><span class="line">manifest &#123;</span><br><span class="line">attributes &#39;Main-Class&#39;: &#39;tmp.gradle.project.Main&#39;</span><br><span class="line">&#125;</span><br><span class="line">from &#123;</span><br><span class="line">configurations.compile.collect &#123;</span><br><span class="line">it.isDirectory() ? it : zipTree(it)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/images/gradle-project-%EC%97%90%EC%84%9C-runnable-jar-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B020201106/1.jpg" alt=" "></p><ul><li>jar { … } 에 해당하는 부분을 위처럼 새로이 추가해준다.</li><li><code>attributes &#39;Main-Class&#39;: &#39;tmp.gradle.project.Main&#39;</code> 여기에는 자신의 메인 클래스를 지정하면된다.</li></ul><h2 id="jar파일-생성하기"><a href="#jar파일-생성하기" class="headerlink" title="jar파일 생성하기"></a>jar파일 생성하기</h2><p><img src="/images/gradle-project-%EC%97%90%EC%84%9C-runnable-jar-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B020201106/2.jpg" alt=" "></p><figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> &#123;gradle project rootpath&#125;</span><br><span class="line">gradle jar</span><br></pre></td></tr></table></figure><ul><li>자신의 그래들 프로젝트 경로에서 cmd를 켜주고</li><li><code>gradle jar</code> 명령을 실행한다.</li></ul><h2 id="jar파일-확인하기"><a href="#jar파일-확인하기" class="headerlink" title="jar파일 확인하기"></a>jar파일 확인하기</h2><p><img src="/images/gradle-project-%EC%97%90%EC%84%9C-runnable-jar-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B020201106/3.jpg" alt=" "></p><ul><li>build/libs 디렉터리에 가보면 jar파일이 생성되있음을 확인할 수 있다.</li></ul><figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> build\libs</span><br><span class="line">java -jar &#123;jar파일명&#125;</span><br></pre></td></tr></table></figure><ul><li>로 한번 잘 실행되는지 확인한다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/java/">java</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/java/">java</category>
-      
-      <category domain="https://chinsun9.github.io/tags/gradle/">gradle</category>
-      
-      <category domain="https://chinsun9.github.io/tags/build-gradle/">build.gradle</category>
-      
-      <category domain="https://chinsun9.github.io/tags/lib/">lib</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/06/gradle-project-%EC%97%90%EC%84%9C-runnable-jar-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
