@@ -8,40 +8,48 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/12/git20201112-1/</loc>
-        <lastmod>2020-11-12T06:45:51.768Z</lastmod>
+        <loc>https://chinsun9.github.io/2020/11/11/insert-update%EC%8B%9C-%EC%9E%90%EB%8F%99%EA%B0%B1%EC%8B%A0-timestamp/</loc>
+        <lastmod>2020-11-12T06:52:43.768Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/12/con/</loc>
-        <lastmod>2020-11-12T05:28:29.709Z</lastmod>
+        <loc>https://chinsun9.github.io/2020/11/12/nodejs-web-dockerizing/</loc>
+        <lastmod>2020-11-12T06:51:29.455Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/12/ch/</loc>
-        <lastmod>2020-11-12T05:22:56.222Z</lastmod>
+        <loc>https://chinsun9.github.io/2020/11/12/chrome-dev-tool/</loc>
+        <lastmod>2020-11-12T06:50:52.006Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/12/git/</loc>
-        <lastmod>2020-11-12T04:41:45.801Z</lastmod>
+        <loc>https://chinsun9.github.io/2020/11/12/console-log/</loc>
+        <lastmod>2020-11-12T06:50:21.251Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/12/nodejs/</loc>
-        <lastmod>2020-11-12T04:17:42.010Z</lastmod>
+        <loc>https://chinsun9.github.io/2020/11/12/github-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%B3%B5%EC%A0%9C/</loc>
+        <lastmod>2020-11-12T06:49:02.095Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/12/git-clone-%EC%BB%A4%EB%B0%8B-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%97%86%EC%9D%B4-%EA%B0%80%EB%B3%8D%EA%B2%8C-%ED%81%B4%EB%A1%A0%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2020-11-12T06:48:45.049Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -58,14 +66,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/10/30/linux-node-app-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%8B%A4%ED%96%89/</loc>
         <lastmod>2020-11-12T02:11:52.357Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/11/insert/</loc>
-        <lastmod>2020-11-11T08:54:02.679Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
