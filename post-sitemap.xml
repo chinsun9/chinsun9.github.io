@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/10/30/linux-node-app-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%8B%A4%ED%96%89/</loc>
+        <lastmod>2020-11-12T02:11:52.357Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/11/11/insert/</loc>
         <lastmod>2020-11-11T08:54:02.679Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -314,14 +322,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/02/vscode-%EC%9B%8C%ED%81%AC%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%B3%84%EB%A1%9C-%EC%84%A4%EC%A0%95-%EB%8B%A4%EB%A5%B4%EA%B2%8C%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2020-11-02T04:07:48.866Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/10/30/linux-node-app-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%8B%A4%ED%96%89/</loc>
-        <lastmod>2020-11-02T02:51:44.261Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
