@@ -9,13 +9,13 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 12 Nov 2020 02:34:26 GMT</pubDate>
+    <pubDate>Thu, 12 Nov 2020 02:36:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>react typescript Prettier 적용하기</title>
-      <link>https://chinsun9.github.io/2020/11/12/react/</link>
-      <guid>https://chinsun9.github.io/2020/11/12/react/</guid>
+      <title>react typescript Prettier 적용하기, Prettier로 여러 파일 한번에 포맷팅하기</title>
+      <link>https://chinsun9.github.io/2020/11/12/react-typescript-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/11/12/react-typescript-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
       <pubDate>Thu, 12 Nov 2020 02:29:49 GMT</pubDate>
       
         
@@ -46,7 +46,7 @@
       <category domain="https://chinsun9.github.io/tags/formatOnSave/">formatOnSave</category>
       
       
-      <comments>https://chinsun9.github.io/2020/11/12/react/#disqus_thread</comments>
+      <comments>https://chinsun9.github.io/2020/11/12/react-typescript-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
