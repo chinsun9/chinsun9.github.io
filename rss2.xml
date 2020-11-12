@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 12 Nov 2020 07:06:12 GMT</pubDate>
+    <pubDate>Thu, 12 Nov 2020 08:00:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>npm 패키지 unpublish</title>
+      <link>https://chinsun9.github.io/2020/11/12/npm-%ED%8C%A8%ED%82%A4%EC%A7%80-unpublish/</link>
+      <guid>https://chinsun9.github.io/2020/11/12/npm-%ED%8C%A8%ED%82%A4%EC%A7%80-unpublish/</guid>
+      <pubDate>Thu, 12 Nov 2020 07:52:55 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span cla</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm unpublish &#123;패키지명&#125; -f</span><br></pre></td></tr></table></figure><ul><li>내 패지키 디렉터리로 가서 위 명령을 실행</li></ul><ul><li>처음에 브라우저로 npm에 접속한다음에 <em>패키지 &gt; 세팅</em> 에 딜리트가 있는줄 알았는데,</li><li>cli로 지워야 했다.</li></ul><h2 id="삭제-조건"><a href="#삭제-조건" class="headerlink" title="삭제 조건"></a>삭제 조건</h2><ul><li>72 시간 이내에 게시 된 패키지</li><li>새로 생성 된 패키지의 경우 npm Public Registry의 다른 패키지가 패키지에 종속되지 않는 한 게시 후 처음 72 시간 이내에 언제든지 게시를 취소 할 수 있습니다.</li></ul><ul><li>72 시간 이상 전에 게시 된 패키지<ul><li>다른 패키지의 종속성이 아니여야한다.</li><li>지난주에 다운로드 횟수가 300 회 미만</li><li>단일 소유자</li></ul></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.npmjs.com/unpublishing-packages-from-the-registry">Unpublishing packages from the registry</a></li><li><a href="https://www.npmjs.com/policies/unpublish">npm Unpublish Policy</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/npm/">npm</category>
+      
+      <category domain="https://chinsun9.github.io/tags/unpublish/">unpublish</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/12/npm-%ED%8C%A8%ED%82%A4%EC%A7%80-unpublish/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>git clone 커밋 히스토리없이 가볍게 클론하기</title>
@@ -679,36 +709,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/06/Banner-maker-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>정처기 으악</title>
-      <link>https://chinsun9.github.io/2020/11/06/%EC%A0%95%EC%B2%98%EA%B8%B0-%EC%9C%BC%EC%95%85/</link>
-      <guid>https://chinsun9.github.io/2020/11/06/%EC%A0%95%EC%B2%98%EA%B8%B0-%EC%9C%BC%EC%95%85/</guid>
-      <pubDate>Fri, 06 Nov 2020 04:46:12 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;정보처리기사 책을 펴고 30분 봣는데 모니터 보는 것 보다 눈이 아파서 때려쳤다.&lt;/li&gt;
-&lt;li&gt;막연한 이론은 공부할 엄두가 안난다…&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>정보처리기사 책을 펴고 30분 봣는데 모니터 보는 것 보다 눈이 아파서 때려쳤다.</li><li>막연한 이론은 공부할 엄두가 안난다…</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/">정보처리기사</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/">정보처리기사</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/06/%EC%A0%95%EC%B2%98%EA%B8%B0-%EC%9C%BC%EC%95%85/#disqus_thread</comments>
       
     </item>
     
