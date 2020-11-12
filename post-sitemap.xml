@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/11/12/nodejs/</loc>
+        <lastmod>2020-11-12T04:17:42.010Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/11/12/react-typescript-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2020-11-12T02:36:49.729Z</lastmod>
         <changefreq>weekly</changefreq>
