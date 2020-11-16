@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 16 Nov 2020 05:49:41 GMT</pubDate>
+    <pubDate>Mon, 16 Nov 2020 06:27:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>node-abi</title>
+      <link>https://chinsun9.github.io/2020/11/16/node-abi/</link>
+      <guid>https://chinsun9.github.io/2020/11/16/node-abi/</guid>
+      <pubDate>Mon, 16 Nov 2020 06:14:36 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;ABI (Application Binary Interface)&lt;/li&gt;
+&lt;li&gt;일렉트론js에서 iohook 설치할 때 사용해보았다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;참고&quot;&gt;&lt;a href=&quot;#참고&quot; class=&quot;headerlink&quot; t</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>ABI (Application Binary Interface)</li><li>일렉트론js에서 iohook 설치할 때 사용해보았다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://nodejs.org/en/docs/guides/abi-stability/">ABI Stability | Node.js</a></li><li><a href="https://ko.wikipedia.org/wiki/%EC%9D%91%EC%9A%A9_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EC%9D%B4%EC%A7%84_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">응용 프로그램 이진 인터페이스</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/abi/">abi</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/16/node-abi/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>nodejs __dirname</title>
@@ -665,38 +697,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/10/%EB%AC%B4%EC%9E%91%EC%9C%84-%EC%8A%A4%EC%BA%94%EA%B3%B5%EA%B2%A9/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>ts-node</title>
-      <link>https://chinsun9.github.io/2020/11/10/ts-node/</link>
-      <guid>https://chinsun9.github.io/2020/11/10/ts-node/</guid>
-      <pubDate>Tue, 10 Nov 2020 00:21:23 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;b</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ts-node src/index.ts</span><br></pre></td></tr></table></figure><ul><li>tsc를 통해 .js파일로 만들고, js파일을 실행하는 것이 아니라</li><li>바로 .ts 파일을 실행하는 것처럼 보여준다.</li><li>따로 .js파일은 생성되지 않는다.</li></ul><h2 id="ts-node-설치"><a href="#ts-node-설치" class="headerlink" title="ts-node 설치"></a>ts-node 설치</h2><figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g ts-node</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/TypeStrong/ts-node">TypeStrong/ts-node</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
-      
-      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ts-node/">ts-node</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/10/ts-node/#disqus_thread</comments>
       
     </item>
     
