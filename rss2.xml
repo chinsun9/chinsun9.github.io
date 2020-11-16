@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 16 Nov 2020 01:12:00 GMT</pubDate>
+    <pubDate>Mon, 16 Nov 2020 01:56:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>REPL</title>
+      <link>https://chinsun9.github.io/2020/11/16/REPL/</link>
+      <guid>https://chinsun9.github.io/2020/11/16/REPL/</guid>
+      <pubDate>Mon, 16 Nov 2020 01:22:14 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;즉각적인 프로토타이핑&lt;/li&gt;
+&lt;li&gt;초보자에게 빠른 피드백 제공&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;참고&quot;&gt;&lt;a href=&quot;#참고&quot; class=&quot;headerlink&quot; title=&quot;참고&quot;&gt;&lt;/a&gt;참고&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>즉각적인 프로토타이핑</li><li>초보자에게 빠른 피드백 제공</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://ko.wikipedia.org/wiki/REPL">REPL - 위키백과, 우리 모두의 백과사전</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/repl/">repl</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/16/REPL/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>보일러플레이트, boilerplate</title>
@@ -663,41 +694,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/09/%EC%A0%95%EA%B7%9C%EC%8B%9D-%ED%8A%B9%EC%A0%95-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-%EC%A4%84-%EB%9D%BC%EC%9D%B8-%ED%8C%90%EB%8B%A8/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>CRLF, LF</title>
-      <link>https://chinsun9.github.io/2020/11/09/crlf-lf/</link>
-      <guid>https://chinsun9.github.io/2020/11/09/crlf-lf/</guid>
-      <pubDate>Mon, 09 Nov 2020 06:50:36 GMT</pubDate>
-      
-        
-        
-      <description>&lt;blockquote&gt;
-&lt;p&gt;LF&lt;br&gt;\n&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;CRLF = CR + LF&lt;br&gt;\r\n&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;여러줄의 텍스트를 가진 file을 읽고 처리할 때 줄바꿈</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<blockquote><p>LF<br>\n</p></blockquote><blockquote><p>CRLF = CR + LF<br>\r\n</p></blockquote><ul><li>여러줄의 텍스트를 가진 file을 읽고 처리할 때 줄바꿈 형식을 알고 있어야한다.</li><li>윈도우의 경우 CRLF이다.</li></ul><h2 id="vscode에서-쉽게-변환하기"><a href="#vscode에서-쉽게-변환하기" class="headerlink" title="vscode에서 쉽게 변환하기"></a>vscode에서 쉽게 변환하기</h2><p><img src="/images/crlf-lf20201109/preview.jpg" alt=" "></p><ul><li>vscode에서는 우측하단에 보면, 인코딩 형식과 줄바꿈 형식을 알려준다.</li><li>우측하단을 클릭해서 변환할 수 있다.</li><li>또는 ctrl + shift + p 에서 <code>end of line</code>을 검색해서 변환할 수 있다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/crlf/">crlf</category>
-      
-      <category domain="https://chinsun9.github.io/tags/lf/">lf</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/09/crlf-lf/#disqus_thread</comments>
       
     </item>
     
