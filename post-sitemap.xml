@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/11/16/nodejs-dirname/</loc>
+        <lastmod>2020-11-16T05:49:41.225Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/11/16/node-inspect/</loc>
         <lastmod>2020-11-16T02:40:13.691Z</lastmod>
         <changefreq>weekly</changefreq>
