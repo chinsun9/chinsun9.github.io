@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 16 Nov 2020 02:00:43 GMT</pubDate>
+    <pubDate>Mon, 16 Nov 2020 02:40:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>node inspect</title>
+      <link>https://chinsun9.github.io/2020/11/16/node-inspect/</link>
+      <guid>https://chinsun9.github.io/2020/11/16/node-inspect/</guid>
+      <pubDate>Mon, 16 Nov 2020 02:04:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/node-inspect20201116/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/node-inspect20201116/preview.jpg" alt=" "></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">node --inspect      app.js</span><br><span class="line">node --inspect-brk  app.js</span><br><span class="line"></span><br><span class="line">nodemon --inspect     app.js</span><br><span class="line">nodemon --inspect-brk app.js</span><br></pre></td></tr></table></figure><ul><li>node app을 크롬 개발자 도구로 디버깅 할 수 있다.</li><li>chrome://inspect/#devices</li></ul><ul><li><code>--inspect-brk</code> 옵션은 코드 시작전 멈추는 옵션이다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/Xb_0awoShR8">Debugging in 2017 with Node.js</a></li><li><a href="https://tod2.tistory.com/214">Node.js 8 inspector</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/chrome/">chrome</category>
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/inspect/">inspect</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/16/node-inspect/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>REPL</title>
@@ -669,34 +700,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/09/AWS-ELB%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C-express-morgan-%EB%A1%9C%EA%B9%85-%EC%A3%BC%EC%9D%98%EC%A0%90/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>정규식 : 특정 문자열을 포함하는 줄, 라인 판단</title>
-      <link>https://chinsun9.github.io/2020/11/09/%EC%A0%95%EA%B7%9C%EC%8B%9D-%ED%8A%B9%EC%A0%95-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-%EC%A4%84-%EB%9D%BC%EC%9D%B8-%ED%8C%90%EB%8B%A8/</link>
-      <guid>https://chinsun9.github.io/2020/11/09/%EC%A0%95%EA%B7%9C%EC%8B%9D-%ED%8A%B9%EC%A0%95-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-%EC%A4%84-%EB%9D%BC%EC%9D%B8-%ED%8C%90%EB%8B%A8/</guid>
-      <pubDate>Mon, 09 Nov 2020 08:21:46 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/%EC%A0%95%EA%B7%9C%EC%8B%9D-%ED%8A%B9%EC%A0%95-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%9</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/%EC%A0%95%EA%B7%9C%EC%8B%9D-%ED%8A%B9%EC%A0%95-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-%EC%A4%84-%EB%9D%BC%EC%9D%B8-%ED%8C%90%EB%8B%A820201109/preview.jpg" alt=" "></p><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><figure class="highlight plain"><figcaption><span>log</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&quot;GET &#x2F; HTTP&#x2F;1.1&quot; 200 hello world 1</span><br><span class="line">&quot;GET &#x2F; HTTP&#x2F;1.1&quot; 200 hello world 2</span><br><span class="line">&quot;GET &#x2F;a HTTP&#x2F;1.1&quot; 404 hello world 1</span><br><span class="line">&quot;POST &#x2F; HTTP&#x2F;1.1&quot; 404 hello world 1</span><br><span class="line">&quot;GET &#x2F; HTTP&#x2F;1.1&quot; 200 hello world 2</span><br><span class="line">&quot;GET &#x2F; HTTP&#x2F;1.1&quot; 200 hello world 1</span><br><span class="line">&quot;POST &#x2F;asd HTTP&#x2F;1.1&quot; 404 hello world 2</span><br></pre></td></tr></table></figure><ul><li>이런 웹 로그가 있다고 하자.</li><li>중간에 보이는 200, 404 는 status code 이다.</li><li>404 에러인 라인만 뽑아서 보고싶을 때..</li></ul><h2 id="로그파일을-한줄씩-읽으며-정규식으로-확인하기"><a href="#로그파일을-한줄씩-읽으며-정규식으로-확인하기" class="headerlink" title="로그파일을 한줄씩 읽으며 정규식으로 확인하기"></a>로그파일을 한줄씩 읽으며 정규식으로 확인하기</h2><figure class="highlight ts"><figcaption><span>app.ts 전체코드</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> fs <span class="keyword">from</span> <span class="string">&#x27;fs&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> path <span class="keyword">from</span> <span class="string">&#x27;path&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> readline <span class="keyword">from</span> <span class="string">&#x27;readline&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> input_log_file_name = <span class="string">&#x27;nohup20201107.out&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> input_file_path = path.join(</span><br><span class="line">  __dirname,</span><br><span class="line">  <span class="string">`../input files/<span class="subst">$&#123;input_log_file_name&#125;</span>`</span></span><br><span class="line">);</span><br><span class="line"><span class="keyword">const</span> output_file_path = path.join(</span><br><span class="line">  __dirname,</span><br><span class="line">  <span class="string">`../output files/<span class="subst">$&#123;input_log_file_name&#125;</span>`</span></span><br><span class="line">);</span><br><span class="line"><span class="built_in">console</span>.log(input_file_path);</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">processLineByLine</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> fileStream = fs.createReadStream(input_file_path);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> rl = readline.createInterface(&#123;</span><br><span class="line">    input: fileStream,</span><br><span class="line">    crlfDelay: <span class="literal">Infinity</span>,</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 정규식</span></span><br><span class="line">  <span class="keyword">const</span> reg404 = <span class="regexp">/^.*(404).*/</span>;</span><br><span class="line">  <span class="keyword">let</span> result_string = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> <span class="keyword">await</span> (<span class="keyword">const</span> line <span class="keyword">of</span> rl) &#123;</span><br><span class="line">    <span class="comment">// console.log(`Line from file: $&#123;line&#125;`);</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (reg404.test(line)) &#123;</span><br><span class="line">      <span class="comment">//   console.log(`hello : $&#123;line&#125;`);</span></span><br><span class="line">      result_string += line + <span class="string">&#x27;\r\n&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  fs.writeFile(output_file_path, result_string, <span class="string">&#x27;utf8&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;file write complete&#x27;</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">processLineByLine();</span><br></pre></td></tr></table></figure><figure class="highlight ts"><figcaption><span>readline으로 한줄한줄 읽기</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fileStream = fs.createReadStream(input_file_path);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> rl = readline.createInterface(&#123;</span><br><span class="line">  input: fileStream,</span><br><span class="line">  crlfDelay: <span class="literal">Infinity</span>,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>우선, 파일을 한줄씩 읽기위해 <code>readline</code>을 사용했다</li></ul><figure class="highlight ts"><figcaption><span>정규식으로 404 문자열 포함 여부 확인</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 정규식</span></span><br><span class="line"><span class="keyword">const</span> reg404 = <span class="regexp">/^.*(404).*/</span>;</span><br><span class="line"><span class="keyword">let</span> result_string = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="keyword">await</span> (<span class="keyword">const</span> line <span class="keyword">of</span> rl) &#123;</span><br><span class="line">  <span class="comment">// console.log(`Line from file: $&#123;line&#125;`);</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (reg404.test(line)) &#123;</span><br><span class="line">    <span class="comment">//   console.log(`hello : $&#123;line&#125;`);</span></span><br><span class="line">    result_string += line + <span class="string">&#x27;\r\n&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>^.*(404).*</code> 로 정규식을 새웠다.</li><li><code>^.*</code> ; 아무 문자로 시작하는 0개 이상의 문자열로 시작하고</li><li><code>(404)</code> ; 404 문자열을 중간에 포함하며</li><li><code>.*</code> ; 아무 문자열로 끝나는가</li></ul><ul><li><code>reg404.test(line)</code>로 한줄한줄 확인하고</li><li>참인 경우에 result_string 에 더하기</li></ul><figure class="highlight ts"><figcaption><span>result_string 결과 새파일로 쓰기</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fs.writeFile(output_file_path, result_string, <span class="string">&#x27;utf8&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&#x27;file write complete&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>result_string에는 404 문자열을 포함한느 라인만 추출되었고</li><li>output_file_path에 해당 내용을 쓴다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/reg-exp/">reg exp</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/reg-exp/">reg exp</category>
-      
-      <category domain="https://chinsun9.github.io/tags/reg/">reg</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/09/%EC%A0%95%EA%B7%9C%EC%8B%9D-%ED%8A%B9%EC%A0%95-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-%EC%A4%84-%EB%9D%BC%EC%9D%B8-%ED%8C%90%EB%8B%A8/#disqus_thread</comments>
       
     </item>
     
