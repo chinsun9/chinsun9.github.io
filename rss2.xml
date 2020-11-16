@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 16 Nov 2020 01:56:48 GMT</pubDate>
+    <pubDate>Mon, 16 Nov 2020 02:00:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -23,14 +23,17 @@
       <description>&lt;ul&gt;
 &lt;li&gt;즉각적인 프로토타이핑&lt;/li&gt;
 &lt;li&gt;초보자에게 빠른 피드백 제공&lt;/li&gt;
+&lt;li&gt;단순한 대화식 컴퓨터 프로그래밍 환경&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;참고&quot;&gt;&lt;a href=&quot;#참고&quot; class=&quot;headerlink&quot; title=&quot;참고&quot;&gt;&lt;/a&gt;참고&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href</description>
+&lt;ul&gt;
+&lt;li&gt;주피터 노트북에서 파이썬 코딩하는 느낌인 것같다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 i</description>
         
       
       
       
-      <content:encoded><![CDATA[<ul><li>즉각적인 프로토타이핑</li><li>초보자에게 빠른 피드백 제공</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://ko.wikipedia.org/wiki/REPL">REPL - 위키백과, 우리 모두의 백과사전</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<ul><li>즉각적인 프로토타이핑</li><li>초보자에게 빠른 피드백 제공</li><li>단순한 대화식 컴퓨터 프로그래밍 환경</li></ul><ul><li>주피터 노트북에서 파이썬 코딩하는 느낌인 것같다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://ko.wikipedia.org/wiki/REPL">REPL - 위키백과, 우리 모두의 백과사전</a></li><li><a href="https://www.electronjs.org/docs/tutorial/repl">REPL | Electron</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
