@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 17 Nov 2020 08:11:45 GMT</pubDate>
+    <pubDate>Tue, 17 Nov 2020 08:31:20 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js 이진수 앞에 0넣기</title>
+      <link>https://chinsun9.github.io/2020/11/17/js-%EC%9D%B4%EC%A7%84%EC%88%98-%EC%95%9E%EC%97%90-0%EB%84%A3%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/11/17/js-%EC%9D%B4%EC%A7%84%EC%88%98-%EC%95%9E%EC%97%90-0%EB%84%A3%EA%B8%B0/</guid>
+      <pubDate>Tue, 17 Nov 2020 08:22:33 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> N = <span class="number">7</span>;</span><br><span class="line"><span class="keyword">let</span> padding = <span class="string">&#x27;00000000&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> result = (padding + N.toString(<span class="number">2</span>)).substr(-padding.length);</span><br></pre></td></tr></table></figure><blockquote><p>“00000111”</p></blockquote><ul><li>2진수, 16진수 등 표현할 때 앞에 0을 추가해서 보여주고싶을 때가 있다.</li><li>8자리로 표현하고싶으면, <em>padding</em> 변수에 0으로 8자리를 채운다.</li><li><em>padding</em> 과 이진수를 더하고 substr로 뒤에서부터 8자리만큼 잘라주면된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/27641812/way-to-add-leading-zeroes-to-binary-string-in-javascript">way-to-add-leading-zeroes-to-binary-string-in-javascript</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/substr">substr</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/js/">js</category>
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/substr/">substr</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/17/js-%EC%9D%B4%EC%A7%84%EC%88%98-%EC%95%9E%EC%97%90-0%EB%84%A3%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>react eslint prettier airbnb style guide 적용하기</title>
@@ -642,46 +674,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/11/insert-update%EC%8B%9C-%EC%9E%90%EB%8F%99%EA%B0%B1%EC%8B%A0-timestamp/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>AWS 네트워크 ACL</title>
-      <link>https://chinsun9.github.io/2020/11/11/AWS-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-ACL/</link>
-      <guid>https://chinsun9.github.io/2020/11/11/AWS-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-ACL/</guid>
-      <pubDate>Wed, 11 Nov 2020 08:13:23 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;VPC를 위한 선택적 보안 계층&lt;/li&gt;
-&lt;li&gt;시큐리티 그룹과 다르게 차단, deny 룰을 사용할 수 있다.&lt;/li&gt;
-&lt;li&gt;ruleNumber가 낮은 숫자일수록 우선적용된다.&lt;/li&gt;
-&lt;li&gt;20개까지 규칙을 지정할 수 있다고 한다</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>VPC를 위한 선택적 보안 계층</li><li>시큐리티 그룹과 다르게 차단, deny 룰을 사용할 수 있다.</li><li>ruleNumber가 낮은 숫자일수록 우선적용된다.</li><li>20개까지 규칙을 지정할 수 있다고 한다.</li><li>실제로 가용가능한 개수는 18개다.</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  CidrBlock: <span class="string">&#x27;0.0.0.0/0&#x27;</span>,</span><br><span class="line">  Egress: <span class="literal">false</span>,</span><br><span class="line">  Protocol: <span class="string">&#x27;-1&#x27;</span>,</span><br><span class="line">  RuleAction: <span class="string">&#x27;allow&#x27;</span>,</span><br><span class="line">  RuleNumber: <span class="number">100</span></span><br><span class="line">&#125;,</span><br><span class="line">&#123;</span><br><span class="line">  CidrBlock: <span class="string">&#x27;0.0.0.0/0&#x27;</span>,</span><br><span class="line">  Egress: <span class="literal">false</span>,</span><br><span class="line">  Protocol: <span class="string">&#x27;-1&#x27;</span>,</span><br><span class="line">  RuleAction: <span class="string">&#x27;deny&#x27;</span>,</span><br><span class="line">  RuleNumber: <span class="number">32767</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>인바운드의 경우 이 2개가 기본적으로 세팅되어있다.</li></ul><h2 id="aws-sdk-로-ACL-룰-추가-교체하기"><a href="#aws-sdk-로-ACL-룰-추가-교체하기" class="headerlink" title="aws-sdk 로 ACL 룰 추가, 교체하기"></a>aws-sdk 로 ACL 룰 추가, 교체하기</h2><figure class="highlight ts"><figcaption><span>acl.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> in_params: EC2.CreateNetworkAclEntryRequest = &#123;</span><br><span class="line">  CidrBlock: ipv4 + <span class="string">&#x27;/24&#x27;</span>,</span><br><span class="line">  Egress: <span class="literal">false</span>, <span class="comment">//If true, OUTbound rule. fasle is INbound</span></span><br><span class="line">  NetworkAclId: aclId,</span><br><span class="line">  Protocol: <span class="string">`6`</span>, <span class="comment">// -1 : all protocl // 6 : 사용자 지정 tcp</span></span><br><span class="line">  PortRange: &#123; From: <span class="number">80</span>, To: <span class="number">443</span> &#125;, <span class="comment">// http - https</span></span><br><span class="line">  RuleAction: <span class="string">&#x27;deny&#x27;</span>,</span><br><span class="line">  RuleNumber: acl_cnt, <span class="comment">// 우선순위 ruleNumber</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 기존 존재하는 acl 규칙 개수에 따라서 mode를 달리한다</span></span><br><span class="line"><span class="comment">// mode값에 따라 메소드를 달리함.</span></span><br><span class="line"><span class="comment">// 20개가 안되는 경우 createNetworkAclEntry 를 사용함</span></span><br><span class="line"><span class="comment">// 20개 모두 찬경우 replaceNetworkAclEntry를 통해 교체하는 방법</span></span><br><span class="line"><span class="keyword">const</span> method =</span><br><span class="line">  mode === <span class="string">&#x27;create&#x27;</span> ? <span class="string">&#x27;createNetworkAclEntry&#x27;</span> : <span class="string">&#x27;replaceNetworkAclEntry&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">  ec2[method](in_params, <span class="function"><span class="keyword">function</span> (<span class="params">err, data</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(err.message, acl_cnt);</span><br><span class="line"></span><br><span class="line">      <span class="keyword">return</span> reject(err.message);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;Create AclEntry Successful : \n&#x27;</span>, in_params); <span class="comment">// successful response</span></span><br><span class="line">      resolve(in_params);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>이상한 요청을 차단하기 위해 알아보았다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/vpc-network-acls.html">네트워크 ACL</a></li><li><a href="https://bluese05.tistory.com/47">AWS VPC를 디자인해보자(2) - ACL과 Security Group을 활용한 보안 강화</a></li><li><a href="https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/amazon-vpc-limits.html">Amazon VPC 할당량</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/acl/">acl</category>
-      
-      <category domain="https://chinsun9.github.io/tags/network/">network</category>
-      
-      <category domain="https://chinsun9.github.io/tags/vpc/">vpc</category>
-      
-      <category domain="https://chinsun9.github.io/tags/sg/">sg</category>
-      
-      <category domain="https://chinsun9.github.io/tags/security-groups/">security groups</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/11/AWS-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-ACL/#disqus_thread</comments>
       
     </item>
     
