@@ -9,8 +9,34 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 16 Nov 2020 07:14:42 GMT</pubDate>
+    <pubDate>Tue, 17 Nov 2020 05:57:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode 여러 종류의 쉘, 터미널 쉽게 열기</title>
+      <link>https://chinsun9.github.io/2020/11/17/vscode-%EC%97%AC%EB%9F%AC-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%89%98-%EC%89%BD%EA%B2%8C-%EC%97%B4%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/11/17/vscode-%EC%97%AC%EB%9F%AC-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%89%98-%EC%89%BD%EA%B2%8C-%EC%97%B4%EA%B8%B0/</guid>
+      <pubDate>Tue, 17 Nov 2020 05:51:12 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/vscode-%EC%97%AC%EB%9F%AC-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%89%98-%EC%89%BD%EA%B2%8C-%EC%97%B4%EA%B8%B020201117/preview.j</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/vscode-%EC%97%AC%EB%9F%AC-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%89%98-%EC%89%BD%EA%B2%8C-%EC%97%B4%EA%B8%B020201117/preview.jpg" alt=" "></p><ul><li>Shell launcher 라는 확장프로그램을 통해 쉽게 다른 종류의 터미널을 열 수 있다.</li><li>설치하면 바로 사용가능하다.</li></ul><ul><li>윈도우 cmd를 쓰다가 리눅스 bash 명령어를 쓸일이 있어서</li><li>git bash 터미널을 열어 쓰는데 불편함이 느껴졌다.</li><li>기존에는 디폴트 터미널을 설정하고 터미널을 새로열면 해당 터미널을 사용할 수 있었는데,</li><li>디폴트 터미널을 변경되어서 다시 원래 쓰던 터미널로 돌렸어야했다.</li><li>이제 그런 귀찮은 과정을 하지않아도 된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/43427631/how-to-add-multiple-terminals-in-vs-code">how-to-add-multiple-terminals-in-vs-code</a></li><li><a href="https://marketplace.visualstudio.com/items?itemName=Tyriar.shell-launcher">Shell launcher</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/17/vscode-%EC%97%AC%EB%9F%AC-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%89%98-%EC%89%BD%EA%B2%8C-%EC%97%B4%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vscode Tab 키로 () {} [] `` 키로 빠져나가기 TabOut</title>
@@ -663,41 +689,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/10/connection-vs-connection-pool/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>mysql vs mysql2</title>
-      <link>https://chinsun9.github.io/2020/11/10/mysql-vs-mysql2-/</link>
-      <guid>https://chinsun9.github.io/2020/11/10/mysql-vs-mysql2-/</guid>
-      <pubDate>Tue, 10 Nov 2020 05:38:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;mysql2를 사용해보자&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;mysql2-노드-패키지&quot;&gt;&lt;a href=&quot;#mysql2-노드-패키지&quot; class=&quot;headerlink&quot; title=&quot;mysql2 노드 패키지&quot;&gt;&lt;/a&gt;mysql2 노드 패키지</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>mysql2를 사용해보자</li></ul><h2 id="mysql2-노드-패키지"><a href="#mysql2-노드-패키지" class="headerlink" title="mysql2 노드 패키지"></a>mysql2 노드 패키지</h2><ul><li>기존 mysql 패키지 보다 빠름</li><li>기존 mysql를 대체하는 것이 목표라고함</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/sidorares/node-mysql2#readme">sidorares/node-mysql2</a></li><li><a href="https://npmcompare.com/compare/mysql,mysql2">Comparing mysql vs. mysql2</a></li><li><a href="https://stackoverflow.com/questions/25344661/what-is-the-difference-between-mysql-mysql2-considering-nodejs">What is the difference between MySQL &amp; MySQL2 considering NodeJS</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
-      
-      <category domain="https://chinsun9.github.io/tags/mysql/">mysql</category>
-      
-      <category domain="https://chinsun9.github.io/tags/mysql2/">mysql2</category>
-      
-      <category domain="https://chinsun9.github.io/tags/npm/">npm</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/10/mysql-vs-mysql2-/#disqus_thread</comments>
       
     </item>
     
