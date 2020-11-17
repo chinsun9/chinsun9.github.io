@@ -9,8 +9,72 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 17 Nov 2020 05:57:45 GMT</pubDate>
+    <pubDate>Tue, 17 Nov 2020 08:11:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>react eslint prettier airbnb style guide 적용하기</title>
+      <link>https://chinsun9.github.io/2020/11/17/react-eslint-prettier-airbnb-style-guide-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/11/17/react-eslint-prettier-airbnb-style-guide-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Tue, 17 Nov 2020 07:17:20 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight bash"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npx create-react-app my-react-app</span><br><span class="line"><span class="built_in">cd</span> my-react-app</span><br><span class="line"></span><br><span class="line"><span class="built_in">exec</span> 3&lt;&amp;1;bash &lt;&amp;3 &lt;(curl https://raw.githubusercontent.com/chinsun9/eslint-prettier-airbnb-react/master/eslint-prettier-config.sh 2&gt; /dev/null)</span><br><span class="line"></span><br><span class="line">yarn start</span><br></pre></td></tr></table></figure><ul><li>누군가 자동으로 세팅하는 스크립트를 제작해두었다.</li><li>명령어 3개만 입력하면 세팅이 끝난다.</li></ul><h2 id="TMI"><a href="#TMI" class="headerlink" title="TMI"></a>TMI</h2><h3 id="따라해도-나오는-오류"><a href="#따라해도-나오는-오류" class="headerlink" title="따라해도 나오는 오류"></a>따라해도 나오는 오류</h3><ul><li>Replace <code>onPerfEntry</code> with <code>(onPerfEntry)</code>eslint (prettier/prettier)</li><li><em>src/reportWebVitals.js</em> 파일에서 1개의 파라매터만 받는 함수에 괄호로 묶어주라는 오류가 나올 것이다.</li><li>이것만 고쳐주면 잘 동작한다.</li></ul><ul><li>혹시 빨간줄이 계속남아있거나, 안된다면 vscode를 다시 실행해보자.</li></ul><h3 id="계속된-세팅-실패"><a href="#계속된-세팅-실패" class="headerlink" title="계속된 세팅 실패"></a>계속된 세팅 실패</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">        leadingComments: [</span><br><span class="line">          &#123;</span><br><span class="line">            type: &#39;Line&#39;,</span><br><span class="line">            value: &#39; If you want to start measuring performance in your app, pass a function&#39;,</span><br><span class="line">            start: 270,</span><br><span class="line">            end: 344,</span><br><span class="line">            loc: [SourceLocation],</span><br><span class="line">            range: [Array]</span><br><span class="line">          &#125;,</span><br><span class="line">          &#123;</span><br><span class="line">            type: &#39;Line&#39;,</span><br><span class="line">            value: &#39; to log results (for example: reportWebVitals(console.log))&#39;,</span><br><span class="line">            start: 345,</span><br><span class="line">            end: 406,</span><br><span class="line">            loc: [SourceLocation],</span><br><span class="line">            range: [Array]</span><br><span class="line">          &#125;,</span><br><span class="line">          &#123;</span><br><span class="line">            type: &#39;Line&#39;,</span><br><span class="line">            value: &#39; or send to an analytics endpoint. Learn more: https:&#x2F;&#x2F;bit.ly&#x2F;CRA-vitals&#39;,</span><br><span class="line">            start: 407,</span><br><span class="line">            end: 481,</span><br><span class="line">            loc: [SourceLocation],</span><br><span class="line">            range: [Array]</span><br><span class="line">          &#125;</span><br><span class="line">        ],</span><br><span class="line">      &#125;</span><br><span class="line">    ],</span><br><span class="line">    parent: null</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">npm ERR! code ELIFECYCLE</span><br><span class="line">npm ERR! errno 1</span><br><span class="line">npm ERR! react-practice@0.1.0 start: &#96;react-scripts start&#96;</span><br><span class="line">npm ERR! Exit status 1</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! Failed at the react-practice@0.1.0 start script.</span><br><span class="line">npm ERR! This is probably not a problem with npm. There is likely additional logging output above.</span><br><span class="line"></span><br><span class="line">npm ERR! A complete log of this run can be found in:</span><br><span class="line">npm ERR!     C:\Users\chin_\AppData\Roaming\npm-cache\_logs\2020-11-17T06_40_37_514Z-debug.log</span><br></pre></td></tr></table></figure><ul><li><code>eslint-config-airbnb</code> 만 설치하면 위 오류가 뜨면서 실행조차 안됬다.</li><li>이유는 모르겠다.</li></ul><h3 id="eslint-prettier-airbnb-react-포크"><a href="#eslint-prettier-airbnb-react-포크" class="headerlink" title="eslint-prettier-airbnb-react 포크"></a>eslint-prettier-airbnb-react 포크</h3><ul><li><a href="https://github.com/karlhadwen/eslint-prettier-airbnb-react">karlhadwen/eslint-prettier-airbnb-react</a>를 포크해서 내가 오류난 부분을 바꿔주었다.</li><li><code>Delete `␍`eslintprettier/prettier</code> 문제였는데,</li></ul><figure class="highlight"><figcaption><span>.eslintrc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&quot;prettier/prettier&quot;: [</span><br><span class="line">    &quot;error&quot;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">&quot;trailingComma&quot;</span>: <span class="string">&quot;es5&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;singleQuote&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">&quot;printWidth&quot;</span>: <span class="number">80</span>,</span><br><span class="line">      <span class="attr">&quot;endOfLine&quot;</span>: <span class="string">&quot;auto&quot;</span>     &lt;-- 추가</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br></pre></td></tr></table></figure><ul><li><code>&quot;endOfLine&quot;: &quot;auto&quot;</code>를 추가해어 해결하였다.</li></ul><h3 id="prettierrc-파일-필요"><a href="#prettierrc-파일-필요" class="headerlink" title=".prettierrc 파일 필요"></a>.prettierrc 파일 필요</h3><ul><li>헷갈렸던 것이, .eslintrc 안에 prettier/prettier을 설정하는 부분이있다.</li><li>그 부분을 참조해서 prettier가 포맷팅하는 줄 알았는데, 그거와 별게로</li><li><em>.prettierrc</em> 파일을 만들어줘야 작동하고,</li><li>당연한 말이지만, prettierrc 세팅과 eslintrc 룰 아래 prettier/prettier의 세팅을 동일하게 해주어야한다.</li></ul><h2 id="여기까지-리액트-프로젝트"><a href="#여기까지-리액트-프로젝트" class="headerlink" title="여기까지 리액트 프로젝트"></a>여기까지 리액트 프로젝트</h2><ul><li><a href="https://github.com/chinsun9/react-eslint-prettier-practice">https://github.com/chinsun9/react-eslint-prettier-practice</a></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>동영상 <a href="https://www.youtube.com/watch?v=qibrJYImqLU">Setup ESLint, Prettier &amp; Airbnb Style Guide in under 2 Minutes</a></li><li><a href="https://github.com/search?q=eslint-prettier-airbnb-react">eslint-prettier-airbnb-react</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/react/">react</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/prettier/">prettier</category>
+      
+      <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
+      
+      <category domain="https://chinsun9.github.io/tags/airbnb-react/">airbnb react</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/17/react-eslint-prettier-airbnb-style-guide-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>shell script 실행하기</title>
+      <link>https://chinsun9.github.io/2020/11/17/shell-script-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/11/17/shell-script-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Tue, 17 Nov 2020 07:00:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight bash"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sh my_script.sh</span><br><span class="line"></span><br><span class="line">./my_script.sh</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/linux/">linux</category>
+      
+      <category domain="https://chinsun9.github.io/tags/bash/">bash</category>
+      
+      <category domain="https://chinsun9.github.io/tags/shell/">shell</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/17/shell-script-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vscode 여러 종류의 쉘, 터미널 쉽게 열기</title>
@@ -618,77 +682,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/11/AWS-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-ACL/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>typescript json import</title>
-      <link>https://chinsun9.github.io/2020/11/10/typescript-json-import/</link>
-      <guid>https://chinsun9.github.io/2020/11/10/typescript-json-import/</guid>
-      <pubDate>Tue, 10 Nov 2020 06:32:15 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight&quot;&gt;&lt;figcaption&gt;&lt;span&gt;tsconfig.json&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight"><figcaption><span>tsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&quot;compilerOptions&quot;: &#123;</span><br><span class="line">  <span class="comment">// (...)</span></span><br><span class="line"></span><br><span class="line">  &quot;resolveJsonModule&quot;: true,</span><br><span class="line">  &quot;esModuleInterop&quot;: true,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><em>tsconfig.json</em> 의 <code>compilerOptions</code> 부분에 추가한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/57574481/angular-8-and-importing-json">Angular 8 and importing Json</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
-      
-      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/json/">json</category>
-      
-      <category domain="https://chinsun9.github.io/tags/import/">import</category>
-      
-      <category domain="https://chinsun9.github.io/tags/es6/">es6</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/10/typescript-json-import/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>connection vs connection pool</title>
-      <link>https://chinsun9.github.io/2020/11/10/connection-vs-connection-pool/</link>
-      <guid>https://chinsun9.github.io/2020/11/10/connection-vs-connection-pool/</guid>
-      <pubDate>Tue, 10 Nov 2020 05:56:38 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;connection pool를 써보자&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;Connection-pool&quot;&gt;&lt;a href=&quot;#Connection-pool&quot; class=&quot;headerlink&quot; title=&quot;Connection pool&quot;&gt;&lt;/a&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>connection pool를 써보자</li></ul><h2 id="Connection-pool"><a href="#Connection-pool" class="headerlink" title="Connection pool"></a>Connection pool</h2><ul><li>기존 connection은 데이터베이스에 동시 접속 허용량을 초과하는 연결을 할 경우 에러 발생</li><li>connection pool을 사용하면 대기상태가 되었다가 수행됨</li><li>pool 에 여러 미리 생성되어 있는 connection을 가져가 쓴다</li><li>connection이 미리 생성되어있기 때문에 생성시간 소모되지 않음.</li><li>따라서 속도 빨라짐. 쉽게 다운되지 않음.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.guidearea.com/best-database-practices-single-connection-vs-connection-pool/">Database Tutorial – Single Connection vs Connection Pool</a></li><li><a href="https://brownbears.tistory.com/289">[DB]Connection Pool</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
-      
-      <category domain="https://chinsun9.github.io/tags/mysql/">mysql</category>
-      
-      <category domain="https://chinsun9.github.io/tags/mysql2/">mysql2</category>
-      
-      <category domain="https://chinsun9.github.io/tags/connection/">connection</category>
-      
-      <category domain="https://chinsun9.github.io/tags/connection-pool/">connection pool</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/10/connection-vs-connection-pool/#disqus_thread</comments>
       
     </item>
     
