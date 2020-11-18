@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 17 Nov 2020 08:31:20 GMT</pubDate>
+    <pubDate>Wed, 18 Nov 2020 05:49:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode show all commands F1 키로 열기</title>
+      <link>https://chinsun9.github.io/2020/11/18/vscode-show-all-commands-F1-%ED%82%A4%EB%A1%9C-%EC%97%B4%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/11/18/vscode-show-all-commands-F1-%ED%82%A4%EB%A1%9C-%EC%97%B4%EA%B8%B0/</guid>
+      <pubDate>Wed, 18 Nov 2020 05:48:04 GMT</pubDate>
+      
+        
+        
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Ctrl + Shift + P&lt;br&gt;F1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;F1 키로도 명령창을 열 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<blockquote><p>Ctrl + Shift + P<br>F1</p></blockquote><ul><li>F1 키로도 명령창을 열 수 있다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/18/vscode-show-all-commands-F1-%ED%82%A4%EB%A1%9C-%EC%97%B4%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js 이진수 앞에 0넣기</title>
@@ -640,40 +672,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/12/react-typescript-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>insert, update시 자동갱신 TIMESTAMP</title>
-      <link>https://chinsun9.github.io/2020/11/11/insert-update%EC%8B%9C-%EC%9E%90%EB%8F%99%EA%B0%B1%EC%8B%A0-timestamp/</link>
-      <guid>https://chinsun9.github.io/2020/11/11/insert-update%EC%8B%9C-%EC%9E%90%EB%8F%99%EA%B0%B1%EC%8B%A0-timestamp/</guid>
-      <pubDate>Wed, 11 Nov 2020 08:51:06 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">LOG</span></span><br><span class="line">(</span><br><span class="line">    <span class="string">`idx`</span>     <span class="built_in">INT</span>            <span class="keyword">NOT</span> <span class="literal">NULL</span>    AUTO_INCREMENT,</span><br><span class="line">    <span class="string">`ip`</span>      <span class="built_in">VARCHAR</span>(<span class="number">45</span>)    <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">    <span class="string">`method`</span>  <span class="built_in">VARCHAR</span>(<span class="number">45</span>)    <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">    <span class="string">`url`</span>     <span class="built_in">VARCHAR</span>(<span class="number">45</span>)    <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">    <span class="string">`date`</span>    <span class="built_in">TIMESTAMP</span>      <span class="keyword">NOT</span> <span class="literal">NULL</span><span class="keyword">DEFAULT</span> <span class="keyword">CURRENT_TIMESTAMP</span> <span class="keyword">ON</span> <span class="keyword">UPDATE</span> <span class="keyword">CURRENT_TIMESTAMP</span>,</span><br><span class="line">    PRIMARY <span class="keyword">KEY</span> (idx)</span><br><span class="line">);</span><br></pre></td></tr></table></figure><ul><li>CURRENT_TIMESTAMP은 현재 시간을 의미한다.</li><li><code>DEFAULT CURRENT_TIMESTAMP</code> ; insert 시 자동으로 현재 시간이 들어간다</li><li><code>ON UPDATE CURRENT_TIMESTAMP</code> ; update 시 자동으로 현재 시간으로 갱신된다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
-      
-      <category domain="https://chinsun9.github.io/tags/mysql/">mysql</category>
-      
-      <category domain="https://chinsun9.github.io/tags/timestamp/">timestamp</category>
-      
-      <category domain="https://chinsun9.github.io/tags/on-update/">on update</category>
-      
-      <category domain="https://chinsun9.github.io/tags/CURRENT-TIMESTAMP/">CURRENT_TIMESTAMP</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/11/insert-update%EC%8B%9C-%EC%9E%90%EB%8F%99%EA%B0%B1%EC%8B%A0-timestamp/#disqus_thread</comments>
       
     </item>
     
