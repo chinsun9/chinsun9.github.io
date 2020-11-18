@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 18 Nov 2020 06:55:15 GMT</pubDate>
+    <pubDate>Wed, 18 Nov 2020 07:39:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode console.log() 빨리치기</title>
+      <link>https://chinsun9.github.io/2020/11/18/vscode-console-log-%EB%B9%A8%EB%A6%AC%EC%B9%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/11/18/vscode-console-log-%EB%B9%A8%EB%A6%AC%EC%B9%98%EA%B8%B0/</guid>
+      <pubDate>Wed, 18 Nov 2020 07:33:27 GMT</pubDate>
+      
+        
+        
+      <description>&lt;blockquote&gt;
+&lt;p&gt;cas→ console alert method console.assert(expression, object)&lt;br&gt;ccl→ console clear console.clear()&lt;br&gt;cco→ console count con</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<blockquote><p>cas→ console alert method console.assert(expression, object)<br>ccl→ console clear console.clear()<br>cco→ console count console.count(label)<br>cdb→ console debug console.debug(object)<br>cdi→ console dir console.dir<br>cer→ console error console.error(object)<br>cgr→ console group console.group(label)<br>cge→ console groupEnd console.groupEnd()<br>clg→ console log console.log(object)<br>clo→ console log object with name console.log(‘object :&gt;&gt; ‘, object);<br>ctr→ console trace console.trace(object)<br>cwa→ console warn console.warn<br>cin→ console info console.info<br>clt→ console table console.table<br>cti→ console time console.time<br>cte→ console timeEnd console.timeEnd</p></blockquote><ul><li>clg 를 치고 tab키를 console.log가 자동완성된다.</li><li>이밖에도 import from 자동완성 등 여러가지가 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets">JavaScript (ES6) code snippets</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/js/">js</category>
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/javasciprt/">javasciprt</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/18/vscode-console-log-%EB%B9%A8%EB%A6%AC%EC%B9%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>git branch rename 브랜치명 변경</title>
@@ -619,40 +650,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/12/chrome-dev-tool/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>github 저장소 복제</title>
-      <link>https://chinsun9.github.io/2020/11/12/github-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%B3%B5%EC%A0%9C/</link>
-      <guid>https://chinsun9.github.io/2020/11/12/github-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%B3%B5%EC%A0%9C/</guid>
-      <pubDate>Thu, 12 Nov 2020 04:25:01 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git clone --bare -b docker --single-branch  https:&#x2F;&#x2F;github.com&#x2F;chinsun9&#x2F;2020-web-test.git</span><br><span class="line"></span><br><span class="line">cd 2020-web-test.git</span><br><span class="line"></span><br><span class="line">git push --mirror https:&#x2F;&#x2F;github.com&#x2F;chinsun9&#x2F;2020-web-test-mirror.git</span><br><span class="line"></span><br><span class="line">cd ..</span><br><span class="line"></span><br><span class="line">rmdir &#x2F;s 2020-web-test.git</span><br></pre></td></tr></table></figure><ul><li>우선 터미널에서 작업하기 전에 새로운 깃허브 저장소를 하나 생성한다.(복제될 저장소)</li><li>2020-web-test의 docker 브랜치를 bare clone 한다.</li></ul><p><img src="/images/github-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%B3%B5%EC%A0%9C20201112/1.jpg" alt=" "></p><ul><li>bare clone하게되면 소스코드가 보이지않고 이런 요상한 파일들이 보인다.</li><li>평범히 클론했다면 <em>.git</em> 디렉터리에 있는 내용들이다.</li></ul><ul><li><code>cd 2020-web-test.git</code>로 들어가주고</li><li><code>git push --mirror https://github.com/chinsun9/2020-web-test-mirror.git</code></li><li>새로운 저장소로 mirror옵션을 주고 푸쉬하게되면 커밋내역까지 똑같이 저장소가 복제된다.</li></ul><p><img src="/images/github-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%B3%B5%EC%A0%9C20201112/preview.jpg" alt=" "></p><ul><li>오른쪽이 복제한 저장소이고, 복제한 저장소에서 하나의 커밋을 하였다.</li></ul><ul><li><code>rmdir /s 2020-web-test.git</code> 이제 이 쓸모없는 디렉터리는 삭제하고</li><li>복제한 저장소를 <code>git clone https://github.com/chinsun9/2020-web-test-mirror.git</code> 클론해서 사용하면된다.</li></ul><h2 id="용도"><a href="#용도" class="headerlink" title="용도?"></a>용도?</h2><ul><li>퍼블릭 저장소에 올렸던 프로젝트를 계속 이어하는데</li><li>dbconfig파일이나, 보여주고싶지않은 정보가 있을 수 있다.</li><li>처음에는 비공개 브랜치? 이런 키워드로 찾아봤었는데, 그런 기능은 없었다.</li><li>프로젝트를 통째로 복사해서 새롭게 git init 하는 방법도 있는데,</li><li>이 방법을 통해서 커밋내역을 유지하면서 복제할 수 있었다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/duplicating-a-repository">Duplicating a repository</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/clone/">clone</category>
-      
-      <category domain="https://chinsun9.github.io/tags/bare/">bare</category>
-      
-      <category domain="https://chinsun9.github.io/tags/mirror/">mirror</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/12/github-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%B3%B5%EC%A0%9C/#disqus_thread</comments>
       
     </item>
     
