@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 18 Nov 2020 05:55:28 GMT</pubDate>
+    <pubDate>Wed, 18 Nov 2020 06:55:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>git branch rename 브랜치명 변경</title>
+      <link>https://chinsun9.github.io/2020/11/18/git-branch-rename-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%AA%85-%EB%B3%80%EA%B2%BD/</link>
+      <guid>https://chinsun9.github.io/2020/11/18/git-branch-rename-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%AA%85-%EB%B3%80%EA%B2%BD/</guid>
+      <pubDate>Wed, 18 Nov 2020 06:50:45 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;상황&quot;&gt;&lt;a href=&quot;#상황&quot; class=&quot;headerlink&quot; title=&quot;상황&quot;&gt;&lt;/a&gt;상황&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;로컬에 있는 퍼블리쉬하지 않은 브랜치 이름 바꾸기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;브랜치이름-바꾸기&quot;&gt;&lt;a hre</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>로컬에 있는 퍼블리쉬하지 않은 브랜치 이름 바꾸기</li></ul><h2 id="브랜치이름-바꾸기"><a href="#브랜치이름-바꾸기" class="headerlink" title="브랜치이름 바꾸기"></a>브랜치이름 바꾸기</h2><blockquote><p>git branch -m {바꿀 브랜치명} {새로운 브랜치명}</p></blockquote><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://thdev.tech/git/2016/12/19/Git-Branch-Name-Change/">Git Branch 이름 변경하기</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/branch/">branch</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/18/git-branch-rename-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%AA%85-%EB%B3%80%EA%B2%BD/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vscode 터미널, 코드 에디터 포커스 왔다갔다하기</title>
@@ -622,44 +653,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/12/github-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%B3%B5%EC%A0%9C/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>nodejs web dockerizing</title>
-      <link>https://chinsun9.github.io/2020/11/12/nodejs-web-dockerizing/</link>
-      <guid>https://chinsun9.github.io/2020/11/12/nodejs-web-dockerizing/</guid>
-      <pubDate>Thu, 12 Nov 2020 02:40:11 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;기존에 만들었었던 &lt;a href=&quot;https://github.com/chinsun9/2020-web-test&quot;&gt;Nodejs Express WEB&lt;/a&gt; 프로젝트를 도커라이징 해보았다.&lt;/li&gt;
-&lt;li&gt;얄팍한 코딩사전님의 &lt;a href=</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>기존에 만들었었던 <a href="https://github.com/chinsun9/2020-web-test">Nodejs Express WEB</a> 프로젝트를 도커라이징 해보았다.</li><li>얄팍한 코딩사전님의 <a href="https://youtu.be/hWPv9LMlme8">가장 쉽게 배우는 도커</a>를 보고 시도했다.</li><li>도커가 이런거구나 하고 느낀 순간이였다.. 마치 신세계…</li><li>이번 도커라이징을 통해서 내 프로젝트를 도커가 설치되어있는 다른컴퓨터에서 매우 쉽게 돌려볼 수 있다는걸 알게되었다.</li></ul><h2 id="기존-상태-설명"><a href="#기존-상태-설명" class="headerlink" title="기존 상태 설명"></a>기존 상태 설명</h2><figure class="highlight txt"><figcaption><span>디렉터리 구조</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules/</span><br><span class="line">├── web</span><br><span class="line">│ ├── bin</span><br><span class="line">│ │ └── www</span><br><span class="line">│ ├── public/</span><br><span class="line">│ ├── routes/</span><br><span class="line">│ ├── utils/</span><br><span class="line">│ ├── views/</span><br><span class="line">│ └── app.js</span><br><span class="line">├── .gitattributes</span><br><span class="line">├── .gitignore</span><br><span class="line">├── package-lock.json</span><br><span class="line">├── package.json</span><br><span class="line">├── README.md</span><br><span class="line">└── sqldump.sql</span><br></pre></td></tr></table></figure><ul><li>그냥 node express 서버와 db덤프 파일인 <em>sqldump.sql</em> 가 구분없이 한 디렉터리에 있었다.</li></ul><h2 id="벡엔드와-데이터베이스로-분리하기"><a href="#벡엔드와-데이터베이스로-분리하기" class="headerlink" title="벡엔드와 데이터베이스로 분리하기"></a>벡엔드와 데이터베이스로 분리하기</h2><p><img src="/images/nodejs-web-dockerizing20201112/preview.jpg" alt=" "></p><ul><li><code>backend</code>, <code>database</code> 폴더를 만든다.</li><li><code>backend</code>폴더로 sqldump.sql와 깃허브, 프리티어 세팅 등을 제외한 99.9999%의 소스파일들을 이동한다</li><li><code>database</code>폴더로 sqldump.sql을 이동</li></ul><figure class="highlight plain"><figcaption><span>sqldump.sql 이동</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">database</span><br><span class="line">└── scripts</span><br><span class="line">    └── sqldump.sql</span><br></pre></td></tr></table></figure><ul><li>이런식으로 node express 서버와 db를 분리할 수 있었다.</li></ul><h2 id="Dockerfile-작성하기"><a href="#Dockerfile-작성하기" class="headerlink" title="Dockerfile 작성하기"></a>Dockerfile 작성하기</h2><h3 id="backend"><a href="#backend" class="headerlink" title="backend"></a>backend</h3><figure class="highlight dockerfile"><figcaption><span>backend/Dockerfile</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> node:<span class="number">12.18</span>.<span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> /usr/src/app</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">COPY</span><span class="bash"> . .</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> npm i</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> [<span class="string">&quot;npm&quot;</span>, <span class="string">&quot;start&quot;</span>]</span></span><br></pre></td></tr></table></figure><ul><li>내가 로컬에서 사용하는 환경을 토대로</li><li>내 앱에 맞는 노드버전을 가져와서</li><li>/usr/src/app 라는 워크디렉터리에</li><li>backend 아래있는 모든 파일들을 복사해오고</li><li>RUN 명령어로 npm i로 종속성을 설치한다.</li><li>그리고 CMD 명령으로 backend 서버를 실행시킨다.</li></ul><h3 id="database"><a href="#database" class="headerlink" title="database"></a>database</h3><figure class="highlight dockerfile"><figcaption><span>database/Dockerfile</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> mariadb:<span class="number">10.5</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">ENV</span> MYSQL_USER mysql_user</span><br><span class="line"><span class="keyword">ENV</span> MYSQL_PASSWORD <span class="number">1234</span></span><br><span class="line"><span class="keyword">ENV</span> MYSQL_ROOT_PASSWORD <span class="number">1234</span></span><br><span class="line"><span class="keyword">ENV</span> MYSQL_DATABASE webtest</span><br><span class="line"></span><br><span class="line"><span class="keyword">COPY</span><span class="bash"> ./scripts/ /docker-entrypoint-initdb.d/</span></span><br></pre></td></tr></table></figure><ul><li>내가 로컬에서 사용했던 마리아디비 버전 그대로 가져왔다</li><li>데이터베이스 관련 환경변수들을 정의해주고</li><li>scripts 디렉터리에 있는 dump파일을 <em>/docker-entrypoint-initdb.d/</em> 로 복사한다</li><li>/docker-entrypoint-initdb.d/ 는 데이터베이스를 생성할 때,</li><li>하위 sql을 가지고 데이터베이스를 초기화해준다.</li></ul><h2 id="후기"><a href="#후기" class="headerlink" title="후기"></a>후기</h2><ul><li>메모리 딸린다..</li><li>처음에는 좋아서 이것저것 다 도커라이징할려고 했는데,</li><li>하다보니까 메모리가 딸려서 마우스가 뚝뚝 끊겼다…</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/chinsun9/2020-web-test/tree/docker">Nodejs Express WEB</a></li><li><a href="https://youtu.be/hWPv9LMlme8">가장 쉽게 배우는 도커</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/docker/">docker</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/docker/">docker</category>
-      
-      <category domain="https://chinsun9.github.io/tags/dockerizing/">dockerizing</category>
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/express/">express</category>
-      
-      <category domain="https://chinsun9.github.io/tags/mariadb/">mariadb</category>
-      
-      <category domain="https://chinsun9.github.io/tags/sqldump/">sqldump</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/12/nodejs-web-dockerizing/#disqus_thread</comments>
       
     </item>
     
