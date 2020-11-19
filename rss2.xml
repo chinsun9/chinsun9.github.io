@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 19 Nov 2020 06:37:30 GMT</pubDate>
+    <pubDate>Thu, 19 Nov 2020 08:16:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -28,7 +28,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="em"><a href="#em" class="headerlink" title="em"></a>em</h2><ul><li>상위 요소 기준</li></ul><h2 id="rem"><a href="#rem" class="headerlink" title="rem"></a>rem</h2><ul><li>최상위 요소 html 기준</li></ul><p>-</p><p>##</p><p>-</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="em"><a href="#em" class="headerlink" title="em"></a>em</h2><ul><li>상위 요소 기준</li></ul><h2 id="rem"><a href="#rem" class="headerlink" title="rem"></a>rem</h2><ul><li>최상위 요소 html 기준</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/web/">web</category>
