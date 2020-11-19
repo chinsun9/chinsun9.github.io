@@ -9,8 +9,42 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 19 Nov 2020 05:15:41 GMT</pubDate>
+    <pubDate>Thu, 19 Nov 2020 06:28:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>flex box로 수평수직 가운데 정렬하기</title>
+      <link>https://chinsun9.github.io/2020/11/19/flex-box%EB%A1%9C-%EC%88%98%ED%8F%89%EC%88%98%EC%A7%81-%EA%B0%80%EC%9A%B4%EB%8D%B0-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/11/19/flex-box%EB%A1%9C-%EC%88%98%ED%8F%89%EC%88%98%EC%A7%81-%EA%B0%80%EC%9A%B4%EB%8D%B0-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Thu, 19 Nov 2020 06:22:14 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/flex-box%EB%A1%9C-%EC%88%98%ED%8F%89%EC%88%98%EC%A7%81-%EA%B0%80%EC%9A%B4%EB%8D%B0-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/flex-box%EB%A1%9C-%EC%88%98%ED%8F%89%EC%88%98%EC%A7%81-%EA%B0%80%EC%9A%B4%EB%8D%B0-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B020201119/preview.jpg" alt=" "></p><figure class="highlight html"><figcaption><span>index.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">  html &#123;</span><br><span class="line">    height: 100vh;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  body &#123;</span><br><span class="line">    height: 100%;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="css">  <span class="selector-class">.flexbox-container</span> &#123;</span></span><br><span class="line">    display: flex;</span><br><span class="line">    height: 100%;</span><br><span class="line">    justify-content: center;</span><br><span class="line">    align-items: center;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="css">  <span class="selector-class">.flexbox-item</span> &#123;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">background-color</span>: <span class="selector-id">#ddd</span>;</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;flexbox-container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;flexbox-item&quot;</span>&gt;</span>hello world!<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.flexbox-container</span> &#123;</span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>flex box로 수평수직 가운데 정렬하기</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      <category domain="https://chinsun9.github.io/tags/html/">html</category>
+      
+      <category domain="https://chinsun9.github.io/tags/style/">style</category>
+      
+      <category domain="https://chinsun9.github.io/tags/flex-box/">flex box</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/19/flex-box%EB%A1%9C-%EC%88%98%ED%8F%89%EC%88%98%EC%A7%81-%EA%B0%80%EC%9A%B4%EB%8D%B0-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vscode extension Settings Sync</title>
@@ -615,44 +649,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/16/boilerplate/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>chrome inactive tab setTimeout, setInterval 실행 느림</title>
-      <link>https://chinsun9.github.io/2020/11/13/chrome-inactive-tab-setTimeout-setInterval-%EC%8B%A4%ED%96%89-%EB%8A%90%EB%A6%BC/</link>
-      <guid>https://chinsun9.github.io/2020/11/13/chrome-inactive-tab-setTimeout-setInterval-%EC%8B%A4%ED%96%89-%EB%8A%90%EB%A6%BC/</guid>
-      <pubDate>Fri, 13 Nov 2020 07:08:03 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;브라우저에서 js 코드 실행속도가 이상하게 느려져서 어떤 문제인가했는데,&lt;/li&gt;
-&lt;li&gt;개발자도구를 새창으로 열고(콘솔보는용도로)&lt;/li&gt;
-&lt;li&gt;탭을 백그라운드로 보내버렸더니 생긴문제였다.&lt;/li&gt;
-&lt;li&gt;setTimeout, se</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>브라우저에서 js 코드 실행속도가 이상하게 느려져서 어떤 문제인가했는데,</li><li>개발자도구를 새창으로 열고(콘솔보는용도로)</li><li>탭을 백그라운드로 보내버렸더니 생긴문제였다.</li><li>setTimeout, setInterval 메소드의 경우 탭이 인액티브 상태이면 1초 이상으로 제한된다고 한다.</li><li>인액티브 상태는 최소화하는 등 화면에서 사라지는 경우를 말하는 것 같다.</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">setInterval</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  log(<span class="number">1</span>);</span><br><span class="line">&#125;, <span class="number">100</span>);</span><br></pre></td></tr></table></figure><ul><li>위코드를 작성하고 개발자도구 콘솔창을 새창으로 열고</li><li>탭을 최소화하면 1초 간격으로 실행되는 것을 확인 할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout#Inactive_tabs">WindowOrWorkerGlobalScope.setTimeout() - Web APIs | MDN</a></li><li><a href="https://stackoverflow.com/questions/6585112/javascript-performance-when-running-in-an-unfocused-tab">Javascript performance when running in an unfocused tab</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/chrome/">chrome</category>
-      
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/setTimeout/">setTimeout</category>
-      
-      <category domain="https://chinsun9.github.io/tags/setInterval/">setInterval</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/13/chrome-inactive-tab-setTimeout-setInterval-%EC%8B%A4%ED%96%89-%EB%8A%90%EB%A6%BC/#disqus_thread</comments>
       
     </item>
     
