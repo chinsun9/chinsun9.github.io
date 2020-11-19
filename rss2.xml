@@ -9,8 +9,42 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 19 Nov 2020 04:38:49 GMT</pubDate>
+    <pubDate>Thu, 19 Nov 2020 04:44:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>리눅스에서 파일, 폴더 삭제 명령</title>
+      <link>https://chinsun9.github.io/2020/11/19/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%8C%8C%EC%9D%BC-%ED%8F%B4%EB%8D%94-%EC%82%AD%EC%A0%9C-%EB%AA%85%EB%A0%B9/</link>
+      <guid>https://chinsun9.github.io/2020/11/19/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%8C%8C%EC%9D%BC-%ED%8F%B4%EB%8D%94-%EC%82%AD%EC%A0%9C-%EB%AA%85%EB%A0%B9/</guid>
+      <pubDate>Thu, 19 Nov 2020 04:40:37 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rm -rf &#123;디렉터리명&#125;</span><br><span class="line">rm -rf &#123;파일명&#125;</span><br><span class="line">rm -rf &#123;파일명&#125; &#123;디렉터리명&#125; &#123;이렇게 계속 나열하기&#125;</span><br><span class="line"></span><br><span class="line">rm -rf node_modules package-lock.json</span><br></pre></td></tr></table></figure><ul><li>cli로 삭제할 파일 또는 디렉토리를 하나이상 나열하여 한번에 삭제할 수 있다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/bash/">bash</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/linux/">linux</category>
+      
+      <category domain="https://chinsun9.github.io/tags/cli/">cli</category>
+      
+      <category domain="https://chinsun9.github.io/tags/bash/">bash</category>
+      
+      <category domain="https://chinsun9.github.io/tags/terminal/">terminal</category>
+      
+      <category domain="https://chinsun9.github.io/tags/shell/">shell</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/19/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%8C%8C%EC%9D%BC-%ED%8F%B4%EB%8D%94-%EC%82%AD%EC%A0%9C-%EB%AA%85%EB%A0%B9/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>JSON.stringify 예쁘게 출력하기</title>
@@ -316,12 +350,16 @@
       <content:encoded><![CDATA[<figure class="highlight bash"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sh my_script.sh</span><br><span class="line"></span><br><span class="line">./my_script.sh</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      <category domain="https://chinsun9.github.io/categories/bash/">bash</category>
       
       
       <category domain="https://chinsun9.github.io/tags/linux/">linux</category>
       
+      <category domain="https://chinsun9.github.io/tags/cli/">cli</category>
+      
       <category domain="https://chinsun9.github.io/tags/bash/">bash</category>
+      
+      <category domain="https://chinsun9.github.io/tags/terminal/">terminal</category>
       
       <category domain="https://chinsun9.github.io/tags/shell/">shell</category>
       
@@ -612,38 +650,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/12/npm-%ED%8C%A8%ED%82%A4%EC%A7%80-unpublish/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>git clone 커밋 히스토리없이 가볍게 클론하기</title>
-      <link>https://chinsun9.github.io/2020/11/12/git-clone-%EC%BB%A4%EB%B0%8B-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%97%86%EC%9D%B4-%EA%B0%80%EB%B3%8D%EA%B2%8C-%ED%81%B4%EB%A1%A0%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/11/12/git-clone-%EC%BB%A4%EB%B0%8B-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%97%86%EC%9D%B4-%EA%B0%80%EB%B3%8D%EA%B2%8C-%ED%81%B4%EB%A1%A0%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Thu, 12 Nov 2020 06:39:02 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;b</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone --depth <span class="number">1</span> https://github.com/chinsun9/refactor-<span class="number">2019</span>T1.git</span><br></pre></td></tr></table></figure><ul><li>git clone을 통해 클론하게되면 .git 폴더도 같이 딸려온다.</li><li>.git 폴더없이 최신 상태만 가져오고싶을 때 어떻게 할까 찾아보다가</li><li><code>--depth</code> 옵션을 알게되었다.</li></ul><ul><li><code>--depth 1</code> 하게되면 가장 마지막 상태만 클론하게된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://qastack.kr/programming/29368837/copy-a-git-repo-without-history">copy-a-git-repo-without-history</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/clone/">clone</category>
-      
-      <category domain="https://chinsun9.github.io/tags/depth/">depth</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/12/git-clone-%EC%BB%A4%EB%B0%8B-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%97%86%EC%9D%B4-%EA%B0%80%EB%B3%8D%EA%B2%8C-%ED%81%B4%EB%A1%A0%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
