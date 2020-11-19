@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 19 Nov 2020 04:44:31 GMT</pubDate>
+    <pubDate>Thu, 19 Nov 2020 05:15:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode extension Settings Sync</title>
+      <link>https://chinsun9.github.io/2020/11/19/vscode-extension-Settings-Sync/</link>
+      <guid>https://chinsun9.github.io/2020/11/19/vscode-extension-Settings-Sync/</guid>
+      <pubDate>Thu, 19 Nov 2020 05:07:40 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;동일한 vscode 설정을 여러컴퓨터에 쉽게 동기화할 수 있다.&lt;/li&gt;
+&lt;li&gt;github 아이디만 있으면된다.&lt;/li&gt;
+&lt;li&gt;vscode setting, 확장도구 까지 모두 동기화할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;S</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>동일한 vscode 설정을 여러컴퓨터에 쉽게 동기화할 수 있다.</li><li>github 아이디만 있으면된다.</li><li>vscode setting, 확장도구 까지 모두 동기화할 수 있다.</li></ul><h2 id="Settings-Sync"><a href="#Settings-Sync" class="headerlink" title="Settings Sync"></a>Settings Sync</h2><ul><li>Settings Sync 확장도구를 설치한다.</li><li>깃허브에 로그인하고 사용한다.</li><li>F1 &gt; Sync: Update/Upload Settings 로 현재 세팅을 업로드한다.</li><li>동기화하고싶은 다른 컴퓨터에서 F1 &gt; Sync: Download Settings 를 실행해 다운로드한다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync">Settings Sync</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/19/vscode-extension-Settings-Sync/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>리눅스에서 파일, 폴더 삭제 명령</title>
@@ -620,36 +653,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/13/chrome-inactive-tab-setTimeout-setInterval-%EC%8B%A4%ED%96%89-%EB%8A%90%EB%A6%BC/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>npm 패키지 unpublish</title>
-      <link>https://chinsun9.github.io/2020/11/12/npm-%ED%8C%A8%ED%82%A4%EC%A7%80-unpublish/</link>
-      <guid>https://chinsun9.github.io/2020/11/12/npm-%ED%8C%A8%ED%82%A4%EC%A7%80-unpublish/</guid>
-      <pubDate>Thu, 12 Nov 2020 07:52:55 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span cla</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm unpublish &#123;패키지명&#125; -f</span><br></pre></td></tr></table></figure><ul><li>내 패지키 디렉터리로 가서 위 명령을 실행</li></ul><ul><li>처음에 브라우저로 npm에 접속한다음에 <em>패키지 &gt; 세팅</em> 에 딜리트가 있는줄 알았는데,</li><li>cli로 지워야 했다.</li></ul><h2 id="삭제-조건"><a href="#삭제-조건" class="headerlink" title="삭제 조건"></a>삭제 조건</h2><ul><li>72 시간 이내에 게시 된 패키지</li><li>새로 생성 된 패키지의 경우 npm Public Registry의 다른 패키지가 패키지에 종속되지 않는 한 게시 후 처음 72 시간 이내에 언제든지 게시를 취소 할 수 있습니다.</li></ul><ul><li>72 시간 이상 전에 게시 된 패키지<ul><li>다른 패키지의 종속성이 아니여야한다.</li><li>지난주에 다운로드 횟수가 300 회 미만</li><li>단일 소유자</li></ul></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.npmjs.com/unpublishing-packages-from-the-registry">Unpublishing packages from the registry</a></li><li><a href="https://www.npmjs.com/policies/unpublish">npm Unpublish Policy</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/npm/">npm</category>
-      
-      <category domain="https://chinsun9.github.io/tags/unpublish/">unpublish</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/12/npm-%ED%8C%A8%ED%82%A4%EC%A7%80-unpublish/#disqus_thread</comments>
       
     </item>
     
