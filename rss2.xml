@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 19 Nov 2020 08:16:05 GMT</pubDate>
+    <pubDate>Fri, 20 Nov 2020 00:40:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>github blog, page google analytics로 측정하기</title>
+      <link>https://chinsun9.github.io/2020/11/20/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/11/20/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Fri, 20 Nov 2020 00:05:55 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B020201120/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B020201120/preview.jpg" alt=" "></p><ul><li>깃헙 페이지에 google analytics 를 적용하고,</li><li>사용자 통계를 받아보자.</li></ul><h2 id="환경"><a href="#환경" class="headerlink" title="환경"></a>환경</h2><ul><li>나는 hexo에서 icarus 테마를 사용하고 있다.</li></ul><h2 id="애널리틱스-계정-생성"><a href="#애널리틱스-계정-생성" class="headerlink" title="애널리틱스 계정 생성"></a>애널리틱스 계정 생성</h2><ul><li>계정 생성이라는 것을 먼저해주었다.</li></ul><p><img src="/images/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B020201120/0.jpg" alt=" "></p><ul><li><a href="https://analytics.google.com/analytics/web/provision/?hl=ko&amp;pli=1#/provision">https://analytics.google.com/analytics/web/provision/?hl=ko&amp;pli=1#/provision</a></li><li>측정 시작이라는 버튼을 누른다.</li></ul><p><img src="/images/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B020201120/1.jpg" alt=" "></p><ul><li>계정 이름을 적당히 입력한다.</li></ul><p><img src="/images/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B020201120/2.jpg" alt=" "></p><ul><li>속성 설정을 적당히 입력한다.</li></ul><p><img src="/images/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B020201120/3.jpg" alt=" "></p><ul><li>비즈니스 정보를 입력한다.</li><li>처음 애널리틱스를 사용해 보아서 이게 맞나 싶었는데, 이 과정을 거쳐야한다..</li></ul><h2 id="애널리틱스-데이터-스트림-설정"><a href="#애널리틱스-데이터-스트림-설정" class="headerlink" title="애널리틱스 데이터 스트림 설정"></a>애널리틱스 데이터 스트림 설정</h2><p><img src="/images/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B020201120/4.jpg" alt=" "></p><ul><li>게정 생성을 완료하면 이런 화면이 나오는데, 웹을 선택한다.</li></ul><p><img src="/images/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B020201120/5.jpg" alt=" "></p><ul><li>https, 내 깃헙 주소, 스트림 이름을 입력하고 스트림 만들기를 선택한다.</li></ul><p><img src="/images/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B020201120/6.jpg" alt=" "></p><ul><li>측정 ID 를 복사한다.</li><li>// 다른 블로그들을 봤을 때, 예전에는 추적 ID였던 것이 측정 ID로 용어가 바뀌였다.</li></ul><h2 id="hexo-config-yml-google-analytics-설정"><a href="#hexo-config-yml-google-analytics-설정" class="headerlink" title="hexo config.yml google_analytics 설정"></a>hexo config.yml google_analytics 설정</h2><p><img src="/images/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B020201120/7.jpg" alt=" "></p><ul><li>나는 hexo icarus 테마를 사용하고 있다.</li><li>icarus 테마 설정파일인 _config.icarus.yml 에 위처럼 추가해주었다.</li><li>내 기준으로 290라인 정도에 위치하고있다.</li></ul><h2 id="적용된-것-확인하기"><a href="#적용된-것-확인하기" class="headerlink" title="적용된 것 확인하기"></a>적용된 것 확인하기</h2><p><img src="/images/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B020201120/8.jpg" alt=" "></p><ul><li><code>hexo generate</code> 명령어로 현재 설정이 적용이 되었나 확인해보자</li><li>vscode에서 ctrl shift f 를 눌러 검색창을 띄우고, 자신의 측정 ID를 검색해보자</li><li>그러면 생성된 모든 .html 파일에서 검색되는 것을 확인할 수 있다.</li></ul><p><img src="/images/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B020201120/preview.jpg" alt=" "></p><ul><li>그러면 이제 배포하고, 약간 기다리면 애널리틱스 대시보드에서 카운팅 되는 것을 확인할 수 있다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
+      
+      <category domain="https://chinsun9.github.io/tags/google-analytics/">google analytics</category>
+      
+      <category domain="https://chinsun9.github.io/tags/icarus/">icarus</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/20/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>em vs rem</title>
@@ -70,9 +102,9 @@
       
       <category domain="https://chinsun9.github.io/tags/css/">css</category>
       
-      <category domain="https://chinsun9.github.io/tags/html/">html</category>
-      
       <category domain="https://chinsun9.github.io/tags/style/">style</category>
+      
+      <category domain="https://chinsun9.github.io/tags/html/">html</category>
       
       <category domain="https://chinsun9.github.io/tags/flex-box/">flex box</category>
       
@@ -174,9 +206,9 @@
       
       <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
       
-      <category domain="https://chinsun9.github.io/tags/json/">json</category>
-      
       <category domain="https://chinsun9.github.io/tags/stringify/">stringify</category>
+      
+      <category domain="https://chinsun9.github.io/tags/json/">json</category>
       
       
       <comments>https://chinsun9.github.io/2020/11/19/JSON-stringify-%EC%98%88%EC%81%98%EA%B2%8C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/#disqus_thread</comments>
@@ -239,9 +271,9 @@
       
       <category domain="https://chinsun9.github.io/tags/react/">react</category>
       
-      <category domain="https://chinsun9.github.io/tags/prettier/">prettier</category>
-      
       <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
+      
+      <category domain="https://chinsun9.github.io/tags/prettier/">prettier</category>
       
       <category domain="https://chinsun9.github.io/tags/airbnb-react/">airbnb react</category>
       
@@ -389,11 +421,11 @@
       <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
       <category domain="https://chinsun9.github.io/tags/js/">js</category>
       
       <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
       
       <category domain="https://chinsun9.github.io/tags/substr/">substr</category>
       
@@ -425,9 +457,9 @@
       
       <category domain="https://chinsun9.github.io/tags/react/">react</category>
       
-      <category domain="https://chinsun9.github.io/tags/prettier/">prettier</category>
-      
       <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
+      
+      <category domain="https://chinsun9.github.io/tags/prettier/">prettier</category>
       
       <category domain="https://chinsun9.github.io/tags/airbnb-react/">airbnb react</category>
       
@@ -611,48 +643,14 @@
       <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/chrome/">chrome</category>
-      
       <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/chrome/">chrome</category>
       
       <category domain="https://chinsun9.github.io/tags/inspect/">inspect</category>
       
       
       <comments>https://chinsun9.github.io/2020/11/16/node-inspect/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>REPL</title>
-      <link>https://chinsun9.github.io/2020/11/16/REPL/</link>
-      <guid>https://chinsun9.github.io/2020/11/16/REPL/</guid>
-      <pubDate>Mon, 16 Nov 2020 01:22:14 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;즉각적인 프로토타이핑&lt;/li&gt;
-&lt;li&gt;초보자에게 빠른 피드백 제공&lt;/li&gt;
-&lt;li&gt;단순한 대화식 컴퓨터 프로그래밍 환경&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;주피터 노트북에서 파이썬 코딩하는 느낌인 것같다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 i</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>즉각적인 프로토타이핑</li><li>초보자에게 빠른 피드백 제공</li><li>단순한 대화식 컴퓨터 프로그래밍 환경</li></ul><ul><li>주피터 노트북에서 파이썬 코딩하는 느낌인 것같다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://ko.wikipedia.org/wiki/REPL">REPL - 위키백과, 우리 모두의 백과사전</a></li><li><a href="https://www.electronjs.org/docs/tutorial/repl">REPL | Electron</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/repl/">repl</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/16/REPL/#disqus_thread</comments>
       
     </item>
     
