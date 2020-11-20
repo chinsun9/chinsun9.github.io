@@ -412,7 +412,7 @@ button,
 input,
 select,
 textarea {
-  font-family: Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif;
+  font-family: 'Nanum Gothic', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif;
 }
 code,
 pre {
@@ -1058,13 +1058,13 @@ a.has-text-grey-lightest:focus {
   font-weight: 700 !important;
 }
 .is-family-primary {
-  font-family: Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
+  font-family: 'Nanum Gothic', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
 }
 .is-family-secondary {
-  font-family: Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
+  font-family: 'Nanum Gothic', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
 }
 .is-family-sans-serif {
-  font-family: Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
+  font-family: 'Nanum Gothic', Ubuntu, Roboto, 'Open Sans', 'Microsoft YaHei', sans-serif !important;
 }
 .is-family-monospace {
   font-family: monospace !important;
@@ -10791,7 +10791,7 @@ article.article .article-meta {
 }
 article.article .content {
   word-wrap: break-word;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 article.article .content img {
   margin-top: 30px;
