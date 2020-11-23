@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 23 Nov 2020 03:53:23 GMT</pubDate>
+    <pubDate>Mon, 23 Nov 2020 04:26:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>cidr</title>
+      <link>https://chinsun9.github.io/2020/11/23/cidr/</link>
+      <guid>https://chinsun9.github.io/2020/11/23/cidr/</guid>
+      <pubDate>Mon, 23 Nov 2020 04:26:41 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;aws에서 보안그룹이라던지, acl 설정이라던지&lt;/li&gt;
+&lt;li&gt;ip를 받는 설정을 하다보면 123.123.123.123/32 등&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ip/mask bits&lt;/code&gt; 로 표기되는 것을 본적 있을 것이다.&lt;/l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>aws에서 보안그룹이라던지, acl 설정이라던지</li><li>ip를 받는 설정을 하다보면 123.123.123.123/32 등</li><li><code>ip/mask bits</code> 로 표기되는 것을 본적 있을 것이다.</li><li>이를 CIDR 표기법이라고하고,</li><li>이는 쉽게 ip의 범위를 나타낸다.</li></ul><ul><li>마스크 비트 숫자가 클수록 범위가 좁다.</li><li>마스크 비트 숫자가 작을수록 범위가 크다. = 포함된 ip 주소가 많다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9D%B4%EB%8D%94_(%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9)">사이더_(네트워킹)</a></li><li><a href="https://blog.naver.com/ncloud24/221208338209">CIDR 표기법</a></li><li><a href="https://www.youtube.com/watch?v=9MAI53t9tLk">How to Convert CIDR Notation value into Subnet Mask | Animation Video</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/cidr/">cidr</category>
+      
+      <category domain="https://chinsun9.github.io/tags/subnet-mask/">subnet mask</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/23/cidr/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>rds 해킹당하기</title>
@@ -625,32 +656,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/17/shell-script-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode 여러 종류의 쉘, 터미널 쉽게 열기</title>
-      <link>https://chinsun9.github.io/2020/11/17/vscode-%EC%97%AC%EB%9F%AC-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%89%98-%EC%89%BD%EA%B2%8C-%EC%97%B4%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/11/17/vscode-%EC%97%AC%EB%9F%AC-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%89%98-%EC%89%BD%EA%B2%8C-%EC%97%B4%EA%B8%B0/</guid>
-      <pubDate>Tue, 17 Nov 2020 05:51:12 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/vscode-%EC%97%AC%EB%9F%AC-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%89%98-%EC%89%BD%EA%B2%8C-%EC%97%B4%EA%B8%B020201117/preview.j</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/vscode-%EC%97%AC%EB%9F%AC-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%89%98-%EC%89%BD%EA%B2%8C-%EC%97%B4%EA%B8%B020201117/preview.jpg" alt=" "></p><ul><li>Shell launcher 라는 확장프로그램을 통해 쉽게 다른 종류의 터미널을 열 수 있다.</li><li>설치하면 바로 사용가능하다.</li></ul><ul><li>윈도우 cmd를 쓰다가 리눅스 bash 명령어를 쓸일이 있어서</li><li>git bash 터미널을 열어 쓰는데 불편함이 느껴졌다.</li><li>기존에는 디폴트 터미널을 설정하고 터미널을 새로열면 해당 터미널을 사용할 수 있었는데,</li><li>디폴트 터미널을 변경되어서 다시 원래 쓰던 터미널로 돌렸어야했다.</li><li>이제 그런 귀찮은 과정을 하지않아도 된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/43427631/how-to-add-multiple-terminals-in-vs-code">how-to-add-multiple-terminals-in-vs-code</a></li><li><a href="https://marketplace.visualstudio.com/items?itemName=Tyriar.shell-launcher">Shell launcher</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/17/vscode-%EC%97%AC%EB%9F%AC-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%89%98-%EC%89%BD%EA%B2%8C-%EC%97%B4%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
