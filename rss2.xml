@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 23 Nov 2020 02:52:59 GMT</pubDate>
+    <pubDate>Mon, 23 Nov 2020 03:53:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>rds 해킹당하기</title>
+      <link>https://chinsun9.github.io/2020/11/23/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/11/23/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Mon, 23 Nov 2020 03:53:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;복구 방법에 대한 글이 아니다.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;그냥 털리면 어떻게 되는지, 왜 털렸을까하는 내용의 기록이다.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;털린-증상&quot;&gt;&lt;a href=&quot;#털린-증상&quot; class=&quot;h</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li><em>복구 방법에 대한 글이 아니다.</em></li><li><em>그냥 털리면 어떻게 되는지, 왜 털렸을까하는 내용의 기록이다.</em></li></ul><h2 id="털린-증상"><a href="#털린-증상" class="headerlink" title="털린 증상"></a>털린 증상</h2><p><img src="/images/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B020201123/1.jpg" alt=" "></p><ul><li>rds에 접속해보면 내 테이블들이 사라져있고,</li><li>PLEASE_READ_ME_XMG 라는 데이터베이스가 생겨있고</li><li>WARNING 테이블만 존재한다.</li></ul><p><img src="/images/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B020201123/2.jpg" alt=" "></p><ul><li>WARNING테이블을 셀렉트해보면 아래와 같은 메시지가 적혀있다.</li></ul><blockquote><p>To recover your lost databases and avoid leaking it: visit <a href="http://hn4wg4o6s5nc7763.onion/">http://hn4wg4o6s5nc7763.onion</a> and enter your unique token ee974966c47f1027 and pay the required amount of Bitcoin to get it back. Databases that we have: acl-manager. Your databases are downloaded and backed up on our servers. If we dont receive your payment in the next 9 Days, we will sell your database to the highest bidder or use them otherwise. To access this site you have use the tor browser <a href="https://www.torproject.org/projects/torbrowser.html">https://www.torproject.org/projects/torbrowser.html</a></p></blockquote><ul><li>이 웹사이트에 들어가서 토큰으로 로그인하고 비트코인을 지불하라는 내용이다.</li><li>일반 브라우저에서는 접속하지 못하고, tor browser에서만 접속가능하다.</li><li>나는 안들어가봤다. 왜냐면 중요한 데이터가 아니였기 때문이다.</li></ul><h2 id="털린-이유"><a href="#털린-이유" class="headerlink" title="털린 이유"></a>털린 이유</h2><ul><li>rds 퍼블릭 엑세스 허용</li><li>인바운드 규칙 모두 허용</li><li>rds 비밀번호 1234</li></ul><h2 id="조치"><a href="#조치" class="headerlink" title="조치"></a>조치</h2><p><img src="/images/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B020201123/3.jpg" alt=" "></p><ul><li>중요한 정보가 없어서 그냥 rds를 삭제하고 다시 만들었다.</li><li>삭제할 때 스냅샷을 만들지 않도록 한다. 스냅샷 저장 비용이 발생할 수 있다.</li><li>새로 만든 RDS는 보안그룹 인바운드 규칙에서 내 IP만 접속가능하도록 해주었다.</li><li>비밀번호를 어렵게 설정했다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/rds/">rds</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/23/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>rds 삭제 방지 비활성화</title>
@@ -619,37 +651,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/17/vscode-%EC%97%AC%EB%9F%AC-%EC%A2%85%EB%A5%98%EC%9D%98-%EC%89%98-%EC%89%BD%EA%B2%8C-%EC%97%B4%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode Tab 키로 () {} [] `` 키로 빠져나가기 TabOut</title>
-      <link>https://chinsun9.github.io/2020/11/16/vscode-extension-TabOut/</link>
-      <guid>https://chinsun9.github.io/2020/11/16/vscode-extension-TabOut/</guid>
-      <pubDate>Mon, 16 Nov 2020 07:00:44 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/vscode-extension-TabOut20201116/preview.gif&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;와… 진짜 너무 편하다.&lt;/li&gt;
-&lt;li&gt;기존에 탭키를 누르면 탈출이 안되고, 들여쓰기 되서 </description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/vscode-extension-TabOut20201116/preview.gif" alt=" "></p><ul><li>와… 진짜 너무 편하다.</li><li>기존에 탭키를 누르면 탈출이 안되고, 들여쓰기 되서 힘들었는데</li><li>이 확장도구를 활성화하면 탭키로 () {} [] `` 이런 bracket? 들을 손쉽게 탈출할 수 있다.</li></ul><h2 id="TabOut"><a href="#TabOut" class="headerlink" title="TabOut"></a>TabOut</h2><ul><li>설치하면 자동으로 active 상태이다</li><li>Ctrl + Shift + P 에서 <code>toggle tabout</code>으로 활성여부를 토글할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=albert.TabOut">TabOut</a></li><li><a href="https://github.com/microsoft/vscode/issues/22864">Request for tabbing past matching brackets similar to VS · Issue #22864 · microsoft/vscode</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/16/vscode-extension-TabOut/#disqus_thread</comments>
       
     </item>
     
