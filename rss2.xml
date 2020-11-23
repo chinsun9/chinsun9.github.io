@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 23 Nov 2020 01:24:19 GMT</pubDate>
+    <pubDate>Mon, 23 Nov 2020 02:52:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>rds 삭제 방지 비활성화</title>
+      <link>https://chinsun9.github.io/2020/11/23/rds-%EC%82%AD%EC%A0%9C-%EB%B0%A9%EC%A7%80-%EB%B9%84%ED%99%9C%EC%84%B1%ED%99%94/</link>
+      <guid>https://chinsun9.github.io/2020/11/23/rds-%EC%82%AD%EC%A0%9C-%EB%B0%A9%EC%A7%80-%EB%B9%84%ED%99%9C%EC%84%B1%ED%99%94/</guid>
+      <pubDate>Mon, 23 Nov 2020 02:52:59 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/rds-%EC%82%AD%EC%A0%9C-%EB%B0%A9%EC%A7%80-%EB%B9%84%ED%99%9C%EC%84%B1%ED%99%9420201123/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/rds-%EC%82%AD%EC%A0%9C-%EB%B0%A9%EC%A7%80-%EB%B9%84%ED%99%9C%EC%84%B1%ED%99%9420201123/preview.jpg" alt=" "></p><ul><li>rds를 켜놓은 상태에서 수정을 할 수 있다.</li><li>rds 꺼놓은 상태에서 수정버튼을 누르면 무한 로딩이 기다리고있다..</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/rds/">rds</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/23/rds-%EC%82%AD%EC%A0%9C-%EB%B0%A9%EC%A7%80-%EB%B9%84%ED%99%9C%EC%84%B1%ED%99%94/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>random user api</title>
@@ -620,38 +650,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/16/vscode-extension-TabOut/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>node-abi</title>
-      <link>https://chinsun9.github.io/2020/11/16/node-abi/</link>
-      <guid>https://chinsun9.github.io/2020/11/16/node-abi/</guid>
-      <pubDate>Mon, 16 Nov 2020 06:14:36 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;ABI (Application Binary Interface)&lt;/li&gt;
-&lt;li&gt;일렉트론js에서 iohook 설치할 때 사용해보았다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;참고&quot;&gt;&lt;a href=&quot;#참고&quot; class=&quot;headerlink&quot; t</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>ABI (Application Binary Interface)</li><li>일렉트론js에서 iohook 설치할 때 사용해보았다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://nodejs.org/en/docs/guides/abi-stability/">ABI Stability | Node.js</a></li><li><a href="https://ko.wikipedia.org/wiki/%EC%9D%91%EC%9A%A9_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EC%9D%B4%EC%A7%84_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">응용 프로그램 이진 인터페이스</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/abi/">abi</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/16/node-abi/#disqus_thread</comments>
       
     </item>
     
