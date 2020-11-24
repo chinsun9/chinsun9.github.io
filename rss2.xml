@@ -533,7 +533,7 @@
     </item>
     
     <item>
-      <title>vscode console.log() 빨리치기</title>
+      <title>vscode console.log() 빨리치기 (snippets extension)</title>
       <link>https://chinsun9.github.io/2020/11/18/vscode-console-log-%EB%B9%A8%EB%A6%AC%EC%B9%98%EA%B8%B0/</link>
       <guid>https://chinsun9.github.io/2020/11/18/vscode-console-log-%EB%B9%A8%EB%A6%AC%EC%B9%98%EA%B8%B0/</guid>
       <pubDate>Wed, 18 Nov 2020 07:33:27 GMT</pubDate>
@@ -546,7 +546,7 @@
       
       
       
-      <content:encoded><![CDATA[<blockquote><p>cas→ console alert method console.assert(expression, object)<br>ccl→ console clear console.clear()<br>cco→ console count console.count(label)<br>cdb→ console debug console.debug(object)<br>cdi→ console dir console.dir<br>cer→ console error console.error(object)<br>cgr→ console group console.group(label)<br>cge→ console groupEnd console.groupEnd()<br>clg→ console log console.log(object)<br>clo→ console log object with name console.log(‘object :&gt;&gt; ‘, object);<br>ctr→ console trace console.trace(object)<br>cwa→ console warn console.warn<br>cin→ console info console.info<br>clt→ console table console.table<br>cti→ console time console.time<br>cte→ console timeEnd console.timeEnd</p></blockquote><ul><li>clg 를 치고 tab키를 console.log가 자동완성된다.</li><li>이밖에도 import from 자동완성 등 여러가지가 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets">JavaScript (ES6) code snippets</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><p>cas→ console alert method console.assert(expression, object)<br>ccl→ console clear console.clear()<br>cco→ console count console.count(label)<br>cdb→ console debug console.debug(object)<br>cdi→ console dir console.dir<br>cer→ console error console.error(object)<br>cgr→ console group console.group(label)<br>cge→ console groupEnd console.groupEnd()<br>clg→ console log console.log(object)<br>clo→ console log object with name console.log(‘object :&gt;&gt; ‘, object);<br>ctr→ console trace console.trace(object)<br>cwa→ console warn console.warn<br>cin→ console info console.info<br>clt→ console table console.table<br>cti→ console time console.time<br>cte→ console timeEnd console.timeEnd</p></blockquote><ul><li>clg 를 치고 tab키를 console.log가 자동완성된다.</li><li>이밖에도 import from 자동완성 등 여러가지가 있다.</li><li>~ snippet 익스텐션을 깔면 사용할 수 있다.</li><li>나는 다양한 스니펫을 제공하는 <code>ES7 React/Redux/GraphQL/React-Native snippets</code> 익스텐션을 설치해서 사용하고 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets">JavaScript (ES6) code snippets</a></li><li><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets">ES7 React/Redux/GraphQL/React-Native snippets</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
@@ -556,7 +556,11 @@
       
       <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
       
+      <category domain="https://chinsun9.github.io/tags/es6/">es6</category>
+      
       <category domain="https://chinsun9.github.io/tags/javasciprt/">javasciprt</category>
+      
+      <category domain="https://chinsun9.github.io/tags/snippets/">snippets</category>
       
       
       <comments>https://chinsun9.github.io/2020/11/18/vscode-console-log-%EB%B9%A8%EB%A6%AC%EC%B9%98%EA%B8%B0/#disqus_thread</comments>

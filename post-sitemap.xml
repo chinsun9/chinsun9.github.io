@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/11/18/vscode-console-log-%EB%B9%A8%EB%A6%AC%EC%B9%98%EA%B8%B0/</loc>
+        <lastmod>2020-11-24T02:13:35.130Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/11/24/prettier-ignore-line/</loc>
         <lastmod>2020-11-24T00:34:07.861Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -154,14 +162,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/18/react-typescirpt-eslint-prettier-airbnb-style-guide-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2020-11-19T01:26:05.022Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/18/vscode-console-log-%EB%B9%A8%EB%A6%AC%EC%B9%98%EA%B8%B0/</loc>
-        <lastmod>2020-11-18T07:39:33.239Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
