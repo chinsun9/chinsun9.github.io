@@ -9,8 +9,34 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 24 Nov 2020 04:49:50 GMT</pubDate>
+    <pubDate>Tue, 24 Nov 2020 07:09:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>정규식으로 좌표꺼내기</title>
+      <link>https://chinsun9.github.io/2020/11/24/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%A2%8C%ED%91%9C%EA%BA%BC%EB%82%B4%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/11/24/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%A2%8C%ED%91%9C%EA%BA%BC%EB%82%B4%EA%B8%B0/</guid>
+      <pubDate>Tue, 24 Nov 2020 07:09:40 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%A2%8C%ED%91%9C%EA%BA%BC%EB%82%B4%EA%B8%B020201124/preview.jpg&quot; alt=&quot; </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%A2%8C%ED%91%9C%EA%BA%BC%EB%82%B4%EA%B8%B020201124/preview.jpg" alt=" "></p><blockquote><p>(37.11111111111111, 126.11111111111111)</p></blockquote><ul><li>이런 좌표를 나타내는 문자열에서 알맹이만 빼보자.</li></ul><figure class="highlight js"><figcaption><span>index.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> coordString = <span class="string">&#x27;(37.11111111111111, 126.11111111111111)&#x27;</span></span><br><span class="line">/\d+([.]\d+)?/.exec(coordString)</span><br><span class="line"><span class="comment">// &quot;37.11111111111111,.11111111111111&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getPositionFromString</span>(<span class="params">positionString</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> re = <span class="regexp">/(\d+)([\.]\d+)?/g</span>;</span><br><span class="line">  <span class="keyword">const</span> result = []</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span>(match = re.exec(positionString))&#123;</span><br><span class="line">    <span class="comment">// console.info(match[0], &#x27; found at : &#x27;, match.index);</span></span><br><span class="line">    result.push(match[<span class="number">0</span>])</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// console.info(&#123;x:result[0],y:result[1]&#125;)</span></span><br><span class="line">  <span class="keyword">return</span> &#123;<span class="attr">x</span>:result[<span class="number">0</span>],<span class="attr">y</span>:result[<span class="number">1</span>]&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>exec() 가 g옵션에 따라서 매치하는 패턴의 결과가 모두 담겨서 나오는줄 알았다.</li><li>위처럼 while 루프를 통해서 모든 매치결과를 받아올 수 있다.</li><li>내부적으로 커서가 있는 것 같다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/11270302/javascript-how-to-get-multiple-matches-in-regex-exec-results/11270364">Javascript: How to get multiple matches in RegEx .exec results - Stack Overflow</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec#Examples">RegExp.prototype.exec() - JavaScript | MDN</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/reg-exp/">reg exp</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/reg-exp/">reg exp</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/24/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%A2%8C%ED%91%9C%EA%BA%BC%EB%82%B4%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js object access by index</title>
@@ -627,32 +653,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/18/git-branch-rename-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%AA%85-%EB%B3%80%EA%B2%BD/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode 터미널, 코드 에디터 포커스 왔다갔다하기</title>
-      <link>https://chinsun9.github.io/2020/11/18/vscode-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%BD%94%EB%93%9C-%EC%97%90%EB%94%94%ED%84%B0-%ED%8F%AC%EC%BB%A4%EC%8A%A4-%EC%99%94%EB%8B%A4%EA%B0%94%EB%8B%A4%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/11/18/vscode-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%BD%94%EB%93%9C-%EC%97%90%EB%94%94%ED%84%B0-%ED%8F%AC%EC%BB%A4%EC%8A%A4-%EC%99%94%EB%8B%A4%EA%B0%94%EB%8B%A4%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Wed, 18 Nov 2020 05:50:59 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight json&quot;&gt;&lt;figcaption&gt;&lt;span&gt;keybindings.json&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight json"><figcaption><span>keybindings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">&quot;key&quot;</span>: <span class="string">&quot;ctrl+shift+j&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;command&quot;</span>: <span class="string">&quot;terminal.focus&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">&quot;key&quot;</span>: <span class="string">&quot;ctrl+shift+j&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;command&quot;</span>: <span class="string">&quot;workbench.action.focusActiveEditorGroup&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;when&quot;</span>: <span class="string">&quot;terminalFocus&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure><ul><li>나는 위처럼 키바인딩을 해놨다.</li><li>Open keyboard Shortcuts (JSON) 으로 들어가 설정한다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/42796887/switch-focus-between-editor-and-integrated-terminal-in-visual-studio-code">switch-focus-between-editor-and-integrated-terminal-in-visual-studio-code</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/18/vscode-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%BD%94%EB%93%9C-%EC%97%90%EB%94%94%ED%84%B0-%ED%8F%AC%EC%BB%A4%EC%8A%A4-%EC%99%94%EB%8B%A4%EA%B0%94%EB%8B%A4%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
