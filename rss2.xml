@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 23 Nov 2020 09:02:00 GMT</pubDate>
+    <pubDate>Tue, 24 Nov 2020 00:34:07 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>prettier ignore line</title>
+      <link>https://chinsun9.github.io/2020/11/24/prettier-ignore-line/</link>
+      <guid>https://chinsun9.github.io/2020/11/24/prettier-ignore-line/</guid>
+      <pubDate>Tue, 24 Nov 2020 00:34:07 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/prettier-ignore-line20201124/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;마크다운에서는 여러 라인 범위를 포맷팅하지 않도록 설정할 수 있다.&lt;/li&gt;
+&lt;li&gt;formatOn</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/prettier-ignore-line20201124/preview.jpg" alt=" "></p><ul><li>마크다운에서는 여러 라인 범위를 포맷팅하지 않도록 설정할 수 있다.</li><li>formatOnSave 를 사용해서 내용이 많은 마크다운을 저장할 때, 이미 포맷팅이 잘 되어있더라도</li><li>좀 오래걸리는 느낌이 있었다.</li><li>그래서 포맷팅을 무시하는 설정을 알아보았다.</li><li>기분탓인지 몰라도 쫌 빨라진 것 같다..?</li></ul><h2 id="markdown-perttier-ignore"><a href="#markdown-perttier-ignore" class="headerlink" title="markdown perttier ignore"></a>markdown perttier ignore</h2><figure class="highlight md"><figcaption><span>md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- prettier-ignore --&gt;</span></span></span><br><span class="line">Do   not    format   this</span><br><span class="line"></span><br><span class="line">format this</span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- prettier-ignore-start --&gt;</span></span></span><br><span class="line">| MY | AWESOME | AUTO-GENERATED | TABLE |</span><br><span class="line">|-|-|-|-|</span><br><span class="line">| a | b | c | d |</span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- prettier-ignore-end --&gt;</span></span></span><br><span class="line"></span><br><span class="line">| MY  | AWESOME | AUTO-GENERATED | TABLE |</span><br><span class="line">| --- | ------- | -------------- | ----- |</span><br><span class="line">| a   | b       | c              | d     |</span><br></pre></td></tr></table></figure><h2 id="js-perttier-ignore"><a href="#js-perttier-ignore" class="headerlink" title="js perttier ignore"></a>js perttier ignore</h2><figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// prettier-ignore</span></span><br><span class="line"><span class="keyword">let</span> a=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> b = <span class="number">2</span>;</span><br></pre></td></tr></table></figure><ul><li>js 에서는 한개의 라인을 포맷하지않도록 설정할 수 있다.</li></ul><figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> c = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> c = [</span><br><span class="line">  <span class="comment">//  &lt;-- 주석 넣으면 펼쳐짐.</span></span><br><span class="line">  <span class="number">1</span>,</span><br><span class="line">  <span class="number">2</span>,</span><br><span class="line">  <span class="number">3</span>,</span><br><span class="line">];</span><br></pre></td></tr></table></figure><ul><li>중간에 주석을 넣어서 펼쳐지게 포맷팅할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://prettier.io/docs/en/ignore.html#range-ignore">Ignoring Code · Prettier</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/md/">md</category>
+      
+      <category domain="https://chinsun9.github.io/tags/prettier/">prettier</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/24/prettier-ignore-line/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>aws lambda cors 설정</title>
@@ -27,7 +60,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/preview.jpg" alt=" "></p><ul><li>cors를 통해 도메인이 다른 서버로 요청을 보내고 결과를 받아 올 수 있다.</li><li>람다를 웹에서 실행할 수 있다.</li></ul><h2 id="API-게이트웨이-설정"><a href="#API-게이트웨이-설정" class="headerlink" title="API 게이트웨이 설정"></a>API 게이트웨이 설정</h2><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/1.jpg" alt=" "></p><ul><li>람다를 실행하는 API를 하나 생성한다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/2.jpg" alt=" "></p><ul><li>기본으로 생성되는 any method는 삭제하고</li><li>get 메소드를 하나 만들고, 내 람다함수를 붙여준다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/3.jpg" alt=" "></p><ul><li>작업 &gt; CORS 활성화 를 클릭한다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/4.jpg" alt=" "></p><ul><li>Access-Control-Allow-Origin 부분에 내가 원하는 origin을 설정한다.</li><li>여기서는 하나의 도메인만 설정할 수 있다.</li><li>여러개의 허용 도메인 허용하도록하려면 람다에서 로직을 짜야한다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/5.jpg" alt=" "></p><ul><li>위처럼 options 메소드가 추가되고, get 메소드에 응답헤더가 추가된다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/6.jpg" alt=" "></p><ul><li>설정이 완료되면 배포를 해야 적용이 된다.</li></ul><h2 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h2><ul><li>Cross-origin resource sharing</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.youtube.com/watch?v=kDSxCPbBJFo">13 - API Gateway CORS</a></li><li><a href="https://www.youtube.com/watch?v=baQh1X3LN5s">Cross Origin Resource Sharing (CORS) - Explained with Example &amp; Demo | API Gateway &amp; Lambda</a></li><li><a href="https://www.youtube.com/watch?v=yTzAjidyyqs">cors</a></li><li><a href="https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A8_%EC%B6%9C%EC%B2%98_%EB%A6%AC%EC%86%8C%EC%8A%A4_%EA%B3%B5%EC%9C%A0">교차 출처 리소스 공유</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/preview.jpg" alt=" "></p><ul><li>cors를 통해 도메인이 다른 서버로 요청을 보내고 결과를 받아 올 수 있다.</li><li>람다를 웹에서 실행할 수 있다.</li></ul><h2 id="API-게이트웨이-설정"><a href="#API-게이트웨이-설정" class="headerlink" title="API 게이트웨이 설정"></a>API 게이트웨이 설정</h2><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/1.jpg" alt=" "></p><ul><li>람다를 실행하는 API를 하나 생성한다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/2.jpg" alt=" "></p><ul><li>기본으로 생성되는 any method는 삭제하고</li><li>get 메소드를 하나 만들고, 내 람다함수를 붙여준다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/3.jpg" alt=" "></p><ul><li>작업 &gt; CORS 활성화 를 클릭한다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/4.jpg" alt=" "></p><ul><li>Access-Control-Allow-Origin 부분에 내가 원하는 origin을 설정한다.</li><li>여기서는 하나의 도메인만 설정할 수 있다.</li><li>여러개의 허용 도메인 허용하도록하려면 람다에서 로직을 짜야한다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/5.jpg" alt=" "></p><ul><li>위처럼 options 메소드가 추가되고, get 메소드에 응답헤더가 추가된다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/6.jpg" alt=" "></p><ul><li>설정이 완료되면 배포를 해야 적용이 된다.</li></ul><h2 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h2><ul><li>Cross-origin resource sharing</li></ul><h2 id="참고하면-좋은"><a href="#참고하면-좋은" class="headerlink" title="참고하면 좋은"></a>참고하면 좋은</h2><ul><li><a href="https://www.youtube.com/watch?v=kDSxCPbBJFo">13 - API Gateway CORS</a></li><li><a href="https://www.youtube.com/watch?v=baQh1X3LN5s">Cross Origin Resource Sharing (CORS) - Explained with Example &amp; Demo | API Gateway &amp; Lambda</a></li><li><a href="https://www.youtube.com/watch?v=yTzAjidyyqs">CORS(Cross-Origin Resource Sharing)이 나오게 된 배경 이야기</a></li><li><a href="https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A8_%EC%B6%9C%EC%B2%98_%EB%A6%AC%EC%86%8C%EC%8A%A4_%EA%B3%B5%EC%9C%A0">교차 출처 리소스 공유</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
@@ -616,38 +649,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/18/vscode-show-all-commands-F1-%ED%82%A4%EB%A1%9C-%EC%97%B4%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>js 이진수 앞에 0넣기</title>
-      <link>https://chinsun9.github.io/2020/11/17/js-%EC%9D%B4%EC%A7%84%EC%88%98-%EC%95%9E%EC%97%90-0%EB%84%A3%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/11/17/js-%EC%9D%B4%EC%A7%84%EC%88%98-%EC%95%9E%EC%97%90-0%EB%84%A3%EA%B8%B0/</guid>
-      <pubDate>Tue, 17 Nov 2020 08:22:33 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> N = <span class="number">7</span>;</span><br><span class="line"><span class="keyword">let</span> padding = <span class="string">&#x27;00000000&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> result = (padding + N.toString(<span class="number">2</span>)).substr(-padding.length);</span><br></pre></td></tr></table></figure><blockquote><p>“00000111”</p></blockquote><ul><li>2진수, 16진수 등 표현할 때 앞에 0을 추가해서 보여주고싶을 때가 있다.</li><li>8자리로 표현하고싶으면, <em>padding</em> 변수에 0으로 8자리를 채운다.</li><li><em>padding</em> 과 이진수를 더하고 substr로 뒤에서부터 8자리만큼 잘라주면된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/27641812/way-to-add-leading-zeroes-to-binary-string-in-javascript">way-to-add-leading-zeroes-to-binary-string-in-javascript</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/substr">substr</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/substr/">substr</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/17/js-%EC%9D%B4%EC%A7%84%EC%88%98-%EC%95%9E%EC%97%90-0%EB%84%A3%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
