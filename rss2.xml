@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 24 Nov 2020 07:09:40 GMT</pubDate>
+    <pubDate>Wed, 25 Nov 2020 00:30:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>react에서 html 자동완성 쓰기, emmet 사용하기</title>
+      <link>https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Wed, 25 Nov 2020 00:30:42 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;settings.json&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight plain"><figcaption><span>settings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &#x2F;&#x2F; (...)</span><br><span class="line">  &quot;emmet.triggerExpansionOnTab&quot;: true, &#x2F;&#x2F; &lt;-- emmet 활성화</span><br><span class="line">  &quot;emmet.includeLanguages&quot;: &#123;</span><br><span class="line">    &quot;javascript&quot;: &quot;javascriptreact&quot; &#x2F;&#x2F; &lt;-- react에서도 emmet 사용가능하도록</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>settings.json에 추가한다.</li><li>tab키를 눌러 자동완성할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://velog.io/@jayjay28/VScode-React-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0">VScode + React emmet 사용하기</a></li><li><a href="https://www.youtube.com/watch?v=V8vizNQKtx0">Learn Emmet In 15 Minutes - Double Your HTML Coding Speed</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/react/">react</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/emmet/">emmet</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>정규식으로 좌표꺼내기</title>
@@ -622,37 +652,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/18/vscode-console-log-%EB%B9%A8%EB%A6%AC%EC%B9%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>git branch rename 브랜치명 변경</title>
-      <link>https://chinsun9.github.io/2020/11/18/git-branch-rename-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%AA%85-%EB%B3%80%EA%B2%BD/</link>
-      <guid>https://chinsun9.github.io/2020/11/18/git-branch-rename-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%AA%85-%EB%B3%80%EA%B2%BD/</guid>
-      <pubDate>Wed, 18 Nov 2020 06:50:45 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;상황&quot;&gt;&lt;a href=&quot;#상황&quot; class=&quot;headerlink&quot; title=&quot;상황&quot;&gt;&lt;/a&gt;상황&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;로컬에 있는 퍼블리쉬하지 않은 브랜치 이름 바꾸기&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;브랜치이름-바꾸기&quot;&gt;&lt;a hre</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>로컬에 있는 퍼블리쉬하지 않은 브랜치 이름 바꾸기</li></ul><h2 id="브랜치이름-바꾸기"><a href="#브랜치이름-바꾸기" class="headerlink" title="브랜치이름 바꾸기"></a>브랜치이름 바꾸기</h2><blockquote><p>git branch -m {바꿀 브랜치명} {새로운 브랜치명}</p></blockquote><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://thdev.tech/git/2016/12/19/Git-Branch-Name-Change/">Git Branch 이름 변경하기</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/branch/">branch</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/18/git-branch-rename-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%AA%85-%EB%B3%80%EA%B2%BD/#disqus_thread</comments>
       
     </item>
     
