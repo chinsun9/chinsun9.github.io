@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 25 Nov 2020 05:56:09 GMT</pubDate>
+    <pubDate>Thu, 26 Nov 2020 00:05:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -20,14 +20,12 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;https://github.com/chinsun9/keyboardevent.io/raw/main/readmeRes/demo.gif&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;keyboardevent.io 를 만들어보았다.&lt;/li&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&quot;https://chinsun9.github.io/keyboardevent.io/&quot;&gt;&lt;img src=&quot;https://github.com/chinsun9/keyboardevent.io/raw/main/readmeRes/demo.gif</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="https://github.com/chinsun9/keyboardevent.io/raw/main/readmeRes/demo.gif" alt=" "></p><ul><li>keyboardevent.io 를 만들어보았다.</li><li>웹에 포커스를 두고 키를 입력하면 그대로 화면에 출력한다.</li><li>출력되는 정보는 <code>keydown</code>이벤트의 정보들이다.</li></ul><ul><li>키 이벤트 관련 로직 짤 때, 들어가서 키코드 확인하기 좋을 것 같다.</li></ul><h2 id="심심하면-업데이트할-것"><a href="#심심하면-업데이트할-것" class="headerlink" title="심심하면 업데이트할 것"></a>심심하면 업데이트할 것</h2><ul><li>히스토리 만들기</li></ul><h2 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h2><ul><li><a href="https://github.com/chinsun9/keyboardevent.io/blob/main/js/index.js">keyboardevent.io/js/index.js</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><a href="https://chinsun9.github.io/keyboardevent.io/"><img src="https://github.com/chinsun9/keyboardevent.io/raw/main/readmeRes/demo.gif" alt=" "></a></p><ul><li>keyboardevent.io 를 만들어보았다.</li><li>웹에 포커스를 두고 키를 입력하면 그대로 화면에 출력한다.</li><li>출력되는 정보는 <code>keydown</code>이벤트의 정보들이다.</li></ul><ul><li>키 이벤트 관련 로직 짤 때, 들어가서 키코드 확인하기 좋을 것 같다.</li></ul><h2 id="심심하면-업데이트할-것"><a href="#심심하면-업데이트할-것" class="headerlink" title="심심하면 업데이트할 것"></a>심심하면 업데이트할 것</h2><ul><li>히스토리 만들기</li></ul><h2 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h2><ul><li><a href="https://github.com/chinsun9/keyboardevent.io/blob/main/js/index.js">keyboardevent.io/js/index.js</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/web/">web</category>
