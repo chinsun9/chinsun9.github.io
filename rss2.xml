@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 26 Nov 2020 00:05:43 GMT</pubDate>
+    <pubDate>Mon, 30 Nov 2020 00:52:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>keydown event preventDefault</title>
+      <link>https://chinsun9.github.io/2020/11/30/keydown-event-preventDefault/</link>
+      <guid>https://chinsun9.github.io/2020/11/30/keydown-event-preventDefault/</guid>
+      <pubDate>Mon, 30 Nov 2020 00:52:09 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;F1 key 를 누르면 자동으로 도움말창이 열린다.&lt;/li&gt;
+&lt;li&gt;이거를 안열리게 해보자.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;spa</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>F1 key 를 누르면 자동으로 도움말창이 열린다.</li><li>이거를 안열리게 해보자.</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">&quot;keydown&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// F1 keyCode</span></span><br><span class="line">  <span class="keyword">if</span> (e.keyCode === <span class="number">112</span>) &#123;</span><br><span class="line">    e.preventDefault();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>이렇게 F1 key 의 경우에만 반응하지 않도록 만들 수 있다.</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">&quot;keydown&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  e.preventDefault();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>이렇게 F1 key 뿐만아니라 다른 모든 키의 기본 실행을 방지할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/38673629/how-to-disable-f1-key">How to disable F1 key?</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/keyboardevent/">keyboardevent</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/11/30/keydown-event-preventDefault/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>keyboardevent.io</title>
@@ -610,38 +642,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/19/JSON-stringify-%EC%98%88%EC%81%98%EA%B2%8C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>md에서 주석있는 json 스니펫 표현하기</title>
-      <link>https://chinsun9.github.io/2020/11/19/md%EC%97%90%EC%84%9C-%EC%A3%BC%EC%84%9D%EC%9E%88%EB%8A%94-json-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%91%9C%ED%98%84%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/11/19/md%EC%97%90%EC%84%9C-%EC%A3%BC%EC%84%9D%EC%9E%88%EB%8A%94-json-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%91%9C%ED%98%84%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Thu, 19 Nov 2020 00:52:24 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/md%EC%97%90%EC%84%9C-%EC%A3%BC%EC%84%9D%EC%9E%88%EB%8A%94-json-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%91%9C%ED%98%84%ED%95%98%</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/md%EC%97%90%EC%84%9C-%EC%A3%BC%EC%84%9D%EC%9E%88%EB%8A%94-json-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%91%9C%ED%98%84%ED%95%98%EA%B8%B020201119/preview.jpg" alt=" "></p><figure class="highlight md"><figcaption><span>json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```json</span></span><br><span class="line"><span class="code">&quot;scripts&quot;: &#123;</span></span><br><span class="line"><span class="code">    // ...</span></span><br><span class="line"><span class="code">  &quot;format&quot;: &quot;prettier --write src/**/*.ts&#123;,x&#125;&quot;,</span></span><br><span class="line"><span class="code">  &quot;lint&quot;: &quot;tsc --noEmit &amp;&amp; eslint src/**/*.ts&#123;,x&#125;&quot;</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure><figure class="highlight md"><figcaption><span>jsonc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```jsonc</span></span><br><span class="line"><span class="code">&quot;scripts&quot;: &#123;</span></span><br><span class="line"><span class="code">    // ...</span></span><br><span class="line"><span class="code">  &quot;format&quot;: &quot;prettier --write src/**/*.ts&#123;,x&#125;&quot;,</span></span><br><span class="line"><span class="code">  &quot;lint&quot;: &quot;tsc --noEmit &amp;&amp; eslint src/**/*.ts&#123;,x&#125;&quot;</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure><ul><li>github repo의 md파일을 보면 json안의 주석이 <code>빨간색</code>으로 표시될 때..</li><li>json 대신 jsonc 를 사용하면된다.</li><li>json with comments 라는 뜻이다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/markdown/">markdown</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/md/">md</category>
-      
-      <category domain="https://chinsun9.github.io/tags/markdown/">markdown</category>
-      
-      <category domain="https://chinsun9.github.io/tags/readme/">readme</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/19/md%EC%97%90%EC%84%9C-%EC%A3%BC%EC%84%9D%EC%9E%88%EB%8A%94-json-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%91%9C%ED%98%84%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
