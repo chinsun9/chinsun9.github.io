@@ -9,8 +9,53 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 02 Dec 2020 02:31:34 GMT</pubDate>
+    <pubDate>Wed, 02 Dec 2020 06:30:04 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Smooth Page Transitions</title>
+      <link>https://chinsun9.github.io/2020/12/02/Smooth-Page-Transitions/</link>
+      <guid>https://chinsun9.github.io/2020/12/02/Smooth-Page-Transitions/</guid>
+      <pubDate>Wed, 02 Dec 2020 06:30:04 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=1dJT-99KpiI&quot;&gt;Smooth Page Transitions With Javascript Tutorial&lt;/a&gt;를 보고 따라만들었다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li><a href="https://www.youtube.com/watch?v=1dJT-99KpiI">Smooth Page Transitions With Javascript Tutorial</a>를 보고 따라만들었다.</li></ul><h2 id="결과"><a href="#결과" class="headerlink" title="결과"></a>결과</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/6KBjjOOqYcY" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li><a href="https://chinsun9.github.io/smooth-page-transitions/">보러가기</a></li></ul><h2 id="후기"><a href="#후기" class="headerlink" title="후기"></a>후기</h2><ul><li>영상 제목만 보고 단순히 css js를 이용한 트랜지션을 구현할 줄 알았는데,</li><li>node로 parcel, gsap, highway 를 사용해서 웹만드는 것을 배우게되었다.</li></ul><ul><li>parcel을 처음 써보았는데, 개발할 때도, 배포할 때에도 좋은 것 같다.</li><li>higyway와 gsap으로 애니메이션을 구현해 보았다.</li></ul><ul><li>parcel을 이용해 웹을 만들어 깃허브 페이지로 배포할 때,</li><li><code>parcel build index.html --out-dir docs --public-url ./</code></li><li>위 처럼 옵션을 넣어줘야한다.</li><li>–out-dir docs 는 깃허브 페이지 설정할 때 디렉터리</li><li>–public-url ./ 는 이미지, css, js 경로가 망가지지 않도록한다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.youtube.com/watch?v=1dJT-99KpiI">Smooth Page Transitions With Javascript Tutorial</a></li><li><a href="https://www.sitepoint.com/parcel-hyperapp-github-pages/">Use Parcel to Bundle a Hyperapp App &amp; Deploy to GitHub Pages</a></li><li><a href="https://github.com/chinsun9/smooth-page-transitions">https://github.com/chinsun9/smooth-page-transitions</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/scss/">scss</category>
+      
+      <category domain="https://chinsun9.github.io/tags/highway-js/">highway js</category>
+      
+      <category domain="https://chinsun9.github.io/tags/gsap/">gsap</category>
+      
+      <category domain="https://chinsun9.github.io/tags/parcel/">parcel</category>
+      
+      <category domain="https://chinsun9.github.io/tags/svg/">svg</category>
+      
+      <category domain="https://chinsun9.github.io/tags/freepik/">freepik</category>
+      
+      <category domain="https://chinsun9.github.io/tags/flaticon/">flaticon</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/02/Smooth-Page-Transitions/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>github api로 유명한 레포 첫 커밋 메시지 확인하기</title>
@@ -601,41 +646,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/19/web-api-location-%EA%B0%9D%EC%B2%B4/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>em vs rem</title>
-      <link>https://chinsun9.github.io/2020/11/19/em-vs-rem/</link>
-      <guid>https://chinsun9.github.io/2020/11/19/em-vs-rem/</guid>
-      <pubDate>Thu, 19 Nov 2020 06:33:40 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;em&quot;&gt;&lt;a href=&quot;#em&quot; class=&quot;headerlink&quot; title=&quot;em&quot;&gt;&lt;/a&gt;em&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;상위 요소 기준&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;rem&quot;&gt;&lt;a href=&quot;#rem&quot; class=&quot;headerlin</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="em"><a href="#em" class="headerlink" title="em"></a>em</h2><ul><li>상위 요소 기준</li></ul><h2 id="rem"><a href="#rem" class="headerlink" title="rem"></a>rem</h2><ul><li>최상위 요소 html 기준</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/css/">css</category>
-      
-      <category domain="https://chinsun9.github.io/tags/em/">em</category>
-      
-      <category domain="https://chinsun9.github.io/tags/rem/">rem</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/19/em-vs-rem/#disqus_thread</comments>
       
     </item>
     
