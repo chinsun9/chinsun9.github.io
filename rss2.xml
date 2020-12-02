@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 02 Dec 2020 01:22:23 GMT</pubDate>
+    <pubDate>Wed, 02 Dec 2020 01:32:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>firebase 호스팅한 앱 종료하기</title>
+      <link>https://chinsun9.github.io/2020/12/02/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C/</link>
+      <guid>https://chinsun9.github.io/2020/12/02/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C/</guid>
+      <pubDate>Wed, 02 Dec 2020 01:32:28 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C20201202/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;firebase를 처음 사용해보았다.</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C20201202/preview.jpg" alt=" "></p><ul><li>firebase를 처음 사용해보았다.</li><li>비용 걱정으로 호스팅한 앱이나, 함수들을 사용하지 않을 때 꺼두려고 한다.</li></ul><h2 id="호스팅-종료"><a href="#호스팅-종료" class="headerlink" title="호스팅 종료"></a>호스팅 종료</h2><ul><li>cli에서 firebase-tools 를 이용해야한다.</li></ul><p><img src="/images/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C20201202/1.jpg" alt=" "></p><figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firebase hosting:disable</span><br></pre></td></tr></table></figure><ul><li>호스팅했던 앱 url로 접속해서 확인해보자</li></ul><h2 id="함수-삭제"><a href="#함수-삭제" class="headerlink" title="함수 삭제"></a>함수 삭제</h2><p><img src="/images/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C20201202/3.jpg" alt=" "></p><ul><li>함수(백엔드, api)는 브라우저로 firebase 콘솔에 접속해서 삭제할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/42591099/how-do-i-remove-a-hosted-site-from-firebase">how-do-i-remove-a-hosted-site-from-firebase</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/firebase/">firebase</category>
+      
+      <category domain="https://chinsun9.github.io/tags/firebase-tools/">firebase-tools</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/02/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>react Each child in a list should have a unique key prop.</title>
@@ -604,39 +634,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/19/flex-box%EB%A1%9C-%EC%88%98%ED%8F%89%EC%88%98%EC%A7%81-%EA%B0%80%EC%9A%B4%EB%8D%B0-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode extension Settings Sync</title>
-      <link>https://chinsun9.github.io/2020/11/19/vscode-extension-Settings-Sync/</link>
-      <guid>https://chinsun9.github.io/2020/11/19/vscode-extension-Settings-Sync/</guid>
-      <pubDate>Thu, 19 Nov 2020 05:07:40 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;동일한 vscode 설정을 여러컴퓨터에 쉽게 동기화할 수 있다.&lt;/li&gt;
-&lt;li&gt;github 아이디만 있으면된다.&lt;/li&gt;
-&lt;li&gt;vscode setting, 확장도구 까지 모두 동기화할 수 있다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;S</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>동일한 vscode 설정을 여러컴퓨터에 쉽게 동기화할 수 있다.</li><li>github 아이디만 있으면된다.</li><li>vscode setting, 확장도구 까지 모두 동기화할 수 있다.</li></ul><h2 id="Settings-Sync"><a href="#Settings-Sync" class="headerlink" title="Settings Sync"></a>Settings Sync</h2><ul><li>Settings Sync 확장도구를 설치한다.</li><li>깃허브에 로그인하고 사용한다.</li><li>F1 &gt; Sync: Update/Upload Settings 로 현재 세팅을 업로드한다.</li><li>동기화하고싶은 다른 컴퓨터에서 F1 &gt; Sync: Download Settings 를 실행해 다운로드한다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync">Settings Sync</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/19/vscode-extension-Settings-Sync/#disqus_thread</comments>
       
     </item>
     
