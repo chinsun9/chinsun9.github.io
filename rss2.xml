@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 01 Dec 2020 02:08:43 GMT</pubDate>
+    <pubDate>Wed, 02 Dec 2020 01:22:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>react Each child in a list should have a unique key prop.</title>
+      <link>https://chinsun9.github.io/2020/12/02/react-Each-child-in-a-list-should-have-a-unique-key-prop/</link>
+      <guid>https://chinsun9.github.io/2020/12/02/react-Each-child-in-a-list-should-have-a-unique-key-prop/</guid>
+      <pubDate>Wed, 02 Dec 2020 01:22:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;key prop 에 대한 글이 아니고, 단순히 에러 메시지를 뛰우지 않기위해 하는 단순무식한 글이다.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;/images/react-Each-child-in-a-list-should</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li><em>key prop 에 대한 글이 아니고, 단순히 에러 메시지를 뛰우지 않기위해 하는 단순무식한 글이다.</em></li></ul><p><img src="/images/react-Each-child-in-a-list-should-have-a-unique-key-prop20201202/preview.jpg" alt=" "></p><figure class="highlight jsx"><figcaption><span>example.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div className=<span class="string">&quot;product__rating&quot;</span>&gt;</span><br><span class="line">  &#123;<span class="built_in">Array</span>(rating)</span><br><span class="line">    .fill()</span><br><span class="line">    .map(<span class="function">(<span class="params">_, i</span>) =&gt;</span> (</span><br><span class="line">      &lt;p key=&#123;i&#125;&gt;✨&lt;/p&gt;</span><br><span class="line">    ))&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure><ul><li>반복문을 통해 자식 엘리먼트를 생성할 때,<blockquote><p>Each child in a list should have a unique key prop.</p></blockquote></li><li>이 오류 콘솔에 뜨게된다.</li><li>콘손에 빨간 오류가 보기 싫어서</li><li>인덱스 값으로 key prop을 명시해준다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>key prop이 어떤 용도 인지 공부해보자..</li><li><a href="https://ko.reactjs.org/docs/lists-and-keys.html">리스트와 Key – React</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/react/">react</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/key-prop/">key prop</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/02/react-Each-child-in-a-list-should-have-a-unique-key-prop/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>net::ERR_UNKNOWN_URL_SCHEME webview</title>
@@ -606,40 +637,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/19/vscode-extension-Settings-Sync/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>리눅스에서 파일, 폴더 삭제 명령</title>
-      <link>https://chinsun9.github.io/2020/11/19/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%8C%8C%EC%9D%BC-%ED%8F%B4%EB%8D%94-%EC%82%AD%EC%A0%9C-%EB%AA%85%EB%A0%B9/</link>
-      <guid>https://chinsun9.github.io/2020/11/19/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%8C%8C%EC%9D%BC-%ED%8F%B4%EB%8D%94-%EC%82%AD%EC%A0%9C-%EB%AA%85%EB%A0%B9/</guid>
-      <pubDate>Thu, 19 Nov 2020 04:40:37 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rm -rf &#123;디렉터리명&#125;</span><br><span class="line">rm -rf &#123;파일명&#125;</span><br><span class="line">rm -rf &#123;파일명&#125; &#123;디렉터리명&#125; &#123;이렇게 계속 나열하기&#125;</span><br><span class="line"></span><br><span class="line">rm -rf node_modules package-lock.json</span><br></pre></td></tr></table></figure><ul><li>cli로 삭제할 파일 또는 디렉토리를 하나이상 나열하여 한번에 삭제할 수 있다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/bash/">bash</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/linux/">linux</category>
-      
-      <category domain="https://chinsun9.github.io/tags/cli/">cli</category>
-      
-      <category domain="https://chinsun9.github.io/tags/bash/">bash</category>
-      
-      <category domain="https://chinsun9.github.io/tags/terminal/">terminal</category>
-      
-      <category domain="https://chinsun9.github.io/tags/shell/">shell</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/19/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%8C%8C%EC%9D%BC-%ED%8F%B4%EB%8D%94-%EC%82%AD%EC%A0%9C-%EB%AA%85%EB%A0%B9/#disqus_thread</comments>
       
     </item>
     
