@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/12/02/github-api%EB%A1%9C-%EC%9C%A0%EB%AA%85%ED%95%9C-%EB%A0%88%ED%8F%AC-%EC%B2%AB-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2020-12-02T02:31:34.777Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/03/playlist-202011/</loc>
+        <lastmod>2020-12-02T01:44:52.368Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/12/02/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C/</loc>
         <lastmod>2020-12-02T01:32:28.117Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -722,14 +738,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/03/li-point-remove/</loc>
         <lastmod>2020-11-03T04:35:56.532Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/03/playlist-202011/</loc>
-        <lastmod>2020-11-03T00:50:55.520Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
