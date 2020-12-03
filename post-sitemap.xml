@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/10/08/a-tag-no-color/</loc>
+        <lastmod>2020-12-03T01:11:59.583Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/12/03/hexo-icarus-%ED%85%8C%EB%A7%88-%ED%94%84%EB%A1%9C%ED%95%84%EC%98%81%EC%97%AD-css-%EC%88%98%EC%A0%95/</loc>
         <lastmod>2020-12-03T00:40:42.474Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1010,14 +1018,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/10/15/vscode-%ED%95%AD%EC%83%81-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2020-10-16T02:52:32.278Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/10/08/a-tag-no-color/</loc>
-        <lastmod>2020-10-16T01:15:00.327Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
