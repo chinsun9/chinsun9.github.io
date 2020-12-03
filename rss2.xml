@@ -9,8 +9,42 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 02 Dec 2020 06:30:04 GMT</pubDate>
+    <pubDate>Thu, 03 Dec 2020 00:40:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>hexo icarus 테마 프로필영역 css 수정</title>
+      <link>https://chinsun9.github.io/2020/12/03/hexo-icarus-%ED%85%8C%EB%A7%88-%ED%94%84%EB%A1%9C%ED%95%84%EC%98%81%EC%97%AD-css-%EC%88%98%EC%A0%95/</link>
+      <guid>https://chinsun9.github.io/2020/12/03/hexo-icarus-%ED%85%8C%EB%A7%88-%ED%94%84%EB%A1%9C%ED%95%84%EC%98%81%EC%97%AD-css-%EC%88%98%EC%A0%95/</guid>
+      <pubDate>Thu, 03 Dec 2020 00:40:42 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/hexo-icarus-%ED%85%8C%EB%A7%88-%ED%94%84%EB%A1%9C%ED%95%84%EC%98%81%EC%97%AD-css-%EC%88%98%EC%A0%9520201203/preview.jpg</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/hexo-icarus-%ED%85%8C%EB%A7%88-%ED%94%84%EB%A1%9C%ED%95%84%EC%98%81%EC%97%AD-css-%EC%88%98%EC%A0%9520201203/preview.jpg" alt=" "></p><ul><li>오랜만에 블로그 이미지 들을 바꿨다.</li><li>적용시키고 나니까 128x128 사이즈에 안어울리는 것 같아서</li><li>크기 제한을 풀었다.</li></ul><figure class="highlight jsx"><figcaption><span>layout/widget/profile.jsx 37 line</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;<span class="comment">/* &lt;figure class=&quot;image is-128x128 mx-auto mb-2&quot;&gt; */</span>&#125;</span><br><span class="line">&lt;figure <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;image mx-auto mb-2&quot;</span>&gt;</span><br></pre></td></tr></table></figure><ul><li>is-128x128 을 없애준다.</li><li>또는 자신의 고유한 클래스를 넣어주고 커스텀해도된다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
+      
+      <category domain="https://chinsun9.github.io/tags/icarus/">icarus</category>
+      
+      <category domain="https://chinsun9.github.io/tags/styl/">styl</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/03/hexo-icarus-%ED%85%8C%EB%A7%88-%ED%94%84%EB%A1%9C%ED%95%84%EC%98%81%EC%97%AD-css-%EC%88%98%EC%A0%95/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Smooth Page Transitions</title>
@@ -618,34 +652,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/20/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>web api location 객체</title>
-      <link>https://chinsun9.github.io/2020/11/19/web-api-location-%EA%B0%9D%EC%B2%B4/</link>
-      <guid>https://chinsun9.github.io/2020/11/19/web-api-location-%EA%B0%9D%EC%B2%B4/</guid>
-      <pubDate>Thu, 19 Nov 2020 08:24:14 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  ancestorOrigins: DOMStringList &#123;<span class="attr">length</span>: <span class="number">0</span>&#125;</span><br><span class="line">  assign: ƒ assign()</span><br><span class="line">  hash: <span class="string">&quot;&quot;</span></span><br><span class="line">  host: <span class="string">&quot;chinsun9.github.io&quot;</span></span><br><span class="line">  hostname: <span class="string">&quot;chinsun9.github.io&quot;</span></span><br><span class="line">  href: <span class="string">&quot;https://chinsun9.github.io/keyboardevent.io/?time=1700&amp;a=123&quot;</span></span><br><span class="line">  origin: <span class="string">&quot;https://chinsun9.github.io&quot;</span></span><br><span class="line">  pathname: <span class="string">&quot;/keyboardevent.io/&quot;</span></span><br><span class="line">  port: <span class="string">&quot;&quot;</span></span><br><span class="line">  protocol: <span class="string">&quot;https:&quot;</span></span><br><span class="line">  reload: ƒ reload()</span><br><span class="line">  replace: ƒ replace()</span><br><span class="line">  search: <span class="string">&quot;?time=1700&amp;a=123&quot;</span></span><br><span class="line">  toString: ƒ toString()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>깃헙 페이지에서 쿼리스트링 파라매터를 어떻게 사용할 수 있을까하다가.</li><li><a href="https://chinsun9.github.io/keyboardevent.io?time=1700&amp;a=123">https://chinsun9.github.io/keyboardevent.io?time=1700&amp;a=123</a></li><li><a href="https://chinsun9.github.io/keyboardevent.io/?time=1700&amp;a=123">https://chinsun9.github.io/keyboardevent.io/?time=1700&amp;a=123</a> (이런 url로 리디렉트됨)</li><li>그래서 이 url의 값을 자바스크립트로 읽어서 쿼리스트링의 값에 따라</li><li>화면을 다르게 초기화할 수 있겠다라는 아이디어를 얻었다.</li><li>url을 읽을때 location 객체에서 내가 원하는 부분은 search변수안에 들어있어서,</li><li>쉽게 꺼내 사용할 수 있을 것 같다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/API/Location">Location - Web API | MDN</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/location/">location</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/19/web-api-location-%EA%B0%9D%EC%B2%B4/#disqus_thread</comments>
       
     </item>
     
