@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/09/17/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EB%B0%94%EA%BE%B8%EA%B8%B0/</loc>
+        <lastmod>2020-12-07T00:43:57.467Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/18/%EC%97%AC%EB%9F%AC-%EC%BB%B4%ED%93%A8%ED%84%B0%EC%97%90%EC%84%9C-%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2020-12-07T00:40:45.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/12/04/Cannot-use-JSX-unless-the-jsx-flag-is-provided-ts-17004/</loc>
         <lastmod>2020-12-04T06:18:03.746Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -410,14 +426,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/16/boilerplate/</loc>
         <lastmod>2020-11-16T01:12:00.443Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/18/%EC%97%AC%EB%9F%AC-%EC%BB%B4%ED%93%A8%ED%84%B0%EC%97%90%EC%84%9C-%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2020-11-13T07:31:07.400Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1370,14 +1378,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/09/18/%EC%86%8C%EC%88%98-%EC%B0%BE%EA%B8%B0/</loc>
         <lastmod>2020-09-22T09:00:52.755Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/17/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EB%B0%94%EA%BE%B8%EA%B8%B0/</loc>
-        <lastmod>2020-09-22T09:00:50.001Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
