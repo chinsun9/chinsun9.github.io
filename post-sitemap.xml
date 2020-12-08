@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/10/20/%EB%82%B4%EA%B0%80-%EC%8B%AB%EC%96%B4%ED%95%98%EB%8A%94-%EA%B2%83/</loc>
+        <lastmod>2020-12-08T01:20:11.998Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/12/08/202011-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/</loc>
         <lastmod>2020-12-08T01:04:36.759Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -994,14 +1002,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/10/21/sqldump/</loc>
         <lastmod>2020-10-21T06:09:50.725Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/10/20/%EB%82%B4%EA%B0%80-%EC%8B%AB%EC%96%B4%ED%95%98%EB%8A%94-%EA%B2%83/</loc>
-        <lastmod>2020-10-20T05:53:22.621Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
