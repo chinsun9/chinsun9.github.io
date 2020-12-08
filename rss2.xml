@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 07 Dec 2020 02:57:39 GMT</pubDate>
+    <pubDate>Tue, 08 Dec 2020 01:04:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>202011 검색 실적</title>
+      <link>https://chinsun9.github.io/2020/12/08/202011-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/</link>
+      <guid>https://chinsun9.github.io/2020/12/08/202011-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/</guid>
+      <pubDate>Tue, 08 Dec 2020 01:04:36 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/202011-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%8120201208/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;오.. google search console에서 검색 </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/202011-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%8120201208/preview.jpg" alt=" "></p><ul><li>오.. google search console에서 검색 실적을 메일로 알려준다. ㅋㅋ</li><li>깃헙 블로그도 어느덧 시작한지 3달정도 되간다…</li><li>블로그 글은 개발하면서 새로 알게된 것들을 메모장같이 작성하고 있고,, 일부는 공략집처럼 작성하고 있다..(도움이 되길 바라며..)</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/google-search-console/">google search console</category>
+      
+      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/08/202011-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Select elements must be either controlled or uncontrolled.</title>
@@ -27,7 +57,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/Select-elements-must-be-either-controlled-or-uncontrolled20201207/preview.jpg" alt=" "></p><blockquote><p>Select elements must be either controlled or uncontrolled (specify either the value prop, or the defaultValue prop, but not both). Decide between using a controlled or uncontrolled select element and remove one of these props.</p></blockquote><figure class="highlight plain"><figcaption><span>에러나는 코드</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;select value&#x3D;&#123;state&#125; defaultValue&#x3D;&quot;kr&quot; onChange&#x3D;&#123;changeLang&#125;&gt;</span><br><span class="line">  &lt;option value&#x3D;&quot;kr&quot;&gt;한국어&lt;&#x2F;option&gt;</span><br><span class="line">  &lt;option value&#x3D;&quot;en&quot;&gt;English&lt;&#x2F;option&gt;</span><br><span class="line">&lt;&#x2F;select&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><figcaption><span>에러 안나는 코드</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;select value&#x3D;&#123;state&#125; onChange&#x3D;&#123;changeLang&#125;&gt;</span><br><span class="line">  &lt;option value&#x3D;&quot;kr&quot;&gt;한국어&lt;&#x2F;option&gt;</span><br><span class="line">  &lt;option value&#x3D;&quot;en&quot;&gt;English&lt;&#x2F;option&gt;</span><br><span class="line">&lt;&#x2F;select&gt;</span><br></pre></td></tr></table></figure><ul><li>defaultValue prop을 삭제하자.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://reactjs.org/docs/forms.html#the-select-tag">https://reactjs.org/docs/forms.html#the-select-tag</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="/images/Select-elements-must-be-either-controlled-or-uncontrolled20201207/preview.jpg" alt=" "></p><blockquote><p>Select elements must be either controlled or uncontrolled (specify either the value prop, or the defaultValue prop, but not both). Decide between using a controlled or uncontrolled select element and remove one of these props.</p></blockquote><figure class="highlight plain"><figcaption><span>에러나는 코드</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;select value&#x3D;&#123;state&#125; defaultValue&#x3D;&quot;kr&quot; onChange&#x3D;&#123;changeLang&#125;&gt;</span><br><span class="line">  &lt;option value&#x3D;&quot;kr&quot;&gt;한국어&lt;&#x2F;option&gt;</span><br><span class="line">  &lt;option value&#x3D;&quot;en&quot;&gt;English&lt;&#x2F;option&gt;</span><br><span class="line">&lt;&#x2F;select&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><figcaption><span>에러 안나는 코드</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;select value&#x3D;&#123;state&#125; onChange&#x3D;&#123;changeLang&#125;&gt;</span><br><span class="line">  &lt;option value&#x3D;&quot;kr&quot;&gt;한국어&lt;&#x2F;option&gt;</span><br><span class="line">  &lt;option value&#x3D;&quot;en&quot;&gt;English&lt;&#x2F;option&gt;</span><br><span class="line">&lt;&#x2F;select&gt;</span><br></pre></td></tr></table></figure><ul><li>defaultValue prop을 삭제하자.</li></ul><ul><li>Select elements는 컨트롤되거나 안되게 둘중 하나만 하라는 건데..</li><li>value prop와 defaultValue prop는 같이 사용할 수 없다고 한다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://reactjs.org/docs/forms.html#the-select-tag">https://reactjs.org/docs/forms.html#the-select-tag</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/react/">react</category>
@@ -627,36 +657,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/23/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>rds 삭제 방지 비활성화</title>
-      <link>https://chinsun9.github.io/2020/11/23/rds-%EC%82%AD%EC%A0%9C-%EB%B0%A9%EC%A7%80-%EB%B9%84%ED%99%9C%EC%84%B1%ED%99%94/</link>
-      <guid>https://chinsun9.github.io/2020/11/23/rds-%EC%82%AD%EC%A0%9C-%EB%B0%A9%EC%A7%80-%EB%B9%84%ED%99%9C%EC%84%B1%ED%99%94/</guid>
-      <pubDate>Mon, 23 Nov 2020 02:52:59 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/rds-%EC%82%AD%EC%A0%9C-%EB%B0%A9%EC%A7%80-%EB%B9%84%ED%99%9C%EC%84%B1%ED%99%9420201123/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/rds-%EC%82%AD%EC%A0%9C-%EB%B0%A9%EC%A7%80-%EB%B9%84%ED%99%9C%EC%84%B1%ED%99%9420201123/preview.jpg" alt=" "></p><ul><li>rds를 켜놓은 상태에서 수정을 할 수 있다.</li><li>rds 꺼놓은 상태에서 수정버튼을 누르면 무한 로딩이 기다리고있다..</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/rds/">rds</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/23/rds-%EC%82%AD%EC%A0%9C-%EB%B0%A9%EC%A7%80-%EB%B9%84%ED%99%9C%EC%84%B1%ED%99%94/#disqus_thread</comments>
       
     </item>
     
