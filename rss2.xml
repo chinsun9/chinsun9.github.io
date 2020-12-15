@@ -9,8 +9,191 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 08 Dec 2020 01:22:22 GMT</pubDate>
+    <pubDate>Tue, 15 Dec 2020 02:25:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>SyntaxError: Unexpected end of input</title>
+      <link>https://chinsun9.github.io/2020/12/15/SyntaxError-Unexpected-end-of-input/</link>
+      <guid>https://chinsun9.github.io/2020/12/15/SyntaxError-Unexpected-end-of-input/</guid>
+      <pubDate>Tue, 15 Dec 2020 02:25:26 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/SyntaxError-Unexpected-end-of-input/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vscode에서는 아무 에러, 경고없이 잘 실행되었는데,&lt;/li&gt;
+&lt;li&gt;SyntaxE</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/SyntaxError-Unexpected-end-of-input/preview.jpg" alt=" "></p><ul><li>vscode에서는 아무 에러, 경고없이 잘 실행되었는데,</li><li>SyntaxError-Unexpected-end-of-input 에러가 날 때가 있다.</li></ul><ul><li>나의 경우에는 api 서버가 host가 달라 cors mode로 리퀘스트를 보내야하는데</li><li>‘no-cors’ mode로 보내서 생긴 에러이다.</li></ul><ul><li>그 외에도 api서버에서 연산이 잘못되어 응답을 반환하지 않을 때에도 똑같은 에러가 나왔다.</li><li>그냥 서버로부터 결과를 제대로 받지 않으면 생기는 오류 같다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/js/">js</category>
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/15/SyntaxError-Unexpected-end-of-input/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>eslint prefer-template</title>
+      <link>https://chinsun9.github.io/2020/12/15/eslint-prefer-template/</link>
+      <guid>https://chinsun9.github.io/2020/12/15/eslint-prefer-template/</guid>
+      <pubDate>Tue, 15 Dec 2020 02:09:46 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/eslint-prefer-template20201215/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;react typescript eslint airbnb style 로 웹 개발을 하고 있는데,,</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/eslint-prefer-template20201215/preview.jpg" alt=" "></p><ul><li>react typescript eslint airbnb style 로 웹 개발을 하고 있는데,,,</li><li><code>+</code> 로 문자열 이어붙이기를 사용했는데, eslint룰에 따라 자동 포맷팅 되었다..!</li><li>eslint가 처음에는 불편하기만 했는데, 지금은 너무 좋다…</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://eslint.org/docs/rules/prefer-template">https://eslint.org/docs/rules/prefer-template</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
+      
+      <category domain="https://chinsun9.github.io/tags/airbnb/">airbnb</category>
+      
+      <category domain="https://chinsun9.github.io/tags/prefer-template/">prefer-template</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/15/eslint-prefer-template/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>input:number 화살표 없애기</title>
+      <link>https://chinsun9.github.io/2020/12/15/input-number-%ED%99%94%EC%82%B4%ED%91%9C-%EC%97%86%EC%95%A0%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/12/15/input-number-%ED%99%94%EC%82%B4%ED%91%9C-%EC%97%86%EC%95%A0%EA%B8%B0/</guid>
+      <pubDate>Tue, 15 Dec 2020 02:00:59 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/input-number-%ED%99%94%EC%82%B4%ED%91%9C-%EC%97%86%EC%95%A0%EA%B8%B020201215/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;number </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/input-number-%ED%99%94%EC%82%B4%ED%91%9C-%EC%97%86%EC%95%A0%EA%B8%B020201215/preview.jpg" alt=" "></p><ul><li>number type 일 때, 기본으로 화살표가 나온다.</li><li>이거를 없애보자</li></ul><figure class="highlight css"><figcaption><span>example.css</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-webkit-outer-spin-button</span>,</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-webkit-inner-spin-button</span> &#123;</span><br><span class="line">  <span class="attribute">-webkit-appearance</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp">https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      <category domain="https://chinsun9.github.io/tags/input/">input</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/15/input-number-%ED%99%94%EC%82%B4%ED%91%9C-%EC%97%86%EC%95%A0%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Clamp number (js)</title>
+      <link>https://chinsun9.github.io/2020/12/15/Clamp-number/</link>
+      <guid>https://chinsun9.github.io/2020/12/15/Clamp-number/</guid>
+      <pubDate>Tue, 15 Dec 2020 01:57:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> clampNumber = <span class="function">(<span class="params">num, a, b</span>) =&gt;</span></span><br><span class="line">  <span class="built_in">Math</span>.max(<span class="built_in">Math</span>.min(num, <span class="built_in">Math</span>.max(a, b)), <span class="built_in">Math</span>.min(a, b));</span><br><span class="line"><span class="built_in">console</span>.log(clampNumber(<span class="number">-10</span>, <span class="number">0</span>, <span class="number">5</span>)); <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">console</span>.log(clampNumber(<span class="number">10</span>, <span class="number">0</span>, <span class="number">5</span>)); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure><ul><li>지정한 범위가 있고, 그 범위를 벗어나는 값이 들어왔을 때,</li><li>그 입력을 최소, 최대값 치환할 때 유용하다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-266.php">https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-266.php</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/js/">js</category>
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/clamp/">clamp</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/15/Clamp-number/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>tab key를 눌렀을 때 버튼으로 포커스 되는 것 방지하기</title>
+      <link>https://chinsun9.github.io/2020/12/15/tab-key%EB%A5%BC-%EB%88%8C%EB%A0%80%EC%9D%84-%EB%95%8C-%EB%B2%84%ED%8A%BC%EC%9C%BC%EB%A1%9C-%ED%8F%AC%EC%BB%A4%EC%8A%A4-%EB%90%98%EB%8A%94-%EA%B2%83-%EB%B0%A9%EC%A7%80%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/12/15/tab-key%EB%A5%BC-%EB%88%8C%EB%A0%80%EC%9D%84-%EB%95%8C-%EB%B2%84%ED%8A%BC%EC%9C%BC%EB%A1%9C-%ED%8F%AC%EC%BB%A4%EC%8A%A4-%EB%90%98%EB%8A%94-%EA%B2%83-%EB%B0%A9%EC%A7%80%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Tue, 15 Dec 2020 01:48:27 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight html&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example.html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/sp</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight html"><figcaption><span>example.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">tabindex</span>=<span class="string">&quot;-1&quot;</span>&gt;</span>나는 탭 키를 눌러도 포커스 되지 않지.<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>나는 탭 키를 누르면 포커스 되지...<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight plain"><figcaption><span>example.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;button</span><br><span class="line">  type&#x3D;&quot;button&quot;</span><br><span class="line">  tabIndex&#x3D;&#123;-1&#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure><ul><li>입력폼 같은걸을 작성할 때, tab 키로 다음 칸을 넘어가서 작성하는 경우가 있는데,</li><li>tab 키는 기본적으로 button에도 포커스가 간다.</li><li>포커스가 가지 않도록 해보자.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/2757973/can-i-ignore-some-website-element-when-navigating-using-the-tab-key">https://stackoverflow.com/questions/2757973/can-i-ignore-some-website-element-when-navigating-using-the-tab-key</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/tabindex/">tabindex</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/15/tab-key%EB%A5%BC-%EB%88%8C%EB%A0%80%EC%9D%84-%EB%95%8C-%EB%B2%84%ED%8A%BC%EC%9C%BC%EB%A1%9C-%ED%8F%AC%EC%BB%A4%EC%8A%A4-%EB%90%98%EB%8A%94-%EA%B2%83-%EB%B0%A9%EC%A7%80%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>playlist 202012</title>
+      <link>https://chinsun9.github.io/2020/12/15/playlist-202012/</link>
+      <guid>https://chinsun9.github.io/2020/12/15/playlist-202012/</guid>
+      <pubDate>Tue, 15 Dec 2020 01:32:47 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/videoseries?list=PLdEiQV70x8ZH3RG6fd-SX0_oyHbNFn-9z&quot; frameborder=&quot;0&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/videoseries?list=PLdEiQV70x8ZH3RG6fd-SX0_oyHbNFn-9z" frameborder="0" loading="lazy" allowfullscreen></iframe></div><blockquote><p>~</p></blockquote>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/playlist/">playlist</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/playlist/">playlist</category>
+      
+      <category domain="https://chinsun9.github.io/tags/music/">music</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/15/playlist-202012/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>202011 검색 실적</title>
@@ -471,192 +654,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>정규식으로 좌표꺼내기</title>
-      <link>https://chinsun9.github.io/2020/11/24/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%A2%8C%ED%91%9C%EA%BA%BC%EB%82%B4%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/11/24/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%A2%8C%ED%91%9C%EA%BA%BC%EB%82%B4%EA%B8%B0/</guid>
-      <pubDate>Tue, 24 Nov 2020 07:09:40 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%A2%8C%ED%91%9C%EA%BA%BC%EB%82%B4%EA%B8%B020201124/preview.jpg&quot; alt=&quot; </description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%A2%8C%ED%91%9C%EA%BA%BC%EB%82%B4%EA%B8%B020201124/preview.jpg" alt=" "></p><blockquote><p>(37.11111111111111, 126.11111111111111)</p></blockquote><ul><li>이런 좌표를 나타내는 문자열에서 알맹이만 빼보자.</li></ul><figure class="highlight js"><figcaption><span>index.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> coordString = <span class="string">&#x27;(37.11111111111111, 126.11111111111111)&#x27;</span></span><br><span class="line">/\d+([.]\d+)?/.exec(coordString)</span><br><span class="line"><span class="comment">// &quot;37.11111111111111,.11111111111111&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getPositionFromString</span>(<span class="params">positionString</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> re = <span class="regexp">/(\d+)([\.]\d+)?/g</span>;</span><br><span class="line">  <span class="keyword">const</span> result = []</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span>(match = re.exec(positionString))&#123;</span><br><span class="line">    <span class="comment">// console.info(match[0], &#x27; found at : &#x27;, match.index);</span></span><br><span class="line">    result.push(match[<span class="number">0</span>])</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// console.info(&#123;x:result[0],y:result[1]&#125;)</span></span><br><span class="line">  <span class="keyword">return</span> &#123;<span class="attr">x</span>:result[<span class="number">0</span>],<span class="attr">y</span>:result[<span class="number">1</span>]&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>exec() 가 g옵션에 따라서 매치하는 패턴의 결과가 모두 담겨서 나오는줄 알았다.</li><li>위처럼 while 루프를 통해서 모든 매치결과를 받아올 수 있다.</li><li>내부적으로 커서가 있는 것 같다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/11270302/javascript-how-to-get-multiple-matches-in-regex-exec-results/11270364">Javascript: How to get multiple matches in RegEx .exec results - Stack Overflow</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec#Examples">RegExp.prototype.exec() - JavaScript | MDN</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/reg-exp/">reg exp</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/reg-exp/">reg exp</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/24/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%A2%8C%ED%91%9C%EA%BA%BC%EB%82%B4%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>js object access by index</title>
-      <link>https://chinsun9.github.io/2020/11/24/js-object-access-by-index/</link>
-      <guid>https://chinsun9.github.io/2020/11/24/js-object-access-by-index/</guid>
-      <pubDate>Tue, 24 Nov 2020 04:49:50 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/js-object-access-by-index20201124/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;br&gt;의미없는 변수이름들..&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;api를 사용하다보면 주기적으로? 변수명이 바뀌는 상황이 나온</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/js-object-access-by-index20201124/preview.jpg" alt=" "><br>의미없는 변수이름들..</p><ul><li>api를 사용하다보면 주기적으로? 변수명이 바뀌는 상황이 나온다.</li><li>카카오 맵 api 가 그러하다.</li><li>이렇게 직접 객체의 변수에 접근해서 사용하는 것은 바람직하지 않다고 한다.</li></ul><ul><li>그런데 객체의 값에 직접 접근하고 싶은경우가 있을 수 있다.</li><li>하지만 키의 이름은 주기적으로 바뀐다.</li><li>그래서 <code>obj.key</code> 이런식의 접근은 당장에는 가능하나,</li><li>언젠가는 동작하지 않는 코드가 된다.</li></ul><ul><li>키의 이름이 주기적으로 바뀌는 것을 무시하고 접근한다고 생각하니까</li><li>인덱스로 접근하는 방법을 알아보았다.</li></ul><h2 id="access-by-index"><a href="#access-by-index" class="headerlink" title="access by index"></a>access by index</h2><figure class="highlight js"><figcaption><span>access by index</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = &#123; <span class="attr">la</span>: <span class="number">1</span>, <span class="attr">ma</span>: <span class="number">2</span> &#125;;</span><br><span class="line"><span class="built_in">Object</span>.keys(a)[<span class="number">0</span>]; <span class="comment">// &#x27;la&#x27;</span></span><br><span class="line"></span><br><span class="line">a.la; <span class="comment">// == 1</span></span><br><span class="line">a[<span class="built_in">Object</span>.keys(a)[<span class="number">0</span>]]; <span class="comment">// == a.la</span></span><br></pre></td></tr></table></figure><ul><li><code>Object.keys(a)</code>를 통해 key의 배열을 받을 수 있다.</li><li>이를 통해서 인덱스를 통한 접근이 가능해진다.</li></ul><figure class="highlight js"><figcaption><span>인덱스 부여 실험</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = &#123; <span class="attr">ma</span>: <span class="number">2</span>, <span class="attr">la</span>: <span class="number">1</span> &#125;;</span><br><span class="line"><span class="built_in">Object</span>.keys(a)[<span class="number">0</span>]; <span class="comment">// &#x27;ma&#x27;</span></span><br><span class="line"></span><br><span class="line">a = &#123; <span class="attr">la</span>: <span class="number">1</span>, <span class="attr">ma</span>: <span class="number">2</span> &#125;;</span><br><span class="line"><span class="built_in">Object</span>.keys(a)[<span class="number">0</span>]; <span class="comment">// &#x27;la&#x27;</span></span><br></pre></td></tr></table></figure><ul><li>인덱스가 어떻게 부여되나 실험을 해보았는데,</li><li>직관적으로 왼쪽에서 오른쪽으로 번호가 매겨진다.</li><li>키의 알파벳이나, 그 안에 들어있는 값이나 일절 상관없다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>가장 베스트는 api에서 제공하는 메소드를 잘 알고 활용하는 것이다.</li><li><a href="https://devtalk.kakao.com/t/getcenter-getbounds/38730">지도의 getCenter(), getBounds() 출력변수는 왜 자꾸 변하나요!?!?!?!?!?!?</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/kakao-api/">kakao api</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/24/js-object-access-by-index/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>prettier ignore line</title>
-      <link>https://chinsun9.github.io/2020/11/24/prettier-ignore-line/</link>
-      <guid>https://chinsun9.github.io/2020/11/24/prettier-ignore-line/</guid>
-      <pubDate>Tue, 24 Nov 2020 00:34:07 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/prettier-ignore-line20201124/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;마크다운에서는 여러 라인 범위를 포맷팅하지 않도록 설정할 수 있다.&lt;/li&gt;
-&lt;li&gt;formatOn</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/prettier-ignore-line20201124/preview.jpg" alt=" "></p><ul><li>마크다운에서는 여러 라인 범위를 포맷팅하지 않도록 설정할 수 있다.</li><li>formatOnSave 를 사용해서 내용이 많은 마크다운을 저장할 때, 이미 포맷팅이 잘 되어있더라도</li><li>좀 오래걸리는 느낌이 있었다.</li><li>그래서 포맷팅을 무시하는 설정을 알아보았다.</li><li>기분탓인지 몰라도 쫌 빨라진 것 같다..?</li></ul><h2 id="markdown-perttier-ignore"><a href="#markdown-perttier-ignore" class="headerlink" title="markdown perttier ignore"></a>markdown perttier ignore</h2><figure class="highlight md"><figcaption><span>md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- prettier-ignore --&gt;</span></span></span><br><span class="line">Do   not    format   this</span><br><span class="line"></span><br><span class="line">format this</span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- prettier-ignore-start --&gt;</span></span></span><br><span class="line">| MY | AWESOME | AUTO-GENERATED | TABLE |</span><br><span class="line">|-|-|-|-|</span><br><span class="line">| a | b | c | d |</span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- prettier-ignore-end --&gt;</span></span></span><br><span class="line"></span><br><span class="line">| MY  | AWESOME | AUTO-GENERATED | TABLE |</span><br><span class="line">| --- | ------- | -------------- | ----- |</span><br><span class="line">| a   | b       | c              | d     |</span><br></pre></td></tr></table></figure><h2 id="js-perttier-ignore"><a href="#js-perttier-ignore" class="headerlink" title="js perttier ignore"></a>js perttier ignore</h2><figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// prettier-ignore</span></span><br><span class="line"><span class="keyword">let</span> a=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> b = <span class="number">2</span>;</span><br></pre></td></tr></table></figure><ul><li>js 에서는 한개의 라인을 포맷하지않도록 설정할 수 있다.</li></ul><figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> c = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> c = [</span><br><span class="line">  <span class="comment">//  &lt;-- 주석 넣으면 펼쳐짐.</span></span><br><span class="line">  <span class="number">1</span>,</span><br><span class="line">  <span class="number">2</span>,</span><br><span class="line">  <span class="number">3</span>,</span><br><span class="line">];</span><br></pre></td></tr></table></figure><ul><li>중간에 주석을 넣어서 펼쳐지게 포맷팅할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://prettier.io/docs/en/ignore.html#range-ignore">Ignoring Code · Prettier</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/md/">md</category>
-      
-      <category domain="https://chinsun9.github.io/tags/prettier/">prettier</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/24/prettier-ignore-line/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>aws lambda cors 설정</title>
-      <link>https://chinsun9.github.io/2020/11/23/aws-lambda-cors-%EC%84%A4%EC%A0%95/</link>
-      <guid>https://chinsun9.github.io/2020/11/23/aws-lambda-cors-%EC%84%A4%EC%A0%95/</guid>
-      <pubDate>Mon, 23 Nov 2020 09:02:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;cors를 통해 도메인이 다른 서버로 요청을 보내고 결과를 받아 올 수 있</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/preview.jpg" alt=" "></p><ul><li>cors를 통해 도메인이 다른 서버로 요청을 보내고 결과를 받아 올 수 있다.</li><li>람다를 웹에서 실행할 수 있다.</li></ul><h2 id="API-게이트웨이-설정"><a href="#API-게이트웨이-설정" class="headerlink" title="API 게이트웨이 설정"></a>API 게이트웨이 설정</h2><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/1.jpg" alt=" "></p><ul><li>람다를 실행하는 API를 하나 생성한다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/2.jpg" alt=" "></p><ul><li>기본으로 생성되는 any method는 삭제하고</li><li>get 메소드를 하나 만들고, 내 람다함수를 붙여준다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/3.jpg" alt=" "></p><ul><li>작업 &gt; CORS 활성화 를 클릭한다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/4.jpg" alt=" "></p><ul><li>Access-Control-Allow-Origin 부분에 내가 원하는 origin을 설정한다.</li><li>여기서는 하나의 도메인만 설정할 수 있다.</li><li>여러개의 허용 도메인 허용하도록하려면 람다에서 로직을 짜야한다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/5.jpg" alt=" "></p><ul><li>위처럼 options 메소드가 추가되고, get 메소드에 응답헤더가 추가된다.</li></ul><p><img src="/images/aws-lambda-cors-%EC%84%A4%EC%A0%9520201123/6.jpg" alt=" "></p><ul><li>설정이 완료되면 배포를 해야 적용이 된다.</li></ul><h2 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h2><ul><li>Cross-origin resource sharing</li></ul><h2 id="참고하면-좋은"><a href="#참고하면-좋은" class="headerlink" title="참고하면 좋은"></a>참고하면 좋은</h2><ul><li><a href="https://www.youtube.com/watch?v=kDSxCPbBJFo">13 - API Gateway CORS</a></li><li><a href="https://www.youtube.com/watch?v=baQh1X3LN5s">Cross Origin Resource Sharing (CORS) - Explained with Example &amp; Demo | API Gateway &amp; Lambda</a></li><li><a href="https://www.youtube.com/watch?v=yTzAjidyyqs">CORS(Cross-Origin Resource Sharing)이 나오게 된 배경 이야기</a></li><li><a href="https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A8_%EC%B6%9C%EC%B2%98_%EB%A6%AC%EC%86%8C%EC%8A%A4_%EA%B3%B5%EC%9C%A0">교차 출처 리소스 공유</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/lambda/">lambda</category>
-      
-      <category domain="https://chinsun9.github.io/tags/cors/">cors</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/23/aws-lambda-cors-%EC%84%A4%EC%A0%95/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>cidr</title>
-      <link>https://chinsun9.github.io/2020/11/23/cidr/</link>
-      <guid>https://chinsun9.github.io/2020/11/23/cidr/</guid>
-      <pubDate>Mon, 23 Nov 2020 04:26:41 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;aws에서 보안그룹이라던지, acl 설정이라던지&lt;/li&gt;
-&lt;li&gt;ip를 받는 설정을 하다보면 123.123.123.123/32 등&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ip/mask bits&lt;/code&gt; 로 표기되는 것을 본적 있을 것이다.&lt;/l</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>aws에서 보안그룹이라던지, acl 설정이라던지</li><li>ip를 받는 설정을 하다보면 123.123.123.123/32 등</li><li><code>ip/mask bits</code> 로 표기되는 것을 본적 있을 것이다.</li><li>이를 CIDR 표기법이라고하고,</li><li>이는 쉽게 ip의 범위를 나타낸다.</li></ul><ul><li>마스크 비트 숫자가 클수록 범위가 좁다.</li><li>마스크 비트 숫자가 작을수록 범위가 크다. = 포함된 ip 주소가 많다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9D%B4%EB%8D%94_(%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9)">사이더_(네트워킹)</a></li><li><a href="https://blog.naver.com/ncloud24/221208338209">CIDR 표기법</a></li><li><a href="https://www.youtube.com/watch?v=9MAI53t9tLk">How to Convert CIDR Notation value into Subnet Mask | Animation Video</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/cidr/">cidr</category>
-      
-      <category domain="https://chinsun9.github.io/tags/subnet-mask/">subnet mask</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/23/cidr/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>rds 해킹당하기</title>
-      <link>https://chinsun9.github.io/2020/11/23/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/11/23/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Mon, 23 Nov 2020 03:53:23 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;복구 방법에 대한 글이 아니다.&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;그냥 털리면 어떻게 되는지, 왜 털렸을까하는 내용의 기록이다.&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;털린-증상&quot;&gt;&lt;a href=&quot;#털린-증상&quot; class=&quot;h</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li><em>복구 방법에 대한 글이 아니다.</em></li><li><em>그냥 털리면 어떻게 되는지, 왜 털렸을까하는 내용의 기록이다.</em></li></ul><h2 id="털린-증상"><a href="#털린-증상" class="headerlink" title="털린 증상"></a>털린 증상</h2><p><img src="/images/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B020201123/1.jpg" alt=" "></p><ul><li>rds에 접속해보면 내 테이블들이 사라져있고,</li><li>PLEASE_READ_ME_XMG 라는 데이터베이스가 생겨있고</li><li>WARNING 테이블만 존재한다.</li></ul><p><img src="/images/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B020201123/2.jpg" alt=" "></p><ul><li>WARNING테이블을 셀렉트해보면 아래와 같은 메시지가 적혀있다.</li></ul><blockquote><p>To recover your lost databases and avoid leaking it: visit <a href="http://hn4wg4o6s5nc7763.onion/">http://hn4wg4o6s5nc7763.onion</a> and enter your unique token ee974966c47f1027 and pay the required amount of Bitcoin to get it back. Databases that we have: acl-manager. Your databases are downloaded and backed up on our servers. If we dont receive your payment in the next 9 Days, we will sell your database to the highest bidder or use them otherwise. To access this site you have use the tor browser <a href="https://www.torproject.org/projects/torbrowser.html">https://www.torproject.org/projects/torbrowser.html</a></p></blockquote><ul><li>이 웹사이트에 들어가서 토큰으로 로그인하고 비트코인을 지불하라는 내용이다.</li><li>일반 브라우저에서는 접속하지 못하고, tor browser에서만 접속가능하다.</li><li>나는 안들어가봤다. 왜냐면 중요한 데이터가 아니였기 때문이다.</li></ul><h2 id="털린-이유"><a href="#털린-이유" class="headerlink" title="털린 이유"></a>털린 이유</h2><ul><li>rds 퍼블릭 엑세스 허용</li><li>인바운드 규칙 모두 허용</li><li>rds 비밀번호 1234</li></ul><h2 id="조치"><a href="#조치" class="headerlink" title="조치"></a>조치</h2><p><img src="/images/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B020201123/3.jpg" alt=" "></p><ul><li>중요한 정보가 없어서 그냥 rds를 삭제하고 다시 만들었다.</li><li>삭제할 때 스냅샷을 만들지 않도록 한다. 스냅샷 저장 비용이 발생할 수 있다.</li><li>새로 만든 RDS는 보안그룹 인바운드 규칙에서 내 IP만 접속가능하도록 해주었다.</li><li>비밀번호를 어렵게 설정했다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/rds/">rds</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/23/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
