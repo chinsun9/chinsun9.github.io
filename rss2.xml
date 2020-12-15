@@ -9,8 +9,70 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 15 Dec 2020 02:25:26 GMT</pubDate>
+    <pubDate>Tue, 15 Dec 2020 04:20:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>내가 css를 작성하면서 많이 사용하는 줄임말, 스니펫?</title>
+      <link>https://chinsun9.github.io/2020/12/15/%EB%82%B4%EA%B0%80-css%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%A4%84%EC%9E%84%EB%A7%90-%EC%8A%A4%EB%8B%88%ED%8E%AB/</link>
+      <guid>https://chinsun9.github.io/2020/12/15/%EB%82%B4%EA%B0%80-css%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%A4%84%EC%9E%84%EB%A7%90-%EC%8A%A4%EB%8B%88%ED%8E%AB/</guid>
+      <pubDate>Tue, 15 Dec 2020 04:20:40 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/%EB%82%B4%EA%B0%80-css%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/%EB%82%B4%EA%B0%80-css%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%A4%84%EC%9E%84%EB%A7%90-%EC%8A%A4%EB%8B%88%ED%8E%AB20201215/preview.jpg" alt=" "></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.example</span> &#123;</span><br><span class="line">  <span class="comment">/* df */</span></span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/* jcc */</span></span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/* aic */</span></span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>짧게 쓰고 자동완성 시킨다</li><li>자동완성 시키고 <code>ctrl + enter</code> 로 새로운 라인으로 이동하여 이어서 작성한다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      <category domain="https://chinsun9.github.io/tags/flex/">flex</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/15/%EB%82%B4%EA%B0%80-css%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%A4%84%EC%9E%84%EB%A7%90-%EC%8A%A4%EB%8B%88%ED%8E%AB/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>chrome 드래그 앤 드랍 안됨</title>
+      <link>https://chinsun9.github.io/2020/12/15/chrome-%EB%93%9C%EB%9E%98%EA%B7%B8-%EC%95%A4-%EB%93%9C%EB%9E%8D-%EC%95%88%EB%90%A8/</link>
+      <guid>https://chinsun9.github.io/2020/12/15/chrome-%EB%93%9C%EB%9E%98%EA%B7%B8-%EC%95%A4-%EB%93%9C%EB%9E%8D-%EC%95%88%EB%90%A8/</guid>
+      <pubDate>Tue, 15 Dec 2020 02:35:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;chrome이 관리자 권한으로 켜져있는지 확인한다.&lt;/li&gt;
+&lt;li&gt;관리자 권한으로 켜지면 드래그 앤 드랍이 작동하지 않는다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;TMI&quot;&gt;&lt;a href=&quot;#TMI&quot; class=&quot;headerlink&quot; ti</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>chrome이 관리자 권한으로 켜져있는지 확인한다.</li><li>관리자 권한으로 켜지면 드래그 앤 드랍이 작동하지 않는다.</li></ul><h2 id="TMI"><a href="#TMI" class="headerlink" title="TMI"></a>TMI</h2><ul><li>웹에서 드래그 앤 드랍으로 이미지를 첨부하는 기능을 넣었는데,</li></ul><p><img src="/images/chrome-%EB%93%9C%EB%9E%98%EA%B7%B8-%EC%95%A4-%EB%93%9C%EB%9E%8D-%EC%95%88%EB%90%A820201215/preview.jpg" alt=" "></p><ul><li>이상하게 마우스 커서가 위 처럼 되면서, 동작하지 않았다.</li><li>막 chrome://flags 들어가서 설정도 따라해보고,</li><li>windows 이미지 도구? 도 재설치해보고 삽질을 마구마구하다가.</li><li>그냥 관리자 권한으로 chrome이 켜져 있어서 안되었던 문제이다.</li></ul><ul><li>이밖에도 chrome이 관리자 권한으로 켜져있으면 안되는 것은,</li><li>카톡 등 메신저에서 다른 링크를 켤 때 정도가 있다.</li></ul><ul><li>chrome이 관리자 권한을 켜지는 이유는</li><li>나의 경우에는 vscode가 관리자 권한으로 실행되는데,</li><li>vscode에서 브라우저를 실행시킬 때 관리자권한으로 실행된다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/chrome/">chrome</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C/">관리자 권한</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/15/chrome-%EB%93%9C%EB%9E%98%EA%B7%B8-%EC%95%A4-%EB%93%9C%EB%9E%8D-%EC%95%88%EB%90%A8/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>SyntaxError: Unexpected end of input</title>
@@ -592,68 +654,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/25/keyboardevent-io/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>윈도우에서 yarn 설치</title>
-      <link>https://chinsun9.github.io/2020/11/25/yarn-%EC%84%A4%EC%B9%98/</link>
-      <guid>https://chinsun9.github.io/2020/11/25/yarn-%EC%84%A4%EC%B9%98/</guid>
-      <pubDate>Wed, 25 Nov 2020 05:48:59 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/yarn-%EC%84%A4%EC%B9%9820201125/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;nodejs로 이것저것할 때 yarn을 피해갈 수 없을 것이다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 i</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/yarn-%EC%84%A4%EC%B9%9820201125/preview.jpg" alt=" "></p><ul><li>nodejs로 이것저것할 때 yarn을 피해갈 수 없을 것이다.</li></ul><h2 id="설치방법"><a href="#설치방법" class="headerlink" title="설치방법"></a>설치방법</h2><ul><li><a href="https://classic.yarnpkg.com/">https://classic.yarnpkg.com/</a> &gt; install yarn &gt; download installer</li><li><a href="https://classic.yarnpkg.com/en/docs/install#windows-stable">https://classic.yarnpkg.com/en/docs/install#windows-stable</a></li><li>인스톨러를 받고 실행하면 끝</li></ul><ul><li>설치가 완료되면 cmd를 열고 <code>yarn -v</code> 를 쳐서 확인한다.</li></ul><h2 id="yarn"><a href="#yarn" class="headerlink" title="yarn"></a>yarn</h2><ul><li>페이스북에서 만든 npm</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://classic.yarnpkg.com/en/">yarn</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/yarn/">yarn</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/25/yarn-%EC%84%A4%EC%B9%98/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>react에서 html 자동완성 쓰기, emmet 사용하기</title>
-      <link>https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Wed, 25 Nov 2020 00:30:42 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;settings.json&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight plain"><figcaption><span>settings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &#x2F;&#x2F; (...)</span><br><span class="line">  &quot;emmet.triggerExpansionOnTab&quot;: true, &#x2F;&#x2F; &lt;-- emmet 활성화</span><br><span class="line">  &quot;emmet.includeLanguages&quot;: &#123;</span><br><span class="line">    &quot;javascript&quot;: &quot;javascriptreact&quot; &#x2F;&#x2F; &lt;-- react에서도 emmet 사용가능하도록</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>settings.json에 추가한다.</li><li>tab키를 눌러 자동완성할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://velog.io/@jayjay28/VScode-React-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0">VScode + React emmet 사용하기</a></li><li><a href="https://www.youtube.com/watch?v=V8vizNQKtx0">Learn Emmet In 15 Minutes - Double Your HTML Coding Speed</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/react/">react</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/react/">react</category>
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/emmet/">emmet</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
