@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 16 Dec 2020 02:52:01 GMT</pubDate>
+    <pubDate>Wed, 16 Dec 2020 04:49:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>type vs interface</title>
+      <link>https://chinsun9.github.io/2020/12/16/type-vs-interface/</link>
+      <guid>https://chinsun9.github.io/2020/12/16/type-vs-interface/</guid>
+      <pubDate>Wed, 16 Dec 2020 04:49:13 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight ts&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// X</span></span><br><span class="line"><span class="keyword">type</span> MyFile <span class="keyword">extends</span> File = &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// O</span></span><br><span class="line"><span class="keyword">interface</span> MyFile <span class="keyword">extends</span> File &#123;</span><br><span class="line">  preview: <span class="built_in">string</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// O</span></span><br><span class="line"><span class="keyword">type</span> MyFile = &#123;preview: <span class="built_in">string</span>&#125; &amp; File</span><br></pre></td></tr></table></figure><ul><li>type은 <code>extends</code>, <code>implements</code>가 안됨.</li><li>대신 extends의 경우는 <code>&amp;</code> 키워드를 사용하여 대체할 수 있다.</li></ul><ul><li>interface와 type은 거의 같은 역할을 한다.</li><li>그래서 둘중 하나만 사용하여 일관적인 스타일을 유지하는 게 좋다고 들었다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>나는 typescript를 공부하면서 처음 접한게 type이라서 type을 쭉 사용해왔다.</li><li>그런데 상속을 해야하는 경우에 마추쳤을 때, 불가피하게 interface 키워드를 사용했고,</li><li>type을 사용할 수 없을까 찾아보다가 <code>type vs interface</code> 에 대한 좋은 링크를 찾았다.</li></ul><ul><li><a href="https://blog.logrocket.com/types-vs-interfaces-in-typescript/">https://blog.logrocket.com/types-vs-interfaces-in-typescript/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/16/type-vs-interface/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>react url params 사용하기</title>
@@ -625,38 +653,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/01/net-ERR-UNKNOWN-URL-SCHEME-webview/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>keydown event preventDefault</title>
-      <link>https://chinsun9.github.io/2020/11/30/keydown-event-preventDefault/</link>
-      <guid>https://chinsun9.github.io/2020/11/30/keydown-event-preventDefault/</guid>
-      <pubDate>Mon, 30 Nov 2020 00:52:09 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;F1 key 를 누르면 자동으로 도움말창이 열린다.&lt;/li&gt;
-&lt;li&gt;이거를 안열리게 해보자.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;spa</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>F1 key 를 누르면 자동으로 도움말창이 열린다.</li><li>이거를 안열리게 해보자.</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">&quot;keydown&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// F1 keyCode</span></span><br><span class="line">  <span class="keyword">if</span> (e.keyCode === <span class="number">112</span>) &#123;</span><br><span class="line">    e.preventDefault();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>이렇게 F1 key 의 경우에만 반응하지 않도록 만들 수 있다.</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">&quot;keydown&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  e.preventDefault();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>이렇게 F1 key 뿐만아니라 다른 모든 키의 기본 실행을 방지할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/38673629/how-to-disable-f1-key">How to disable F1 key?</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/keyboardevent/">keyboardevent</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/30/keydown-event-preventDefault/#disqus_thread</comments>
       
     </item>
     
