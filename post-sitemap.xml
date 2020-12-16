@@ -8,8 +8,8 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/12/16/type-vs-interface/</loc>
-        <lastmod>2020-12-16T04:49:13.603Z</lastmod>
+        <loc>https://chinsun9.github.io/2020/12/16/web-font-%EC%A0%81%EC%9A%A9%ED%95%98%EB%8A%94-2%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/</loc>
+        <lastmod>2020-12-16T05:03:10.773Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,15 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/12/16/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2020-12-16T02:52:01.263Z</lastmod>
+        <lastmod>2020-12-16T04:53:11.227Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/12/16/type-vs-interface/</loc>
+        <lastmod>2020-12-16T04:50:15.898Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
