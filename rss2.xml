@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 15 Dec 2020 04:20:40 GMT</pubDate>
+    <pubDate>Wed, 16 Dec 2020 02:52:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>react url params 사용하기</title>
+      <link>https://chinsun9.github.io/2020/12/16/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/12/16/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Wed, 16 Dec 2020 02:52:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B020201216/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight ts&quot;&gt;&lt;f</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B020201216/preview.jpg" alt=" "></p><figure class="highlight ts"><figcaption><span>example.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 전</span></span><br><span class="line">res = <span class="keyword">await</span> myFetch(<span class="string">`get/<span class="subst">$&#123;location.pathname.split(<span class="string">&quot;/&quot;</span>)[<span class="number">2</span>]&#125;</span>`</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 후</span></span><br><span class="line">res = <span class="keyword">await</span> myFetch(<span class="string">`get/<span class="subst">$&#123;id&#125;</span>`</span>);</span><br></pre></td></tr></table></figure><ul><li><p>처음에는 url params에 어떻게 접근할까하다가 location객체에서 수동으로 파싱해서 쎃었는데</p></li><li><p>‘react-router-dom’ 에서 useRouteMatch라는 메소드를 통해서 자동으로 파싱하고 필요한 차일드에 넘겨주었다.</p></li></ul><figure class="highlight ts"><figcaption><span>parent.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 최상위, 컴포넌트 밖</span></span><br><span class="line"><span class="keyword">type</span> MatchParams = &#123;</span><br><span class="line">  id: <span class="built_in">string</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 컴포넌트 안 최상위</span></span><br><span class="line"><span class="keyword">const</span> match = useRouteMatch&lt;MatchParams&gt;(<span class="string">&quot;/start/:id&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 렌더 부분, 컴포넌트 안 return 부분</span></span><br><span class="line">&lt;Route path=<span class="string">&quot;/start/:id&quot;</span>&gt;</span><br><span class="line">  &lt;Start id=&#123;match?.params.id || <span class="string">&quot;&quot;</span>&#125; /&gt;</span><br><span class="line">&lt;/Route&gt;;</span><br></pre></td></tr></table></figure><figure class="highlight ts"><figcaption><span>child.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 최상위, 컴포넌트 밖</span></span><br><span class="line"><span class="keyword">type</span> Props = &#123;</span><br><span class="line">  id: <span class="built_in">string</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 컴포넌트 선언부</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Start</span>(<span class="params">&#123; id &#125;: Props</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>차일드에서 <code>useRouteMatch</code>를 사용해보았는데, useEffect에서 무한루프에 걸려서</li><li>부모에서 전달해주었다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>React Router: 파라미터와 쿼리 ; <a href="https://velog.io/@bigbrothershin/%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%EC%99%80-%EC%BF%BC%EB%A6%AC">https://velog.io/@bigbrothershin/%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%EC%99%80-%EC%BF%BC%EB%A6%AC</a></li><li><a href="https://stackoverflow.com/questions/61392878/how-to-make-useroutematch-work-with-types-from-react-router">https://stackoverflow.com/questions/61392878/how-to-make-useroutematch-work-with-types-from-react-router</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/react/">react</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/react-typescript/">react typescript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/url-params/">url params</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/16/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>내가 css를 작성하면서 많이 사용하는 줄임말, 스니펫?</title>
@@ -59,7 +90,7 @@
       
       
       
-      <content:encoded><![CDATA[<ul><li>chrome이 관리자 권한으로 켜져있는지 확인한다.</li><li>관리자 권한으로 켜지면 드래그 앤 드랍이 작동하지 않는다.</li></ul><h2 id="TMI"><a href="#TMI" class="headerlink" title="TMI"></a>TMI</h2><ul><li>웹에서 드래그 앤 드랍으로 이미지를 첨부하는 기능을 넣었는데,</li></ul><p><img src="/images/chrome-%EB%93%9C%EB%9E%98%EA%B7%B8-%EC%95%A4-%EB%93%9C%EB%9E%8D-%EC%95%88%EB%90%A820201215/preview.jpg" alt=" "></p><ul><li>이상하게 마우스 커서가 위 처럼 되면서, 동작하지 않았다.</li><li>막 chrome://flags 들어가서 설정도 따라해보고,</li><li>windows 이미지 도구? 도 재설치해보고 삽질을 마구마구하다가.</li><li>그냥 관리자 권한으로 chrome이 켜져 있어서 안되었던 문제이다.</li></ul><ul><li>이밖에도 chrome이 관리자 권한으로 켜져있으면 안되는 것은,</li><li>카톡 등 메신저에서 다른 링크를 켤 때 정도가 있다.</li></ul><ul><li>chrome이 관리자 권한을 켜지는 이유는</li><li>나의 경우에는 vscode가 관리자 권한으로 실행되는데,</li><li>vscode에서 브라우저를 실행시킬 때 관리자권한으로 실행된다.</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<ul><li>chrome이 관리자 권한으로 켜져있는지 확인한다.</li><li>관리자 권한으로 켜지면 드래그 앤 드랍이 작동하지 않는다.</li></ul><h2 id="TMI"><a href="#TMI" class="headerlink" title="TMI"></a>TMI</h2><ul><li>웹에서 드래그 앤 드랍으로 이미지를 첨부하는 기능을 넣었는데,</li></ul><p><img src="/images/chrome-%EB%93%9C%EB%9E%98%EA%B7%B8-%EC%95%A4-%EB%93%9C%EB%9E%8D-%EC%95%88%EB%90%A820201215/preview.jpg" alt=" "></p><ul><li>이상하게 마우스 커서가 위 처럼 되면서, 동작하지 않았다.</li><li>막 chrome://flags 들어가서 설정도 따라해보고,</li><li>windows 이미지 도구? 도 재설치해보고 삽질을 마구마구하다가.</li><li>그냥 관리자 권한으로 chrome이 켜져 있어서 안되었던 문제이다.</li></ul><ul><li>이밖에도 chrome이 관리자 권한으로 켜져있으면 안되는 것은,</li><li>카톡 등 메신저에서 다른 링크를 켤 때 정도가 있다.</li></ul><ul><li>chrome이 관리자 권한으로 켜지는 이유는</li><li>나는 vscode가 관리자 권한으로 실행되게 해놨다,</li><li>그래서 vscode에서 브라우저를 실행시킬 때 관리자권한으로 실행된다.</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
@@ -214,7 +245,7 @@
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight html"><figcaption><span>example.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">tabindex</span>=<span class="string">&quot;-1&quot;</span>&gt;</span>나는 탭 키를 눌러도 포커스 되지 않지.<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>나는 탭 키를 누르면 포커스 되지...<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight plain"><figcaption><span>example.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;button</span><br><span class="line">  type&#x3D;&quot;button&quot;</span><br><span class="line">  tabIndex&#x3D;&#123;-1&#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure><ul><li>입력폼 같은걸을 작성할 때, tab 키로 다음 칸을 넘어가서 작성하는 경우가 있는데,</li><li>tab 키는 기본적으로 button에도 포커스가 간다.</li><li>포커스가 가지 않도록 해보자.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/2757973/can-i-ignore-some-website-element-when-navigating-using-the-tab-key">https://stackoverflow.com/questions/2757973/can-i-ignore-some-website-element-when-navigating-using-the-tab-key</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight html"><figcaption><span>example.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">tabindex</span>=<span class="string">&quot;-1&quot;</span>&gt;</span>나는 탭 키를 눌러도 포커스 되지 않지.<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>나는 탭 키를 누르면 포커스 되지...<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight jsx"><figcaption><span>example.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;button</span><br><span class="line">  type=<span class="string">&quot;button&quot;</span></span><br><span class="line">  tabIndex=&#123;<span class="number">-1</span>&#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure><ul><li>입력폼 같은걸을 작성할 때, tab 키로 다음 칸을 넘어가서 작성하는 경우가 있는데,</li><li>tab 키는 기본적으로 button에도 포커스가 간다.</li><li>포커스가 가지 않도록 해보자.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/2757973/can-i-ignore-some-website-element-when-navigating-using-the-tab-key">https://stackoverflow.com/questions/2757973/can-i-ignore-some-website-element-when-navigating-using-the-tab-key</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/web/">web</category>
@@ -626,34 +657,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/11/30/keydown-event-preventDefault/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>keyboardevent.io</title>
-      <link>https://chinsun9.github.io/2020/11/25/keyboardevent-io/</link>
-      <guid>https://chinsun9.github.io/2020/11/25/keyboardevent-io/</guid>
-      <pubDate>Wed, 25 Nov 2020 05:56:09 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;a href=&quot;https://chinsun9.github.io/keyboardevent.io/&quot;&gt;&lt;img src=&quot;https://github.com/chinsun9/keyboardevent.io/raw/main/readmeRes/demo.gif</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><a href="https://chinsun9.github.io/keyboardevent.io/"><img src="https://github.com/chinsun9/keyboardevent.io/raw/main/readmeRes/demo.gif" alt=" "></a></p><ul><li>keyboardevent.io 를 만들어보았다.</li><li>웹에 포커스를 두고 키를 입력하면 그대로 화면에 출력한다.</li><li>출력되는 정보는 <code>keydown</code>이벤트의 정보들이다.</li></ul><ul><li>키 이벤트 관련 로직 짤 때, 들어가서 키코드 확인하기 좋을 것 같다.</li></ul><h2 id="심심하면-업데이트할-것"><a href="#심심하면-업데이트할-것" class="headerlink" title="심심하면 업데이트할 것"></a>심심하면 업데이트할 것</h2><ul><li>히스토리 만들기</li></ul><h2 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h2><ul><li><a href="https://github.com/chinsun9/keyboardevent.io/blob/main/js/index.js">keyboardevent.io/js/index.js</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/keyboardevent/">keyboardevent</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/11/25/keyboardevent-io/#disqus_thread</comments>
       
     </item>
     
