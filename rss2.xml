@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 21 Dec 2020 07:59:22 GMT</pubDate>
+    <pubDate>Mon, 21 Dec 2020 08:44:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>string to number 요상한 문법 (js)</title>
+      <link>https://chinsun9.github.io/2020/12/21/string-to-number-%EC%9A%94%EC%83%81%ED%95%9C-%EB%AC%B8%EB%B2%95-js/</link>
+      <guid>https://chinsun9.github.io/2020/12/21/string-to-number-%EC%9A%94%EC%83%81%ED%95%9C-%EB%AC%B8%EB%B2%95-js/</guid>
+      <pubDate>Mon, 21 Dec 2020 08:44:55 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/string-to-number-%EC%9A%94%EC%83%81%ED%95%9C-%EB%AC%B8%EB%B2%95-js20201221/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;string ty</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/string-to-number-%EC%9A%94%EC%83%81%ED%95%9C-%EB%AC%B8%EB%B2%95-js20201221/preview.png" alt=" "></p><ul><li>string type 변수앞에 <code>+</code> 기호를 넣으면 number type 으로 캐스팅된다…</li><li>이런 문법은 wow…</li></ul><figure class="highlight ts"><figcaption><span>example.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">squareValue</span>(<span class="params">x: <span class="built_in">any</span></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Math</span>.pow(x * <span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">squareValue</span>(<span class="params">x: <span class="built_in">string</span> | <span class="built_in">number</span></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Math</span>.pow(+x, <span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>any 사용을 피하라는 예제를 코드를 보는데 우연히 알게되었다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.sitepoint.com/10-essential-typescript-tips-tricks-angular/#typescripttip5avoidanyunlessitreallyisany">https://www.sitepoint.com/10-essential-typescript-tips-tricks-angular/#typescripttip5avoidanyunlessitreallyisany</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/21/string-to-number-%EC%9A%94%EC%83%81%ED%95%9C-%EB%AC%B8%EB%B2%95-js/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>typescript에서 mathjs 사용해서 소수점 정확하게 계산하기</title>
@@ -629,42 +657,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/02/Smooth-Page-Transitions/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>github api로 유명한 레포 첫 커밋 메시지 확인하기</title>
-      <link>https://chinsun9.github.io/2020/12/02/github-api%EB%A1%9C-%EC%9C%A0%EB%AA%85%ED%95%9C-%EB%A0%88%ED%8F%AC-%EC%B2%AB-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/12/02/github-api%EB%A1%9C-%EC%9C%A0%EB%AA%85%ED%95%9C-%EB%A0%88%ED%8F%AC-%EC%B2%AB-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Wed, 02 Dec 2020 02:31:34 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;엄청큰 오픈소스 저장소를 보면 커밋 개수가 어마어마하다.&lt;/li&gt;
-&lt;li&gt;첫 커밋을 확인하려고, 브라우저에서 커밋 목록으로 들어가서 한페이지 한페이지씩 넘겨가면서 찾을 수 없을 것이다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;/im</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>엄청큰 오픈소스 저장소를 보면 커밋 개수가 어마어마하다.</li><li>첫 커밋을 확인하려고, 브라우저에서 커밋 목록으로 들어가서 한페이지 한페이지씩 넘겨가면서 찾을 수 없을 것이다.</li></ul><p><img src="/images/github-api%EB%A1%9C-%EC%9C%A0%EB%AA%85%ED%95%9C-%EB%A0%88%ED%8F%AC-%EC%B2%AB-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B020201202/preview.jpg" alt=" "></p><ul><li>vscode의 첫번째 커밋은 어떤 커밋일까?</li></ul><blockquote><p><code>Hello Code</code></p></blockquote><h2 id="github-api로-첫-커밋-확인하기"><a href="#github-api로-첫-커밋-확인하기" class="headerlink" title="github api로 첫 커밋 확인하기"></a>github api로 첫 커밋 확인하기</h2><ul><li>약간 수동적인 방법이다.</li></ul><blockquote><p><a href="https://api.github.com/repos/microsoft/vscode/commits?page=73698&amp;per_page=1">https://api.github.com/repos/microsoft/vscode/commits?page=73698&amp;per_page=1</a></p></blockquote><ul><li>브라우저로 vscode 레포에 접속해서 총 <code>커밋 개수</code>를 확인한다.</li><li>github api 중에 커밋 목록을 보여주는 api가 있다.</li><li>파라매터로 page에 <code>커밋 개수</code>를, per_page는 <code>1</code>로 설정해주면 첫번째 커밋을 가져올 수 있다.</li><li>그리고 시간이 지남에 따라 새로운 커밋이 생기고, 커밋 개수가 증가하게 되면서, 나중에 다시 보려면 page 파라매터의 값을 새롭게 설정해줘야 하는 문제가 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>찾아보니까 스크립트로 여러사람들이 만들어 놓은것을 확인할 수 있었다.</li></ul><h3 id="shell-script"><a href="#shell-script" class="headerlink" title="shell script"></a>shell script</h3><ul><li><a href="https://gist.github.com/0penBrain/7be59a48aba778c955d992aa69e524c5">https://gist.github.com/0penBrain/7be59a48aba778c955d992aa69e524c5</a></li></ul><h3 id="python-js"><a href="#python-js" class="headerlink" title="python, js"></a>python, js</h3><ul><li><a href="https://gist.github.com/yershalom/a7c08f9441d1aadb13777bce4c7cdc3b">https://gist.github.com/yershalom/a7c08f9441d1aadb13777bce4c7cdc3b</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github-api/">github api</category>
-      
-      <category domain="https://chinsun9.github.io/tags/commits/">commits</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/02/github-api%EB%A1%9C-%EC%9C%A0%EB%AA%85%ED%95%9C-%EB%A0%88%ED%8F%AC-%EC%B2%AB-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
