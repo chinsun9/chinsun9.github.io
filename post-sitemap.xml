@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/09/17/favicon%EC%9D%B4-%EC%95%88%EB%82%98%EC%98%A4%EB%8A%94-%EB%AC%B8%EC%A0%9C/</loc>
+        <lastmod>2020-12-21T00:29:57.993Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/12/18/react%EB%A1%9C-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B8-%ED%87%B4%EA%B7%BC%EC%8B%9C%EA%B0%84-%EA%B3%84%EC%82%B0%EA%B8%B0/</loc>
         <lastmod>2020-12-18T08:41:40.351Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1674,14 +1682,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/09/17/github-io-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-readme-md-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
         <lastmod>2020-09-22T08:59:27.904Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/17/favicon%EC%9D%B4-%EC%95%88%EB%82%98%EC%98%A4%EB%8A%94-%EB%AC%B8%EC%A0%9C/</loc>
-        <lastmod>2020-09-22T08:59:22.482Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
