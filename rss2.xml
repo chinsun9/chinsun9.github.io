@@ -9,8 +9,42 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 18 Dec 2020 08:41:40 GMT</pubDate>
+    <pubDate>Mon, 21 Dec 2020 07:59:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>typescript에서 mathjs 사용해서 소수점 정확하게 계산하기</title>
+      <link>https://chinsun9.github.io/2020/12/21/typescript%EC%97%90%EC%84%9C-mathjs-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/12/21/typescript%EC%97%90%EC%84%9C-mathjs-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Mon, 21 Dec 2020 07:59:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/typescript%EC%97%90%EC%84%9C-mathjs-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B020201221/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;부동소</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/typescript%EC%97%90%EC%84%9C-mathjs-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B020201221/preview.png" alt=" "></p><ul><li>부동소수점으로 인한 계산 오류가 있다.</li><li>mathjs 라이브러리로 해결해보자.</li></ul><h2 id="mathjs-설치"><a href="#mathjs-설치" class="headerlink" title="mathjs 설치"></a>mathjs 설치</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yarn add mathjs</span><br><span class="line">yarn add @types&#x2F;mathjs -D</span><br></pre></td></tr></table></figure><ul><li><code>mathjs</code>만 설치하면 타입 정의가 없기 때문에</li><li><code>@types/mathjs</code> 보조 라이브러리까지 설치</li></ul><h2 id="mathjs-임포트"><a href="#mathjs-임포트" class="headerlink" title="mathjs 임포트"></a>mathjs 임포트</h2><figure class="highlight ts"><figcaption><span>example1.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> math <span class="keyword">from</span> <span class="string">&quot;mathjs&quot;</span>;</span><br></pre></td></tr></table></figure><ul><li>그냥 기본값으로 사용하려면 <code>import * as math from &#39;mathjs&#39;</code>로 불러와 사용</li><li>default export가 없어서 <code>import math from &#39;mathjs&#39;</code>이런 식으로 사용불가.<ul><li><code>Attempted import error: &quot;mathjs&quot; does not contain a default export</code></li></ul></li></ul><figure class="highlight ts"><figcaption><span>example2.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; create, all &#125; <span class="keyword">from</span> <span class="string">&quot;mathjs&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> mathF = create(all, &#123; <span class="built_in">number</span>: <span class="string">&quot;Fraction&quot;</span> &#125;) <span class="keyword">as</span> math.MathJsStatic;</span><br></pre></td></tr></table></figure><ul><li>지정 config를 적용해 사용하려면 create 메서드 사용</li><li><code>create(all, &#123; number: &#39;Fraction&#39; &#125;) as math.MathJsStatic</code></li><li>as 키워드로 타입을 명시하지 않으면 undefined 에러 발생<ul><li><code>Cannot invoke an object which is possibly &#39;undefined&#39;</code></li></ul></li></ul><h2 id="소수점-계산"><a href="#소수점-계산" class="headerlink" title="소수점 계산"></a>소수점 계산</h2><figure class="highlight ts"><figcaption><span>calc.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; create, all &#125; <span class="keyword">from</span> <span class="string">&quot;mathjs&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> mathF = create(all, &#123; <span class="built_in">number</span>: <span class="string">&quot;Fraction&quot;</span> &#125;) <span class="keyword">as</span> math.MathJsStatic;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> mathjsCalc = <span class="function">(<span class="params">expr: <span class="built_in">string</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> mathF.number(mathF.evaluate(expr));</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> result = mathjsCalc(<span class="string">`<span class="subst">$&#123;value1&#125;</span> * <span class="subst">$&#123;value2&#125;</span> * 0.01`</span>);</span><br></pre></td></tr></table></figure><ul><li>evaluate메서드를 사용해서 수식 string을 주면 알아서 계산하도록 했다.</li><li>이때 math ConfigOptions에서 number 옵션이 기본값(number)인 경우에 일반적인 계산이 된다.</li><li>number 옵션에 <code>Fraction</code>을 주고 생성하게 되면 evaluate 메서드에서 숫자를 Fraction 타입으로 파싱 해서 계산하게 되어 우리가 기대하는 결과를 얻을 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/chinsun9/react-percentage-calculator">https://github.com/chinsun9/react-percentage-calculator</a></li><li><a href="https://mathjs.org/docs/getting_started.html">https://mathjs.org/docs/getting_started.html</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/mathjs/">mathjs</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/21/typescript%EC%97%90%EC%84%9C-mathjs-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>react로 만들어본 퇴근시간 계산기</title>
@@ -631,36 +665,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/02/github-api%EB%A1%9C-%EC%9C%A0%EB%AA%85%ED%95%9C-%EB%A0%88%ED%8F%AC-%EC%B2%AB-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>firebase 호스팅한 앱 종료하기</title>
-      <link>https://chinsun9.github.io/2020/12/02/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C/</link>
-      <guid>https://chinsun9.github.io/2020/12/02/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C/</guid>
-      <pubDate>Wed, 02 Dec 2020 01:32:28 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C20201202/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;firebase를 처음 사용해보았다.</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C20201202/preview.jpg" alt=" "></p><ul><li>firebase를 처음 사용해보았다.</li><li>비용 걱정으로 호스팅한 앱이나, 함수들을 사용하지 않을 때 꺼두려고 한다.</li></ul><h2 id="호스팅-종료"><a href="#호스팅-종료" class="headerlink" title="호스팅 종료"></a>호스팅 종료</h2><ul><li>cli에서 firebase-tools 를 이용해야한다.</li></ul><p><img src="/images/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C20201202/1.jpg" alt=" "></p><figure class="highlight cmd"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firebase hosting:disable</span><br></pre></td></tr></table></figure><ul><li>호스팅했던 앱 url로 접속해서 확인해보자</li></ul><h2 id="함수-삭제"><a href="#함수-삭제" class="headerlink" title="함수 삭제"></a>함수 삭제</h2><p><img src="/images/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C20201202/3.jpg" alt=" "></p><ul><li>함수(백엔드, api)는 브라우저로 firebase 콘솔에 접속해서 삭제할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/42591099/how-do-i-remove-a-hosted-site-from-firebase">how-do-i-remove-a-hosted-site-from-firebase</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/firebase/">firebase</category>
-      
-      <category domain="https://chinsun9.github.io/tags/firebase-tools/">firebase-tools</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/02/firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%A2%85%EB%A3%8C/#disqus_thread</comments>
       
     </item>
     
