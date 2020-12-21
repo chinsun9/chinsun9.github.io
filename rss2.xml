@@ -9,8 +9,66 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 21 Dec 2020 08:44:55 GMT</pubDate>
+    <pubDate>Mon, 21 Dec 2020 08:54:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>리눅스 백그라운드 프로세스 확인 명령어</title>
+      <link>https://chinsun9.github.io/2020/12/21/%EB%A6%AC%EB%88%85%EC%8A%A4-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%ED%99%95%EC%9D%B8-%EB%AA%85%EB%A0%B9%EC%96%B4/</link>
+      <guid>https://chinsun9.github.io/2020/12/21/%EB%A6%AC%EB%88%85%EC%8A%A4-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%ED%99%95%EC%9D%B8-%EB%AA%85%EB%A0%B9%EC%96%B4/</guid>
+      <pubDate>Mon, 21 Dec 2020 08:54:26 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 리눅스 백그라운드 프로세스 확인</span><br><span class="line">ps</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 모든 프로세스</span><br><span class="line">ps -e</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 모든 프로세스 + 풀 리스트(uid, pid, ...)</span><br><span class="line">ps -ef</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; &#39;www&#39;를 포함하는 결과만 표시</span><br><span class="line">ps -ef|grep www</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/linux/">linux</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/21/%EB%A6%AC%EB%88%85%EC%8A%A4-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%ED%99%95%EC%9D%B8-%EB%AA%85%EB%A0%B9%EC%96%B4/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>리눅스 shutdown 명령어</title>
+      <link>https://chinsun9.github.io/2020/12/21/linux-shutdown-%EB%AA%85%EB%A0%B9%EC%96%B4/</link>
+      <guid>https://chinsun9.github.io/2020/12/21/linux-shutdown-%EB%AA%85%EB%A0%B9%EC%96%B4/</guid>
+      <pubDate>Mon, 21 Dec 2020 08:49:12 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 지금종료</span><br><span class="line">sudo shutdown -h now</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 재시작</span><br><span class="line">sudo shutdown -r now</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 종료예약 취소</span><br><span class="line">sudo shutdown -c</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/linux/">linux</category>
+      
+      <category domain="https://chinsun9.github.io/tags/shutdown/">shutdown</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/21/linux-shutdown-%EB%AA%85%EB%A0%B9%EC%96%B4/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>string to number 요상한 문법 (js)</title>
@@ -578,85 +636,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/04/%EC%98%88%EC%81%9C-%EA%B7%B8%EB%9D%BC%EB%94%94%EC%96%B8%ED%8A%B8/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>hexo icarus 테마 프로필영역 css 수정</title>
-      <link>https://chinsun9.github.io/2020/12/03/hexo-icarus-%ED%85%8C%EB%A7%88-%ED%94%84%EB%A1%9C%ED%95%84%EC%98%81%EC%97%AD-css-%EC%88%98%EC%A0%95/</link>
-      <guid>https://chinsun9.github.io/2020/12/03/hexo-icarus-%ED%85%8C%EB%A7%88-%ED%94%84%EB%A1%9C%ED%95%84%EC%98%81%EC%97%AD-css-%EC%88%98%EC%A0%95/</guid>
-      <pubDate>Thu, 03 Dec 2020 00:40:42 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/hexo-icarus-%ED%85%8C%EB%A7%88-%ED%94%84%EB%A1%9C%ED%95%84%EC%98%81%EC%97%AD-css-%EC%88%98%EC%A0%9520201203/preview.jpg</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/hexo-icarus-%ED%85%8C%EB%A7%88-%ED%94%84%EB%A1%9C%ED%95%84%EC%98%81%EC%97%AD-css-%EC%88%98%EC%A0%9520201203/preview.jpg" alt=" "></p><ul><li>오랜만에 블로그 이미지 들을 바꿨다.</li><li>적용시키고 나니까 128x128 사이즈에 안어울리는 것 같아서</li><li>크기 제한을 풀었다.</li></ul><figure class="highlight jsx"><figcaption><span>layout/widget/profile.jsx 37 line</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;<span class="comment">/* &lt;figure class=&quot;image is-128x128 mx-auto mb-2&quot;&gt; */</span>&#125;</span><br><span class="line">&lt;figure <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;image mx-auto mb-2&quot;</span>&gt;</span><br></pre></td></tr></table></figure><ul><li>is-128x128 을 없애준다.</li><li>또는 자신의 고유한 클래스를 넣어주고 커스텀해도된다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/react/">react</category>
-      
-      <category domain="https://chinsun9.github.io/tags/hexo/">hexo</category>
-      
-      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
-      
-      <category domain="https://chinsun9.github.io/tags/icarus/">icarus</category>
-      
-      <category domain="https://chinsun9.github.io/tags/styl/">styl</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/03/hexo-icarus-%ED%85%8C%EB%A7%88-%ED%94%84%EB%A1%9C%ED%95%84%EC%98%81%EC%97%AD-css-%EC%88%98%EC%A0%95/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Smooth Page Transitions</title>
-      <link>https://chinsun9.github.io/2020/12/02/Smooth-Page-Transitions/</link>
-      <guid>https://chinsun9.github.io/2020/12/02/Smooth-Page-Transitions/</guid>
-      <pubDate>Wed, 02 Dec 2020 06:30:04 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=1dJT-99KpiI&quot;&gt;Smooth Page Transitions With Javascript Tutorial&lt;/a&gt;를 보고 따라만들었다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li><a href="https://www.youtube.com/watch?v=1dJT-99KpiI">Smooth Page Transitions With Javascript Tutorial</a>를 보고 따라만들었다.</li></ul><h2 id="결과"><a href="#결과" class="headerlink" title="결과"></a>결과</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/6KBjjOOqYcY" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li><a href="https://chinsun9.github.io/smooth-page-transitions/">보러가기</a></li></ul><h2 id="후기"><a href="#후기" class="headerlink" title="후기"></a>후기</h2><ul><li>영상 제목만 보고 단순히 css js를 이용한 트랜지션을 구현할 줄 알았는데,</li><li>node로 parcel, gsap, highway 를 사용해서 웹만드는 것을 배우게되었다.</li></ul><ul><li>parcel을 처음 써보았는데, 개발할 때도, 배포할 때에도 좋은 것 같다.</li><li>higyway와 gsap으로 애니메이션을 구현해 보았다.</li></ul><ul><li>parcel을 이용해 웹을 만들어 깃허브 페이지로 배포할 때,</li><li><code>parcel build index.html --out-dir docs --public-url ./</code></li><li>위 처럼 옵션을 넣어줘야한다.</li><li>–out-dir docs 는 깃허브 페이지 설정할 때 디렉터리</li><li>–public-url ./ 는 이미지, css, js 경로가 망가지지 않도록한다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.youtube.com/watch?v=1dJT-99KpiI">Smooth Page Transitions With Javascript Tutorial</a></li><li><a href="https://www.sitepoint.com/parcel-hyperapp-github-pages/">Use Parcel to Bundle a Hyperapp App &amp; Deploy to GitHub Pages</a></li><li><a href="https://github.com/chinsun9/smooth-page-transitions">https://github.com/chinsun9/smooth-page-transitions</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/scss/">scss</category>
-      
-      <category domain="https://chinsun9.github.io/tags/highway-js/">highway js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/gsap/">gsap</category>
-      
-      <category domain="https://chinsun9.github.io/tags/parcel/">parcel</category>
-      
-      <category domain="https://chinsun9.github.io/tags/svg/">svg</category>
-      
-      <category domain="https://chinsun9.github.io/tags/freepik/">freepik</category>
-      
-      <category domain="https://chinsun9.github.io/tags/flaticon/">flaticon</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/02/Smooth-Page-Transitions/#disqus_thread</comments>
       
     </item>
     
