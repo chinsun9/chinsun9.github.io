@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 21 Dec 2020 08:54:26 GMT</pubDate>
+    <pubDate>Tue, 22 Dec 2020 04:09:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>input spellcheck off, input 빨간줄 없애기</title>
+      <link>https://chinsun9.github.io/2020/12/22/input-spellcheck-off/</link>
+      <guid>https://chinsun9.github.io/2020/12/22/input-spellcheck-off/</guid>
+      <pubDate>Tue, 22 Dec 2020 04:09:44 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/input-spellcheck-off20201222/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight jsx&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example.tsx&lt;/spa</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/input-spellcheck-off20201222/preview.png" alt=" "></p><figure class="highlight jsx"><figcaption><span>example.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;input</span><br><span class="line">  ref=&#123;inputRef&#125;</span><br><span class="line">  type=<span class="string">&quot;text&quot;</span></span><br><span class="line">  value=&#123;shareLink&#125;</span><br><span class="line">  onClick=&#123;onLinkClickHandler&#125;</span><br><span class="line">  spellCheck=&#123;<span class="literal">false</span>&#125;</span><br><span class="line">  readOnly</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure><figure class="highlight html"><figcaption><span>example.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">spellcheck</span>=<span class="string">&quot;false&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure><ul><li>input안의 빨간 줄 생기는 것을 없앨 수 있다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/html/">html</category>
+      
+      <category domain="https://chinsun9.github.io/tags/input/">input</category>
+      
+      <category domain="https://chinsun9.github.io/tags/spellCheck/">spellCheck</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/22/input-spellcheck-off/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>리눅스 백그라운드 프로세스 확인 명령어</title>
@@ -605,37 +638,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/04/Cannot-use-JSX-unless-the-jsx-flag-is-provided-ts-17004/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>예쁜 그라디언트</title>
-      <link>https://chinsun9.github.io/2020/12/04/%EC%98%88%EC%81%9C-%EA%B7%B8%EB%9D%BC%EB%94%94%EC%96%B8%ED%8A%B8/</link>
-      <guid>https://chinsun9.github.io/2020/12/04/%EC%98%88%EC%81%9C-%EA%B7%B8%EB%9D%BC%EB%94%94%EC%96%B8%ED%8A%B8/</guid>
-      <pubDate>Fri, 04 Dec 2020 00:17:21 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/%EC%98%88%EC%81%9C-%EA%B7%B8%EB%9D%BC%EB%94%94%EC%96%B8%ED%8A%B820201204/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/%EC%98%88%EC%81%9C-%EA%B7%B8%EB%9D%BC%EB%94%94%EC%96%B8%ED%8A%B820201204/preview.jpg" alt=" "></p><p><a href="https://webgradients.com/">Fresh Background Gradients | WebGradients.com 💎</a></p><ul><li>예쁜 그라디언트 복붙해 오는 곳</li><li>png 이미지 또는</li><li>css 쉽게 가져올 수 있다</li></ul><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.gradient</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(</span><br><span class="line">    <span class="number">45deg</span>,</span><br><span class="line">    #ff9a9e <span class="number">0%</span>,</span><br><span class="line">    #fad0c4 <span class="number">99%</span>,</span><br><span class="line">    #fad0c4 <span class="number">100%</span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/css/">css</category>
-      
-      <category domain="https://chinsun9.github.io/tags/gradient/">gradient</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/04/%EC%98%88%EC%81%9C-%EA%B7%B8%EB%9D%BC%EB%94%94%EC%96%B8%ED%8A%B8/#disqus_thread</comments>
       
     </item>
     
