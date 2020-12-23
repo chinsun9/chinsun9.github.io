@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 22 Dec 2020 04:09:44 GMT</pubDate>
+    <pubDate>Wed, 23 Dec 2020 01:25:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Antimalware Service Executable 미쳐버린 메모리 점유율</title>
+      <link>https://chinsun9.github.io/2020/12/23/Antimalware-Service-Executable-%EB%AF%B8%EC%B3%90%EB%B2%84%EB%A6%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A8/</link>
+      <guid>https://chinsun9.github.io/2020/12/23/Antimalware-Service-Executable-%EB%AF%B8%EC%B3%90%EB%B2%84%EB%A6%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A8/</guid>
+      <pubDate>Wed, 23 Dec 2020 01:25:30 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/Antimalware-Service-Executable-%EB%AF%B8%EC%B3%90%EB%B2%84%EB%A6%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/Antimalware-Service-Executable-%EB%AF%B8%EC%B3%90%EB%B2%84%EB%A6%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A820201222/preview.png" alt=" "></p><ul><li>윈도우 디펜더 프로세스가 메모리를 엄청나게 먹어서 골머리 아프다.</li><li>기본 300mb 정도이고 어쩔 땐 막 2gb 가까이 올라간다..</li><li>그땐 마우스가 막 끊기면서 불편하다..</li><li>해결법 보고 따라 했는데 300mb 정도 나오는데 더 지켜봐야겠다.</li></ul><ul><li>8기가로는 이것저것 하기엔 좀 부족한 메모리인 것 같다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>윈도우즈10 Antimalware Service Executable 메모리 점유 과다 문제 ; <a href="https://antilibrary.org/2371">https://antilibrary.org/2371</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/windows/">windows</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/windows/">windows</category>
+      
+      <category domain="https://chinsun9.github.io/tags/Antimalware-Service-Executable/">Antimalware Service Executable</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/23/Antimalware-Service-Executable-%EB%AF%B8%EC%B3%90%EB%B2%84%EB%A6%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A8/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>input spellcheck off, input 빨간줄 없애기</title>
@@ -194,9 +222,9 @@
       
       <category domain="https://chinsun9.github.io/tags/hook/">hook</category>
       
-      <category domain="https://chinsun9.github.io/tags/gsap/">gsap</category>
-      
       <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
+      
+      <category domain="https://chinsun9.github.io/tags/gsap/">gsap</category>
       
       <category domain="https://chinsun9.github.io/tags/moment/">moment</category>
       
@@ -598,46 +626,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/07/Select-elements-must-be-either-controlled-or-uncontrolled/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Cannot use JSX unless the &#39;--jsx&#39; flag is provided.ts(17004)</title>
-      <link>https://chinsun9.github.io/2020/12/04/Cannot-use-JSX-unless-the-jsx-flag-is-provided-ts-17004/</link>
-      <guid>https://chinsun9.github.io/2020/12/04/Cannot-use-JSX-unless-the-jsx-flag-is-provided-ts-17004/</guid>
-      <pubDate>Fri, 04 Dec 2020 06:16:49 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/Cannot-use-JSX-unless-the-jsx-flag-is-provided-ts-17004/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;react typescript에서 tsconfig가</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/Cannot-use-JSX-unless-the-jsx-flag-is-provided-ts-17004/preview.jpg" alt=" "></p><ul><li>react typescript에서 tsconfig가 계속 자동수정되는 문제 해결하기.</li></ul><figure class="highlight plain"><figcaption><span>오류 메시지 모음</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Cannot use JSX unless the &#39;--jsx&#39; flag is provided.ts(17004)</span><br><span class="line"></span><br><span class="line">Specify JSX code generation: &#39;preserve&#39;, &#39;react&#39;, &#39;react-jsx&#39;, &#39;react-jsxdev&#39; or&#39;react-native&#39;. Requires TypeScript version 2.2 or later.</span><br><span class="line"></span><br><span class="line">The following changes are being made to your tsconfig.json file:</span><br><span class="line">  - compilerOptions.jsx must be react-jsx (to support the new JSX transform in React 17)</span><br></pre></td></tr></table></figure><p><img src="/images/Cannot-use-JSX-unless-the-jsx-flag-is-provided-ts-17004/1.jpg" alt=" "></p><ul><li>.ts, .tsx 확장자의 아무 파일이나 열고,</li><li>F1 &gt; TypeScript 검색</li><li><code>TypeScript: Select TypeScript Version...</code> 선택</li><li>주의 : (타입스크립트 관련 파일이여야 위 명령이 검색된다)</li></ul><p><img src="/images/Cannot-use-JSX-unless-the-jsx-flag-is-provided-ts-17004/2.jpg" alt=" "></p><ul><li><code>Use Workspace Version</code> 을 선택해준다.</li></ul><figure class="highlight plain"><figcaption><span>.vscode/settings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &#x2F;&#x2F; (...)</span><br><span class="line">  &quot;typescript.tsdk&quot;: &quot;node_modules\\typescript\\lib&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><em>.vscode/settings.json</em> 가보면 이렇게 업데이트 된것을 확인할 수 있다.</li></ul><h2 id="TMI"><a href="#TMI" class="headerlink" title="TMI"></a>TMI</h2><h3 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h3><ul><li>react typescript eslint airbnb rule 로 개발하는데</li><li><code>yarn start</code>로 시작을 하면 자동으로 tsconfig.json의</li><li>compilerOptions &gt; jsx 가 자동으로 “react-jsx”로 업데이트 됬다.</li><li>그런데 나는 “react-jsx”일 때 빨간줄이 마구 그어졌다.</li><li>그래서 yarn start 이후에 수동으로 “react”로 변경해 주었었다…</li></ul><h3 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h3><ul><li>워크스페이스의 typescript가 사용되지 않아서 발생한 문제였다.</li><li>compilerOptions &gt; jsx 가 “react-jsx” 여도 빨간줄이 안생긴다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/64974648/problem-with-visual-studio-code-using-react-jsx-as-jsx-value-with-create-react">problem-with-visual-studio-code-using-react-jsx-as-jsx-value-with-create-react</a></li><li><a href="https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-the-workspace-version-of-typescript">using-the-workspace-version-of-typescript</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/react/">react</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
-      
-      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/react/">react</category>
-      
-      <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
-      
-      <category domain="https://chinsun9.github.io/tags/tsconfig/">tsconfig</category>
-      
-      <category domain="https://chinsun9.github.io/tags/react-jsx/">react-jsx</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/04/Cannot-use-JSX-unless-the-jsx-flag-is-provided-ts-17004/#disqus_thread</comments>
       
     </item>
     
