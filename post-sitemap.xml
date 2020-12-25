@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/11/17/react-eslint-prettier-airbnb-style-guide-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2020-12-25T08:30:44.490Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/12/23/sass-scss-%EC%97%B0%EC%8A%B5/</loc>
         <lastmod>2020-12-23T06:52:47.425Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -122,14 +130,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/12/react-typescript-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2020-12-23T00:06:39.361Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/17/react-eslint-prettier-airbnb-style-guide-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2020-12-23T00:06:39.338Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
