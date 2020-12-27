@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 23 Dec 2020 06:52:47 GMT</pubDate>
+    <pubDate>Sun, 27 Dec 2020 11:46:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>SQL Formatter vscode 확장도구</title>
+      <link>https://chinsun9.github.io/2020/12/27/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC/</link>
+      <guid>https://chinsun9.github.io/2020/12/27/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC/</guid>
+      <pubDate>Sun, 27 Dec 2020 11:46:49 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Format Document&lt;/code&gt; 로 &lt;code&gt;.sql&lt;/code&gt; 포맷팅하기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;/images/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li><code>Format Document</code> 로 <code>.sql</code> 포맷팅하기</li></ul><p><img src="/images/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC20201227/preview.png" alt=" "></p><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter">https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter</a></li><li><code>sql-formatter</code> 확장도구 설치</li></ul><figure class="highlight plain"><figcaption><span>settings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &#x2F;&#x2F; ...</span><br><span class="line"></span><br><span class="line">  &quot;[sql]&quot;: &#123;</span><br><span class="line">    &#x2F;&#x2F; 방금 설치한 익스텐션을 통해 포맷팅하도록</span><br><span class="line">    &quot;editor.defaultFormatter&quot;: &quot;adpyke.vscode-sql-formatter&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &#x2F;&#x2F; sql 키워드(select, from 등)를 대문자로 자동 치환해줌.</span><br><span class="line">  &quot;sql-formatter.uppercase&quot;: true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>위처럼 세팅해주고 <code>Format Document</code> 명령을 실행하면 잘 동작하는 것을 확인할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter">https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/formatter/">formatter</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/27/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>sass, scss 연습</title>
@@ -597,36 +630,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/15/playlist-202012/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>202011 검색 실적</title>
-      <link>https://chinsun9.github.io/2020/12/08/202011-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/</link>
-      <guid>https://chinsun9.github.io/2020/12/08/202011-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/</guid>
-      <pubDate>Tue, 08 Dec 2020 01:04:36 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/202011-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%8120201208/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;오.. google search console에서 검색 </description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/202011-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%8120201208/preview.jpg" alt=" "></p><ul><li>오.. google search console에서 검색 실적을 메일로 알려준다. ㅋㅋ</li><li>깃헙 블로그도 어느덧 시작한 지 3달 정도 돼간다…</li><li>블로그 글은 개발하면서 새로 알게된 것들을 메모장같이 작성하고 있고,, 일부는 공략집처럼 작성하고 있다..(도움이 되길 바라며..)</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/google-search-console/">google search console</category>
-      
-      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/08/202011-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/#disqus_thread</comments>
       
     </item>
     
