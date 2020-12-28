@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sun, 27 Dec 2020 11:46:49 GMT</pubDate>
+    <pubDate>Mon, 28 Dec 2020 11:07:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>타자 속도</title>
+      <link>https://chinsun9.github.io/2020/12/28/%ED%83%80%EC%9E%90-%EC%86%8D%EB%8F%84/</link>
+      <guid>https://chinsun9.github.io/2020/12/28/%ED%83%80%EC%9E%90-%EC%86%8D%EB%8F%84/</guid>
+      <pubDate>Mon, 28 Dec 2020 10:34:47 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;한타 ; 534타&lt;/li&gt;
+&lt;li&gt;영타 ; 329타&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;한타&quot;&gt;&lt;a href=&quot;#한타&quot; class=&quot;headerlink&quot; title=&quot;한타&quot;&gt;&lt;/a&gt;한타&lt;/h2&gt;&lt;div class=&quot;video-contai</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>한타 ; 534타</li><li>영타 ; 329타</li></ul><h2 id="한타"><a href="#한타" class="headerlink" title="한타"></a>한타</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/u3j-ndydcnU" frameborder="0" loading="lazy" allowfullscreen></iframe></div><h2 id="영타"><a href="#영타" class="headerlink" title="영타"></a>영타</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/oa722y5TxtQ" frameborder="0" loading="lazy" allowfullscreen></iframe></div><br><div class="video-container"><iframe src="https://www.youtube.com/embed/0hlAexpopJs" frameborder="0" loading="lazy" allowfullscreen></iframe></div>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/%ED%83%80%EC%9E%90%EC%86%8D%EB%8F%84/">타자속도</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/28/%ED%83%80%EC%9E%90-%EC%86%8D%EB%8F%84/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>SQL Formatter vscode 확장도구</title>
@@ -28,7 +58,7 @@
       
       
       
-      <content:encoded><![CDATA[<ul><li><code>Format Document</code> 로 <code>.sql</code> 포맷팅하기</li></ul><p><img src="/images/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC20201227/preview.png" alt=" "></p><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter">https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter</a></li><li><code>sql-formatter</code> 확장도구 설치</li></ul><figure class="highlight plain"><figcaption><span>settings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &#x2F;&#x2F; ...</span><br><span class="line"></span><br><span class="line">  &quot;[sql]&quot;: &#123;</span><br><span class="line">    &#x2F;&#x2F; 방금 설치한 익스텐션을 통해 포맷팅하도록</span><br><span class="line">    &quot;editor.defaultFormatter&quot;: &quot;adpyke.vscode-sql-formatter&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &#x2F;&#x2F; sql 키워드(select, from 등)를 대문자로 자동 치환해줌.</span><br><span class="line">  &quot;sql-formatter.uppercase&quot;: true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>위처럼 세팅해주고 <code>Format Document</code> 명령을 실행하면 잘 동작하는 것을 확인할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter">https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<ul><li><code>Format Document</code> 로 <code>.sql</code> 포맷팅하기</li></ul><p><img src="/images/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC20201227/preview.png" alt=" "></p><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter">https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter</a></li><li><code>sql-formatter</code> 확장도구 설치</li></ul><figure class="highlight json"><figcaption><span>settings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">&quot;[sql]&quot;</span>: &#123;</span><br><span class="line">    <span class="comment">// 방금 설치한 익스텐션을 통해 포맷팅하도록</span></span><br><span class="line">    <span class="attr">&quot;editor.defaultFormatter&quot;</span>: <span class="string">&quot;adpyke.vscode-sql-formatter&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">// sql 키워드(select, from 등)를 대문자로 자동 치환해줌.</span></span><br><span class="line">  <span class="attr">&quot;sql-formatter.uppercase&quot;</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>위처럼 세팅해주고 <code>Format Document</code> 명령을 실행하면 잘 동작하는 것을 확인할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter">https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
@@ -602,34 +632,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/15/tab-key%EB%A5%BC-%EB%88%8C%EB%A0%80%EC%9D%84-%EB%95%8C-%EB%B2%84%ED%8A%BC%EC%9C%BC%EB%A1%9C-%ED%8F%AC%EC%BB%A4%EC%8A%A4-%EB%90%98%EB%8A%94-%EA%B2%83-%EB%B0%A9%EC%A7%80%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>playlist 202012</title>
-      <link>https://chinsun9.github.io/2020/12/15/playlist-202012/</link>
-      <guid>https://chinsun9.github.io/2020/12/15/playlist-202012/</guid>
-      <pubDate>Tue, 15 Dec 2020 01:32:47 GMT</pubDate>
-      
-        
-        
-      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/videoseries?list=PLdEiQV70x8ZH3RG6fd-SX0_oyHbNFn-9z&quot; frameborder=&quot;0&quot;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/videoseries?list=PLdEiQV70x8ZH3RG6fd-SX0_oyHbNFn-9z" frameborder="0" loading="lazy" allowfullscreen></iframe></div><blockquote><p>~</p></blockquote>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/playlist/">playlist</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/playlist/">playlist</category>
-      
-      <category domain="https://chinsun9.github.io/tags/music/">music</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/15/playlist-202012/#disqus_thread</comments>
       
     </item>
     
