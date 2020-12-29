@@ -9,8 +9,43 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 28 Dec 2020 11:07:25 GMT</pubDate>
+    <pubDate>Tue, 29 Dec 2020 06:11:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>typescript에서 json import</title>
+      <link>https://chinsun9.github.io/2020/12/29/typescript%EC%97%90%EC%84%9C-json-import/</link>
+      <guid>https://chinsun9.github.io/2020/12/29/typescript%EC%97%90%EC%84%9C-json-import/</guid>
+      <pubDate>Tue, 29 Dec 2020 06:11:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/typescript%EC%97%90%EC%84%9C-json-import20201228/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/typescript%EC%97%90%EC%84%9C-json-import20201228/preview.png" alt=" "></p><figure class="highlight plain"><figcaption><span>tsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;compilerOptions&quot;: &#123;</span><br><span class="line">    &#x2F;&#x2F;...</span><br><span class="line">    &quot;resolveJsonModule&quot;: true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight ts"><figcaption><span>ex.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> myJsonData <span class="keyword">from</span> <span class="string">&quot;./myJson.json&quot;</span>;</span><br></pre></td></tr></table></figure><ul><li>이런식으로 가져다 쓸 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://gracefullight.dev/2019/11/26/import-json-with-typescript-ts5071/">https://gracefullight.dev/2019/11/26/import-json-with-typescript-ts5071/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/tsconfig/">tsconfig</category>
+      
+      <category domain="https://chinsun9.github.io/tags/json/">json</category>
+      
+      <category domain="https://chinsun9.github.io/tags/import/">import</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/29/typescript%EC%97%90%EC%84%9C-json-import/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>타자 속도</title>
@@ -604,34 +639,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/15/Clamp-number/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>tab key를 눌렀을 때 버튼으로 포커스 되는 것 방지하기</title>
-      <link>https://chinsun9.github.io/2020/12/15/tab-key%EB%A5%BC-%EB%88%8C%EB%A0%80%EC%9D%84-%EB%95%8C-%EB%B2%84%ED%8A%BC%EC%9C%BC%EB%A1%9C-%ED%8F%AC%EC%BB%A4%EC%8A%A4-%EB%90%98%EB%8A%94-%EA%B2%83-%EB%B0%A9%EC%A7%80%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/12/15/tab-key%EB%A5%BC-%EB%88%8C%EB%A0%80%EC%9D%84-%EB%95%8C-%EB%B2%84%ED%8A%BC%EC%9C%BC%EB%A1%9C-%ED%8F%AC%EC%BB%A4%EC%8A%A4-%EB%90%98%EB%8A%94-%EA%B2%83-%EB%B0%A9%EC%A7%80%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Tue, 15 Dec 2020 01:48:27 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight html&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example.html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/sp</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight html"><figcaption><span>example.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">tabindex</span>=<span class="string">&quot;-1&quot;</span>&gt;</span>나는 탭 키를 눌러도 포커스 되지 않지.<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>나는 탭 키를 누르면 포커스 되지...<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight jsx"><figcaption><span>example.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;button</span><br><span class="line">  type=<span class="string">&quot;button&quot;</span></span><br><span class="line">  tabIndex=&#123;<span class="number">-1</span>&#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure><ul><li>입력폼 같은걸을 작성할 때, tab 키로 다음 칸을 넘어가서 작성하는 경우가 있는데,</li><li>tab 키는 기본적으로 button에도 포커스가 간다.</li><li>포커스가 가지 않도록 해보자.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/2757973/can-i-ignore-some-website-element-when-navigating-using-the-tab-key">https://stackoverflow.com/questions/2757973/can-i-ignore-some-website-element-when-navigating-using-the-tab-key</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/tabindex/">tabindex</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/15/tab-key%EB%A5%BC-%EB%88%8C%EB%A0%80%EC%9D%84-%EB%95%8C-%EB%B2%84%ED%8A%BC%EC%9C%BC%EB%A1%9C-%ED%8F%AC%EC%BB%A4%EC%8A%A4-%EB%90%98%EB%8A%94-%EA%B2%83-%EB%B0%A9%EC%A7%80%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
