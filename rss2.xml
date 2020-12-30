@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 29 Dec 2020 06:11:26 GMT</pubDate>
+    <pubDate>Wed, 30 Dec 2020 06:00:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode 절대경로 import, require 하기</title>
+      <link>https://chinsun9.github.io/2020/12/30/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2020/12/30/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Wed, 30 Dec 2020 06:00:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B020201230/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B020201230/preview.png" alt=" "></p><ul><li>프로젝트 루트경로를 <code>/</code> 로 표현하고 싶은데, 방법이…</li></ul><figure class="highlight json"><figcaption><span>jsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;compilerOptions&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;baseUrl&quot;</span>: <span class="string">&quot;.&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;paths&quot;</span>: &#123;</span><br><span class="line">      <span class="comment">//Assuming your components/utilities live in ./src</span></span><br><span class="line">      <span class="comment">//Update this path as necessary</span></span><br><span class="line">      <span class="attr">&quot;/*&quot;</span>: [<span class="string">&quot;./*&quot;</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">//Add any build/compiled folders here to stop vscode searching those</span></span><br><span class="line">  <span class="attr">&quot;exclude&quot;</span>: [<span class="string">&quot;node_modules&quot;</span>, <span class="string">&quot;build&quot;</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/images/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B020201230/1.png" alt=" "></p><ul><li>이렇게 내가 지정한 대로 참조가 되는 것을 확인할 수 있다.</li><li>참고로, 위 <code>opt</code>디렉터리는 내 프로젝트 루트에 있는 디렉터리이다.</li></ul><h2 id="활용한-곳"><a href="#활용한-곳" class="headerlink" title="활용한 곳"></a>활용한 곳</h2><ul><li>sam project에서 공통 모듈을 layer로 빼는데,</li><li>layer로 뺀 공통 모듈을 임포트할 때 상대 경로를 사용하기 껄끄러운 문제가 있었다.</li></ul><ul><li>로컬에서 개발할때는 상대경로로 개발하다가 (자동완성 위해)</li><li>람다를 배포할 때에, 배포하기전에 절대경로로 바꿔준다거나 하는 귀찮은 과정이 있었는데</li><li>jsconfig로 절대경로를 사용해 내가 만든 공통 모듈을 임포트해서 사용하니까</li><li>그런 귀찮은 과정을 하지 않을 수 있었다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode">https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/jsconfig/">jsconfig</category>
+      
+      <category domain="https://chinsun9.github.io/tags/absolute-path/">absolute path</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/30/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>typescript에서 json import</title>
@@ -36,11 +68,11 @@
       
       <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
       
-      <category domain="https://chinsun9.github.io/tags/tsconfig/">tsconfig</category>
-      
       <category domain="https://chinsun9.github.io/tags/json/">json</category>
       
       <category domain="https://chinsun9.github.io/tags/import/">import</category>
+      
+      <category domain="https://chinsun9.github.io/tags/tsconfig/">tsconfig</category>
       
       
       <comments>https://chinsun9.github.io/2020/12/29/typescript%EC%97%90%EC%84%9C-json-import/#disqus_thread</comments>
@@ -99,9 +131,9 @@
       <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
       <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
       
       <category domain="https://chinsun9.github.io/tags/formatter/">formatter</category>
       
@@ -351,9 +383,9 @@
       
       <category domain="https://chinsun9.github.io/tags/hook/">hook</category>
       
-      <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
-      
       <category domain="https://chinsun9.github.io/tags/gsap/">gsap</category>
+      
+      <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
       
       <category domain="https://chinsun9.github.io/tags/moment/">moment</category>
       
@@ -609,36 +641,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/15/input-number-%ED%99%94%EC%82%B4%ED%91%9C-%EC%97%86%EC%95%A0%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Clamp number (js)</title>
-      <link>https://chinsun9.github.io/2020/12/15/Clamp-number/</link>
-      <guid>https://chinsun9.github.io/2020/12/15/Clamp-number/</guid>
-      <pubDate>Tue, 15 Dec 2020 01:57:01 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> clampNumber = <span class="function">(<span class="params">num, a, b</span>) =&gt;</span></span><br><span class="line">  <span class="built_in">Math</span>.max(<span class="built_in">Math</span>.min(num, <span class="built_in">Math</span>.max(a, b)), <span class="built_in">Math</span>.min(a, b));</span><br><span class="line"><span class="built_in">console</span>.log(clampNumber(<span class="number">-10</span>, <span class="number">0</span>, <span class="number">5</span>)); <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">console</span>.log(clampNumber(<span class="number">10</span>, <span class="number">0</span>, <span class="number">5</span>)); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure><ul><li>지정한 범위가 있고, 그 범위를 벗어나는 값이 들어왔을 때,</li><li>그 입력을 최소, 최대값 치환할 때 유용하다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-266.php">https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-266.php</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/clamp/">clamp</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/15/Clamp-number/#disqus_thread</comments>
       
     </item>
     
