@@ -9,8 +9,45 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 05 Jan 2021 01:10:59 GMT</pubDate>
+    <pubDate>Tue, 05 Jan 2021 01:27:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>forEach await 안되는 문제</title>
+      <link>https://chinsun9.github.io/2021/01/05/forEach-await-%EC%95%88%EB%90%98%EB%8A%94-%EB%AC%B8%EC%A0%9C/</link>
+      <guid>https://chinsun9.github.io/2021/01/05/forEach-await-%EC%95%88%EB%90%98%EB%8A%94-%EB%AC%B8%EC%A0%9C/</guid>
+      <pubDate>Tue, 05 Jan 2021 01:27:25 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;상황&quot;&gt;&lt;a href=&quot;#상황&quot; class=&quot;headerlink&quot; title=&quot;상황&quot;&gt;&lt;/a&gt;상황&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;배열로 저장되어 있는 데이터를 forEach로 순회하면서 db에 &lt;code&gt;INSERT&lt;/code&gt;하는 쿼리를 만들</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>배열로 저장되어 있는 데이터를 forEach로 순회하면서 db에 <code>INSERT</code>하는 쿼리를 만들려고 했다</li><li>근데 비동기적으로 동작했다</li></ul><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">await</span> data.forEach(<span class="keyword">async</span> (element: ArticlePreview, idx: <span class="built_in">number</span>) =&gt; &#123;</span><br><span class="line">  <span class="comment">// insert query</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> element <span class="keyword">of</span> data) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">const</span> a = <span class="keyword">await</span> databaseConnection.query(queryString, [</span><br><span class="line">          <span class="comment">// ...</span></span><br><span class="line">        ]);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><ul><li><code>for of</code>에서는 await을 통해서 순차적으로 처리가 가능했다</li></ul><h2 id="시도해보지-않은-다른-방향"><a href="#시도해보지-않은-다른-방향" class="headerlink" title="시도해보지 않은 다른 방향"></a>시도해보지 않은 다른 방향</h2><ul><li>한번에 INSERT하기</li><li><a href="https://stackoverflow.com/questions/8899802/how-do-i-do-a-bulk-insert-in-mysql-using-node-js">https://stackoverflow.com/questions/8899802/how-do-i-do-a-bulk-insert-in-mysql-using-node-js</a></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/37576685/using-async-await-with-a-foreach-loop">https://stackoverflow.com/questions/37576685/using-async-await-with-a-foreach-loop</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/js/">js</category>
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/async/">async</category>
+      
+      <category domain="https://chinsun9.github.io/tags/await/">await</category>
+      
+      <category domain="https://chinsun9.github.io/tags/forEach/">forEach</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/01/05/forEach-await-%EC%95%88%EB%90%98%EB%8A%94-%EB%AC%B8%EC%A0%9C/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>css 선언 순서 정렬하기 prettier-plugin-style-order</title>
@@ -601,38 +638,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/15/%EB%82%B4%EA%B0%80-css%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%A4%84%EC%9E%84%EB%A7%90-%EC%8A%A4%EB%8B%88%ED%8E%AB/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>chrome 드래그 앤 드랍 안됨</title>
-      <link>https://chinsun9.github.io/2020/12/15/chrome-%EB%93%9C%EB%9E%98%EA%B7%B8-%EC%95%A4-%EB%93%9C%EB%9E%8D-%EC%95%88%EB%90%A8/</link>
-      <guid>https://chinsun9.github.io/2020/12/15/chrome-%EB%93%9C%EB%9E%98%EA%B7%B8-%EC%95%A4-%EB%93%9C%EB%9E%8D-%EC%95%88%EB%90%A8/</guid>
-      <pubDate>Tue, 15 Dec 2020 02:35:01 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;chrome이 관리자 권한으로 켜져있는지 확인한다.&lt;/li&gt;
-&lt;li&gt;관리자 권한으로 켜지면 드래그 앤 드랍이 작동하지 않는다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;TMI&quot;&gt;&lt;a href=&quot;#TMI&quot; class=&quot;headerlink&quot; ti</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>chrome이 관리자 권한으로 켜져있는지 확인한다.</li><li>관리자 권한으로 켜지면 드래그 앤 드랍이 작동하지 않는다.</li></ul><h2 id="TMI"><a href="#TMI" class="headerlink" title="TMI"></a>TMI</h2><ul><li>웹에서 드래그 앤 드랍으로 이미지를 첨부하는 기능을 넣었는데,</li></ul><p><img src="/images/chrome-%EB%93%9C%EB%9E%98%EA%B7%B8-%EC%95%A4-%EB%93%9C%EB%9E%8D-%EC%95%88%EB%90%A820201215/preview.jpg" alt=" "></p><ul><li>이상하게 마우스 커서가 위 처럼 되면서, 동작하지 않았다.</li><li>막 chrome://flags 들어가서 설정도 따라해보고,</li><li>windows 이미지 도구? 도 재설치해보고 삽질을 마구마구하다가.</li><li>그냥 관리자 권한으로 chrome이 켜져 있어서 안되었던 문제이다.</li></ul><ul><li>이밖에도 chrome이 관리자 권한으로 켜져있으면 안되는 것은,</li><li>카톡 등 메신저에서 다른 링크를 켤 때 정도가 있다.</li></ul><ul><li>chrome이 관리자 권한으로 켜지는 이유는</li><li>나는 vscode가 관리자 권한으로 실행되게 해놨다,</li><li>그래서 vscode에서 브라우저를 실행시킬 때 관리자권한으로 실행된다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/chrome/">chrome</category>
-      
-      <category domain="https://chinsun9.github.io/tags/%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C/">관리자 권한</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/15/chrome-%EB%93%9C%EB%9E%98%EA%B7%B8-%EC%95%A4-%EB%93%9C%EB%9E%8D-%EC%95%88%EB%90%A8/#disqus_thread</comments>
       
     </item>
     
