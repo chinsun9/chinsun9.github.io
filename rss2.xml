@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 05 Jan 2021 01:27:25 GMT</pubDate>
+    <pubDate>Tue, 05 Jan 2021 01:36:20 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Moment.js utc 사용하기</title>
+      <link>https://chinsun9.github.io/2021/01/05/moment-js-utc-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2021/01/05/moment-js-utc-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Tue, 05 Jan 2021 01:36:20 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> date1 = moment().utc().format(<span class="string">&quot;YYYY-MM-DD HH:mm:ss&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(date1);</span><br></pre></td></tr></table></figure><ul><li><code>utc()</code> 메소드를 이용한다.</li></ul><h2 id="활용한-곳"><a href="#활용한-곳" class="headerlink" title="활용한 곳"></a>활용한 곳</h2><ul><li>rds는 기본적으로 utc를 사용한다</li><li>그래서 현재 지역 시간으로 포맷팅 된 값을 그대로 db에 넣으면 안 된다</li><li>rds의 시간대를 변경하거나, insert, update 할 때 잘 가공해서 쿼리를 해야 한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://momentjs.com/docs/#/parsing/utc/">https://momentjs.com/docs/#/parsing/utc/</a></li></ul><ul><li><a href="https://aws.amazon.com/ko/premiumsupport/knowledge-center/rds-change-time-zone/">https://aws.amazon.com/ko/premiumsupport/knowledge-center/rds-change-time-zone/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/momentjs/">momentjs</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/01/05/moment-js-utc-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>forEach await 안되는 문제</title>
@@ -608,36 +636,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/16/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>내가 css를 작성하면서 많이 사용하는 줄임말, 스니펫?</title>
-      <link>https://chinsun9.github.io/2020/12/15/%EB%82%B4%EA%B0%80-css%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%A4%84%EC%9E%84%EB%A7%90-%EC%8A%A4%EB%8B%88%ED%8E%AB/</link>
-      <guid>https://chinsun9.github.io/2020/12/15/%EB%82%B4%EA%B0%80-css%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%A4%84%EC%9E%84%EB%A7%90-%EC%8A%A4%EB%8B%88%ED%8E%AB/</guid>
-      <pubDate>Tue, 15 Dec 2020 04:20:40 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/%EB%82%B4%EA%B0%80-css%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/%EB%82%B4%EA%B0%80-css%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%A4%84%EC%9E%84%EB%A7%90-%EC%8A%A4%EB%8B%88%ED%8E%AB20201215/preview.jpg" alt=" "></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.example</span> &#123;</span><br><span class="line">  <span class="comment">/* df */</span></span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/* jcc */</span></span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/* aic */</span></span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>짧게 쓰고 자동완성 시킨다</li><li>자동완성 시키고 <code>ctrl + enter</code> 로 새로운 라인으로 이동하여 이어서 작성한다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/css/">css</category>
-      
-      <category domain="https://chinsun9.github.io/tags/flex/">flex</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/15/%EB%82%B4%EA%B0%80-css%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%A4%84%EC%9E%84%EB%A7%90-%EC%8A%A4%EB%8B%88%ED%8E%AB/#disqus_thread</comments>
       
     </item>
     
