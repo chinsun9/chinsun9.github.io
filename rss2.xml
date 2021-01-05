@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 05 Jan 2021 01:36:20 GMT</pubDate>
+    <pubDate>Tue, 05 Jan 2021 01:54:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>process.exit(1)</title>
+      <link>https://chinsun9.github.io/2021/01/05/process-exit-1/</link>
+      <guid>https://chinsun9.github.io/2021/01/05/process-exit-1/</guid>
+      <pubDate>Tue, 05 Jan 2021 01:54:06 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">process.exit(<span class="number">1</span>);</span><br></pre></td></tr></table></figure><ul><li>이 줄을 만나면 즉시 종료된다</li><li>나는 보통 코드를 주먹구구로 작성하다가 아래 라인을 실행시키고 싶지 않을 때 사용한다..</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://nodejs.dev/learn/how-to-exit-from-a-nodejs-program">https://nodejs.dev/learn/how-to-exit-from-a-nodejs-program</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/process/">process</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/01/05/process-exit-1/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Moment.js utc 사용하기</title>
@@ -605,37 +633,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/16/type-vs-interface/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>react url params 사용하기</title>
-      <link>https://chinsun9.github.io/2020/12/16/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/12/16/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Wed, 16 Dec 2020 02:52:01 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B020201216/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight ts&quot;&gt;&lt;f</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B020201216/preview.jpg" alt=" "></p><figure class="highlight ts"><figcaption><span>example.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 전</span></span><br><span class="line">res = <span class="keyword">await</span> myFetch(<span class="string">`get/<span class="subst">$&#123;location.pathname.split(<span class="string">&quot;/&quot;</span>)[<span class="number">2</span>]&#125;</span>`</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 후</span></span><br><span class="line">res = <span class="keyword">await</span> myFetch(<span class="string">`get/<span class="subst">$&#123;id&#125;</span>`</span>);</span><br></pre></td></tr></table></figure><ul><li><p>처음에는 url params에 어떻게 접근할까하다가 location객체에서 수동으로 파싱해서 쎃었는데</p></li><li><p>‘react-router-dom’ 에서 useRouteMatch라는 메소드를 통해서 자동으로 파싱하고 필요한 차일드에 넘겨주었다.</p></li></ul><figure class="highlight ts"><figcaption><span>parent.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 최상위, 컴포넌트 밖</span></span><br><span class="line"><span class="keyword">type</span> MatchParams = &#123;</span><br><span class="line">  id: <span class="built_in">string</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 컴포넌트 안 최상위</span></span><br><span class="line"><span class="keyword">const</span> match = useRouteMatch&lt;MatchParams&gt;(<span class="string">&quot;/start/:id&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 렌더 부분, 컴포넌트 안 return 부분</span></span><br><span class="line">&lt;Route path=<span class="string">&quot;/start/:id&quot;</span>&gt;</span><br><span class="line">  &lt;Start id=&#123;match?.params.id || <span class="string">&quot;&quot;</span>&#125; /&gt;</span><br><span class="line">&lt;/Route&gt;;</span><br></pre></td></tr></table></figure><figure class="highlight ts"><figcaption><span>child.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 최상위, 컴포넌트 밖</span></span><br><span class="line"><span class="keyword">type</span> Props = &#123;</span><br><span class="line">  id: <span class="built_in">string</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 컴포넌트 선언부</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Start</span>(<span class="params">&#123; id &#125;: Props</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>차일드에서 <code>useRouteMatch</code>를 사용해보았는데, useEffect에서 무한루프에 걸려서</li><li>부모에서 전달해주었다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://velog.io/@bigbrothershin/%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%EC%99%80-%EC%BF%BC%EB%A6%AC">velog.io/@bigbrothershin/React Router: 파라미터와 쿼리</a></li><li><a href="https://stackoverflow.com/questions/61392878/how-to-make-useroutematch-work-with-types-from-react-router">https://stackoverflow.com/questions/61392878/how-to-make-useroutematch-work-with-types-from-react-router</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/react/">react</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/react/">react</category>
-      
-      <category domain="https://chinsun9.github.io/tags/react-typescript/">react typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/url-params/">url params</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/16/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
