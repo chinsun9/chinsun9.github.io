@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 04 Jan 2021 03:59:01 GMT</pubDate>
+    <pubDate>Tue, 05 Jan 2021 00:29:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode 유용한 단축키</title>
+      <link>https://chinsun9.github.io/2021/01/05/vscode-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4/</link>
+      <guid>https://chinsun9.github.io/2021/01/05/vscode-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4/</guid>
+      <pubDate>Tue, 05 Jan 2021 00:29:37 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/_QCNqV_EfzE&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/_QCNqV_EfzE" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>김정환님 영상을 보고 정리한 내용</li></ul><h2 id="단축키"><a href="#단축키" class="headerlink" title="단축키"></a>단축키</h2><ul><li>Ctrl Shift \<ul><li>Go to Bracket</li><li>현재 커서를 포함하는 괄호로 이동한다.</li></ul></li></ul><ul><li>F12<ul><li>Go to Definition</li></ul></li></ul><ul><li>Alt F12<ul><li>Peek Definition</li></ul></li></ul><ul><li>Ctrl 0<ul><li>Focus into Side Bar</li></ul></li></ul><ul><li>Ctrl Shift .<ul><li>Focus Breadcrumbs</li></ul></li></ul><ul><li>Ctrl T<ul><li>Go to Symbol in Workspace</li><li><code>#</code></li></ul></li></ul><ul><li>Ctrl Shift O<ul><li>Go to Symbol in Editor</li><li><code>@</code></li></ul></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/_QCNqV_EfzE">https://youtu.be/_QCNqV_EfzE</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/%EB%8B%A8%EC%B6%95%ED%82%A4/">단축키</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/01/05/vscode-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>202012 검색 실적</title>
@@ -601,40 +629,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/15/SyntaxError-Unexpected-end-of-input/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>eslint prefer-template</title>
-      <link>https://chinsun9.github.io/2020/12/15/eslint-prefer-template/</link>
-      <guid>https://chinsun9.github.io/2020/12/15/eslint-prefer-template/</guid>
-      <pubDate>Tue, 15 Dec 2020 02:09:46 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/eslint-prefer-template20201215/preview.jpg&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;react typescript eslint airbnb style 로 웹 개발을 하고 있는데,,</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/eslint-prefer-template20201215/preview.jpg" alt=" "></p><ul><li>react typescript eslint airbnb style 로 웹 개발을 하고 있는데,,,</li><li><code>+</code> 로 문자열 이어붙이기를 사용했는데, eslint룰에 따라 자동 포맷팅 되었다..!</li><li>eslint가 처음에는 불편하기만 했는데, 지금은 너무 좋다…</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://eslint.org/docs/rules/prefer-template">https://eslint.org/docs/rules/prefer-template</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
-      
-      <category domain="https://chinsun9.github.io/tags/airbnb/">airbnb</category>
-      
-      <category domain="https://chinsun9.github.io/tags/prefer-template/">prefer-template</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/15/eslint-prefer-template/#disqus_thread</comments>
       
     </item>
     
