@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 05 Jan 2021 06:41:54 GMT</pubDate>
+    <pubDate>Tue, 05 Jan 2021 06:57:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>두 값 사이의 난수 생성하기</title>
+      <link>https://chinsun9.github.io/2021/01/05/%EB%91%90-%EA%B0%92-%EC%82%AC%EC%9D%B4%EC%9D%98-%EB%82%9C%EC%88%98-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2021/01/05/%EB%91%90-%EA%B0%92-%EC%82%AC%EC%9D%B4%EC%9D%98-%EB%82%9C%EC%88%98-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Tue, 05 Jan 2021 06:57:41 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getRandomArbitrary</span>(<span class="params">min, max</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Math</span>.random() * (max - min) + min;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>mdn에 여러가지 조건의 난수를 생성하는 좋은 예제가 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/random#%EB%91%90_%EA%B0%92_%EC%82%AC%EC%9D%B4%EC%9D%98_%EB%82%9C%EC%88%98_%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/random#%EB%91%90_%EA%B0%92_%EC%82%AC%EC%9D%B4%EC%9D%98_%EB%82%9C%EC%88%98_%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/Math/">Math</category>
+      
+      <category domain="https://chinsun9.github.io/tags/random/">random</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/01/05/%EB%91%90-%EA%B0%92-%EC%82%AC%EC%9D%B4%EC%9D%98-%EB%82%9C%EC%88%98-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>aws sam, lambda 정리</title>
@@ -607,34 +637,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/18/react%EB%A1%9C-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B8-%ED%87%B4%EA%B7%BC%EC%8B%9C%EA%B0%84-%EA%B3%84%EC%82%B0%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>web font 적용하는 2가지 방법</title>
-      <link>https://chinsun9.github.io/2020/12/16/web-font-%EC%A0%81%EC%9A%A9%ED%95%98%EB%8A%94-2%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/</link>
-      <guid>https://chinsun9.github.io/2020/12/16/web-font-%EC%A0%81%EC%9A%A9%ED%95%98%EB%8A%94-2%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/</guid>
-      <pubDate>Wed, 16 Dec 2020 05:03:10 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight css&quot;&gt;&lt;figcaption&gt;&lt;span&gt;index.css&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight css"><figcaption><span>index.css</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@import</span> url(<span class="string">&quot;https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap&quot;</span>);</span><br></pre></td></tr></table></figure><figure class="highlight html"><figcaption><span>index.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure><ul><li>link태그로 불러오는 것은 기존에 알고 있었는데,</li><li>css에서 <code>@import</code> 로 불러오는 것은 처음알았다.</li><li>폰트같이 범용적은 것은 index.css에 넣어주면 좋을 것 같다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/CSS/@import">https://developer.mozilla.org/ko/docs/Web/CSS/@import</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/webfont/">webfont</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/16/web-font-%EC%A0%81%EC%9A%A9%ED%95%98%EB%8A%94-2%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/#disqus_thread</comments>
       
     </item>
     
