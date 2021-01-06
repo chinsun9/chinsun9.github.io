@@ -9,8 +9,43 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 06 Jan 2021 05:51:32 GMT</pubDate>
+    <pubDate>Wed, 06 Jan 2021 06:12:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>git commit push 명령 합치기</title>
+      <link>https://chinsun9.github.io/2021/01/06/git-commit-push-%EB%AA%85%EB%A0%B9-%ED%95%A9%EC%B9%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2021/01/06/git-commit-push-%EB%AA%85%EB%A0%B9-%ED%95%A9%EC%B9%98%EA%B8%B0/</guid>
+      <pubDate>Wed, 06 Jan 2021 06:12:40 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;git commit 이랑 git push 명령을 합치고 싶은 욕구가 생겼다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>git commit 이랑 git push 명령을 합치고 싶은 욕구가 생겼다</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global alias.acp &#39;! acp() &#123; git commit -a -m &quot;$1&quot; &amp;&amp; git push ; &#125; ; acp&#39;</span><br></pre></td></tr></table></figure><ul><li>git bash를 열고 위 명령을 수행한다</li></ul><ul><li><code>acp</code>란 이름으로 git alias를 추가한다.</li><li><code>--global</code>옵션을 줘서 어디서든 실행될 수 있도록 한다</li><li><code>--global</code>옵션을 주지 않으면 현재 깃 디렉터리에만 적용이 된다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/19595067/git-add-commit-and-push-commands-in-one">https://stackoverflow.com/questions/19595067/git-add-commit-and-push-commands-in-one</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/push/">push</category>
+      
+      <category domain="https://chinsun9.github.io/tags/commit/">commit</category>
+      
+      <category domain="https://chinsun9.github.io/tags/alias/">alias</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/01/06/git-commit-push-%EB%AA%85%EB%A0%B9-%ED%95%A9%EC%B9%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vscode 라인 정렬</title>
@@ -595,40 +630,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/21/string-to-number-%EC%9A%94%EC%83%81%ED%95%9C-%EB%AC%B8%EB%B2%95-js/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>typescript에서 mathjs 사용해서 소수점 정확하게 계산하기</title>
-      <link>https://chinsun9.github.io/2020/12/21/typescript%EC%97%90%EC%84%9C-mathjs-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/12/21/typescript%EC%97%90%EC%84%9C-mathjs-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Mon, 21 Dec 2020 07:59:22 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/typescript%EC%97%90%EC%84%9C-mathjs-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B020201221/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;부동소</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/typescript%EC%97%90%EC%84%9C-mathjs-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B020201221/preview.png" alt=" "></p><ul><li>부동소수점으로 인한 계산 오류가 있다.</li><li>mathjs 라이브러리로 해결해보자.</li></ul><h2 id="mathjs-설치"><a href="#mathjs-설치" class="headerlink" title="mathjs 설치"></a>mathjs 설치</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yarn add mathjs</span><br><span class="line">yarn add @types&#x2F;mathjs -D</span><br></pre></td></tr></table></figure><ul><li><code>mathjs</code>만 설치하면 타입 정의가 없기 때문에</li><li><code>@types/mathjs</code> 보조 라이브러리까지 설치</li></ul><h2 id="mathjs-임포트"><a href="#mathjs-임포트" class="headerlink" title="mathjs 임포트"></a>mathjs 임포트</h2><figure class="highlight ts"><figcaption><span>example1.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> math <span class="keyword">from</span> <span class="string">&quot;mathjs&quot;</span>;</span><br></pre></td></tr></table></figure><ul><li>그냥 기본값으로 사용하려면 <code>import * as math from &#39;mathjs&#39;</code>로 불러와 사용</li><li>default export가 없어서 <code>import math from &#39;mathjs&#39;</code>이런 식으로 사용불가.<ul><li><code>Attempted import error: &quot;mathjs&quot; does not contain a default export</code></li></ul></li></ul><figure class="highlight ts"><figcaption><span>example2.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; create, all &#125; <span class="keyword">from</span> <span class="string">&quot;mathjs&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> mathF = create(all, &#123; <span class="built_in">number</span>: <span class="string">&quot;Fraction&quot;</span> &#125;) <span class="keyword">as</span> math.MathJsStatic;</span><br></pre></td></tr></table></figure><ul><li>지정 config를 적용해 사용하려면 create 메서드 사용</li><li><code>create(all, &#123; number: &#39;Fraction&#39; &#125;) as math.MathJsStatic</code></li><li>as 키워드로 타입을 명시하지 않으면 undefined 에러 발생<ul><li><code>Cannot invoke an object which is possibly &#39;undefined&#39;</code></li></ul></li></ul><h2 id="소수점-계산"><a href="#소수점-계산" class="headerlink" title="소수점 계산"></a>소수점 계산</h2><figure class="highlight ts"><figcaption><span>calc.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; create, all &#125; <span class="keyword">from</span> <span class="string">&quot;mathjs&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> mathF = create(all, &#123; <span class="built_in">number</span>: <span class="string">&quot;Fraction&quot;</span> &#125;) <span class="keyword">as</span> math.MathJsStatic;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> mathjsCalc = <span class="function">(<span class="params">expr: <span class="built_in">string</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> mathF.number(mathF.evaluate(expr));</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> result = mathjsCalc(<span class="string">`<span class="subst">$&#123;value1&#125;</span> * <span class="subst">$&#123;value2&#125;</span> * 0.01`</span>);</span><br></pre></td></tr></table></figure><ul><li>evaluate메서드를 사용해서 수식 string을 주면 알아서 계산하도록 했다.</li><li>이때 math ConfigOptions에서 number 옵션이 기본값(number)인 경우에 일반적인 계산이 된다.</li><li>number 옵션에 <code>Fraction</code>을 주고 생성하게 되면 evaluate 메서드에서 숫자를 Fraction 타입으로 파싱 해서 계산하게 되어 우리가 기대하는 결과를 얻을 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/chinsun9/react-percentage-calculator">https://github.com/chinsun9/react-percentage-calculator</a></li><li><a href="https://mathjs.org/docs/getting_started.html">https://mathjs.org/docs/getting_started.html</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
-      
-      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/mathjs/">mathjs</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/21/typescript%EC%97%90%EC%84%9C-mathjs-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
