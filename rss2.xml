@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 06 Jan 2021 08:44:45 GMT</pubDate>
+    <pubDate>Thu, 14 Jan 2021 00:22:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>rds master 사용자 비밀번호 변경</title>
+      <link>https://chinsun9.github.io/2021/01/14/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD/</link>
+      <guid>https://chinsun9.github.io/2021/01/14/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD/</guid>
+      <pubDate>Thu, 14 Jan 2021 00:22:54 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;브라우저로 aws 콘솔에 접속해서 마스터 유저 비밀번호를 변경할 수 있다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>브라우저로 aws 콘솔에 접속해서 마스터 유저 비밀번호를 변경할 수 있다</li></ul><p><img src="/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD20210114/1.png" alt=" "></p><ul><li>Amazon RDS &gt; 데이터베이스 &gt; 데이터베이스 선택 &gt; 수정 (수정하고자 하는 RDS가 실행되어 있어야 한다)</li><li><code>새 마스터 암호</code>를 채운다</li></ul><p><img src="/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD20210114/2.png" alt=" "></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://tecadmin.net/recover-reset-amazon-rds-master-user-password/">https://tecadmin.net/recover-reset-amazon-rds-master-user-password/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/rds/">rds</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/01/14/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>setTimeout Promise</title>
@@ -606,36 +637,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/21/%EB%A6%AC%EB%88%85%EC%8A%A4-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%ED%99%95%EC%9D%B8-%EB%AA%85%EB%A0%B9%EC%96%B4/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>리눅스 shutdown 명령어</title>
-      <link>https://chinsun9.github.io/2020/12/21/linux-shutdown-%EB%AA%85%EB%A0%B9%EC%96%B4/</link>
-      <guid>https://chinsun9.github.io/2020/12/21/linux-shutdown-%EB%AA%85%EB%A0%B9%EC%96%B4/</guid>
-      <pubDate>Mon, 21 Dec 2020 08:49:12 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 지금종료</span><br><span class="line">sudo shutdown -h now</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 재시작</span><br><span class="line">sudo shutdown -r now</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 종료예약 취소</span><br><span class="line">sudo shutdown -c</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/linux/">linux</category>
-      
-      <category domain="https://chinsun9.github.io/tags/shutdown/">shutdown</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/21/linux-shutdown-%EB%AA%85%EB%A0%B9%EC%96%B4/#disqus_thread</comments>
       
     </item>
     

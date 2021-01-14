@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/11/02/DB-%EC%8B%9C%EC%9E%91%ED%95%A0-%EB%95%8C-%EC%93%B0%EB%8A%94-%EB%AA%85%EB%A0%B9%EC%96%B4/</loc>
+        <lastmod>2021-01-14T01:01:54.966Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/01/14/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD/</loc>
+        <lastmod>2021-01-14T00:22:54.273Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/01/06/git-commit-push-%EB%AA%85%EB%A0%B9-%ED%95%A9%EC%B9%98%EA%B8%B0/</loc>
         <lastmod>2021-01-13T00:53:15.189Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -946,14 +962,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/09/crlf-lf/</loc>
         <lastmod>2020-11-09T06:59:47.376Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/02/DB-%EC%8B%9C%EC%9E%91%ED%95%A0-%EB%95%8C-%EC%93%B0%EB%8A%94-%EB%AA%85%EB%A0%B9%EC%96%B4/</loc>
-        <lastmod>2020-11-09T06:23:11.254Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
