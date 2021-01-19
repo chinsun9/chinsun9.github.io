@@ -9,8 +9,42 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 14 Jan 2021 01:55:36 GMT</pubDate>
+    <pubDate>Tue, 19 Jan 2021 08:48:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js(ts) bind</title>
+      <link>https://chinsun9.github.io/2021/01/19/js-bind/</link>
+      <guid>https://chinsun9.github.io/2021/01/19/js-bind/</guid>
+      <pubDate>Tue, 19 Jan 2021 08:48:31 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight ts&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> myType &#123;</span><br><span class="line">  name: <span class="built_in">string</span>;</span><br><span class="line">  age: <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> me: myType = &#123;</span><br><span class="line">  name: <span class="string">&quot;name&quot;</span>,</span><br><span class="line">  age: <span class="number">99</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>].forEach(<span class="function"><span class="keyword">function</span> (<span class="params"><span class="built_in">this</span>: myType, value, index</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">this</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(value, index);</span><br><span class="line">&#125;, me);</span><br><span class="line"><span class="comment">// 0 1 &#123; name: &#x27;name&#x27;, age: 11 &#125;</span></span><br><span class="line"><span class="comment">// 1 2 &#123; name: &#x27;name&#x27;, age: 11 &#125;</span></span><br><span class="line"><span class="comment">// 2 3 &#123; name: &#x27;name&#x27;, age: 11 &#125;</span></span><br></pre></td></tr></table></figure><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> MyClass &#123;</span><br><span class="line">  me: Person;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">constructor</span>(<span class="params">person: Person</span>) &#123;</span><br><span class="line">    <span class="built_in">this</span>.me = person;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  someFunction() &#123;</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].forEach(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(value, <span class="built_in">this</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  someFunctionBindThis() &#123;</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>].forEach(<span class="function"><span class="keyword">function</span> (<span class="params"><span class="built_in">this</span>: MyClass, value</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(value, <span class="built_in">this</span>);</span><br><span class="line">    &#125;, <span class="built_in">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  someFunctionWithArrow() &#123;</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].forEach(<span class="function">(<span class="params">value</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(value, <span class="built_in">this</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> myclass = <span class="keyword">new</span> MyClass(me);</span><br><span class="line">myclass.someFunction();</span><br><span class="line"><span class="comment">// 1 undefined</span></span><br><span class="line"><span class="comment">// 2 undefined</span></span><br><span class="line"><span class="comment">// 3 undefined</span></span><br><span class="line"></span><br><span class="line">myclass.someFunctionBindThis();</span><br><span class="line"><span class="comment">// 1 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 2 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 3 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"></span><br><span class="line">myclass.someFunctionWithArrow();</span><br><span class="line"><span class="comment">// 1 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 2 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 3 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br></pre></td></tr></table></figure><ul><li>bind 함수를 배워보았다</li><li>bind를 배우면서 <code>function</code>과 <code>arrow function</code> 차이를 실감하게 되었다</li><li><code>arrow function</code>은 bind를 사용할 수 없다</li><li><code>arrow function</code>은 함수 바깥 스코프의 <code>this</code>가 자동 바인딩된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind</a></li><li><a href="https://velog.io/@modolee/javascript-function-vs-arrow-function">https://velog.io/@modolee/javascript-function-vs-arrow-function</a></li><li><a href="https://stackoverflow.com/questions/33308121/can-you-bind-this-in-an-arrow-function">https://stackoverflow.com/questions/33308121/can-you-bind-this-in-an-arrow-function</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/js/">js</category>
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/bind/">bind</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/01/19/js-bind/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>git 명령어 줄이기</title>
@@ -604,39 +638,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/23/Antimalware-Service-Executable-%EB%AF%B8%EC%B3%90%EB%B2%84%EB%A6%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A8/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>input spellcheck off, input 빨간줄 없애기</title>
-      <link>https://chinsun9.github.io/2020/12/22/input-spellcheck-off/</link>
-      <guid>https://chinsun9.github.io/2020/12/22/input-spellcheck-off/</guid>
-      <pubDate>Tue, 22 Dec 2020 04:09:44 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/input-spellcheck-off20201222/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight jsx&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example.tsx&lt;/spa</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/input-spellcheck-off20201222/preview.png" alt=" "></p><figure class="highlight jsx"><figcaption><span>example.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;input</span><br><span class="line">  ref=&#123;inputRef&#125;</span><br><span class="line">  type=<span class="string">&quot;text&quot;</span></span><br><span class="line">  value=&#123;shareLink&#125;</span><br><span class="line">  onClick=&#123;onLinkClickHandler&#125;</span><br><span class="line">  spellCheck=&#123;<span class="literal">false</span>&#125;</span><br><span class="line">  readOnly</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure><figure class="highlight html"><figcaption><span>example.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">spellcheck</span>=<span class="string">&quot;false&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure><ul><li>input안의 빨간 줄 생기는 것을 없앨 수 있다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/html/">html</category>
-      
-      <category domain="https://chinsun9.github.io/tags/input/">input</category>
-      
-      <category domain="https://chinsun9.github.io/tags/spellCheck/">spellCheck</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/22/input-spellcheck-off/#disqus_thread</comments>
       
     </item>
     
