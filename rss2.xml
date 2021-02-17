@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 17 Feb 2021 06:28:46 GMT</pubDate>
+    <pubDate>Wed, 17 Feb 2021 07:10:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>react에서 Map을 state로 사용할 때</title>
+      <link>https://chinsun9.github.io/2021/02/17/react%EC%97%90%EC%84%9C-Map%EC%9D%84-state%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/</link>
+      <guid>https://chinsun9.github.io/2021/02/17/react%EC%97%90%EC%84%9C-Map%EC%9D%84-state%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/</guid>
+      <pubDate>Wed, 17 Feb 2021 07:10:33 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;ES6 Map with React.useState&lt;/em&gt; ; &lt;a href=&quot;https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b&quot;&gt;https://me</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li><em>ES6 Map with React.useState</em> ; <a href="https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b">https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b</a> 를 참고하였다</li></ul><figure class="highlight ts"><figcaption><span>맞는 예</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [state, setState] = React.useState(<span class="keyword">new</span> <span class="built_in">Map</span>());</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> add = <span class="function">(<span class="params">key, value</span>) =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="function">(<span class="params">prev</span>) =&gt;</span> <span class="keyword">new</span> <span class="built_in">Map</span>([...prev, [key, value]]));</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> upsert = <span class="function">(<span class="params">key, value</span>) =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="function">(<span class="params">prev</span>) =&gt;</span> <span class="keyword">new</span> <span class="built_in">Map</span>(prev).set(key, value));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">delete</span> = <span class="function">(<span class="params">key</span>) =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="function">(<span class="params">prev</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> newState = <span class="keyword">new</span> <span class="built_in">Map</span>(prev);</span><br><span class="line">    newState.delete(key);</span><br><span class="line">    <span class="keyword">return</span> newState;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> clear = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="function">(<span class="params">prev</span>) =&gt;</span> <span class="keyword">new</span> <span class="built_in">Map</span>(prev.clear()));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight ts"><figcaption><span>틀린 예</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [state, setState] = React.useState(<span class="keyword">new</span> <span class="built_in">Map</span>());</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> add = <span class="function">(<span class="params">key, value</span>) =&gt;</span> &#123;</span><br><span class="line">  state.set(key, value);</span><br><span class="line">  setState(state);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...</span></span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b">https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/react/">react</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/useState/">useState</category>
+      
+      <category domain="https://chinsun9.github.io/tags/Map/">Map</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/17/react%EC%97%90%EC%84%9C-Map%EC%9D%84-state%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>scroll css</title>
@@ -617,37 +650,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/27/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>sass, scss 연습</title>
-      <link>https://chinsun9.github.io/2020/12/23/sass-scss-%EC%97%B0%EC%8A%B5/</link>
-      <guid>https://chinsun9.github.io/2020/12/23/sass-scss-%EC%97%B0%EC%8A%B5/</guid>
-      <pubDate>Wed, 23 Dec 2020 06:52:47 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/sass-scss-%EC%97%B0%EC%8A%B520201223/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.yo</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/sass-scss-%EC%97%B0%EC%8A%B520201223/preview.png" alt=" "></p><div class="video-container"><iframe src="https://www.youtube.com/embed/Zz6eOVaaelI" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li><a href="https://www.youtube.com/watch?v=Zz6eOVaaelI">Learn Sass In 20 Minutes | Sass Crash Course</a> 를 보면서</li><li>sass, scss 를 공부해보았다.</li></ul><h2 id="sass"><a href="#sass" class="headerlink" title="sass"></a>sass</h2><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 변수</span></span><br><span class="line"><span class="variable">$primaryBtn</span>: rgb(<span class="number">78</span>, <span class="number">201</span>, <span class="number">253</span>);</span><br><span class="line"><span class="variable">$textColor</span>: rgb(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="variable">$primaryBtn</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 중첩 nesting 가능</span></span><br><span class="line">  <span class="comment">//   &amp; ; 상위 선택자</span></span><br><span class="line">  &amp;<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;hellooo&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 중첩된 속성</span></span><br><span class="line">  <span class="attribute">margin</span>: &#123;</span><br><span class="line">    top: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">20px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="attribute">padding</span>: &#123;</span><br><span class="line">    bottom: <span class="number">40px</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">30px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>중첩 이 기능 하나만으로도 엄청나게 강력한 기능이라고 생각한다.</li><li>스타일 적용되는 것도 직관적이고, html이랑 같은 구조로 css를 작성할 수 있을 것 같다.</li></ul><h2 id="연습-코드-저장소"><a href="#연습-코드-저장소" class="headerlink" title="연습 코드 저장소"></a>연습 코드 저장소</h2><ul><li><a href="https://github.com/chinsun9/sass-practice">https://github.com/chinsun9/sass-practice</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/scss/">scss</category>
-      
-      <category domain="https://chinsun9.github.io/tags/sass/">sass</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/23/sass-scss-%EC%97%B0%EC%8A%B5/#disqus_thread</comments>
       
     </item>
     

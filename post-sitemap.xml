@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/02/17/react%EC%97%90%EC%84%9C-Map%EC%9D%84-state%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/</loc>
+        <lastmod>2021-02-17T07:10:33.538Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/12/16/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-02-17T07:07:28.047Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/02/17/scroll-css/</loc>
         <lastmod>2021-02-17T06:28:46.571Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -290,14 +306,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/12/18/react%EB%A1%9C-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B8-%ED%87%B4%EA%B7%BC%EC%8B%9C%EA%B0%84-%EA%B3%84%EC%82%B0%EA%B8%B0/</loc>
         <lastmod>2020-12-23T00:06:39.371Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/12/16/react-url-params-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2020-12-23T00:06:39.366Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
