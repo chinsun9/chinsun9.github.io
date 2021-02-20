@@ -10287,29 +10287,26 @@ body > .section {
 }
 .column-main .card {
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   border-radius: 0;
-}
-.column-main .card:nth-child(1) {
-  margin-bottom: 0;
 }
 .pagination-list li > a {
   box-shadow: 0 1px 0 0 #e5e5e5 !important;
 }
 .pagination-list > li > a,
-.pagination-previous,
+.pagination .pagination-previous,
 .pagination .pagination-next {
   box-shadow: 0 1px 0 0 #e5e5e5, 0 0 1px rgba(0,0,0,0.1) !important;
   transition: all 0.2s ease;
 }
 .pagination-list > li > a:hover,
-.pagination-previous:hover,
+.pagination .pagination-previous:hover,
 .pagination .pagination-next:hover {
   background-color: #3273dc;
   color: #fff !important;
 }
 .pagination-list > li > a:hover a,
-.pagination-previous:hover a,
+.pagination .pagination-previous:hover a,
 .pagination .pagination-next:hover a {
   color: inherit;
 }
