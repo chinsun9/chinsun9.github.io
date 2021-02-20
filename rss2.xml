@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 20 Feb 2021 13:17:39 GMT</pubDate>
+    <pubDate>Sat, 20 Feb 2021 14:30:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>블로그 테마 업데이트</title>
+      <link>https://chinsun9.github.io/2021/02/20/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link>
+      <guid>https://chinsun9.github.io/2021/02/20/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid>
+      <pubDate>Sat, 20 Feb 2021 14:30:59 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B820210220/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B820210220/preview.png" alt=" "></p><ul><li>배경색을 흰색으로 바꾸고,</li><li>깔끔하게 바꿔보았다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
+      
+      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
+      
+      <category domain="https://chinsun9.github.io/tags/styl/">styl</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/20/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Live Share</title>
@@ -621,36 +654,6 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/29/typescript%EC%97%90%EC%84%9C-json-import/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>타자 속도</title>
-      <link>https://chinsun9.github.io/2020/12/28/%ED%83%80%EC%9E%90-%EC%86%8D%EB%8F%84/</link>
-      <guid>https://chinsun9.github.io/2020/12/28/%ED%83%80%EC%9E%90-%EC%86%8D%EB%8F%84/</guid>
-      <pubDate>Mon, 28 Dec 2020 10:34:47 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;한타 ; 534타&lt;/li&gt;
-&lt;li&gt;영타 ; 329타&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;한타&quot;&gt;&lt;a href=&quot;#한타&quot; class=&quot;headerlink&quot; title=&quot;한타&quot;&gt;&lt;/a&gt;한타&lt;/h2&gt;&lt;div class=&quot;video-contai</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>한타 ; 534타</li><li>영타 ; 329타</li></ul><h2 id="한타"><a href="#한타" class="headerlink" title="한타"></a>한타</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/u3j-ndydcnU" frameborder="0" loading="lazy" allowfullscreen></iframe></div><h2 id="영타"><a href="#영타" class="headerlink" title="영타"></a>영타</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/oa722y5TxtQ" frameborder="0" loading="lazy" allowfullscreen></iframe></div><br><div class="video-container"><iframe src="https://www.youtube.com/embed/0hlAexpopJs" frameborder="0" loading="lazy" allowfullscreen></iframe></div>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/%ED%83%80%EC%9E%90%EC%86%8D%EB%8F%84/">타자속도</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/28/%ED%83%80%EC%9E%90-%EC%86%8D%EB%8F%84/#disqus_thread</comments>
       
     </item>
     
