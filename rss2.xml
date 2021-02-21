@@ -9,34 +9,8 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sun, 21 Feb 2021 05:20:11 GMT</pubDate>
+    <pubDate>Sat, 20 Feb 2021 14:30:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>asd</title>
-      <link>https://chinsun9.github.io/2021/02/21/asd/</link>
-      <guid>https://chinsun9.github.io/2021/02/21/asd/</guid>
-      <pubDate>Sun, 21 Feb 2021 03:12:35 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/asd20210221/preview2.png&quot; alt=&quot; &quot;&gt;&lt;br&gt;&lt;img src=&quot;https://c</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/asd20210221/preview2.png" alt=" "><br><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/asd20210221/preview2.png" alt=" "></p><p>-</p><p>##</p><p>-</p>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/%E3%85%81/">ㅁ</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/%E3%85%81/">ㅁ</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/02/21/asd/#disqus_thread</comments>
-      
-    </item>
     
     <item>
       <title>블로그 테마 업데이트</title>
@@ -638,6 +612,40 @@
       
       
       <comments>https://chinsun9.github.io/2020/12/30/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>typescript에서 json import</title>
+      <link>https://chinsun9.github.io/2020/12/29/typescript%EC%97%90%EC%84%9C-json-import/</link>
+      <guid>https://chinsun9.github.io/2020/12/29/typescript%EC%97%90%EC%84%9C-json-import/</guid>
+      <pubDate>Tue, 29 Dec 2020 06:11:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/typescript%EC%97%90%EC%84%9C-json-import20201228/preview.</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/typescript%EC%97%90%EC%84%9C-json-import20201228/preview.png" alt=" "></p><figure class="highlight plain"><figcaption><span>tsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;compilerOptions&quot;: &#123;</span><br><span class="line">    &#x2F;&#x2F;...</span><br><span class="line">    &quot;resolveJsonModule&quot;: true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight ts"><figcaption><span>ex.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> myJsonData <span class="keyword">from</span> <span class="string">&quot;./myJson.json&quot;</span>;</span><br></pre></td></tr></table></figure><ul><li>이런식으로 가져다 쓸 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://gracefullight.dev/2019/11/26/import-json-with-typescript-ts5071/">https://gracefullight.dev/2019/11/26/import-json-with-typescript-ts5071/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/tsconfig/">tsconfig</category>
+      
+      <category domain="https://chinsun9.github.io/tags/json/">json</category>
+      
+      <category domain="https://chinsun9.github.io/tags/import/">import</category>
+      
+      
+      <comments>https://chinsun9.github.io/2020/12/29/typescript%EC%97%90%EC%84%9C-json-import/#disqus_thread</comments>
       
     </item>
     
