@@ -20,23 +20,22 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;/images/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B820210220/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;</description>
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B820210220/preview.png" alt=" "></p><ul><li>배경색을 흰색으로 바꾸고,</li><li>깔끔하게 바꿔보았다.</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B820210220/preview.png" alt=" "></p><ul><li>배경색을 흰색으로 바꾸고,</li><li>깔끔하게 바꿔보았다.</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
       
       
+      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
+      
       <category domain="https://chinsun9.github.io/tags/css/">css</category>
       
       <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
-      
-      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
       
       <category domain="https://chinsun9.github.io/tags/styl/">styl</category>
       
@@ -53,15 +52,14 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;/images/Live-Share20210220/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/Live-Share20210220/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;같이 하나의 내용에 대해 프로그래밍 할 때, 킹갓 확장도구이다..&lt;/li&gt;
-&lt;li&gt;웹개발 같은경우 세션의 호스트가 데</description>
+&lt;li&gt;같이 </description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/Live-Share20210220/preview.png" alt=" "></p><ul><li>같이 하나의 내용에 대해 프로그래밍 할 때, 킹갓 확장도구이다..</li><li>웹개발 같은경우 세션의 호스트가 데브 서버를 열면,</li><li>세션의 참가한 게스트들도 자동으로 포워딩이 되서</li><li>각자 localhost에서 웹을 확인해 볼 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/Live-Share20210220/preview.png" alt=" "></p><ul><li>같이 하나의 내용에 대해 프로그래밍 할 때, 킹갓 확장도구이다..</li><li>웹개발 같은경우 세션의 호스트가 데브 서버를 열면,</li><li>세션의 참가한 게스트들도 자동으로 포워딩이 되서</li><li>각자 localhost에서 웹을 확인해 볼 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
@@ -69,9 +67,9 @@
       
       <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
       
-      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
-      
       <category domain="https://chinsun9.github.io/tags/Live-Share/">Live Share</category>
+      
+      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
       
       
       <comments>https://chinsun9.github.io/2021/02/20/Live-Share/#disqus_thread</comments>
@@ -98,9 +96,9 @@
       <category domain="https://chinsun9.github.io/categories/react/">react</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
       <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
       
       <category domain="https://chinsun9.github.io/tags/useState/">useState</category>
       
@@ -119,16 +117,14 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;/images/scroll-css20210217/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/scroll-css20210217/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;이런 모양의 스크롤바를 만들 수 있다&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight scss&quot;&gt;&lt;f</description>
+&lt;li&gt;이런 </description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/scroll-css20210217/preview.png" alt=" "></p><ul><li>이런 모양의 스크롤바를 만들 수 있다</li></ul><figure class="highlight scss"><figcaption><span>index.scss</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* scroll bar */</span></span><br><span class="line">&amp; &#123;</span><br><span class="line">  &amp;::-webkit-scrollbar &#123;</span><br><span class="line">    width: <span class="number">10px</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;::-webkit-scrollbar-track &#123;</span><br><span class="line">    background: <span class="number">#f1f1f1</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    background: <span class="number">#888</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;::-webkit-scrollbar-thumb:hover &#123;</span><br><span class="line">    background: <span class="number">#555</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/scroll-css20210217/preview.png" alt=" "></p><ul><li>이런 모양의 스크롤바를 만들 수 있다</li></ul><figure class="highlight scss"><figcaption><span>index.scss</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* scroll bar */</span></span><br><span class="line">&amp; &#123;</span><br><span class="line">  &amp;::-webkit-scrollbar &#123;</span><br><span class="line">    width: <span class="number">10px</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;::-webkit-scrollbar-track &#123;</span><br><span class="line">    background: <span class="number">#f1f1f1</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    background: <span class="number">#888</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;::-webkit-scrollbar-thumb:hover &#123;</span><br><span class="line">    background: <span class="number">#555</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/web/">web</category>
@@ -136,9 +132,9 @@
       
       <category domain="https://chinsun9.github.io/tags/web/">web</category>
       
-      <category domain="https://chinsun9.github.io/tags/css/">css</category>
-      
       <category domain="https://chinsun9.github.io/tags/scss/">scss</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
       
       <category domain="https://chinsun9.github.io/tags/sass/">sass</category>
       
@@ -170,11 +166,11 @@
       
       <category domain="https://chinsun9.github.io/tags/js/">js</category>
       
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
       <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
       
       <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
       
       <category domain="https://chinsun9.github.io/tags/bind/">bind</category>
       
@@ -222,12 +218,12 @@
       <description>&lt;ul&gt;
 &lt;li&gt;브라우저로 aws 콘솔에 접속해서 마스터 유저 비밀번호를 변경할 수 있다&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%</description>
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/ima</description>
         
       
       
       
-      <content:encoded><![CDATA[<ul><li>브라우저로 aws 콘솔에 접속해서 마스터 유저 비밀번호를 변경할 수 있다</li></ul><p><img src="/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD20210114/1.png" alt=" "></p><ul><li>Amazon RDS &gt; 데이터베이스 &gt; 데이터베이스 선택 &gt; 수정 (수정하고자 하는 RDS가 실행되어 있어야 한다)</li><li><code>새 마스터 암호</code>를 채운다</li></ul><p><img src="/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD20210114/2.png" alt=" "></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://tecadmin.net/recover-reset-amazon-rds-master-user-password/">https://tecadmin.net/recover-reset-amazon-rds-master-user-password/</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<ul><li>브라우저로 aws 콘솔에 접속해서 마스터 유저 비밀번호를 변경할 수 있다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD20210114/1.png" alt=" "></p><ul><li>Amazon RDS &gt; 데이터베이스 &gt; 데이터베이스 선택 &gt; 수정 (수정하고자 하는 RDS가 실행되어 있어야 한다)</li><li><code>새 마스터 암호</code>를 채운다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD20210114/2.png" alt=" "></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://tecadmin.net/recover-reset-amazon-rds-master-user-password/">https://tecadmin.net/recover-reset-amazon-rds-master-user-password/</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
@@ -298,9 +294,9 @@
       <category domain="https://chinsun9.github.io/categories/git/">git</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/push/">push</category>
-      
       <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/push/">push</category>
       
       <category domain="https://chinsun9.github.io/tags/commit/">commit</category>
       
@@ -398,9 +394,9 @@
       
       <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
       
-      <category domain="https://chinsun9.github.io/tags/sam/">sam</category>
-      
       <category domain="https://chinsun9.github.io/tags/lambda/">lambda</category>
+      
+      <category domain="https://chinsun9.github.io/tags/sam/">sam</category>
       
       
       <comments>https://chinsun9.github.io/2021/01/05/aws-sam-%EC%A0%95%EB%A6%AC/#disqus_thread</comments>
@@ -483,9 +479,9 @@
       <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
       <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/js/">js</category>
       
       <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
       
@@ -522,9 +518,9 @@
       <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/css/">css</category>
-      
       <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
       
       <category domain="https://chinsun9.github.io/tags/prettier/">prettier</category>
       
@@ -597,14 +593,12 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;/images/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B020201230/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;l</description>
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-requir</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B020201230/preview.png" alt=" "></p><ul><li>프로젝트 루트 경로를 <code>/</code> 로 표현하고 싶은데, 방법이…</li></ul><figure class="highlight json"><figcaption><span>jsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;compilerOptions&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;baseUrl&quot;</span>: <span class="string">&quot;.&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;paths&quot;</span>: &#123;</span><br><span class="line">      <span class="comment">//Assuming your components/utilities live in ./src</span></span><br><span class="line">      <span class="comment">//Update this path as necessary</span></span><br><span class="line">      <span class="attr">&quot;/*&quot;</span>: [<span class="string">&quot;./*&quot;</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">//Add any build/compiled folders here to stop vscode searching those</span></span><br><span class="line">  <span class="attr">&quot;exclude&quot;</span>: [<span class="string">&quot;node_modules&quot;</span>, <span class="string">&quot;build&quot;</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>프로젝트 루트 경로에 <code>jsconfig.json</code>을 생성하고 내용을 위처럼 한다.</li></ul><p><img src="/images/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B020201230/1.png" alt=" "></p><ul><li>이렇게 내가 지정한 대로 참조가 되는 것을 확인할 수 있다.</li><li>참고로, 위 <code>opt</code>디렉터리는 내 프로젝트 루트에 있는 디렉터리이다.</li></ul><h2 id="활용한-곳"><a href="#활용한-곳" class="headerlink" title="활용한 곳"></a>활용한 곳</h2><ul><li>sam project에서 공통 모듈을 layer로 빼는데,</li><li>layer로 뺀 공통 모듈을 임포트 할 때 상대 경로를 사용하기 껄끄러운 문제가 있었다.</li></ul><ul><li>로컬에서 개발할 때는 상대 경로로 개발하다가 (자동완성 위해)</li><li>람다를 배포할 때에, 배포하기 전에 절대 경로로 바꿔준다거나 하는 귀찮은 과정이 있었는데</li><li>jsconfig로 절대 경로를 사용해 내가 만든 공통 모듈을 임포트 해서 사용하니까</li><li>그런 귀찮은 과정을 하지 않을 수 있었다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode">https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode</a></li></ul><figure class="highlight json"><figcaption><span>jsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">&quot;paths&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;/*&quot;</span>: [<span class="string">&quot;./*&quot;</span>],</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 이런것도 된다.</span></span><br><span class="line">    <span class="attr">&quot;@hello/*&quot;</span>: [<span class="string">&quot;./src/*&quot;</span>]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B020201230/preview.png" alt=" "></p><ul><li>프로젝트 루트 경로를 <code>/</code> 로 표현하고 싶은데, 방법이…</li></ul><figure class="highlight json"><figcaption><span>jsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;compilerOptions&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;baseUrl&quot;</span>: <span class="string">&quot;.&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;paths&quot;</span>: &#123;</span><br><span class="line">      <span class="comment">//Assuming your components/utilities live in ./src</span></span><br><span class="line">      <span class="comment">//Update this path as necessary</span></span><br><span class="line">      <span class="attr">&quot;/*&quot;</span>: [<span class="string">&quot;./*&quot;</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">//Add any build/compiled folders here to stop vscode searching those</span></span><br><span class="line">  <span class="attr">&quot;exclude&quot;</span>: [<span class="string">&quot;node_modules&quot;</span>, <span class="string">&quot;build&quot;</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>프로젝트 루트 경로에 <code>jsconfig.json</code>을 생성하고 내용을 위처럼 한다.</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B020201230/1.png" alt=" "></p><ul><li>이렇게 내가 지정한 대로 참조가 되는 것을 확인할 수 있다.</li><li>참고로, 위 <code>opt</code>디렉터리는 내 프로젝트 루트에 있는 디렉터리이다.</li></ul><h2 id="활용한-곳"><a href="#활용한-곳" class="headerlink" title="활용한 곳"></a>활용한 곳</h2><ul><li>sam project에서 공통 모듈을 layer로 빼는데,</li><li>layer로 뺀 공통 모듈을 임포트 할 때 상대 경로를 사용하기 껄끄러운 문제가 있었다.</li></ul><ul><li>로컬에서 개발할 때는 상대 경로로 개발하다가 (자동완성 위해)</li><li>람다를 배포할 때에, 배포하기 전에 절대 경로로 바꿔준다거나 하는 귀찮은 과정이 있었는데</li><li>jsconfig로 절대 경로를 사용해 내가 만든 공통 모듈을 임포트 해서 사용하니까</li><li>그런 귀찮은 과정을 하지 않을 수 있었다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode">https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode</a></li></ul><figure class="highlight json"><figcaption><span>jsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">&quot;paths&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;/*&quot;</span>: [<span class="string">&quot;./*&quot;</span>],</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 이런것도 된다.</span></span><br><span class="line">    <span class="attr">&quot;@hello/*&quot;</span>: [<span class="string">&quot;./src/*&quot;</span>]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
@@ -629,13 +623,12 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;/images/typescript%EC%97%90%EC%84%9C-json-import20201228/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/typescript%EC%97%90%EC%84%9C-json-import20201228/preview.</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/typescript%EC%97%90%EC%84%9C-json-import20201228/preview.png" alt=" "></p><figure class="highlight plain"><figcaption><span>tsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;compilerOptions&quot;: &#123;</span><br><span class="line">    &#x2F;&#x2F;...</span><br><span class="line">    &quot;resolveJsonModule&quot;: true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight ts"><figcaption><span>ex.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> myJsonData <span class="keyword">from</span> <span class="string">&quot;./myJson.json&quot;</span>;</span><br></pre></td></tr></table></figure><ul><li>이런식으로 가져다 쓸 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://gracefullight.dev/2019/11/26/import-json-with-typescript-ts5071/">https://gracefullight.dev/2019/11/26/import-json-with-typescript-ts5071/</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/typescript%EC%97%90%EC%84%9C-json-import20201228/preview.png" alt=" "></p><figure class="highlight plain"><figcaption><span>tsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;compilerOptions&quot;: &#123;</span><br><span class="line">    &#x2F;&#x2F;...</span><br><span class="line">    &quot;resolveJsonModule&quot;: true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight ts"><figcaption><span>ex.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> myJsonData <span class="keyword">from</span> <span class="string">&quot;./myJson.json&quot;</span>;</span><br></pre></td></tr></table></figure><ul><li>이런식으로 가져다 쓸 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://gracefullight.dev/2019/11/26/import-json-with-typescript-ts5071/">https://gracefullight.dev/2019/11/26/import-json-with-typescript-ts5071/</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
