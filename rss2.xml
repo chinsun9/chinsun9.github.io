@@ -56,13 +56,12 @@
       <description>&lt;p&gt;&lt;img src=&quot;/images/Live-Share20210220/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;같이 하나의 내용에 대해 프로그래밍 할 때, 킹갓 확장도구이다..&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;참고&quot;&gt;&lt;a hr</description>
+&lt;li&gt;웹개발 같은경우 세션의 호스트가 데</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/Live-Share20210220/preview.png" alt=" "></p><ul><li>같이 하나의 내용에 대해 프로그래밍 할 때, 킹갓 확장도구이다..</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="/images/Live-Share20210220/preview.png" alt=" "></p><ul><li>같이 하나의 내용에 대해 프로그래밍 할 때, 킹갓 확장도구이다..</li><li>웹개발 같은경우 세션의 호스트가 데브 서버를 열면,</li><li>세션의 참가한 게스트들도 자동으로 포워딩이 되서</li><li>각자 localhost에서 웹을 확인해 볼 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
