@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 22 Feb 2021 05:41:22 GMT</pubDate>
+    <pubDate>Mon, 22 Feb 2021 07:39:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>mysql 현재시간 구하기</title>
+      <link>https://chinsun9.github.io/2021/02/22/mysql-%ED%98%84%EC%9E%AC%EC%8B%9C%EA%B0%84-%EA%B5%AC%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2021/02/22/mysql-%ED%98%84%EC%9E%AC%EC%8B%9C%EA%B0%84-%EA%B5%AC%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Mon, 22 Feb 2021 07:39:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">-- 현재시간 구하기</span></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    <span class="keyword">curtime</span>()</span><br><span class="line"><span class="comment">-- 07:35:51</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 시간 값만 가져오기 ; %H ; 00~23</span></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    <span class="keyword">date_format</span>(<span class="keyword">curtime</span>(), <span class="string">&#x27;%H&#x27;</span>)</span><br><span class="line"><span class="comment">-- 07</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 앞에 0 패딩 없애기 1 ; 숫자를 더해서 캐스팅</span></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    <span class="keyword">date_format</span>(<span class="keyword">curtime</span>(), <span class="string">&#x27;%H&#x27;</span>) + <span class="number">0</span></span><br><span class="line"><span class="comment">-- 7</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 앞에 0 패딩 없애기 2 ; k로 가져오면 0~23</span></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    <span class="keyword">date_format</span>(<span class="keyword">curtime</span>(), <span class="string">&#x27;%k&#x27;</span>)</span><br><span class="line"><span class="comment">-- 7</span></span><br></pre></td></tr></table></figure><ul><li>현재 시간을 얻는 법</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format">https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/mysql/">mysql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/curtime/">curtime</category>
+      
+      <category domain="https://chinsun9.github.io/tags/date-format/">date_format</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/22/mysql-%ED%98%84%EC%9E%AC%EC%8B%9C%EA%B0%84-%EA%B5%AC%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>git alias로 명령어 줄이기</title>
@@ -25,7 +57,7 @@
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global alias.rc &#39;rm -r --cached .&#39;</span><br></pre></td></tr></table></figure><ul><li>이미 원격 저장소에 올린 파일을 gitignore 할 때 쓰는 명령어인데</li><li>항상 외우지 않고 복붙 했었는데,</li><li>그것도 귀찮아서 이참에 <code>git rc</code>로 줄여버렸다</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global alias.rc &#39;rm -r --cached .&#39;</span><br></pre></td></tr></table></figure><ul><li>windows의 경우 git bash를 열어서 위 명령을 실핸한다</li></ul><ul><li>이미 원격 저장소에 올린 파일을 gitignore 할 때 쓰는 명령어인데</li><li>항상 외우지 않고 복붙 했었는데,</li><li>그것도 귀찮아서 이참에 <code>git rc</code>로 줄여버렸다</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/git/">git</category>
@@ -613,34 +645,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/01/05/css-%EC%84%A0%EC%96%B8-%EC%88%9C%EC%84%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0-prettier-plugin-style-order/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode 유용한 단축키</title>
-      <link>https://chinsun9.github.io/2021/01/05/vscode-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4/</link>
-      <guid>https://chinsun9.github.io/2021/01/05/vscode-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4/</guid>
-      <pubDate>Tue, 05 Jan 2021 00:29:37 GMT</pubDate>
-      
-        
-        
-      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/_QCNqV_EfzE&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/_QCNqV_EfzE" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>김정환님 영상을 보고 정리한 내용</li></ul><h2 id="단축키"><a href="#단축키" class="headerlink" title="단축키"></a>단축키</h2><ul><li>Ctrl Shift \<ul><li>Go to Bracket</li><li>현재 커서를 포함하는 괄호로 이동한다.</li></ul></li></ul><ul><li>F12<ul><li>Go to Definition</li></ul></li></ul><ul><li>Alt F12<ul><li>Peek Definition</li></ul></li></ul><ul><li>Ctrl 0<ul><li>Focus into Side Bar</li></ul></li></ul><ul><li>Ctrl Shift .<ul><li>Focus Breadcrumbs</li></ul></li></ul><ul><li>Ctrl T<ul><li>Go to Symbol in Workspace</li><li><code>#</code></li></ul></li></ul><ul><li>Ctrl Shift O<ul><li>Go to Symbol in Editor</li><li><code>@</code></li></ul></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/_QCNqV_EfzE">https://youtu.be/_QCNqV_EfzE</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/%EB%8B%A8%EC%B6%95%ED%82%A4/">단축키</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/01/05/vscode-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4/#disqus_thread</comments>
       
     </item>
     
