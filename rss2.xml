@@ -9,8 +9,374 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 19 Jan 2021 08:48:31 GMT</pubDate>
+    <pubDate>Fri, 12 Mar 2021 00:18:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>배열에서 가장 큰 값 얻기</title>
+      <link>https://chinsun9.github.io/2021/03/12/%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EA%B0%92-%EC%96%BB%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2021/03/12/%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EA%B0%92-%EC%96%BB%EA%B8%B0/</guid>
+      <pubDate>Fri, 12 Mar 2021 00:18:33 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.max.apply(<span class="literal">null</span>, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]);</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/apply">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/apply</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/03/12/%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EA%B0%92-%EC%96%BB%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>mysql datetime칼럼 날짜로 조회하기</title>
+      <link>https://chinsun9.github.io/2021/02/23/mysql-datetime%EC%B9%BC%EB%9F%BC-%EB%82%A0%EC%A7%9C%EB%A1%9C-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2021/02/23/mysql-datetime%EC%B9%BC%EB%9F%BC-%EB%82%A0%EC%A7%9C%EB%A1%9C-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Tue, 23 Feb 2021 02:40:24 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> commuteLog <span class="keyword">where</span> companyId<span class="operator">=</span><span class="number">12</span> <span class="keyword">and</span> <span class="type">date</span>(commuteDatetime) <span class="operator">=</span> curdate();</span><br></pre></td></tr></table></figure><ul><li>datetime(<code>YYYY-MM-DD hh:mm:ss</code>)을 date(<code>YYYY-MM-DD</code>) 기준으로 조회하는 방법</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/date/">date</category>
+      
+      <category domain="https://chinsun9.github.io/tags/datetime/">datetime</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/23/mysql-datetime%EC%B9%BC%EB%9F%BC-%EB%82%A0%EC%A7%9C%EB%A1%9C-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>rds 시간대 변경</title>
+      <link>https://chinsun9.github.io/2021/02/22/rds-%EC%8B%9C%EA%B0%84%EB%8C%80-%EB%B3%80%EA%B2%BD/</link>
+      <guid>https://chinsun9.github.io/2021/02/22/rds-%EC%8B%9C%EA%B0%84%EB%8C%80-%EB%B3%80%EA%B2%BD/</guid>
+      <pubDate>Mon, 22 Feb 2021 08:33:05 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/rds-%EC%8B%9C%EA%B0%84%EB%8C%80-%EB%B3%80%EA%B2%BD2021022</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/rds-%EC%8B%9C%EA%B0%84%EB%8C%80-%EB%B3%80%EA%B2%BD20210222/preview.png" alt=" "></p><ul><li>rds는 기본적으로 utc를 사용한다</li><li>한국 시간대로 바꿔보자</li></ul><h2 id="하는-법"><a href="#하는-법" class="headerlink" title="하는 법"></a>하는 법</h2><h3 id="새-파라미터-그룹-생성"><a href="#새-파라미터-그룹-생성" class="headerlink" title="새 파라미터 그룹 생성"></a>새 파라미터 그룹 생성</h3><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/rds-%EC%8B%9C%EA%B0%84%EB%8C%80-%EB%B3%80%EA%B2%BD20210222/1.png" alt=" "></p><ul><li>rds 생성하면서 자동 생성되는 default.~ 그룹은 수정이 불가하다</li><li>따라서 디폴트 파라미터 그룹을 사용한다면 새로이 파라미터 그룹을 생성한다</li></ul><h3 id="time-zone-파라미터-수정"><a href="#time-zone-파라미터-수정" class="headerlink" title="time zone 파라미터 수정"></a>time zone 파라미터 수정</h3><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/rds-%EC%8B%9C%EA%B0%84%EB%8C%80-%EB%B3%80%EA%B2%BD20210222/preview.png" alt=" "></p><ul><li>time_zone을 검색해서 시간대를 수정한다</li></ul><h3 id="rds-인스턴스-파라미터-그룹-수정"><a href="#rds-인스턴스-파라미터-그룹-수정" class="headerlink" title="rds 인스턴스 파라미터 그룹 수정"></a>rds 인스턴스 파라미터 그룹 수정</h3><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/rds-%EC%8B%9C%EA%B0%84%EB%8C%80-%EB%B3%80%EA%B2%BD20210222/2.png" alt=" "><br><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/rds-%EC%8B%9C%EA%B0%84%EB%8C%80-%EB%B3%80%EA%B2%BD20210222/3.png" alt=" "></p><ul><li>rds 인스턴스 수정에 들어가서,</li><li>위에서 생성한 파라미터 그룹으로 적용시켜준다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/rds-%EC%8B%9C%EA%B0%84%EB%8C%80-%EB%B3%80%EA%B2%BD20210222/4.png" alt=" "></p><h3 id="rds-재시작"><a href="#rds-재시작" class="headerlink" title="rds 재시작"></a>rds 재시작</h3><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/rds-%EC%8B%9C%EA%B0%84%EB%8C%80-%EB%B3%80%EA%B2%BD20210222/5.png" alt=" "></p><ul><li>rds를 재시작해야 적용된다</li></ul><h3 id="적용-확인하기"><a href="#적용-확인하기" class="headerlink" title="적용 확인하기"></a>적용 확인하기</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> curtime();</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://aws.amazon.com/ko/premiumsupport/knowledge-center/rds-change-time-zone/">https://aws.amazon.com/ko/premiumsupport/knowledge-center/rds-change-time-zone/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/rds/">rds</category>
+      
+      <category domain="https://chinsun9.github.io/tags/utc/">utc</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/22/rds-%EC%8B%9C%EA%B0%84%EB%8C%80-%EB%B3%80%EA%B2%BD/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>mysql 버전 확인</title>
+      <link>https://chinsun9.github.io/2021/02/22/mysql-%EB%B2%84%EC%A0%84-%ED%99%95%EC%9D%B8/</link>
+      <guid>https://chinsun9.github.io/2021/02/22/mysql-%EB%B2%84%EC%A0%84-%ED%99%95%EC%9D%B8/</guid>
+      <pubDate>Mon, 22 Feb 2021 07:40:31 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;t</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    version()</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/mysql/">mysql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/version/">version</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/22/mysql-%EB%B2%84%EC%A0%84-%ED%99%95%EC%9D%B8/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>mysql 현재시간 구하기</title>
+      <link>https://chinsun9.github.io/2021/02/22/mysql-%ED%98%84%EC%9E%AC%EC%8B%9C%EA%B0%84-%EA%B5%AC%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2021/02/22/mysql-%ED%98%84%EC%9E%AC%EC%8B%9C%EA%B0%84-%EA%B5%AC%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Mon, 22 Feb 2021 07:39:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">-- 현재시간 구하기</span></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    curtime()</span><br><span class="line"><span class="comment">-- 07:35:51</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 시간 값만 가져오기 ; %H ; 00~23</span></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    date_format(curtime(), <span class="string">&#x27;%H&#x27;</span>)</span><br><span class="line"><span class="comment">-- 07</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 앞에 0 패딩 없애기 1 ; 숫자를 더해서 캐스팅</span></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    date_format(curtime(), <span class="string">&#x27;%H&#x27;</span>) <span class="operator">+</span> <span class="number">0</span></span><br><span class="line"><span class="comment">-- 7</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 앞에 0 패딩 없애기 2 ; k로 가져오면 0~23</span></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">    date_format(curtime(), <span class="string">&#x27;%k&#x27;</span>)</span><br><span class="line"><span class="comment">-- 7</span></span><br></pre></td></tr></table></figure><ul><li>현재 시간을 얻는 법</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format">https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/mysql/">mysql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/curtime/">curtime</category>
+      
+      <category domain="https://chinsun9.github.io/tags/date-format/">date_format</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/22/mysql-%ED%98%84%EC%9E%AC%EC%8B%9C%EA%B0%84-%EA%B5%AC%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>git alias로 명령어 줄이기</title>
+      <link>https://chinsun9.github.io/2021/02/22/git-alias%EB%A1%9C-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A4%84%EC%9D%B4%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2021/02/22/git-alias%EB%A1%9C-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A4%84%EC%9D%B4%EA%B8%B0/</guid>
+      <pubDate>Mon, 22 Feb 2021 05:41:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span cla</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global alias.rc &#39;rm -r --cached .&#39;</span><br></pre></td></tr></table></figure><ul><li>windows의 경우 git bash를 열어서 위 명령을 실핸한다</li></ul><ul><li>이미 원격 저장소에 올린 파일을 gitignore 할 때 쓰는 명령어인데</li><li>항상 외우지 않고 복붙 했었는데,</li><li>그것도 귀찮아서 이참에 <code>git rc</code>로 줄여버렸다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/alias/">alias</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/22/git-alias%EB%A1%9C-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A4%84%EC%9D%B4%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>ts react sass eslint prettier</title>
+      <link>https://chinsun9.github.io/2021/02/21/ts-react-sass-eslint-prettier/</link>
+      <guid>https://chinsun9.github.io/2021/02/21/ts-react-sass-eslint-prettier/</guid>
+      <pubDate>Sun, 21 Feb 2021 12:09:32 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/chinsun9/minecraft-nether-portal-calculator/tree/my-react-template&quot;&gt;https://github.com/chinsun9/minecra</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li><a href="https://github.com/chinsun9/minecraft-nether-portal-calculator/tree/my-react-template">https://github.com/chinsun9/minecraft-nether-portal-calculator/tree/my-react-template</a></li></ul><ul><li>react 시작할 때 편하게 하려고 만듦</li></ul><ul><li>내가 사용하려고 만들어둔 템플릿</li><li>react + ts + eslint(airbnb) + prettier + sass</li><li>필요 없는 테스트 코드 삭제 및 favicon 설정해두었다</li></ul><ul><li>리액트로 만들 새로운 앱 초기 설정하는 김에 템플릿으로 만들었다</li></ul><h2 id="설정한-순서"><a href="#설정한-순서" class="headerlink" title="설정한 순서"></a>설정한 순서</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">npx create-react-app . --template typescript</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; eslint, prettier</span><br><span class="line">npx install-peerdeps --dev eslint-config-airbnb</span><br><span class="line">yarn add -D @typescript-eslint&#x2F;eslint-plugin @typescript-eslint&#x2F;parser</span><br><span class="line">yarn add -D prettier eslint-config-prettier eslint-plugin-prettier</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; sass(scss)</span><br><span class="line">yarn add node-sass</span><br><span class="line">yarn add prettier-plugin-style-order</span><br></pre></td></tr></table></figure><ul><li>필요 패키지 설치</li></ul><figure class="highlight plain"><figcaption><span>package.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;devDependencies&quot;: &#123;</span><br><span class="line">   &quot;@typescript-eslint&#x2F;eslint-plugin&quot;: &quot;^4.15.1&quot;,</span><br><span class="line">   &quot;@typescript-eslint&#x2F;parser&quot;: &quot;^4.15.1&quot;,</span><br><span class="line">   &quot;eslint&quot;: &quot;7.2.0&quot;,  &#x2F;&#x2F; &lt;-- 삭제</span><br></pre></td></tr></table></figure><ul><li><code>react-scripts</code>에서 <code>&quot;eslint&quot;: &quot;^7.11.0&quot;</code>를 사용한다고 수동으로 eslint를 설치하지 말라고 한다.</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn</span><br></pre></td></tr></table></figure><ul><li><code>package.json</code> 에서 eslint를 삭제하고 <code>yarn</code>으로 종속성을 다시 설치한다</li></ul><figure class="highlight plain"><figcaption><span>package.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&quot;eslintConfig&quot;: &#123;</span><br><span class="line">  &quot;plugins&quot;: [</span><br><span class="line">    &quot;react&quot;,</span><br><span class="line">    &quot;@typescript-eslint&quot;</span><br><span class="line">  ],</span><br><span class="line">  &quot;extends&quot;: [</span><br><span class="line">    &quot;airbnb&quot;,</span><br><span class="line">    &quot;airbnb&#x2F;hooks&quot;,</span><br><span class="line">    &quot;plugin:@typescript-eslint&#x2F;recommended&quot;,</span><br><span class="line">    &quot;prettier&quot;,</span><br><span class="line">    &quot;prettier&#x2F;react&quot;,</span><br><span class="line">    &quot;plugin:prettier&#x2F;recommended&quot;</span><br><span class="line">  ],</span><br><span class="line">  &quot;env&quot;: &#123;</span><br><span class="line">    &quot;browser&quot;: true,</span><br><span class="line">    &quot;node&quot;: true</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;parser&quot;: &quot;@typescript-eslint&#x2F;parser&quot;,</span><br><span class="line">  &quot;parserOptions&quot;: &#123;</span><br><span class="line">    &quot;project&quot;: &quot;.&#x2F;tsconfig.json&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;rules&quot;: &#123;</span><br><span class="line">    &quot;import&#x2F;no-unresolved&quot;: &quot;off&quot;,</span><br><span class="line">    &quot;import&#x2F;extensions&quot;: &quot;off&quot;,</span><br><span class="line">    &quot;@typescript-eslint&#x2F;explicit-module-boundary-types&quot;: &quot;off&quot;,</span><br><span class="line">    &quot;no-use-before-define&quot;: &quot;off&quot;,</span><br><span class="line">    &quot;react&#x2F;jsx-filename-extension&quot;: &quot;off&quot;,</span><br><span class="line">    &quot;prettier&#x2F;prettier&quot;: [</span><br><span class="line">      &quot;error&quot;,</span><br><span class="line">      &#123;</span><br><span class="line">        &quot;endOfLine&quot;: &quot;auto&quot;,</span><br><span class="line">        &quot;singleQuote&quot;: true,</span><br><span class="line">        &quot;tabWidth&quot;: 2</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure><ul><li><code>package.json</code> 에서 eslint 관련 설정을 해준다</li></ul><figure class="highlight plain"><figcaption><span>.vscode/settings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;typescript.tsdk&quot;: &quot;node_modules\\typescript\\lib&quot;,</span><br><span class="line"></span><br><span class="line">  &#x2F;&#x2F; 프리티어 확장도구로 인한 자동 포맷팅 비활성화</span><br><span class="line">  &quot;editor.formatOnSave&quot;: false,</span><br><span class="line"></span><br><span class="line">  &#x2F;&#x2F; 파일 저장시 자동으로 lint 및 포맷팅</span><br><span class="line">  &quot;editor.codeActionsOnSave&quot;: &#123;</span><br><span class="line">    &quot;source.fixAll.eslint&quot;: true</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  &#x2F;&#x2F; css파일에서 저장시 자동으로 포맷팅</span><br><span class="line">  &quot;[scss]&quot;: &#123;</span><br><span class="line">    &quot;editor.formatOnSave&quot;: true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>settings.json</code> 을 설정한다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/react/">react</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/21/ts-react-sass-eslint-prettier/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>css box-sizing</title>
+      <link>https://chinsun9.github.io/2021/02/21/css-box-sizing/</link>
+      <guid>https://chinsun9.github.io/2021/02/21/css-box-sizing/</guid>
+      <pubDate>Sun, 21 Feb 2021 11:14:24 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>border-box를 많이 쓸 것 같다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/CSS/box-sizing">https://developer.mozilla.org/ko/docs/Web/CSS/box-sizing</a></li><li><code>border-box</code>, <code>content-box</code> 둘 차이를 시각적으로 알려주는 예제가 있다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      <category domain="https://chinsun9.github.io/tags/box-sizing/">box-sizing</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/21/css-box-sizing/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>블로그 테마 업데이트</title>
+      <link>https://chinsun9.github.io/2021/02/20/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link>
+      <guid>https://chinsun9.github.io/2021/02/20/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid>
+      <pubDate>Sat, 20 Feb 2021 14:30:59 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B820210220/preview.png" alt=" "></p><ul><li>배경색을 흰색으로 바꾸고,</li><li>깔끔하게 바꿔보았다.</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
+      
+      <category domain="https://chinsun9.github.io/tags/styl/">styl</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/20/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Live Share</title>
+      <link>https://chinsun9.github.io/2021/02/20/Live-Share/</link>
+      <guid>https://chinsun9.github.io/2021/02/20/Live-Share/</guid>
+      <pubDate>Sat, 20 Feb 2021 13:17:39 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/Live-Share20210220/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;같이 </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/Live-Share20210220/preview.png" alt=" "></p><ul><li>같이 하나의 내용에 대해 프로그래밍 할 때, 킹갓 확장도구이다..</li><li>웹개발 같은경우 세션의 호스트가 데브 서버를 열면,</li><li>세션의 참가한 게스트들도 자동으로 포워딩이 되서</li><li>각자 localhost에서 웹을 확인해 볼 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/Live-Share/">Live Share</category>
+      
+      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/20/Live-Share/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>react에서 Map을 state로 사용할 때</title>
+      <link>https://chinsun9.github.io/2021/02/17/react%EC%97%90%EC%84%9C-Map%EC%9D%84-state%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/</link>
+      <guid>https://chinsun9.github.io/2021/02/17/react%EC%97%90%EC%84%9C-Map%EC%9D%84-state%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/</guid>
+      <pubDate>Wed, 17 Feb 2021 07:10:33 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;ES6 Map with React.useState&lt;/em&gt; ; &lt;a href=&quot;https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b&quot;&gt;https://me</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li><em>ES6 Map with React.useState</em> ; <a href="https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b">https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b</a> 를 참고하였다</li></ul><figure class="highlight ts"><figcaption><span>맞는 예</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [state, setState] = React.useState(<span class="keyword">new</span> <span class="built_in">Map</span>());</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> add = <span class="function">(<span class="params">key, value</span>) =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="function">(<span class="params">prev</span>) =&gt;</span> <span class="keyword">new</span> <span class="built_in">Map</span>([...prev, [key, value]]));</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> upsert = <span class="function">(<span class="params">key, value</span>) =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="function">(<span class="params">prev</span>) =&gt;</span> <span class="keyword">new</span> <span class="built_in">Map</span>(prev).set(key, value));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">delete</span> = <span class="function">(<span class="params">key</span>) =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="function">(<span class="params">prev</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> newState = <span class="keyword">new</span> <span class="built_in">Map</span>(prev);</span><br><span class="line">    newState.delete(key);</span><br><span class="line">    <span class="keyword">return</span> newState;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> clear = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="function">(<span class="params">prev</span>) =&gt;</span> <span class="keyword">new</span> <span class="built_in">Map</span>(prev.clear()));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight ts"><figcaption><span>틀린 예</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [state, setState] = React.useState(<span class="keyword">new</span> <span class="built_in">Map</span>());</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> add = <span class="function">(<span class="params">key, value</span>) =&gt;</span> &#123;</span><br><span class="line">  state.set(key, value);</span><br><span class="line">  setState(state);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...</span></span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b">https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/react/">react</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/useState/">useState</category>
+      
+      <category domain="https://chinsun9.github.io/tags/Map/">Map</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/17/react%EC%97%90%EC%84%9C-Map%EC%9D%84-state%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>scroll css</title>
+      <link>https://chinsun9.github.io/2021/02/17/scroll-css/</link>
+      <guid>https://chinsun9.github.io/2021/02/17/scroll-css/</guid>
+      <pubDate>Wed, 17 Feb 2021 06:28:46 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/scroll-css20210217/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;이런 </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/scroll-css20210217/preview.png" alt=" "></p><ul><li>이런 모양의 스크롤바를 만들 수 있다</li></ul><figure class="highlight scss"><figcaption><span>index.scss</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* scroll bar */</span></span><br><span class="line">&amp; &#123;</span><br><span class="line">  &amp;::-webkit-scrollbar &#123;</span><br><span class="line">    width: <span class="number">10px</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;::-webkit-scrollbar-track &#123;</span><br><span class="line">    background: <span class="number">#f1f1f1</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    background: <span class="number">#888</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;::-webkit-scrollbar-thumb:hover &#123;</span><br><span class="line">    background: <span class="number">#555</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/scss/">scss</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      <category domain="https://chinsun9.github.io/tags/sass/">sass</category>
+      
+      <category domain="https://chinsun9.github.io/tags/scrollbar/">scrollbar</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/02/17/scroll-css/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js(ts) bind</title>
@@ -25,7 +391,7 @@
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> myType &#123;</span><br><span class="line">  name: <span class="built_in">string</span>;</span><br><span class="line">  age: <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> me: myType = &#123;</span><br><span class="line">  name: <span class="string">&quot;name&quot;</span>,</span><br><span class="line">  age: <span class="number">99</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>].forEach(<span class="function"><span class="keyword">function</span> (<span class="params"><span class="built_in">this</span>: myType, value, index</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">this</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(value, index);</span><br><span class="line">&#125;, me);</span><br><span class="line"><span class="comment">// 0 1 &#123; name: &#x27;name&#x27;, age: 11 &#125;</span></span><br><span class="line"><span class="comment">// 1 2 &#123; name: &#x27;name&#x27;, age: 11 &#125;</span></span><br><span class="line"><span class="comment">// 2 3 &#123; name: &#x27;name&#x27;, age: 11 &#125;</span></span><br></pre></td></tr></table></figure><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> MyClass &#123;</span><br><span class="line">  me: Person;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">constructor</span>(<span class="params">person: Person</span>) &#123;</span><br><span class="line">    <span class="built_in">this</span>.me = person;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  someFunction() &#123;</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].forEach(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(value, <span class="built_in">this</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  someFunctionBindThis() &#123;</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>].forEach(<span class="function"><span class="keyword">function</span> (<span class="params"><span class="built_in">this</span>: MyClass, value</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(value, <span class="built_in">this</span>);</span><br><span class="line">    &#125;, <span class="built_in">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  someFunctionWithArrow() &#123;</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].forEach(<span class="function">(<span class="params">value</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(value, <span class="built_in">this</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> myclass = <span class="keyword">new</span> MyClass(me);</span><br><span class="line">myclass.someFunction();</span><br><span class="line"><span class="comment">// 1 undefined</span></span><br><span class="line"><span class="comment">// 2 undefined</span></span><br><span class="line"><span class="comment">// 3 undefined</span></span><br><span class="line"></span><br><span class="line">myclass.someFunctionBindThis();</span><br><span class="line"><span class="comment">// 1 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 2 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 3 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"></span><br><span class="line">myclass.someFunctionWithArrow();</span><br><span class="line"><span class="comment">// 1 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 2 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 3 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br></pre></td></tr></table></figure><ul><li>bind 함수를 배워보았다</li><li>bind를 배우면서 <code>function</code>과 <code>arrow function</code> 차이를 실감하게 되었다</li><li><code>arrow function</code>은 bind를 사용할 수 없다</li><li><code>arrow function</code>은 함수 바깥 스코프의 <code>this</code>가 자동 바인딩된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind</a></li><li><a href="https://velog.io/@modolee/javascript-function-vs-arrow-function">https://velog.io/@modolee/javascript-function-vs-arrow-function</a></li><li><a href="https://stackoverflow.com/questions/33308121/can-you-bind-this-in-an-arrow-function">https://stackoverflow.com/questions/33308121/can-you-bind-this-in-an-arrow-function</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> myType &#123;</span><br><span class="line">  name: <span class="built_in">string</span>;</span><br><span class="line">  age: <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> me: myType = &#123;</span><br><span class="line">  name: <span class="string">&quot;name&quot;</span>,</span><br><span class="line">  age: <span class="number">99</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>].forEach(<span class="function"><span class="keyword">function</span> (<span class="params"><span class="built_in">this</span>: myType, value, index</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">this</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(value, index);</span><br><span class="line">&#125;, me);</span><br><span class="line"><span class="comment">// 0 1 &#123; name: &#x27;name&#x27;, age: 11 &#125;</span></span><br><span class="line"><span class="comment">// 1 2 &#123; name: &#x27;name&#x27;, age: 11 &#125;</span></span><br><span class="line"><span class="comment">// 2 3 &#123; name: &#x27;name&#x27;, age: 11 &#125;</span></span><br></pre></td></tr></table></figure><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">  me: Person;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params">person: Person</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.me = person;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="title">someFunction</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].forEach(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(value, <span class="built_in">this</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="title">someFunctionBindThis</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>].forEach(<span class="function"><span class="keyword">function</span> (<span class="params"><span class="built_in">this</span>: MyClass, value</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(value, <span class="built_in">this</span>);</span><br><span class="line">    &#125;, <span class="built_in">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="title">someFunctionWithArrow</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].forEach(<span class="function">(<span class="params">value</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(value, <span class="built_in">this</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> myclass = <span class="keyword">new</span> MyClass(me);</span><br><span class="line">myclass.someFunction();</span><br><span class="line"><span class="comment">// 1 undefined</span></span><br><span class="line"><span class="comment">// 2 undefined</span></span><br><span class="line"><span class="comment">// 3 undefined</span></span><br><span class="line"></span><br><span class="line">myclass.someFunctionBindThis();</span><br><span class="line"><span class="comment">// 1 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 2 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 3 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"></span><br><span class="line">myclass.someFunctionWithArrow();</span><br><span class="line"><span class="comment">// 1 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 2 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 3 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br></pre></td></tr></table></figure><ul><li>bind 함수를 배워보았다</li><li>bind를 배우면서 <code>function</code>과 <code>arrow function</code> 차이를 실감하게 되었다</li><li><code>arrow function</code>은 bind를 사용할 수 없다</li><li><code>arrow function</code>은 함수 바깥 스코프의 <code>this</code>가 자동 바인딩된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind</a></li><li><a href="https://velog.io/@modolee/javascript-function-vs-arrow-function">https://velog.io/@modolee/javascript-function-vs-arrow-function</a></li><li><a href="https://stackoverflow.com/questions/33308121/can-you-bind-this-in-an-arrow-function">https://stackoverflow.com/questions/33308121/can-you-bind-this-in-an-arrow-function</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
@@ -85,12 +451,12 @@
       <description>&lt;ul&gt;
 &lt;li&gt;브라우저로 aws 콘솔에 접속해서 마스터 유저 비밀번호를 변경할 수 있다&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%</description>
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/ima</description>
         
       
       
       
-      <content:encoded><![CDATA[<ul><li>브라우저로 aws 콘솔에 접속해서 마스터 유저 비밀번호를 변경할 수 있다</li></ul><p><img src="/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD20210114/1.png" alt=" "></p><ul><li>Amazon RDS &gt; 데이터베이스 &gt; 데이터베이스 선택 &gt; 수정 (수정하고자 하는 RDS가 실행되어 있어야 한다)</li><li><code>새 마스터 암호</code>를 채운다</li></ul><p><img src="/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD20210114/2.png" alt=" "></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://tecadmin.net/recover-reset-amazon-rds-master-user-password/">https://tecadmin.net/recover-reset-amazon-rds-master-user-password/</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<ul><li>브라우저로 aws 콘솔에 접속해서 마스터 유저 비밀번호를 변경할 수 있다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD20210114/1.png" alt=" "></p><ul><li>Amazon RDS &gt; 데이터베이스 &gt; 데이터베이스 선택 &gt; 수정 (수정하고자 하는 RDS가 실행되어 있어야 한다)</li><li><code>새 마스터 암호</code>를 채운다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD20210114/2.png" alt=" "></p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://tecadmin.net/recover-reset-amazon-rds-master-user-password/">https://tecadmin.net/recover-reset-amazon-rds-master-user-password/</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
@@ -165,9 +531,9 @@
       
       <category domain="https://chinsun9.github.io/tags/push/">push</category>
       
-      <category domain="https://chinsun9.github.io/tags/commit/">commit</category>
-      
       <category domain="https://chinsun9.github.io/tags/alias/">alias</category>
+      
+      <category domain="https://chinsun9.github.io/tags/commit/">commit</category>
       
       
       <comments>https://chinsun9.github.io/2021/01/06/git-commit-push-%EB%AA%85%EB%A0%B9-%ED%95%A9%EC%B9%98%EA%B8%B0/#disqus_thread</comments>
@@ -267,377 +633,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/01/05/aws-sam-%EC%A0%95%EB%A6%AC/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>process.exit(1)</title>
-      <link>https://chinsun9.github.io/2021/01/05/process-exit-1/</link>
-      <guid>https://chinsun9.github.io/2021/01/05/process-exit-1/</guid>
-      <pubDate>Tue, 05 Jan 2021 01:54:06 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">process.exit(<span class="number">1</span>);</span><br></pre></td></tr></table></figure><ul><li>이 줄을 만나면 즉시 종료된다</li><li>나는 보통 코드를 주먹구구로 작성하다가 아래 라인을 실행시키고 싶지 않을 때 사용한다..</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://nodejs.dev/learn/how-to-exit-from-a-nodejs-program">https://nodejs.dev/learn/how-to-exit-from-a-nodejs-program</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/process/">process</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/01/05/process-exit-1/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Moment.js utc 사용하기</title>
-      <link>https://chinsun9.github.io/2021/01/05/moment-js-utc-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2021/01/05/moment-js-utc-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Tue, 05 Jan 2021 01:36:20 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> date1 = moment().utc().format(<span class="string">&quot;YYYY-MM-DD HH:mm:ss&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(date1);</span><br></pre></td></tr></table></figure><ul><li><code>utc()</code> 메소드를 이용한다.</li></ul><h2 id="활용한-곳"><a href="#활용한-곳" class="headerlink" title="활용한 곳"></a>활용한 곳</h2><ul><li>rds는 기본적으로 utc를 사용한다</li><li>그래서 현재 지역 시간으로 포맷팅 된 값을 그대로 db에 넣으면 안 된다</li><li>rds의 시간대를 변경하거나, insert, update 할 때 잘 가공해서 쿼리를 해야 한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://momentjs.com/docs/#/parsing/utc/">https://momentjs.com/docs/#/parsing/utc/</a></li></ul><ul><li><a href="https://aws.amazon.com/ko/premiumsupport/knowledge-center/rds-change-time-zone/">https://aws.amazon.com/ko/premiumsupport/knowledge-center/rds-change-time-zone/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/momentjs/">momentjs</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/01/05/moment-js-utc-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>forEach await 안되는 문제</title>
-      <link>https://chinsun9.github.io/2021/01/05/forEach-await-%EC%95%88%EB%90%98%EB%8A%94-%EB%AC%B8%EC%A0%9C/</link>
-      <guid>https://chinsun9.github.io/2021/01/05/forEach-await-%EC%95%88%EB%90%98%EB%8A%94-%EB%AC%B8%EC%A0%9C/</guid>
-      <pubDate>Tue, 05 Jan 2021 01:27:25 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;상황&quot;&gt;&lt;a href=&quot;#상황&quot; class=&quot;headerlink&quot; title=&quot;상황&quot;&gt;&lt;/a&gt;상황&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;배열로 저장되어 있는 데이터를 forEach로 순회하면서 db에 &lt;code&gt;INSERT&lt;/code&gt;하는 쿼리를 만들</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>배열로 저장되어 있는 데이터를 forEach로 순회하면서 db에 <code>INSERT</code>하는 쿼리를 만들려고 했다</li><li>근데 비동기적으로 동작했다</li></ul><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">await</span> data.forEach(<span class="keyword">async</span> (element: ArticlePreview, idx: <span class="built_in">number</span>) =&gt; &#123;</span><br><span class="line">  <span class="comment">// insert query</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> element <span class="keyword">of</span> data) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">const</span> a = <span class="keyword">await</span> databaseConnection.query(queryString, [</span><br><span class="line">          <span class="comment">// ...</span></span><br><span class="line">        ]);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><ul><li><code>for of</code>에서는 await을 통해서 순차적으로 처리가 가능했다</li></ul><h2 id="시도해보지-않은-다른-방향"><a href="#시도해보지-않은-다른-방향" class="headerlink" title="시도해보지 않은 다른 방향"></a>시도해보지 않은 다른 방향</h2><ul><li>한번에 INSERT하기</li><li><a href="https://stackoverflow.com/questions/8899802/how-do-i-do-a-bulk-insert-in-mysql-using-node-js">https://stackoverflow.com/questions/8899802/how-do-i-do-a-bulk-insert-in-mysql-using-node-js</a></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/37576685/using-async-await-with-a-foreach-loop">https://stackoverflow.com/questions/37576685/using-async-await-with-a-foreach-loop</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/async/">async</category>
-      
-      <category domain="https://chinsun9.github.io/tags/await/">await</category>
-      
-      <category domain="https://chinsun9.github.io/tags/forEach/">forEach</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/01/05/forEach-await-%EC%95%88%EB%90%98%EB%8A%94-%EB%AC%B8%EC%A0%9C/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>css 선언 순서 정렬하기 prettier-plugin-style-order</title>
-      <link>https://chinsun9.github.io/2021/01/05/css-%EC%84%A0%EC%96%B8-%EC%88%9C%EC%84%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0-prettier-plugin-style-order/</link>
-      <guid>https://chinsun9.github.io/2021/01/05/css-%EC%84%A0%EC%96%B8-%EC%88%9C%EC%84%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0-prettier-plugin-style-order/</guid>
-      <pubDate>Tue, 05 Jan 2021 01:10:59 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;css를 조금 더 아름답고 일관되게 작성해보자.&lt;/li&gt;
-&lt;li&gt;기본 prettier 포맷팅을 사용하면 들여 쓰기를 예쁘게 고쳐준다&lt;/li&gt;
-&lt;li&gt;그런데 규칙 없이 나열된 속성들을 일관되게 포맷팅을 하고 싶은 욕구가 생겨서 찾아보았다</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>css를 조금 더 아름답고 일관되게 작성해보자.</li><li>기본 prettier 포맷팅을 사용하면 들여 쓰기를 예쁘게 고쳐준다</li><li>그런데 규칙 없이 나열된 속성들을 일관되게 포맷팅을 하고 싶은 욕구가 생겨서 찾아보았다</li><li>이런 것들은 직접 하는 것보다는 도구의 도움을 받는 게 훨씬 좋다고 생각한다</li></ul><h2 id="prettier-plugin-style-order"><a href="#prettier-plugin-style-order" class="headerlink" title="prettier-plugin-style-order"></a>prettier-plugin-style-order</h2><ul><li>(참고) 나는 scss로 작업했다</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yarn add -D prettier-plugin-style-order</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; postcss-scss 도 인스톨 하라고 메시지가 나옴</span><br><span class="line">yarn add -D postcss-scss</span><br></pre></td></tr></table></figure><ul><li>이렇게 패키지를 설치하고,</li><li><code>fonmat on save</code> 옵션이 켜져 있다면,</li><li>아무 css 파일에서 저장을 해보면 순서가 아름답게 정렬되는 것을 알 수 있다.</li><li>기존에 작업하던 것들을 일괄적으로 포맷팅 하고 싶다면</li><li>npm script에 prettier 명령어로 원하는 경로의 css파일들을 지정해서 일괄 포맷팅 한다.</li><li><code>&quot;cssSort&quot;: &quot;prettier --write src/**/*.scss&quot;</code></li></ul><h2 id="생각"><a href="#생각" class="headerlink" title="생각"></a>생각</h2><ul><li>이전에는 항상 css를 주먹구구 중에서도 주먹구구로 작성해왔는데,</li><li>그러지 않을 수 있겠다.</li></ul><ul><li>css property order, css property sort 이런 식으로 검색을 했었는데</li><li>stylelint 등 여러 가지 css를 정렬하는 도구들이 있는 것 같았다</li><li>그런데 prettier을 사용하고 있기 때문에, 다른 거 쓰지 말고 prettier에서 플러그인을 깔아서 해결해 보자 하여 <code>prettier-plugin-style-order</code>를 설치해서 사용해 보았다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://9elements.com/css-rule-order/">https://9elements.com/css-rule-order/</a></li><li><a href="https://github.com/brandon-rhodes/Concentric-CSS/blob/master/style3.css">https://github.com/brandon-rhodes/Concentric-CSS/blob/master/style3.css</a></li><li><a href="https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/">https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/css/">css</category>
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/prettier/">prettier</category>
-      
-      <category domain="https://chinsun9.github.io/tags/style-order/">style order</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/01/05/css-%EC%84%A0%EC%96%B8-%EC%88%9C%EC%84%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0-prettier-plugin-style-order/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode 유용한 단축키</title>
-      <link>https://chinsun9.github.io/2021/01/05/vscode-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4/</link>
-      <guid>https://chinsun9.github.io/2021/01/05/vscode-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4/</guid>
-      <pubDate>Tue, 05 Jan 2021 00:29:37 GMT</pubDate>
-      
-        
-        
-      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/_QCNqV_EfzE&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/_QCNqV_EfzE" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>김정환님 영상을 보고 정리한 내용</li></ul><h2 id="단축키"><a href="#단축키" class="headerlink" title="단축키"></a>단축키</h2><ul><li>Ctrl Shift \<ul><li>Go to Bracket</li><li>현재 커서를 포함하는 괄호로 이동한다.</li></ul></li></ul><ul><li>F12<ul><li>Go to Definition</li></ul></li></ul><ul><li>Alt F12<ul><li>Peek Definition</li></ul></li></ul><ul><li>Ctrl 0<ul><li>Focus into Side Bar</li></ul></li></ul><ul><li>Ctrl Shift .<ul><li>Focus Breadcrumbs</li></ul></li></ul><ul><li>Ctrl T<ul><li>Go to Symbol in Workspace</li><li><code>#</code></li></ul></li></ul><ul><li>Ctrl Shift O<ul><li>Go to Symbol in Editor</li><li><code>@</code></li></ul></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/_QCNqV_EfzE">https://youtu.be/_QCNqV_EfzE</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/%EB%8B%A8%EC%B6%95%ED%82%A4/">단축키</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/01/05/vscode-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>202012 검색 실적</title>
-      <link>https://chinsun9.github.io/2021/01/04/202012-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/</link>
-      <guid>https://chinsun9.github.io/2021/01/04/202012-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/</guid>
-      <pubDate>Mon, 04 Jan 2021 03:48:48 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202012-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%8120210104/prev</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202012-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%8120210104/preview.png" alt=" "></p>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/01/04/202012-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode 절대경로 import, require 하기</title>
-      <link>https://chinsun9.github.io/2020/12/30/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2020/12/30/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Wed, 30 Dec 2020 06:00:22 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B020201230/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;l</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B020201230/preview.png" alt=" "></p><ul><li>프로젝트 루트 경로를 <code>/</code> 로 표현하고 싶은데, 방법이…</li></ul><figure class="highlight json"><figcaption><span>jsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;compilerOptions&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;baseUrl&quot;</span>: <span class="string">&quot;.&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;paths&quot;</span>: &#123;</span><br><span class="line">      <span class="comment">//Assuming your components/utilities live in ./src</span></span><br><span class="line">      <span class="comment">//Update this path as necessary</span></span><br><span class="line">      <span class="attr">&quot;/*&quot;</span>: [<span class="string">&quot;./*&quot;</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">//Add any build/compiled folders here to stop vscode searching those</span></span><br><span class="line">  <span class="attr">&quot;exclude&quot;</span>: [<span class="string">&quot;node_modules&quot;</span>, <span class="string">&quot;build&quot;</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>프로젝트 루트 경로에 <code>jsconfig.json</code>을 생성하고 내용을 위처럼 한다.</li></ul><p><img src="/images/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B020201230/1.png" alt=" "></p><ul><li>이렇게 내가 지정한 대로 참조가 되는 것을 확인할 수 있다.</li><li>참고로, 위 <code>opt</code>디렉터리는 내 프로젝트 루트에 있는 디렉터리이다.</li></ul><h2 id="활용한-곳"><a href="#활용한-곳" class="headerlink" title="활용한 곳"></a>활용한 곳</h2><ul><li>sam project에서 공통 모듈을 layer로 빼는데,</li><li>layer로 뺀 공통 모듈을 임포트 할 때 상대 경로를 사용하기 껄끄러운 문제가 있었다.</li></ul><ul><li>로컬에서 개발할 때는 상대 경로로 개발하다가 (자동완성 위해)</li><li>람다를 배포할 때에, 배포하기 전에 절대 경로로 바꿔준다거나 하는 귀찮은 과정이 있었는데</li><li>jsconfig로 절대 경로를 사용해 내가 만든 공통 모듈을 임포트 해서 사용하니까</li><li>그런 귀찮은 과정을 하지 않을 수 있었다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode">https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode</a></li></ul><figure class="highlight json"><figcaption><span>jsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">&quot;paths&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;/*&quot;</span>: [<span class="string">&quot;./*&quot;</span>],</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 이런것도 된다.</span></span><br><span class="line">    <span class="attr">&quot;@hello/*&quot;</span>: [<span class="string">&quot;./src/*&quot;</span>]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/jsconfig/">jsconfig</category>
-      
-      <category domain="https://chinsun9.github.io/tags/absolute-path/">absolute path</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/30/vscode-%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C-import-require-%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>typescript에서 json import</title>
-      <link>https://chinsun9.github.io/2020/12/29/typescript%EC%97%90%EC%84%9C-json-import/</link>
-      <guid>https://chinsun9.github.io/2020/12/29/typescript%EC%97%90%EC%84%9C-json-import/</guid>
-      <pubDate>Tue, 29 Dec 2020 06:11:19 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/typescript%EC%97%90%EC%84%9C-json-import20201228/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/typescript%EC%97%90%EC%84%9C-json-import20201228/preview.png" alt=" "></p><figure class="highlight plain"><figcaption><span>tsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;compilerOptions&quot;: &#123;</span><br><span class="line">    &#x2F;&#x2F;...</span><br><span class="line">    &quot;resolveJsonModule&quot;: true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight ts"><figcaption><span>ex.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> myJsonData <span class="keyword">from</span> <span class="string">&quot;./myJson.json&quot;</span>;</span><br></pre></td></tr></table></figure><ul><li>이런식으로 가져다 쓸 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://gracefullight.dev/2019/11/26/import-json-with-typescript-ts5071/">https://gracefullight.dev/2019/11/26/import-json-with-typescript-ts5071/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
-      
-      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/json/">json</category>
-      
-      <category domain="https://chinsun9.github.io/tags/import/">import</category>
-      
-      <category domain="https://chinsun9.github.io/tags/tsconfig/">tsconfig</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/29/typescript%EC%97%90%EC%84%9C-json-import/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>타자 속도</title>
-      <link>https://chinsun9.github.io/2020/12/28/%ED%83%80%EC%9E%90-%EC%86%8D%EB%8F%84/</link>
-      <guid>https://chinsun9.github.io/2020/12/28/%ED%83%80%EC%9E%90-%EC%86%8D%EB%8F%84/</guid>
-      <pubDate>Mon, 28 Dec 2020 10:34:47 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;한타 ; 534타&lt;/li&gt;
-&lt;li&gt;영타 ; 329타&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;한타&quot;&gt;&lt;a href=&quot;#한타&quot; class=&quot;headerlink&quot; title=&quot;한타&quot;&gt;&lt;/a&gt;한타&lt;/h2&gt;&lt;div class=&quot;video-contai</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>한타 ; 534타</li><li>영타 ; 329타</li></ul><h2 id="한타"><a href="#한타" class="headerlink" title="한타"></a>한타</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/u3j-ndydcnU" frameborder="0" loading="lazy" allowfullscreen></iframe></div><h2 id="영타"><a href="#영타" class="headerlink" title="영타"></a>영타</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/oa722y5TxtQ" frameborder="0" loading="lazy" allowfullscreen></iframe></div><br><div class="video-container"><iframe src="https://www.youtube.com/embed/0hlAexpopJs" frameborder="0" loading="lazy" allowfullscreen></iframe></div>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/%ED%83%80%EC%9E%90%EC%86%8D%EB%8F%84/">타자속도</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/28/%ED%83%80%EC%9E%90-%EC%86%8D%EB%8F%84/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>SQL Formatter vscode 확장도구</title>
-      <link>https://chinsun9.github.io/2020/12/27/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC/</link>
-      <guid>https://chinsun9.github.io/2020/12/27/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC/</guid>
-      <pubDate>Sun, 27 Dec 2020 11:46:49 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Format Document&lt;/code&gt; 로 &lt;code&gt;.sql&lt;/code&gt; 포맷팅하기&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;/images/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li><code>Format Document</code> 로 <code>.sql</code> 포맷팅하기</li></ul><p><img src="/images/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC20201227/preview.png" alt=" "></p><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter">https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter</a></li><li><code>sql-formatter</code> 확장도구 설치</li></ul><figure class="highlight json"><figcaption><span>settings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">&quot;[sql]&quot;</span>: &#123;</span><br><span class="line">    <span class="comment">// 방금 설치한 익스텐션을 통해 포맷팅하도록</span></span><br><span class="line">    <span class="attr">&quot;editor.defaultFormatter&quot;</span>: <span class="string">&quot;adpyke.vscode-sql-formatter&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">// sql 키워드(select, from 등)를 대문자로 자동 치환해줌.</span></span><br><span class="line">  <span class="attr">&quot;sql-formatter.uppercase&quot;</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>위처럼 세팅해주고 <code>Format Document</code> 명령을 실행하면 잘 동작하는 것을 확인할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter">https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/formatter/">formatter</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/27/SQL-Formatter-vscode-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>sass, scss 연습</title>
-      <link>https://chinsun9.github.io/2020/12/23/sass-scss-%EC%97%B0%EC%8A%B5/</link>
-      <guid>https://chinsun9.github.io/2020/12/23/sass-scss-%EC%97%B0%EC%8A%B5/</guid>
-      <pubDate>Wed, 23 Dec 2020 06:52:47 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/sass-scss-%EC%97%B0%EC%8A%B520201223/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.yo</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/sass-scss-%EC%97%B0%EC%8A%B520201223/preview.png" alt=" "></p><div class="video-container"><iframe src="https://www.youtube.com/embed/Zz6eOVaaelI" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li><a href="https://www.youtube.com/watch?v=Zz6eOVaaelI">Learn Sass In 20 Minutes | Sass Crash Course</a> 를 보면서</li><li>sass, scss 를 공부해보았다.</li></ul><h2 id="sass"><a href="#sass" class="headerlink" title="sass"></a>sass</h2><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 변수</span></span><br><span class="line"><span class="variable">$primaryBtn</span>: rgb(<span class="number">78</span>, <span class="number">201</span>, <span class="number">253</span>);</span><br><span class="line"><span class="variable">$textColor</span>: rgb(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="variable">$primaryBtn</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 중첩 nesting 가능</span></span><br><span class="line">  <span class="comment">//   &amp; ; 상위 선택자</span></span><br><span class="line">  &amp;<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;hellooo&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 중첩된 속성</span></span><br><span class="line">  <span class="attribute">margin</span>: &#123;</span><br><span class="line">    top: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">20px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="attribute">padding</span>: &#123;</span><br><span class="line">    bottom: <span class="number">40px</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">30px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>중첩 이 기능 하나만으로도 엄청나게 강력한 기능이라고 생각한다.</li><li>스타일 적용되는 것도 직관적이고, html이랑 같은 구조로 css를 작성할 수 있을 것 같다.</li></ul><h2 id="연습-코드-저장소"><a href="#연습-코드-저장소" class="headerlink" title="연습 코드 저장소"></a>연습 코드 저장소</h2><ul><li><a href="https://github.com/chinsun9/sass-practice">https://github.com/chinsun9/sass-practice</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/scss/">scss</category>
-      
-      <category domain="https://chinsun9.github.io/tags/sass/">sass</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/23/sass-scss-%EC%97%B0%EC%8A%B5/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Antimalware Service Executable 미쳐버린 메모리 점유율</title>
-      <link>https://chinsun9.github.io/2020/12/23/Antimalware-Service-Executable-%EB%AF%B8%EC%B3%90%EB%B2%84%EB%A6%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A8/</link>
-      <guid>https://chinsun9.github.io/2020/12/23/Antimalware-Service-Executable-%EB%AF%B8%EC%B3%90%EB%B2%84%EB%A6%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A8/</guid>
-      <pubDate>Wed, 23 Dec 2020 01:25:30 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;/images/Antimalware-Service-Executable-%EB%AF%B8%EC%B3%90%EB%B2%84%EB%A6%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="/images/Antimalware-Service-Executable-%EB%AF%B8%EC%B3%90%EB%B2%84%EB%A6%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A820201222/preview.png" alt=" "></p><ul><li>윈도우 디펜더 프로세스가 메모리를 엄청나게 먹어서 골머리 아프다.</li><li>기본 300mb 정도이고 어쩔 땐 막 2gb 가까이 올라간다..</li><li>그땐 마우스가 막 끊기면서 불편하다..</li><li>해결법 보고 따라 했는데 300mb 정도 나오는데 더 지켜봐야겠다.</li></ul><ul><li>8기가로는 이것저것 하기엔 좀 부족한 메모리인 것 같다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>윈도우즈10 Antimalware Service Executable 메모리 점유 과다 문제 ; <a href="https://antilibrary.org/2371">https://antilibrary.org/2371</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/windows/">windows</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/windows/">windows</category>
-      
-      <category domain="https://chinsun9.github.io/tags/Antimalware-Service-Executable/">Antimalware Service Executable</category>
-      
-      
-      <comments>https://chinsun9.github.io/2020/12/23/Antimalware-Service-Executable-%EB%AF%B8%EC%B3%90%EB%B2%84%EB%A6%B0-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A8/#disqus_thread</comments>
       
     </item>
     

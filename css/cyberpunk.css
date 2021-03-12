@@ -1507,7 +1507,7 @@ a.has-text-grey-lightest:focus {
 }
 .card {
   background-color: transparent;
-  box-shadow: none, 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: none;
   color: #cdcdcd;
   max-width: 100%;
   position: relative;
@@ -10273,6 +10273,57 @@ body > .section {
     background: rgba(0,0,0,0.24);
   }
 }
+.column-left {
+  position: relative;
+}
+.column-left::before {
+  content: "";
+  border-right: 1px solid #e5e5e5;
+  right: 0;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: -30px;
+}
+.column-main .card {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 40px;
+  border-radius: 0;
+}
+.pagination-list li > a {
+  box-shadow: 0 1px 0 0 #e5e5e5 !important;
+}
+.pagination-list > li > a,
+.pagination .pagination-previous,
+.pagination .pagination-next {
+  box-shadow: 0 1px 0 0 #e5e5e5, 0 0 1px rgba(0,0,0,0.1) !important;
+  transition: all 0.2s ease;
+}
+.pagination-list > li > a:hover,
+.pagination .pagination-previous:hover,
+.pagination .pagination-next:hover {
+  background-color: #3273dc;
+  color: #fff !important;
+}
+.pagination-list > li > a:hover a,
+.pagination .pagination-previous:hover a,
+.pagination .pagination-next:hover a {
+  color: inherit;
+}
+#back-to-top {
+  box-shadow: 0 1px 0 0 #e5e5e5, 0 0 1px rgba(0,0,0,0.1) !important;
+}
+.searchbox-input {
+  background: #fafafa !important;
+}
+.searchbox-body {
+  background-color: #fff !important;
+  padding: 10px 20px;
+}
+.searchbox-body .searchbox-result-preview {
+  font-size: small;
+}
 .ml-0,
 .mx-0 {
   margin-left: 0 !important;
@@ -10792,7 +10843,7 @@ article.article .article-meta {
 }
 article.article .content {
   word-wrap: break-word;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 article.article .content img {
   margin-top: 30px;
@@ -10991,7 +11042,7 @@ footer.footer .level-end .field {
 .pagination .pagination-next {
   border: none;
   background: #000;
-  box-shadow: none, 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: none;
 }
 .pagination .pagination-link.is-current {
   background: #02d7f2;
@@ -11075,7 +11126,7 @@ footer.footer .level-end .field {
   z-index: 101;
   display: flex;
   overflow: hidden;
-  box-shadow: none, 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: none;
   border-radius: 0;
   background-color: #050a0e;
   width: 540px;
@@ -11190,7 +11241,7 @@ footer.footer .level-end .field {
 .searchbox .searchbox-pagination .searchbox-pagination-link {
   overflow: hidden;
   padding: 0.5em 0.8em;
-  box-shadow: none, 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: none;
   border-radius: 0;
   background-color: #050a0e;
 }
@@ -11324,7 +11375,7 @@ figure.highlight .section {
   bottom: 2.5em;
   line-height: 0;
   overflow: hidden;
-  box-shadow: none, 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: none;
   border-radius: 0;
 }
 .donate .qrcode img {
