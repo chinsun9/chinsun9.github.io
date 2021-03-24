@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 24 Mar 2021 01:52:58 GMT</pubDate>
+    <pubDate>Wed, 24 Mar 2021 02:09:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode-pandoc 마크다운을 워드파일로 만들기</title>
+      <link>https://chinsun9.github.io/2021/03/24/vscode-pandoc/</link>
+      <guid>https://chinsun9.github.io/2021/03/24/vscode-pandoc/</guid>
+      <pubDate>Wed, 24 Mar 2021 02:08:17 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-pandoc20210311/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-pandoc20210311/preview.png" alt=" "></p><ul><li>markdown을 word파일로 예쁘게 만들어준다</li><li>목차까지 자동생성되니 아주 좋다</li></ul><ul><li>참고 ; 나는 pdf로는 안 만들어져서 word(docx)로 변환 후에 word 열어서 pdf로 저장하는 방식으로 한다.</li></ul><h2 id="사용법"><a href="#사용법" class="headerlink" title="사용법"></a>사용법</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-pandoc20210311/1.png" alt=" "></p><ul><li>F1 &gt; Pandoc Render &gt; docx</li><li>해당 마크다운 파일과 같은 경로에 아웃풋(docx)가 생성된다</li></ul><h2 id="설치하기"><a href="#설치하기" class="headerlink" title="설치하기"></a>설치하기</h2><ul><li><p>확장도구만 깔고 왜 안돼! 하고있엇다.</p></li><li><p>2가지를 설치해야한다</p></li><li><p>확장도구 + pandoc</p></li></ul><ul><li><a href="https://pandoc.org/installing.html">https://pandoc.org/installing.html</a></li><li>위 링크로 들어가 인스톨러를 다운받고 실행해 pandoc을 설치한다</li></ul><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc">https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc</a></li><li>vscode를 열고 <code>vscode-pandoc</code> 확장도구를 설치한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://pandoc.org/installing.html">https://pandoc.org/installing.html</a></li><li><a href="https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc">https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/pandoc/">pandoc</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/03/24/vscode-pandoc/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vscode shell git bash</title>
@@ -583,34 +613,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/01/19/js-bind/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>git 명령어 줄이기</title>
-      <link>https://chinsun9.github.io/2021/01/14/git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A4%84%EC%9D%B4%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2021/01/14/git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A4%84%EC%9D%B4%EA%B8%B0/</guid>
-      <pubDate>Thu, 14 Jan 2021 01:55:36 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global alias.r &#39;! r() &#123; git reset --soft HEAD~&quot;$1&quot; ; &#125; ; r&#39;</span><br><span class="line"></span><br><span class="line">git config --global alias.r1 &#39;! r1() &#123; git reset --soft HEAD~1 ; &#125; ; r1&#39;</span><br></pre></td></tr></table></figure><ul><li><code>git reset --soft HEAD~1</code> 마지막 커밋 하나를 취소하는 명령어이다</li><li>나는 보통 여러 컴퓨터에서 작업할 때, 일단 작업 중을 내용을 임시적으로 커밋 푸쉬해서 깃허브에 업로드한다</li><li>다른 컴퓨터에서 풀로 받아오고, 이 임시적인 커밋을 취소할 때 명령어를 길게 쓰는 게 귀찮아서 <code>alias</code>로 짧게 줄여보았다</li><li><code>git r 2</code> ; 숫자만큼 커밋 취소하기</li><li><code>git r1</code> ; 마지막 커밋 취소하기</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://chinsun9.github.io/2021/01/06/git-commit-push-%EB%AA%85%EB%A0%B9-%ED%95%A9%EC%B9%98%EA%B8%B0/">https://chinsun9.github.io/2021/01/06/git-commit-push-명령-합치기/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/alias/">alias</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/01/14/git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A4%84%EC%9D%B4%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
