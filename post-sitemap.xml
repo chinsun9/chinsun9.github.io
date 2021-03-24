@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/11/17/js-%EC%9D%B4%EC%A7%84%EC%88%98-%EC%95%9E%EC%97%90-0%EB%84%A3%EA%B8%B0/</loc>
+        <lastmod>2021-03-24T06:29:39.230Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/03/24/Map%EC%9D%84-%ED%8F%AC%ED%95%A8%ED%95%9C-Object-JSON-stringify/</loc>
-        <lastmod>2021-03-24T04:45:04.755Z</lastmod>
+        <lastmod>2021-03-24T05:03:00.550Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -898,14 +906,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/18/vscode-show-all-commands-F1-%ED%82%A4%EB%A1%9C-%EC%97%B4%EA%B8%B0/</loc>
         <lastmod>2020-11-18T05:49:53.411Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/17/js-%EC%9D%B4%EC%A7%84%EC%88%98-%EC%95%9E%EC%97%90-0%EB%84%A3%EA%B8%B0/</loc>
-        <lastmod>2020-11-17T08:31:20.444Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
