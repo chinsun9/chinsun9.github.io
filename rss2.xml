@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 24 Mar 2021 01:38:31 GMT</pubDate>
+    <pubDate>Wed, 24 Mar 2021 01:40:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>array to hashmap js</title>
+      <link>https://chinsun9.github.io/2021/03/24/array-to-hashmap-js/</link>
+      <guid>https://chinsun9.github.io/2021/03/24/array-to-hashmap-js/</guid>
+      <pubDate>Wed, 24 Mar 2021 01:40:18 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master&lt;img src=&quot;&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;ex1</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master<img src="" alt=" "></p><figure class="highlight js"><figcaption><span>ex1</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">value</span>: <span class="number">1</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">2</span>, <span class="attr">value</span>: <span class="number">2</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">3</span>, <span class="attr">value</span>: <span class="number">3</span> &#125;,</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>();</span><br><span class="line"></span><br><span class="line">arr.reduce(<span class="function">(<span class="params">newMap, cur</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> &#123; id, value &#125; = cur;</span><br><span class="line">  newMap.set(id, value);</span><br><span class="line">  <span class="keyword">return</span> newMap;</span><br><span class="line">&#125;, map);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(map);</span><br><span class="line">map.get(<span class="number">1</span>);</span><br></pre></td></tr></table></figure><ul><li>reduce로 합쳐주는 방식으로 할 수 있고</li></ul><figure class="highlight js"><figcaption><span>ex2</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">value</span>: <span class="number">1</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">2</span>, <span class="attr">value</span>: <span class="number">2</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">3</span>, <span class="attr">value</span>: <span class="number">3</span> &#125;,</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>(arr.map(<span class="function">(<span class="params">item</span>) =&gt;</span> [item.id, item.value]));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(map);</span><br></pre></td></tr></table></figure><ul><li>array.map()과 Map 생성자로 짧고 이쁘게 변화해줄 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/26264956/convert-object-array-to-hash-map-indexed-by-an-attribute-value-of-the-object">https://stackoverflow.com/questions/26264956/convert-object-array-to-hash-map-indexed-by-an-attribute-value-of-the-object</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/js/">js</category>
+      
+      <category domain="https://chinsun9.github.io/tags/array/">array</category>
+      
+      <category domain="https://chinsun9.github.io/tags/hashmap/">hashmap</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/03/24/array-to-hashmap-js/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>mysql replace 안될 때</title>
@@ -581,40 +614,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/01/14/rds-master-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%80%EA%B2%BD/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>setTimeout Promise</title>
-      <link>https://chinsun9.github.io/2021/01/06/setTimeout-Promise/</link>
-      <guid>https://chinsun9.github.io/2021/01/06/setTimeout-Promise/</guid>
-      <pubDate>Wed, 06 Jan 2021 08:32:29 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> delay = <span class="function">(<span class="params">ms</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve</span>) =&gt;</span></span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      resolve(ms);</span><br><span class="line">    &#125;, ms)</span><br><span class="line">  );</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> main = <span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`main start`</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> result = delay(<span class="number">1000</span>);</span><br><span class="line">  result.then(<span class="built_in">console</span>.log);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`main end`</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> main2 = <span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`main start`</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> result = <span class="keyword">await</span> delay(<span class="number">1000</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(result);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`main end`</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">main();</span><br><span class="line"><span class="comment">// main2();</span></span><br></pre></td></tr></table></figure><ul><li>promise를 알려주는 여러 글, 영상에서 <code>setTimeout</code>으로 예제로 진행한다</li><li>setTimeout을 promise로 감싸면 딜레이를 만들 수 있다</li><li>promise가 처음에 엄청 헷갈리는데, 막힐 때마다 이 예제를 먼저 작성해보고 적용해보았던 것 같다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Using_promises">https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Using_promises</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/async/">async</category>
-      
-      <category domain="https://chinsun9.github.io/tags/await/">await</category>
-      
-      <category domain="https://chinsun9.github.io/tags/setTimeout/">setTimeout</category>
-      
-      <category domain="https://chinsun9.github.io/tags/promise/">promise</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/01/06/setTimeout-Promise/#disqus_thread</comments>
       
     </item>
     
