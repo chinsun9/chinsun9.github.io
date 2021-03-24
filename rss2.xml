@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 24 Mar 2021 02:09:39 GMT</pubDate>
+    <pubDate>Wed, 24 Mar 2021 02:45:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>특정 자바 버전으로 jar 실행</title>
+      <link>https://chinsun9.github.io/2021/03/24/%ED%8A%B9%EC%A0%95-%EC%9E%90%EB%B0%94-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C-%EC%8B%A4%ED%96%89/</link>
+      <guid>https://chinsun9.github.io/2021/03/24/%ED%8A%B9%EC%A0%95-%EC%9E%90%EB%B0%94-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C-%EC%8B%A4%ED%96%89/</guid>
+      <pubDate>Wed, 24 Mar 2021 02:45:44 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%ED%8A%B9%EC%A0%95-%EC%9E%90%EB%B0%94-%EB%B2%84%EC%A0%84%</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%ED%8A%B9%EC%A0%95-%EC%9E%90%EB%B0%94-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C-%EC%8B%A4%ED%96%8920210312/preview.png" alt=" "></p><p>start %JAVA_8%\bin\java {jar이름} -jar</p><p>-</p><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>기존에 사용하던 A.jar 실행파일이 있다</li><li>자바 버전을 바꿨다</li><li>환경변수 변화로 인해 A.jar이 더 이상 동작하지 않는다</li><li>이 실행파일만 기존 자바 버전으로 실행할 수 없을까?</li></ul><ul><li>또는</li></ul><ul><li>A.jar은 jdk9에서 실행 가능하고</li><li>B.jar은 jdk13에서 실행 가능한데, 둘 다 각자의 자바 버전으로 실행하려면 어떻게 해야 할까?</li></ul><h2 id="실행파일-만들기"><a href="#실행파일-만들기" class="headerlink" title="실행파일 만들기"></a>실행파일 만들기</h2><figure class="highlight bat"><figcaption><span>ex.bat</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pushd</span> &quot;%~dp0&quot;</span><br><span class="line"></span><br><span class="line">&quot;C:\Program Files\Java\jdk-<span class="number">9</span>.<span class="number">0</span>.<span class="number">4</span>\bin\java.exe&quot; -version</span><br><span class="line"><span class="built_in">pause</span></span><br><span class="line"></span><br><span class="line">&quot;C:\Program Files\Java\jdk-<span class="number">13</span>.<span class="number">0</span>.<span class="number">2</span>\bin\java.exe&quot; -version</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure><ul><li>각 버전의 자바 파일 경로를 앞에 써준다.</li><li><code>-version</code> 옵션을 주어서 원하는 버전의 자바가 실행되는지 확인한다</li></ul><figure class="highlight bat"><figcaption><span>runA.bat</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pushd</span> &quot;%~dp0&quot;</span><br><span class="line"></span><br><span class="line">&quot;C:\Program Files\Java\jdk-<span class="number">9</span>.<span class="number">0</span>.<span class="number">4</span>\bin\java.exe&quot; -jar A.jar</span><br></pre></td></tr></table></figure><ul><li>이런 식으로 특정 자바 버전으로 jar을 실행할 수 있겠다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><code>pushd &quot;%~dp0&quot;</code> ; <a href="https://chinsun9.github.io/2020/10/06/cmd-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C/">https://chinsun9.github.io/2020/10/06/cmd-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B6%8C%ED%95%9C/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/java/">java</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/java/">java</category>
+      
+      <category domain="https://chinsun9.github.io/tags/bat/">bat</category>
+      
+      <category domain="https://chinsun9.github.io/tags/jar/">jar</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/03/24/%ED%8A%B9%EC%A0%95-%EC%9E%90%EB%B0%94-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C-%EC%8B%A4%ED%96%89/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vscode-pandoc 마크다운을 워드파일로 만들기</title>
@@ -579,40 +609,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/02/05/202101-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>js(ts) bind</title>
-      <link>https://chinsun9.github.io/2021/01/19/js-bind/</link>
-      <guid>https://chinsun9.github.io/2021/01/19/js-bind/</guid>
-      <pubDate>Tue, 19 Jan 2021 08:48:31 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight ts&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> myType &#123;</span><br><span class="line">  name: <span class="built_in">string</span>;</span><br><span class="line">  age: <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> me: myType = &#123;</span><br><span class="line">  name: <span class="string">&quot;name&quot;</span>,</span><br><span class="line">  age: <span class="number">99</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>].forEach(<span class="function"><span class="keyword">function</span> (<span class="params"><span class="built_in">this</span>: myType, value, index</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">this</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(value, index);</span><br><span class="line">&#125;, me);</span><br><span class="line"><span class="comment">// 0 1 &#123; name: &#x27;name&#x27;, age: 11 &#125;</span></span><br><span class="line"><span class="comment">// 1 2 &#123; name: &#x27;name&#x27;, age: 11 &#125;</span></span><br><span class="line"><span class="comment">// 2 3 &#123; name: &#x27;name&#x27;, age: 11 &#125;</span></span><br></pre></td></tr></table></figure><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">  me: Person;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params">person: Person</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.me = person;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="title">someFunction</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].forEach(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(value, <span class="built_in">this</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="title">someFunctionBindThis</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>].forEach(<span class="function"><span class="keyword">function</span> (<span class="params"><span class="built_in">this</span>: MyClass, value</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(value, <span class="built_in">this</span>);</span><br><span class="line">    &#125;, <span class="built_in">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="title">someFunctionWithArrow</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].forEach(<span class="function">(<span class="params">value</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(value, <span class="built_in">this</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> myclass = <span class="keyword">new</span> MyClass(me);</span><br><span class="line">myclass.someFunction();</span><br><span class="line"><span class="comment">// 1 undefined</span></span><br><span class="line"><span class="comment">// 2 undefined</span></span><br><span class="line"><span class="comment">// 3 undefined</span></span><br><span class="line"></span><br><span class="line">myclass.someFunctionBindThis();</span><br><span class="line"><span class="comment">// 1 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 2 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 3 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"></span><br><span class="line">myclass.someFunctionWithArrow();</span><br><span class="line"><span class="comment">// 1 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 2 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br><span class="line"><span class="comment">// 3 MyClass &#123; me: &#123; name: &#x27;name&#x27;, age: 11 &#125; &#125;</span></span><br></pre></td></tr></table></figure><ul><li>bind 함수를 배워보았다</li><li>bind를 배우면서 <code>function</code>과 <code>arrow function</code> 차이를 실감하게 되었다</li><li><code>arrow function</code>은 bind를 사용할 수 없다</li><li><code>arrow function</code>은 함수 바깥 스코프의 <code>this</code>가 자동 바인딩된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind</a></li><li><a href="https://velog.io/@modolee/javascript-function-vs-arrow-function">https://velog.io/@modolee/javascript-function-vs-arrow-function</a></li><li><a href="https://stackoverflow.com/questions/33308121/can-you-bind-this-in-an-arrow-function">https://stackoverflow.com/questions/33308121/can-you-bind-this-in-an-arrow-function</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
-      
-      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/bind/">bind</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/01/19/js-bind/#disqus_thread</comments>
       
     </item>
     
