@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 24 Mar 2021 05:03:00 GMT</pubDate>
+    <pubDate>Wed, 24 Mar 2021 08:48:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>lorem ipsum HTML만들다가 샘플 텍스트 고민하지 말자</title>
+      <link>https://chinsun9.github.io/2021/03/24/lorem-ipsum/</link>
+      <guid>https://chinsun9.github.io/2021/03/24/lorem-ipsum/</guid>
+      <pubDate>Wed, 24 Mar 2021 08:48:55 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/lorem-ipsum20210324/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vs</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/lorem-ipsum20210324/preview.png" alt=" "></p><ul><li>vscode emmet 으로 <code>lorem</code> 을 적으면 자동 완성할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>emmet 활성화 ; <a href="https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/emmet/">emmet</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/03/24/lorem-ipsum/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Map을 포함한 Object JSON stringify</title>
@@ -582,42 +612,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/02/17/react%EC%97%90%EC%84%9C-Map%EC%9D%84-state%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>scroll css</title>
-      <link>https://chinsun9.github.io/2021/02/17/scroll-css/</link>
-      <guid>https://chinsun9.github.io/2021/02/17/scroll-css/</guid>
-      <pubDate>Wed, 17 Feb 2021 06:28:46 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/scroll-css20210217/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;이런 </description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/scroll-css20210217/preview.png" alt=" "></p><ul><li>이런 모양의 스크롤바를 만들 수 있다</li></ul><figure class="highlight scss"><figcaption><span>index.scss</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* scroll bar */</span></span><br><span class="line">&amp; &#123;</span><br><span class="line">  &amp;::-webkit-scrollbar &#123;</span><br><span class="line">    width: <span class="number">10px</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;::-webkit-scrollbar-track &#123;</span><br><span class="line">    background: <span class="number">#f1f1f1</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    background: <span class="number">#888</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;::-webkit-scrollbar-thumb:hover &#123;</span><br><span class="line">    background: <span class="number">#555</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/scss/">scss</category>
-      
-      <category domain="https://chinsun9.github.io/tags/css/">css</category>
-      
-      <category domain="https://chinsun9.github.io/tags/sass/">sass</category>
-      
-      <category domain="https://chinsun9.github.io/tags/scrollbar/">scrollbar</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/02/17/scroll-css/#disqus_thread</comments>
       
     </item>
     
