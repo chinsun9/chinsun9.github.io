@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 24 Mar 2021 08:48:55 GMT</pubDate>
+    <pubDate>Thu, 25 Mar 2021 01:30:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>emojipedia 이모지 검색해서 찾기</title>
+      <link>https://chinsun9.github.io/2021/03/25/emojipedia/</link>
+      <guid>https://chinsun9.github.io/2021/03/25/emojipedia/</guid>
+      <pubDate>Thu, 25 Mar 2021 01:29:38 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/emojipedia20210325/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;co</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/emojipedia20210325/preview.png" alt=" "></p><ul><li><code>Win + .</code>, <code>Win + ;</code> 단축키로 이모지를 쓸 수 있는 건 좋은데 찾는 게 어렵다</li><li>키워드로 원하는 이모지를 검색해보자</li></ul><ul><li>사용 예시까지 알려준다 ㅋㅋ</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://emojipedia.org/">https://emojipedia.org/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/etc/">etc</category>
+      
+      <category domain="https://chinsun9.github.io/tags/emojipedia/">emojipedia</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/03/25/emojipedia/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>lorem ipsum HTML만들다가 샘플 텍스트 고민하지 말자</title>
@@ -579,39 +609,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/02/20/Live-Share/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>react에서 Map을 state로 사용할 때</title>
-      <link>https://chinsun9.github.io/2021/02/17/react%EC%97%90%EC%84%9C-Map%EC%9D%84-state%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/</link>
-      <guid>https://chinsun9.github.io/2021/02/17/react%EC%97%90%EC%84%9C-Map%EC%9D%84-state%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/</guid>
-      <pubDate>Wed, 17 Feb 2021 07:10:33 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;ES6 Map with React.useState&lt;/em&gt; ; &lt;a href=&quot;https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b&quot;&gt;https://me</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li><em>ES6 Map with React.useState</em> ; <a href="https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b">https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b</a> 를 참고하였다</li></ul><figure class="highlight ts"><figcaption><span>맞는 예</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [state, setState] = React.useState(<span class="keyword">new</span> <span class="built_in">Map</span>());</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> add = <span class="function">(<span class="params">key, value</span>) =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="function">(<span class="params">prev</span>) =&gt;</span> <span class="keyword">new</span> <span class="built_in">Map</span>([...prev, [key, value]]));</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> upsert = <span class="function">(<span class="params">key, value</span>) =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="function">(<span class="params">prev</span>) =&gt;</span> <span class="keyword">new</span> <span class="built_in">Map</span>(prev).set(key, value));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">delete</span> = <span class="function">(<span class="params">key</span>) =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="function">(<span class="params">prev</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> newState = <span class="keyword">new</span> <span class="built_in">Map</span>(prev);</span><br><span class="line">    newState.delete(key);</span><br><span class="line">    <span class="keyword">return</span> newState;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> clear = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="function">(<span class="params">prev</span>) =&gt;</span> <span class="keyword">new</span> <span class="built_in">Map</span>(prev.clear()));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight ts"><figcaption><span>틀린 예</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [state, setState] = React.useState(<span class="keyword">new</span> <span class="built_in">Map</span>());</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> add = <span class="function">(<span class="params">key, value</span>) =&gt;</span> &#123;</span><br><span class="line">  state.set(key, value);</span><br><span class="line">  setState(state);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...</span></span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b">https://medium.com/@jalalazimi/es6-map-with-react-usestate-9175cd7b409b</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/react/">react</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/react/">react</category>
-      
-      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/useState/">useState</category>
-      
-      <category domain="https://chinsun9.github.io/tags/Map/">Map</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/02/17/react%EC%97%90%EC%84%9C-Map%EC%9D%84-state%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C/#disqus_thread</comments>
       
     </item>
     
