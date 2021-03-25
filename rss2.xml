@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 25 Mar 2021 01:30:25 GMT</pubDate>
+    <pubDate>Thu, 25 Mar 2021 08:44:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>반응속도 테스트 클론코딩</title>
+      <link>https://chinsun9.github.io/2021/03/25/%EB%B0%98%EC%9D%91%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</link>
+      <guid>https://chinsun9.github.io/2021/03/25/%EB%B0%98%EC%9D%91%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</guid>
+      <pubDate>Thu, 25 Mar 2021 08:44:17 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;a href=&quot;https://chinsun9.github.io/reaction-time-test/&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><a href="https://chinsun9.github.io/reaction-time-test/"><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%B0%98%EC%9D%91%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A920210325/preview.png" alt=" "></a></p><ul><li>반응속도 테스트를 클론코딩 해봤다</li><li><a href="https://simritest.com/reaction">https://simritest.com/reaction</a></li><li><a href="https://humanbenchmark.com/tests/reactiontime">https://humanbenchmark.com/tests/reactiontime</a></li></ul><h2 id="기능"><a href="#기능" class="headerlink" title="기능"></a>기능</h2><ul><li>반응속도 기록</li><li>랜덤 간격</li><li>눈 덜 아프게</li><li>결과에 따라 다른 메시지</li><li>예측 클릭하면 횟수 -1</li></ul><h2 id="느낀점"><a href="#느낀점" class="headerlink" title="느낀점"></a>느낀점</h2><ul><li>기존 테스트가 색이 확 반전돼서</li><li>집중은 해야 하는데 눈이 너무 아팠다</li><li>그래서 배경색은 그대로에 초록점이 생기도록 했다</li></ul><ul><li>컨텍스트 쓸까 고민하다가 어차피 깊이도 안 깊어서 그냥 prop으로 넘겨줬다.</li></ul><h2 id="개선방향"><a href="#개선방향" class="headerlink" title="개선방향"></a>개선방향</h2><h3 id="공유-버튼-만들기"><a href="#공유-버튼-만들기" class="headerlink" title="공유 버튼 만들기"></a>공유 버튼 만들기</h3><ul><li>결과 이미지 생성해서 클립보드 복사해주기 또는 이미지 파일로 저장</li></ul><h3 id="구린-css-바꾸기"><a href="#구린-css-바꾸기" class="headerlink" title="구린 css 바꾸기"></a>구린 css 바꾸기</h3><ul><li>색을 좀 이쁘게 써보자</li></ul><h2 id="레포"><a href="#레포" class="headerlink" title="레포"></a>레포</h2><ul><li><a href="https://github.com/chinsun9/reaction-time-test">https://github.com/chinsun9/reaction-time-test</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/react/">react</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/03/25/%EB%B0%98%EC%9D%91%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>emojipedia 이모지 검색해서 찾기</title>
@@ -577,38 +607,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/02/20/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Live Share</title>
-      <link>https://chinsun9.github.io/2021/02/20/Live-Share/</link>
-      <guid>https://chinsun9.github.io/2021/02/20/Live-Share/</guid>
-      <pubDate>Sat, 20 Feb 2021 13:17:39 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/Live-Share20210220/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;같이 </description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/Live-Share20210220/preview.png" alt=" "></p><ul><li>같이 하나의 내용에 대해 프로그래밍 할 때, 킹갓 확장도구이다..</li><li>웹개발 같은경우 세션의 호스트가 데브 서버를 열면,</li><li>세션의 참가한 게스트들도 자동으로 포워딩이 되서</li><li>각자 localhost에서 웹을 확인해 볼 수 있다.</li></ul><ul><li>수동으로도 포워드 해줄 수 있다.</li><li>이제 같이 코딩할 친구만 있으면된다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/Live-Share/">Live Share</category>
-      
-      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/02/20/Live-Share/#disqus_thread</comments>
       
     </item>
     
