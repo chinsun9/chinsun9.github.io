@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 25 Mar 2021 08:44:17 GMT</pubDate>
+    <pubDate>Fri, 26 Mar 2021 01:19:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>layout css</title>
+      <link>https://chinsun9.github.io/2021/03/26/layout-css/</link>
+      <guid>https://chinsun9.github.io/2021/03/26/layout-css/</guid>
+      <pubDate>Fri, 26 Mar 2021 01:19:08 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/qm0IfG1GyZU&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/qm0IfG1GyZU" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li><a href="https://1linelayouts.glitch.me/">https://1linelayouts.glitch.me/</a></li><li>layout 잡을 때 참고하기 정말 좋은 사이트</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      <category domain="https://chinsun9.github.io/tags/grid/">grid</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/03/26/layout-css/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>반응속도 테스트 클론코딩</title>
@@ -575,38 +605,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/02/21/css-box-sizing/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>블로그 테마 업데이트</title>
-      <link>https://chinsun9.github.io/2021/02/20/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</link>
-      <guid>https://chinsun9.github.io/2021/02/20/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</guid>
-      <pubDate>Sat, 20 Feb 2021 14:30:59 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B820210220/preview.png" alt=" "></p><ul><li>배경색을 흰색으로 바꾸고,</li><li>깔끔하게 바꿔보았다.</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
-      
-      <category domain="https://chinsun9.github.io/tags/css/">css</category>
-      
-      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
-      
-      <category domain="https://chinsun9.github.io/tags/styl/">styl</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/02/20/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/#disqus_thread</comments>
       
     </item>
     
