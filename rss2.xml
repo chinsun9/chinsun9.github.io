@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 21 Apr 2021 00:50:38 GMT</pubDate>
+    <pubDate>Thu, 22 Apr 2021 02:19:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>gradle build 특정 jdk 버전으로</title>
+      <link>https://chinsun9.github.io/2021/04/22/gradle-build-%ED%8A%B9%EC%A0%95-jdk-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C/</link>
+      <guid>https://chinsun9.github.io/2021/04/22/gradle-build-%ED%8A%B9%EC%A0%95-jdk-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C/</guid>
+      <pubDate>Thu, 22 Apr 2021 02:19:47 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;상황&quot;&gt;&lt;a href=&quot;#상황&quot; class=&quot;headerlink&quot; title=&quot;상황&quot;&gt;&lt;/a&gt;상황&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;내 컴퓨터에는 여러 가지 자바 버전이 설치되어있다. (jdk1.8.0_281, jdk-13.0.2)&lt;/li&gt;
+&lt;li</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>내 컴퓨터에는 여러 가지 자바 버전이 설치되어있다. (jdk1.8.0_281, jdk-13.0.2)</li><li>자바 버전 1.8에서 동작하는 runable jar 파일을 만드는데, 1.8에서 실행이 안되었다</li><li>그래들 프로젝트이다</li><li>분명 프로젝트 세팅은 1.8로 되어있는데 막상 빌드 결과물 jar이 1.8에서 실행이 안되었다</li><li>그런데 13에서 실행이 되는 것을 확인하고, 빌드가 다른 자바 버전으로 되는 것을 확인했다</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gradlew build -Dorg.gradle.java.home&#x3D;&quot;C:\Program Files\Java\jdk1.8.0_281&quot;</span><br></pre></td></tr></table></figure><ul><li>빌드할 때 자바 홈을 명시해 주었더니 해결되었다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/a/66795979">https://stackoverflow.com/a/66795979</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/java/">java</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/java/">java</category>
+      
+      <category domain="https://chinsun9.github.io/tags/gradle/">gradle</category>
+      
+      <category domain="https://chinsun9.github.io/tags/jar/">jar</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/04/22/gradle-build-%ED%8A%B9%EC%A0%95-jdk-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>code . 현재창으로 열기</title>
@@ -565,32 +597,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/03/24/git-clone-%EC%9B%90%ED%95%98%EB%8A%94-%ED%8F%B4%EB%8D%94%EB%AA%85/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>배열에서 가장 큰 값 얻기</title>
-      <link>https://chinsun9.github.io/2021/03/12/%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EA%B0%92-%EC%96%BB%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2021/03/12/%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EA%B0%92-%EC%96%BB%EA%B8%B0/</guid>
-      <pubDate>Fri, 12 Mar 2021 00:18:33 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.max.apply(<span class="literal">null</span>, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]);</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/apply">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/apply</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/03/12/%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EA%B0%92-%EC%96%BB%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
