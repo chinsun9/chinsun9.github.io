@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 23 Apr 2021 14:42:08 GMT</pubDate>
+    <pubDate>Mon, 26 Apr 2021 00:52:19 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js !! not not (double not)</title>
+      <link>https://chinsun9.github.io/2021/04/26/js-not-not/</link>
+      <guid>https://chinsun9.github.io/2021/04/26/js-not-not/</guid>
+      <pubDate>Mon, 26 Apr 2021 00:52:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;어느 날 조건문에서 &lt;code&gt;!!&lt;/code&gt;을 본 적이 있다&lt;/li&gt;
+&lt;li&gt;처음에는 왜 쓸모없이 not을 2번 썼지?하면서 리팩토링이랍시고 &lt;code&gt;!!&lt;/code&gt;을 지워버렸다 ㅋㅋㅋ&lt;/li&gt;
+&lt;li&gt;그런데 알아보니까 &lt;cod</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>어느 날 조건문에서 <code>!!</code>을 본 적이 있다</li><li>처음에는 왜 쓸모없이 not을 2번 썼지?하면서 리팩토링이랍시고 <code>!!</code>을 지워버렸다 ㅋㅋㅋ</li><li>그런데 알아보니까 <code>Boolean</code> 타입으로 캐스팅해주는 것이었다</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (!obj) <span class="keyword">return</span>; <span class="comment">// obj가 존재하면 다음 로직 진행</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// obj ...</span></span><br></pre></td></tr></table></figure><ul><li>나는 보통 obj가 유효한지 체크하려고 <code>!</code>을 붙여서 사용하곤 했는데</li><li>이미 <code>!</code>한 개를 붙이면 자동으로 <strong>Boolean</strong>으로 캐스팅된다</li><li>거기에 한 번 더 not을 하면 not not 이라서 <code>Boolean(obj)</code>와 똑같아진다는 것을 알 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT#double_not">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT#double_not</a>_!!</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/not-not/">not not</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/04/26/js-not-not/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>내가 타입스크립트를 쓰는 이유</title>
@@ -94,9 +125,9 @@
       
       <category domain="https://chinsun9.github.io/tags/java/">java</category>
       
-      <category domain="https://chinsun9.github.io/tags/gradle/">gradle</category>
-      
       <category domain="https://chinsun9.github.io/tags/jar/">jar</category>
+      
+      <category domain="https://chinsun9.github.io/tags/gradle/">gradle</category>
       
       
       <comments>https://chinsun9.github.io/2021/04/22/gradle-build-%ED%8A%B9%EC%A0%95-jdk-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C/#disqus_thread</comments>
@@ -309,7 +340,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%A6%AC%EC%95%A1%ED%8A%B8%ED%95%A0-%EB%95%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%8A%A4%EB%8B%88%ED%8E%AB20210326/preview.png" alt=" "></p><ul><li><code>ES7 React/Redux/GraphQL/React-Native snippets</code> 확장도구에서 제공하는 스니펫을 사용한다</li></ul><h2 id="리액트"><a href="#리액트" class="headerlink" title="리액트"></a>리액트</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// rfce 또는 rfc</span></span><br><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">App</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &lt;div&gt;&lt;/div&gt;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</span><br></pre></td></tr></table></figure><h2 id="리액트-네이티브"><a href="#리액트-네이티브" class="headerlink" title="리액트 네이티브"></a>리액트 네이티브</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// rnf</span></span><br><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; View, Text &#125; <span class="keyword">from</span> <span class="string">&quot;react-native&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">App</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;View&gt;</span><br><span class="line">      &lt;Text&gt;&lt;/Text&gt;</span><br><span class="line">    &lt;/View&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets">https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%A6%AC%EC%95%A1%ED%8A%B8%ED%95%A0-%EB%95%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%8A%A4%EB%8B%88%ED%8E%AB20210326/preview.png" alt=" "></p><ul><li><code>ES7 React/Redux/GraphQL/React-Native snippets</code> 확장도구에서 제공하는 스니펫을 사용한다</li></ul><h2 id="리액트"><a href="#리액트" class="headerlink" title="리액트"></a>리액트</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// rfce 또는 rfc</span></span><br><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">App</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</span><br></pre></td></tr></table></figure><h2 id="리액트-네이티브"><a href="#리액트-네이티브" class="headerlink" title="리액트 네이티브"></a>리액트 네이티브</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// rnf</span></span><br><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; View, Text &#125; <span class="keyword">from</span> <span class="string">&quot;react-native&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">App</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;View&gt;</span><br><span class="line">      &lt;Text&gt;&lt;/Text&gt;</span><br><span class="line">    &lt;/View&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets">https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/react/">react</category>
@@ -373,11 +404,11 @@
       <category domain="https://chinsun9.github.io/categories/react/">react</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/react/">react</category>
-      
       <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
       
       <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
       
       
       <comments>https://chinsun9.github.io/2021/03/25/%EB%B0%98%EC%9D%91%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/#disqus_thread</comments>
@@ -463,11 +494,11 @@
       <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
       <category domain="https://chinsun9.github.io/tags/js/">js</category>
       
       <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
       
       <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
       
@@ -567,38 +598,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/03/24/vscode-shell-git-bash/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>array to hashmap js</title>
-      <link>https://chinsun9.github.io/2021/03/24/array-to-hashmap-js/</link>
-      <guid>https://chinsun9.github.io/2021/03/24/array-to-hashmap-js/</guid>
-      <pubDate>Wed, 24 Mar 2021 01:40:18 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;ex1&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;spa</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>ex1</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">value</span>: <span class="number">1</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">2</span>, <span class="attr">value</span>: <span class="number">2</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">3</span>, <span class="attr">value</span>: <span class="number">3</span> &#125;,</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>();</span><br><span class="line"></span><br><span class="line">arr.reduce(<span class="function">(<span class="params">newMap, cur</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> &#123; id, value &#125; = cur;</span><br><span class="line">  newMap.set(id, value);</span><br><span class="line">  <span class="keyword">return</span> newMap;</span><br><span class="line">&#125;, map);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(map);</span><br><span class="line">map.get(<span class="number">1</span>);</span><br></pre></td></tr></table></figure><ul><li>reduce로 합쳐주는 방식으로 할 수 있고</li></ul><figure class="highlight js"><figcaption><span>ex2</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">value</span>: <span class="number">1</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">2</span>, <span class="attr">value</span>: <span class="number">2</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="number">3</span>, <span class="attr">value</span>: <span class="number">3</span> &#125;,</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>(arr.map(<span class="function">(<span class="params">item</span>) =&gt;</span> [item.id, item.value]));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(map);</span><br></pre></td></tr></table></figure><ul><li>array.map()과 Map 생성자로 짧고 이쁘게 변화해줄 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/26264956/convert-object-array-to-hash-map-indexed-by-an-attribute-value-of-the-object">https://stackoverflow.com/questions/26264956/convert-object-array-to-hash-map-indexed-by-an-attribute-value-of-the-object</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
-      
-      <category domain="https://chinsun9.github.io/tags/array/">array</category>
-      
-      <category domain="https://chinsun9.github.io/tags/hashmap/">hashmap</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/03/24/array-to-hashmap-js/#disqus_thread</comments>
       
     </item>
     
