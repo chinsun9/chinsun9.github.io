@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 26 Apr 2021 02:12:50 GMT</pubDate>
+    <pubDate>Mon, 26 Apr 2021 06:07:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>parseInt vs. Math.floor</title>
+      <link>https://chinsun9.github.io/2021/04/26/parseInt-vs-Math-floor/</link>
+      <guid>https://chinsun9.github.io/2021/04/26/parseInt-vs-Math-floor/</guid>
+      <pubDate>Mon, 26 Apr 2021 06:07:40 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> n = <span class="number">1.1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.floor(n), <span class="built_in">parseInt</span>(n)); <span class="comment">// 1 1</span></span><br><span class="line"></span><br><span class="line">n = <span class="number">1.9</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.floor(n), <span class="built_in">parseInt</span>(n)); <span class="comment">// 1 1</span></span><br><span class="line"></span><br><span class="line">n = -<span class="number">1.1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.floor(n), <span class="built_in">parseInt</span>(n)); <span class="comment">// -2 -1</span></span><br><span class="line"></span><br><span class="line">n = -<span class="number">1.9</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.floor(n), <span class="built_in">parseInt</span>(n)); <span class="comment">// -2 -1</span></span><br></pre></td></tr></table></figure><ul><li>소수점 이하를 버릴 때 <code>Math.floor()</code>(내림)를 주로 썼는데 음수에서 기대한 것과 다르게 동작하는 것을 알게 되었다…</li><li><code>parseInt()</code>는 매개변수로 문자열을 받기 때문에 주로 문자열로부터 숫자를 파싱 할 때 사용하는 줄 알았다</li><li>그런데 소수점을 이하를 없애라 했을 때 <code>parseInt()</code>를 사용하는 게 좋을 것 같다</li><li><code>parseInt()</code>는 매개변수로 string 타입이 아니면 스트링으로 자동 캐스팅하여 그냥 숫자를 넘겨줘도 잘 동작한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/parseInt/">parseInt</category>
+      
+      <category domain="https://chinsun9.github.io/tags/Math-floor/">Math.floor</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/04/26/parseInt-vs-Math-floor/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js scope 스코프, 렉시컬 스코프</title>
@@ -576,36 +606,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/03/24/%ED%8A%B9%EC%A0%95-%EC%9E%90%EB%B0%94-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C-%EC%8B%A4%ED%96%89/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode-pandoc 마크다운을 워드파일로 만들기</title>
-      <link>https://chinsun9.github.io/2021/03/24/vscode-pandoc/</link>
-      <guid>https://chinsun9.github.io/2021/03/24/vscode-pandoc/</guid>
-      <pubDate>Wed, 24 Mar 2021 02:08:17 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-pandoc20210311/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-pandoc20210311/preview.png" alt=" "></p><ul><li>markdown을 word파일로 예쁘게 만들어준다</li><li>목차까지 자동생성되니 아주 좋다</li></ul><ul><li>참고 ; 나는 pdf로는 안 만들어져서 word(docx)로 변환 후에 word 열어서 pdf로 저장하는 방식으로 한다.</li></ul><h2 id="사용법"><a href="#사용법" class="headerlink" title="사용법"></a>사용법</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-pandoc20210311/1.png" alt=" "></p><ul><li>F1 &gt; Pandoc Render &gt; docx</li><li>해당 마크다운 파일과 같은 경로에 아웃풋(docx)가 생성된다</li></ul><h2 id="설치하기"><a href="#설치하기" class="headerlink" title="설치하기"></a>설치하기</h2><ul><li><p>확장도구만 깔고 왜 안돼! 하고있엇다.</p></li><li><p>2가지를 설치해야한다</p></li><li><p>확장도구 + pandoc</p></li></ul><ul><li><a href="https://pandoc.org/installing.html">https://pandoc.org/installing.html</a></li><li>위 링크로 들어가 인스톨러를 다운받고 실행해 pandoc을 설치한다</li></ul><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc">https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc</a></li><li>vscode를 열고 <code>vscode-pandoc</code> 확장도구를 설치한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://pandoc.org/installing.html">https://pandoc.org/installing.html</a></li><li><a href="https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc">https://marketplace.visualstudio.com/items?itemName=DougFinke.vscode-pandoc</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/pandoc/">pandoc</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/03/24/vscode-pandoc/#disqus_thread</comments>
       
     </item>
     
