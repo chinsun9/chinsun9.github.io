@@ -9,8 +9,44 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 26 Apr 2021 00:52:19 GMT</pubDate>
+    <pubDate>Mon, 26 Apr 2021 02:12:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js scope 스코프, 렉시컬 스코프</title>
+      <link>https://chinsun9.github.io/2021/04/26/js-scope-%EC%8A%A4%EC%BD%94%ED%94%84/</link>
+      <guid>https://chinsun9.github.io/2021/04/26/js-scope-%EC%8A%A4%EC%BD%94%ED%94%84/</guid>
+      <pubDate>Mon, 26 Apr 2021 02:12:50 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;전역 변수, 지역 변수 구분하는 것이다&lt;/li&gt;
+&lt;li&gt;스코프 ; 중괄호로 묶인 영역&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;전역-지역-변수&quot;&gt;&lt;a href=&quot;#전역-지역-변수&quot; class=&quot;headerlink&quot; title=&quot;전역, 지역 변</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>전역 변수, 지역 변수 구분하는 것이다</li><li>스코프 ; 중괄호로 묶인 영역</li></ul><h2 id="전역-지역-변수"><a href="#전역-지역-변수" class="headerlink" title="전역, 지역 변수"></a>전역, 지역 변수</h2><figure class="highlight js"><figcaption><span>지역변수는 바깥에서 사용할 수 없다</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> f = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> x = <span class="number">123</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">f(); <span class="comment">// 123</span></span><br><span class="line"><span class="built_in">console</span>.log(x); <span class="comment">// 에러 ; ReferenceError: x is not defined</span></span><br></pre></td></tr></table></figure><ul><li>함수 f 에 선언된 f의 지역변수 <code>x</code>를 바깥에서 사용하지 못하는 모습이다</li></ul><figure class="highlight js"><figcaption><span>전역 변수 사용</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> x = <span class="number">123</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> f = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(x); <span class="comment">// 123</span></span><br><span class="line">f(); <span class="comment">// 123</span></span><br></pre></td></tr></table></figure><ul><li>반대로 함수에서는 바깥에 선언된 전역 변수 x를 사용할 수 있다</li></ul><figure class="highlight js"><figcaption><span>같은 변수명 일 때는 지역변수</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> x = <span class="number">123</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> f = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> x = <span class="number">999</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(x); <span class="comment">// 123</span></span><br><span class="line">f(); <span class="comment">// 999</span></span><br></pre></td></tr></table></figure><ul><li>전역 변수, 지역 변수에 동일한 이름의 변수가 있으면 가까운 변수를 참조한다</li></ul><h2 id="스코프-체인"><a href="#스코프-체인" class="headerlink" title="스코프 체인"></a>스코프 체인</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> x = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(x); <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line">  &#123;</span><br><span class="line">    x = <span class="number">2</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(x); <span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">let</span> x = <span class="number">111</span>;</span><br><span class="line">      <span class="built_in">console</span>.log(x); <span class="comment">// 111</span></span><br><span class="line"></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(x); <span class="comment">// 111</span></span><br><span class="line">        x = <span class="number">222</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(x); <span class="comment">// 222</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>가깝다는 것은 일단 <code>&#123;&#125;</code> 스코프를 기준으로</li><li>일단 자기 자신이 속한 스코프에서 변수 x를 찾는다</li><li>없으면 상위 스코프에서 찾는다</li><li>찾을 때까지 반복한다</li><li>이를 <strong>스코프 체인</strong>이라고 한다</li></ul><ul><li>근데 이 스코프에 의한 전역, 지역 변수 구분은,</li><li>그러니까 내가 진짜로 참조하는 변수는 스코프를 선언할 때 결정된다 (렉시컬 스코핑)</li></ul><h2 id="렉시컬-스코핑"><a href="#렉시컬-스코핑" class="headerlink" title="렉시컬 스코핑"></a>렉시컬 스코핑</h2><figure class="highlight js"><figcaption><span>렉시컬 스코핑</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> x = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> f = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> main = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> x = <span class="number">999</span>;</span><br><span class="line">  f(); <span class="comment">// 1</span></span><br><span class="line">  <span class="built_in">console</span>.log(x); <span class="comment">// 999</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">main();</span><br></pre></td></tr></table></figure><ul><li>선언할 때 결정된다는 것은</li><li>위 코드의 결과처럼</li><li>함수 f 가 선언 당시에 최상위 스코프의 <code>let x = 1</code>을 바라본다는 것이다</li><li>함수 main을 보면 함수 f가 실행되기 전에 스코프의 <code>let x = 999</code>는 함수 f에 영향을 주지 않는다</li></ul><ul><li>이런 개념들은 js를 하면서 그냥 익숙해져 있어서 용어로 설명할 수 있을 정도는 아니었다</li><li>이번 기회에 js 개념, 용어들을 정리해봐야겠다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.zerocho.com/category/JavaScript/post/5740531574288ebc5f2ba97e">https://www.zerocho.com/category/JavaScript/post/5740531574288ebc5f2ba97e</a></li><li>스코프 ; <a href="https://developer.mozilla.org/ko/docs/Glossary/Scope">https://developer.mozilla.org/ko/docs/Glossary/Scope</a></li><li>렉시컬 스코핑 ; <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Closures#%EC%96%B4%ED%9C%98%EC%A0%81_%EB%B2%94%EC%9C%84_%EC%A7%80%EC%A0%95lexical_scoping">https://developer.mozilla.org/ko/docs/Web/JavaScript/Closures#%EC%96%B4%ED%9C%98%EC%A0%81_%EB%B2%94%EC%9C%84_%EC%A7%80%EC%A0%95lexical_scoping</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/scope/">scope</category>
+      
+      <category domain="https://chinsun9.github.io/tags/scope-chain/">scope chain</category>
+      
+      <category domain="https://chinsun9.github.io/tags/lexical-scoping/">lexical scoping</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/04/26/js-scope-%EC%8A%A4%EC%BD%94%ED%94%84/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js !! not not (double not)</title>
@@ -570,34 +606,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/03/24/vscode-pandoc/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode shell git bash</title>
-      <link>https://chinsun9.github.io/2021/03/24/vscode-shell-git-bash/</link>
-      <guid>https://chinsun9.github.io/2021/03/24/vscode-shell-git-bash/</guid>
-      <pubDate>Wed, 24 Mar 2021 01:48:12 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&quot;shellLauncher.shells.windows&quot;: [</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;shell&quot;: &quot;C:\\Windows\\System32\\cmd.exe&quot;,</span><br><span class="line">    &quot;label&quot;: &quot;cmd&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;shell&quot;: &quot;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe&quot;,</span><br><span class="line">    &quot;label&quot;: &quot;PowerShell&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;shell&quot;: &quot;C:\\Program Files\\Git\\bin\\bash.exe&quot;,</span><br><span class="line">    &quot;label&quot;: &quot;Git bash&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;shell&quot;: &quot;C:\\Windows\\System32\\bash.exe&quot;,</span><br><span class="line">    &quot;label&quot;: &quot;WSL Bash&quot;</span><br><span class="line">  &#125;</span><br><span class="line">],</span><br></pre></td></tr></table></figure><ul><li>git bash 터미널을 vscode에 추가하고 싶을 때,</li><li>shellLauncher 확장도구를 사용해서 위와 같이 각 터미널 실행파일 경로를 지정해주었다</li><li>특히 git bash 터미널 경로는 <code>Git/bin/bash.exe</code>이다.</li></ul><ul><li>평소에 cmd로 사용하다가 bash 명령어를 쓰고 싶을 때나 git alias 추가할 때 사용한다.</li><li>F1 &gt; Shell Launcher: Launch &gt; git bash 선택하여 사용한다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=Tyriar.shell-launcher">https://marketplace.visualstudio.com/items?itemName=Tyriar.shell-launcher</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/shellLauncher/">shellLauncher</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/03/24/vscode-shell-git-bash/#disqus_thread</comments>
       
     </item>
     
