@@ -8,6 +8,30 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/09/21/sam-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-04-27T07:50:22.318Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/04/27/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-sam-cli-%EC%84%A4%EC%B9%98/</loc>
+        <lastmod>2021-04-27T07:49:54.895Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/04/27/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-cli-%EC%84%A4%EC%B9%98/</loc>
+        <lastmod>2021-04-27T07:46:27.064Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/04/26/parseInt-vs-Math-floor/</loc>
         <lastmod>2021-04-27T01:34:13.056Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1018,14 +1042,6 @@
     <url>
         <loc>https://chinsun9.github.io/2021/01/06/setTimeout-Promise/</loc>
         <lastmod>2021-04-22T05:41:32.520Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/21/sam-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-04-22T05:41:32.519Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
