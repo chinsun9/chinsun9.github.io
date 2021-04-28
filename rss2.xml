@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 28 Apr 2021 00:55:59 GMT</pubDate>
+    <pubDate>Wed, 28 Apr 2021 01:39:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -20,12 +20,12 @@
       
         
         
-      <description>&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;span&gt;exampel.sh&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
+      <description>&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example.sh&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
         
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight sh"><figcaption><span>exampel.sh</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;zzzz <span class="variable">$#</span>&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;zzzz <span class="variable">$1</span>&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;zzzz <span class="variable">$@</span>&quot;</span></span><br></pre></td></tr></table></figure><blockquote><p>$ ./tmp.sh 1 2 3<br>zzzz 3<br>zzzz 1<br>zzzz 1 2 3</p></blockquote><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://jink1982.tistory.com/36">https://jink1982.tistory.com/36</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight sh"><figcaption><span>example.sh</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;zzzz <span class="variable">$#</span>&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;zzzz <span class="variable">$1</span>&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;zzzz <span class="variable">$@</span>&quot;</span></span><br></pre></td></tr></table></figure><blockquote><p>$ ./example.sh 1 2 3<br>zzzz 3<br>zzzz 1<br>zzzz 1 2 3</p></blockquote><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://jink1982.tistory.com/36">https://jink1982.tistory.com/36</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/bash/">bash</category>
