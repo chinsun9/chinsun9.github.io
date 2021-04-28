@@ -9,8 +9,45 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 28 Apr 2021 01:39:05 GMT</pubDate>
+    <pubDate>Wed, 28 Apr 2021 06:14:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>aws lambda에서 git쓰기</title>
+      <link>https://chinsun9.github.io/2021/04/28/aws-lambda%EC%97%90%EC%84%9C-git%EC%93%B0%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2021/04/28/aws-lambda%EC%97%90%EC%84%9C-git%EC%93%B0%EA%B8%B0/</guid>
+      <pubDate>Wed, 28 Apr 2021 06:14:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;blockquote&gt;
+&lt;p&gt;arn:aws:lambda:us-east-1:553035198032:layer:git-lambda2:8&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;람다 레이어에 위 arn을 추가한다&lt;/li&gt;
+&lt;li&gt;사용 런타임에 따라</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<blockquote><p>arn:aws:lambda:us-east-1:553035198032:layer:git-lambda2:8</p></blockquote><ul><li>람다 레이어에 위 arn을 추가한다</li><li>사용 런타임에 따라 다른 arn을 추가해야 한다는데</li><li><a href="https://github.com/lambci/git-lambda-layer">https://github.com/lambci/git-lambda-layer</a> README.md를 확인해서 추가하자</li></ul><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>람다에서 git 명령을 사용하고 싶다</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">Resources:</span></span><br><span class="line">  <span class="attr">HelloWorldFunction:</span></span><br><span class="line">    <span class="attr">Type:</span> <span class="string">AWS::Serverless::Function</span> <span class="comment"># More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction</span></span><br><span class="line">    <span class="attr">Properties:</span></span><br><span class="line">      <span class="attr">CodeUri:</span> <span class="string">hello-world/</span></span><br><span class="line">      <span class="attr">Handler:</span> <span class="string">app.lambdaHandler</span></span><br><span class="line">      <span class="attr">Runtime:</span> <span class="string">nodejs14.x</span></span><br><span class="line">      <span class="attr">Layers:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">&#x27;arn:aws:lambda:us-east-1:553035198032:layer:git-lambda2:8&#x27;</span> <span class="comment"># 여기를 추가!!</span></span><br></pre></td></tr></table></figure><ul><li>sam template.yaml에서는 위와 같이 추가한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/lambci/git-lambda-layer">https://github.com/lambci/git-lambda-layer</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/lambda/">lambda</category>
+      
+      <category domain="https://chinsun9.github.io/tags/arn/">arn</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/04/28/aws-lambda%EC%97%90%EC%84%9C-git%EC%93%B0%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>shell 파라미터 사용하기</title>
@@ -564,36 +601,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/03/25/%EB%B0%98%EC%9D%91%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>emojipedia 이모지 검색해서 찾기</title>
-      <link>https://chinsun9.github.io/2021/03/25/emojipedia/</link>
-      <guid>https://chinsun9.github.io/2021/03/25/emojipedia/</guid>
-      <pubDate>Thu, 25 Mar 2021 01:29:38 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/emojipedia20210325/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;co</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/emojipedia20210325/preview.png" alt=" "></p><ul><li><code>Win + .</code>, <code>Win + ;</code> 단축키로 이모지를 쓸 수 있는 건 좋은데 찾는 게 어렵다</li><li>키워드로 원하는 이모지를 검색해보자</li></ul><ul><li>사용 예시까지 알려준다 ㅋㅋ</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://emojipedia.org/">https://emojipedia.org/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/etc/">etc</category>
-      
-      <category domain="https://chinsun9.github.io/tags/emojipedia/">emojipedia</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/03/25/emojipedia/#disqus_thread</comments>
       
     </item>
     
