@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 27 Apr 2021 07:49:54 GMT</pubDate>
+    <pubDate>Wed, 28 Apr 2021 00:55:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>shell 파라미터 사용하기</title>
+      <link>https://chinsun9.github.io/2021/04/28/shell-%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2021/04/28/shell-%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Wed, 28 Apr 2021 00:55:59 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;span&gt;exampel.sh&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight sh"><figcaption><span>exampel.sh</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;zzzz <span class="variable">$#</span>&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;zzzz <span class="variable">$1</span>&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;zzzz <span class="variable">$@</span>&quot;</span></span><br></pre></td></tr></table></figure><blockquote><p>$ ./tmp.sh 1 2 3<br>zzzz 3<br>zzzz 1<br>zzzz 1 2 3</p></blockquote><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://jink1982.tistory.com/36">https://jink1982.tistory.com/36</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/bash/">bash</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/bash/">bash</category>
+      
+      <category domain="https://chinsun9.github.io/tags/shell/">shell</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/04/28/shell-%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>윈도우 aws sam cli 설치</title>
@@ -249,9 +277,9 @@
       
       <category domain="https://chinsun9.github.io/tags/java/">java</category>
       
-      <category domain="https://chinsun9.github.io/tags/jar/">jar</category>
-      
       <category domain="https://chinsun9.github.io/tags/gradle/">gradle</category>
+      
+      <category domain="https://chinsun9.github.io/tags/jar/">jar</category>
       
       
       <comments>https://chinsun9.github.io/2021/04/22/gradle-build-%ED%8A%B9%EC%A0%95-jdk-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C/#disqus_thread</comments>
@@ -464,7 +492,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%A6%AC%EC%95%A1%ED%8A%B8%ED%95%A0-%EB%95%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%8A%A4%EB%8B%88%ED%8E%AB20210326/preview.png" alt=" "></p><ul><li><code>ES7 React/Redux/GraphQL/React-Native snippets</code> 확장도구에서 제공하는 스니펫을 사용한다</li></ul><h2 id="리액트"><a href="#리액트" class="headerlink" title="리액트"></a>리액트</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// rfce 또는 rfc</span></span><br><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">App</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</span><br></pre></td></tr></table></figure><h2 id="리액트-네이티브"><a href="#리액트-네이티브" class="headerlink" title="리액트 네이티브"></a>리액트 네이티브</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// rnf</span></span><br><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; View, Text &#125; <span class="keyword">from</span> <span class="string">&quot;react-native&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">App</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;View&gt;</span><br><span class="line">      &lt;Text&gt;&lt;/Text&gt;</span><br><span class="line">    &lt;/View&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets">https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%A6%AC%EC%95%A1%ED%8A%B8%ED%95%A0-%EB%95%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%8A%A4%EB%8B%88%ED%8E%AB20210326/preview.png" alt=" "></p><ul><li><code>ES7 React/Redux/GraphQL/React-Native snippets</code> 확장도구에서 제공하는 스니펫을 사용한다</li></ul><h2 id="리액트"><a href="#리액트" class="headerlink" title="리액트"></a>리액트</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// rfce 또는 rfc</span></span><br><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">App</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &lt;div&gt;&lt;/div&gt;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</span><br></pre></td></tr></table></figure><h2 id="리액트-네이티브"><a href="#리액트-네이티브" class="headerlink" title="리액트 네이티브"></a>리액트 네이티브</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// rnf</span></span><br><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; View, Text &#125; <span class="keyword">from</span> <span class="string">&quot;react-native&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">App</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;View&gt;</span><br><span class="line">      &lt;Text&gt;&lt;/Text&gt;</span><br><span class="line">    &lt;/View&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets">https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/react/">react</category>
@@ -528,11 +556,11 @@
       <category domain="https://chinsun9.github.io/categories/react/">react</category>
       
       
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
       <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
       
       <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/react/">react</category>
       
       
       <comments>https://chinsun9.github.io/2021/03/25/%EB%B0%98%EC%9D%91%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/#disqus_thread</comments>
@@ -566,36 +594,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/03/25/emojipedia/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>lorem ipsum HTML만들다가 샘플 텍스트 고민하지 말자</title>
-      <link>https://chinsun9.github.io/2021/03/24/lorem-ipsum/</link>
-      <guid>https://chinsun9.github.io/2021/03/24/lorem-ipsum/</guid>
-      <pubDate>Wed, 24 Mar 2021 08:48:55 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/lorem-ipsum20210324/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;vs</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/lorem-ipsum20210324/preview.png" alt=" "></p><ul><li>vscode emmet 으로 <code>lorem</code> 을 적으면 자동 완성할 수 있다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>emmet 활성화 ; <a href="https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/emmet/">emmet</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/03/24/lorem-ipsum/#disqus_thread</comments>
       
     </item>
     
