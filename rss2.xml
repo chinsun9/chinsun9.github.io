@@ -9,8 +9,45 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 28 Apr 2021 06:14:02 GMT</pubDate>
+    <pubDate>Wed, 28 Apr 2021 07:37:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>aws credentials 여러개</title>
+      <link>https://chinsun9.github.io/2021/04/28/aws-credentials-%EC%97%AC%EB%9F%AC%EA%B0%9C/</link>
+      <guid>https://chinsun9.github.io/2021/04/28/aws-credentials-%EC%97%AC%EB%9F%AC%EA%B0%9C/</guid>
+      <pubDate>Wed, 28 Apr 2021 07:37:57 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;여러개의 자격 증명 프로필을 가질 수 있다&lt;/li&gt;
+&lt;li&gt;이 경우에 aws cli, aws sam cli 등 커맨드라인을 사용할 때&lt;/li&gt;
+&lt;li&gt;프로필을 지정해 줘야한다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;프로필-추가&quot;&gt;&lt;a hre</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>여러개의 자격 증명 프로필을 가질 수 있다</li><li>이 경우에 aws cli, aws sam cli 등 커맨드라인을 사용할 때</li><li>프로필을 지정해 줘야한다</li></ul><h2 id="프로필-추가"><a href="#프로필-추가" class="headerlink" title="프로필 추가"></a>프로필 추가</h2><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># aws configure --profile &#123;profile name&#125;</span></span><br><span class="line">aws configure --profile newprofile</span><br></pre></td></tr></table></figure><blockquote><p>AWS Access Key ID [None]: new<br>AWS Secret Access Key [None]: newkey<br>Default region name [None]:<br>Default output format [None]:</p></blockquote><ul><li><code>aws configure --profile &#123;profile name&#125;</code> 명령을 치면 위 처럼 나오는데</li><li>여기에 키아이디와 키를 입력한다</li></ul><figure class="highlight txt"><figcaption><span>%USERPROFILE%/.aws/credentials</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[default]</span><br><span class="line">aws_access_key_id = xxxxxxxxxxxxxxxxxxxx</span><br><span class="line">aws_secret_access_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><br><span class="line"></span><br><span class="line">[newprofile]</span><br><span class="line">aws_access_key_id = new</span><br><span class="line">aws_secret_access_key = newkey</span><br></pre></td></tr></table></figure><ul><li><strong>%USERPROFILE%/.aws/credentials</strong> 파일을 열어보면 위처럼 [default] 프로필 아래에</li><li>새로운 프로필이 등록되었을 것이다</li></ul><h2 id="프로필-스위치"><a href="#프로필-스위치" class="headerlink" title="프로필 스위치"></a>프로필 스위치</h2><ul><li>나는 두 가지 방법을 써봤다</li></ul><h3 id="방법-1-AWS-PROFILE-환경-변수-설정"><a href="#방법-1-AWS-PROFILE-환경-변수-설정" class="headerlink" title="방법 1; AWS_PROFILE 환경 변수 설정"></a>방법 1; AWS_PROFILE 환경 변수 설정</h3><ul><li>환경 변수 <code>AWS_PROFILE</code>을 원하는 프로필명으로 설정한다</li><li><code>set AWS_PROFILE &#123;profilename&#125;</code></li><li><code>setx AWS_PROFILE &#123;profilename&#125;</code></li><li>이렇게 2가지를 사용할 수 있다</li><li>set은 해당 터미널에서만 적용된다. 해당 터미널이 닫히면 같이 날라간다</li><li>setx는 모든 터미널에서 적용된다.</li><li>setx의 경우 모든 터미널을 닫았다가 열어야 적용된다. vscode 전부 닫았다가 켜야 적용된다</li></ul><ul><li>참고 ;</li><li>환경 변수 삭제 <code>setx AWS_PROFILE &quot;&quot;</code></li><li>명명된 프로파일 ; <a href="https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-profiles.html">https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-profiles.html</a></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># bash</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$AWS_PROFILE</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># cmd (windows)</span></span><br><span class="line"><span class="built_in">echo</span> %AWS_PROFILE%</span><br></pre></td></tr></table></figure><ul><li>환경 변수 적용 확인을 꼭하자</li></ul><ul><li>방법 1은 가장 자주 쓰는 프로필을 지정할 때 좋을 것 같다</li></ul><h3 id="방법-2-옵션-사용"><a href="#방법-2-옵션-사용" class="headerlink" title="방법 2; 옵션 사용"></a>방법 2; 옵션 사용</h3><ul><li>환경변수 세팅 말고,</li><li>aws cli를 사용할 때 <code>--profile</code>옵션을 줄 수 있다</li><li>aws cli를 사용하다 보면 옵션을 주지 않아도 프로필이 한 개가 아니면 명령을 실행하다가도 어떤 프로필을 사용할지 물어본다</li><li>근데 실수로 다른 계정에 배포를 할 수 있으니까.. <code>--profile</code> 옵션을 쓰는 게 좋을 것 같다</li><li>sam cli의 경우 deploy 할 때 <code>sam deploy --profile newprofile</code> 이런 식으로 할 수 있겠다</li></ul><ul><li>방법 2는 워크스페이스 별로 여러 프로필로 작업할 때 좋을 것 같다.. 헷갈리지 않도록 메모 필수..!</li><li>sam deploy ; <a href="https://docs.aws.amazon.com/ko_kr/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-deploy.html">https://docs.aws.amazon.com/ko_kr/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-deploy.html</a></li></ul><h3 id="방법-3-번외-config-file-사용-aws-sdk"><a href="#방법-3-번외-config-file-사용-aws-sdk" class="headerlink" title="방법 3 (번외?); config file 사용 (aws-sdk)"></a>방법 3 (번외?); config file 사용 (aws-sdk)</h3><ul><li>cli에 적용되는 것은 아닌데, nodejs app에서 aws sdk 자격 증명하는데 json 파일을 쓸 수 있다</li><li>로컬에서 개발하고 클라우드 환경으로 올릴 때, 그 환경마다 <code>aws configure</code> 하는 게 귀찮다</li></ul><figure class="highlight json"><figcaption><span>config.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;accessKeyId&quot;</span>: <span class="string">&quot;xxxxxxxxxxxxxxxxxxxx&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;secretAccessKey&quot;</span>: <span class="string">&quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;region&quot;</span>: <span class="string">&quot;ap-northeast-2&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight js"><figcaption><span>example.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> AWS <span class="keyword">from</span> <span class="string">&#x27;aws-sdk&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> path <span class="keyword">from</span> <span class="string">&#x27;path&#x27;</span>;</span><br><span class="line">AWS.config.loadFromPath(path.join(__dirname, <span class="string">&#x27;./config.json&#x27;</span>));</span><br></pre></td></tr></table></figure><ul><li>json 파일로 자격 증명할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>프로필 추가 ; <a href="https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-quickstart.html">https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-quickstart.html</a></li><li>명명된 프로파일 ; <a href="https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-profiles.html">https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-profiles.html</a></li><li>sam deploy ; <a href="https://docs.aws.amazon.com/ko_kr/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-deploy.html">https://docs.aws.amazon.com/ko_kr/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-deploy.html</a></li><li>구성 및 자격 증명 파일 설정 ; <a href="https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-files.html?shortFooter=true">https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-files.html?shortFooter=true</a></li><li>자격 증명 우선순위 ; <a href="https://docs.aws.amazon.com/ko_kr/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html">https://docs.aws.amazon.com/ko_kr/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/aws-cli/">aws cli</category>
+      
+      <category domain="https://chinsun9.github.io/tags/credentials/">credentials</category>
+      
+      <category domain="https://chinsun9.github.io/tags/sam-cli/">sam cli</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/04/28/aws-credentials-%EC%97%AC%EB%9F%AC%EA%B0%9C/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>aws lambda에서 git쓰기</title>
@@ -30,7 +67,7 @@
       
       
       
-      <content:encoded><![CDATA[<blockquote><p>arn:aws:lambda:us-east-1:553035198032:layer:git-lambda2:8</p></blockquote><ul><li>람다 레이어에 위 arn을 추가한다</li><li>사용 런타임에 따라 다른 arn을 추가해야 한다는데</li><li><a href="https://github.com/lambci/git-lambda-layer">https://github.com/lambci/git-lambda-layer</a> README.md를 확인해서 추가하자</li></ul><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>람다에서 git 명령을 사용하고 싶다</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">Resources:</span></span><br><span class="line">  <span class="attr">HelloWorldFunction:</span></span><br><span class="line">    <span class="attr">Type:</span> <span class="string">AWS::Serverless::Function</span> <span class="comment"># More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction</span></span><br><span class="line">    <span class="attr">Properties:</span></span><br><span class="line">      <span class="attr">CodeUri:</span> <span class="string">hello-world/</span></span><br><span class="line">      <span class="attr">Handler:</span> <span class="string">app.lambdaHandler</span></span><br><span class="line">      <span class="attr">Runtime:</span> <span class="string">nodejs14.x</span></span><br><span class="line">      <span class="attr">Layers:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">&#x27;arn:aws:lambda:us-east-1:553035198032:layer:git-lambda2:8&#x27;</span> <span class="comment"># 여기를 추가!!</span></span><br></pre></td></tr></table></figure><ul><li>sam template.yaml에서는 위와 같이 추가한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/lambci/git-lambda-layer">https://github.com/lambci/git-lambda-layer</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><p>arn:aws:lambda:us-east-1:553035198032:layer:git-lambda2:8</p></blockquote><ul><li>람다 레이어에 위 arn을 추가한다</li><li>사용 런타임에 따라 다른 arn을 추가해야 한다는데</li><li><a href="https://github.com/lambci/git-lambda-layer">https://github.com/lambci/git-lambda-layer</a> README.md를 확인해서 추가하자</li></ul><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>람다에서 git 명령을 사용하고 싶다</li></ul><h2 id="레이어-추가"><a href="#레이어-추가" class="headerlink" title="레이어 추가"></a>레이어 추가</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">Resources:</span></span><br><span class="line">  <span class="attr">HelloWorldFunction:</span></span><br><span class="line">    <span class="attr">Type:</span> <span class="string">AWS::Serverless::Function</span> <span class="comment"># More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction</span></span><br><span class="line">    <span class="attr">Properties:</span></span><br><span class="line">      <span class="attr">CodeUri:</span> <span class="string">hello-world/</span></span><br><span class="line">      <span class="attr">Handler:</span> <span class="string">app.lambdaHandler</span></span><br><span class="line">      <span class="attr">Runtime:</span> <span class="string">nodejs14.x</span></span><br><span class="line">      <span class="attr">Layers:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">&#x27;arn:aws:lambda:us-east-1:553035198032:layer:git-lambda2:8&#x27;</span> <span class="comment"># 여기를 추가!!</span></span><br></pre></td></tr></table></figure><ul><li>sam template.yaml에서는 위와 같이 추가한다</li><li>또는 aws console로 직접 해당 람다에 가서 추가해 줄 수 있다</li></ul><h2 id="람다에서-깃-쓸-때-고려사항"><a href="#람다에서-깃-쓸-때-고려사항" class="headerlink" title="람다에서 깃 쓸 때 고려사항"></a>람다에서 깃 쓸 때 고려사항</h2><ul><li>람다에서는 가급적 가벼운 일을 해야 한다</li><li>git clone 한다면 /tmp 디렉터리에서 한다 (clone 옵션을 살펴서 최대한 필요한 것만 가져오자)</li><li>인증은 <code>Personal access tokens</code>을 사용했다<ul><li>토큰이 <code>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code> 이렇게 있을 때,</li><li>https://<code>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code>@github.com/<code>&#123;레포 오너&#125;</code>/<code>&#123;레포 명&#125;</code>.git</li><li>이렇게 사용할 수 있다</li></ul></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/lambci/git-lambda-layer">https://github.com/lambci/git-lambda-layer</a></li><li>람다 레이어 정리 ; <a href="https://chinsun9.github.io/2021/01/05/aws-sam-%EC%A0%95%EB%A6%AC/">https://chinsun9.github.io/2021/01/05/aws-sam-정리/</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
@@ -571,36 +608,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/03/26/layout-css/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>반응속도 테스트 클론코딩</title>
-      <link>https://chinsun9.github.io/2021/03/25/%EB%B0%98%EC%9D%91%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</link>
-      <guid>https://chinsun9.github.io/2021/03/25/%EB%B0%98%EC%9D%91%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</guid>
-      <pubDate>Thu, 25 Mar 2021 08:44:17 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;a href=&quot;https://chinsun9.github.io/reaction-time-test/&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><a href="https://chinsun9.github.io/reaction-time-test/"><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%B0%98%EC%9D%91%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A920210325/preview.png" alt=" "></a></p><ul><li>반응속도 테스트를 클론코딩 해봤다</li><li><a href="https://simritest.com/reaction">https://simritest.com/reaction</a></li><li><a href="https://humanbenchmark.com/tests/reactiontime">https://humanbenchmark.com/tests/reactiontime</a></li></ul><h2 id="기능"><a href="#기능" class="headerlink" title="기능"></a>기능</h2><ul><li>반응속도 기록</li><li>랜덤 간격</li><li>눈 덜 아프게</li><li>결과에 따라 다른 메시지</li><li>예측 클릭하면 횟수 -1</li></ul><h2 id="느낀점"><a href="#느낀점" class="headerlink" title="느낀점"></a>느낀점</h2><ul><li>기존 테스트가 색이 확 반전돼서</li><li>집중은 해야 하는데 눈이 너무 아팠다</li><li>그래서 배경색은 그대로에 초록점이 생기도록 했다</li></ul><ul><li>컨텍스트 쓸까 고민하다가 어차피 깊이도 안 깊어서 그냥 prop으로 넘겨줬다.</li></ul><h2 id="개선방향"><a href="#개선방향" class="headerlink" title="개선방향"></a>개선방향</h2><h3 id="공유-버튼-만들기"><a href="#공유-버튼-만들기" class="headerlink" title="공유 버튼 만들기"></a>공유 버튼 만들기</h3><ul><li>결과 이미지 생성해서 클립보드 복사해주기 또는 이미지 파일로 저장</li></ul><h3 id="구린-css-바꾸기"><a href="#구린-css-바꾸기" class="headerlink" title="구린 css 바꾸기"></a>구린 css 바꾸기</h3><ul><li>색을 좀 이쁘게 써보자</li></ul><h2 id="레포"><a href="#레포" class="headerlink" title="레포"></a>레포</h2><ul><li><a href="https://github.com/chinsun9/reaction-time-test">https://github.com/chinsun9/reaction-time-test</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/react/">react</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/react/">react</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ts/">ts</category>
-      
-      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/03/25/%EB%B0%98%EC%9D%91%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/#disqus_thread</comments>
       
     </item>
     

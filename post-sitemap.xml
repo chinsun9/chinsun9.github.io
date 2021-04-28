@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/04/28/aws-credentials-%EC%97%AC%EB%9F%AC%EA%B0%9C/</loc>
+        <lastmod>2021-04-28T07:37:57.293Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/04/28/aws-lambda%EC%97%90%EC%84%9C-git%EC%93%B0%EA%B8%B0/</loc>
-        <lastmod>2021-04-28T06:14:02.007Z</lastmod>
+        <lastmod>2021-04-28T06:44:45.291Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
