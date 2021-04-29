@@ -9,8 +9,34 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 29 Apr 2021 04:05:13 GMT</pubDate>
+    <pubDate>Thu, 29 Apr 2021 04:19:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>shell &gt; vs. &gt;&gt;</title>
+      <link>https://chinsun9.github.io/2021/04/29/shell-redirection/</link>
+      <guid>https://chinsun9.github.io/2021/04/29/shell-redirection/</guid>
+      <pubDate>Thu, 29 Apr 2021 04:17:54 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">touch a.txt</span><br><span class="line"><span class="built_in">echo</span> 1 &gt; a.txt</span><br><span class="line"><span class="comment"># 결과는 1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> 2 &gt; a.txt</span><br><span class="line"><span class="comment"># 결과는 2</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> 3 &gt;&gt; a.txt</span><br><span class="line"><span class="comment"># 결과는 2\n3</span></span><br></pre></td></tr></table></figure><ul><li>&gt; 덮어쓰기</li><li>&gt;&gt; 추가</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://ko.wikipedia.org/wiki/%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%EC%85%98">https://ko.wikipedia.org/wiki/리다이렉션</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/bash/">bash</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/bash/">bash</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/04/29/shell-redirection/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>내가 사랑하는 vscode 단축키, 명령, 확장도구 모음</title>
@@ -578,36 +604,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/04/13/202103-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>유용한 사이트 - Flat UI Color Palette</title>
-      <link>https://chinsun9.github.io/2021/04/05/Flat-UI-Color-Palette/</link>
-      <guid>https://chinsun9.github.io/2021/04/05/Flat-UI-Color-Palette/</guid>
-      <pubDate>Mon, 05 Apr 2021 09:30:33 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;🎨 Flat UI Palette v1 | Flat UI Colors 🎨 280 handpicked colors ready for COPY &amp;amp; PASTE&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://flatuicolors.com</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>🎨 Flat UI Palette v1 | Flat UI Colors 🎨 280 handpicked colors ready for COPY &amp; PASTE</p><ul><li><a href="https://flatuicolors.com/palette/defo">https://flatuicolors.com/palette/defo</a></li></ul><ul><li>원하는 색을 클릭하면 클립보드에 복사된다</li><li>복사할 때 애니메이션이랑 소리가 재미나다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/css/">css</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/04/05/Flat-UI-Color-Palette/#disqus_thread</comments>
       
     </item>
     
