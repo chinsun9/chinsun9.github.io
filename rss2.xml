@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 28 Apr 2021 14:38:11 GMT</pubDate>
+    <pubDate>Thu, 29 Apr 2021 04:05:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>내가 사랑하는 vscode 단축키, 명령, 확장도구 모음</title>
+      <link>https://chinsun9.github.io/2021/04/29/%EB%82%B4%EA%B0%80-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-vscode-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%AA%85%EB%A0%B9-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC-%EB%AA%A8%EC%9D%8C/</link>
+      <guid>https://chinsun9.github.io/2021/04/29/%EB%82%B4%EA%B0%80-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-vscode-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%AA%85%EB%A0%B9-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC-%EB%AA%A8%EC%9D%8C/</guid>
+      <pubDate>Thu, 29 Apr 2021 04:04:59 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;vscode 관련 글을 여럿 썼는데, 검색해서 찾기에 조각조각인 내용들이 있어&lt;/li&gt;
+&lt;li&gt;하나의 글에 정리하려고 한다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;cli&quot;&gt;&lt;a href=&quot;#cli&quot; class=&quot;headerlink&quot; titl</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>vscode 관련 글을 여럿 썼는데, 검색해서 찾기에 조각조각인 내용들이 있어</li><li>하나의 글에 정리하려고 한다</li></ul><h2 id="cli"><a href="#cli" class="headerlink" title="cli"></a>cli</h2><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 현재 디렉터리에서 code 열기</span></span><br><span class="line">code .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 현재 디렉터리를 vscode현재창에서 열기</span></span><br><span class="line">code . -r</span><br></pre></td></tr></table></figure><h2 id="단축키"><a href="#단축키" class="headerlink" title="단축키"></a>단축키</h2><ul><li>⭐<code>F1</code> ; show all commands ; 명령 팔레트 열기</li><li>⭐<code>ctrl p</code> ; go to file ; 파일 열기</li><li>⭐<code>ctrl alft arrow</code> ; move editor into next group ; 분할창 이동</li><li>⭐<code>F2</code> ; rename symbol ; 변수명 변경</li><li>⭐<code>ctrl shift \</code> ; go to bracket ; 괄호로 이동</li><li>⭐<code>shift alt rifhtarrow</code> ; expand selection ; 확장 선택</li><li>⭐<code>shift alt leftarrow</code> ; shrink selection ; 축소 선택</li><li>⭐<code>ctrl rightarrow</code> ; cursor word end right ; 다음 단어로 이동</li><li>⭐<code>ctrl leftarrow</code> ; cursor word left ; 이전 단어로 이동</li><li>⭐<code>ctrl shift v</code> ; markdown preview ; 마크다운 미리보기</li><li>⭐<code>F12</code> ; go to definition ; 선언부로이동</li><li>⭐<code>ctrl leftclick</code> ; go to definition ; 선언부로이동</li><li><code>alt F12</code> ; peek definition / peek references ; 선언, 참조 보기</li><li><code>ctrl 0</code> ; focus into side bar ; 사이드바 포커스</li><li><code>ctrl 1</code> ; focus editor group ; 에디터 포커스</li><li><code>ctrl shift .</code> ; focus breadcrumbs ; 브레드크럼 포커스</li><li><code>ctrl t</code> ; go to symbol in workspace ; 심볼로 바로가기 (범위 ; 워크스페이스 전체)</li><li><code>ctrl shift o</code> ; go to symbol in editor ; 심볼로 바로가기 (범위 ; 현재 포커스된 파일)</li><li><code>ctrl ` </code> ; toggle terminal ; 터미널뷰 토글</li><li><code>ctrl g</code> ; go to line/colum ; 커서이동 ; <em>라인번호,칼럼번호</em></li></ul><h2 id="확장도구"><a href="#확장도구" class="headerlink" title="확장도구"></a>확장도구</h2><ul><li><p>⭐ prettier ; 코드 포매터</p></li><li><p>⭐ eslint ; 린트</p></li><li><p>⭐ shell-launcher ; 여러 터미널 구성</p></li><li><p>⭐ code-settings-sync ; vscode setting 클라우드 저장</p></li><li><p>⭐ JavaScript (ES6) code snippets ; 코드 스니펫, 자동완성 도구</p></li><li><p>⭐ TabOut ; 탭키로 괄호 탈출</p></li><li><p>vscode-pandoc ; md to word</p></li><li><p>live share ; 실시간 멀티유저 코드 편집</p></li><li><p>vscode-sql-formatter ; sql 포매터</p></li><li><p>ascii tree generator ; 디렉터리 트리 스트링 생성</p></li><li><p>auto rename tag ; html 태그 자동 리네임</p></li><li><p>bracket pair colorizer ; 괄호색 구분</p></li><li><p>indent-rainbow ; 들여쓰기 색 구분</p></li><li><p>⭐ live server</p></li><li><p>⭐ material icon theme</p></li><li><p>⭐ remote - ssh</p></li><li><p>path intellisense</p></li><li><p>rest client</p></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/04/29/%EB%82%B4%EA%B0%80-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-vscode-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%AA%85%EB%A0%B9-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC-%EB%AA%A8%EC%9D%8C/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>좋은 사용자</title>
@@ -578,34 +608,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/04/05/Flat-UI-Color-Palette/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>리액트할 때 사용하는 스니펫</title>
-      <link>https://chinsun9.github.io/2021/03/26/%EB%A6%AC%EC%95%A1%ED%8A%B8%ED%95%A0-%EB%95%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%8A%A4%EB%8B%88%ED%8E%AB/</link>
-      <guid>https://chinsun9.github.io/2021/03/26/%EB%A6%AC%EC%95%A1%ED%8A%B8%ED%95%A0-%EB%95%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%8A%A4%EB%8B%88%ED%8E%AB/</guid>
-      <pubDate>Fri, 26 Mar 2021 01:38:24 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%A6%AC%EC%95%A1%ED%8A%B8%ED%95%A0-%EB%95%8C-%EC%82%AC%</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%A6%AC%EC%95%A1%ED%8A%B8%ED%95%A0-%EB%95%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%8A%A4%EB%8B%88%ED%8E%AB20210326/preview.png" alt=" "></p><ul><li><code>ES7 React/Redux/GraphQL/React-Native snippets</code> 확장도구에서 제공하는 스니펫을 사용한다</li></ul><h2 id="리액트"><a href="#리액트" class="headerlink" title="리액트"></a>리액트</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// rfce 또는 rfc</span></span><br><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">App</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &lt;div&gt;&lt;/div&gt;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</span><br></pre></td></tr></table></figure><h2 id="리액트-네이티브"><a href="#리액트-네이티브" class="headerlink" title="리액트 네이티브"></a>리액트 네이티브</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// rnf</span></span><br><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; View, Text &#125; <span class="keyword">from</span> <span class="string">&quot;react-native&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">App</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;View&gt;</span><br><span class="line">      &lt;Text&gt;&lt;/Text&gt;</span><br><span class="line">    &lt;/View&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets">https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/react/">react</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/react/">react</category>
-      
-      <category domain="https://chinsun9.github.io/tags/snippets/">snippets</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/03/26/%EB%A6%AC%EC%95%A1%ED%8A%B8%ED%95%A0-%EB%95%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%8A%A4%EB%8B%88%ED%8E%AB/#disqus_thread</comments>
       
     </item>
     
