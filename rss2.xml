@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 06 May 2021 00:49:03 GMT</pubDate>
+    <pubDate>Thu, 06 May 2021 07:36:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>styled components highlighting</title>
+      <link>https://chinsun9.github.io/2021/05/06/styled-components-highlighting/</link>
+      <guid>https://chinsun9.github.io/2021/05/06/styled-components-highlighting/</guid>
+      <pubDate>Thu, 06 May 2021 07:36:11 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/styled-components-highlighting20210506/preview.png&quot;&gt;&lt;/p&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/styled-components-highlighting20210506/preview.png"></p><ul><li><code>styled-components</code>를 사용하는데, 구문 강조가 없어서 확장 도구를 살펴보았다</li><li><code>vscode-styled-components</code>를 사용하면 하이라이트 및 스니펫을 사용이 가능하다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components">https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
+      
+      <category domain="https://chinsun9.github.io/tags/styled-components/">styled components</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/05/06/styled-components-highlighting/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vscode 포맷팅 없이 저장하기</title>
@@ -576,34 +607,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/04/14/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-2%EA%B0%9C-%EC%9D%B4%EC%83%81-%EC%97%B0%EC%86%8D%EB%90%9C-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B0%BE%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>git submodule 중첩된 깃 사용하기</title>
-      <link>https://chinsun9.github.io/2021/04/14/git-submodule-%EC%A4%91%EC%B2%A9%EB%90%9C-%EA%B9%83-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2021/04/14/git-submodule-%EC%A4%91%EC%B2%A9%EB%90%9C-%EA%B9%83-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Wed, 14 Apr 2021 01:38:21 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/git-submodule-%EC%A4%91%EC%B2%A9%EB%90%9C-%EA%B9%83-%EC%8</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/git-submodule-%EC%A4%91%EC%B2%A9%EB%90%9C-%EA%B9%83-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B020210414/preview.png" alt=" "></p><ul><li>깃 아래 깃..!</li></ul><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">super</span><br><span class="line">├── client</span><br><span class="line">│   └── 1</span><br><span class="line">└── server</span><br><span class="line">    └── 1</span><br></pre></td></tr></table></figure><ul><li>이런 구조의 프로젝트가 있다</li><li>super에서 <code>git init</code> 하여 프로젝트를 관리하다 보면</li><li>깃 히스토리가 client 내용, server 내용이 합쳐져 있다</li><li>구분하기 위해 커밋 메시지를 적을 때도 어떻게 적어야 할지 망설이게 된다</li></ul><ul><li>그래서 super, client, server에 모두 <code>git init</code>하고</li><li>super에서는 client와 server를 gitignore에 추가하고 사용해봤는데,</li><li>이것도 좋은 방법은 아닌 것 같았다.</li></ul><ul><li>그래서 <strong>nested git repository</strong> 라는 키워드로 검색했고 <code>submodule</code> 이라는 것을 사용하면 된다는 것을 알게 되었다</li><li>submodule을 사용하면 super 디렉터리에서 명령어 하나로 하위의 서브모듈 깃 프로젝트를 업데이트(pull) 할 수 있다</li></ul><h2 id="공부"><a href="#공부" class="headerlink" title="공부"></a>공부</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/TAe4uZqYt6c" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>생활코딩님의 강의를 보고 공부했다</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 전제조건</span><br><span class="line">&#x2F;&#x2F; 명령어를 실행하는 위치는 super 디렉터리이다</span><br><span class="line">&#x2F;&#x2F; submodule로 추가할 프로젝트(client, server)는 모두 git init으로 초기화된 깃 프로젝트이며 원격 저장소에 올라가 있어야 한다</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; submodule 추가 &#x2F;&#x2F; 처음 super에 서브모듈을 추가하는 과정이다</span><br><span class="line">git submodule add &#123;repo url&#125; 디렉터리명</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 이후 다른 컴퓨터에서 super를 클론하는 경우</span><br><span class="line">git clone &#123;super-repo-url&#125; &#x2F;&#x2F; git clone https:&#x2F;&#x2F;github.com&#x2F;chinsun9&#x2F;super.git</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 하위 서브 모듈은 클론되지 않는다</span><br><span class="line">&#x2F;&#x2F; 서브 모듈도 가져오기</span><br><span class="line">git submodule init</span><br><span class="line">git submodule update</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 위 명령은 하위 모든 서브 모듈을 가져온다</span><br><span class="line">&#x2F;&#x2F; 특정 서브 모듈만 가져오고 싶다면</span><br><span class="line">git submodule init &#123;submodule명&#125;</span><br></pre></td></tr></table></figure><ul><li>super에서는 하위 서브모듈의 변경을 감지하고,</li><li>하위 모듈의 해시(특정 버전을 가리키는)를 기억하는 방식으로 관리된다</li></ul><ul><li><code>git submodule update</code> 명령을 사용하여 super에서 저장하고 있는 특정 버전의 하위 모듈로 업데이트한다</li><li><code>git submodule update --remote</code> 명령을 사용하여 각 하위 모듈을 최신 상태로 업데이트할 수 있다</li><li>여러 컴퓨터에서 작업할 때 super를 클론하고 <code>git pull &amp;&amp; git submodule update</code> 명령으로 한 번에 가져올 수 있겠다!</li></ul><h2 id="발생한-문제"><a href="#발생한-문제" class="headerlink" title="발생한 문제"></a>발생한 문제</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git submodule update --remote</span><br><span class="line"></span><br><span class="line">fatal: Needed a single revision</span><br><span class="line">Unable to find current https:&#x2F;&#x2F;github.com&#x2F;chinsun9&#x2F;my-submodule&#x2F;master revision in submodule path &#39;lib&#39;</span><br><span class="line">error Command failed with exit code 1.</span><br><span class="line">info Visit https:&#x2F;&#x2F;yarnpkg.com&#x2F;en&#x2F;docs&#x2F;cli&#x2F;run for documentation about this command.</span><br></pre></td></tr></table></figure><ul><li><code>git submodule update --remote</code> 명령을 실행하니 이런 에러가 발생했다.</li><li>나는 submodule을 알기 전에 그냥 하위에 또 다른 깃 디렉터리를 사용하고 있었는데,</li><li>그 상태 그대로 <code>submodule add</code>하고 사용했더니 위 에러가 발생했다</li></ul><ul><li>해결방법은 기존 하위 레포를 삭제하고 다시 <code>git submodule update --remote</code>를 실행한다</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rm -rf lib&#x2F;</span><br><span class="line">git submodule update --remote</span><br></pre></td></tr></table></figure><ul><li>혹시 특정 브랜치에 대해 가져오고 싶으면 <code>.gitmodules</code> 파일을 열고 branch 값을 명시해준다</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 수정 전</span><br><span class="line">[submodule &quot;client&quot;]</span><br><span class="line">path &#x3D; client</span><br><span class="line">url &#x3D; https:&#x2F;&#x2F;github.com&#x2F;chinsun9&#x2F;my-submodule</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 수정 후</span><br><span class="line">[submodule &quot;client&quot;]</span><br><span class="line">path &#x3D; client</span><br><span class="line">branch &#x3D; mybranchname &#x2F;&#x2F; 추가됨!</span><br><span class="line">url &#x3D; https:&#x2F;&#x2F;github.com&#x2F;chinsun9&#x2F;my-submodule</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/TAe4uZqYt6c">https://youtu.be/TAe4uZqYt6c</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/submodule/">submodule</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/04/14/git-submodule-%EC%A4%91%EC%B2%A9%EB%90%9C-%EA%B9%83-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
