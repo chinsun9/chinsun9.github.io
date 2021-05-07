@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/05/07/react-table-practice/</loc>
+        <lastmod>2021-05-07T03:50:14.580Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/05/06/styled-components-highlighting/</loc>
         <lastmod>2021-05-06T07:36:11.286Z</lastmod>
         <changefreq>weekly</changefreq>
