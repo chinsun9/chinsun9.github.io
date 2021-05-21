@@ -9,8 +9,62 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 07 May 2021 09:10:51 GMT</pubDate>
+    <pubDate>Fri, 21 May 2021 02:45:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>css 변수 사용하기</title>
+      <link>https://chinsun9.github.io/2021/05/21/css-%EB%B3%80%EC%88%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <guid>https://chinsun9.github.io/2021/05/21/css-%EB%B3%80%EC%88%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Fri, 21 May 2021 02:45:12 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight css&quot;&gt;&lt;figcaption&gt;&lt;span&gt;style.css&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight css"><figcaption><span>style.css</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">  --<span class="selector-tag">a</span>: pink;</span><br><span class="line">  --<span class="selector-tag">b</span>: black;</span><br><span class="line">  --c: white;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">var</span>(--a);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 변수 --a 를 오버라이딩 */</span></span><br><span class="line"><span class="selector-tag">button</span><span class="selector-class">.override</span> &#123;</span><br><span class="line">  --<span class="selector-tag">a</span>: green;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">var</span>(--a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>:root</code>는 전역 변수를 선언하는 곳이라고 생각하면 된다</li><li><code>--</code>을 앞에 붙여야 한다</li><li>대소문자를 구분한다</li><li><code>var()</code>함수로 변수를 가져다 사용할 수 있다</li><li>오버라이딩 가능하다</li></ul><figure class="highlight css"><figcaption><span>style.css</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">button</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">var</span>(--a, red);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>var()</code> 함수에 2번째 인자를 넣어서, 대안 값을 지정할 수 있다</li><li><code>--a</code>가 정의되지 않았을 때, 두 번째 인자 값을 사용한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/CSS/Using_CSS_custom_properties">https://developer.mozilla.org/ko/docs/Web/CSS/Using_CSS_custom_properties</a></li><li><code>:root</code>는 <strong>의사 클래스</strong>라고 한다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/05/21/css-%EB%B3%80%EC%88%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>오버라이딩 vs. 오버로딩</title>
+      <link>https://chinsun9.github.io/2021/05/21/%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9-vs-%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9/</link>
+      <guid>https://chinsun9.github.io/2021/05/21/%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9-vs-%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9/</guid>
+      <pubDate>Fri, 21 May 2021 02:34:57 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 오버로딩 //</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 오버라이딩 //</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Super</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// print super</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sub</span> <span class="keyword">extends</span> <span class="title">Super</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// print sub</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><ul><li>예~~~전에 c++, java하면서 배운 헷갈리는 용어 정리!</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/etc/">etc</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/05/21/%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9-vs-%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>react table 연습</title>
@@ -557,58 +611,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/04/22/gradle-build-%ED%8A%B9%EC%A0%95-jdk-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>code . 현재창으로 열기</title>
-      <link>https://chinsun9.github.io/2021/04/14/code-%ED%98%84%EC%9E%AC%EC%B0%BD%EC%9C%BC%EB%A1%9C-%EC%97%B4%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2021/04/14/code-%ED%98%84%EC%9E%AC%EC%B0%BD%EC%9C%BC%EB%A1%9C-%EC%97%B4%EA%B8%B0/</guid>
-      <pubDate>Wed, 14 Apr 2021 12:20:42 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd project</span><br><span class="line">code .</span><br></pre></td></tr></table></figure><ul><li>vscode 내부 터미널에서 <code>cd</code> 명령을 통해 다른 폴더로 이동한다</li><li>해당 폴더를 <code>code .</code>으로 열 수 있다</li><li>이 경우에는 새창으로 해당 폴더가 열린다</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code . -r</span><br></pre></td></tr></table></figure><ul><li><code>-r</code>옵션을 붙여주면 현재 창을 통해 열리게 된다</li><li>이 옵션을 자주 쓸 것 같다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://code.visualstudio.com/docs/editor/command-line#_core-cli-options">https://code.visualstudio.com/docs/editor/command-line#_core-cli-options</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/04/14/code-%ED%98%84%EC%9E%AC%EC%B0%BD%EC%9C%BC%EB%A1%9C-%EC%97%B4%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>정규식으로 숫자를 포함하지 않는 것만 가져오기</title>
-      <link>https://chinsun9.github.io/2021/04/14/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%88%AB%EC%9E%90%EB%A5%BC-%ED%8F%AC%ED%95%A8%ED%95%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EA%B2%83%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2021/04/14/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%88%AB%EC%9E%90%EB%A5%BC-%ED%8F%AC%ED%95%A8%ED%95%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EA%B2%83%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/</guid>
-      <pubDate>Wed, 14 Apr 2021 12:00:08 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> nickNameList = [<span class="string">&#x27;chinsung&#x27;</span>, <span class="string">&#x27;chinsun99999999&#x27;</span>, <span class="string">&#x27;2021&#x27;</span>, <span class="string">&#x27;regexp&#x27;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> noNumber = nickNameList.filter(<span class="function">(<span class="params">nickName</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> hasNumber = <span class="regexp">/\d/</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> !hasNumber.test(nickName);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(noNumber);</span><br></pre></td></tr></table></figure><ul><li>배열에서 숫자를 포함하는 값만 뽑아보자</li><li>또는 숫자를 포함하는 값만 뽑아보자</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/reg-exp/">reg exp</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/reg-exp/">reg exp</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/04/14/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%88%AB%EC%9E%90%EB%A5%BC-%ED%8F%AC%ED%95%A8%ED%95%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EA%B2%83%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
