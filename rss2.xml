@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 21 May 2021 02:45:12 GMT</pubDate>
+    <pubDate>Sun, 23 May 2021 08:59:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -294,9 +294,9 @@
       
       <category domain="https://chinsun9.github.io/tags/aws-cli/">aws cli</category>
       
-      <category domain="https://chinsun9.github.io/tags/sam-cli/">sam cli</category>
-      
       <category domain="https://chinsun9.github.io/tags/credentials/">credentials</category>
+      
+      <category domain="https://chinsun9.github.io/tags/sam-cli/">sam cli</category>
       
       
       <comments>https://chinsun9.github.io/2021/04/28/aws-credentials-%EC%97%AC%EB%9F%AC%EA%B0%9C/#disqus_thread</comments>
@@ -537,7 +537,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="타입스크립트-입문-전"><a href="#타입스크립트-입문-전" class="headerlink" title="타입스크립트 입문 전"></a>타입스크립트 입문 전</h2><ul><li>C, C++, JAVA를 학교 수업으로 들었다</li><li>3,4 학년 때는 웹 프로그래밍을 많이 하면서 백엔드는 nodejs, 프론트는 ejs를 했었다</li><li>nodejs 위에서 js를 쓰면서 이것저것 쓰면서 익숙해지고 있었다</li><li>자바스크립트는 공부해서 했기보다는 그냥 막히는 부분마다 검색해서 해결했었다</li><li>for문도 그냥 array api(foreach, map, reduce) 안 쓰고 <code>for(;;)</code>로 다 짜고..</li><li>그당시 내가 느끼기로 자바스크립트는 C나 JAVA에 없는 괴랄한 문법이 많이 있었다</li><li>그런거에 흥미를 가지면서 for(;;) 쓰는거 그만하고 js스러운 코드를 짜기 시작했었던 같다</li><li>또 js는 여태껏 배워온 C나 JAVA와 다르게 타입에 전혀 얽매이지 않고, 웬만하면 에러없이 동작해서 엄청 편했다</li></ul><h2 id="타입스크립트-입문-동기"><a href="#타입스크립트-입문-동기" class="headerlink" title="타입스크립트 입문 동기"></a>타입스크립트 입문 동기</h2><ul><li>ts를 한번 쓰면 못 빠져나온다는 조언을 들음</li><li>(그만큼 좋다)</li></ul><h2 id="타입스크립트-첫인상"><a href="#타입스크립트-첫인상" class="headerlink" title="타입스크립트 첫인상"></a>타입스크립트 첫인상</h2><ul><li>기존에 배웠던 엄격한 언어들과는 다르게 js는 엄청 유연한? 언어였다</li><li>나는 이런 특성이 편하게 다가왔다</li><li>타입 때문에 골머리 아프지 않아도 돼서 뭔가 해방된 느낌이 들었기 때문이다</li><li>그런데 타입스크립트라고 자바스크립트에서 굳이 타입을 붙여 써서 뭐가 좋아지는지</li><li>왜 다시 역행하는지에 대해 약간 의문이 있었다</li><li>실제로 시작해서도 그간 타입을 명시하지 않았던 편안함을 잃은 기분이었다</li></ul><ul><li>타입스크립트를 쓰면…</li></ul><blockquote><p>1 + ‘1’<br>// ‘11’</p></blockquote><ul><li>숫자+숫자로 예상했는데 실제론 숫자+문자열하는 일은 안 겪어되는 것부터 해서</li><li>실행 전에 에러를 잡아 준다는데,,</li><li>그거야 처음에 잘 짜면 되는 것을,, 이때는 공감하지 못했다.</li></ul><h2 id="내가-생각하는-타입스크립트-장점"><a href="#내가-생각하는-타입스크립트-장점" class="headerlink" title="내가 생각하는 타입스크립트 장점"></a>내가 생각하는 타입스크립트 장점</h2><h3 id="7개월차-20년-9월-21년-4월"><a href="#7개월차-20년-9월-21년-4월" class="headerlink" title="7개월차 (20년 9월 - 21년 4월)"></a>7개월차 (20년 9월 - 21년 4월)</h3><ul><li>타입스크립트는 짱이다</li><li>위에서 말한 타입스크립트를 쓰는 일반적인 장점이 있지만,</li><li>나는 이 장점 다 필요 없고 <strong>자동완성이 100%</strong> 보장된다는 점에서 타입스크립트를 좋아한다</li><li>예를 들면 그냥 js를 쓸 때는 배열 변수에 <code>.</code> 찍어도 array api 자동완성이 안된다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%82%B4%EA%B0%80-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A5%BC-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A020210423/preview.png" alt=" "></p><ul><li>위가 js고 아래가 ts다</li><li>위는 그냥 arr 변수가 배열이든 아니든 그냥 스니펫만 제공하는 반면</li><li>아래 ts의 경우 배열 타입에 맞춰서 그에 맞는 array api를 자동완성해주는 모습이다</li></ul><ul><li>이 정도까지는 그냥 코드 스니펫으로 해결할 수 있는 수준이지만</li><li>이런 api 자동완성은 기본이고, 어떤 클래스나 객체를 생성해서 하위에 멤버 변수가 있을 때</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%82%B4%EA%B0%80-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A5%BC-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A020210423/1.png" alt=" "></p><ul><li><code>.</code>만 찍으면 전부 자동완성 해준다. 오타로 인해 삽질할 필요가 전혀없는거다</li></ul><ul><li>나는 코드 쓸 때 쉬프트 누르는 것을 별로 안 좋아한다. 쉬프트를 누르면 순간 느려지고 오타도 생기기도 하고.. 답답해진다</li><li>c나 java를 할 때도 일단 소문자로 쓰고 나중에 rename 기능을 통해 카멜 케이스로 변경할 만큼..</li><li>ts를 쓰면 이런 고민이 필요 없는 게 최초 1회만 잘 작성해두면 <code>ctrl space</code>만으로 코드를 작성할 수 있다 ㅋㅋㅋ</li></ul><ul><li>또 장점이라면 내가 잘못된 코드를 작성했을 때 실행도 시켜주지 않기 때문에 모르고 지나갈 수 없다</li><li>오류가 생기면 어디서 오류가 생겼는지 확실히 알 수 있다!</li></ul><ul><li>결론! 자동완성에 한번 빠지면 헤어 나올 수 없다</li><li>아니 이것도 자동완성이 된다고? 하는 곳까지 진짜 다 된다</li><li>ts하다가 js가면 한숨이 나올 것이다</li></ul><h3 id="타입스크립트-더-고수가-되고-생각나면-추가해야지"><a href="#타입스크립트-더-고수가-되고-생각나면-추가해야지" class="headerlink" title="타입스크립트 더 고수가 되고 생각나면 추가해야지.."></a>타입스크립트 더 고수가 되고 생각나면 추가해야지..</h3>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="타입스크립트-입문-전"><a href="#타입스크립트-입문-전" class="headerlink" title="타입스크립트 입문 전"></a>타입스크립트 입문 전</h2><ul><li>C, C++, JAVA를 학교 수업으로 들었다</li><li>3,4 학년 때는 웹 프로그래밍을 많이 하면서 백엔드는 nodejs, 프론트는 ejs를 했었다</li><li>nodejs 위에서 js를 쓰면서 이것저것 쓰면서 익숙해지고 있었다</li><li>자바스크립트는 공부해서 했기보다는 그냥 막히는 부분마다 검색해서 해결했었다</li><li>for문도 그냥 array api(foreach, map, reduce) 안 쓰고 <code>for(;;)</code>로 다 짜고..</li><li>그당시 내가 느끼기로 자바스크립트는 C나 JAVA에 없는 괴랄한 문법이 많이 있었다</li><li>그런거에 흥미를 가지면서 for(;;) 쓰는거 그만하고 js스러운 코드를 짜기 시작했었던 같다</li><li>또 js는 여태껏 배워온 C나 JAVA와 다르게 타입에 전혀 얽매이지 않고, 웬만하면 에러없이 동작해서 엄청 편했다</li></ul><h2 id="타입스크립트-입문-동기"><a href="#타입스크립트-입문-동기" class="headerlink" title="타입스크립트 입문 동기"></a>타입스크립트 입문 동기</h2><ul><li>ts를 한번 쓰면 못 빠져나온다는 조언을 들음</li><li>(그만큼 좋다)</li></ul><h2 id="타입스크립트-첫인상"><a href="#타입스크립트-첫인상" class="headerlink" title="타입스크립트 첫인상"></a>타입스크립트 첫인상</h2><ul><li>기존에 배웠던 엄격한 언어들과는 다르게 js는 엄청 유연한? 언어였다</li><li>나는 이런 특성이 편하게 다가왔다</li><li>타입 때문에 골머리 아프지 않아도 돼서 뭔가 해방된 느낌이 들었기 때문이다</li><li>그런데 타입스크립트라고 자바스크립트에서 굳이 타입을 붙여 써서 뭐가 좋아지는지</li><li>왜 다시 역행하는지에 대해 약간 의문이 있었다</li><li>실제로 시작해서도 그간 타입을 명시하지 않았던 편안함을 잃은 기분이었다</li></ul><ul><li>타입스크립트를 쓰면…</li></ul><blockquote><p>1 + ‘1’<br>// ‘11’</p></blockquote><ul><li>숫자+숫자로 예상했는데 실제론 숫자+문자열하는 일은 안 겪어되는 것부터 해서</li><li>실행 전에 에러를 잡아 준다는데,,</li><li>그거야 처음에 잘 짜면 되는 것을,, 이때는 공감하지 못했다.</li></ul><h2 id="내가-생각하는-타입스크립트-장점"><a href="#내가-생각하는-타입스크립트-장점" class="headerlink" title="내가 생각하는 타입스크립트 장점"></a>내가 생각하는 타입스크립트 장점</h2><h3 id="7개월-차-20년-9월-21년-4월"><a href="#7개월-차-20년-9월-21년-4월" class="headerlink" title="7개월 차 (20년 9월 - 21년 4월)"></a>7개월 차 (20년 9월 - 21년 4월)</h3><ul><li>타입스크립트는 짱이다</li><li>위에서 말한 타입스크립트를 쓰는 일반적인 장점이 있지만,</li><li>나는 이 장점 다 필요 없고 <strong>자동완성이 100%</strong> 보장된다는 점에서 타입스크립트를 좋아한다</li><li>예를 들면 그냥 js를 쓸 때는 배열 변수에 <code>.</code> 찍어도 array api 자동완성이 안된다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%82%B4%EA%B0%80-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A5%BC-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A020210423/preview.png" alt=" "></p><ul><li>위가 js고 아래가 ts다</li><li>위는 그냥 arr 변수가 배열이든 아니든 그냥 스니펫만 제공하는 반면</li><li>아래 ts의 경우 배열 타입에 맞춰서 그에 맞는 array api를 자동완성해주는 모습이다</li></ul><ul><li>이 정도까지는 그냥 코드 스니펫으로 해결할 수 있는 수준이지만</li><li>이런 api 자동완성은 기본이고, 어떤 클래스나 객체를 생성해서 하위에 멤버 변수가 있을 때</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EB%82%B4%EA%B0%80-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A5%BC-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A020210423/1.png" alt=" "></p><ul><li><code>.</code>만 찍으면 전부 자동완성 해준다. 오타로 인해 삽질할 필요가 전혀없는거다</li></ul><ul><li>나는 코드 쓸 때 쉬프트 누르는 것을 별로 안 좋아한다. 쉬프트를 누르면 순간 느려지고 오타도 생기기도 하고.. 답답해진다</li><li>c나 java를 할 때도 일단 소문자로 쓰고 나중에 rename 기능을 통해 카멜 케이스로 변경할 만큼..</li><li>ts를 쓰면 이런 고민이 필요 없는 게 최초 1회만 잘 작성해두면 <code>ctrl space</code>만으로 코드를 작성할 수 있다 ㅋㅋㅋ</li></ul><ul><li>또 장점이라면 내가 잘못된 코드를 작성했을 때 실행도 시켜주지 않기 때문에 모르고 지나갈 수 없다</li><li>오류가 생기면 어디서 오류가 생겼는지 확실히 알 수 있다!</li></ul><ul><li>결론! 자동완성에 한번 빠지면 헤어 나올 수 없다</li><li>아니 이것도 자동완성이 된다고? 하는 곳까지 진짜 다 된다</li><li>ts하다가 js가면 한숨이 나올 것이다</li></ul><h3 id="타입스크립트-더-고수가-되고-생각나면-추가해야지"><a href="#타입스크립트-더-고수가-되고-생각나면-추가해야지" class="headerlink" title="타입스크립트 더 고수가 되고 생각나면 추가해야지.."></a>타입스크립트 더 고수가 되고 생각나면 추가해야지..</h3>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
@@ -605,9 +605,9 @@
       
       <category domain="https://chinsun9.github.io/tags/java/">java</category>
       
-      <category domain="https://chinsun9.github.io/tags/jar/">jar</category>
-      
       <category domain="https://chinsun9.github.io/tags/gradle/">gradle</category>
+      
+      <category domain="https://chinsun9.github.io/tags/jar/">jar</category>
       
       
       <comments>https://chinsun9.github.io/2021/04/22/gradle-build-%ED%8A%B9%EC%A0%95-jdk-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C/#disqus_thread</comments>
