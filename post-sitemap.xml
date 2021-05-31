@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://chinsun9.github.io/2021/05/25/react-context/</loc>
-        <lastmod>2021-05-25T06:09:01.685Z</lastmod>
+        <lastmod>2021-05-25T07:15:54.589Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/10/typescript-json-import/</loc>
+        <lastmod>2021-05-25T06:52:22.910Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1089,22 +1097,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/12/16/type-vs-interface/</loc>
-        <lastmod>2021-04-22T05:41:32.525Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/10/typescript-json-import/</loc>
-        <lastmod>2021-04-22T05:41:32.525Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/12/29/typescript%EC%97%90%EC%84%9C-json-import/</loc>
         <lastmod>2021-04-22T05:41:32.525Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
