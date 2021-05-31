@@ -45,7 +45,7 @@
     </item>
     
     <item>
-      <title>cdn</title>
+      <title>CDN</title>
       <link>https://chinsun9.github.io/2021/05/31/cdn/</link>
       <guid>https://chinsun9.github.io/2021/05/31/cdn/</guid>
       <pubDate>Mon, 31 May 2021 08:49:05 GMT</pubDate>
@@ -54,14 +54,14 @@
         
       <description>&lt;ul&gt;
 &lt;li&gt;속도!&lt;/li&gt;
-&lt;li&gt;웹프로그래밍 시간에서 bootstrap, jquery, fontawesome 등 외부라이브러리를 cdn을 통해 사용해았다&lt;/li&gt;
-&lt;li&gt;데이터통신, 네트워크 관련 수업에서 cdn이 뭔지 배웠었다&lt;/li&gt;
+&lt;li&gt;웹프로그래밍 시간에서 bootstrap, jquery, fontawesome 등 외부라이브러리를 CDN을 통해 사용해았다&lt;/li&gt;
+&lt;li&gt;데이터통신, 네트워크 관련 수업에서 CDN이 뭔지 배웠었다&lt;/li&gt;
 &lt;/u</description>
         
       
       
       
-      <content:encoded><![CDATA[<ul><li>속도!</li><li>웹프로그래밍 시간에서 bootstrap, jquery, fontawesome 등 외부라이브러리를 cdn을 통해 사용해았다</li><li>데이터통신, 네트워크 관련 수업에서 cdn이 뭔지 배웠었다</li></ul><h2 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h2><ul><li>콘텐츠 전송 네트워크, Content Delivery Network</li><li>나와 물리적으로 가까운 캐시 서버로부터 리소스를 가져온다</li><li>원래대로라면 원본 리소스를 가지고 있는 서버로부터 제공받는다</li><li>근데 원본 서버가 물리적으로 거리가 멀면 가져오는데 시간이 오래 걸린다</li><li>원본 서버의 부하도 줄여주고 속도도 빨라지도 좋다</li><li>보통 정적인 파일들(이미지, js, css)등을 CDN을 사용하여 배포한다</li></ul><ul><li>A, B가 같은 동네에 살고 있다</li><li>A가 <code>asdf</code>라는 파일을 다운로드하는데, 가장 가까운 캐시 서버에 <code>asdf</code>파일이 있는지 확인한다</li><li>없으면 하나 위로 가서 확인하고, 반복하다가 없으면 원본 서버까지 가서 받아온다</li><li>최초에 시간이 오래 걸렸지만, 이후 A가 <code>asdf</code>파일을 재요청했을 때 엄청 빨라졌음을 느꼈다</li><li>B도 <code>asdf</code>파일을 엄청 빨리 다운로드할 수 있었다</li></ul><h2 id="cdn-사용예"><a href="#cdn-사용예" class="headerlink" title="cdn 사용예"></a>cdn 사용예</h2><ul><li>jquery, font awesome 등 라이브러리들을 보면 cdn 형태로 제공을 하고 있어서</li><li>head에 한 줄 넣기만 하면 해당 라이브러리의 기능을 쉽게 사용할 수 있다</li><li>cdn 말고 직접 배포 파일(dist, build)을 받아서 사용할 수 있지만,</li><li>언디가 서비스를 할 때, 내 서버에서 해당 리소스를 제공해야 하으로 서버에 부하를 줄 수 있고, 느리다</li><li>라이브러리를 가져올 때, cdn을 사용했다면 이런 걱정을 할 필요가 없다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://ko.wikipedia.org/wiki/%EC%BD%98%ED%85%90%EC%B8%A0_%EC%A0%84%EC%86%A1_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC">https://ko.wikipedia.org/wiki/%EC%BD%98%ED%85%90%EC%B8%A0_%EC%A0%84%EC%86%A1_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<ul><li>속도!</li><li>웹프로그래밍 시간에서 bootstrap, jquery, fontawesome 등 외부라이브러리를 CDN을 통해 사용해았다</li><li>데이터통신, 네트워크 관련 수업에서 CDN이 뭔지 배웠었다</li></ul><h2 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h2><ul><li>콘텐츠 전송 네트워크, Content Delivery Network</li><li>나와 물리적으로 가까운 캐시 서버로부터 리소스를 가져온다</li><li>원래대로라면 원본 리소스를 가지고 있는 서버로부터 제공받는다</li><li>근데 원본 서버가 물리적으로 거리가 멀면 가져오는데 시간이 오래 걸린다</li><li>원본 서버의 부하도 줄여주고 속도도 빨라지도 좋다</li><li>보통 정적인 파일들(이미지, js, css)등을 CDN을 사용하여 배포한다</li></ul><ul><li>A, B가 같은 동네에 살고 있다</li><li>A가 <code>asdf</code>라는 파일을 다운로드하는데, 가장 가까운 캐시 서버에 <code>asdf</code>파일이 있는지 확인한다</li><li>없으면 하나 위로 가서 확인하고, 반복하다가 없으면 원본 서버까지 가서 받아온다</li><li>최초에 시간이 오래 걸렸지만, 이후 A가 <code>asdf</code>파일을 재요청했을 때 엄청 빨라졌음을 느꼈다</li><li>B도 <code>asdf</code>파일을 엄청 빨리 다운로드할 수 있었다</li></ul><h2 id="CDN-사용예"><a href="#CDN-사용예" class="headerlink" title="CDN 사용예"></a>CDN 사용예</h2><ul><li>jquery, font awesome 등 라이브러리들을 보면 CDN 형태로 제공을 하고 있어서</li><li>head에 한 줄 넣기만 하면 해당 라이브러리의 기능을 쉽게 사용할 수 있다</li><li>CDN 말고 직접 배포 파일(dist, build)을 받아서 사용할 수 있지만,</li><li>언디가 서비스를 할 때, 내 서버에서 해당 리소스를 제공해야 하으로 서버에 부하를 줄 수 있고, 느리다</li><li>라이브러리를 가져올 때, CDN을 사용했다면 이런 걱정을 할 필요가 없다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://ko.wikipedia.org/wiki/%EC%BD%98%ED%85%90%EC%B8%A0_%EC%A0%84%EC%86%A1_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC">https://ko.wikipedia.org/wiki/%EC%BD%98%ED%85%90%EC%B8%A0_%EC%A0%84%EC%86%A1_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/web/">web</category>
