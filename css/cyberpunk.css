@@ -11682,6 +11682,9 @@ body.dark .searchbox .searchbox-result-item em {
 body.dark .searchbox a {
   color: #fff;
 }
+body.dark .breadcrumb li.is-active a {
+  color: #d4d4d4;
+}
 body {
   counter-reset: card;
 }
