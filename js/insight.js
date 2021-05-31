@@ -27,7 +27,7 @@ function loadInsight(config, translation) {
     return result;
   }
 
-  function findAndHighlight(text, matches, maxlen) {
+  function findAndHighlight(text, matches, maxlen, isTitle) {
     if (!Array.isArray(matches) || !matches.length || !text) {
       return maxlen ? text.slice(0, maxlen) : text;
     }
@@ -65,6 +65,7 @@ function loadInsight(config, translation) {
       if (maxlen && range[0] >= sumRange[0] + maxlen) {
         break;
       }
+      if(isTitle) result += text.slice(0,range[0]);
       result += '<em>' + text.slice(range[0], range[1]) + '</em>';
       last = range[1];
       if (i === ranges.length - 1) {
@@ -107,7 +108,7 @@ function loadInsight(config, translation) {
       case 'POSTS':
       case 'PAGES':
         $searchItems = array.map((item) => {
-          const title = findAndHighlight(item.title, keywords);
+          const title = findAndHighlight(item.title, keywords, 100, true);
           const text = findAndHighlight(item.text, keywords, 100);
           return searchItem('file', title, null, text, item.link);
         });
@@ -115,8 +116,8 @@ function loadInsight(config, translation) {
       case 'CATEGORIES':
       case 'TAGS':
         $searchItems = array.map((item) => {
-          const name = findAndHighlight(item.name, keywords);
-          const slug = findAndHighlight(item.slug, keywords);
+          const name = findAndHighlight(item.name, keywords, 100);
+          const slug = findAndHighlight(item.slug, keywords, 100);
           return searchItem(type === 'CATEGORIES' ? 'folder' : 'tag', name, slug, null, item.link);
         });
         break;
@@ -253,6 +254,7 @@ function loadInsight(config, translation) {
 
   function searchResultToDOM(keywords, searchResult) {
     $container.empty();
+    $container.append(`<a href="https://www.google.com/search?q=${keywords} site:https://chinsun9.github.io" target="_blank">🔍 google에서 검색 결과 보기 </a>`)
     for (const key in searchResult) {
       $container.append(
         sectionFactory(parseKeywords(keywords), key.toUpperCase(), searchResult[key]),

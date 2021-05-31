@@ -9,8 +9,43 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 25 May 2021 07:15:54 GMT</pubDate>
+    <pubDate>Mon, 31 May 2021 02:00:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>windows dark mode 윈도우 다크 테마</title>
+      <link>https://chinsun9.github.io/2021/05/31/windows-dark-mode/</link>
+      <guid>https://chinsun9.github.io/2021/05/31/windows-dark-mode/</guid>
+      <pubDate>Mon, 31 May 2021 02:00:55 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;다크 모드는 OS에서 설정할 수 있다&lt;/li&gt;
+&lt;li&gt;최상위 (OS)에서 설정해두면 그 위에서 돌아가는 앱이 자동으로 테마를 스위치 한다&lt;/li&gt;
+&lt;li&gt;깃허브 다크 모드가 크롬 프로필에 따라 풀려서 다크 모드로 설정을 하려는데&lt;/li</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>다크 모드는 OS에서 설정할 수 있다</li><li>최상위 (OS)에서 설정해두면 그 위에서 돌아가는 앱이 자동으로 테마를 스위치 한다</li><li>깃허브 다크 모드가 크롬 프로필에 따라 풀려서 다크 모드로 설정을 하려는데</li><li>시스템 기반으로 테마를 토글 하는 기능이 있음을 알게 되었다</li><li>그래서 윈도우에서 다크 모드 적용을 알아보았다</li></ul><h2 id="윈도우-다크-모드"><a href="#윈도우-다크-모드" class="headerlink" title="윈도우 다크 모드"></a>윈도우 다크 모드</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/windows-dark-mode20210526/preview.png" alt=" "></p><ul><li>win 키를 누르고 <code>theme</code>를 검색하면 <code>테마 컬러 선택</code> 설정으로 들어갈 수 있다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/windows-dark-mode20210526/1.png" alt=" "></p><ul><li>색 선택에서 어둡게를 선택하면</li><li>다크 모드 설정 완료이다</li></ul><ul><li>익스플로러나 브라우저를 보면 자동으로 다크 모드가 된 것을 확인할 수 있다</li><li>깃허브 사이트나 깃허브 데스크톱 앱도 자동으로 다크 모드로 전환되었다</li><li>앱또는 웹사이트마다 일일이 다크 모드 적용하기보다 OS 레벨에서 다크 모드를 적용하는 것이 훨씬 유용하다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/windows/">windows</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/windows/">windows</category>
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/dark-mode/">dark mode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/dark-theme/">dark theme</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/05/31/windows-dark-mode/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>react ts context</title>
@@ -578,38 +613,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/04/23/%EB%82%B4%EA%B0%80-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A5%BC-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>taskkill -jar</title>
-      <link>https://chinsun9.github.io/2021/04/23/taskkill-jar/</link>
-      <guid>https://chinsun9.github.io/2021/04/23/taskkill-jar/</guid>
-      <pubDate>Fri, 23 Apr 2021 08:40:23 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;상황&quot;&gt;&lt;a href=&quot;#상황&quot; class=&quot;headerlink&quot; title=&quot;상황&quot;&gt;&lt;/a&gt;상황&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;java -jar&lt;/code&gt;로 runable jar을 실행할 수 있다&lt;/li&gt;
-&lt;li&gt;그런데 이 jar</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li><code>java -jar</code>로 runable jar을 실행할 수 있다</li><li>그런데 이 jar을 cmd로 종료할 수 없을까?</li><li>보통의 프로그램이라면 <code>taskkill /F /IM</code>로 <strong>프로세스 이름</strong>을 통해 종료할 수 있다</li><li>근데 <code>java -jar</code> 실행한 앱의 경우, 프로세스명이 java.exe, javaw.exe 정도이다</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><ul><li><code>jps</code> 명령으로 .jar 파일 이름을 통해 PID를 얻을 수 있다</li><li>jps는 jdk가 설치되어있고 환경 변수만 잘 설정되어있다면 그냥 동작한다</li></ul><figure class="highlight bat"><figcaption><span>example.bat</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">rem example</span></span><br><span class="line"><span class="keyword">for</span> /f &quot;tokens=<span class="number">1</span>&quot; %i <span class="keyword">in</span> (&#x27;jps -m ^| <span class="built_in">find</span> &quot;myApp&quot;&#x27;) <span class="keyword">do</span> ( <span class="built_in">taskkill</span> /F /PID %i )</span><br></pre></td></tr></table></figure><ul><li>find “myApp” 부분에 jar 파일 명을 적으면 된다</li><li>jar 파일명을 완전히 적지 않아도 된다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://yannickloriot.com/2012/08/kill-a-java-process-from-the-command-line-or-a-bat-file/">https://yannickloriot.com/2012/08/kill-a-java-process-from-the-command-line-or-a-bat-file/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/java/">java</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/java/">java</category>
-      
-      <category domain="https://chinsun9.github.io/tags/taskkill/">taskkill</category>
-      
-      <category domain="https://chinsun9.github.io/tags/jar/">jar</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/04/23/taskkill-jar/#disqus_thread</comments>
       
     </item>
     
