@@ -9,7 +9,9 @@ function loadInsight(config, translation) {
   const $container = $main.find('.searchbox-body');
 
   function section(title) {
-    return $('<section>').addClass('searchbox-result-section').append($('<header>').text(title));
+    return $('<section>')
+      .addClass('searchbox-result-section')
+      .append($('<header>').text(title));
   }
 
   function merge(ranges) {
@@ -65,12 +67,15 @@ function loadInsight(config, translation) {
       if (maxlen && range[0] >= sumRange[0] + maxlen) {
         break;
       }
-      if(isTitle) result += text.slice(0,range[0]);
+      if (isTitle) result += text.slice(0, range[0]);
       result += '<em>' + text.slice(range[0], range[1]) + '</em>';
       last = range[1];
       if (i === ranges.length - 1) {
         if (maxlen) {
-          result += text.slice(range[1], Math.min(text.length, sumRange[0] + maxlen + 1));
+          result += text.slice(
+            range[1],
+            Math.min(text.length, sumRange[0] + maxlen + 1)
+          );
         } else {
           result += text.slice(range[1]);
         }
@@ -87,17 +92,23 @@ function loadInsight(config, translation) {
       : '';
 
     return `<a class="searchbox-result-item" href="${url}">
-            <span class="searchbox-result-icon">
-                <i class="fa fa-${icon}" />
-            </span>
-            <span class="searchbox-result-content">
-                <span class="searchbox-result-title">
-                    ${title}
-                    ${subtitle}
-                </span>
-                ${preview ? '<span class="searchbox-result-preview">' + preview + '</span>' : ''}
-            </span>
-        </a>`;
+              <span class="searchbox-result-icon">
+                  <i class="fa fa-${icon}" />
+              </span>
+              <span class="searchbox-result-content">
+                  <span class="searchbox-result-title">
+                      ${title}
+                      ${subtitle}
+                  </span>
+                  ${
+                    preview
+                      ? '<span class="searchbox-result-preview">' +
+                        preview +
+                        '</span>'
+                      : ''
+                  }
+              </span>
+          </a>`;
   }
 
   function sectionFactory(keywords, type, array) {
@@ -118,7 +129,13 @@ function loadInsight(config, translation) {
         $searchItems = array.map((item) => {
           const name = findAndHighlight(item.name, keywords, 100);
           const slug = findAndHighlight(item.slug, keywords, 100);
-          return searchItem(type === 'CATEGORIES' ? 'folder' : 'tag', name, slug, null, item.link);
+          return searchItem(
+            type === 'CATEGORIES' ? 'folder' : 'tag',
+            name,
+            slug,
+            null,
+            item.link
+          );
         });
         break;
       default:
@@ -254,10 +271,16 @@ function loadInsight(config, translation) {
 
   function searchResultToDOM(keywords, searchResult) {
     $container.empty();
-    $container.append(`<a href="https://www.google.com/search?q=${keywords} site:https://chinsun9.github.io" target="_blank">🔍 google에서 검색 결과 보기 </a>`)
+    $container.append(
+      `<a href="https://www.google.com/search?q=${keywords} site:https://chinsun9.github.io" target="_blank">🔍 google에서 검색 결과 보기 </a>`
+    );
     for (const key in searchResult) {
       $container.append(
-        sectionFactory(parseKeywords(keywords), key.toUpperCase(), searchResult[key]),
+        sectionFactory(
+          parseKeywords(keywords),
+          key.toUpperCase(),
+          searchResult[key]
+        )
       );
     }
   }
