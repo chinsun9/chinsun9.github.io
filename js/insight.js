@@ -61,13 +61,13 @@ function loadInsight(config, translation) {
       last = sumRange[0];
     }
 
+    if (ranges[0] && isTitle) result += text.slice(0, ranges[0]);
     for (let i = 0; i < ranges.length; i++) {
       const range = ranges[i];
       result += text.slice(last, Math.min(range[0], sumRange[0] + maxlen));
       if (maxlen && range[0] >= sumRange[0] + maxlen) {
         break;
       }
-      if (isTitle) result += text.slice(0, range[0]);
       result += '<em>' + text.slice(range[0], range[1]) + '</em>';
       last = range[1];
       if (i === ranges.length - 1) {
@@ -100,13 +100,12 @@ function loadInsight(config, translation) {
                       ${title}
                       ${subtitle}
                   </span>
-                  ${
-                    preview
-                      ? '<span class="searchbox-result-preview">' +
-                        preview +
-                        '</span>'
-                      : ''
-                  }
+                  ${preview
+        ? '<span class="searchbox-result-preview">' +
+        preview +
+        '</span>'
+        : ''
+      }
               </span>
           </a>`;
   }
