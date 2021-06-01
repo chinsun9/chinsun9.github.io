@@ -9,8 +9,66 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 01 Jun 2021 06:48:23 GMT</pubDate>
+    <pubDate>Tue, 01 Jun 2021 14:21:19 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>blog update dark theme</title>
+      <link>https://chinsun9.github.io/2021/06/01/blog-update-dark-theme/</link>
+      <guid>https://chinsun9.github.io/2021/06/01/blog-update-dark-theme/</guid>
+      <pubDate>Tue, 01 Jun 2021 14:21:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-update-dark-theme20210601/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-update-dark-theme20210601/preview.png" alt=" "></p><ul><li>캬캬캬</li><li>블로그 dark 테마 적용</li></ul><ul><li><strong>상단 오른쪽 검색 버튼 옆에서 토글 할 수 있다!!</strong></li></ul><h2 id="다크-테마를-적용한-이유"><a href="#다크-테마를-적용한-이유" class="headerlink" title="다크 테마를 적용한 이유"></a>다크 테마를 적용한 이유</h2><ul><li>github 프로필 메인에 dark theme를 토글하는 버튼이 있었는데</li><li>어느샌가 세팅 하위 메뉴로 들어가야 변경이 가능했다</li><li>세팅에서 테마를 고르는데 시스템 테마를 상속받아 보여주는 옵션이 있었다</li><li>궁금해서 공부해보고 블로그에도 적용하게 되었다</li></ul><ul><li>처음 C언어를 배울 때 visual studio 사용했다</li><li>기본 테마가 화이트였다</li><li>기본 테마를 쓰다가 웹 공부를 시작하면서 유튜버들 세팅을 따라 하다가 다크 테마를 쓰게 됐다</li><li>써보니까 괜찮고 좋은 것 같다!</li></ul><h2 id="환경"><a href="#환경" class="headerlink" title="환경"></a>환경</h2><ul><li>나는 icarus default theme를 사용 중이다</li></ul><h2 id="적용-방법"><a href="#적용-방법" class="headerlink" title="적용 방법"></a>적용 방법</h2><ul><li>기본적으로 body에 dark class 가 있으면 다크 테마에 맞는 css로 오버라이드하는 방식이다</li></ul><h3 id="css-추가"><a href="#css-추가" class="headerlink" title="css 추가"></a>css 추가</h3><ul><li>dark theme에 맞게 새로 추가할 css는</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-update-dark-theme20210601/1.png" alt=" "></p><ul><li>icarus theme 디렉터리를 기준으로 <code>source/css</code> 아래에 <code>dark.styl</code>이름으로 파일을 하나 생성했다</li><li>앞으로 나오는 경로는 모두 icarus theme 디렉터리를 기준이다</li></ul><figure class="highlight scss"><figcaption><span>source/css/dark.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span><span class="selector-class">.dark</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#1e1e1e</span>;</span><br><span class="line"></span><br><span class="line">    <span class="selector-class">.navbar</span> &#123;</span><br><span class="line">        <span class="attribute">background-color</span>: <span class="number">#3C3C3C</span>;</span><br><span class="line">        <span class="attribute">color</span>: <span class="number">#d4d4d4</span>;</span><br><span class="line"></span><br><span class="line">        <span class="selector-class">.navbar-menu</span> &#123;</span><br><span class="line">            <span class="attribute">background-color</span>: transparent <span class="meta">!important</span>;</span><br><span class="line"></span><br><span class="line">            <span class="selector-class">.navbar-item</span> &#123;</span><br><span class="line">                <span class="attribute">color</span>: inherit;</span><br><span class="line"></span><br><span class="line">                &amp;<span class="selector-pseudo">:hover</span>, &amp;<span class="selector-pseudo">:focus</span> &#123;</span><br><span class="line">                    <span class="attribute">background-color</span>: <span class="number">#37373D</span>;</span><br><span class="line">                    <span class="attribute">color</span>: <span class="number">#007acc</span>;</span><br><span class="line">                &#125;</span><br></pre></td></tr></table></figure><ul><li>어떤 테마 시스템이 있고 그런 게 아니라서 하나하나 수작업으로 바꿔주었다</li><li>body.dark 일 때 css를 오버라이드 할 수 있도록…</li></ul><figure class="highlight scss"><figcaption><span>source/css/style.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ...</span></span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;./dark.styl&#x27;</span>;</span><br></pre></td></tr></table></figure><ul><li><code>dark.styl</code>을 <code>style.styl</code> 마지막에 임포트 해준다</li><li>그럼 css는 끝!</li></ul><h3 id="토글-버튼-추가"><a href="#토글-버튼-추가" class="headerlink" title="토글 버튼 추가"></a>토글 버튼 추가</h3><ul><li>이제 토글 버튼을 추가해보자</li><li>나는 navbar 상단 오른쪽 검색 버튼 옆에 추가했다</li></ul><figure class="highlight jsx"><figcaption><span>layout/common/navbar.jsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;navbar-end&quot;</span>&gt;</span><br><span class="line">  &lt;button type=<span class="string">&quot;button&quot;</span> id=<span class="string">&quot;toggleTheme&quot;</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;navbar-item&quot;</span>&gt;</span><br><span class="line">    hi</span><br><span class="line">  &lt;/button&gt;</span><br></pre></td></tr></table></figure><ul><li><code>layout/common/navbar.jsx</code> 80라인에 <strong>toggleTheme</strong>라는 ID로 추가했다</li><li>이제 버튼에 기능을 넣어줘야 하는데 <code>navbar.jsx</code>에서 기능도 추가하고 싶었는데,</li><li>어떻게 빌드되는지 구조를 잘 몰라서 실패했다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-update-dark-theme20210601/2.png" alt=" "></p><ul><li>대신 <code>source/js</code> 디렉터리에 <code>theme.js</code> 파일을 하나 추가했다</li></ul><figure class="highlight js"><figcaption><span>theme.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;toggleTheme&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">initTheme</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// chk local storage</span></span><br><span class="line">  <span class="keyword">const</span> theme = <span class="built_in">localStorage</span>.getItem(<span class="string">&#x27;theme&#x27;</span>);</span><br><span class="line">  <span class="keyword">if</span> (theme === <span class="string">&#x27;dark&#x27;</span>) &#123;</span><br><span class="line">    <span class="built_in">document</span>.body.classList.add(<span class="string">&#x27;dark&#x27;</span>);</span><br><span class="line">    btn.innerText = <span class="string">&#x27;🌙&#x27;</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (theme === <span class="string">&#x27;light&#x27;</span>) &#123;</span><br><span class="line">    btn.innerText = <span class="string">&#x27;🌞&#x27;</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//   visit first time</span></span><br><span class="line">  <span class="keyword">const</span> isDark = <span class="built_in">window</span>.matchMedia(<span class="string">&#x27;(prefers-color-scheme: dark)&#x27;</span>);</span><br><span class="line">  <span class="keyword">if</span> (isDark) <span class="built_in">document</span>.body.classList.add(<span class="string">&#x27;dark&#x27;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="built_in">localStorage</span>.setItem(<span class="string">&#x27;theme&#x27;</span>, isDark ? <span class="string">&#x27;dark&#x27;</span> : <span class="string">&#x27;light&#x27;</span>);</span><br><span class="line">  btn.innerText = isDark ? <span class="string">&#x27;🌙&#x27;</span> : <span class="string">&#x27;🌞&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">toggleTheme</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`toggle theme`</span>);</span><br><span class="line">  <span class="built_in">document</span>.body.classList.toggle(<span class="string">&#x27;dark&#x27;</span>);</span><br><span class="line">  <span class="built_in">localStorage</span>.setItem(</span><br><span class="line">    <span class="string">&#x27;theme&#x27;</span>,</span><br><span class="line">    <span class="built_in">document</span>.body.classList.contains(<span class="string">&#x27;dark&#x27;</span>) ? <span class="string">&#x27;dark&#x27;</span> : <span class="string">&#x27;light&#x27;</span></span><br><span class="line">  );</span><br><span class="line">  btn.innerText = <span class="built_in">document</span>.body.classList.contains(<span class="string">&#x27;dark&#x27;</span>) ? <span class="string">&#x27;🌙&#x27;</span> : <span class="string">&#x27;🌞&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">window</span></span><br><span class="line">  .matchMedia(<span class="string">&#x27;(prefers-color-scheme: dark)&#x27;</span>)</span><br><span class="line">  .addEventListener(<span class="string">&#x27;change&#x27;</span>, <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> newColorScheme = e.matches ? <span class="string">&#x27;dark&#x27;</span> : <span class="string">&#x27;light&#x27;</span>;</span><br><span class="line">    <span class="built_in">localStorage</span>.setItem(<span class="string">&#x27;theme&#x27;</span>, newColorScheme);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (newColorScheme === <span class="string">&#x27;dark&#x27;</span>) &#123;</span><br><span class="line">      <span class="built_in">document</span>.body.classList.add(<span class="string">&#x27;dark&#x27;</span>);</span><br><span class="line">      btn.innerText = <span class="string">&#x27;🌙&#x27;</span>;</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">document</span>.body.classList.remove(<span class="string">&#x27;dark&#x27;</span>);</span><br><span class="line">    btn.innerText = <span class="string">&#x27;🌞&#x27;</span>;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">btn.addEventListener(<span class="string">&#x27;click&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</span><br><span class="line">  toggleTheme();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">initTheme();</span><br></pre></td></tr></table></figure><ul><li>셀럭터로 위에서 추가하 버튼을 가져와서 클릭 이벤트 리스너를 달아줬다</li><li>이제 hexo로 빌드하면서 생성되는 html에 해당 스크립트를 로드하도록 해야 한다</li></ul><h3 id="스크립트-파일-추가"><a href="#스크립트-파일-추가" class="headerlink" title="스크립트 파일 추가"></a>스크립트 파일 추가</h3><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-update-dark-theme20210601/3.png" alt=" "></p><ul><li><code>layout/common/scripts.jsx</code>에 위에서 만든 <code>theme.js</code>를 등록하면 된다</li></ul><figure class="highlight jsx"><figcaption><span>layout/common/scripts.jsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;Fragment&gt;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  &lt;script src=&#123;url_for(<span class="string">&#x27;/js/main.js&#x27;</span>)&#125; defer&gt;&lt;/script&gt;</span><br><span class="line">  &lt;script src=&#123;url_for(<span class="string">&#x27;/js/theme.js&#x27;</span>)&#125; defer&gt;&lt;/script&gt;</span><br><span class="line">&lt;/Fragment&gt;</span><br></pre></td></tr></table></figure><ul><li>56라인 정도 마지막 부분에 <code>&lt;script src=&#123;url_for(&#39;/js/theme.js&#39;)&#125; defer&gt;&lt;/script&gt;</code> 추가한다</li><li>마지막으로 hexo 디렉터리로 돌아와서 <code>public/css</code> 하위에 있는 css를 삭제해준다</li><li>이제 <code>hexo generate</code> 하게 되면 css가 갱신되고, 테마 토글 버튼이 달려 있는 html이 생성될 것이다</li></ul><h2 id="후기"><a href="#후기" class="headerlink" title="후기"></a>후기</h2><ul><li>뿌듯하다</li><li>다 완성하고 자려고 누워서 폰으로 내 블로그를 들어가 봤는데 눈이 편안했다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
+      
+      <category domain="https://chinsun9.github.io/tags/dark-theme/">dark theme</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/06/01/blog-update-dark-theme/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>github 404 page clone</title>
+      <link>https://chinsun9.github.io/2021/06/01/github-404-page-clone/</link>
+      <guid>https://chinsun9.github.io/2021/06/01/github-404-page-clone/</guid>
+      <pubDate>Tue, 01 Jun 2021 13:48:54 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-404-page-clone20210601/preview.png&quot; alt=&quot; &quot;&gt;]&lt;/p&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-404-page-clone20210601/preview.png" alt=" ">]</p><ul><li><a href="https://chinsun9.github.io/github-404-page-clone/">https://chinsun9.github.io/github-404-page-clone/</a></li></ul><ul><li>github 404 페이지를 클론해보았다</li><li>마우스 움직임에 따라 원근감 있게 움직이는 이미지들이 재밌었다</li></ul><ul><li>전에 <a href="https://github.com/chinsun9/3d-card-effect">https://github.com/chinsun9/3d-card-effect</a> perspective css 속성을 사용해보았는데, 그때 사용한 코드를 거의 그대로 사용해서 만들 수 있었다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/chinsun9/github-404-page-clone">https://github.com/chinsun9/github-404-page-clone</a></li><li><a href="https://github.com/chinsun9/3d-card-effect">https://github.com/chinsun9/3d-card-effect</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/06/01/github-404-page-clone/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>깃허브 블로그 느린 웹 해결하기</title>
@@ -556,64 +614,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/04/27/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-sam-cli-%EC%84%A4%EC%B9%98/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>윈도우 aws cli 설치</title>
-      <link>https://chinsun9.github.io/2021/04/27/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-cli-%EC%84%A4%EC%B9%98/</link>
-      <guid>https://chinsun9.github.io/2021/04/27/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-cli-%EC%84%A4%EC%B9%98/</guid>
-      <pubDate>Tue, 27 Apr 2021 07:46:27 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-cli-%EC%84%A4%EC%B9%98202</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-cli-%EC%84%A4%EC%B9%9820210427/preview.png" alt=" "></p><ul><li><a href="https://aws.amazon.com/ko/cli/">https://aws.amazon.com/ko/cli/</a> 들어가면 설치 프로그램으로 받을 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://aws.amazon.com/ko/cli/">https://aws.amazon.com/ko/cli/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/aws-cli/">aws cli</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/04/27/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-cli-%EC%84%A4%EC%B9%98/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>parseInt vs. Math.floor</title>
-      <link>https://chinsun9.github.io/2021/04/26/parseInt-vs-Math-floor/</link>
-      <guid>https://chinsun9.github.io/2021/04/26/parseInt-vs-Math-floor/</guid>
-      <pubDate>Mon, 26 Apr 2021 06:07:40 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> n = <span class="number">1.1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.floor(n), <span class="built_in">parseInt</span>(n)); <span class="comment">// 1 1</span></span><br><span class="line"></span><br><span class="line">n = <span class="number">1.9</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.floor(n), <span class="built_in">parseInt</span>(n)); <span class="comment">// 1 1</span></span><br><span class="line"></span><br><span class="line">n = -<span class="number">1.1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.floor(n), <span class="built_in">parseInt</span>(n)); <span class="comment">// -2 -1</span></span><br><span class="line"></span><br><span class="line">n = -<span class="number">1.9</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.floor(n), <span class="built_in">parseInt</span>(n)); <span class="comment">// -2 -1</span></span><br></pre></td></tr></table></figure><ul><li>소수점 이하를 버릴 때 <code>Math.floor()</code>(내림)를 주로 썼는데 음수에서 기대한 것과 다르게 동작하는 것을 알게 되었다…</li><li><code>parseInt()</code>는 매개변수로 문자열을 받기 때문에 주로 문자열로부터 숫자를 파싱 할 때 사용하는 줄 알았다</li><li><code>parseInt()</code>는 매개변수로 string 타입이 아니면 스트링으로 자동 캐스팅하여 그냥 숫자를 넘겨줘도 잘 동작한다</li></ul><ul><li>⚠️ 음 근데 문자열로 된 숫자를 인풋으로 줄 때 주의해야 한다</li><li>parseInt나 Math.floor나 상관없이 엄청나게 큰 문자열로 된 숫자를 number 타입으로 캐스팅하는 용도로 사용하면 안 된다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/BigInt">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/BigInt</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/parseInt/">parseInt</category>
-      
-      <category domain="https://chinsun9.github.io/tags/Math-floor/">Math.floor</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/04/26/parseInt-vs-Math-floor/#disqus_thread</comments>
       
     </item>
     
