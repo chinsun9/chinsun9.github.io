@@ -11545,7 +11545,8 @@ body.dark .navbar .navbar-menu {
 body.dark .navbar .navbar-menu .navbar-item {
   color: inherit;
 }
-body.dark .navbar .navbar-menu .navbar-item:hover {
+body.dark .navbar .navbar-menu .navbar-item:hover,
+body.dark .navbar .navbar-menu .navbar-item:focus {
   background-color: #37373d;
   color: #007acc;
 }
