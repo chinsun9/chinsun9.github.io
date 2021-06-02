@@ -8,6 +8,38 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/01/19/js-bind/</loc>
+        <lastmod>2021-06-02T08:19:04.564Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/22/%ED%8D%BC%EC%84%BC%ED%8A%B8-%EA%B3%84%EC%82%B0%EA%B8%B0/</loc>
+        <lastmod>2021-06-02T07:51:04.026Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/06/01/github-404-page-clone/</loc>
+        <lastmod>2021-06-02T07:50:43.083Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/03/12/%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EA%B0%92-%EC%96%BB%EA%B8%B0/</loc>
+        <lastmod>2021-06-02T06:55:50.456Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/06/02/slash-converter/</loc>
         <lastmod>2021-06-02T06:03:39.457Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,14 +49,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2021/05/31/%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%8A%90%EB%A6%B0-%EC%9B%B9-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-06-02T00:05:32.112Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/06/01/github-404-page-clone/</loc>
         <lastmod>2021-06-02T00:05:32.112Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -153,14 +177,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2021/01/05/%EB%91%90-%EA%B0%92-%EC%82%AC%EC%9D%B4%EC%9D%98-%EB%82%9C%EC%88%98-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-05-06T00:40:38.086Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/03/12/%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EA%B0%92-%EC%96%BB%EA%B8%B0/</loc>
         <lastmod>2021-05-06T00:40:38.086Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -434,14 +450,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/09/18/%ED%95%B8%EB%93%9C%ED%8F%B0-%EB%B2%88%ED%98%B8-%EA%B0%80%EB%A6%AC%EA%B8%B0/</loc>
         <lastmod>2021-04-22T05:41:32.561Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/22/%ED%8D%BC%EC%84%BC%ED%8A%B8-%EA%B3%84%EC%82%B0%EA%B8%B0/</loc>
-        <lastmod>2021-04-22T05:41:32.560Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1681,14 +1689,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/09/22/javadoc-%EB%A7%8C%EB%93%A4%EA%B3%A0-github%EC%97%90%EC%84%9C-%EB%B3%B4%EA%B8%B0/</loc>
-        <lastmod>2021-04-22T05:41:32.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/01/19/js-bind/</loc>
         <lastmod>2021-04-22T05:41:32.498Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
