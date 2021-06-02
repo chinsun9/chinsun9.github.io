@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 02 Jun 2021 00:05:32 GMT</pubDate>
+    <pubDate>Wed, 02 Jun 2021 06:03:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>slash converter</title>
+      <link>https://chinsun9.github.io/2021/06/02/slash-converter/</link>
+      <guid>https://chinsun9.github.io/2021/06/02/slash-converter/</guid>
+      <pubDate>Wed, 02 Jun 2021 06:03:39 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/slash-converter20210602/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/slash-converter20210602/preview.png" alt=" "></p><ul><li><a href="https://chinsun9.github.io/slash-converter/">https://chinsun9.github.io/slash-converter/</a></li></ul><ul><li>파일 경로 문자열 변환기를 만들었다</li><li>파일 경로를 적어야할 때가 생각보다 많은데</li><li>어떨때는 <code>/</code>를 사용하고</li><li>어떨때는 <code>\</code>를 사용하고</li><li>또 어떨때는 <code>\\</code>를 사용한다</li></ul><ul><li>일일이 수정해주기 귀찮을 때가 분명히 있었을 것이다</li></ul><h2 id="변환-코드"><a href="#변환-코드" class="headerlink" title="변환 코드"></a>변환 코드</h2><figure class="highlight ts"><figcaption><span>Main.tsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> convertSlash = <span class="function">(<span class="params"><span class="keyword">type</span>: <span class="built_in">string</span>, origin: <span class="built_in">string</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> origin.replace(<span class="regexp">/[/\\]+/g</span>, <span class="keyword">type</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><ul><li>슬래시와 백슬래시를 찾아내서 정해진 타입으로 변환한다</li></ul><h2 id="그-외"><a href="#그-외" class="headerlink" title="그 외"></a>그 외</h2><ul><li><code>emotion theme provider</code>를 사용해 테마를 적용해보았다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/chinsun9/slash-converter">https://github.com/chinsun9/slash-converter</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/react/">react</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/06/02/slash-converter/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>blog update dark theme</title>
@@ -584,36 +612,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/04/28/shell-%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>윈도우 aws sam cli 설치</title>
-      <link>https://chinsun9.github.io/2021/04/27/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-sam-cli-%EC%84%A4%EC%B9%98/</link>
-      <guid>https://chinsun9.github.io/2021/04/27/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-sam-cli-%EC%84%A4%EC%B9%98/</guid>
-      <pubDate>Tue, 27 Apr 2021 07:49:54 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-sam-cli-%EC%84%A4%EC%B9%9</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-sam-cli-%EC%84%A4%EC%B9%9820210427/preview.png" alt=" "></p><ul><li><a href="https://docs.aws.amazon.com/ko_kr/serverless-application-model/latest/developerguide/serverless-sam-cli-install-windows.html#serverless-sam-cli-install-windows-sam-cli">https://docs.aws.amazon.com/ko_kr/serverless-application-model/latest/developerguide/serverless-sam-cli-install-windows.html#serverless-sam-cli-install-windows-sam-cli</a></li><li>위 링크로 들어가면 설치 프로그램을 받을 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.aws.amazon.com/ko_kr/serverless-application-model/latest/developerguide/serverless-sam-cli-install-windows.html#serverless-sam-cli-install-windows-sam-cli">https://docs.aws.amazon.com/ko_kr/serverless-application-model/latest/developerguide/serverless-sam-cli-install-windows.html#serverless-sam-cli-install-windows-sam-cli</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
-      
-      <category domain="https://chinsun9.github.io/tags/aws-cli/">aws cli</category>
-      
-      <category domain="https://chinsun9.github.io/tags/aws-sam-cli/">aws sam cli</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/04/27/%EC%9C%88%EB%8F%84%EC%9A%B0-aws-sam-cli-%EC%84%A4%EC%B9%98/#disqus_thread</comments>
       
     </item>
     
