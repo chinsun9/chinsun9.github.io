@@ -10279,11 +10279,15 @@ body > .section {
   content: '';
   border-right: 1px solid #e5e5e5;
   right: 0;
-  height: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   position: absolute;
   top: -30px;
+}
+@media screen and (max-width: 769px) {
+  .column-left::before {
+    display: none;
+  }
 }
 .column-main .card {
   border-bottom: 1px solid #e5e5e5;
