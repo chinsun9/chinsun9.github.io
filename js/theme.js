@@ -16,14 +16,16 @@ function initUtterancesTheme() {
   const utterances = document.querySelector('.utterances iframe');
 
   if (utterances) {
-    const message = {
-      type: 'set-theme',
-      theme: document.body.classList.contains('dark')
-        ? 'github-dark'
-        : 'github-light',
-    };
+    setTimeout(() => {
+      const message = {
+        type: 'set-theme',
+        theme: document.body.classList.contains('dark')
+          ? 'github-dark'
+          : 'github-light',
+      };
 
-    utterances.contentWindow.postMessage(message, 'https://utteranc.es');
+      utterances.contentWindow.postMessage(message, 'https://utteranc.es');
+    }, 1000);
   } else {
     setTimeout(initUtterancesTheme, 1000);
   }
