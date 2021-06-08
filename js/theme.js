@@ -15,23 +15,25 @@ function setUtterancesTheme(theme) {
 function initUtterancesTheme() {
   const utterances = document.querySelector('.utterances iframe');
 
-  if (utterances) {
-    setTimeout(() => {
-      const message = {
-        type: 'set-theme',
-        theme: document.body.classList.contains('dark')
-          ? 'github-dark'
-          : 'github-light',
-      };
+  const message = {
+    type: 'set-theme',
+    theme: document.body.classList.contains('dark')
+      ? 'github-dark'
+      : 'github-light',
+  };
 
-      utterances.contentWindow.postMessage(message, 'https://utteranc.es');
-    }, 1000);
-  } else {
-    setTimeout(initUtterancesTheme, 1000);
-  }
+  utterances.contentWindow.postMessage(message, 'https://utteranc.es');
 }
 
-initUtterancesTheme();
+// initUtterancesTheme();
+window.addEventListener("message", (e) => {
+  // utterances 를 사용하면 페이지가 로드되고 resize를 한다
+  // 이 메시지를 이벤트리스너로 수신할 수 있다
+  // 이 메시지를 수신 받으면 안전하게 테마를 초기화할 수 있다
+  if (e.origin !== "https://utteranc.es")
+    return;
+  initUtterancesTheme();
+}, false);
 
 // basic
 
