@@ -15,9 +15,7 @@ function setUtterancesTheme(theme) {
 function initUtterancesTheme() {
   const utterances = document.querySelector('.utterances iframe');
 
-  utterances.onload = function () {
-    console.log(`hi`, utterances);
-
+  if (utterances) {
     const message = {
       type: 'set-theme',
       theme: document.body.classList.contains('dark')
@@ -26,8 +24,11 @@ function initUtterancesTheme() {
     };
 
     utterances.contentWindow.postMessage(message, 'https://utteranc.es');
-  };
+  } else {
+    setTimeout(initUtterancesTheme, 1000);
+  }
 }
+
 initUtterancesTheme();
 
 // basic
