@@ -11543,6 +11543,9 @@ figure.highlight .section {
 body.dark {
   background-color: #1e1e1e;
 }
+body.dark hr {
+  background-color: #3c3c3c;
+}
 body.dark .navbar {
   background-color: #3c3c3c;
   color: #d4d4d4;
