@@ -12,6 +12,24 @@ function setUtterancesTheme(theme) {
   utterances.contentWindow.postMessage(message, 'https://utteranc.es');
 }
 
+function initUtterancesTheme() {
+  const utterances = document.querySelector('.utterances iframe');
+
+  utterances.onload = function () {
+    console.log(`hi`, utterances);
+
+    const message = {
+      type: 'set-theme',
+      theme: document.body.classList.contains('dark')
+        ? 'github-dark'
+        : 'github-light',
+    };
+
+    utterances.contentWindow.postMessage(message, 'https://utteranc.es');
+  };
+}
+initUtterancesTheme();
+
 // basic
 
 function initTheme() {
@@ -19,13 +37,11 @@ function initTheme() {
   const theme = localStorage.getItem('theme');
   if (theme === 'dark') {
     document.body.classList.add('dark');
-    setUtterancesTheme('dark');
     btn.innerText = '🌙';
     return;
   }
   if (theme === 'light') {
     btn.innerText = '🌞';
-    setUtterancesTheme('light');
     return;
   }
 
@@ -37,9 +53,6 @@ function initTheme() {
 
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
   btn.innerText = isDark ? '🌙' : '🌞';
-  setUtterancesTheme(
-    document.body.classList.contains('dark') ? 'dark' : 'light'
-  );
 }
 
 function toggleTheme() {
