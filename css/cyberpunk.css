@@ -10334,6 +10334,9 @@ button.navbar-item {
   border: none;
   cursor: pointer;
 }
+.utterances {
+  max-width: none;
+}
 .ml-0,
 .mx-0 {
   margin-left: 0 !important;
