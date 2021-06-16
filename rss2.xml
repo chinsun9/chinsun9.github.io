@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 16 Jun 2021 07:17:17 GMT</pubDate>
+    <pubDate>Wed, 16 Jun 2021 13:09:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>CSS BEM</title>
+      <link>https://chinsun9.github.io/2021/06/16/CSS-BEM/</link>
+      <guid>https://chinsun9.github.io/2021/06/16/CSS-BEM/</guid>
+      <pubDate>Wed, 16 Jun 2021 13:09:27 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;BEM&quot;&gt;&lt;a href=&quot;#BEM&quot; class=&quot;headerlink&quot; title=&quot;BEM&quot;&gt;&lt;/a&gt;BEM&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Block, Element, Modifier&lt;/li&gt;
+&lt;li&gt;css class 이름&lt;/li&gt;
+&lt;li&gt;&lt;cod</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="BEM"><a href="#BEM" class="headerlink" title="BEM"></a>BEM</h2><ul><li>Block, Element, Modifier</li><li>css class 이름</li><li><code>__</code> 를 이어붙인다</li></ul><h2 id="🤔"><a href="#🤔" class="headerlink" title="🤔"></a>🤔</h2><ul><li>amazon clone 할 떄, 한번 사용해봤는데</li><li>마크업할 때 클래스 작성하기가 불편했다</li><li>sass를 배웠는데 어째선지 더 쓰지않게 되었다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/aKenj9ZQwJg">https://youtu.be/aKenj9ZQwJg</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      <category domain="https://chinsun9.github.io/tags/BEM/">BEM</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/06/16/CSS-BEM/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>GTD</title>
@@ -179,9 +212,9 @@
       <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
-      
       <category domain="https://chinsun9.github.io/tags/disqus/">disqus</category>
+      
+      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
       
       <category domain="https://chinsun9.github.io/tags/utterances/">utterances</category>
       
@@ -388,9 +421,9 @@
       <category domain="https://chinsun9.github.io/categories/web/">web</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/cdn/">cdn</category>
-      
       <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/cdn/">cdn</category>
       
       
       <comments>https://chinsun9.github.io/2021/05/31/cdn/#disqus_thread</comments>
@@ -454,9 +487,9 @@
       
       <category domain="https://chinsun9.github.io/tags/github/">github</category>
       
-      <category domain="https://chinsun9.github.io/tags/dark-mode/">dark mode</category>
-      
       <category domain="https://chinsun9.github.io/tags/dark-theme/">dark theme</category>
+      
+      <category domain="https://chinsun9.github.io/tags/dark-mode/">dark mode</category>
       
       
       <comments>https://chinsun9.github.io/2021/05/31/windows-dark-mode/#disqus_thread</comments>
@@ -573,37 +606,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/05/07/react-table-practice/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>styled components highlighting</title>
-      <link>https://chinsun9.github.io/2021/05/06/styled-components-highlighting/</link>
-      <guid>https://chinsun9.github.io/2021/05/06/styled-components-highlighting/</guid>
-      <pubDate>Thu, 06 May 2021 07:36:11 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/styled-components-highlighting20210506/preview.png&quot;&gt;&lt;/p&gt;
-</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/styled-components-highlighting20210506/preview.png"></p><ul><li><code>styled-components</code>를 사용하는데, 구문 강조가 없어서 확장 도구를 살펴보았다</li><li><code>vscode-styled-components</code>를 사용하면 하이라이트 및 스니펫을 사용이 가능하다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components">https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
-      
-      <category domain="https://chinsun9.github.io/tags/styled-components/">styled components</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/05/06/styled-components-highlighting/#disqus_thread</comments>
       
     </item>
     
