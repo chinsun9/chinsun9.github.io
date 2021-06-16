@@ -9,11 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 16 Jun 2021 01:43:27 GMT</pubDate>
+    <pubDate>Wed, 16 Jun 2021 06:21:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>공유기가 2개 일때 포트포워딩</title>
+      <title>GTD</title>
+      <link>https://chinsun9.github.io/2021/06/16/GTD/</link>
+      <guid>https://chinsun9.github.io/2021/06/16/GTD/</guid>
+      <pubDate>Wed, 16 Jun 2021 06:21:43 GMT</pubDate>
+      
+        
+        
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Getting Things Done (GTD) by David Allen - Animated Book Summary And Review&lt;br&gt;&lt;a href=&quot;https://youtu.be/gCswMsONkwY&quot;&gt;https:</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<blockquote><p>Getting Things Done (GTD) by David Allen - Animated Book Summary And Review<br><a href="https://youtu.be/gCswMsONkwY">https://youtu.be/gCswMsONkwY</a></p></blockquote><ul><li>을 보고..</li></ul><h2 id="GTD"><a href="#GTD" class="headerlink" title="GTD"></a>GTD</h2><ul><li>5 스텝으로 이뤄짐</li><li>capture process oranize review engage</li></ul><ol><li>capture</li></ol><ul><li>머릿속에 두지 말고 모든 생각을 다 적어라</li></ul><ol start="2"><li><p>process</p><ul><li><p>담아둔 아이템들에 대해 질문해라</p></li><li><p>is it actionable? yes</p></li><li><p>can you do it in less than 2 minutes? yes/no</p><ul><li>yes ; 바로 실행</li><li>no ; 액션 리스트에 추가</li></ul></li><li><p>is it actionable? no</p></li><li><p>2 choices ; discard / keep it as reference</p></li><li><p>모든 항목에 대해 생각해라</p></li></ul></li><li><p>oganize</p><ul><li><p>마법이 일어난다</p></li><li><p>by project, time, context</p></li><li><p>다음 항목에 대해 생각해라</p></li><li><p>시퀀스를 잘 짜라</p></li></ul></li><li><p>review</p><ul><li>매주 리뷰해라</li><li>모든 것을 원활하게 실행하려면 주간 검토가 필수적이다</li><li>목표에 맞게 진행되고 있는지 반성해라</li></ul></li><li><p>engage</p><ul><li>let’s get cracking! ; 즉시 일을 시작해라</li></ul></li></ol><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>Getting Things Done (GTD) by David Allen - Animated Book Summary And Review</li><li><a href="https://youtu.be/gCswMsONkwY">https://youtu.be/gCswMsONkwY</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
+      
+      <category domain="https://chinsun9.github.io/tags/GTD/">GTD</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/06/16/GTD/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>공유기가 2개일 때 포트포워딩</title>
       <link>https://chinsun9.github.io/2021/06/16/two-routers-port-forwarding/</link>
       <guid>https://chinsun9.github.io/2021/06/16/two-routers-port-forwarding/</guid>
       <pubDate>Wed, 16 Jun 2021 01:43:27 GMT</pubDate>
@@ -575,37 +604,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/05/06/styled-components-highlighting/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode 포맷팅 없이 저장하기</title>
-      <link>https://chinsun9.github.io/2021/05/06/vscode-%ED%8F%AC%EB%A7%B7%ED%8C%85-%EC%97%86%EC%9D%B4-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0/</link>
-      <guid>https://chinsun9.github.io/2021/05/06/vscode-%ED%8F%AC%EB%A7%B7%ED%8C%85-%EC%97%86%EC%9D%B4-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Thu, 06 May 2021 00:49:03 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;F1 &amp;gt; File: Save without Formatting&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;format on save 를 사용할 때,&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;크기가 큰 json 파일이 있을 수</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li><p><code>F1 &gt; File: Save without Formatting</code></p></li><li><p>format on save 를 사용할 때,</p></li><li><p>크기가 큰 json 파일이 있을 수 있다</p></li></ul><ul><li>처음에는 <code>// prettier-ignore</code>을 최상단에 두어서 포맷팅 하지 않게 하였는데</li><li>주석을 넣으면 json파일을 읽지 못하게 되었다</li><li>그래서 명령 팔레트 열고 save 쳐보니까 포맷팅 없이 저장하는 방법이 있었다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>특정 라인 prettier-ignore</li><li><a href="https://chinsun9.github.io/2020/11/24/prettier-ignore-line/">https://chinsun9.github.io/2020/11/24/prettier-ignore-line/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/05/06/vscode-%ED%8F%AC%EB%A7%B7%ED%8C%85-%EC%97%86%EC%9D%B4-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
