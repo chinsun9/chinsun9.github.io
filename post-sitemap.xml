@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://chinsun9.github.io/2021/06/17/my-first-github-package/</loc>
-        <lastmod>2021-06-17T07:03:43.110Z</lastmod>
+        <lastmod>2021-06-17T07:10:10.707Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/23/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-06-17T07:08:03.786Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1473,14 +1481,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2021/02/22/rds-%EC%8B%9C%EA%B0%84%EB%8C%80-%EB%B3%80%EA%B2%BD/</loc>
-        <lastmod>2021-04-22T05:41:32.514Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/23/rds-%ED%95%B4%ED%82%B9%EB%8B%B9%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-04-22T05:41:32.514Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
