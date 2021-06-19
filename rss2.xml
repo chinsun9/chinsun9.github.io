@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 18 Jun 2021 11:01:36 GMT</pubDate>
+    <pubDate>Sat, 19 Jun 2021 03:20:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -28,7 +28,7 @@
       
       
       
-      <content:encoded><![CDATA[<blockquote><p>SSR, server side rendering<br>CSR, client side rendering</p></blockquote><h2 id="CSR"><a href="#CSR" class="headerlink" title="CSR"></a>CSR</h2><ul><li>CSR은 리액트로 만든 SPA 웹앱이라고 생각하면 된다</li><li>index.html이 텅텅 비어있고,</li><li>버튼을 누르면 자바스크립트로 동적으로 화면을 다시 그려서 페이지가 넘어가는 것처럼 보인다</li><li>처음 리액트를 배울 때 안드로이드 앱 만드는 느낌이 강하게 들었다</li><li>최초에 index.html를 서버에서 받고, 화면이 넘어가는 경우 필요한 데이터만 서버에 요청한다<br>(JSON 등 데이터만 주고받음으로 가볍다고 볼 수 있다)</li><li>데이터를 가져오면 이미 가지고 있는 틀에다가 바인딩하여 보여준다</li></ul><h2 id="SSR"><a href="#SSR" class="headerlink" title="SSR"></a>SSR</h2><ul><li>전통?적인 방법이다</li><li>버튼, 링크를 누르면 서버로 다른 html 파일을 요청한다</li><li>CSR가 반대로 html 내용이 꽉꽉 차있다</li><li>SEO에 유리하다</li><li>클로러(bot)는 그냥 html의 내용을 읽으면 된다</li><li>CSR은 페이지 접속 만으로는 콘텐츠가 생성이 되어있지 않기 때문에 클롤러(bot)가 난감할 것이다</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><p>SSR, server side rendering<br>CSR, client side rendering</p></blockquote><h2 id="CSR"><a href="#CSR" class="headerlink" title="CSR"></a>CSR</h2><ul><li>CSR은 리액트로 만든 SPA 웹앱이라고 생각하면 된다</li><li>index.html이 텅텅 비어있고,</li><li>버튼을 누르면 자바스크립트로 동적으로 화면을 다시 그려서 페이지가 넘어가는 것처럼 보인다</li><li>처음 리액트를 배울 때 안드로이드 앱 만드는 느낌이 강하게 들었다</li><li>최초에 index.html를 서버에서 받고, 화면이 넘어가는 경우 필요한 데이터만 서버에 요청한다<br>(JSON 등 데이터만 주고받음으로 가볍다고 볼 수 있다)</li><li>데이터를 가져오면 이미 가지고 있는 틀에다가 바인딩하여 보여준다</li></ul><h2 id="SSR"><a href="#SSR" class="headerlink" title="SSR"></a>SSR</h2><ul><li>전통?적인 방법이다</li><li>버튼, 링크를 누르면 서버로 다른 html 파일을 요청한다</li><li>CSR과 반대로 html 내용이 꽉꽉 차있다</li><li>SEO에 유리하다</li><li>크롤러(bot)는 그냥 html의 내용을 읽으면 된다</li><li>CSR은 페이지 접속 만으로는 콘텐츠가 생성이 되어있지 않기 때문에 크롤러(bot)가 난감할 것이다</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
