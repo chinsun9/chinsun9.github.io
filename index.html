@@ -4,7 +4,7 @@
         gtag('js', new Date());
     
         gtag('config', 'G-D5DSX529EH');</script><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/rss2.xml" title="친성의 블로그" type="application/rss+xml">
-</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/img/favicon-bold-color201202.svg?" alt="친성의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/project">Project</a></div><div class="navbar-end"><button class="navbar-item" type="button" id="toggleTheme">hi</button><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2021-06-21T05:28:15.000Z" title="2021-06-21T05:28:15.000Z">2021-06-21</time>게시 됨</span><span class="level-item"><time datetime="2021-06-21T05:28:15.744Z" title="2021-06-21T05:28:15.744Z">2021-06-21</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/keyword/">keyword</a></span><span class="level-item">2분안에 읽기 (약 276 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/06/21/debounce-throttle/">디바운스와 스로틀</a></h1><div class="content"><ul>
+</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/img/favicon-bold-color201202.svg?" alt="친성의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/project">Project</a></div><div class="navbar-end"><button class="navbar-item" type="button" id="toggleTheme">hi</button><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2021-06-21T05:28:15.000Z" title="2021-06-21T05:28:15.000Z">2021-06-21</time>게시 됨</span><span class="level-item"><time datetime="2021-06-21T05:39:16.513Z" title="2021-06-21T05:39:16.513Z">2021-06-21</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/keyword/">keyword</a></span><span class="level-item">2분안에 읽기 (약 277 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/06/21/debounce-throttle/">디바운스와 스로틀</a></h1><div class="content"><ul>
 <li>스크롤 이벤트가 발생하면 <code>1</code>을 출력하는 함수를 실행시킨다고 하자</li>
 </ul>
 <h2 id="기본"><a href="#기본" class="headerlink" title="기본"></a>기본</h2><ul>
@@ -13,29 +13,24 @@
 <h2 id="throttle"><a href="#throttle" class="headerlink" title="throttle"></a>throttle</h2><ul>
 <li>설정한 주기를 간격으로 1이 찍힌다</li>
 </ul>
+<ul>
+<li>쓰로틀은 연속된 이벤트를 설정한 시간 간격</li>
+<li>예) 스크롤중 300ms 마다 함수 실행</li>
+<li>예) 네이버 검색창 자동완성</li>
+</ul>
 <h2 id="debounce"><a href="#debounce" class="headerlink" title="debounce"></a>debounce</h2><ul>
 <li>스크롤 이벤트 도중에는 아무것도 일어나지 않는다</li>
 <li>이벤트가 끝나고 설정한 1이 찍힌다</li>
 </ul>
-<h2 id="debounce-vs-throttle"><a href="#debounce-vs-throttle" class="headerlink" title="debounce vs. throttle"></a>debounce vs. throttle</h2><ul>
-<li><p>디바운스는 연속된 이벤트가 멈추고, 한번 실행한다</p>
-</li>
-<li><p>마지막 이벤트로부터 설정한 시간만큼 이벤트가 발생하지 않으면 실행한다</p>
-</li>
-<li><p>예) 스크롤이 멈추고 300ms 뒤에 함수 실행</p>
-</li>
-<li><p>예) 버튼을 연속적으로 여러 번 눌러도 한 번만 실행되는… (광클 방지)</p>
-</li>
-<li><p>쓰로틀은 연속된 이벤트를 설정한 시간 간격</p>
-</li>
-<li><p>예) 스크롤중 300ms 마다 함수 실행</p>
-</li>
-<li><p>예) 네이버 검색창 자동완성</p>
-</li>
-<li><p>디바운스와 쓰로틀은 부하를 줄이기 위해 사용한다</p>
-</li>
-<li><p>매 이벤트마다 비싼 API를 호출하는 것을 방지할 수 있다</p>
-</li>
+<ul>
+<li>디바운스는 연속된 이벤트가 멈추고, 한번 실행한다</li>
+<li>마지막 이벤트로부터 설정한 시간만큼 이벤트가 발생하지 않으면 실행한다</li>
+<li>예) 스크롤이 멈추고 300ms 뒤에 함수 실행</li>
+<li>예) 버튼을 연속적으로 여러 번 눌러도 한 번만 실행되는… (광클 방지)</li>
+</ul>
+<h2 id="쓰는-이유"><a href="#쓰는-이유" class="headerlink" title="쓰는 이유"></a>쓰는 이유</h2><ul>
+<li>디바운스와 쓰로틀은 부하를 줄이기 위해 사용한다</li>
+<li>매 이벤트마다 비싼 API를 호출하는 것을 방지할 수 있다</li>
 </ul>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2021-06-21T02:31:45.000Z" title="2021-06-21T02:31:45.000Z">2021-06-21</time>게시 됨</span><span class="level-item"><time datetime="2021-06-21T03:00:06.228Z" title="2021-06-21T03:00:06.228Z">2021-06-21</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/web/">web</a></span><span class="level-item">몇 초안에 읽기 (약 97 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/06/21/features-restricted-to-secure-contexts/">geolocation 등 HTTP에서 사용할 수 없는 Web API 목록</a></h1><div class="content"><ul>
 <li>geolocation 등 특정 Web API들은 <code>localhost</code> 또는 <code>HTTPS</code> 환경에서만 동작한다</li>
