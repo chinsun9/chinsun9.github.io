@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 21 Jun 2021 00:35:13 GMT</pubDate>
+    <pubDate>Mon, 21 Jun 2021 02:32:20 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>features restricted to secure contexts</title>
+      <link>https://chinsun9.github.io/2021/06/21/features-restricted-to-secure-contexts/</link>
+      <guid>https://chinsun9.github.io/2021/06/21/features-restricted-to-secure-contexts/</guid>
+      <pubDate>Mon, 21 Jun 2021 02:31:45 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;geolocation 등 특정 Web API들은 &lt;code&gt;localhost&lt;/code&gt; 또는 &lt;code&gt;HTTPS&lt;/code&gt; 환경에서만 동작한다&lt;/li&gt;
+&lt;li&gt;그래서 로컬에서 테스트했을 땐 동작하는 것들이 http로 배포했을 때 </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>geolocation 등 특정 Web API들은 <code>localhost</code> 또는 <code>HTTPS</code> 환경에서만 동작한다</li><li>그래서 로컬에서 테스트했을 땐 동작하는 것들이 http로 배포했을 때 동작하지 않을 수 있다</li><li><strong>secure context</strong>가 필요한 API 목록은 아래 링크에서 확인할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts/features_restricted_to_secure_contexts">https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts/features_restricted_to_secure_contexts</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/geolocation/">geolocation</category>
+      
+      <category domain="https://chinsun9.github.io/tags/secure-contexts/">secure contexts</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/06/21/features-restricted-to-secure-contexts/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>github archived repository</title>
@@ -570,37 +602,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/06/01/blog-update-dark-theme/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>github 404 page clone</title>
-      <link>https://chinsun9.github.io/2021/06/01/github-404-page-clone/</link>
-      <guid>https://chinsun9.github.io/2021/06/01/github-404-page-clone/</guid>
-      <pubDate>Tue, 01 Jun 2021 13:48:54 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-404-page-clone20210601/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-404-page-clone20210601/preview.png" alt=" "></p><ul><li><a href="https://chinsun9.github.io/github-404-page-clone/">https://chinsun9.github.io/github-404-page-clone/</a></li></ul><ul><li>github 404 페이지를 클론해보았다</li><li>마우스 움직임에 따라 원근감 있게 움직이는 이미지들이 재밌었다</li></ul><ul><li>전에 3d 카드 이펙트 만들면서 perspective css 속성을 사용해보았는데, 그때 사용한 코드를 거의 그대로 사용해서 만들 수 있었다</li><li>3d card effect ; <a href="https://github.com/chinsun9/3d-card-effect">https://github.com/chinsun9/3d-card-effect</a></li></ul><ul><li>이미지는 직접 그렸다. 물론 바닥에 대고…</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/chinsun9/github-404-page-clone">https://github.com/chinsun9/github-404-page-clone</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/">클론코딩</category>
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/01/github-404-page-clone/#disqus_thread</comments>
       
     </item>
     
