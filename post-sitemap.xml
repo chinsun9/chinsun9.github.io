@@ -8,6 +8,54 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/03/24/vscode-shell-git-bash/</loc>
+        <lastmod>2021-06-22T07:05:55.469Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/02/21/ts-react-sass-eslint-prettier/</loc>
+        <lastmod>2021-06-22T07:04:20.692Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/12/react-typescript-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-06-22T07:03:01.625Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/17/react-eslint-prettier-airbnb-style-guide-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-06-22T07:01:23.500Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/21/npm-%EB%AA%85%EB%A0%B9%EC%96%B4/</loc>
+        <lastmod>2021-06-22T07:00:12.285Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/16/%EB%A9%8B%EC%A7%84-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-06-22T06:59:16.547Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/06/22/github-topic/</loc>
         <lastmod>2021-06-22T04:59:52.108Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -16,24 +64,8 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2021/03/24/vscode-shell-git-bash/</loc>
-        <lastmod>2021-06-22T04:45:44.713Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/11/10/typescript-json-import/</loc>
         <lastmod>2021-06-22T04:45:41.869Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/02/21/ts-react-sass-eslint-prettier/</loc>
-        <lastmod>2021-06-22T04:45:38.595Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -50,14 +82,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-06-22T04:44:45.905Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/17/react-eslint-prettier-airbnb-style-guide-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-06-22T04:44:40.953Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1104,14 +1128,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/09/16/%EB%A9%8B%EC%A7%84-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-04-22T05:41:32.543Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2021/03/26/%EB%A6%AC%EC%95%A1%ED%8A%B8%ED%95%A0-%EB%95%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%8A%A4%EB%8B%88%ED%8E%AB/</loc>
         <lastmod>2021-04-22T05:41:32.542Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1544,14 +1560,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/12/react-typescript-Prettier-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-04-22T05:41:32.516Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/09/18/react-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%83%9D%EC%84%B1/</loc>
         <lastmod>2021-04-22T05:41:32.516Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1658,14 +1666,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/12/15/playlist-202012/</loc>
         <lastmod>2021-04-22T05:41:32.510Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/21/npm-%EB%AA%85%EB%A0%B9%EC%96%B4/</loc>
-        <lastmod>2021-04-22T05:41:32.509Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

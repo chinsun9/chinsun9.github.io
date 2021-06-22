@@ -100,12 +100,13 @@ function loadInsight(config, translation) {
                       ${title}
                       ${subtitle}
                   </span>
-                  ${preview
-        ? '<span class="searchbox-result-preview">' +
-        preview +
-        '</span>'
-        : ''
-      }
+                  ${
+                    preview
+                      ? '<span class="searchbox-result-preview">' +
+                        preview +
+                        '</span>'
+                      : ''
+                  }
               </span>
           </a>`;
   }
