@@ -9,8 +9,68 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 01 Jul 2021 01:27:11 GMT</pubDate>
+    <pubDate>Thu, 01 Jul 2021 04:26:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>모바일 크롬 개발자 도구 사용, 포트포워딩해서 localhost 환경 만들기</title>
+      <link>https://chinsun9.github.io/2021/07/01/remote-debug-android-chrome/</link>
+      <guid>https://chinsun9.github.io/2021/07/01/remote-debug-android-chrome/</guid>
+      <pubDate>Thu, 01 Jul 2021 04:26:39 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;모바일에서 동작하는 &lt;code&gt;devicemotion&lt;/code&gt; 이벤트 등 디버깅하기 위해 개발자 도구를 봐야 했다&lt;/li&gt;
+&lt;li&gt;모바일에서 개발자 도구를 어떻게 켜는지 등 찾아보다가&lt;/li&gt;
+&lt;li&gt;핸드폰을 데탑에 연결하고&lt;/li</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>모바일에서 동작하는 <code>devicemotion</code> 이벤트 등 디버깅하기 위해 개발자 도구를 봐야 했다</li><li>모바일에서 개발자 도구를 어떻게 켜는지 등 찾아보다가</li><li>핸드폰을 데탑에 연결하고</li><li>데탑의 크롬에서 console의 출력 결과를 확인할 수 있다</li><li>그리고 모바일 화면을 미러링 해준다</li></ul><h2 id="하는-법"><a href="#하는-법" class="headerlink" title="하는 법"></a>하는 법</h2><blockquote><p>“[Android 개발] 크롬 개발자 도구 모바일 디버깅/Mobile Debugging/ PC에서 모바일 디버깅 / 모바일 개발환경 구축”<br><a href="https://backstreet-programmer.tistory.com/30">https://backstreet-programmer.tistory.com/30</a></p></blockquote><ul><li>위 블로그를 참고해서 핸드폰과 데탑을 연결했다</li></ul><h2 id="포트포워딩-하기"><a href="#포트포워딩-하기" class="headerlink" title="포트포워딩 하기"></a>포트포워딩 하기</h2><ul><li><code>devicemotion</code>, <code>geolocation</code> 등 보안 컨텍스트가 필요한 Web API의 경우 localhost로 만들어줘야 한다</li><li>내부IP:PORT 해서 접속은 할 수 있지만,</li><li><code>devicemotion</code>가 정상 동작하려면 localhost여야 한다</li></ul><h3 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h3><ul><li><p>데탑에서 웹 개발 진행 중</p></li><li><p>로컬에서 5500 포트로 웹서버가 열려있음</p></li><li><p>모바일에서 위 웹서버에 접속하려면 <code>내부아이피:포트</code>를 입력해야함</p></li><li><p>모바일에서 <code>localhost:5500</code>을 입력해서 접속할 수 있도록 해보자</p></li><li><p>chrome://inspect/#devices 에 접속한다</p></li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/remote-debug-android-chrome20210701/1.png" alt=" "></p><ul><li>내 핸드폰이 잘 연결되었는지 확인한다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/remote-debug-android-chrome20210701/preview.png" alt=" "></p><ul><li>포트 포워딩 버튼을 누른다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/remote-debug-android-chrome20210701/2.png" alt=" "></p><ul><li>5500 포트와 localhost:5500을 매칭시켰다</li><li>이제 핸드폰 크롬에서 localhost:5500으로 접속하면 웹서버에 접속할 수 있다!</li><li>물론 Web API도 모두 잘 동작한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://backstreet-programmer.tistory.com/30">https://backstreet-programmer.tistory.com/30</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/chrome/">chrome</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/01/remote-debug-android-chrome/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>js empty array</title>
+      <link>https://chinsun9.github.io/2021/07/01/js-empty-array/</link>
+      <guid>https://chinsun9.github.io/2021/07/01/js-empty-array/</guid>
+      <pubDate>Thu, 01 Jul 2021 01:58:05 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;code&gt;new Array(n)&lt;/code&gt;으로 초기화한 배열에 array api가 동작하지 않았다&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><code>new Array(n)</code>으로 초기화한 배열에 array api가 동작하지 않았다</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">5</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(arr.length, arr); <span class="comment">// 5 [ &lt;5 empty items&gt; ]</span></span><br><span class="line"><span class="built_in">console</span>.log(arr.push(<span class="number">1</span>), arr); <span class="comment">// 6 [ &lt;5 empty items&gt;, 1 ]</span></span><br><span class="line"><span class="built_in">console</span>.log(arr.push(<span class="number">2</span>), arr); <span class="comment">// 7 [ &lt;5 empty items&gt;, 1, 2 ]</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(arr.map(<span class="function">(<span class="params">v</span>) =&gt;</span> v * <span class="number">2</span>)); <span class="comment">// [ &lt;5 empty items&gt;, 2, 4 ]</span></span><br><span class="line"></span><br><span class="line">arr.forEach(<span class="function">(<span class="params">v</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(v);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`-----------`</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index = <span class="number">0</span>; index &lt; arr.length; index++) &#123;</span><br><span class="line">  <span class="keyword">const</span> element = arr[index];</span><br><span class="line">  <span class="built_in">console</span>.log(element);</span><br><span class="line">  arr[index] = <span class="literal">undefined</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`-----------`</span>);</span><br><span class="line"></span><br><span class="line">arr.forEach(<span class="function">(<span class="params">v</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(v);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br></pre></td></tr></table></figure><ul><li>위에 map이나 forEach를 보면 array api가 초기화하지 않은 인덱스에 대해 동작하지 않는 것을 확인할 수 있다</li><li>직접 for문으로 찍어보면 undefined이라 나온다</li><li>그러면서 undefined으로 전부 초기화해줬다</li><li>직접 초기화해주니까 array api forEach가 동작하는 것을 확인할 수 있다</li></ul><ul><li>array api를 동작하지 않는 것을 경험했다</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">5</span>).fill(<span class="number">0</span>);</span><br></pre></td></tr></table></figure><ul><li>이런 식으로 특정 값으로 직접 초기화를 해줘야 스킵되지 않고 정상적으로 api를 사용할 수 있다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/array/">array</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/01/js-empty-array/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>공식문서가 어려운 이유</title>
@@ -21,12 +81,12 @@
         
         
       <description>&lt;p&gt;처음 웹 개발을 공부하기 시작할 때 mdn보다 w3school을 가게되는지…&lt;/p&gt;
-&lt;h2 id=&quot;공식-문서가-어려운-이유&quot;&gt;&lt;a href=&quot;#공식-문서가-어려운-이유&quot; class=&quot;headerlink&quot; title=&quot;공식 문서가 어려운 이유&quot;&gt;&lt;</description>
+&lt;h2 id=&quot;공식문서가-어려운-이유&quot;&gt;&lt;a href=&quot;#공식문서가-어려운-이유&quot; class=&quot;headerlink&quot; title=&quot;공식문서가 어려운 이유&quot;&gt;&lt;/a&gt;</description>
         
       
       
       
-      <content:encoded><![CDATA[<p>처음 웹 개발을 공부하기 시작할 때 mdn보다 w3school을 가게되는지…</p><h2 id="공식-문서가-어려운-이유"><a href="#공식-문서가-어려운-이유" class="headerlink" title="공식 문서가 어려운 이유"></a>공식 문서가 어려운 이유</h2><ul><li>모르는 걸 모르게 설명한다</li><li>엄청 디테일해서 TMI다</li><li>엄청 생략된 예제</li><li>영어</li></ul><h3 id="모르는-걸-모르게-설명한다"><a href="#모르는-걸-모르게-설명한다" class="headerlink" title="모르는 걸 모르게 설명한다"></a>모르는 걸 모르게 설명한다</h3><ul><li>공식 문서를 작성하시는 분들은 당연히도 그 기술에 대해 빠삭하신 분들이다</li><li>해당 기술을 잘 알고 있는 사람들한테는 최고의 문서일 것이다</li><li>하지만 초보가 문서를 읽었을 때 개발 경험 부족으로 센스가 부족해서</li><li>아주 간단한 것일지라도 막힐 때가 있다</li></ul><ul><li>사전에서 어떤 단어를 찾았는데 그 단어가 또다시 모르는 단어로 설명되어 있는 느낌</li></ul><h3 id="엄청-디테일해서-TMI다"><a href="#엄청-디테일해서-TMI다" class="headerlink" title="엄청 디테일해서 TMI다"></a>엄청 디테일해서 TMI다</h3><ul><li>나는 빨리 헬로월드를 출력하고 싶은데, 뭔가 글이 길고 복잡해 보인다</li><li>install 할 때 여러 옵션들, cli 명령어의 여러 옵션들 등</li><li>실행만 하는데도 너무 어려울 것 같은 인상을 준다</li><li>나는 보통 스크롤이 길고 빼곡한 줄글이 있으면 탈주가 하고 싶다</li></ul><h3 id="엄청-생략된-예제"><a href="#엄청-생략된-예제" class="headerlink" title="엄청 생략된 예제"></a>엄청 생략된 예제</h3><ul><li>프로젝트 세팅 및 디렉터리 구조 등 생략된 것이 많이 있다</li><li>처음 접할 때 내가 튜토리얼을 잘 따라가고 있는지 의문이 들 때가 많이 있다</li><li>명령어를 실행해야 하는 디렉터리가 어디인지</li><li>어디에 파일을 생성해야 하는지</li><li>프로젝트 세팅을 어떻게 해야 하는지</li><li>알고 보면 너무 당연한 베이스지만 초보라면 그것조차 너무 어렵다 ㅠㅠ</li></ul><h3 id="영어"><a href="#영어" class="headerlink" title="영어"></a>영어</h3><ul><li>안 그래도 무슨 말인지 잘 모르는데 영어 ㅠㅠ</li><li>기술 용어들이 많아서 번역을 써도 이상한 경우가 많이 있다</li></ul><h2 id="생각"><a href="#생각" class="headerlink" title="생각"></a>생각</h2><ul><li>공식문서를 보는 게 좋다 주변에서 들었지만</li><li>나는 공식문서 보다가 <code>ctrl w</code>를 누른 적이 너무 많다</li><li>요즘에야 많이 익숙해지고 센스도 늘어서 공식문서를 예전보다는 많이 읽는 편이다</li></ul><ul><li>하지만 요즘도 처음 사용하는 라이브러리라든가</li><li>빠른 프로젝트 적용 또는 시작을 위해 youtube를 참고한다</li><li>영상만큼 직관적인 게 없다고 생각한다</li><li>정적인 문서로는 초보자를 이해시키는 게 어렵다</li><li>영상은 변경사항을 업데이트하기가 어려운 단점이 있다</li><li>영상 제작은 아무래도 노력이 많이 필요하다</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p>처음 웹 개발을 공부하기 시작할 때 mdn보다 w3school을 가게되는지…</p><h2 id="공식문서가-어려운-이유"><a href="#공식문서가-어려운-이유" class="headerlink" title="공식문서가 어려운 이유"></a>공식문서가 어려운 이유</h2><ul><li>모르는 걸 모르게 설명한다</li><li>엄청 디테일해서 TMI다</li><li>엄청 생략된 예제</li><li>영어</li></ul><h3 id="모르는-걸-모르게-설명한다"><a href="#모르는-걸-모르게-설명한다" class="headerlink" title="모르는 걸 모르게 설명한다"></a>모르는 걸 모르게 설명한다</h3><ul><li>공식 문서를 작성하시는 분들은 당연히도 그 기술에 대해 빠삭하신 분들이다</li><li>해당 기술을 잘 알고 있는 사람들한테는 최고의 문서일 것이다</li><li>하지만 초보가 문서를 읽었을 때 개발 경험 부족으로 센스가 부족해서</li><li>아주 간단한 것일지라도 막힐 때가 있다</li></ul><ul><li>사전에서 어떤 단어를 찾았는데 그 단어가 또다시 모르는 단어로 설명되어 있는 느낌</li></ul><h3 id="엄청-디테일해서-TMI다"><a href="#엄청-디테일해서-TMI다" class="headerlink" title="엄청 디테일해서 TMI다"></a>엄청 디테일해서 TMI다</h3><ul><li>나는 빨리 헬로월드를 출력하고 싶은데, 뭔가 글이 길고 복잡해 보인다</li><li>install 할 때 여러 옵션들, cli 명령어의 여러 옵션들 등</li><li>실행만 하는데도 너무 어려울 것 같은 인상을 준다</li><li>나는 보통 스크롤이 길고 빼곡한 줄글이 있으면 탈주가 하고 싶다</li></ul><h3 id="엄청-생략된-예제"><a href="#엄청-생략된-예제" class="headerlink" title="엄청 생략된 예제"></a>엄청 생략된 예제</h3><ul><li>프로젝트 세팅 및 디렉터리 구조 등 생략된 것이 많이 있다</li><li>처음 접할 때 내가 튜토리얼을 잘 따라가고 있는지 의문이 들 때가 많이 있다</li><li>명령어를 실행해야 하는 디렉터리가 어디인지</li><li>어디에 파일을 생성해야 하는지</li><li>프로젝트 세팅을 어떻게 해야 하는지</li><li>알고 보면 너무 당연한 베이스지만 초보라면 그것조차 너무 어렵다 ㅠㅠ</li></ul><h3 id="영어"><a href="#영어" class="headerlink" title="영어"></a>영어</h3><ul><li>안 그래도 무슨 말인지 잘 모르는데 영어 ㅠㅠ</li><li>기술 용어들이 많아서 번역을 써도 이상한 경우가 많이 있다</li></ul><h2 id="생각"><a href="#생각" class="headerlink" title="생각"></a>생각</h2><ul><li>공식문서를 보는 게 좋다 주변에서 들었지만</li><li>나는 공식문서 보다가 <code>ctrl w</code>를 누른 적이 너무 많다</li><li>요즘에야 많이 익숙해지고 센스도 늘어서 공식문서를 예전보다는 많이 읽는 편이다</li></ul><ul><li>하지만 요즘도 처음 사용하는 라이브러리라든가</li><li>빠른 프로젝트 적용 또는 시작을 위해 youtube를 참고한다</li><li>영상만큼 직관적인 게 없다고 생각한다</li><li>정적인 문서로는 초보자를 이해시키는 게 어렵다</li><li>영상은 변경사항을 업데이트하기가 어려운 단점이 있다</li><li>영상 제작은 아무래도 노력이 많이 필요하다</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/%EC%83%9D%EA%B0%81/">생각</category>
@@ -557,67 +617,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/06/17/my-first-github-package/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>windows cmd로 홈 디렉터리(~) 가기</title>
-      <link>https://chinsun9.github.io/2021/06/17/windows-user-home/</link>
-      <guid>https://chinsun9.github.io/2021/06/17/windows-user-home/</guid>
-      <pubDate>Thu, 17 Jun 2021 04:55:24 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;홈 디렉터리는 보통 &lt;code&gt;~&lt;/code&gt;로 표현된다&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>홈 디렉터리는 보통 <code>~</code>로 표현된다</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># linux</span></span><br><span class="line">vi ~/.npmrc</span><br><span class="line"></span><br><span class="line"><span class="comment"># windows</span></span><br><span class="line">notepad %userprofile%/.npmrc</span><br></pre></td></tr></table></figure><ul><li>유저 홈 디렉터리에 설정 파일들이 많이 있는데,</li><li>이 디렉터리를 windows cmd에서 가고 싶을 때 <code>%userprofile%</code>을 참조하면 된다</li></ul><h2 id="cmd로-유저-홈-디렉터리-이동"><a href="#cmd로-유저-홈-디렉터리-이동" class="headerlink" title="cmd로 유저 홈 디렉터리 이동"></a>cmd로 유저 홈 디렉터리 이동</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd %userprofile%</span><br></pre></td></tr></table></figure><h2 id="홈-디렉터리-탐색기로-열기"><a href="#홈-디렉터리-탐색기로-열기" class="headerlink" title="홈 디렉터리 탐색기로 열기"></a>홈 디렉터리 탐색기로 열기</h2><ul><li>Win + R</li><li><code>%userprofile%</code> 입력 후 엔터</li></ul><h2 id="번외-git-bash-쓰기"><a href="#번외-git-bash-쓰기" class="headerlink" title="번외 : git bash 쓰기"></a>번외 : git bash 쓰기</h2><ul><li>간단한 명령어인데, 리눅스 명령어라서 cmd에서 안될 때</li><li>git bash를 켜서 실행한다</li><li>대부분 잘 동작한다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/windows/">windows</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/windows/">windows</category>
-      
-      <category domain="https://chinsun9.github.io/tags/home/">home</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/17/windows-user-home/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>input datalist</title>
-      <link>https://chinsun9.github.io/2021/06/17/input-datalist/</link>
-      <guid>https://chinsun9.github.io/2021/06/17/input-datalist/</guid>
-      <pubDate>Thu, 17 Jun 2021 00:08:07 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;label for=&quot;myInput&quot;&gt;select: &lt;/label&gt;&lt;br&gt;&lt;input list=&quot;myInputList&quot; id=&quot;myInput&quot; /&gt;&lt;/p&gt;
-&lt;datalist id=&quot;myInputList&quot;&gt;
-  &lt;option value=&quot;hello</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><label for="myInput">select: </label><br><input list="myInputList" id="myInput" /></p><datalist id="myInputList">  <option value="hello">안녕</option>  <option value="hi">안뇽</option>  <option value="bye">잘가</option></datalist><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;myInput&quot;</span>&gt;</span>select: <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">list</span>=<span class="string">&quot;myInputList&quot;</span> <span class="attr">id</span>=<span class="string">&quot;myInput&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">datalist</span> <span class="attr">id</span>=<span class="string">&quot;myInputList&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;hello&quot;</span>&gt;</span>안녕<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;hi&quot;</span>&gt;</span>안뇽<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;bye&quot;</span>&gt;</span>잘가<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">datalist</span>&gt;</span></span><br></pre></td></tr></table></figure><ul><li>datalist를 사용하면 input 태그를 select 태그와 비슷하게 쓸 수 있다</li><li>input에 입력하면 자동으로 필터링된다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/datalist">https://developer.mozilla.org/ko/docs/Web/HTML/Element/datalist</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/datalist/">datalist</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/17/input-datalist/#disqus_thread</comments>
       
     </item>
     
