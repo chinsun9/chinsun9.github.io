@@ -9,8 +9,37 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 25 Jun 2021 12:34:31 GMT</pubDate>
+    <pubDate>Thu, 01 Jul 2021 00:41:20 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>unary plus</title>
+      <link>https://chinsun9.github.io/2021/07/01/unary-plus/</link>
+      <guid>https://chinsun9.github.io/2021/07/01/unary-plus/</guid>
+      <pubDate>Thu, 01 Jul 2021 00:41:20 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;strong&gt;무엇이든 숫자로 캐스팅하는 연산자&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;s</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><strong>무엇이든 숫자로 캐스팅하는 연산자</strong></p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(+<span class="number">1</span>);</span><br><span class="line"><span class="comment">// expected output: 1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(+-<span class="number">1</span>);</span><br><span class="line"><span class="comment">// expected output: -1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="string">&#x27;&#x27;</span>);</span><br><span class="line"><span class="comment">// expected output: 0</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="literal">true</span>);</span><br><span class="line"><span class="comment">// expected output: 1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="literal">false</span>);</span><br><span class="line"><span class="comment">// expected output: 0</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="literal">null</span>);</span><br><span class="line"><span class="comment">// expected output: 0</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="string">&#x27;1&#x27;</span>);</span><br><span class="line"><span class="comment">// expected output: 1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="string">&#x27;12&#x27;</span>);</span><br><span class="line"><span class="comment">// expected output: 12</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="string">&#x27;hello&#x27;</span>);</span><br><span class="line"><span class="comment">// expected output: NaN</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(+<span class="number">0xff</span>);</span><br><span class="line"><span class="comment">// expected output: 255</span></span><br></pre></td></tr></table></figure><ul><li>전에 <a href="https://chinsun9.github.io/2020/12/21/string-to-number-%EC%9A%94%EC%83%81%ED%95%9C-%EB%AC%B8%EB%B2%95-js/">string to number 요상한 문법 (js)</a>이라고 올린 적 있다</li><li>그때 사용 했던 <code>+</code>연산자를 <strong>unary plus</strong>라고 부르는 것을 알게 되었다</li></ul><ul><li>이 연산의 반환 값은 숫자다</li><li>보통 10진 숫자로 된 문자열을 숫자로 바꿀 때 사용하지만</li><li>true, false, null, 16진수 등 다양한 인풋을 지원한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/unary-plus/">unary plus</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/01/unary-plus/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>eslint prefer-destructuring</title>
@@ -595,35 +624,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/06/16/CSS-BEM/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>GTD</title>
-      <link>https://chinsun9.github.io/2021/06/16/GTD/</link>
-      <guid>https://chinsun9.github.io/2021/06/16/GTD/</guid>
-      <pubDate>Wed, 16 Jun 2021 06:21:43 GMT</pubDate>
-      
-        
-        
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Getting Things Done (GTD) by David Allen - Animated Book Summary And Review&lt;br&gt;&lt;a href=&quot;https://youtu.be/gCswMsONkwY&quot;&gt;https:</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<blockquote><p>Getting Things Done (GTD) by David Allen - Animated Book Summary And Review<br><a href="https://youtu.be/gCswMsONkwY">https://youtu.be/gCswMsONkwY</a></p></blockquote><ul><li>위 영상에 대한 메모</li></ul><h2 id="GTD"><a href="#GTD" class="headerlink" title="GTD"></a>GTD</h2><ul><li>5 스텝으로 이뤄짐</li><li>capture -&gt; process -&gt; oranize -&gt; review -&gt; engage</li></ul><ol><li><p>capture</p><ul><li>머릿속에 두지 말고 모든 생각을 다 적어라</li></ul></li><li><p>process</p><ul><li><p>담아둔 아이템들에 대해 질문해라</p></li><li><p>is it actionable? yes</p></li><li><p>can you do it in less than 2 minutes? yes/no</p><ul><li>yes ; 바로 실행</li><li>no ; 액션 리스트에 추가</li></ul></li><li><p>is it actionable? no</p></li><li><p>2 choices ; discard / keep it as reference</p></li><li><p>모든 항목에 대해 생각해라</p></li></ul></li><li><p>oganize</p><ul><li><p>마법이 일어난다</p></li><li><p>by project, time, context</p></li><li><p>다음 항목에 대해 생각해라</p></li><li><p>시퀀스를 잘 짜라</p></li></ul></li><li><p>review</p><ul><li>매주 리뷰해라</li><li>모든 것을 원활하게 실행하려면 주간 검토가 필수적이다</li><li>목표에 맞게 진행되고 있는지 반성해라</li></ul></li><li><p>engage</p><ul><li>let’s get cracking! ; 즉시 일을 시작해라</li></ul></li></ol><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>Getting Things Done (GTD) by David Allen - Animated Book Summary And Review</li><li><a href="https://youtu.be/gCswMsONkwY">https://youtu.be/gCswMsONkwY</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
-      
-      <category domain="https://chinsun9.github.io/tags/GTD/">GTD</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/16/GTD/#disqus_thread</comments>
       
     </item>
     
