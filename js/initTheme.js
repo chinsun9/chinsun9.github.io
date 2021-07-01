@@ -1,0 +1,1 @@
+const initTheme=()=>{const theme=localStorage.getItem("theme");"dark"!==theme||document.body.classList.add("dark")};
