@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 06 Jul 2021 00:58:26 GMT</pubDate>
+    <pubDate>Tue, 06 Jul 2021 04:09:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>perssonal access token으로 비공개 레포 git clone 하기</title>
+      <link>https://chinsun9.github.io/2021/07/06/git-clone-using-pat/</link>
+      <guid>https://chinsun9.github.io/2021/07/06/git-clone-using-pat/</guid>
+      <pubDate>Tue, 06 Jul 2021 04:09:10 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span cla</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@github.com&#x2F;chinsun9&#x2F;my-private-repo.git</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;chinsun9&#x2F;my-private-repo.git</span><br><span class="line">Cloning into &#39;my-private-repo&#39;...</span><br><span class="line">Username for &#39;https:&#x2F;&#x2F;github.com&#39;: chinsun9</span><br><span class="line">Password for &#39;https:&#x2F;&#x2F;chinsun9@github.com&#39;: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><br></pre></td></tr></table></figure><ul><li>이런 식으로 패드워드 대용으로 사용해도 되지만,</li><li>github.com 앞에 <code>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@</code></li><li><code>토큰@</code>를 붙여서 cli에서 입력하는 과정을 스킵할 수 있다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/pat/">pat</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/06/git-clone-using-pat/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>regexp lastIndex</title>
@@ -590,34 +620,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/06/18/setTimeout-typescript/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>github 잔디, contributions calendar</title>
-      <link>https://chinsun9.github.io/2021/06/18/github-contributions-calendar/</link>
-      <guid>https://chinsun9.github.io/2021/06/18/github-contributions-calendar/</guid>
-      <pubDate>Fri, 18 Jun 2021 01:56:14 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-contributions-calendar20210618/preview.png&quot; alt=&quot; </description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-contributions-calendar20210618/preview.png" alt=" "></p><ul><li>평소 잔디라 불러서 원래 이름이 뭔지 알아보았다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-contribution-graphs-on-your-profile/viewing-contributions-on-your-profile#contributions-calendar">https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-contribution-graphs-on-your-profile/viewing-contributions-on-your-profile#contributions-calendar</a></li></ul><h2 id="ㅋㅋ"><a href="#ㅋㅋ" class="headerlink" title="ㅋㅋ"></a>ㅋㅋ</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-contributions-calendar20210618/1.png" alt=" "></p><ul><li>내 커밋 기록 식칼 모양이다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/contributions-calendar/">contributions calendar</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/18/github-contributions-calendar/#disqus_thread</comments>
       
     </item>
     
