@@ -8,6 +8,54 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/11/19/web-api-location-%EA%B0%9D%EC%B2%B4/</loc>
+        <lastmod>2021-07-07T06:30:37.481Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/12/18/react%EB%A1%9C-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B8-%ED%87%B4%EA%B7%BC%EC%8B%9C%EA%B0%84-%EA%B3%84%EC%82%B0%EA%B8%B0/</loc>
+        <lastmod>2021-07-07T06:30:03.928Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/17/react-eslint-prettier-airbnb-style-guide-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-07-07T06:29:59.496Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/03/hexo-tag-plugin-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%9E%AC%EC%83%9D%EB%AA%A9%EB%A1%9D-%EB%84%A3%EB%8A%94%EB%B2%95/</loc>
+        <lastmod>2021-07-07T06:29:52.519Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/12/02/github-api%EB%A1%9C-%EC%9C%A0%EB%AA%85%ED%95%9C-%EB%A0%88%ED%8F%AC-%EC%B2%AB-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-07-07T06:29:44.965Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/07/07/js-spread-syntax/</loc>
+        <lastmod>2021-07-07T06:29:24.284Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/07/07/js-array-api-mutate-origin/</loc>
         <lastmod>2021-07-07T05:53:21.328Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -265,14 +313,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/09/21/npm-%EB%AA%85%EB%A0%B9%EC%96%B4/</loc>
-        <lastmod>2021-06-23T01:33:21.053Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/17/react-eslint-prettier-airbnb-style-guide-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-06-23T01:33:21.053Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -818,14 +858,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/09/17/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EB%8F%99%EC%98%81%EC%83%81-%EC%82%BD%EC%9E%85%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-04-28T00:33:42.934Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/12/18/react%EB%A1%9C-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B8-%ED%87%B4%EA%B7%BC%EC%8B%9C%EA%B0%84-%EA%B3%84%EC%82%B0%EA%B8%B0/</loc>
-        <lastmod>2021-04-28T00:33:42.926Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1464,14 +1496,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/19/web-api-location-%EA%B0%9D%EC%B2%B4/</loc>
-        <lastmod>2020-12-02T12:36:17.396Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/11/16/vscode-extension-TabOut/</loc>
         <lastmod>2020-12-02T12:36:17.395Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1649,14 +1673,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/11/18/git-branch-rename-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%AA%85-%EB%B3%80%EA%B2%BD/</loc>
-        <lastmod>2020-12-02T12:36:17.352Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/12/02/github-api%EB%A1%9C-%EC%9C%A0%EB%AA%85%ED%95%9C-%EB%A0%88%ED%8F%AC-%EC%B2%AB-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2020-12-02T12:36:17.352Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1897,14 +1913,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/11/06/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2020-11-14T04:48:41.922Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/03/hexo-tag-plugin-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%9E%AC%EC%83%9D%EB%AA%A9%EB%A1%9D-%EB%84%A3%EB%8A%94%EB%B2%95/</loc>
         <lastmod>2020-11-14T04:48:41.922Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
