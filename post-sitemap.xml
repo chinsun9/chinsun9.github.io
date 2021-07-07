@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/07/07/js-spread-syntax/</loc>
+        <lastmod>2021-07-07T06:35:06.525Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/11/19/web-api-location-%EA%B0%9D%EC%B2%B4/</loc>
         <lastmod>2021-07-07T06:30:37.481Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -42,14 +50,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/12/02/github-api%EB%A1%9C-%EC%9C%A0%EB%AA%85%ED%95%9C-%EB%A0%88%ED%8F%AC-%EC%B2%AB-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-07-07T06:29:44.965Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/07/07/js-spread-syntax/</loc>
-        <lastmod>2021-07-07T06:29:24.284Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
