@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 06 Jul 2021 04:09:10 GMT</pubDate>
+    <pubDate>Wed, 07 Jul 2021 05:53:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js array.sort()가 원본을 바꾼다</title>
+      <link>https://chinsun9.github.io/2021/07/07/js-array-api-mutate-origin/</link>
+      <guid>https://chinsun9.github.io/2021/07/07/js-array-api-mutate-origin/</guid>
+      <pubDate>Wed, 07 Jul 2021 05:53:21 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/js-array-api-mutate-origin20210707/preview.png&quot; alt=&quot; &quot;&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/js-array-api-mutate-origin20210707/preview.png" alt=" "></p><ul><li>가끔 원본이 바뀌어서 예상치 못한 동작을 할 때가 있다</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 원본인 arr 이 정렬됨</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">  <span class="keyword">const</span> sortedArr = arr.sort(<span class="function">(<span class="params">a, b</span>) =&gt;</span> b - a);</span><br><span class="line">  <span class="built_in">console</span>.log(arr === sortedArr); <span class="comment">// true</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 원본인 arr를 살리면서 정렬된 새 배열 얻기</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">  <span class="keyword">const</span> sortedArr = [...arr].sort(<span class="function">(<span class="params">a, b</span>) =&gt;</span> b - a);</span><br><span class="line">  <span class="built_in">console</span>.log(arr === sortedArr); <span class="comment">// false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>[...arr]</code> 이런 식으로 배열을 복사할 수 있다</li></ul><h2 id="하나-더-배열-복사할-때-주의할-점"><a href="#하나-더-배열-복사할-때-주의할-점" class="headerlink" title="하나 더, 배열 복사할 때 주의할 점"></a>하나 더, 배열 복사할 때 주의할 점</h2><ul><li>그런데 <code>number[]</code> 타입이 아니라 <code>&#123;...&#125;[]</code>같은 객체 배열이라면</li><li><code>[...arr]</code> 연산으로 새로운 배열이 만들어지기는 하지만</li><li>원소 하나하나는 여전히 <code>call by reference</code> 이기 때문에</li><li>완전한 복사본(깊은 복사)을 얻은 게 아니라는 점을 유의해야 한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Spread_syntax">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Spread_syntax</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/array/">array</category>
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/07/js-array-api-mutate-origin/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>perssonal access token으로 비공개 레포 git clone 하기</title>
@@ -25,7 +53,7 @@
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@github.com&#x2F;chinsun9&#x2F;my-private-repo.git</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;chinsun9&#x2F;my-private-repo.git</span><br><span class="line">Cloning into &#39;my-private-repo&#39;...</span><br><span class="line">Username for &#39;https:&#x2F;&#x2F;github.com&#39;: chinsun9</span><br><span class="line">Password for &#39;https:&#x2F;&#x2F;chinsun9@github.com&#39;: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><br></pre></td></tr></table></figure><ul><li>이런 식으로 패드워드 대용으로 사용해도 되지만,</li><li>github.com 앞에 <code>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@</code></li><li><code>토큰@</code>를 붙여서 cli에서 입력하는 과정을 스킵할 수 있다</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@github.com&#x2F;chinsun9&#x2F;my-private-repo.git</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;chinsun9&#x2F;my-private-repo.git</span><br><span class="line">Cloning into &#39;my-private-repo&#39;...</span><br><span class="line">Username for &#39;https:&#x2F;&#x2F;github.com&#39;: chinsun9</span><br><span class="line">Password for &#39;https:&#x2F;&#x2F;chinsun9@github.com&#39;: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><br></pre></td></tr></table></figure><ul><li>이런 식으로 패드워드 대용으로 사용해도 되지만,</li><li>github.com 앞에 <code>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@</code></li><li><code>토큰@</code>를 붙여서 cli에서 입력하는 과정을 스킵할 수 있다</li><li>이때 사용하는 토큰은 <strong>repo: Full control of private repositories</strong> 권한이 필요하다</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/git/">git</category>
@@ -154,9 +182,9 @@
       <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
       <category domain="https://chinsun9.github.io/tags/array/">array</category>
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
       
       
       <comments>https://chinsun9.github.io/2021/07/01/js-empty-array/#disqus_thread</comments>
@@ -275,9 +303,9 @@
       <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
-      
       <category domain="https://chinsun9.github.io/tags/async/">async</category>
+      
+      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
       
       <category domain="https://chinsun9.github.io/tags/defer/">defer</category>
       
@@ -590,36 +618,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/06/18/ssr-csr/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>setTimeout typescript</title>
-      <link>https://chinsun9.github.io/2021/06/18/setTimeout-typescript/</link>
-      <guid>https://chinsun9.github.io/2021/06/18/setTimeout-typescript/</guid>
-      <pubDate>Fri, 18 Jun 2021 08:30:02 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight ts&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Dice</span> </span>&#123;</span><br><span class="line">  sto: ReturnType&lt;<span class="keyword">typeof</span> <span class="built_in">setTimeout</span>&gt;;</span><br></pre></td></tr></table></figure><ul><li>typescript로 웹 스크립트를 짜고 있다</li><li><code>clearTimeout</code>을 사용하기 위해 멤버 변수 sto를 넣었다</li><li>근데 setTimeout의 타입이 뭘까?</li><li>에디터에서 <code>NodeJS.Timeout</code>라고 알려주긴 하는데..</li><li>내 런타임을 노드가 아니라 브라우저다</li><li><code>ReturnType&lt;fn&gt;</code>을 사용하면 브라우저든 SSR이든 걱정 없다고 한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/45802988/typescript-use-correct-version-of-settimeout-node-vs-window/56239226#56239226">https://stackoverflow.com/questions/45802988/typescript-use-correct-version-of-settimeout-node-vs-window/56239226#56239226</a></li><li><a href="https://stackoverflow.com/questions/51040703/what-return-type-should-be-used-for-settimeout-in-typescript">https://stackoverflow.com/questions/51040703/what-return-type-should-be-used-for-settimeout-in-typescript</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/setTimeout/">setTimeout</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ReturnType/">ReturnType</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/18/setTimeout-typescript/#disqus_thread</comments>
       
     </item>
     
