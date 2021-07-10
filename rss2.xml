@@ -9,8 +9,67 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 08 Jul 2021 00:36:59 GMT</pubDate>
+    <pubDate>Sat, 10 Jul 2021 13:25:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode extension insertdatestring</title>
+      <link>https://chinsun9.github.io/2021/07/10/vscode-extension-insertdatestring/</link>
+      <guid>https://chinsun9.github.io/2021/07/10/vscode-extension-insertdatestring/</guid>
+      <pubDate>Sat, 10 Jul 2021 13:25:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-extension-insertdatestring20210710/preview.png&quot; al</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-extension-insertdatestring20210710/preview.png" alt=" "></p><ul><li>메모장에서 F5를 누르면 현재 시각이 찍힌다</li><li>vscode에서도 그런 기능이 있나 살펴보았다</li><li>없으면 확장도구!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring">https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring</a></li><li><a href="https://github.com/jsynowiec/vscode-insertdatestring">https://github.com/jsynowiec/vscode-insertdatestring</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/10/vscode-extension-insertdatestring/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>update to wsl2</title>
+      <link>https://chinsun9.github.io/2021/07/10/update-to-wsl2/</link>
+      <guid>https://chinsun9.github.io/2021/07/10/update-to-wsl2/</guid>
+      <pubDate>Sat, 10 Jul 2021 13:24:40 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;em&gt;오후 9:53 2021-07-10 작성됨&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl22021</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><em>오후 9:53 2021-07-10 작성됨</em></p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl220210710/preview.png" alt=" "></p><ul><li><strong>Remote - WSL</strong> 확장도구가 너는 WSL1을 사용 중인데, WSL2로 업그레이드해라 알려줘서 업데이트했다</li></ul><h2 id="WSL2로-업데이트하기"><a href="#WSL2로-업데이트하기" class="headerlink" title="WSL2로 업데이트하기"></a>WSL2로 업데이트하기</h2><ul><li><code>Read More</code> 버튼을 누른다<ul><li><a href="https://docs.microsoft.com/en-us/windows/wsl/compare-versions">https://docs.microsoft.com/en-us/windows/wsl/compare-versions</a></li></ul></li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl220210710/1.png" alt=" "></p><ul><li><p>둘 버전이 어떤 차이가 있는지 알려주는 페이지가 켜진다</p></li><li><p><code>Install WSL 1 and update to WSL 2</code> 버튼을 누른다</p><ul><li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps">https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps</a></li></ul></li><li><p>Windows Insiders는 간편하게 명령어 하나로 업그레이드 가능하다고 한다</p></li><li><p><code>wsl --install</code> 해보고 안되면 수동 설치를 하면 된다</p></li><li><p>수동 설치도 명령어 4번으로 간편하다</p></li><li><p>중간에 WSL2를 위한 요구사항을 체크해야 하는데,</p></li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl220210710/2.png" alt=" "></p><ul><li>Ctrl + R <code>msinfo32</code> 또는 윈도우키로 시작 메뉴를 열고 <code>시스템 정보</code>를 입력해서 요구사항을 확인한다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl220210710/4.png" alt=" "></p><figure class="highlight ps1"><figcaption><span>PowerShell (Administrator)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dism.exe /online /<span class="built_in">enable-feature</span> /featurename:Microsoft<span class="literal">-Windows</span><span class="literal">-Subsystem</span><span class="literal">-Linux</span> /all /norestart</span><br><span class="line">dism.exe /online /<span class="built_in">enable-feature</span> /featurename:VirtualMachinePlatform /all /norestart</span><br></pre></td></tr></table></figure><ul><li>위 명령어 입력 후 컴퓨터 재부팅</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl220210710/3.png" alt=" "></p><ul><li>step4에서 리눅스 커널 업데이트 패키지라는 것을 다운로드하고 실행한다<ul><li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package">https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package</a></li></ul></li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl220210710/5.png" alt=" "></p><figure class="highlight ps1"><figcaption><span>PowerShell (Administrator)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wsl -<span class="literal">-set</span><span class="literal">-default</span><span class="literal">-version</span> <span class="number">2</span></span><br><span class="line">wsl -<span class="literal">-list</span> <span class="comment"># 설치된 배포판 이름 확인</span></span><br><span class="line">wsl -<span class="literal">-set</span><span class="literal">-version</span> &#123;배포판 이름&#125; <span class="number">2</span> <span class="comment"># wsl --set-version Ubuntu-20.04 2</span></span><br></pre></td></tr></table></figure><ul><li>갑자기 cmd를 썼는데, 중간에 재부팅해서 일관적으로 캡처하지 못했다 ㅠ (뭘 쓰던 상관은 없다.)</li><li>기존에 WSL을 사용하고 있는 사람에 한해서 <code>wsl --set-version</code> 명령을 실행해줘야 한다</li><li>가이드 문서를 다 따라 했는데, vscode를 켜고 Remote WSL를 사용하면 여전히 WSL1을 쓰고 있다고 말한다</li><li>알고 보니까 기존 배포판은 그대로 버전 1이 적용되고 있다</li><li>기존 배포판에 WSL2를 적용하려면 <code>wsl --set-version &#123;배포판 이름&#125; &#123;타깃 버전&#125;</code>까지 실행해줘야 한다</li><li>5분 정도 걸렸나? 시간이 조금 걸리는 작업이다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.microsoft.com/en-us/windows/wsl/compare-versions">https://docs.microsoft.com/en-us/windows/wsl/compare-versions</a></li><li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps">https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/windows/">windows</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/windows/">windows</category>
+      
+      <category domain="https://chinsun9.github.io/tags/wsl/">wsl</category>
+      
+      <category domain="https://chinsun9.github.io/tags/wsl2/">wsl2</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/10/update-to-wsl2/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js spread syntax `...` 연산자</title>
@@ -553,66 +612,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/06/21/debounce-throttle/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>geolocation 등 HTTP에서 사용할 수 없는 Web API 목록</title>
-      <link>https://chinsun9.github.io/2021/06/21/features-restricted-to-secure-contexts/</link>
-      <guid>https://chinsun9.github.io/2021/06/21/features-restricted-to-secure-contexts/</guid>
-      <pubDate>Mon, 21 Jun 2021 02:31:45 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;geolocation 등 특정 Web API들은 &lt;code&gt;localhost&lt;/code&gt; 또는 &lt;code&gt;HTTPS&lt;/code&gt; 환경에서만 동작한다&lt;/li&gt;
-&lt;li&gt;그래서 로컬에서 테스트했을 땐 동작하는 것들이 http로 배포했을 때 </description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>geolocation 등 특정 Web API들은 <code>localhost</code> 또는 <code>HTTPS</code> 환경에서만 동작한다</li><li>그래서 로컬에서 테스트했을 땐 동작하는 것들이 http로 배포했을 때 동작하지 않을 수 있다</li><li><strong>secure context</strong>가 필요한 API 목록은 아래 링크에서 확인할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts/features_restricted_to_secure_contexts">https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts/features_restricted_to_secure_contexts</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/geolocation/">geolocation</category>
-      
-      <category domain="https://chinsun9.github.io/tags/secure-contexts/">secure contexts</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/21/features-restricted-to-secure-contexts/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>github archived repository</title>
-      <link>https://chinsun9.github.io/2021/06/21/github-archived-repository/</link>
-      <guid>https://chinsun9.github.io/2021/06/21/github-archived-repository/</guid>
-      <pubDate>Mon, 21 Jun 2021 00:35:13 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-archived-repository20210621/preview.png&quot; alt=&quot; &quot;&gt;&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-archived-repository20210621/preview.png" alt=" "></p><ul><li>레포명 옆에 <strong>Archived</strong> 가 붙어있는 레포를 발견했다</li><li>뭔가 하고 찾아보았다</li></ul><h2 id="Archiving-Repositories"><a href="#Archiving-Repositories" class="headerlink" title="Archiving Repositories"></a>Archiving Repositories</h2><ul><li>읽기 전용 레포이다</li><li>더 이상 유지 보수되지 않는다는 것을 나타낸다</li><li>이 저장소에서는 새로운 활동이 생성될 수 없다</li><li>이슈나 풀리퀘스트를 생성할 수 없다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/archiving-a-github-repository/archiving-repositories">https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/archiving-a-github-repository/archiving-repositories</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/archiving-repositories/">archiving-repositories</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/21/github-archived-repository/#disqus_thread</comments>
       
     </item>
     
