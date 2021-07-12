@@ -32,8 +32,8 @@ body.dark .card {
   background-color: transparent;
   color: #d4d4d4;
 }
-body.dark .column-left::before {
-  border-right: 1px solid #3c3c3c;
+body.dark .column-main::before {
+  border-left: 1px solid #3c3c3c;
 }
 body.dark .title {
   color: #fff;

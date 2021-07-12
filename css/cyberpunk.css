@@ -10274,14 +10274,14 @@ body > .section {
     background: rgba(0,0,0,0.24);
   }
 }
-.column-left {
+.column-main {
   position: relative;
 }
-.column-left::before {
+.column-main::before {
   content: '';
-  border-right: 1px solid #e5e5e5;
-  right: 0;
-  min-height: 80vh;
+  border-left: 1px solid #e5e5e5;
+  left: 0;
+  min-height: 100%;
   width: 100%;
   position: absolute;
   top: -30px;
@@ -11575,8 +11575,8 @@ body.dark .card {
   background-color: transparent;
   color: #d4d4d4;
 }
-body.dark .column-left::before {
-  border-right: 1px solid #3c3c3c;
+body.dark .column-main::before {
+  border-left: 1px solid #3c3c3c;
 }
 body.dark .title {
   color: #fff;
