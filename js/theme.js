@@ -68,14 +68,14 @@ function toggleTheme() {
   console.log(`toggle theme`);
   document.body.classList.toggle('dark');
 
-  localStorage.setItem(
-    'theme',
-    document.body.classList.contains('dark') ? 'dark' : 'light'
+  const isDark = document.body.classList.contains('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  btn.innerText = isDark ? '🌙' : '🌞';
+  document.documentElement.setAttribute(
+    'data-color-scheme',
+    isDark ? 'dark' : 'light'
   );
-  btn.innerText = document.body.classList.contains('dark') ? '🌙' : '🌞';
-  setUtterancesTheme(
-    document.body.classList.contains('dark') ? 'dark' : 'light'
-  );
+  setUtterancesTheme(isDark ? 'dark' : 'light');
 }
 
 window
@@ -84,7 +84,12 @@ window
     const newColorScheme = e.matches ? 'dark' : 'light';
     localStorage.setItem('theme', newColorScheme);
 
-    if (newColorScheme === 'dark') {
+    const isDark = newColorScheme === 'dark';
+    document.documentElement.setAttribute(
+      'data-color-scheme',
+      isDark ? 'dark' : 'light'
+    );
+    if (isDark) {
       document.body.classList.add('dark');
       btn.innerText = '🌙';
       setUtterancesTheme('dark');
