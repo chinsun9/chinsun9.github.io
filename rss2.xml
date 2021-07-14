@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 12 Jul 2021 07:08:12 GMT</pubDate>
+    <pubDate>Wed, 14 Jul 2021 00:09:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -144,9 +144,9 @@
       <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/array/">array</category>
-      
       <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/array/">array</category>
       
       
       <comments>https://chinsun9.github.io/2021/07/07/js-array-api-mutate-origin/#disqus_thread</comments>
@@ -295,9 +295,9 @@
       <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/array/">array</category>
-      
       <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/array/">array</category>
       
       
       <comments>https://chinsun9.github.io/2021/07/01/js-empty-array/#disqus_thread</comments>
@@ -416,9 +416,9 @@
       <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/async/">async</category>
-      
       <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
+      
+      <category domain="https://chinsun9.github.io/tags/async/">async</category>
       
       <category domain="https://chinsun9.github.io/tags/defer/">defer</category>
       
