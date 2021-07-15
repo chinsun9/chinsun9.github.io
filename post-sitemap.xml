@@ -8,6 +8,62 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/07/15/python/</loc>
+        <lastmod>2021-07-15T02:54:59.183Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/11/AWS-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-ACL/</loc>
+        <lastmod>2021-07-15T01:35:39.160Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/22/RDS-%EB%B9%84%EA%B3%B5%EA%B0%9C%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/</loc>
+        <lastmod>2021-07-15T01:35:27.060Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/16/%EC%A4%91%EC%B2%A9-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%97%AC%EB%9F%AC%EA%B0%9C-%ED%83%9C%EA%B7%B8-%EC%93%B0%EB%8A%94%EB%B2%95/</loc>
+        <lastmod>2021-07-15T01:34:57.735Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/10/30/hexo-db-json-%EC%B4%88%EA%B8%B0%ED%99%94/</loc>
+        <lastmod>2021-07-15T01:33:43.964Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/02/DB-%EC%8B%9C%EC%9E%91%ED%95%A0-%EB%95%8C-%EC%93%B0%EB%8A%94-%EB%AA%85%EB%A0%B9%EC%96%B4/</loc>
+        <lastmod>2021-07-15T01:33:24.111Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/02/22/mysql-%ED%98%84%EC%9E%AC%EC%8B%9C%EA%B0%84-%EA%B5%AC%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-07-15T01:33:10.361Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/07/15/python-str-strip/</loc>
         <lastmod>2021-07-15T01:04:20.699Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -824,14 +880,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/11/AWS-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-ACL/</loc>
-        <lastmod>2021-07-06T00:54:46.297Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2021/04/29/%EB%82%B4%EA%B0%80-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-vscode-%EB%8B%A8%EC%B6%95%ED%82%A4-%EB%AA%85%EB%A0%B9-%ED%99%95%EC%9E%A5%EB%8F%84%EA%B5%AC-%EB%AA%A8%EC%9D%8C/</loc>
         <lastmod>2021-07-02T04:05:48.254Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1504,14 +1552,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/09/16/%EC%A4%91%EC%B2%A9-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EC%97%AC%EB%9F%AC%EA%B0%9C-%ED%83%9C%EA%B7%B8-%EC%93%B0%EB%8A%94%EB%B2%95/</loc>
-        <lastmod>2021-04-22T05:41:32.554Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/11/06/%EC%A0%95%EC%B2%98%EA%B8%B0-%EC%9C%BC%EC%95%85/</loc>
         <lastmod>2021-04-22T05:41:32.553Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2096,14 +2136,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2021/02/22/mysql-%ED%98%84%EC%9E%AC%EC%8B%9C%EA%B0%84-%EA%B5%AC%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-04-22T05:41:32.504Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2021/02/23/mysql-datetime%EC%B9%BC%EB%9F%BC-%EB%82%A0%EC%A7%9C%EB%A1%9C-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-04-22T05:41:32.503Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2265,14 +2297,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/11/06/gradle%EB%A1%9C-%EC%99%B8%EB%B6%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-04-22T05:41:32.492Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/10/30/hexo-db-json-%EC%B4%88%EA%B8%B0%ED%99%94/</loc>
         <lastmod>2021-04-22T05:41:32.492Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2688,24 +2712,8 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/09/22/RDS-%EB%B9%84%EA%B3%B5%EA%B0%9C%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/</loc>
-        <lastmod>2021-04-22T05:41:32.468Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2021/02/20/Live-Share/</loc>
         <lastmod>2021-04-22T05:41:32.467Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/02/DB-%EC%8B%9C%EC%9E%91%ED%95%A0-%EB%95%8C-%EC%93%B0%EB%8A%94-%EB%AA%85%EB%A0%B9%EC%96%B4/</loc>
-        <lastmod>2021-04-22T05:41:32.466Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

@@ -9,8 +9,34 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 15 Jul 2021 01:03:30 GMT</pubDate>
+    <pubDate>Thu, 15 Jul 2021 02:54:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>python 초보가 어제 오늘 배운 몇가지 명령어 모음</title>
+      <link>https://chinsun9.github.io/2021/07/15/python/</link>
+      <guid>https://chinsun9.github.io/2021/07/15/python/</guid>
+      <pubDate>Thu, 15 Jul 2021 02:54:59 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 타입 알아내기</span></span><br><span class="line">print(<span class="built_in">type</span>(<span class="number">1</span>)) <span class="comment"># &lt;class &#x27;int&#x27;&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 앞뒤 공백 없애기 trim</span></span><br><span class="line">print(<span class="string">&#x27;      안녕      &#x27;</span>.strip()) <span class="comment"># 안녕</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 문자열 길이 알아내기</span></span><br><span class="line">print(<span class="built_in">len</span>(<span class="string">&#x27;안녕&#x27;</span>)) <span class="comment"># 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 숫자 문자열로 캐스팅</span></span><br><span class="line">print(<span class="built_in">type</span>(<span class="built_in">str</span>(<span class="number">1</span>))) <span class="comment"># &lt;class &#x27;str&#x27;&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># print 출력 파일로 저장하기</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">sys.stdout = <span class="built_in">open</span>(<span class="string">&#x27;/txt.txt&#x27;</span>, <span class="string">&#x27;w&#x27;</span>)</span><br><span class="line">print(<span class="string">&#x27;안녕하세요요&#x27;</span>)</span><br><span class="line">print(<span class="string">&#x27;반갑습니다&#x27;</span>)</span><br><span class="line">sys.stdout.close()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 텍스트 파일 저장하기</span></span><br><span class="line">text_file = <span class="built_in">open</span>(<span class="string">&quot;output.txt&quot;</span>, <span class="string">&quot;w&quot;</span>)</span><br><span class="line">text_file.write(<span class="string">&quot;%s&quot;</span> % <span class="string">&#x27;안녕하세요를레이&#x27;</span>)</span><br><span class="line">text_file.close()</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/python/">python</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/python/">python</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/15/python/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>python type</title>
@@ -561,36 +587,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/06/22/blog-fix-copy-button-not-dispalyed/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>github topic</title>
-      <link>https://chinsun9.github.io/2021/06/22/github-topic/</link>
-      <guid>https://chinsun9.github.io/2021/06/22/github-topic/</guid>
-      <pubDate>Tue, 22 Jun 2021 04:59:52 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-topic20210622/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;저</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-topic20210622/preview.png" alt=" "></p><ul><li>저장소와 관련된 태그? 같은 것을 나열할 수 있는 기능이다</li><li>사용하면 무엇을 하는 저장소인지 나타내기 좋을 것 같다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/github/administering-a-repository/managing-repository-settings/classifying-your-repository-with-topics">https://docs.github.com/en/github/administering-a-repository/managing-repository-settings/classifying-your-repository-with-topics</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/22/github-topic/#disqus_thread</comments>
       
     </item>
     
