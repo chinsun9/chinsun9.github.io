@@ -8,6 +8,118 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/07/15/python-str-strip/</loc>
+        <lastmod>2021-07-15T01:04:20.699Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/07/15/python-type/</loc>
+        <lastmod>2021-07-15T01:03:30.271Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/17/github-io-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-readme-md-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
+        <lastmod>2021-07-15T00:51:36.864Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/23/vscode%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/</loc>
+        <lastmod>2021-07-15T00:51:17.699Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/19/md%EC%97%90%EC%84%9C-%EC%A3%BC%EC%84%9D%EC%9E%88%EB%8A%94-json-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%91%9C%ED%98%84%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-07-15T00:51:12.567Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/22/hexo-%ED%8F%AC%EC%8A%A4%ED%8A%B8-CRUD/</loc>
+        <lastmod>2021-07-15T00:51:10.221Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/23/%EC%BD%94%EB%93%9C-%EC%8A%A4%EB%8B%88%ED%8E%AB-%EC%95%88%EC%97%90-%EC%BD%94%EB%93%9C-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%8F%AC%ED%95%A8%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-07-15T00:51:07.904Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/17/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%BD%94%EB%93%9C-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/</loc>
+        <lastmod>2021-07-15T00:51:05.340Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/10/13/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/</loc>
+        <lastmod>2021-07-15T00:51:02.645Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/22/%EB%82%B4%EA%B0%80-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%93%B0%EB%8A%94%EB%B2%95/</loc>
+        <lastmod>2021-07-15T00:50:59.501Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/17/hosted-with-%E2%9D%A4-by-GitHub%EB%A1%9C-%EC%BD%94%EB%93%9C-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/</loc>
+        <lastmod>2021-07-15T00:50:32.689Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/03/26/%EB%A6%AC%EC%95%A1%ED%8A%B8%ED%95%A0-%EB%95%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%8A%A4%EB%8B%88%ED%8E%AB/</loc>
+        <lastmod>2021-07-15T00:50:08.101Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/18/vscode-console-log-%EB%B9%A8%EB%A6%AC%EC%B9%98%EA%B8%B0/</loc>
+        <lastmod>2021-07-15T00:50:04.783Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/07/15/create-python-category/</loc>
+        <lastmod>2021-07-15T00:26:05.906Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/09/18/%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95-%EB%B3%84%EC%B0%8D%EA%B8%B0/</loc>
         <lastmod>2021-07-14T00:09:28.089Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -161,14 +273,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/12/21/typescript%EC%97%90%EC%84%9C-mathjs-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-07-14T00:09:28.073Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/18/vscode-console-log-%EB%B9%A8%EB%A6%AC%EC%B9%98%EA%B8%B0/</loc>
         <lastmod>2021-07-14T00:09:28.073Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -856,14 +960,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/19/md%EC%97%90%EC%84%9C-%EC%A3%BC%EC%84%9D%EC%9E%88%EB%8A%94-json-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%91%9C%ED%98%84%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-06-22T04:45:22.552Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-06-22T04:44:45.905Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1384,14 +1480,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/09/23/%EC%BD%94%EB%93%9C-%EC%8A%A4%EB%8B%88%ED%8E%AB-%EC%95%88%EC%97%90-%EC%BD%94%EB%93%9C-%EC%8A%A4%EB%8B%88%ED%8E%AB-%ED%8F%AC%ED%95%A8%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-04-22T05:41:32.557Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/09/21/%EC%BB%A4%EC%8A%A4%ED%85%80-404-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
         <lastmod>2021-04-22T05:41:32.556Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1528,30 +1616,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/10/13/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/</loc>
-        <lastmod>2021-04-22T05:41:32.543Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/17/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%97%90%EC%84%9C-%EC%BD%94%EB%93%9C-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/</loc>
-        <lastmod>2021-04-22T05:41:32.543Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/03/26/%EB%A6%AC%EC%95%A1%ED%8A%B8%ED%95%A0-%EB%95%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%8A%A4%EB%8B%88%ED%8E%AB/</loc>
-        <lastmod>2021-04-22T05:41:32.542Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/11/03/%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90%EC%84%9C-%ED%8A%B9%EC%A0%95-%ED%8F%AC%ED%8A%B8%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-04-22T05:41:32.541Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1585,14 +1649,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/12/15/%EB%82%B4%EA%B0%80-css%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A9%B4%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%A4%84%EC%9E%84%EB%A7%90-%EC%8A%A4%EB%8B%88%ED%8E%AB/</loc>
-        <lastmod>2021-04-22T05:41:32.538Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/22/%EB%82%B4%EA%B0%80-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EC%93%B0%EB%8A%94%EB%B2%95/</loc>
         <lastmod>2021-04-22T05:41:32.538Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1634,14 +1690,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/10/14/%EA%B0%95%EB%A0%A5-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8/</loc>
         <lastmod>2021-04-22T05:41:32.536Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/23/vscode%EC%97%90%EC%84%9C-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AF%B8%EB%A6%AC%EB%B3%B4%EA%B8%B0/</loc>
-        <lastmod>2021-04-22T05:41:32.534Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2168,22 +2216,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/09/22/hexo-%ED%8F%AC%EC%8A%A4%ED%8A%B8-CRUD/</loc>
-        <lastmod>2021-04-22T05:41:32.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/17/hosted-with-%E2%9D%A4-by-GitHub%EB%A1%9C-%EC%BD%94%EB%93%9C-%ED%91%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%B2%95/</loc>
-        <lastmod>2021-04-22T05:41:32.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/09/22/hexo%EC%97%90%EC%84%9C-%EC%B4%88%EC%95%88-%EC%9E%91%EC%84%B1%EC%A4%91-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-04-22T05:41:32.496Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2289,14 +2321,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/11/20/github-blog-page-google-analytics%EB%A1%9C-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-04-22T05:41:32.489Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/17/github-io-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-readme-md-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
         <lastmod>2021-04-22T05:41:32.489Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

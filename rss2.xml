@@ -9,8 +9,89 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 14 Jul 2021 00:09:28 GMT</pubDate>
+    <pubDate>Thu, 15 Jul 2021 01:03:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>python type</title>
+      <link>https://chinsun9.github.io/2021/07/15/python-type/</link>
+      <guid>https://chinsun9.github.io/2021/07/15/python-type/</guid>
+      <pubDate>Thu, 15 Jul 2021 01:03:30 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line">print(<span class="built_in">type</span>(num)) <span class="comment"># &lt;type &#x27;int&#x27;&gt;</span></span><br></pre></td></tr></table></figure><ul><li>야매로 python 코드에 손을 대기 위해서 필요한 첫 번째 관문</li><li>무슨 타입인지 알아야 구글링할 수 있다</li></ul><h2 id="파이썬-기본-자료형"><a href="#파이썬-기본-자료형" class="headerlink" title="파이썬 기본 자료형"></a>파이썬 기본 자료형</h2><ul><li>bool</li><li>int / float</li><li>str</li><li>list</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/python/">python</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/python/">python</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/15/python-type/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>python 문자열 trim, 앞뒤 공백 제거</title>
+      <link>https://chinsun9.github.io/2021/07/15/python-str-strip/</link>
+      <guid>https://chinsun9.github.io/2021/07/15/python-str-strip/</guid>
+      <pubDate>Thu, 15 Jul 2021 00:30:31 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">output = <span class="string">&#x27;      안녕      &#x27;</span>.strip()</span><br><span class="line">print(output) <span class="comment"># 안녕</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/python/">python</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/python/">python</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/15/python-str-strip/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>python 카테고리 생성</title>
+      <link>https://chinsun9.github.io/2021/07/15/create-python-category/</link>
+      <guid>https://chinsun9.github.io/2021/07/15/create-python-category/</guid>
+      <pubDate>Thu, 15 Jul 2021 00:26:05 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;python으로 작성된 코드를 해석하기 위해 야매로 공부한 내용 올리기&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>python으로 작성된 코드를 해석하기 위해 야매로 공부한 내용 올리기</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/python/">python</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/category/">category</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/15/create-python-category/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>202106 검색 실적</title>
@@ -510,101 +591,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/06/22/github-topic/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>jest &#39;describe&#39; is not defined</title>
-      <link>https://chinsun9.github.io/2021/06/22/eslint-with-jest/</link>
-      <guid>https://chinsun9.github.io/2021/06/22/eslint-with-jest/</guid>
-      <pubDate>Tue, 22 Jun 2021 04:31:50 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight json&quot;&gt;&lt;figcaption&gt;&lt;span&gt;.eslintrc.json&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight json"><figcaption><span>.eslintrc.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;env&quot;</span>: &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="attr">&quot;jest&quot;</span>: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>env에 추가해준다</li></ul><ul><li>⚠️ 추가 해주고 <code>F1 &gt; eslint.restart</code> 명령을 실행해 eslint를 재부팅한다</li></ul><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>jest를 eslint와 처음 사용해본다</li></ul><blockquote><p>eslint(no-undef)</p></blockquote><blockquote><p>‘describe’ is not defined.<br>‘test’ is not defined.<br>‘expect’ is not defined.</p></blockquote><ul><li>위 에러가 나왔다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/44611190/using-jest-in-my-react-app-describe-is-not-defined">https://stackoverflow.com/questions/44611190/using-jest-in-my-react-app-describe-is-not-defined</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
-      
-      <category domain="https://chinsun9.github.io/tags/jest/">jest</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/22/eslint-with-jest/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>tldr</title>
-      <link>https://chinsun9.github.io/2021/06/22/tldr/</link>
-      <guid>https://chinsun9.github.io/2021/06/22/tldr/</guid>
-      <pubDate>Tue, 22 Jun 2021 04:22:23 GMT</pubDate>
-      
-        
-        
-      <description>&lt;blockquote&gt;
-&lt;p&gt;too long; didn’t read&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;tl;dr&lt;/li&gt;
-&lt;li&gt;요약&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;참고&quot;&gt;&lt;a href=&quot;#참고&quot; class=&quot;headerlink&quot; t</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<blockquote><p>too long; didn’t read</p></blockquote><ul><li>tl;dr</li><li>요약</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://ko.wikipedia.org/wiki/TL;DR">https://ko.wikipedia.org/wiki/TL;DR</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/tldr/">tldr</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/22/tldr/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>커밋 메시지 작성을 도와줄 확장도구 vscode-conventional-commits</title>
-      <link>https://chinsun9.github.io/2021/06/22/vscode-conventional-commits/</link>
-      <guid>https://chinsun9.github.io/2021/06/22/vscode-conventional-commits/</guid>
-      <pubDate>Tue, 22 Jun 2021 02:15:28 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-conventional-commits20210622/preview.png&quot; alt=&quot; &quot;&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-conventional-commits20210622/preview.png" alt=" "></p><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>기존에 <strong>Visual Studio Code Commitizen Support</strong> 확장 도구를 사용하고 있었다</li><li>그런데 커밋 body에 적는 내용이 어째선지 반영되지 않았다…</li><li>관련해서 구글링을 해봤는데 도움되는 내용을 찾지 못했다</li><li>그러다가 다른 확장도구를 발견했다</li></ul><h2 id="Conventional-Commits"><a href="#Conventional-Commits" class="headerlink" title="Conventional Commits"></a>Conventional Commits</h2><ul><li><strong>Conventional Commits</strong>이라는 확장도구이다</li><li>사용법은 Commitizen과 동일하다</li><li>이 확장도구를 사용하면 body(description)가 정상적으로 등록된다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits">https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits</a></li><li><a href="https://github.com/vivaxy/vscode-conventional-commits">https://github.com/vivaxy/vscode-conventional-commits</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
-      
-      <category domain="https://chinsun9.github.io/tags/commit/">commit</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/22/vscode-conventional-commits/#disqus_thread</comments>
       
     </item>
     
