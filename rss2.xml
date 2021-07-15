@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 15 Jul 2021 02:54:59 GMT</pubDate>
+    <pubDate>Thu, 15 Jul 2021 04:12:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>깃허브에 있는 파이썬 프로젝트 돌려보기</title>
+      <link>https://chinsun9.github.io/2021/07/15/try-running-python-project-in-github/</link>
+      <guid>https://chinsun9.github.io/2021/07/15/try-running-python-project-in-github/</guid>
+      <pubDate>Thu, 15 Jul 2021 04:12:29 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;em&gt;파이썬 초보가 처음 깃허브에 있는 파이썬 프로젝트들을 돌려보면서 막혔던 부분과 알게 된 부분을 정리한 글&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;내-파이썬-지식&quot;&gt;&lt;a href=&quot;#내-파이썬-지식&quot; class=&quot;headerlink&quot; title=&quot;내</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><em>파이썬 초보가 처음 깃허브에 있는 파이썬 프로젝트들을 돌려보면서 막혔던 부분과 알게 된 부분을 정리한 글</em></p><h2 id="내-파이썬-지식"><a href="#내-파이썬-지식" class="headerlink" title="내 파이썬 지식"></a>내 파이썬 지식</h2><ul><li>인공지능 관련 프로젝트들이 대부분 파이썬으로 작성되어 있어서</li><li>관련 프로젝트를 돌려보기 위해서는 파이썬 지식을 필요로 했다</li><li>1 ~ 2년 전에 학교 수업으로 데이터분석처리라는 과목을 들으면서 파이썬을 사용해봤는데,</li><li>os는 윈도우, 도구는 주피터 노트북으로 테이블 데이터 전처리, 데이터 시각화와 분석을 해보았었다</li><li>사용해본 모듈로는 pandas, seaborn, matplotlib, numpy, statsmodels, scipy 등이 있다</li><li>각 모듈들에 대한 숙련도는 치트 시트를 확인한 정도이다</li></ul><h2 id="리눅스에서-돌리기"><a href="#리눅스에서-돌리기" class="headerlink" title="리눅스에서 돌리기"></a>리눅스에서 돌리기</h2><ul><li>윈도우에서 프로젝트를 돌려보려고 시도했지만,</li><li>종속성을 설치하는 과정에서 불편한 것이 많아서 리눅스에서 돌려보기로 한다</li><li>WSL로 윈도우에서 쉽게 리눅스 환경을 사용할 수 있다</li><li>나는 WSL2 Ubuntu-18.04 LTS 환경에서 진행했다</li><li>vscode remote - WSL을 통해 작업했다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/try-running-python-project-in-github20210715/preview.png" alt=" "></p><h3 id="종속성-설치"><a href="#종속성-설치" class="headerlink" title="종속성 설치"></a>종속성 설치</h3><ul><li><code>apt-get</code>을 통해 필요한 종속성을 설치하는 경우,</li><li>먼저 apt를 최신 상태로 업데이트해줘야 한다</li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure><h4 id="sudo-pip-command-not-found"><a href="#sudo-pip-command-not-found" class="headerlink" title="sudo: pip: command not found"></a>sudo: pip: command not found</h4><ul><li>pip 커맨드가 없다고 하는데, 설치해줘야 한다</li><li>pip3를 설치하고, pip 커맨드는 pip3로 대체하여 사용한다</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get -y install python3-pip</span><br></pre></td></tr></table></figure><h4 id="requirements-txt-설치-도중-오류"><a href="#requirements-txt-설치-도중-오류" class="headerlink" title="requirements.txt 설치 도중 오류"></a>requirements.txt 설치 도중 오류</h4><ul><li><code>pip3 install -r requirements.txt</code>로 종속성을 설치하는데,</li></ul><blockquote><p>ModuleNotFoundError: No module named ‘skbuild’</p></blockquote><ul><li><p>사용하는 파이썬 버전에 따라서 설치가 안 되는 경우가 있다</p></li><li><p>나는 파이썬 3.6 버전을 사용하고 있었는데, 구글링해보니 3.7 이상이 필요하다 했다</p></li><li><p>파이썬 버전에 따라 설치할 수 있는 모듈 버전이 제한된다는 것을 알았다</p></li><li><p><a href="https://stackoverflow.com/questions/63448467/installing-opencv-fails-because-it-cannot-find-skbuild">https://stackoverflow.com/questions/63448467/installing-opencv-fails-because-it-cannot-find-skbuild</a></p></li><li><p>파이썬을 3.7 이상으로 업데이트한다</p></li><li><p><a href="https://tech.serhatteker.com/post/2019-09/upgrade-python37-on-ubuntu18/">https://tech.serhatteker.com/post/2019-09/upgrade-python37-on-ubuntu18/</a></p></li><li><p>업데이트 방법은 위 링크에 친절하게 나와있다</p></li><li><p>이런 경우 말고도 <code>no matching distribution found for numpy==1.20.0</code>처럼 버전을 가져올 수 없다는 오류도 마찬가지로 파이썬 버전을 올려주니 해결됐다</p></li></ul><h2 id="프로젝트-파악하기"><a href="#프로젝트-파악하기" class="headerlink" title="프로젝트 파악하기"></a>프로젝트 파악하기</h2><ul><li>기능을 추가하려면 코드가 어떻게 동작하는지 알아야 한다</li><li>여기저기 print문을 작성해보면서 차근차근 알아가 보자</li><li>파이썬 문법을 자세하게 몰라도 잘할 수 있다</li></ul><ul><li><a href="https://chinsun9.github.io/2021/07/15/python/">https://chinsun9.github.io/2021/07/15/python/</a></li><li>앞으로 위 링크에 유용한 명령어를 정리해서 업데이트할 것이다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/63448467/installing-opencv-fails-because-it-cannot-find-skbuild">https://stackoverflow.com/questions/63448467/installing-opencv-fails-because-it-cannot-find-skbuild</a></li><li><a href="https://tech.serhatteker.com/post/2019-09/upgrade-python37-on-ubuntu18/">https://tech.serhatteker.com/post/2019-09/upgrade-python37-on-ubuntu18/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/python/">python</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/wsl/">wsl</category>
+      
+      <category domain="https://chinsun9.github.io/tags/python/">python</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/15/try-running-python-project-in-github/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>python 초보가 어제 오늘 배운 몇가지 명령어 모음</title>
@@ -51,7 +82,7 @@
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line">print(<span class="built_in">type</span>(num)) <span class="comment"># &lt;type &#x27;int&#x27;&gt;</span></span><br></pre></td></tr></table></figure><ul><li>야매로 python 코드에 손을 대기 위해서 필요한 첫 번째 관문</li><li>무슨 타입인지 알아야 구글링할 수 있다</li></ul><h2 id="파이썬-기본-자료형"><a href="#파이썬-기본-자료형" class="headerlink" title="파이썬 기본 자료형"></a>파이썬 기본 자료형</h2><ul><li>bool</li><li>int / float</li><li>str</li><li>list</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line">print(<span class="built_in">type</span>(num)) <span class="comment"># &lt;class &#x27;int&#x27;&gt;</span></span><br></pre></td></tr></table></figure><ul><li>야매로 python 코드에 손을 대기 위해서 필요한 첫 번째 관문</li><li>무슨 타입인지 알아야 구글링할 수 있다</li></ul><h2 id="파이썬-기본-자료형"><a href="#파이썬-기본-자료형" class="headerlink" title="파이썬 기본 자료형"></a>파이썬 기본 자료형</h2><ul><li>bool</li><li>int / float</li><li>str</li><li>list</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/python/">python</category>
@@ -557,36 +588,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/06/23/promise-async-await-example/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>blog fix 카피 버튼이 안나오는 문제</title>
-      <link>https://chinsun9.github.io/2021/06/22/blog-fix-copy-button-not-dispalyed/</link>
-      <guid>https://chinsun9.github.io/2021/06/22/blog-fix-copy-button-not-dispalyed/</guid>
-      <pubDate>Tue, 22 Jun 2021 08:35:24 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-fix-copy-button-not-dispalyed20210622/preview.gif&quot; a</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-fix-copy-button-not-dispalyed20210622/preview.gif" alt=" "></p><ul><li>블로그에 코드 스니펫 오른쪽 위에 카피 버튼이 나올 때도 있고 안 나올 때도 있었다</li><li>무한 새로고침하면 종종 모습을 비춘다… (이스터에그도 아닌 것이..)</li></ul><h2 id="환경"><a href="#환경" class="headerlink" title="환경"></a>환경</h2><ul><li>hexo-theme-icarus v4.0.1</li></ul><h2 id="해결하기"><a href="#해결하기" class="headerlink" title="해결하기"></a>해결하기</h2><ul><li>일단 어디서 이 버튼을 생성하는지 알아내야 한다</li><li>버튼이 정상적으로 출력되었을 때 해당 버튼의 클래스명을 확인했다</li><li>그리고 <code>main.js</code>라는 곳에서 동적으로 버튼을 생성하고 있음을 알아냈다</li></ul><figure class="highlight js"><figcaption><span>themes\icarus\source\js\main.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(clipboard, <span class="keyword">typeof</span> ClipboardJS);</span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">typeof</span> ClipboardJS !== <span class="string">&#x27;undefined&#x27;</span> &amp;&amp; clipboard) &#123;</span><br><span class="line">  $(<span class="string">&#x27;figure.highlight&#x27;</span>).each(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> id = <span class="string">&#x27;code-&#x27;</span> + <span class="built_in">Date</span>.now() + ((<span class="built_in">Math</span>.random() * <span class="number">1000</span>) | <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">const</span> button =</span><br><span class="line">      <span class="string">&#x27;&lt;a href=&quot;javascript:;&quot; class=&quot;copy&quot; title=&quot;Copy&quot; data-clipboard-target=&quot;#&#x27;</span> +</span><br><span class="line">      id +</span><br><span class="line">      <span class="string">&#x27; .code&quot;&gt;&lt;i class=&quot;fas fa-copy&quot;&gt;&lt;/i&gt;&lt;/a&gt;&#x27;</span>;</span><br><span class="line">    $(<span class="built_in">this</span>).attr(<span class="string">&#x27;id&#x27;</span>, id);</span><br><span class="line">    $(<span class="built_in">this</span>).find(<span class="string">&#x27;figcaption div.level-right&#x27;</span>).append(button);</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">new</span> ClipboardJS(<span class="string">&#x27;.highlight .copy&#x27;</span>); <span class="comment">// eslint-disable-line no-new</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>조건문에 <code>ClipboardJS</code>가 있으면 버튼을 생성하는데</li><li>main.js에는 ClipboardJS에 대해 따로 선언이 없었고, 외부 라이브러리라는 것을 알았다</li><li>이 ClipboardJS가 어디서 오는지 확인해야 했다</li></ul><figure class="highlight js"><figcaption><span>themes\icarus\layout\common\scripts.jsx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  clipboard &amp;&amp; (</span><br><span class="line">    &lt;script</span><br><span class="line">      src=&#123;cdn(<span class="string">&#x27;clipboard&#x27;</span>, <span class="string">&#x27;2.0.4&#x27;</span>, <span class="string">&#x27;dist/clipboard.min.js&#x27;</span>)&#125;</span><br><span class="line">      <span class="comment">// async</span></span><br><span class="line">      defer</span><br><span class="line">    &gt;&lt;/script&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>layout\common\scripts.jsx</code>에서 가져오는 코드를 확인했는데</li><li><code>async</code>으로 가져오고 있었다</li><li>문제는 clipboardJS가 로드되기 전에 main.js가 먼저 실행되는 문제였다</li><li><code>defer</code>로 수정하니까 잘 동작했다!</li></ul><h2 id="최신-버전-확인"><a href="#최신-버전-확인" class="headerlink" title="최신 버전 확인"></a>최신 버전 확인</h2><ul><li>hexo-theme-icarus v4.2.0</li><li>최신 버전을 확인하니까 defer로 변경되어있었다… (이슈 검색했을 때는 못 찼았다…)</li><li>처음부터 최신 버전을 참고하면 좋았겠다</li></ul><ul><li>9개월 정도 나름대로 커스텀하면서 사용해왔는데,</li><li>나중에 시간 나면 커스텀한 내용을 유지하면서 최신 버전에 맞게 업데이트해줘야겠다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><h3 id="async-defer"><a href="#async-defer" class="headerlink" title="async, defer"></a>async, defer</h3><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement">https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
-      
-      <category domain="https://chinsun9.github.io/tags/async/">async</category>
-      
-      <category domain="https://chinsun9.github.io/tags/defer/">defer</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/06/22/blog-fix-copy-button-not-dispalyed/#disqus_thread</comments>
       
     </item>
     

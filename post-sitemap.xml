@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/07/15/try-running-python-project-in-github/</loc>
+        <lastmod>2021-07-15T04:12:29.580Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/07/15/python-type/</loc>
+        <lastmod>2021-07-15T02:58:41.066Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/07/15/python/</loc>
         <lastmod>2021-07-15T02:54:59.183Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -66,14 +82,6 @@
     <url>
         <loc>https://chinsun9.github.io/2021/07/15/python-str-strip/</loc>
         <lastmod>2021-07-15T01:04:20.699Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/07/15/python-type/</loc>
-        <lastmod>2021-07-15T01:03:30.271Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
