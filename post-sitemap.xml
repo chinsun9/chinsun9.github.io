@@ -8,8 +8,88 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/09/24/gitignore-%EC%8D%A8%EC%84%9C-%EC%BB%A4%EB%B0%8B-%EA%B0%80%EB%B3%8D%EA%B2%8C-%ED%95%98%EA%B8%B020200924/</loc>
+        <lastmod>2021-07-15T04:38:04.135Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/01/06/git-commit-push-%EB%AA%85%EB%A0%B9-%ED%95%A9%EC%B9%98%EA%B8%B0/</loc>
+        <lastmod>2021-07-15T04:37:49.937Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/10/22/denied-requested-access-to-the-resource-is-denied/</loc>
+        <lastmod>2021-07-15T04:37:34.610Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/04/28/aws-credentials-%EC%97%AC%EB%9F%AC%EA%B0%9C/</loc>
+        <lastmod>2021-07-15T04:37:15.649Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/09/%EC%A0%95%EA%B7%9C%EC%8B%9D-%ED%8A%B9%EC%A0%95-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-%EC%A4%84-%EB%9D%BC%EC%9D%B8-%ED%8C%90%EB%8B%A8/</loc>
+        <lastmod>2021-07-15T04:37:08.842Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/01/05/forEach-await-%EC%95%88%EB%90%98%EB%8A%94-%EB%AC%B8%EC%A0%9C/</loc>
+        <lastmod>2021-07-15T04:36:32.276Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</loc>
+        <lastmod>2021-07-15T04:36:06.835Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/12/15/input-number-%ED%99%94%EC%82%B4%ED%91%9C-%EC%97%86%EC%95%A0%EA%B8%B0/</loc>
+        <lastmod>2021-07-15T04:35:52.330Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/12/22/input-spellcheck-off/</loc>
+        <lastmod>2021-07-15T04:35:51.571Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/07/15/python/</loc>
+        <lastmod>2021-07-15T04:33:09.828Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/07/15/try-running-python-project-in-github/</loc>
-        <lastmod>2021-07-15T04:12:29.580Z</lastmod>
+        <lastmod>2021-07-15T04:18:44.258Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,14 +98,6 @@
     <url>
         <loc>https://chinsun9.github.io/2021/07/15/python-type/</loc>
         <lastmod>2021-07-15T02:58:41.066Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/07/15/python/</loc>
-        <lastmod>2021-07-15T02:54:59.183Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -488,14 +560,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</loc>
-        <lastmod>2021-07-14T00:09:28.073Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/09/18/%EC%9E%90%EB%A6%BF%EC%88%98-%EB%8D%94%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-07-14T00:09:28.073Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -657,14 +721,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/11/12/console-log/</loc>
-        <lastmod>2021-07-14T00:09:28.057Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/01/05/forEach-await-%EC%95%88%EB%90%98%EB%8A%94-%EB%AC%B8%EC%A0%9C/</loc>
         <lastmod>2021-07-14T00:09:28.057Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1408,14 +1464,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2021/04/28/aws-credentials-%EC%97%AC%EB%9F%AC%EA%B0%9C/</loc>
-        <lastmod>2021-05-06T00:40:38.080Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2021/04/28/aws-lambda%EC%97%90%EC%84%9C-git%EC%93%B0%EA%B8%B0/</loc>
         <lastmod>2021-05-06T00:40:38.080Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1578,14 +1626,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/24/%EC%A0%95%EA%B7%9C%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%A2%8C%ED%91%9C%EA%BA%BC%EB%82%B4%EA%B8%B0/</loc>
         <lastmod>2021-04-22T05:41:32.552Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/09/%EC%A0%95%EA%B7%9C%EC%8B%9D-%ED%8A%B9%EC%A0%95-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-%EC%A4%84-%EB%9D%BC%EC%9D%B8-%ED%8C%90%EB%8B%A8/</loc>
-        <lastmod>2021-04-22T05:41:32.551Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2232,22 +2272,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/12/15/input-number-%ED%99%94%EC%82%B4%ED%91%9C-%EC%97%86%EC%95%A0%EA%B8%B0/</loc>
-        <lastmod>2021-04-22T05:41:32.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/12/22/input-spellcheck-off/</loc>
-        <lastmod>2021-04-22T05:41:32.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/11/11/insert-update%EC%8B%9C-%EC%9E%90%EB%8F%99%EA%B0%B1%EC%8B%A0-timestamp/</loc>
         <lastmod>2021-04-22T05:41:32.497Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2336,14 +2360,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/09/24/gitignore-%EC%8D%A8%EC%84%9C-%EC%BB%A4%EB%B0%8B-%EA%B0%80%EB%B3%8D%EA%B2%8C-%ED%95%98%EA%B8%B020200924/</loc>
-        <lastmod>2021-04-22T05:41:32.490Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/11/02/github-api%EB%A1%9C-%ED%8A%B9%EC%A0%95-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%9D%98-%EC%BB%A4%EB%B0%8B%EB%82%B4%EC%97%AD-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0/</loc>
         <lastmod>2021-04-22T05:41:32.489Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2385,14 +2401,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/11/12/git-clone-%EC%BB%A4%EB%B0%8B-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%97%86%EC%9D%B4-%EA%B0%80%EB%B3%8D%EA%B2%8C-%ED%81%B4%EB%A1%A0%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-04-22T05:41:32.487Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/01/06/git-commit-push-%EB%AA%85%EB%A0%B9-%ED%95%A9%EC%B9%98%EA%B8%B0/</loc>
         <lastmod>2021-04-22T05:41:32.487Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2513,14 +2521,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2021/01/05/css-%EC%84%A0%EC%96%B8-%EC%88%9C%EC%84%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0-prettier-plugin-style-order/</loc>
-        <lastmod>2021-04-22T05:41:32.481Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/10/22/denied-requested-access-to-the-resource-is-denied/</loc>
         <lastmod>2021-04-22T05:41:32.481Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
