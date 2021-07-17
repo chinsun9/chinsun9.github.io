@@ -9,8 +9,68 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 16 Jul 2021 07:41:56 GMT</pubDate>
+    <pubDate>Sat, 17 Jul 2021 05:29:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>깃허브 템플릿 저장소 만들기</title>
+      <link>https://chinsun9.github.io/2021/07/17/github-template-repo/</link>
+      <guid>https://chinsun9.github.io/2021/07/17/github-template-repo/</guid>
+      <pubDate>Sat, 17 Jul 2021 05:29:10 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;템플릿 레포를 만들어보자&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-template-repo20210716/preview</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>템플릿 레포를 만들어보자</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-template-repo20210716/preview.png" alt=" "></p><ul><li>리액트 프로젝트를 진행할 때, CRA 같은 보일러플레이트로 프로젝트를 시작할 수 있다</li><li>근데 자신만의 린트 설정이나, 따로 설치하는 패키지들이 있다</li><li>이런 것들을 매번 새로운 프로젝트를 생성할 때마다 해준다면 귀찮을 것이다</li><li>이때 깃허브에서는 템플릿 저장소 기능을 활용할 수 있다</li></ul><h2 id="템플릿-저장소-하나-만들기"><a href="#템플릿-저장소-하나-만들기" class="headerlink" title="템플릿 저장소 하나 만들기"></a>템플릿 저장소 하나 만들기</h2><ul><li>템플릿으로 만들 저장소를 만들고,</li><li>원하는 초기 상태를 세팅한다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-template-repo20210716/1.png" alt=" "></p><ul><li>Settings 탭에 들어가면 레포명 설정 아래 바로 템플릿 레포로 지정할 수 있는 체크박스가 있다</li><li>체크 박스를 체크하면 템플릿 레포 완성이다</li></ul><h2 id="템플릿을-사용해서-새-저장소-생성하기"><a href="#템플릿을-사용해서-새-저장소-생성하기" class="headerlink" title="템플릿을 사용해서 새 저장소 생성하기"></a>템플릿을 사용해서 새 저장소 생성하기</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-template-repo20210716/preview.png" alt=" "></p><ul><li>템플릿으로 설정한 저장소를 선택할 수 있다</li></ul><h2 id="다른-사람이-만들어둔-템플릿-사용하기"><a href="#다른-사람이-만들어둔-템플릿-사용하기" class="headerlink" title="다른 사람이 만들어둔 템플릿 사용하기"></a>다른 사람이 만들어둔 템플릿 사용하기</h2><ul><li>다른 사람이 만들어 둔 템플릿 레포가 있을 수 있는데,</li><li>포크해서 내 저장소로 가져오면 바로 사용이 가능하다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-template-repository">https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-template-repository</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/template/">template</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/17/github-template-repo/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>js event loop</title>
+      <link>https://chinsun9.github.io/2021/07/16/js-event-loop/</link>
+      <guid>https://chinsun9.github.io/2021/07/16/js-event-loop/</guid>
+      <pubDate>Fri, 16 Jul 2021 08:07:58 GMT</pubDate>
+      
+        
+        
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/8aGhZQkoFbQ&quot;&gt;https://youtu.be/8aGhZQkoFbQ&lt;/a&gt; 을 보고 정리&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;video-containe</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<blockquote><p><a href="https://youtu.be/8aGhZQkoFbQ">https://youtu.be/8aGhZQkoFbQ</a> 을 보고 정리</p></blockquote><div class="video-container"><iframe src="https://www.youtube.com/embed/8aGhZQkoFbQ" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>비동기 코드는 webapi에서 실행된다</li><li>실행이 완료되면 큐에 들어간다</li><li>큐에서 스택에 아무것도 없기를 기다렸다가</li><li>스택에 들어가고 실행된다</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 첫 번째로 스택에 들어감</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 두 번쨰로 스택에 들어가고 바로 webapi로 들어감</span></span><br><span class="line"><span class="built_in">setTimeout</span>(</span><br><span class="line">  <span class="comment">// webapi에서 큐로 던져짐. console.log(3)이 끝나고 스택이 텅텅 비워져서야 네 번째로 스택에 들어감</span></span><br><span class="line">  () =&gt; &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">2</span>);</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="number">0</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 세 번째로 스택에 들어감</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 1 3 2</span></span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/8aGhZQkoFbQ">https://youtu.be/8aGhZQkoFbQ</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/16/js-event-loop/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js hoisting 호이스팅</title>
@@ -32,9 +92,9 @@
       <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
-      
       <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
       
       
       <comments>https://chinsun9.github.io/2021/07/16/js-hoisting/#disqus_thread</comments>
@@ -402,9 +462,9 @@
       <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
       <category domain="https://chinsun9.github.io/tags/array/">array</category>
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
       
       
       <comments>https://chinsun9.github.io/2021/07/07/js-array-api-mutate-origin/#disqus_thread</comments>
@@ -530,62 +590,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/01/remote-debug-android-chrome/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>js empty array</title>
-      <link>https://chinsun9.github.io/2021/07/01/js-empty-array/</link>
-      <guid>https://chinsun9.github.io/2021/07/01/js-empty-array/</guid>
-      <pubDate>Thu, 01 Jul 2021 01:58:05 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;code&gt;new Array(n)&lt;/code&gt;으로 초기화한 배열에 array api가 동작하지 않았다&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><code>new Array(n)</code>으로 초기화한 배열에 array api가 동작하지 않았다</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">5</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(arr.length, arr); <span class="comment">// 5 [ &lt;5 empty items&gt; ]</span></span><br><span class="line"><span class="built_in">console</span>.log(arr.push(<span class="number">1</span>), arr); <span class="comment">// 6 [ &lt;5 empty items&gt;, 1 ]</span></span><br><span class="line"><span class="built_in">console</span>.log(arr.push(<span class="number">2</span>), arr); <span class="comment">// 7 [ &lt;5 empty items&gt;, 1, 2 ]</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(arr.map(<span class="function">(<span class="params">v</span>) =&gt;</span> v * <span class="number">2</span>)); <span class="comment">// [ &lt;5 empty items&gt;, 2, 4 ]</span></span><br><span class="line"></span><br><span class="line">arr.forEach(<span class="function">(<span class="params">v</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(v);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`-----------`</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index = <span class="number">0</span>; index &lt; arr.length; index++) &#123;</span><br><span class="line">  <span class="keyword">const</span> element = arr[index];</span><br><span class="line">  <span class="built_in">console</span>.log(element);</span><br><span class="line">  arr[index] = <span class="literal">undefined</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`-----------`</span>);</span><br><span class="line"></span><br><span class="line">arr.forEach(<span class="function">(<span class="params">v</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(v);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// undefined</span></span><br></pre></td></tr></table></figure><ul><li>위에 map이나 forEach를 보면 array api가 초기화하지 않은 인덱스에 대해 동작하지 않는 것을 확인할 수 있다</li><li>직접 for문으로 찍어보면 undefined이라 나온다</li><li>그러면서 undefined으로 전부 초기화해줬다</li><li>직접 초기화해주니까 array api forEach가 동작하는 것을 확인할 수 있다</li></ul><ul><li>array api를 동작하지 않는 것을 경험했다</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">5</span>).fill(<span class="number">0</span>);</span><br></pre></td></tr></table></figure><ul><li>이런 식으로 특정 값으로 직접 초기화를 해줘야 스킵되지 않고 정상적으로 api를 사용할 수 있다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/array/">array</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/01/js-empty-array/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>공식문서가 어려운 이유</title>
-      <link>https://chinsun9.github.io/2021/07/01/why-official-docs-difficult/</link>
-      <guid>https://chinsun9.github.io/2021/07/01/why-official-docs-difficult/</guid>
-      <pubDate>Thu, 01 Jul 2021 01:27:11 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;처음 웹 개발을 공부하기 시작할 때 mdn보다 w3school을 가게되는지…&lt;/p&gt;
-&lt;h2 id=&quot;공식문서가-어려운-이유&quot;&gt;&lt;a href=&quot;#공식문서가-어려운-이유&quot; class=&quot;headerlink&quot; title=&quot;공식문서가 어려운 이유&quot;&gt;&lt;/a&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>처음 웹 개발을 공부하기 시작할 때 mdn보다 w3school을 가게되는지…</p><h2 id="공식문서가-어려운-이유"><a href="#공식문서가-어려운-이유" class="headerlink" title="공식문서가 어려운 이유"></a>공식문서가 어려운 이유</h2><ul><li>모르는 걸 모르게 설명한다</li><li>엄청 디테일해서 TMI다</li><li>엄청 생략된 예제</li><li>영어</li></ul><h3 id="모르는-걸-모르게-설명한다"><a href="#모르는-걸-모르게-설명한다" class="headerlink" title="모르는 걸 모르게 설명한다"></a>모르는 걸 모르게 설명한다</h3><ul><li>공식 문서를 작성하시는 분들은 당연히도 그 기술에 대해 빠삭하신 분들이다</li><li>해당 기술을 잘 알고 있는 사람들한테는 최고의 문서일 것이다</li><li>하지만 초보가 문서를 읽었을 때 개발 경험 부족으로 센스가 부족해서</li><li>아주 간단한 것일지라도 막힐 때가 있다</li></ul><ul><li>사전에서 어떤 단어를 찾았는데 그 단어가 또다시 모르는 단어로 설명되어 있는 느낌</li></ul><h3 id="엄청-디테일해서-TMI다"><a href="#엄청-디테일해서-TMI다" class="headerlink" title="엄청 디테일해서 TMI다"></a>엄청 디테일해서 TMI다</h3><ul><li>나는 빨리 헬로월드를 출력하고 싶은데, 뭔가 글이 길고 복잡해 보인다</li><li>install 할 때 여러 옵션들, cli 명령어의 여러 옵션들 등</li><li>실행만 하는데도 너무 어려울 것 같은 인상을 준다</li><li>나는 보통 스크롤이 길고 빼곡한 줄글이 있으면 탈주가 하고 싶다</li></ul><h3 id="엄청-생략된-예제"><a href="#엄청-생략된-예제" class="headerlink" title="엄청 생략된 예제"></a>엄청 생략된 예제</h3><ul><li>프로젝트 세팅 및 디렉터리 구조 등 생략된 것이 많이 있다</li><li>처음 접할 때 내가 튜토리얼을 잘 따라가고 있는지 의문이 들 때가 많이 있다</li><li>명령어를 실행해야 하는 디렉터리가 어디인지</li><li>어디에 파일을 생성해야 하는지</li><li>프로젝트 세팅을 어떻게 해야 하는지</li><li>알고 보면 너무 당연한 베이스지만 초보라면 그것조차 너무 어렵다 ㅠㅠ</li></ul><h3 id="영어"><a href="#영어" class="headerlink" title="영어"></a>영어</h3><ul><li>안 그래도 무슨 말인지 잘 모르는데 영어 ㅠㅠ</li><li>기술 용어들이 많아서 번역을 써도 이상한 경우가 많이 있다</li></ul><h2 id="생각"><a href="#생각" class="headerlink" title="생각"></a>생각</h2><ul><li>공식문서를 보는 게 좋다 주변에서 들었지만</li><li>나는 공식문서 보다가 <code>ctrl w</code>를 누른 적이 너무 많다</li><li>요즘에야 많이 익숙해지고 센스도 늘어서 공식문서를 예전보다는 많이 읽는 편이다</li></ul><ul><li>하지만 요즘도 처음 사용하는 라이브러리라든가</li><li>빠른 프로젝트 적용 또는 시작을 위해 youtube를 참고한다</li><li>영상만큼 직관적인 게 없다고 생각한다</li><li>정적인 문서로는 초보자를 이해시키는 게 어렵다</li><li>영상은 변경사항을 업데이트하기가 어려운 단점이 있다</li><li>영상 제작은 아무래도 노력이 많이 필요하다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/%EC%83%9D%EA%B0%81/">생각</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/%EC%83%9D%EA%B0%81/">생각</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/01/why-official-docs-difficult/#disqus_thread</comments>
       
     </item>
     
