@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</loc>
+        <lastmod>2021-07-19T06:16:29.427Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/07/19/create-electron-category/</loc>
+        <lastmod>2021-07-19T06:16:13.407Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/07/19/js-coercion/</loc>
         <lastmod>2021-07-19T00:41:55.082Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -138,14 +154,6 @@
     <url>
         <loc>https://chinsun9.github.io/2021/01/05/forEach-await-%EC%95%88%EB%90%98%EB%8A%94-%EB%AC%B8%EC%A0%9C/</loc>
         <lastmod>2021-07-15T04:36:32.276Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/05/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%A0%EC%9C%BC%EB%A1%9C-OBS-input-overlay-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/</loc>
-        <lastmod>2021-07-15T04:36:06.835Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

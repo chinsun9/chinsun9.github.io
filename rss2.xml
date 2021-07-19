@@ -9,8 +9,37 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 19 Jul 2021 00:41:55 GMT</pubDate>
+    <pubDate>Mon, 19 Jul 2021 06:16:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>create 카테고리 생성</title>
+      <link>https://chinsun9.github.io/2021/07/19/create-electron-category/</link>
+      <guid>https://chinsun9.github.io/2021/07/19/create-electron-category/</guid>
+      <pubDate>Mon, 19 Jul 2021 06:16:13 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;일렉트론 공부&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>일렉트론 공부</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/electron/">electron</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/category/">category</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/19/create-electron-category/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js coercion</title>
@@ -561,37 +590,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/06/git-clone-using-pat/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>regexp lastIndex</title>
-      <link>https://chinsun9.github.io/2021/07/06/regexp-lastIndex/</link>
-      <guid>https://chinsun9.github.io/2021/07/06/regexp-lastIndex/</guid>
-      <pubDate>Tue, 06 Jul 2021 00:57:34 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;em&gt;정규식 test는 true인데 exec가 동작하지 않는다?!&lt;/em&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;work!&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td cla</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><em>정규식 test는 true인데 exec가 동작하지 않는다?!</em></p><figure class="highlight js"><figcaption><span>work!</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (regexp.test(line)) &#123;</span><br><span class="line">  <span class="comment">// 내부 포인터 재설정</span></span><br><span class="line">  regexp.lastIndex = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> match = regexp.exec(line);</span><br><span class="line">  <span class="keyword">while</span> (match) &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>regexp.lastIndex = 0</code></li></ul><h2 id="잘못된-코드"><a href="#잘못된-코드" class="headerlink" title="잘못된 코드"></a>잘못된 코드</h2><figure class="highlight js"><figcaption><span>not work!</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (regexp.test(line)) &#123;          <span class="comment">// 여기서 lastIndex 갱신</span></span><br><span class="line">  <span class="keyword">let</span> match = regexp.exec(line);  <span class="comment">// 갱신된 lastIndex부터 검색을 시작해서 첫번째 결과가 스킵됨.</span></span><br><span class="line">  <span class="keyword">while</span> (match) &#123;                 <span class="comment">// 라인에 일치하는 패턴이 한개라면 반복문한 한번도 돌지 않음</span></span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>처음에 작성한 코드다</li><li>파일의 라인 한 줄 한 줄 읽으면서</li><li>정규식 패턴과 일치하는 라인이라면</li><li>결괏값을 받도록 만들었는데, 이상하게도 제대로 동작하지 않았다</li><li>알고 보니까 <code>test()</code> 메서드도 lastIndex를 갱신했었다…</li><li>사실 저 <code>if (regexp.test(line)) &#123;</code>은 필요 없는 코드 같다</li><li><code>test</code>와 <code>exec</code>를 같이 쓸 때 주의가 필요하다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/regexp/">regexp</category>
-      
-      <category domain="https://chinsun9.github.io/tags/lastIndex/">lastIndex</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/06/regexp-lastIndex/#disqus_thread</comments>
       
     </item>
     
