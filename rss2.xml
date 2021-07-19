@@ -9,11 +9,11 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 19 Jul 2021 06:16:13 GMT</pubDate>
+    <pubDate>Mon, 19 Jul 2021 08:28:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>create 카테고리 생성</title>
+      <title>electron 카테고리 생성</title>
       <link>https://chinsun9.github.io/2021/07/19/create-electron-category/</link>
       <guid>https://chinsun9.github.io/2021/07/19/create-electron-category/</guid>
       <pubDate>Mon, 19 Jul 2021 06:16:13 GMT</pubDate>
