@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sun, 18 Jul 2021 02:13:19 GMT</pubDate>
+    <pubDate>Mon, 19 Jul 2021 00:41:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js coercion</title>
+      <link>https://chinsun9.github.io/2021/07/19/js-coercion/</link>
+      <guid>https://chinsun9.github.io/2021/07/19/js-coercion/</guid>
+      <pubDate>Mon, 19 Jul 2021 00:41:55 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;서로 다른 타입끼리 연산을 할 때, 타입 캐스팅이 일어난다&lt;/li&gt;
+&lt;li&gt;js에서는 이를 &lt;code&gt;coercion&lt;/code&gt; 이라고 부르는 것 같다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;js에서 서로 다른 타입 간의 연산을 하더라도</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>서로 다른 타입끼리 연산을 할 때, 타입 캐스팅이 일어난다</li><li>js에서는 이를 <code>coercion</code> 이라고 부르는 것 같다</li></ul><ul><li>js에서 서로 다른 타입 간의 연산을 하더라도 웬만하면 에러가 안 뜬다</li><li>어느 한쪽을 기준으로 자동 캐스팅되어서 js를 처음 배울 때 너무 편했다</li><li>이런 강제 형변환이 직관적이라고 생각할 때도 있지만, 가끔 실수할 때가 있다</li><li>나는 처음 js를 배울 때 <code>var</code>보다는 <code>const</code>, <code>let</code></li><li><code>==</code>보다는 <code>===</code>를 사용하라고 배워서 그냥 그런가 보다 하고 따랐었는데,</li><li>특히 조건문에서 강제 형변환은 예상하지 못한 동작들을 많이 만들어내는 것 같다</li><li><code>===</code>, <code>!==</code>를 사용함으로써 강제 형변환 없이 비교해 볼 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://jihyehwang09.github.io/2019/04/05/33-js-type-coercion/">https://jihyehwang09.github.io/2019/04/05/33-js-type-coercion/</a></li><li><a href="https://github.com/leonardomso/33-js-concepts">https://github.com/leonardomso/33-js-concepts</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/19/js-coercion/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js fetch 요청 취소, 중단하기</title>
@@ -124,9 +155,9 @@
       <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
       <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
       
       
       <comments>https://chinsun9.github.io/2021/07/16/js-hoisting/#disqus_thread</comments>
@@ -494,9 +525,9 @@
       <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/array/">array</category>
-      
       <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/array/">array</category>
       
       
       <comments>https://chinsun9.github.io/2021/07/07/js-array-api-mutate-origin/#disqus_thread</comments>
@@ -561,36 +592,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/06/regexp-lastIndex/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode 나만의 스니펫 만들어서 사용하기</title>
-      <link>https://chinsun9.github.io/2021/07/02/vscode-custom-snippet/</link>
-      <guid>https://chinsun9.github.io/2021/07/02/vscode-custom-snippet/</guid>
-      <pubDate>Fri, 02 Jul 2021 00:44:36 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;상황&quot;&gt;&lt;a href=&quot;#상황&quot; class=&quot;headerlink&quot; title=&quot;상황&quot;&gt;&lt;/a&gt;상황&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;여러 테스트 파일을 만드는데, 기본적으로 작성해야 하는 틀이 있다&lt;/li&gt;
-&lt;li&gt;기본 틀이 되는 코드를 &lt;em&gt;s</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>여러 테스트 파일을 만드는데, 기본적으로 작성해야 하는 틀이 있다</li><li>기본 틀이 되는 코드를 <em>scaffold.test.ts</em> 파일로 만들어서 내용을 복사해서 사용하거나, 복사본을 만들면서 새로운 테스트 파일들을 생성했다</li><li>반복하다 보니까 이마저도 불편했다</li><li>그러다가 커스텀 스니펫을 만들기로 한다</li></ul><h2 id="목표"><a href="#목표" class="headerlink" title="목표"></a>목표</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-custom-snippet20210701/preview.gif" alt=" "></p><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * problem</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line">describe(<span class="string">&#x27;id&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  test(<span class="string">&#x27;should &#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    expect(solution(prams)).toEqual(er);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><ul><li>내 목표는 <code>te</code>를 입력하면 내가 등록한 스니펫을 통해 위 코드를 완성시킬 것이다</li></ul><h2 id="스니펫-만들기"><a href="#스니펫-만들기" class="headerlink" title="스니펫 만들기"></a>스니펫 만들기</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-custom-snippet20210701/1.png" alt=" "></p><ul><li>상단바에서</li><li><code>File &gt; Preferences &gt; User Snippets</code> 을 선택한다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-custom-snippet20210701/2.png" alt=" "></p><ul><li>어떤 언어에서 만들 것인지 선택한다</li><li>나는 타입스크립트에서 사용할 것이다</li><li>그러면 <code>%userprofile%\AppData\Roaming\Code\User\snippets\typescript.json</code>이라는 파일이 생성되고</li><li>설명과 예제가 나와있다</li></ul><figure class="highlight json"><figcaption><span>%userprofile%\AppData\Roaming\Code\User\snippets\typescript.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// Place your snippets for typescript here. Each snippet is defined under a snippet name and has a prefix, body and</span></span><br><span class="line">  <span class="comment">// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:</span></span><br><span class="line">  <span class="comment">// $1, $2 for tab stops, $0 for the final cursor position, and $&#123;1:label&#125;, $&#123;2:another&#125; for placeholders. Placeholders with the</span></span><br><span class="line">  <span class="comment">// same ids are connected.</span></span><br><span class="line">  <span class="comment">// Example:</span></span><br><span class="line">  <span class="attr">&quot;cotejs test&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;prefix&quot;</span>: <span class="string">&quot;te&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;body&quot;</span>: [</span><br><span class="line">      <span class="string">&quot;/**&quot;</span>,</span><br><span class="line">      <span class="string">&quot;* $&#123;1:problem&#125;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;*/&quot;</span>,</span><br><span class="line">      <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;describe(&#x27;$&#123;2:id&#125;&#x27;, () =&gt; &#123;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;$0&quot;</span>,</span><br><span class="line">      <span class="string">&quot;  test(&#x27;should &#x27;, () =&gt; &#123;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;    expect(solution($&#123;3:prams&#125;)).toEqual(er);&quot;</span>,</span><br><span class="line">      <span class="string">&quot;  &#125;);&quot;</span>,</span><br><span class="line">      <span class="string">&quot;&#125;);&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;base&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>prefix ; 나는 <code>te</code>로 설정했다. 스니펫이 어떤 문자열에 추천될지 설정하는 곳이다</li><li>body ; 내가 완성시키고 싶은 스니펫을 등록한다. 줄 바꿈을 기준으로 배열로 쪼개 줘야 한다</li><li>description ; 스니펫에 대한 설명을 적는다</li></ul><ul><li>특히 자동 완성할 때 tab를 누르면 커서가 원하는 순서로 이동하게 할 수 있다</li><li><code>$1, $2, $3,..., $n, $0</code>을 통해서 가능하다</li><li>각 커서에 기본값을 추가하고 싶으면 <code>$&#123;1:one&#125;</code> 이런 식으로 가능하다</li><li><code>$0</code>은 마지막 커서 위치를 설정할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets">https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/snippet/">snippet</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/02/vscode-custom-snippet/#disqus_thread</comments>
       
     </item>
     
