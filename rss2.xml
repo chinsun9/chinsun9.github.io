@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 20 Jul 2021 08:23:27 GMT</pubDate>
+    <pubDate>Thu, 22 Jul 2021 07:22:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>yarn create</title>
+      <link>https://chinsun9.github.io/2021/07/22/yarn-create/</link>
+      <guid>https://chinsun9.github.io/2021/07/22/yarn-create/</guid>
+      <pubDate>Thu, 22 Jul 2021 07:22:40 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight bash"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># npx create-react-app my-app</span></span><br><span class="line">yarn create react-app my-app</span><br><span class="line"></span><br><span class="line"><span class="comment"># npx create-electron-app my-app</span></span><br><span class="line">yarn create electron-app my-app</span><br></pre></td></tr></table></figure><ul><li>보통 보일러플레이트로 프로젝트를 시작할 때 <code>npx</code>를 사용한다</li><li><code>yarn create</code>는 <code>create</code>로 시작하는 패키지를 설치할 때 <code>npx</code>와 동일하게 동작한다</li></ul><h2 id="npx-vs-npm-i-g"><a href="#npx-vs-npm-i-g" class="headerlink" title="npx vs. npm i -g"></a>npx vs. npm i -g</h2><ul><li>보일러플레이트로 시작할 때 크게 두 가지 방법이 있는데,</li><li><code>npx</code>로 시작하는 방법과, 글로벌 설치 후 cli로 시작하는 방법이 있다</li><li>보통 보일러플레이트 패키지는 <code>npx</code>를 권장하는데, 이유는 <code>npx</code>는 항상 최신 버전으로 설치해준다</li><li>반면 글로벌로 설치해서 사용하는 경우, 시간이 지나면 구버전이 되고, 업데이트는 하려면 수동으로 해줘야 한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://classic.yarnpkg.com/en/docs/cli/create/">https://classic.yarnpkg.com/en/docs/cli/create/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/boilerplate/">boilerplate</category>
+      
+      <category domain="https://chinsun9.github.io/tags/yarn/">yarn</category>
+      
+      <category domain="https://chinsun9.github.io/tags/npx/">npx</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/22/yarn-create/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>powershell로 환경변수 추가하기</title>
@@ -212,9 +244,9 @@
       <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
-      
       <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
       
       
       <comments>https://chinsun9.github.io/2021/07/16/js-hoisting/#disqus_thread</comments>
@@ -560,34 +592,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/07/js-spread-syntax/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>js array.sort()가 원본을 바꾼다</title>
-      <link>https://chinsun9.github.io/2021/07/07/js-array-api-mutate-origin/</link>
-      <guid>https://chinsun9.github.io/2021/07/07/js-array-api-mutate-origin/</guid>
-      <pubDate>Wed, 07 Jul 2021 05:53:21 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/js-array-api-mutate-origin20210707/preview.png&quot; alt=&quot; &quot;&gt;&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/js-array-api-mutate-origin20210707/preview.png" alt=" "></p><ul><li>가끔 원본이 바뀌어서 예상치 못한 동작을 할 때가 있다</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 원본인 arr 이 정렬됨</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">  <span class="keyword">const</span> sortedArr = arr.sort(<span class="function">(<span class="params">a, b</span>) =&gt;</span> b - a);</span><br><span class="line">  <span class="built_in">console</span>.log(arr === sortedArr); <span class="comment">// true</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 원본인 arr를 살리면서 정렬된 새 배열 얻기</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">  <span class="keyword">const</span> sortedArr = [...arr].sort(<span class="function">(<span class="params">a, b</span>) =&gt;</span> b - a);</span><br><span class="line">  <span class="built_in">console</span>.log(arr === sortedArr); <span class="comment">// false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>[...arr]</code> 이런 식으로 배열을 복사할 수 있다</li></ul><h2 id="하나-더-배열-복사할-때-주의할-점"><a href="#하나-더-배열-복사할-때-주의할-점" class="headerlink" title="하나 더, 배열 복사할 때 주의할 점"></a>하나 더, 배열 복사할 때 주의할 점</h2><ul><li>그런데 <code>number[]</code> 타입이 아니라 <code>&#123;...&#125;[]</code>같은 객체 배열이라면</li><li><code>[...arr]</code> 연산으로 새로운 배열이 만들어지기는 하지만</li><li>원소 하나하나는 여전히 <code>call by reference</code> 이기 때문에</li><li>완전한 복사본(깊은 복사)을 얻은 게 아니라는 점을 유의해야 한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Spread_syntax">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Spread_syntax</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/array/">array</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/07/js-array-api-mutate-origin/#disqus_thread</comments>
       
     </item>
     
