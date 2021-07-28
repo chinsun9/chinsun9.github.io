@@ -9,8 +9,68 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 22 Jul 2021 07:34:13 GMT</pubDate>
+    <pubDate>Wed, 28 Jul 2021 01:13:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>postgresql commands</title>
+      <link>https://chinsun9.github.io/2021/07/28/postgresql-commands/</link>
+      <guid>https://chinsun9.github.io/2021/07/28/postgresql-commands/</guid>
+      <pubDate>Wed, 28 Jul 2021 01:13:08 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;**SQL Shell (psql)**에서 명령&lt;br&gt;postgreql 처음 써보는 데 사용한 명령어 및 커넥션 설정 정리&lt;/p&gt;
+&lt;h2 id=&quot;psql&quot;&gt;&lt;a href=&quot;#psql&quot; class=&quot;headerlink&quot; title=&quot;psql&quot;&gt;&lt;/a</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>**SQL Shell (psql)**에서 명령<br>postgreql 처음 써보는 데 사용한 명령어 및 커넥션 설정 정리</p><h2 id="psql"><a href="#psql" class="headerlink" title="psql"></a>psql</h2><figure class="highlight sql"><figcaption><span>psql commands</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 데이터베이스 생성</span></span><br><span class="line"><span class="keyword">CREATE</span> DATABASE student;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 유저 생성</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> sung <span class="keyword">WITH</span> PASSWORD <span class="string">&#x27;1234&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 권한 부여</span></span><br><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> PRIVILEGES <span class="keyword">ON</span> DATABASE student <span class="keyword">TO</span> sung;</span><br></pre></td></tr></table></figure><ul><li>대소문자 구분은 안 해도 된다</li></ul><h2 id="connection"><a href="#connection" class="headerlink" title="connection"></a>connection</h2><figure class="highlight properties"><figcaption><span>application.properties</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">spring.datasource.url</span>=<span class="string">jdbc:postgresql://localhost:5432/student</span></span><br><span class="line"><span class="meta">spring.datasource.username</span>=<span class="string">sung</span></span><br><span class="line"><span class="meta">spring.datasource.password</span>=<span class="string">1234</span></span><br><span class="line"><span class="meta">spring.jpa.hibernate.ddl-auto</span>=<span class="string">create-drop</span></span><br><span class="line"><span class="meta">spring.jpa.show-sql</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">spring.jpa.properties.hibernate.dialect</span>=<span class="string">org.hibernate.dialect.PostgreSQLDialect</span></span><br><span class="line"><span class="meta">spring.jpa.properties.hibernate.format_sql</span>=<span class="string">true</span></span><br></pre></td></tr></table></figure><h2 id="jdbc"><a href="#jdbc" class="headerlink" title="jdbc"></a>jdbc</h2><ul><li><a href="https://jdbc.postgresql.org/download.html">https://jdbc.postgresql.org/download.html</a></li><li>최신 버전의 postgresql을 사용하면 4.2를 다운로드하면 된다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/9SGDpanrc8U">https://youtu.be/9SGDpanrc8U</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/sql/">sql</category>
+      
+      <category domain="https://chinsun9.github.io/tags/postgresql/">postgresql</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/28/postgresql-commands/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>eclipse command palette</title>
+      <link>https://chinsun9.github.io/2021/07/28/eclipse-command-palette/</link>
+      <guid>https://chinsun9.github.io/2021/07/28/eclipse-command-palette/</guid>
+      <pubDate>Wed, 28 Jul 2021 00:39:08 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;code&gt;Ctrl 3&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vscode에서 명령 팔레트를 자주 쓰는데, 이클립스에서도 같은 기능이 있는지 확인해보았다&lt;/li&gt;
+&lt;li&gt;이클립스에서 빠르게 파일을 열어보고 싶은데 vscode에서 &lt;code&gt;Ctrl </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><code>Ctrl 3</code></p><ul><li>vscode에서 명령 팔레트를 자주 쓰는데, 이클립스에서도 같은 기능이 있는지 확인해보았다</li><li>이클립스에서 빠르게 파일을 열어보고 싶은데 vscode에서 <code>Ctrl P</code> 같은 명령어가 있는지 확인해보았다</li><li>Open resource, 단축키 <code>Ctrl Shift R</code>로 파일을 빠르게 열어볼 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/10370567/choose-command-popup-in-eclipse/23310954">https://stackoverflow.com/questions/10370567/choose-command-popup-in-eclipse/23310954</a></li><li><a href="https://stackoverflow.com/questions/3859632/what-is-the-keyboard-shortcut-to-go-to-a-file-in-eclipse-on-mac-os-x">https://stackoverflow.com/questions/3859632/what-is-the-keyboard-shortcut-to-go-to-a-file-in-eclipse-on-mac-os-x</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/java/">java</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/java/">java</category>
+      
+      <category domain="https://chinsun9.github.io/tags/eclipse/">eclipse</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/28/eclipse-command-palette/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>일렉트론 타입스크립트로 시작하기</title>
@@ -272,9 +332,9 @@
       <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
       <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
       
       
       <comments>https://chinsun9.github.io/2021/07/16/js-hoisting/#disqus_thread</comments>
@@ -533,65 +593,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/12/202106-search-performance-report/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode extension insertdatestring</title>
-      <link>https://chinsun9.github.io/2021/07/10/vscode-extension-insertdatestring/</link>
-      <guid>https://chinsun9.github.io/2021/07/10/vscode-extension-insertdatestring/</guid>
-      <pubDate>Sat, 10 Jul 2021 13:25:01 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-extension-insertdatestring20210710/preview.png&quot; al</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-extension-insertdatestring20210710/preview.png" alt=" "></p><ul><li>메모장에서 F5를 누르면 현재 시각이 찍힌다</li><li>vscode에서도 그런 기능이 있나 살펴보았다</li><li>없으면 확장도구!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring">https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring</a></li><li><a href="https://github.com/jsynowiec/vscode-insertdatestring">https://github.com/jsynowiec/vscode-insertdatestring</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/10/vscode-extension-insertdatestring/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>update to wsl2</title>
-      <link>https://chinsun9.github.io/2021/07/10/update-to-wsl2/</link>
-      <guid>https://chinsun9.github.io/2021/07/10/update-to-wsl2/</guid>
-      <pubDate>Sat, 10 Jul 2021 13:24:40 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;em&gt;오후 9:53 2021-07-10 작성됨&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl22021</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><em>오후 9:53 2021-07-10 작성됨</em></p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl220210710/preview.png" alt=" "></p><ul><li><strong>Remote - WSL</strong> 확장도구가 너는 WSL1을 사용 중인데, WSL2로 업그레이드해라 알려줘서 업데이트했다</li></ul><h2 id="WSL2로-업데이트하기"><a href="#WSL2로-업데이트하기" class="headerlink" title="WSL2로 업데이트하기"></a>WSL2로 업데이트하기</h2><ul><li><code>Read More</code> 버튼을 누른다<ul><li><a href="https://docs.microsoft.com/en-us/windows/wsl/compare-versions">https://docs.microsoft.com/en-us/windows/wsl/compare-versions</a></li></ul></li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl220210710/1.png" alt=" "></p><ul><li><p>둘 버전이 어떤 차이가 있는지 알려주는 페이지가 켜진다</p></li><li><p><code>Install WSL 1 and update to WSL 2</code> 버튼을 누른다</p><ul><li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps">https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps</a></li></ul></li><li><p>Windows Insiders는 간편하게 명령어 하나로 업그레이드 가능하다고 한다</p></li><li><p><code>wsl --install</code> 해보고 안되면 수동 설치를 하면 된다</p></li><li><p>수동 설치도 명령어 4번으로 간편하다</p></li><li><p>중간에 WSL2를 위한 요구사항을 체크해야 하는데,</p></li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl220210710/2.png" alt=" "></p><ul><li>Ctrl + R <code>msinfo32</code> 또는 윈도우키로 시작 메뉴를 열고 <code>시스템 정보</code>를 입력해서 요구사항을 확인한다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl220210710/4.png" alt=" "></p><figure class="highlight ps1"><figcaption><span>PowerShell (Administrator)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dism.exe /online /<span class="built_in">enable-feature</span> /featurename:Microsoft<span class="literal">-Windows</span><span class="literal">-Subsystem</span><span class="literal">-Linux</span> /all /norestart</span><br><span class="line">dism.exe /online /<span class="built_in">enable-feature</span> /featurename:VirtualMachinePlatform /all /norestart</span><br></pre></td></tr></table></figure><ul><li>위 명령어 입력 후 컴퓨터 재부팅</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl220210710/3.png" alt=" "></p><ul><li>step4에서 리눅스 커널 업데이트 패키지라는 것을 다운로드하고 실행한다<ul><li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package">https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package</a></li></ul></li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/update-to-wsl220210710/5.png" alt=" "></p><figure class="highlight ps1"><figcaption><span>PowerShell (Administrator)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wsl -<span class="literal">-set</span><span class="literal">-default</span><span class="literal">-version</span> <span class="number">2</span></span><br><span class="line">wsl -<span class="literal">-list</span> <span class="comment"># 설치된 배포판 이름 확인</span></span><br><span class="line">wsl -<span class="literal">-set</span><span class="literal">-version</span> &#123;배포판 이름&#125; <span class="number">2</span> <span class="comment"># wsl --set-version Ubuntu-20.04 2</span></span><br></pre></td></tr></table></figure><ul><li>갑자기 cmd를 썼는데, 중간에 재부팅해서 일관적으로 캡처하지 못했다 ㅠ (뭘 쓰던 상관은 없다.)</li><li>기존에 WSL을 사용하고 있는 사람에 한해서 <code>wsl --set-version</code> 명령을 실행해줘야 한다</li><li>가이드 문서를 다 따라 했는데, vscode를 켜고 Remote WSL를 사용하면 여전히 WSL1을 쓰고 있다고 말한다</li><li>알고 보니까 기존 배포판은 그대로 버전 1이 적용되고 있다</li><li>기존 배포판에 WSL2를 적용하려면 <code>wsl --set-version &#123;배포판 이름&#125; &#123;타깃 버전&#125;</code>까지 실행해줘야 한다</li><li>5분 정도 걸렸나? 시간이 조금 걸리는 작업이다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.microsoft.com/en-us/windows/wsl/compare-versions">https://docs.microsoft.com/en-us/windows/wsl/compare-versions</a></li><li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps">https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/windows/">windows</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/windows/">windows</category>
-      
-      <category domain="https://chinsun9.github.io/tags/wsl/">wsl</category>
-      
-      <category domain="https://chinsun9.github.io/tags/wsl2/">wsl2</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/10/update-to-wsl2/#disqus_thread</comments>
       
     </item>
     
