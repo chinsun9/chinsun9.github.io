@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/07/29/how-to-install-raspberrypi-os/</loc>
+        <lastmod>2021-07-29T08:49:35.863Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/07/28/postgresql-commands/</loc>
-        <lastmod>2021-07-28T01:13:08.062Z</lastmod>
+        <lastmod>2021-07-29T08:31:10.952Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

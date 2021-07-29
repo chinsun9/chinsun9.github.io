@@ -9,8 +9,37 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 28 Jul 2021 01:13:08 GMT</pubDate>
+    <pubDate>Thu, 29 Jul 2021 08:49:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>라즈베리파이에 라즈비안 설치 및 설정</title>
+      <link>https://chinsun9.github.io/2021/07/29/how-to-install-raspberrypi-os/</link>
+      <guid>https://chinsun9.github.io/2021/07/29/how-to-install-raspberrypi-os/</guid>
+      <pubDate>Thu, 29 Jul 2021 08:49:35 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;라즈베리파이에 &lt;strong&gt;Raspberry Pi OS Lite&lt;/strong&gt; 를 설치해보자&lt;/p&gt;
+&lt;h2 id=&quot;라즈비안-이미지-받기&quot;&gt;&lt;a href=&quot;#라즈비안-이미지-받기&quot; class=&quot;headerlink&quot; title=&quot;라즈비안 이미지 </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>라즈베리파이에 <strong>Raspberry Pi OS Lite</strong> 를 설치해보자</p><h2 id="라즈비안-이미지-받기"><a href="#라즈비안-이미지-받기" class="headerlink" title="라즈비안 이미지 받기"></a>라즈비안 이미지 받기</h2><ul><li><a href="https://www.raspberrypi.org/software/operating-systems/">https://www.raspberrypi.org/software/operating-systems/</a></li><li><code>Raspberry Pi OS Lite</code>를 다운로드한다</li></ul><h2 id="sd-카드-준비"><a href="#sd-카드-준비" class="headerlink" title="sd 카드 준비"></a>sd 카드 준비</h2><ul><li><a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a></li><li><code>balenaEtcher</code> 설치한다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/how-to-install-raspberrypi-os20210729/preview.png" alt=" "></p><ul><li>라즈비안 이미지를 선택하고</li><li>인스톨한 sd카드를 선택하여 os를 설치한다</li></ul><h2 id="와이파이로-인터넷-연결하기"><a href="#와이파이로-인터넷-연결하기" class="headerlink" title="와이파이로 인터넷 연결하기"></a>와이파이로 인터넷 연결하기</h2><ul><li>sd카드를 꼽고,</li><li>hdmi로 모니터와 키보드를 연결하고 전원을 켠다</li><li>기본 계정은 pi / raspberry 이다</li><li>와이파이로 인터넷을 연결해주겠다</li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo raspi-config</span><br></pre></td></tr></table></figure><ul><li>system option -&gt; wireless lan -&gt; GB (영국) -&gt; 와이파이명 -&gt; 와이파이 비밀번호 -&gt; 리부트</li><li>재부팅 후에 인터넷 연결을 확인하기 위해 <code>ifconfig</code> 명령을 실행하여 확인해준다</li></ul><h2 id="ssh-설정하기"><a href="#ssh-설정하기" class="headerlink" title="ssh 설정하기"></a>ssh 설정하기</h2><p>외부에서 리모트로 개발하기 위해 ssh 설정을 해줘야 한다</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo raspi-config</span><br></pre></td></tr></table></figure><ul><li>interface option -&gt; ssh -&gt; enable</li><li>이제 리모트 할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.raspberrypi.org/software/operating-systems/">https://www.raspberrypi.org/software/operating-systems/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/etc/">etc</category>
+      
+      <category domain="https://chinsun9.github.io/tags/raspberrypi/">raspberrypi</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/29/how-to-install-raspberrypi-os/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>postgresql commands</title>
@@ -20,13 +49,13 @@
       
         
         
-      <description>&lt;p&gt;**SQL Shell (psql)**에서 명령&lt;br&gt;postgreql 처음 써보는 데 사용한 명령어 및 커넥션 설정 정리&lt;/p&gt;
-&lt;h2 id=&quot;psql&quot;&gt;&lt;a href=&quot;#psql&quot; class=&quot;headerlink&quot; title=&quot;psql&quot;&gt;&lt;/a</description>
+      <description>&lt;p&gt;&lt;strong&gt;SQL Shell (psql)&lt;/strong&gt; 에서 명령&lt;br&gt;postgreql 처음 써보는 데 사용한 명령어 및 커넥션 설정 정리&lt;/p&gt;
+&lt;h2 id=&quot;psql&quot;&gt;&lt;a href=&quot;#psql&quot; class=&quot;headerlink&quot; ti</description>
         
       
       
       
-      <content:encoded><![CDATA[<p>**SQL Shell (psql)**에서 명령<br>postgreql 처음 써보는 데 사용한 명령어 및 커넥션 설정 정리</p><h2 id="psql"><a href="#psql" class="headerlink" title="psql"></a>psql</h2><figure class="highlight sql"><figcaption><span>psql commands</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 데이터베이스 생성</span></span><br><span class="line"><span class="keyword">CREATE</span> DATABASE student;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 유저 생성</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> sung <span class="keyword">WITH</span> PASSWORD <span class="string">&#x27;1234&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 권한 부여</span></span><br><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> PRIVILEGES <span class="keyword">ON</span> DATABASE student <span class="keyword">TO</span> sung;</span><br></pre></td></tr></table></figure><ul><li>대소문자 구분은 안 해도 된다</li></ul><h2 id="connection"><a href="#connection" class="headerlink" title="connection"></a>connection</h2><figure class="highlight properties"><figcaption><span>application.properties</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">spring.datasource.url</span>=<span class="string">jdbc:postgresql://localhost:5432/student</span></span><br><span class="line"><span class="meta">spring.datasource.username</span>=<span class="string">sung</span></span><br><span class="line"><span class="meta">spring.datasource.password</span>=<span class="string">1234</span></span><br><span class="line"><span class="meta">spring.jpa.hibernate.ddl-auto</span>=<span class="string">create-drop</span></span><br><span class="line"><span class="meta">spring.jpa.show-sql</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">spring.jpa.properties.hibernate.dialect</span>=<span class="string">org.hibernate.dialect.PostgreSQLDialect</span></span><br><span class="line"><span class="meta">spring.jpa.properties.hibernate.format_sql</span>=<span class="string">true</span></span><br></pre></td></tr></table></figure><h2 id="jdbc"><a href="#jdbc" class="headerlink" title="jdbc"></a>jdbc</h2><ul><li><a href="https://jdbc.postgresql.org/download.html">https://jdbc.postgresql.org/download.html</a></li><li>최신 버전의 postgresql을 사용하면 4.2를 다운로드하면 된다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/9SGDpanrc8U">https://youtu.be/9SGDpanrc8U</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><strong>SQL Shell (psql)</strong> 에서 명령<br>postgreql 처음 써보는 데 사용한 명령어 및 커넥션 설정 정리</p><h2 id="psql"><a href="#psql" class="headerlink" title="psql"></a>psql</h2><figure class="highlight sql"><figcaption><span>psql commands</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 데이터베이스 생성</span></span><br><span class="line"><span class="keyword">CREATE</span> DATABASE student;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 유저 생성</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> sung <span class="keyword">WITH</span> PASSWORD <span class="string">&#x27;1234&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 권한 부여</span></span><br><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> PRIVILEGES <span class="keyword">ON</span> DATABASE student <span class="keyword">TO</span> sung;</span><br></pre></td></tr></table></figure><ul><li>대소문자 구분은 안 해도 된다</li></ul><h2 id="connection"><a href="#connection" class="headerlink" title="connection"></a>connection</h2><figure class="highlight properties"><figcaption><span>application.properties</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">spring.datasource.url</span>=<span class="string">jdbc:postgresql://localhost:5432/student</span></span><br><span class="line"><span class="meta">spring.datasource.username</span>=<span class="string">sung</span></span><br><span class="line"><span class="meta">spring.datasource.password</span>=<span class="string">1234</span></span><br><span class="line"><span class="meta">spring.jpa.hibernate.ddl-auto</span>=<span class="string">create-drop</span></span><br><span class="line"><span class="meta">spring.jpa.show-sql</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">spring.jpa.properties.hibernate.dialect</span>=<span class="string">org.hibernate.dialect.PostgreSQLDialect</span></span><br><span class="line"><span class="meta">spring.jpa.properties.hibernate.format_sql</span>=<span class="string">true</span></span><br></pre></td></tr></table></figure><h2 id="jdbc"><a href="#jdbc" class="headerlink" title="jdbc"></a>jdbc</h2><ul><li><a href="https://jdbc.postgresql.org/download.html">https://jdbc.postgresql.org/download.html</a></li><li>최신 버전의 postgresql을 사용하면 4.2를 다운로드하면 된다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/9SGDpanrc8U">https://youtu.be/9SGDpanrc8U</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
@@ -567,32 +596,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/15/create-python-category/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>202106 검색 실적</title>
-      <link>https://chinsun9.github.io/2021/07/12/202106-search-performance-report/</link>
-      <guid>https://chinsun9.github.io/2021/07/12/202106-search-performance-report/</guid>
-      <pubDate>Mon, 12 Jul 2021 07:08:12 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202106-search-performance-report20210712/preview.png&quot; alt</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202106-search-performance-report20210712/preview.png" alt=" "></p>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/12/202106-search-performance-report/#disqus_thread</comments>
       
     </item>
     
