@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 29 Jul 2021 08:49:35 GMT</pubDate>
+    <pubDate>Thu, 29 Jul 2021 08:57:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>라즈베리파이에 깃, 도커 설치하기</title>
+      <link>https://chinsun9.github.io/2021/07/29/install-git-docker-on-raspberrypi/</link>
+      <guid>https://chinsun9.github.io/2021/07/29/install-git-docker-on-raspberrypi/</guid>
+      <pubDate>Thu, 29 Jul 2021 08:57:14 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/install-git-docker-on-raspberrypi20210729/preview.png&quot; al</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/install-git-docker-on-raspberrypi20210729/preview.png" alt=" "></p><h3 id="git-설치"><a href="#git-설치" class="headerlink" title="git 설치"></a>git 설치</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure><h3 id="docker-설치"><a href="#docker-설치" class="headerlink" title="docker 설치"></a>docker 설치</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://get.docker.com -o get-docker.sh</span><br><span class="line">sudo sh get-docker.sh</span><br><span class="line">docker -v</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98">https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98</a></li><li><a href="https://docs.docker.com/engine/install/debian/">https://docs.docker.com/engine/install/debian/</a></li><li><a href="/2021/07/29/how-to-install-raspberrypi-os/">라즈베리파이에 라즈비안 설치 및 설정</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/docker/">docker</category>
+      
+      <category domain="https://chinsun9.github.io/tags/raspberrypi/">raspberrypi</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/29/install-git-docker-on-raspberrypi/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>라즈베리파이에 라즈비안 설치 및 설정</title>
@@ -26,13 +56,11 @@
       
       
       
-      <content:encoded><![CDATA[<p>라즈베리파이에 <strong>Raspberry Pi OS Lite</strong> 를 설치해보자</p><h2 id="라즈비안-이미지-받기"><a href="#라즈비안-이미지-받기" class="headerlink" title="라즈비안 이미지 받기"></a>라즈비안 이미지 받기</h2><ul><li><a href="https://www.raspberrypi.org/software/operating-systems/">https://www.raspberrypi.org/software/operating-systems/</a></li><li><code>Raspberry Pi OS Lite</code>를 다운로드한다</li></ul><h2 id="sd-카드-준비"><a href="#sd-카드-준비" class="headerlink" title="sd 카드 준비"></a>sd 카드 준비</h2><ul><li><a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a></li><li><code>balenaEtcher</code> 설치한다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/how-to-install-raspberrypi-os20210729/preview.png" alt=" "></p><ul><li>라즈비안 이미지를 선택하고</li><li>인스톨한 sd카드를 선택하여 os를 설치한다</li></ul><h2 id="와이파이로-인터넷-연결하기"><a href="#와이파이로-인터넷-연결하기" class="headerlink" title="와이파이로 인터넷 연결하기"></a>와이파이로 인터넷 연결하기</h2><ul><li>sd카드를 꼽고,</li><li>hdmi로 모니터와 키보드를 연결하고 전원을 켠다</li><li>기본 계정은 pi / raspberry 이다</li><li>와이파이로 인터넷을 연결해주겠다</li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo raspi-config</span><br></pre></td></tr></table></figure><ul><li>system option -&gt; wireless lan -&gt; GB (영국) -&gt; 와이파이명 -&gt; 와이파이 비밀번호 -&gt; 리부트</li><li>재부팅 후에 인터넷 연결을 확인하기 위해 <code>ifconfig</code> 명령을 실행하여 확인해준다</li></ul><h2 id="ssh-설정하기"><a href="#ssh-설정하기" class="headerlink" title="ssh 설정하기"></a>ssh 설정하기</h2><p>외부에서 리모트로 개발하기 위해 ssh 설정을 해줘야 한다</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo raspi-config</span><br></pre></td></tr></table></figure><ul><li>interface option -&gt; ssh -&gt; enable</li><li>이제 리모트 할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.raspberrypi.org/software/operating-systems/">https://www.raspberrypi.org/software/operating-systems/</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p>라즈베리파이에 <strong>Raspberry Pi OS Lite</strong> 를 설치해보자</p><h2 id="라즈비안-이미지-받기"><a href="#라즈비안-이미지-받기" class="headerlink" title="라즈비안 이미지 받기"></a>라즈비안 이미지 받기</h2><ul><li><a href="https://www.raspberrypi.org/software/operating-systems/">https://www.raspberrypi.org/software/operating-systems/</a></li><li><code>Raspberry Pi OS Lite</code>를 다운로드한다</li></ul><h2 id="sd-카드-준비"><a href="#sd-카드-준비" class="headerlink" title="sd 카드 준비"></a>sd 카드 준비</h2><ul><li><a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a></li><li><code>balenaEtcher</code> 설치한다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/how-to-install-raspberrypi-os20210729/preview.png" alt=" "></p><ul><li>라즈비안 이미지를 선택하고</li><li>인스톨한 sd카드를 선택하여 os를 설치한다</li></ul><h2 id="와이파이로-인터넷-연결하기"><a href="#와이파이로-인터넷-연결하기" class="headerlink" title="와이파이로 인터넷 연결하기"></a>와이파이로 인터넷 연결하기</h2><ul><li>sd카드를 꼽고,</li><li>hdmi로 모니터와 키보드를 연결하고 전원을 켠다</li><li>기본 계정은 pi / raspberry 이다</li><li>와이파이로 인터넷을 연결해주겠다</li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo raspi-config</span><br></pre></td></tr></table></figure><ul><li>system option -&gt; wireless lan -&gt; GB (영국) -&gt; 와이파이명 -&gt; 와이파이 비밀번호 -&gt; 리부트</li><li>재부팅 후에 인터넷 연결을 확인하기 위해 <code>ifconfig</code> 명령을 실행하여 확인해준다</li></ul><h2 id="ssh-설정하기"><a href="#ssh-설정하기" class="headerlink" title="ssh 설정하기"></a>ssh 설정하기</h2><p>외부에서 리모트로 개발하기 위해 ssh 설정을 해줘야 한다</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo raspi-config</span><br></pre></td></tr></table></figure><ul><li>interface option -&gt; ssh -&gt; enable</li><li>이제 리모트 할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.raspberrypi.org/software/operating-systems/">https://www.raspberrypi.org/software/operating-systems/</a></li><li><a href="/2021/07/29/install-git-docker-on-raspberrypi/">라즈베리파이에 깃, 도커 설치하기</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
       
-      
-      <category domain="https://chinsun9.github.io/tags/etc/">etc</category>
       
       <category domain="https://chinsun9.github.io/tags/raspberrypi/">raspberrypi</category>
       
@@ -567,35 +595,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/15/python-str-strip/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>python 카테고리 생성</title>
-      <link>https://chinsun9.github.io/2021/07/15/create-python-category/</link>
-      <guid>https://chinsun9.github.io/2021/07/15/create-python-category/</guid>
-      <pubDate>Thu, 15 Jul 2021 00:26:05 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;python으로 작성된 코드를 해석하기 위해 야매로 공부한 내용 올리기&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>python으로 작성된 코드를 해석하기 위해 야매로 공부한 내용 올리기</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/python/">python</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/category/">category</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/15/create-python-category/#disqus_thread</comments>
       
     </item>
     
