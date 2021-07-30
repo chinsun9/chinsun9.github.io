@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 29 Jul 2021 08:57:41 GMT</pubDate>
+    <pubDate>Fri, 30 Jul 2021 00:38:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>git config by workspace</title>
+      <link>https://chinsun9.github.io/2021/07/30/git-config-by-workspace/</link>
+      <guid>https://chinsun9.github.io/2021/07/30/git-config-by-workspace/</guid>
+      <pubDate>Fri, 30 Jul 2021 00:38:10 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;보통 global로 설정된 user.name, uesr.email이 있을 것이다&lt;/li&gt;
+&lt;li&gt;깃 프로젝트 워크스페이스 별로 다른 계정을 사용해보자&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcap</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>보통 global로 설정된 user.name, uesr.email이 있을 것이다</li><li>깃 프로젝트 워크스페이스 별로 다른 계정을 사용해보자</li></ul><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git config user.name &#123;username&#125;</span></span><br><span class="line">git config user.name chinsun9</span><br><span class="line"></span><br><span class="line"><span class="comment"># git config user.email &#123;email&#125;</span></span><br><span class="line">git config user.email chin_sung@naver.com</span><br></pre></td></tr></table></figure><ul><li>글로벌로 설정된 이름, 이메일 대신, 다른 계정을 사용하고 싶은 워크스페이스로 가서 위 명령을 실행한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/8801729/is-it-possible-to-have-different-git-configuration-for-different-projects">https://stackoverflow.com/questions/8801729/is-it-possible-to-have-different-git-configuration-for-different-projects</a></li><li>경로 패턴에 따라 config를 다르게 구성하는 방법도 있다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/07/30/git-config-by-workspace/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>라즈베리파이에 깃, 도커 설치하기</title>
@@ -569,32 +599,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/15/python-type/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>python 문자열 trim, 앞뒤 공백 제거</title>
-      <link>https://chinsun9.github.io/2021/07/15/python-str-strip/</link>
-      <guid>https://chinsun9.github.io/2021/07/15/python-str-strip/</guid>
-      <pubDate>Thu, 15 Jul 2021 00:30:31 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">output = <span class="string">&#x27;      안녕      &#x27;</span>.strip()</span><br><span class="line">print(output) <span class="comment"># 안녕</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/python/">python</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/python/">python</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/15/python-str-strip/#disqus_thread</comments>
       
     </item>
     
