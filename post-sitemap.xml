@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/07/16/gh-pages/</loc>
+        <lastmod>2021-08-04T08:59:43.357Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/08/04/start-nestjs/</loc>
         <lastmod>2021-08-04T06:54:26.959Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -242,14 +250,6 @@
     <url>
         <loc>https://chinsun9.github.io/2021/07/16/lazy-loading-images/</loc>
         <lastmod>2021-07-16T06:44:03.988Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/07/16/gh-pages/</loc>
-        <lastmod>2021-07-16T06:19:15.999Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
