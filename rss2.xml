@@ -9,8 +9,35 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 03 Aug 2021 02:24:59 GMT</pubDate>
+    <pubDate>Wed, 04 Aug 2021 06:54:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>start nestjs</title>
+      <link>https://chinsun9.github.io/2021/08/04/start-nestjs/</link>
+      <guid>https://chinsun9.github.io/2021/08/04/start-nestjs/</guid>
+      <pubDate>Wed, 04 Aug 2021 06:54:26 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;node의 spring을 배워보자&lt;/p&gt;
+&lt;h2 id=&quot;nest-cli-설치&quot;&gt;&lt;a href=&quot;#nest-cli-설치&quot; class=&quot;headerlink&quot; title=&quot;nest cli 설치&quot;&gt;&lt;/a&gt;nest cli 설치&lt;/h2&gt;&lt;figure cla</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>node의 spring을 배워보자</p><h2 id="nest-cli-설치"><a href="#nest-cli-설치" class="headerlink" title="nest cli 설치"></a>nest cli 설치</h2><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g @nestjs/cli</span><br></pre></td></tr></table></figure><h2 id="commands"><a href="#commands" class="headerlink" title="commands"></a>commands</h2><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 현재 디렉터리에 nest project init</span></span><br><span class="line">nest new .</span><br><span class="line"></span><br><span class="line"><span class="comment"># run</span></span><br><span class="line">yarn start:dev</span><br><span class="line"></span><br><span class="line"><span class="comment"># generate service</span></span><br><span class="line">nest g service pusher</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.nestjs.com/">https://docs.nestjs.com/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nestjs/">nestjs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nestjs/">nestjs</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/08/04/start-nestjs/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>prototype function vs. method function</title>
@@ -25,7 +52,7 @@
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, nickname</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.name = name;</span><br><span class="line">  <span class="built_in">this</span>.nickname = nickname;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// method function</span></span><br><span class="line">  <span class="built_in">this</span>.sayHi = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">this</span>.name, <span class="built_in">this</span>.nickname, <span class="string">&#x27;hello&#x27;</span>, <span class="built_in">this</span>);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> sung = <span class="keyword">new</span> Person(<span class="string">&#x27;sung&#x27;</span>, <span class="string">&#x27;superpower&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> sung2 = <span class="keyword">new</span> Person(<span class="string">&#x27;sung&#x27;</span>, <span class="string">&#x27;superpower&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(sung.sayHi === sung2.sayHi); <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line">Person.prototype.sayHello = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&#x27;sayHello prototype&#x27;</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">this</span>.name, <span class="built_in">this</span>.nickname, <span class="string">&#x27;hello&#x27;</span>, <span class="built_in">this</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(sung.sayHello === sung2.sayHello); <span class="comment">// true</span></span><br></pre></td></tr></table></figure><ul><li>생성자가 실행될때마다 새로운 메서드 함수가 생성된다</li><li>프로토타입으로 정의된 함수는 모든 인스턴스가 하나의 함수를 바라본다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/4508313/advantages-of-using-prototype-vs-defining-methods-straight-in-the-constructor">https://stackoverflow.com/questions/4508313/advantages-of-using-prototype-vs-defining-methods-straight-in-the-constructor</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, nickname</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">this</span>.name = name;</span><br><span class="line">  <span class="built_in">this</span>.nickname = nickname;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// method function</span></span><br><span class="line">  <span class="built_in">this</span>.sayHi = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">this</span>.name, <span class="built_in">this</span>.nickname, <span class="string">&#x27;hello&#x27;</span>, <span class="built_in">this</span>);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> sung = <span class="keyword">new</span> Person(<span class="string">&#x27;sung&#x27;</span>, <span class="string">&#x27;superpower&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> sung2 = <span class="keyword">new</span> Person(<span class="string">&#x27;sung&#x27;</span>, <span class="string">&#x27;superpower&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(sung.sayHi === sung2.sayHi); <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line">Person.prototype.sayHello = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&#x27;sayHello prototype&#x27;</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">this</span>.name, <span class="built_in">this</span>.nickname, <span class="string">&#x27;hello&#x27;</span>, <span class="built_in">this</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(sung.sayHello === sung2.sayHello); <span class="comment">// true</span></span><br></pre></td></tr></table></figure><ul><li>생성자가 실행될때마다 새로운 메서드 함수가 생성된다</li><li>프로토타입으로 정의된 함수는 모든 인스턴스가 하나의 함수를 바라본다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/4508313/advantages-of-using-prototype-vs-defining-methods-straight-in-the-constructor">https://stackoverflow.com/questions/4508313/advantages-of-using-prototype-vs-defining-methods-straight-in-the-constructor</a></li><li><a href="https://developer.mozilla.org/ko/docs/Learn/JavaScript/Objects/Object_prototypes">https://developer.mozilla.org/ko/docs/Learn/JavaScript/Objects/Object_prototypes</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
@@ -574,37 +601,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/18/cancel-fetch/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>깃허브 템플릿 저장소 만들기</title>
-      <link>https://chinsun9.github.io/2021/07/17/github-template-repo/</link>
-      <guid>https://chinsun9.github.io/2021/07/17/github-template-repo/</guid>
-      <pubDate>Sat, 17 Jul 2021 05:29:10 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;템플릿 레포를 만들어보자&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-template-repo20210716/preview</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>템플릿 레포를 만들어보자</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-template-repo20210716/preview.png" alt=" "></p><ul><li>리액트 프로젝트를 진행할 때, CRA 같은 보일러플레이트로 프로젝트를 시작할 수 있다</li><li>근데 자신만의 린트 설정이나, 따로 설치하는 패키지들이 있다</li><li>이런 것들을 매번 새로운 프로젝트를 생성할 때마다 해준다면 귀찮을 것이다</li><li>이때 깃허브에서는 템플릿 저장소 기능을 활용할 수 있다</li></ul><h2 id="템플릿-저장소-하나-만들기"><a href="#템플릿-저장소-하나-만들기" class="headerlink" title="템플릿 저장소 하나 만들기"></a>템플릿 저장소 하나 만들기</h2><ul><li>템플릿으로 만들 저장소를 만들고,</li><li>원하는 초기 상태를 세팅한다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-template-repo20210716/1.png" alt=" "></p><ul><li>Settings 탭에 들어가면 레포명 설정 아래 바로 템플릿 레포로 지정할 수 있는 체크박스가 있다</li><li>체크 박스를 체크하면 템플릿 레포 완성이다</li></ul><h2 id="템플릿을-사용해서-새-저장소-생성하기"><a href="#템플릿을-사용해서-새-저장소-생성하기" class="headerlink" title="템플릿을 사용해서 새 저장소 생성하기"></a>템플릿을 사용해서 새 저장소 생성하기</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-template-repo20210716/preview.png" alt=" "></p><ul><li>템플릿으로 설정한 저장소를 선택할 수 있다</li></ul><h2 id="다른-사람이-만들어둔-템플릿-사용하기"><a href="#다른-사람이-만들어둔-템플릿-사용하기" class="headerlink" title="다른 사람이 만들어둔 템플릿 사용하기"></a>다른 사람이 만들어둔 템플릿 사용하기</h2><ul><li>다른 사람이 만들어 둔 템플릿 레포가 있을 수 있는데,</li><li>포크해서 내 저장소로 가져오면 바로 사용이 가능하다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-template-repository">https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-template-repository</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/template/">template</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/17/github-template-repo/#disqus_thread</comments>
       
     </item>
     
