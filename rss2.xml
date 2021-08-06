@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 06 Aug 2021 07:12:06 GMT</pubDate>
+    <pubDate>Fri, 06 Aug 2021 12:46:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode extension rest client</title>
+      <link>https://chinsun9.github.io/2021/08/06/vscode-extension-rest-client/</link>
+      <guid>https://chinsun9.github.io/2021/08/06/vscode-extension-rest-client/</guid>
+      <pubDate>Fri, 06 Aug 2021 12:46:15 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-extension-rest-client20210806/preview.png&quot; alt=&quot; &quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-extension-rest-client20210806/preview.png" alt=" "></p><ul><li>Rest Client라는 도구가 있다</li><li>text 기반으로 간편하게 리퀘스트를 작성할 수 있다</li></ul><figure class="highlight"><figcaption><span>example.http</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">###</span><br><span class="line"><span class="keyword">GET</span> <span class="string">http://localhost:3000/movies/</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"></span><br><span class="line">###</span><br><span class="line"><span class="keyword">GET</span> <span class="string">http://localhost:3000/movies/1</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"></span><br><span class="line">###</span><br><span class="line"><span class="keyword">POST</span> <span class="string">http://localhost:3000/movies/</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"><span class="attribute">Content-Type</span><span class="punctuation">: </span>application/json</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    &quot;title&quot;: &quot;sung&quot;,</span><br><span class="line">    &quot;year&quot;: 2020,</span><br><span class="line">    &quot;genres&quot;: [&quot;mind blown&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>확장자는 <code>http</code>로 한다</li><li>한 파일에서 여러 개의 리퀘스트를 작성할 때는 <code>###</code>으로 구분하여 작성한다</li><li>리퀘스트 작성할 때 메서드(get, post, put, delete,…)를 입력하면 자동완성 스니펫을 제공한다</li><li>단축키로는 <code>ctrl alt R</code>로 리퀘스트를 보낼 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client">https://marketplace.visualstudio.com/items?itemName=humao.rest-client</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/08/06/vscode-extension-rest-client/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>SSG, static site generator</title>
@@ -575,34 +603,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/22/yarn-create/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>powershell로 환경변수 추가하기</title>
-      <link>https://chinsun9.github.io/2021/07/20/add-environment-variable-using-powershell/</link>
-      <guid>https://chinsun9.github.io/2021/07/20/add-environment-variable-using-powershell/</guid>
-      <pubDate>Tue, 20 Jul 2021 08:23:27 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight ps1&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight ps1"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 사용자 변수로 추가</span></span><br><span class="line">[<span class="type">Environment</span>]::SetEnvironmentVariable(<span class="string">&quot;GH_TOKEN&quot;</span>,<span class="string">&quot;&lt;YOUR_TOKEN_HERE&gt;&quot;</span>,<span class="string">&quot;User&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 시스템 변수로 추가 (관리자 권한 필요)</span></span><br><span class="line">[<span class="type">Environment</span>]::SetEnvironmentVariable(<span class="string">&quot;GH_TOKEN&quot;</span>,<span class="string">&quot;&lt;YOUR_TOKEN_HERE&gt;&quot;</span>,<span class="string">&quot;Machine&quot;</span>)</span><br></pre></td></tr></table></figure><ul><li>파워쉘 명령어 한 줄로 환경변수를 쉽게 추가할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.microsoft.com/ko-kr/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.1#using-systemenvironment-methods">https://docs.microsoft.com/ko-kr/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.1#using-systemenvironment-methods</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/cmd/">cmd</category>
-      
-      <category domain="https://chinsun9.github.io/tags/powershell/">powershell</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/20/add-environment-variable-using-powershell/#disqus_thread</comments>
       
     </item>
     
