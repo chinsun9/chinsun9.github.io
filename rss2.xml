@@ -9,8 +9,43 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 06 Aug 2021 05:09:02 GMT</pubDate>
+    <pubDate>Fri, 06 Aug 2021 07:12:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>SSG, static site generator</title>
+      <link>https://chinsun9.github.io/2021/08/06/ssg-static-site-generator/</link>
+      <guid>https://chinsun9.github.io/2021/08/06/ssg-static-site-generator/</guid>
+      <pubDate>Fri, 06 Aug 2021 07:11:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;정적 사이트 생성기&lt;/li&gt;
+&lt;li&gt;react와 같은 spa 라이브러리/프레임워크로 생성한 spa를 여러 html로 쪼개 준다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;SSR 도구 예 ; nextjs, hexo,…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>정적 사이트 생성기</li><li>react와 같은 spa 라이브러리/프레임워크로 생성한 spa를 여러 html로 쪼개 준다</li></ul><ul><li>SSR 도구 예 ; nextjs, hexo,…</li></ul><h2 id="같이-보기"><a href="#같이-보기" class="headerlink" title="같이 보기"></a>같이 보기</h2><ul><li><a href="/2021/06/18/ssr-csr">SSR, CSR</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
+      
+      <category domain="https://chinsun9.github.io/tags/ssg/">ssg</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/08/06/ssg-static-site-generator/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>파워셸에서 도커 명령어 파이프</title>
@@ -568,35 +603,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/20/add-environment-variable-using-powershell/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>electron 카테고리 생성</title>
-      <link>https://chinsun9.github.io/2021/07/19/create-electron-category/</link>
-      <guid>https://chinsun9.github.io/2021/07/19/create-electron-category/</guid>
-      <pubDate>Mon, 19 Jul 2021 06:16:13 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;일렉트론 공부&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>일렉트론 공부</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/electron/">electron</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/category/">category</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/19/create-electron-category/#disqus_thread</comments>
       
     </item>
     

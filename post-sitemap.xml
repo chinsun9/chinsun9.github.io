@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/08/06/ssg-static-site-generator/</loc>
+        <lastmod>2021-08-06T07:12:06.953Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/06/18/ssr-csr/</loc>
+        <lastmod>2021-08-06T06:22:35.193Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/08/06/docker-command-piping-in-powershell/</loc>
         <lastmod>2021-08-06T05:09:02.932Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2266,14 +2282,6 @@
     <url>
         <loc>https://chinsun9.github.io/2021/06/22/tldr/</loc>
         <lastmod>2021-06-23T01:33:21.055Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/06/18/ssr-csr/</loc>
-        <lastmod>2021-06-23T01:33:21.054Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
