@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 05 Aug 2021 06:55:28 GMT</pubDate>
+    <pubDate>Fri, 06 Aug 2021 05:09:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>파워셸에서 도커 명령어 파이프</title>
+      <link>https://chinsun9.github.io/2021/08/06/docker-command-piping-in-powershell/</link>
+      <guid>https://chinsun9.github.io/2021/08/06/docker-command-piping-in-powershell/</guid>
+      <pubDate>Fri, 06 Aug 2021 05:09:02 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;span&gt;linux shell&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight sh"><figcaption><span>linux shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop `docker ps -aq`</span><br></pre></td></tr></table></figure><ul><li>모든 컨테이너를 종료하는 명령이다</li><li>리눅스에서는 백틱(backtick, <strong>`</strong>)으로 묶어서 결과를 파이프할 수 있다</li><li>윈도우 터미널에서 같은 명령을 사용할 수가 없다… ㅠㅠ</li></ul><h2 id="PowerShell"><a href="#PowerShell" class="headerlink" title="PowerShell"></a>PowerShell</h2><figure class="highlight ps1"><figcaption><span>powershell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">ps</span> <span class="literal">-aq</span> | <span class="built_in">ForEach-Object</span> &#123; docker stop <span class="variable">$_</span> &#125;</span><br></pre></td></tr></table></figure><ul><li>나는 파워셸 디폴트로 사용하는데, 파워셸에서 이전 명령의 결괏값을 어떻게 다음 명령으로 넘겨줄 수 있는지 알아보았다 (파이프)</li></ul><figure class="highlight ps1"><figcaption><span>powershell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="number">1</span> <span class="number">2</span> | <span class="built_in">ForEach-Object</span> &#123; <span class="built_in">echo</span> <span class="string">&quot;value: <span class="variable">$_</span>&quot;</span> &#125;</span><br><span class="line"><span class="comment"># output:</span></span><br><span class="line"><span class="comment"># value: 1</span></span><br><span class="line"><span class="comment"># value: 2</span></span><br></pre></td></tr></table></figure><ul><li>단일 값이 아니라 배열 값을 받는 경우 <code>ForEach-Object</code>을 사용해야 하는 것을 알았다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/44300223/windows-cmd-docker-command-piping">https://stackoverflow.com/questions/44300223/windows-cmd-docker-command-piping</a></li><li><a href="https://docs.microsoft.com/ko-kr/powershell/module/microsoft.powershell.core/about/about_pipelines?view=powershell-7.1">https://docs.microsoft.com/ko-kr/powershell/module/microsoft.powershell.core/about/about_pipelines?view=powershell-7.1</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/docker/">docker</category>
+      
+      <category domain="https://chinsun9.github.io/tags/cmd/">cmd</category>
+      
+      <category domain="https://chinsun9.github.io/tags/powershell/">powershell</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/08/06/docker-command-piping-in-powershell/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>typescript Partial</title>
@@ -567,37 +597,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/19/create-electron-category/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>js coercion</title>
-      <link>https://chinsun9.github.io/2021/07/19/js-coercion/</link>
-      <guid>https://chinsun9.github.io/2021/07/19/js-coercion/</guid>
-      <pubDate>Mon, 19 Jul 2021 00:41:55 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;서로 다른 타입끼리 연산을 할 때, 타입 캐스팅이 일어난다&lt;/li&gt;
-&lt;li&gt;js에서는 이를 &lt;code&gt;coercion&lt;/code&gt; 이라고 부르는 것 같다&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;js에서 서로 다른 타입 간의 연산을 하더라도</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>서로 다른 타입끼리 연산을 할 때, 타입 캐스팅이 일어난다</li><li>js에서는 이를 <code>coercion</code> 이라고 부르는 것 같다</li></ul><ul><li>js에서 서로 다른 타입 간의 연산을 하더라도 웬만하면 에러가 안 뜬다</li><li>어느 한쪽을 기준으로 자동 캐스팅되어서 js를 처음 배울 때 너무 편했다</li><li>이런 강제 형변환이 직관적이라고 생각할 때도 있지만, 가끔 실수할 때가 있다</li><li>나는 처음 js를 배울 때 <code>var</code>보다는 <code>const</code>, <code>let</code></li><li><code>==</code>보다는 <code>===</code>를 사용하라고 배워서 그냥 그런가 보다 하고 따랐었는데,</li><li>특히 조건문에서 강제 형변환은 예상하지 못한 동작들을 많이 만들어내는 것 같다</li><li><code>===</code>, <code>!==</code>를 사용함으로써 강제 형변환 없이 비교해 볼 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://jihyehwang09.github.io/2019/04/05/33-js-type-coercion/">https://jihyehwang09.github.io/2019/04/05/33-js-type-coercion/</a></li><li><a href="https://github.com/leonardomso/33-js-concepts">https://github.com/leonardomso/33-js-concepts</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/19/js-coercion/#disqus_thread</comments>
       
     </item>
     
