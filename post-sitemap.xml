@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/08/07/start-jest-with-typescript/</loc>
+        <lastmod>2021-08-07T04:01:15.835Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/02/vscode-%EC%9B%8C%ED%81%AC%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%B3%84%EB%A1%9C-%EC%84%A4%EC%A0%95-%EB%8B%A4%EB%A5%B4%EA%B2%8C%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-08-07T03:58:28.523Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/08/06/vscode-extension-rest-client/</loc>
         <lastmod>2021-08-06T12:46:15.590Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1738,14 +1754,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/12/21/%EB%A6%AC%EB%88%85%EC%8A%A4-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%ED%99%95%EC%9D%B8-%EB%AA%85%EB%A0%B9%EC%96%B4/</loc>
         <lastmod>2021-08-04T12:39:35.694Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/02/vscode-%EC%9B%8C%ED%81%AC%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%B3%84%EB%A1%9C-%EC%84%A4%EC%A0%95-%EB%8B%A4%EB%A5%B4%EA%B2%8C%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-08-04T12:37:31.986Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
