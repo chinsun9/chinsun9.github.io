@@ -165,7 +165,7 @@
 <ul>
 <li>내 커밋 기록 식칼 모양이다</li>
 </ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2021-06-17T07:03:43.000Z" title="2021-06-17T07:03:43.000Z">2021-06-17</time>게시 됨</span><span class="level-item"><time datetime="2021-08-04T13:37:51.918Z" title="2021-08-04T13:37:51.918Z">2021-08-04</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/nodejs/">nodejs</a></span><span class="level-item">9분안에 읽기 (약 1277 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/06/17/my-first-github-package/">비공개 npm package 만들어보기</a></h1><div class="content"><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/my-first-github-package20210617/preview.png" alt=" "></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2021-06-17T07:03:43.000Z" title="2021-06-17T07:03:43.000Z">2021-06-17</time>게시 됨</span><span class="level-item"><time datetime="2021-08-07T06:26:09.857Z" title="2021-08-07T06:26:09.857Z">2021-08-07</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/nodejs/">nodejs</a></span><span class="level-item">9분안에 읽기 (약 1289 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/06/17/my-first-github-package/">비공개 npm package 만들어보기</a></h1><div class="content"><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/my-first-github-package20210617/preview.png" alt=" "></p>
 <ul>
 <li>깃허브 레지스트리를 통해 (비공개) 패키지를 만들어보자</li>
 <li>PAT을 통해 <strong>퍼블릭하지 않게</strong> 패키지를 배포해 볼 수 있다</li>
@@ -188,9 +188,9 @@
 <li><p>타입스크립트로 만든다</p>
 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/chinsun9/hello-package.git</span><br><span class="line"></span><br><span class="line">tsc --init</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/chinsun9/hello-package.git</span><br><span class="line"></span><br><span class="line">tsc --init</span><br></pre></td></tr></table></figure>
 
-<h2 id="디렉터리-구조"><a href="#디렉터리-구조" class="headerlink" title="디렉터리 구조"></a>디렉터리 구조</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── dist</span><br><span class="line">│   ├── index.d.ts</span><br><span class="line">│   └── index.js</span><br><span class="line">├── src</span><br><span class="line">│   └── index.ts</span><br><span class="line">├── .gitignore</span><br><span class="line">├── .npmignore</span><br><span class="line">├── .npmrc</span><br><span class="line">├── package.json</span><br><span class="line">├── README.md</span><br><span class="line">└── tsconfig.json</span><br></pre></td></tr></table></figure>
+<h2 id="디렉터리-구조"><a href="#디렉터리-구조" class="headerlink" title="디렉터리 구조"></a>디렉터리 구조</h2><figure class="highlight txt"><figcaption><span>디렉터리 구조</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── dist</span><br><span class="line">│   ├── index.d.ts</span><br><span class="line">│   └── index.js</span><br><span class="line">├── src</span><br><span class="line">│   └── index.ts</span><br><span class="line">├── .gitignore</span><br><span class="line">├── .npmignore</span><br><span class="line">├── .npmrc</span><br><span class="line">├── package.json</span><br><span class="line">├── README.md</span><br><span class="line">└── tsconfig.json</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>디렉터리 구조는 마음대로</p>
@@ -220,12 +220,12 @@
 <li><strong>outDir</strong> ; tsc 명령의 결과로 생성되는 js 위치</li>
 <li><strong>rootDir</strong>, <strong>include</strong> ; root ts 파일 위치</li>
 </ul>
-<h2 id="gitignore"><a href="#gitignore" class="headerlink" title=".gitignore"></a>.gitignore</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dist</span><br><span class="line">node_modules</span><br></pre></td></tr></table></figure>
+<h2 id="gitignore"><a href="#gitignore" class="headerlink" title=".gitignore"></a>.gitignore</h2><figure class="highlight plain"><figcaption><span>.gitignore</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dist</span><br><span class="line">node_modules</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>커밋에서 무시할 디렉터리, 파일을 나열한다</li>
 </ul>
-<h2 id="npmignore"><a href="#npmignore" class="headerlink" title=".npmignore"></a>.npmignore</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">src</span><br><span class="line">test</span><br><span class="line">tsconfig.json</span><br></pre></td></tr></table></figure>
+<h2 id="npmignore"><a href="#npmignore" class="headerlink" title=".npmignore"></a>.npmignore</h2><figure class="highlight plain"><figcaption><span>.npmignore</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">src</span><br><span class="line">test</span><br><span class="line">tsconfig.json</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>패키지를 publish 할 때 무시할 디렉터리, 파일을 나열한다</li>
@@ -267,7 +267,7 @@
 <li>임시 디렉터리를 하나 만들고 <code>npm init -y</code>한다</li>
 <li><strong>.npmrc</strong>를 생성하고 내용을 추가한다</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;npm.pkg.github.com&#x2F;:_authToken&#x3D;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><br><span class="line">@chinsun9:registry&#x3D;https:&#x2F;&#x2F;npm.pkg.github.com&#x2F;</span><br></pre></td></tr></table></figure>
+<figure class="highlight properties"><figcaption><span>.npmrc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">//npm.pkg.github.com/</span>:<span class="string">_authToken=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></span><br><span class="line"><span class="meta">@chinsun9</span>:<span class="string">registry=https://npm.pkg.github.com/</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>워크스페이스의 .npmrc 또는 유저 홈 디렉터리의 .npmrc 에 위 내용을 추가한다</p>
