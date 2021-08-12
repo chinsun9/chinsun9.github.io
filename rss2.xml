@@ -52,12 +52,12 @@
       
         
         
-      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/https://youtu.be/ywUZOOzLX3c&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfu</description>
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/ywUZOOzLX3c&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
         
       
       
       
-      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/https://youtu.be/ywUZOOzLX3c" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>…</li><li>레포를 로컬에 클론하지 않고도 코드를 탐색해 볼 수 있다</li><li>아무 저장소에서 <code>.</code> (dot) key 를 눌러서 열어볼 수 있다</li><li>처음 켜지는데 시간이 조금 걸린다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/ywUZOOzLX3c">https://youtu.be/ywUZOOzLX3c</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/ywUZOOzLX3c" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>…</li><li>레포를 로컬에 클론하지 않고도 코드를 탐색해 볼 수 있다</li><li>아무 저장소에서 <code>.</code> (dot) key 를 눌러서 열어볼 수 있다</li><li>처음 켜지는데 시간이 조금 걸린다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/ywUZOOzLX3c">https://youtu.be/ywUZOOzLX3c</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/github/">github</category>
