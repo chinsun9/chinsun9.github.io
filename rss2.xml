@@ -9,8 +9,70 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 10 Aug 2021 03:13:32 GMT</pubDate>
+    <pubDate>Thu, 12 Aug 2021 01:36:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>wsl interop</title>
+      <link>https://chinsun9.github.io/2021/08/12/wsl-interop/</link>
+      <guid>https://chinsun9.github.io/2021/08/12/wsl-interop/</guid>
+      <pubDate>Thu, 12 Aug 2021 01:36:36 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/wsl-interop20210726/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;c</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/wsl-interop20210726/preview.png" alt=" "></p><ul><li><code>rm -rf</code>같은 리눅스 명령어를 윈도우에서 작성하고 싶다</li><li>명령어를 똑같이 쓸 수 있는 방법이 있다</li><li>파워셸 코어가 필요하다</li></ul><h2 id="전제조건"><a href="#전제조건" class="headerlink" title="전제조건"></a>전제조건</h2><ul><li>WSL 활성화</li></ul><h2 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h2><ul><li>파워셸 코어를 설치한다<ul><li><a href="https://github.com/powershell/powershell#get-powershell">https://github.com/powershell/powershell#get-powershell</a></li></ul></li></ul><figure class="highlight ps1"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Install-Module</span> WslInterop</span><br></pre></td></tr></table></figure><ul><li>파워셸 코어를 실행하고, <code>Install-Module WslInterop</code>으로 설치한다</li></ul><h2 id="사용하기"><a href="#사용하기" class="headerlink" title="사용하기"></a>사용하기</h2><figure class="highlight ps1"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Import-WslCommand</span></span><br></pre></td></tr></table></figure><h2 id="새-터미널을-킬-때마다-다시-설정해줘야-한다"><a href="#새-터미널을-킬-때마다-다시-설정해줘야-한다" class="headerlink" title="새 터미널을 킬 때마다 다시 설정해줘야 한다?"></a>새 터미널을 킬 때마다 다시 설정해줘야 한다?</h2><ul><li><code>Import-WslCommand</code> 명령으로 wsl로 실행할 명령을 지정할 수 있다</li><li>그런데 새로운 터미널을 켤 때마다 매번 명령을 쳐줄 수 없다</li><li>파워셸 프로필을 설정해서 자동으로 임포트 명령이 실행되도록 한다</li></ul><figure class="highlight ps1"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 프로필 생성</span></span><br><span class="line"><span class="keyword">if</span> (!(<span class="built_in">Test-Path</span> <span class="literal">-Path</span> <span class="variable">$PROFILE</span>)) &#123;</span><br><span class="line">  <span class="built_in">New-Item</span> <span class="literal">-ItemType</span> File <span class="literal">-Path</span> <span class="variable">$PROFILE</span> <span class="literal">-Force</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># profile파일 열고 wsl interop 설정</span></span><br><span class="line">notepad <span class="variable">$PROFILE</span></span><br></pre></td></tr></table></figure><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Import-WslCommand &quot;apt&quot;, &quot;awk&quot;, &quot;emacs&quot;, &quot;grep&quot;, &quot;head&quot;, &quot;less&quot;, &quot;ls&quot;, &quot;man&quot;, &quot;sed&quot;, &quot;seq&quot;, &quot;ssh&quot;, &quot;sudo&quot;, &quot;tail&quot;, &quot;vim&quot;, &quot;rm&quot;, &quot;touch&quot;</span><br></pre></td></tr></table></figure><ul><li>인터럽트 할 명령어를 위와 같이 나열한다</li><li>이제 파워셸에서 나열한 셸 명령어를 사용할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/mikebattista/PowerShell-WSL-Interop">https://github.com/mikebattista/PowerShell-WSL-Interop</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/cmd/">cmd</category>
+      
+      <category domain="https://chinsun9.github.io/tags/bash/">bash</category>
+      
+      <category domain="https://chinsun9.github.io/tags/wsl/">wsl</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/08/12/wsl-interop/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>github dot key</title>
+      <link>https://chinsun9.github.io/2021/08/12/github-dot-key/</link>
+      <guid>https://chinsun9.github.io/2021/08/12/github-dot-key/</guid>
+      <pubDate>Thu, 12 Aug 2021 01:10:32 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/https://youtu.be/ywUZOOzLX3c&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfu</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/https://youtu.be/ywUZOOzLX3c" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>…</li><li>레포를 로컬에 클론하지 않고도 코드를 탐색해 볼 수 있다</li><li>아무 저장소에서 <code>.</code> (dot) key 를 눌러서 열어볼 수 있다</li><li>처음 켜지는데 시간이 조금 걸린다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/ywUZOOzLX3c">https://youtu.be/ywUZOOzLX3c</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/github/">github</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/web-editor/">web editor</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/08/12/github-dot-key/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>docker context use</title>
@@ -542,66 +604,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/07/30/github-advanced-search/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>git config by workspace</title>
-      <link>https://chinsun9.github.io/2021/07/30/git-config-by-workspace/</link>
-      <guid>https://chinsun9.github.io/2021/07/30/git-config-by-workspace/</guid>
-      <pubDate>Fri, 30 Jul 2021 00:38:10 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;보통 global로 설정된 user.name, uesr.email이 있을 것이다&lt;/li&gt;
-&lt;li&gt;깃 프로젝트 워크스페이스 별로 다른 계정을 사용해보자&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcap</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>보통 global로 설정된 user.name, uesr.email이 있을 것이다</li><li>깃 프로젝트 워크스페이스 별로 다른 계정을 사용해보자</li></ul><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git config user.name &#123;username&#125;</span></span><br><span class="line">git config user.name chinsun9</span><br><span class="line"></span><br><span class="line"><span class="comment"># git config user.email &#123;email&#125;</span></span><br><span class="line">git config user.email chin_sung@naver.com</span><br></pre></td></tr></table></figure><ul><li>글로벌로 설정된 이름, 이메일 대신, 다른 계정을 사용하고 싶은 워크스페이스로 가서 위 명령을 실행한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/8801729/is-it-possible-to-have-different-git-configuration-for-different-projects">https://stackoverflow.com/questions/8801729/is-it-possible-to-have-different-git-configuration-for-different-projects</a></li><li>경로 패턴에 따라 config를 다르게 구성하는 방법도 있다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/30/git-config-by-workspace/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>라즈베리파이에 깃, 도커 설치하기</title>
-      <link>https://chinsun9.github.io/2021/07/29/install-git-docker-on-raspberrypi/</link>
-      <guid>https://chinsun9.github.io/2021/07/29/install-git-docker-on-raspberrypi/</guid>
-      <pubDate>Thu, 29 Jul 2021 08:57:14 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/install-git-docker-on-raspberrypi20210729/preview.png&quot; al</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/install-git-docker-on-raspberrypi20210729/preview.png" alt=" "></p><h3 id="git-설치"><a href="#git-설치" class="headerlink" title="git 설치"></a>git 설치</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure><h3 id="docker-설치"><a href="#docker-설치" class="headerlink" title="docker 설치"></a>docker 설치</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://get.docker.com -o get-docker.sh</span><br><span class="line">sudo sh get-docker.sh</span><br><span class="line">docker -v</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98">https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98</a></li><li><a href="https://docs.docker.com/engine/install/debian/">https://docs.docker.com/engine/install/debian/</a></li><li><a href="/2021/07/29/how-to-install-raspberrypi-os/">라즈베리파이에 라즈비안 설치 및 설정</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/docker/">docker</category>
-      
-      <category domain="https://chinsun9.github.io/tags/raspberrypi/">raspberrypi</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/07/29/install-git-docker-on-raspberrypi/#disqus_thread</comments>
       
     </item>
     
