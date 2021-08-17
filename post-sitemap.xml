@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/08/17/github-action-practice/</loc>
+        <lastmod>2021-08-17T02:54:36.514Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/08/12/github-dot-key/</loc>
+        <lastmod>2021-08-17T02:52:56.295Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/11/25/react%EC%97%90%EC%84%9C-html-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-%EC%93%B0%EA%B8%B0-emmet-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-08-17T01:50:27.068Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -26,14 +42,6 @@
     <url>
         <loc>https://chinsun9.github.io/2021/08/15/english-name-of-special-characters/</loc>
         <lastmod>2021-08-17T00:13:22.465Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/08/12/github-dot-key/</loc>
-        <lastmod>2021-08-12T01:46:37.974Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
