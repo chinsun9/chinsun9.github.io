@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 18 Aug 2021 05:55:20 GMT</pubDate>
+    <pubDate>Wed, 18 Aug 2021 06:29:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -27,7 +27,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>vercel에 배포한 앱이 db 커넥션이 안되었다</li><li>aws 프리티어가 끝나서 로컬 컴퓨터에서 postgresql를 돌렸다</li><li>공유기 포트 포워딩, 방화벽 인바운드 규칙 설정, 커넥션 스트링도 잘 작성해줬는데 이상하게 안되었다</li><li>찾아보니까 postgreql 설정도 건드려야 했다</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><ul><li><code>C:\Program Files\PostgreSQL\13\data</code> ; 내 postgresql 설치 경로이다</li><li>바로 여기에 <code>pg_hba.conf</code>을 수정해주어서 해결했다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/postgresql-port-forwarding20210818/preview.png" alt=" "></p><figure class="highlight plain"><figcaption><span>pg_hba.conf:86</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># IPv4 local connections:</span><br><span class="line">host    all             all             0.0.0.0&#x2F;0               scram-sha-256</span><br></pre></td></tr></table></figure><ul><li>86라인 정도에 <code>127.0.0.1/32</code>를 <code>0.0.0.0/0</code>으로 수정해주면 된다</li><li>따로 dbms를 재부팅 안 해줘도 바로 적용되었다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://hgko1207.github.io/2020/09/11/postgresql-2/">https://hgko1207.github.io/2020/09/11/postgresql-2/</a></li><li>포트 포워딩 잘됐는지 확인하기 ; <a href="https://www.yougetsignal.com/tools/open-ports/">https://www.yougetsignal.com/tools/open-ports/</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>vercel에 배포한 앱이 db 커넥션이 안되었다</li><li>aws 프리티어가 끝나서 로컬 컴퓨터에서 postgresql를 돌렸다</li><li>공유기 포트 포워딩, 방화벽 인바운드 규칙 설정, 커넥션 스트링도 잘 작성해줬는데 이상하게 안되었다</li><li>찾아보니까 postgresql 설정도 건드려야 했다</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><ul><li><code>C:\Program Files\PostgreSQL\13\data</code> ; 내 postgresql 설치 경로이다</li><li>바로 여기에 <code>pg_hba.conf</code>을 수정해주어서 해결했다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/postgresql-port-forwarding20210818/preview.png" alt=" "></p><figure class="highlight plain"><figcaption><span>pg_hba.conf:86</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># IPv4 local connections:</span><br><span class="line">host    all             all             0.0.0.0&#x2F;0               scram-sha-256</span><br></pre></td></tr></table></figure><ul><li>86라인 정도에 <code>127.0.0.1/32</code>를 <code>0.0.0.0/0</code>으로 수정해주면 된다</li><li>따로 dbms를 재부팅 안 해줘도 바로 적용되었다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://hgko1207.github.io/2020/09/11/postgresql-2/">https://hgko1207.github.io/2020/09/11/postgresql-2/</a></li><li>포트 포워딩 잘됐는지 확인하기 ; <a href="https://www.yougetsignal.com/tools/open-ports/">https://www.yougetsignal.com/tools/open-ports/</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/sql/">sql</category>
@@ -37,7 +37,7 @@
       
       <category domain="https://chinsun9.github.io/tags/port-forwarding/">port forwarding</category>
       
-      <category domain="https://chinsun9.github.io/tags/postgreql/">postgreql</category>
+      <category domain="https://chinsun9.github.io/tags/postgresql/">postgresql</category>
       
       
       <comments>https://chinsun9.github.io/2021/08/18/postgresql-port-forwarding/#disqus_thread</comments>
