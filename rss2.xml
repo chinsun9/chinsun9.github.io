@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 19 Aug 2021 09:07:34 GMT</pubDate>
+    <pubDate>Sat, 21 Aug 2021 14:04:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js 문자열 클립보드로 복사하기</title>
+      <link>https://chinsun9.github.io/2021/08/21/js-copy-string-to-clipboard-without-select/</link>
+      <guid>https://chinsun9.github.io/2021/08/21/js-copy-string-to-clipboard-without-select/</guid>
+      <pubDate>Sat, 21 Aug 2021 14:04:54 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;strong&gt;Clipboard API&lt;/strong&gt;를 사용할 수 있다&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example.js&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><strong>Clipboard API</strong>를 사용할 수 있다</p><figure class="highlight js"><figcaption><span>example.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">navigator.clipboard.writeText(gto9(text));</span><br></pre></td></tr></table></figure><ul><li>bye bye <code>document.execCommand(&quot;copy&quot;)</code></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard">https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/clipboard/">clipboard</category>
+      
+      <category domain="https://chinsun9.github.io/tags/copy/">copy</category>
+      
+      <category domain="https://chinsun9.github.io/tags/navigator/">navigator</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/08/21/js-copy-string-to-clipboard-without-select/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>ssh를 사용해 git clone 하기</title>
@@ -597,36 +630,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/03/syntactic-sugar/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>cli에서 줄바꿔서 명령어 계속 입력하기</title>
-      <link>https://chinsun9.github.io/2021/08/03/cli-continue-command-to-next-line/</link>
-      <guid>https://chinsun9.github.io/2021/08/03/cli-continue-command-to-next-line/</guid>
-      <pubDate>Tue, 03 Aug 2021 01:12:55 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/cli-continue-command-to-next-line-20210803/preview.png&quot; a</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/cli-continue-command-to-next-line-20210803/preview.png" alt=" "></p><figure class="highlight bat"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="number">1</span> ^</span><br><span class="line"><span class="number">2</span> ^</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure><figure class="highlight ps1"><figcaption><span>powershell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="number">1</span> `</span><br><span class="line"><span class="number">2</span> `</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure><figure class="highlight sh"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> 1 \</span><br><span class="line">2 \</span><br><span class="line">3</span><br></pre></td></tr></table></figure><ul><li>cmd, powershell, bash 다 달라서 흠이다</li><li>cli에서 긴 명령어를 작성할 때 가독성을 높여줄 수 있다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/cmd/">cmd</category>
-      
-      <category domain="https://chinsun9.github.io/tags/bash/">bash</category>
-      
-      <category domain="https://chinsun9.github.io/tags/powershell/">powershell</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/03/cli-continue-command-to-next-line/#disqus_thread</comments>
       
     </item>
     
