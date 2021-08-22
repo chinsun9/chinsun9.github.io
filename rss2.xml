@@ -9,8 +9,34 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 21 Aug 2021 14:04:54 GMT</pubDate>
+    <pubDate>Sun, 22 Aug 2021 04:22:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>chocolatey, 패키지 매니저 설치</title>
+      <link>https://chinsun9.github.io/2021/08/22/install-chocolatey/</link>
+      <guid>https://chinsun9.github.io/2021/08/22/install-chocolatey/</guid>
+      <pubDate>Sun, 22 Aug 2021 04:22:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight ps1&quot;&gt;&lt;figcaption&gt;&lt;span&gt;administrator powershell terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;spa</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight ps1"><figcaption><span>administrator powershell terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ExecutionPolicy</span> Bypass <span class="literal">-Scope</span> <span class="keyword">Process</span> <span class="literal">-Force</span>; [<span class="type">System.Net.ServicePointManager</span>]::SecurityProtocol = [<span class="type">System.Net.ServicePointManager</span>]::SecurityProtocol <span class="operator">-bor</span> <span class="number">3072</span>; <span class="built_in">iex</span> ((<span class="built_in">New-Object</span> System.Net.WebClient).DownloadString(<span class="string">&#x27;https://community.chocolatey.org/install.ps1&#x27;</span>))</span><br></pre></td></tr></table></figure><ul><li>관리자 권한으로 파워셸 실행 후 명령 실행</li></ul><!-- react native 개발 전제 조건으로 node나 jdk 설치를 할 때 윈도우에서는 chocolatey를 사용해 설치하는 것을 권장하여 설치하게 됨  --><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://chocolatey.org/install">https://chocolatey.org/install</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/chocolatey/">chocolatey</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/08/22/install-chocolatey/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js 문자열 클립보드로 복사하기</title>
@@ -597,39 +623,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/03/javascript-prototype-function-vs-method-function/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>syntactic sugar</title>
-      <link>https://chinsun9.github.io/2021/08/03/syntactic-sugar/</link>
-      <guid>https://chinsun9.github.io/2021/08/03/syntactic-sugar/</guid>
-      <pubDate>Tue, 03 Aug 2021 02:24:50 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;좋은 문법&lt;/li&gt;
-&lt;li&gt;동일한 결과를 가져오는데 문법만 다른 것&lt;/li&gt;
-&lt;li&gt;근데 읽기 쉽게 다르다&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;js에서-syntactic-sugar-예&quot;&gt;&lt;a href=&quot;#js에서-syntactic-sug</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>좋은 문법</li><li>동일한 결과를 가져오는데 문법만 다른 것</li><li>근데 읽기 쉽게 다르다</li></ul><h2 id="js에서-syntactic-sugar-예"><a href="#js에서-syntactic-sugar-예" class="headerlink" title="js에서 syntactic sugar 예"></a>js에서 syntactic sugar 예</h2><ul><li>class</li><li>async await</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://en.wikipedia.org/wiki/Syntactic_sugar">https://en.wikipedia.org/wiki/Syntactic_sugar</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Language_Resources">https://developer.mozilla.org/ko/docs/Web/JavaScript/Language_Resources</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
-      
-      <category domain="https://chinsun9.github.io/tags/syntactic-sugar/">syntactic sugar</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/03/syntactic-sugar/#disqus_thread</comments>
       
     </item>
     
