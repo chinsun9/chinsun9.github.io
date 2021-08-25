@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/08/25/orm/</loc>
+        <lastmod>2021-08-25T06:01:16.587Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/07/28/postgresql-commands/</loc>
+        <lastmod>2021-08-25T05:31:20.963Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/08/25/git-clone-using-ssh-key-passphrase/</loc>
         <lastmod>2021-08-25T04:52:18.300Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -26,14 +42,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/16/boilerplate/</loc>
         <lastmod>2021-08-25T00:09:06.064Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/07/28/postgresql-commands/</loc>
-        <lastmod>2021-08-25T00:08:43.319Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
