@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://chinsun9.github.io/2021/08/25/orm/</loc>
-        <lastmod>2021-08-25T06:01:16.587Z</lastmod>
+        <lastmod>2021-08-25T08:45:42.956Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/08/04/start-nestjs/</loc>
+        <lastmod>2021-08-25T06:03:20.033Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -865,14 +873,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2021/06/18/ssr-csr/</loc>
-        <lastmod>2021-08-11T00:07:28.318Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/08/04/start-nestjs/</loc>
         <lastmod>2021-08-11T00:07:28.318Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

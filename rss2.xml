@@ -9,11 +9,11 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 25 Aug 2021 06:01:16 GMT</pubDate>
+    <pubDate>Wed, 25 Aug 2021 08:45:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>orm</title>
+      <title>ORM</title>
       <link>https://chinsun9.github.io/2021/08/25/orm/</link>
       <guid>https://chinsun9.github.io/2021/08/25/orm/</guid>
       <pubDate>Wed, 25 Aug 2021 06:01:16 GMT</pubDate>
@@ -22,13 +22,14 @@
         
       <description>&lt;ul&gt;
 &lt;li&gt;전통?의 데이터베이스 사용은 ERD를 작성(식별부터 정규화까지)하고,&lt;/li&gt;
-&lt;li&gt;DDL은 사용해서 테이블 생성 등 데이터베이스 사용을 위한 초기화를 하고,&lt;/li&gt;
-&lt;li&gt;DML로 조회 쿼리를 작성하는 등 과정을 거쳐 사용했다&lt;/</description>
+&lt;li&gt;DDL로 테이블 생성 등 데이터베이스 사용을 위한 초기화를 하고,&lt;/li&gt;
+&lt;li&gt;DML로 조회 쿼리를 작성하는 등 과정을 거쳐 사용했다&lt;/li&gt;
+&lt;</description>
         
       
       
       
-      <content:encoded><![CDATA[<ul><li>전통?의 데이터베이스 사용은 ERD를 작성(식별부터 정규화까지)하고,</li><li>DDL은 사용해서 테이블 생성 등 데이터베이스 사용을 위한 초기화를 하고,</li><li>DML로 조회 쿼리를 작성하는 등 과정을 거쳐 사용했다</li><li>그런데 ORM, Object Relational Mapping 이 뭘까..?</li></ul><div class="video-container"><iframe src="https://www.youtube.com/embed/4cy92zeVjmM" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>위 영상을 보고 정리한 내용</li></ul><h2 id="ORM"><a href="#ORM" class="headerlink" title="ORM"></a>ORM</h2><ul><li>오브젝트 기반의 ~</li><li>객체(클래스)를 만들면 테이블을 생성해주는 마법</li></ul><h3 id="장점"><a href="#장점" class="headerlink" title="장점"></a>장점</h3><ul><li>data model을 한 곳에서 작성한다</li><li>백엔드에서 데이터베이스 테이블과 매핑되는 타입을 정의하는데, orm을 쓰면 내가 정의한 모델 자체가 타이핑이 된다</li><li>sql을 작성하지 않아도 된다 ; 모델을 정의하면 DDL을 알아서 생성한다. DML 작성 대신 메서드를 사용한다</li><li>데이터베이스 추상화 ; 보통의 orm 라이브러리들은 여러 데이터베이스를 지원한다</li><li>오라클을 사용하다가 mysql로 데이터베이스를 바꿔도 전혀 문제가 없다</li><li>OOP를 활용한다 ; OOP를 알고 있으면 친숙하다</li></ul><h3 id="단점"><a href="#단점" class="headerlink" title="단점"></a>단점</h3><ul><li>orm을 따로 배워야 한다</li><li>orm을 통해 데이터베이스를 다룬다는 것에서 레이어가 나뉘었다는 장점?이 있지만, 데이터베이스를 커스텀하기 힘들다 (성능, 유지보수)</li></ul><h2 id="ORM-예"><a href="#ORM-예" class="headerlink" title="ORM 예"></a>ORM 예</h2><ul><li>자바에서는 hibernate,</li><li>노드에서는 sequelize, typeorm, prisma 등이 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/4cy92zeVjmM">https://youtu.be/4cy92zeVjmM</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<ul><li>전통?의 데이터베이스 사용은 ERD를 작성(식별부터 정규화까지)하고,</li><li>DDL로 테이블 생성 등 데이터베이스 사용을 위한 초기화를 하고,</li><li>DML로 조회 쿼리를 작성하는 등 과정을 거쳐 사용했다</li><li>그런데 ORM, Object Relational Mapping 이 뭘까..?</li></ul><div class="video-container"><iframe src="https://www.youtube.com/embed/4cy92zeVjmM" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>위 영상을 보고 정리한 내용</li></ul><h2 id="ORM"><a href="#ORM" class="headerlink" title="ORM"></a>ORM</h2><ul><li>오브젝트 기반의 ~</li><li>객체(클래스)를 만들면 테이블을 생성해주는 마법</li></ul><h3 id="장점"><a href="#장점" class="headerlink" title="장점"></a>장점</h3><ul><li>data model을 한 곳에서 작성한다</li><li>백엔드에서 데이터베이스 테이블과 매핑되는 타입을 정의하는데, ORM을 쓰면 내가 정의한 모델 자체가 타이핑이 된다</li><li>sql을 작성하지 않아도 된다 ; 모델을 정의하면 DDL을 알아서 생성한다. DML 작성 대신 메서드를 사용한다</li><li>데이터베이스 추상화 ; 보통의 ORM 라이브러리들은 여러 데이터베이스를 지원한다</li><li>오라클을 사용하다가 mysql로 데이터베이스를 바꿔도 전혀 문제가 없다</li><li>OOP를 활용한다 ; OOP를 알고 있으면 친숙하다</li></ul><h3 id="단점"><a href="#단점" class="headerlink" title="단점"></a>단점</h3><ul><li>ORM을 따로 배워야 한다</li><li>ORM을 통해 데이터베이스를 다룬다는 것에서 레이어가 나뉘었다는 장점?이 있지만, 데이터베이스를 커스텀하기 힘들다 (성능)</li></ul><h2 id="ORM-예"><a href="#ORM-예" class="headerlink" title="ORM 예"></a>ORM 예</h2><ul><li>자바에서는 hibernate,</li><li>노드에서는 sequelize, typeorm, prisma 등이 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/4cy92zeVjmM">https://youtu.be/4cy92zeVjmM</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
