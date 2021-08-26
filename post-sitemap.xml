@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/08/26/yarn-tips/</loc>
+        <lastmod>2021-08-26T01:54:53.789Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/08/06/vscode-extension-rest-client/</loc>
+        <lastmod>2021-08-26T01:16:02.300Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/08/25/orm/</loc>
         <lastmod>2021-08-25T08:45:42.956Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -753,14 +769,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2020/11/16/vscode-extension-TabOut/</loc>
-        <lastmod>2021-08-11T00:07:28.328Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/08/06/vscode-extension-rest-client/</loc>
         <lastmod>2021-08-11T00:07:28.328Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
