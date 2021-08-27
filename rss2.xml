@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 26 Aug 2021 02:00:56 GMT</pubDate>
+    <pubDate>Thu, 26 Aug 2021 02:46:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js delete operator</title>
+      <link>https://chinsun9.github.io/2021/08/26/js-delete-operator/</link>
+      <guid>https://chinsun9.github.io/2021/08/26/js-delete-operator/</guid>
+      <pubDate>Thu, 26 Aug 2021 02:46:29 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example.js&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>example.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> user = &#123;</span><br><span class="line">  username: <span class="string">&#x27;sung&#x27;</span>,</span><br><span class="line">  password: <span class="string">&#x27;1234&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">delete</span> user.password;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(user);</span><br><span class="line"><span class="comment">// &#123; username: &#x27;sung&#x27; &#125;</span></span><br></pre></td></tr></table></figure><ul><li>객체의 속성을 제거한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/delete">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/delete</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/delete/">delete</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/08/26/js-delete-operator/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>yarn tips, 그냥 node 명령과 npm, yarn 명령 차이</title>
@@ -616,41 +644,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/06/vscode-extension-rest-client/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>SSG, static site generator</title>
-      <link>https://chinsun9.github.io/2021/08/06/ssg-static-site-generator/</link>
-      <guid>https://chinsun9.github.io/2021/08/06/ssg-static-site-generator/</guid>
-      <pubDate>Fri, 06 Aug 2021 07:11:23 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;정적 사이트 생성기&lt;/li&gt;
-&lt;li&gt;react와 같은 spa 라이브러리/프레임워크로 생성한 spa를 여러 html로 쪼개 준다&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;SSR 도구 예 ; nextjs, hexo,…&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>정적 사이트 생성기</li><li>react와 같은 spa 라이브러리/프레임워크로 생성한 spa를 여러 html로 쪼개 준다</li></ul><ul><li>SSR 도구 예 ; nextjs, hexo,…</li></ul><h2 id="같이-보기"><a href="#같이-보기" class="headerlink" title="같이 보기"></a>같이 보기</h2><ul><li><a href="/2021/06/18/ssr-csr">SSR, CSR</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ssg/">ssg</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/06/ssg-static-site-generator/#disqus_thread</comments>
       
     </item>
     
