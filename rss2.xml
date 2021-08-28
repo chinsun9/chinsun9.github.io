@@ -9,8 +9,34 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 26 Aug 2021 02:46:29 GMT</pubDate>
+    <pubDate>Sat, 28 Aug 2021 06:59:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode command palette 단축키 / F1 vs. Ctrl Shift P</title>
+      <link>https://chinsun9.github.io/2021/08/28/vscode-command-palette-f1-vs-ctrl-shift-p/</link>
+      <guid>https://chinsun9.github.io/2021/08/28/vscode-command-palette-f1-vs-ctrl-shift-p/</guid>
+      <pubDate>Sat, 28 Aug 2021 06:59:55 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-command-palette-f1-vs-ctrl-shift-p20210828/preview</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-command-palette-f1-vs-ctrl-shift-p20210828/preview.png" alt=" "></p><ul><li><code>F1</code> 키와 <code>Ctrl Shift P</code>키로 명령 팔레트를 열 수 있다</li><li>근데 이 둘에 차이가 있다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-command-palette-f1-vs-ctrl-shift-p20210828/1.gif" alt=" "></p><ul><li>에디터에서 특정 영역을 selection, 선택한 후에 <code>F1</code>을 누르면 셀렉션이 풀린다</li><li>반면 <code>Ctrl Shift P</code>를 누르면 셀렉션이 유지된다</li></ul><ul><li><code>transform to uppercase</code>같은 명령을 실행하려고 F1키를 눌러보면 선택영역이 풀려버렸다</li><li><code>sort lines</code>같은 명령도 셀렉션을 유지한 채로 실행해야 의미가 있다</li><li>셀렉션 여부가 중요한 커맨드인 경우에는 <code>Ctrl Shift P</code> 단축키를 사용하도록 하자</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/08/28/vscode-command-palette-f1-vs-ctrl-shift-p/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js delete operator</title>
@@ -616,34 +642,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/07/start-jest-with-typescript/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode extension rest client</title>
-      <link>https://chinsun9.github.io/2021/08/06/vscode-extension-rest-client/</link>
-      <guid>https://chinsun9.github.io/2021/08/06/vscode-extension-rest-client/</guid>
-      <pubDate>Fri, 06 Aug 2021 12:46:15 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-extension-rest-client20210806/preview.png&quot; alt=&quot; &quot;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-extension-rest-client20210806/preview.png" alt=" "></p><ul><li>Rest Client라는 도구가 있다</li><li>text 기반으로 간편하게 리퀘스트를 작성할 수 있다</li></ul><figure class="highlight"><figcaption><span>example.http</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">###</span><br><span class="line"><span class="keyword">GET</span> <span class="string">http://localhost:3000/movies/</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"></span><br><span class="line">###</span><br><span class="line"><span class="keyword">GET</span> <span class="string">http://localhost:3000/movies/1</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"></span><br><span class="line">###</span><br><span class="line"><span class="keyword">POST</span> <span class="string">http://localhost:3000/movies/</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"><span class="attribute">Content-Type</span><span class="punctuation">: </span>application/json</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    &quot;title&quot;: &quot;sung&quot;,</span><br><span class="line">    &quot;year&quot;: 2020,</span><br><span class="line">    &quot;genres&quot;: [&quot;mind blown&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>확장자는 <code>http</code>로 한다</li><li>한 파일에서 여러 개의 리퀘스트를 작성할 때는 <code>###</code>으로 구분하여 작성한다</li><li>리퀘스트 작성할 때 메서드(get, post, put, delete,…)를 입력하면 자동완성 스니펫을 제공한다</li><li>단축키로는 <code>ctrl alt R</code>로 리퀘스트를 보낼 수 있다</li></ul><h2 id="Variables"><a href="#Variables" class="headerlink" title="Variables"></a>Variables</h2><figure class="highlight http"><figcaption><span>envExample.http</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">@endpoint = http://localhost:3000</span><br><span class="line"></span><br><span class="line">###</span><br><span class="line"></span><br><span class="line"><span class="keyword">POST</span> <span class="string">&#123;&#123;endpoint&#125;&#125;/login</span> <span class="meta">HTTP/1.1</span></span><br><span class="line"><span class="attribute">Content-Type</span><span class="punctuation">: </span>application/json</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    &quot;username&quot;: &quot;sung&quot;,</span><br><span class="line">    &quot;password&quot;: &quot;1234&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">###</span><br><span class="line"></span><br><span class="line"><span class="keyword">GET</span> <span class="string">&#123;&#123;endpoint&#125;&#125;/profile</span> <span class="meta">HTTP/1.1</span></span><br></pre></td></tr></table></figure><ul><li>변수를 사용할 수 있다</li><li>계속 중복해서 사용하는 문자열이나, 나중에 변경될 여지가 있는 것들을 변수로 만들 수 있다</li></ul><h2 id="Environments"><a href="#Environments" class="headerlink" title="Environments"></a>Environments</h2><ul><li><code>ctrl alt e</code> 로 환경을 설정해 줄 수 있는데, 먼저 환경을 만들어야 한다</li></ul><figure class="highlight json"><figcaption><span>.vscode/settings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">&quot;rest-client.environmentVariables&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;$shared&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;v1&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;prodToken&quot;</span>: <span class="string">&quot;foo&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;nonProdToken&quot;</span>: <span class="string">&quot;bar&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;local&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;v2&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;host&quot;</span>: <span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;token&quot;</span>: <span class="string">&quot;&#123;&#123;$shared nonProdToken&#125;&#125;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;secretKey&quot;</span>: <span class="string">&quot;devSecret&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;production&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;host&quot;</span>: <span class="string">&quot;example.com&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;token&quot;</span>: <span class="string">&quot;&#123;&#123;$shared prodToken&#125;&#125;&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;secretKey&quot;</span>: <span class="string">&quot;prodSecret&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><em>.vscode/settings.json</em> 에 json으로 정의해줄 수 있다</li><li>이제 <code>ctrl alt e</code> 명령으로 원하는 환경을 선택해 사용한다</li></ul><h3 id="활용"><a href="#활용" class="headerlink" title="활용"></a>활용</h3><p>2개의 유저로 번갈아 가면서 테스트할 때 활용했다</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-extension-rest-client20210806/2.png" alt=" "></p><ul><li><em>.vscode/settings.json</em> 에 user1, user2의 토큰을 적는다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-extension-rest-client20210806/1.png" alt=" "></p><ul><li>스위치 해가면서 같은 api를 실행한다</li></ul><h2 id="쿠키-지우기"><a href="#쿠키-지우기" class="headerlink" title="쿠키 지우기"></a>쿠키 지우기</h2><ul><li><em>~/.rest-client/cookie.json</em> 삭제, vscode 재시작</li><li>인증 구현중이라면 서버를 다시 켜서 세션을 날리는 방법도 있겠다</li><li><a href="https://github.com/Huachao/vscode-restclient/issues/117">https://github.com/Huachao/vscode-restclient/issues/117</a></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client">https://marketplace.visualstudio.com/items?itemName=humao.rest-client</a></li><li><a href="https://github.com/Huachao/vscode-restclient">https://github.com/Huachao/vscode-restclient</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/06/vscode-extension-rest-client/#disqus_thread</comments>
       
     </item>
     
