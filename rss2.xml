@@ -9,8 +9,42 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 01 Sep 2021 11:39:41 GMT</pubDate>
+    <pubDate>Thu, 02 Sep 2021 03:38:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>youtube shortcuts</title>
+      <link>https://chinsun9.github.io/2021/09/02/youtube-shortcuts/</link>
+      <guid>https://chinsun9.github.io/2021/09/02/youtube-shortcuts/</guid>
+      <pubDate>Thu, 02 Sep 2021 03:38:48 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;모두 토글키다&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;c ; caption ; 자막&lt;/li&gt;
+&lt;li&gt;f ; full screen ; 전체화면&lt;/li&gt;
+&lt;li&gt;m ; mute ; 음소거&lt;/li&gt;
+&lt;li&gt;k ; pause&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;shif</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>모두 토글키다</p><ul><li>c ; caption ; 자막</li><li>f ; full screen ; 전체화면</li><li>m ; mute ; 음소거</li><li>k ; pause</li></ul><ul><li>shift n ; 재생목록에서 다음 동영상</li><li>shift p ; 재생목록에서 이전 동영상</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/PVV1MduppSM">https://youtu.be/PVV1MduppSM</a></li><li><a href="https://support.google.com/youtube/answer/7631406?hl=ko">https://support.google.com/youtube/answer/7631406?hl=ko</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/youtube/">youtube</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/09/02/youtube-shortcuts/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>ts enum spread</title>
@@ -623,35 +657,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/12/github-dot-key/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>docker context use</title>
-      <link>https://chinsun9.github.io/2021/08/10/docker-context-use/</link>
-      <guid>https://chinsun9.github.io/2021/08/10/docker-context-use/</guid>
-      <pubDate>Tue, 10 Aug 2021 03:13:32 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/docker-context-use20210804/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/docker-context-use20210804/preview.png" alt=" "></p><ul><li><p>어느 날 리모트 한 머신에서 도커로 컨테이너를 실행하고,</p></li><li><p>그 컨테이너로 접속하는 게 안되었다</p></li><li><p><a href="https://stackoverflow.com/questions/60425053/vs-code-connect-a-docker-container-in-a-remote-server">https://stackoverflow.com/questions/60425053/vs-code-connect-a-docker-container-in-a-remote-server</a></p></li><li><p>위 글을 참고하여 도커 컨텍스트 유스를 사용해서 해결했다</p></li><li><p>근데 컴퓨터를 새로 실행해도 그대로 설정값이 유지되어서 도커 실행이 안되었다</p></li></ul><figure class="highlight plain"><figcaption><span>error</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">이 대화 상자 대신 JIT(Just-in-time) 디버깅을 호출하는</span><br><span class="line">방법에 대한 자세한 내용은 이 메시지의 뒷부분을 참조하십시오.</span><br><span class="line"></span><br><span class="line">************** 예외 텍스트 **************</span><br><span class="line">System.Threading.Tasks.TaskCanceledException: Cancellation token triggered before we finished reading from the stream.</span><br><span class="line">   위치: HttpOverStream.ByLineReader.&lt;ReadLineAsync&gt;d__0.MoveNext()</span><br><span class="line">&#x2F;&#x2F; 생략...</span><br><span class="line">************** JIT 디버깅 **************</span><br><span class="line">JIT(Just In Time) 디버깅을 사용하려면 이 응용 프로그램 또는 컴퓨터의</span><br><span class="line">config 파일(machine.config)의 jitDebugging 값을</span><br><span class="line">system.windows.forms 섹션에 설정해야 합니다.</span><br><span class="line">또한 응용 프로그램은 디버깅할 수 있도록 컴파일되어야</span><br><span class="line">합니다.</span><br><span class="line"></span><br><span class="line">예:</span><br><span class="line"></span><br><span class="line">&lt;configuration&gt;</span><br><span class="line">    &lt;system.windows.forms jitDebugging&#x3D;&quot;true&quot; &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;configuration&gt;</span><br><span class="line"></span><br><span class="line">JIT 디버깅을 사용하면 처리되지 않은 모든 예외는</span><br><span class="line">이 대화 상자에서 처리되지 않고 컴퓨터에 등록된 JIT</span><br><span class="line">디버거에 보내집니다.</span><br></pre></td></tr></table></figure><ul><li>다음날 와보니 위 에러가 뜨면서 도커 실행이 안되었다</li><li>생각해보니까 어제 컨텍스트 유스한 명령이 생각나서, 이 명령을 실행하기 이전으로 돌아가면 될 듯했다</li></ul><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 명령어 살피기</span></span><br><span class="line">docker context</span><br><span class="line"></span><br><span class="line"><span class="comment"># 컨텍스트 목록 보기</span></span><br><span class="line">docker context list</span><br><span class="line"></span><br><span class="line"><span class="comment"># 기본값으로 바꾸기</span></span><br><span class="line">docker context use default</span><br></pre></td></tr></table></figure><ul><li>위 명령을 실행하고 다시 도커를 실행하니 잘 동작했다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/60425053/vs-code-connect-a-docker-container-in-a-remote-server">https://stackoverflow.com/questions/60425053/vs-code-connect-a-docker-container-in-a-remote-server</a></li><li><a href="https://docs.docker.com/engine/context/working-with-contexts/">https://docs.docker.com/engine/context/working-with-contexts/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/docker/">docker</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/docker/">docker</category>
-      
-      <category domain="https://chinsun9.github.io/tags/context/">context</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/10/docker-context-use/#disqus_thread</comments>
       
     </item>
     
