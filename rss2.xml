@@ -9,8 +9,37 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 02 Sep 2021 03:38:48 GMT</pubDate>
+    <pubDate>Fri, 03 Sep 2021 04:07:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>typeorm 카테고리 생성</title>
+      <link>https://chinsun9.github.io/2021/09/03/create-typeorm-category/</link>
+      <guid>https://chinsun9.github.io/2021/09/03/create-typeorm-category/</guid>
+      <pubDate>Fri, 03 Sep 2021 04:07:09 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;typeorm 공부해보자&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;공부-링크&quot;&gt;&lt;a href=&quot;#공부-링크&quot; class=&quot;headerlink&quot; title=&quot;공부 링크&quot;&gt;&lt;/a&gt;공부 링크&lt;/h2&gt;&lt;h3 id=&quot;with-nestjs&quot;&gt;&lt;a hre</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>typeorm 공부해보자</li></ul><h2 id="공부-링크"><a href="#공부-링크" class="headerlink" title="공부 링크"></a>공부 링크</h2><h3 id="with-nestjs"><a href="#with-nestjs" class="headerlink" title="with nestjs"></a>with nestjs</h3><ul><li>Database | 네스트JS ; <a href="https://docs.nestjs.kr/techniques/database">https://docs.nestjs.kr/techniques/database</a></li><li>SQL (TypeORM) | 네스트JS ; <a href="https://docs.nestjs.kr/recipes/sql-typeorm">https://docs.nestjs.kr/recipes/sql-typeorm</a></li></ul><h3 id="공식"><a href="#공식" class="headerlink" title="공식"></a>공식</h3><ul><li><a href="https://typeorm.io/">https://typeorm.io/</a></li><li><a href="https://github.com/typeorm/typeorm">https://github.com/typeorm/typeorm</a></li><li>example projects ; <a href="https://github.com/typeorm/typeorm#samples">https://github.com/typeorm/typeorm#samples</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/typeorm/">typeorm</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/category/">category</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/09/03/create-typeorm-category/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>youtube shortcuts</title>
@@ -625,38 +654,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/12/wsl-interop/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>github dot key</title>
-      <link>https://chinsun9.github.io/2021/08/12/github-dot-key/</link>
-      <guid>https://chinsun9.github.io/2021/08/12/github-dot-key/</guid>
-      <pubDate>Thu, 12 Aug 2021 01:10:32 GMT</pubDate>
-      
-        
-        
-      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/ywUZOOzLX3c&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/ywUZOOzLX3c" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>…</li><li>레포를 로컬에 클론하지 않고도 코드를 탐색해 볼 수 있다</li><li>아무 저장소에서 <code>.</code> (dot) key 를 눌러서 열어볼 수 있다</li><li>처음 켜지는데 시간이 조금 걸린다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/ywUZOOzLX3c">https://youtu.be/ywUZOOzLX3c</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/web-editor/">web editor</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/12/github-dot-key/#disqus_thread</comments>
       
     </item>
     
