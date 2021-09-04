@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/09/04/js-number-comma/</loc>
+        <lastmod>2021-09-04T13:47:21.210Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/09/03/create-typeorm-category/</loc>
         <lastmod>2021-09-03T04:07:09.576Z</lastmod>
         <changefreq>weekly</changefreq>

@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 03 Sep 2021 04:07:09 GMT</pubDate>
+    <pubDate>Sat, 04 Sep 2021 13:47:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js number comma</title>
+      <link>https://chinsun9.github.io/2021/09/04/js-number-comma/</link>
+      <guid>https://chinsun9.github.io/2021/09/04/js-number-comma/</guid>
+      <pubDate>Sat, 04 Sep 2021 13:47:21 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example.js&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>example.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="keyword">const</span> n = <span class="number">11111111111111</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(n.toLocaleString());</span><br><span class="line">  <span class="comment">// 11,111,111,111,111</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// console.log(navigator.languages);</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">const</span> n = <span class="number">11111111111111</span>;</span><br><span class="line">  <span class="keyword">const</span> nuberWithCommas = n.toLocaleString(<span class="string">&#x27;ko-KR&#x27;</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(nuberWithCommas);</span><br><span class="line">  <span class="comment">// 11,111,111,111,111</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript">https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/toLocaleString/">toLocaleString</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/09/04/js-number-comma/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>typeorm 카테고리 생성</title>
@@ -622,38 +650,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/15/english-name-of-special-characters/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>wsl interop</title>
-      <link>https://chinsun9.github.io/2021/08/12/wsl-interop/</link>
-      <guid>https://chinsun9.github.io/2021/08/12/wsl-interop/</guid>
-      <pubDate>Thu, 12 Aug 2021 01:36:36 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/wsl-interop20210726/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;c</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/wsl-interop20210726/preview.png" alt=" "></p><ul><li><code>rm -rf</code>같은 리눅스 명령어를 윈도우에서 작성하고 싶다</li><li>명령어를 똑같이 쓸 수 있는 방법이 있다</li><li>파워셸 코어가 필요하다</li></ul><h2 id="전제조건"><a href="#전제조건" class="headerlink" title="전제조건"></a>전제조건</h2><ul><li>WSL 활성화</li></ul><h2 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h2><ul><li>파워셸 코어를 설치한다<ul><li><a href="https://github.com/powershell/powershell#get-powershell">https://github.com/powershell/powershell#get-powershell</a></li></ul></li></ul><figure class="highlight ps1"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Install-Module</span> WslInterop</span><br></pre></td></tr></table></figure><ul><li>파워셸 코어를 실행하고, <code>Install-Module WslInterop</code>으로 설치한다</li></ul><h2 id="사용하기"><a href="#사용하기" class="headerlink" title="사용하기"></a>사용하기</h2><figure class="highlight ps1"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Import-WslCommand</span></span><br></pre></td></tr></table></figure><h2 id="새-터미널을-킬-때마다-다시-설정해줘야-한다"><a href="#새-터미널을-킬-때마다-다시-설정해줘야-한다" class="headerlink" title="새 터미널을 킬 때마다 다시 설정해줘야 한다?"></a>새 터미널을 킬 때마다 다시 설정해줘야 한다?</h2><ul><li><code>Import-WslCommand</code> 명령으로 wsl로 실행할 명령을 지정할 수 있다</li><li>그런데 새로운 터미널을 켤 때마다 매번 명령을 쳐줄 수 없다</li><li>파워셸 프로필을 설정해서 자동으로 임포트 명령이 실행되도록 한다</li></ul><figure class="highlight ps1"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 프로필 생성</span></span><br><span class="line"><span class="keyword">if</span> (!(<span class="built_in">Test-Path</span> <span class="literal">-Path</span> <span class="variable">$PROFILE</span>)) &#123;</span><br><span class="line">  <span class="built_in">New-Item</span> <span class="literal">-ItemType</span> File <span class="literal">-Path</span> <span class="variable">$PROFILE</span> <span class="literal">-Force</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># profile파일 열고 wsl interop 설정</span></span><br><span class="line">notepad <span class="variable">$PROFILE</span></span><br></pre></td></tr></table></figure><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Import-WslCommand &quot;apt&quot;, &quot;awk&quot;, &quot;emacs&quot;, &quot;grep&quot;, &quot;head&quot;, &quot;less&quot;, &quot;ls&quot;, &quot;man&quot;, &quot;sed&quot;, &quot;seq&quot;, &quot;ssh&quot;, &quot;sudo&quot;, &quot;tail&quot;, &quot;vim&quot;, &quot;rm&quot;, &quot;touch&quot;</span><br></pre></td></tr></table></figure><ul><li>인터럽트 할 명령어를 위와 같이 나열한다</li><li>이제 파워셸에서 나열한 셸 명령어를 사용할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/mikebattista/PowerShell-WSL-Interop">https://github.com/mikebattista/PowerShell-WSL-Interop</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/cmd/">cmd</category>
-      
-      <category domain="https://chinsun9.github.io/tags/bash/">bash</category>
-      
-      <category domain="https://chinsun9.github.io/tags/wsl/">wsl</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/12/wsl-interop/#disqus_thread</comments>
       
     </item>
     
