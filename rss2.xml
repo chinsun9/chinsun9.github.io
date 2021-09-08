@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 08 Sep 2021 07:02:44 GMT</pubDate>
+    <pubDate>Wed, 08 Sep 2021 14:50:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -26,7 +26,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-devcontainers20210908/preview.png" alt=" "></p><ul><li>로컬에 있는 프로젝트를 고대로 도커 컨테이너로 가져와 작업 가능..!</li></ul><h2 id="쉽게"><a href="#쉽게" class="headerlink" title="쉽게"></a>쉽게</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-devcontainers20210908/1.png" alt=" "></p><ul><li><code>Remote-Containers: Add Development Container Configuration Files...</code></li><li>원하는 환경 선택!</li><li>그러면 <em>.devcontainer</em> 폴더와 그아래 <em>Dockerfile</em> 과 컨테이너 <em>devcontainer.json</em> 이 자동 생성된다</li><li><code>Remote-Containers: Open Workspace in Container...</code>로 컨테이너에서 개발을 해볼 수 있겠다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://code.visualstudio.com/docs/remote/containers">https://code.visualstudio.com/docs/remote/containers</a></li><li><a href="https://code.visualstudio.com/docs/remote/containers-tutorial">https://code.visualstudio.com/docs/remote/containers-tutorial</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-devcontainers20210908/preview.png" alt=" "></p><ul><li>로컬에 있는 프로젝트를 고대로 도커 컨테이너로 가져와 작업 가능..!</li></ul><h2 id="쉽게"><a href="#쉽게" class="headerlink" title="쉽게"></a>쉽게</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-devcontainers20210908/1.png" alt=" "></p><ul><li><code>Remote-Containers: Add Development Container Configuration Files...</code></li><li>원하는 환경 선택!</li><li>그러면 <em>.devcontainer</em> 폴더와 그아래 <em>Dockerfile</em> 과 컨테이너 <em>devcontainer.json</em> 이 자동 생성된다</li><li><code>Remote-Containers: Reopen in Container</code>로 컨테이너에서 개발을 해볼 수 있겠다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://code.visualstudio.com/docs/remote/containers">https://code.visualstudio.com/docs/remote/containers</a></li><li><a href="https://code.visualstudio.com/docs/remote/containers-tutorial">https://code.visualstudio.com/docs/remote/containers-tutorial</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
