@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 04 Sep 2021 13:47:21 GMT</pubDate>
+    <pubDate>Wed, 08 Sep 2021 07:02:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode devcontainers</title>
+      <link>https://chinsun9.github.io/2021/09/08/vscode-devcontainers/</link>
+      <guid>https://chinsun9.github.io/2021/09/08/vscode-devcontainers/</guid>
+      <pubDate>Wed, 08 Sep 2021 07:02:44 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-devcontainers20210908/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;u</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-devcontainers20210908/preview.png" alt=" "></p><ul><li>로컬에 있는 프로젝트를 고대로 도커 컨테이너로 가져와 작업 가능..!</li></ul><h2 id="쉽게"><a href="#쉽게" class="headerlink" title="쉽게"></a>쉽게</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-devcontainers20210908/1.png" alt=" "></p><ul><li><code>Remote-Containers: Add Development Container Configuration Files...</code></li><li>원하는 환경 선택!</li><li>그러면 <em>.devcontainer</em> 폴더와 그아래 <em>Dockerfile</em> 과 컨테이너 <em>devcontainer.json</em> 이 자동 생성된다</li><li><code>Remote-Containers: Open Workspace in Container...</code>로 컨테이너에서 개발을 해볼 수 있겠다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://code.visualstudio.com/docs/remote/containers">https://code.visualstudio.com/docs/remote/containers</a></li><li><a href="https://code.visualstudio.com/docs/remote/containers-tutorial">https://code.visualstudio.com/docs/remote/containers-tutorial</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/docker/">docker</category>
+      
+      <category domain="https://chinsun9.github.io/tags/remote/">remote</category>
+      
+      <category domain="https://chinsun9.github.io/tags/container/">container</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/09/08/vscode-devcontainers/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js number comma</title>
@@ -612,44 +645,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/17/github-action-practice/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>컴공이라면 알아야 할 특수문자 읽는 법</title>
-      <link>https://chinsun9.github.io/2021/08/15/english-name-of-special-characters/</link>
-      <guid>https://chinsun9.github.io/2021/08/15/english-name-of-special-characters/</guid>
-      <pubDate>Sun, 15 Aug 2021 03:39:13 GMT</pubDate>
-      
-        
-        
-      <description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;특수문자&lt;/th&gt;
-&lt;th&gt;영어&lt;/th&gt;
-&lt;th&gt;한글 (일상에서 읽는 법)&lt;/th&gt;
-&lt;th&gt;링크&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;`&lt;/td&gt;
-&lt;td&gt;backtick&lt;/td&gt;
-&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<table><thead><tr><th>특수문자</th><th>영어</th><th>한글 (일상에서 읽는 법)</th><th>링크</th></tr></thead><tbody><tr><td>`</td><td>backtick</td><td>백틱</td><td><a href="https://en.wikipedia.org/wiki/Grave_accent#Use_in_programming">🧾</a></td></tr><tr><td>~</td><td>tilde</td><td>틸드, 물결표</td><td><a href="https://en.wikipedia.org/wiki/Tilde">🧾</a></td></tr><tr><td>!</td><td>exclamation mark</td><td>느낌표</td><td><a href="https://en.wikipedia.org/wiki/Exclamation_mark">🧾</a></td></tr><tr><td>@</td><td>at sign</td><td>골뱅이</td><td><a href="https://en.wikipedia.org/wiki/At_sign">🧾</a></td></tr><tr><td>#</td><td>number sign</td><td>샵</td><td><a href="https://en.wikipedia.org/wiki/Number_sign">🧾</a></td></tr><tr><td>$</td><td>dollar sign</td><td>달러</td><td><a href="https://en.wikipedia.org/wiki/Dollar_sign">🧾</a></td></tr><tr><td>%</td><td>percent sign</td><td>퍼센트, 나머지연산</td><td><a href="https://en.wikipedia.org/wiki/Percent_sign">🧾</a></td></tr><tr><td>^</td><td>caret</td><td>캐릿, 제곱</td><td><a href="https://en.wikipedia.org/wiki/Caret">🧾</a></td></tr><tr><td>&amp;</td><td>ampersand</td><td>앰퍼샌드, 앤드</td><td><a href="https://en.wikipedia.org/wiki/Ampersand">🧾</a></td></tr><tr><td>*</td><td>asterisk</td><td>애스터리스크, 별표, 곱하기</td><td><a href="https://en.wikipedia.org/wiki/Asterisk">🧾</a></td></tr><tr><td>()</td><td>parenthesis</td><td>소괄호</td><td><a href="https://en.wikipedia.org/wiki/Bracket#Parentheses">🧾</a></td></tr><tr><td>-</td><td>hyphen minus</td><td>하이픈, 빼기</td><td><a href="https://en.wikipedia.org/wiki/Hyphen-minus">🧾</a></td></tr><tr><td>_</td><td>underscore</td><td>언더스코어, 언더바, 밑줄</td><td><a href="https://en.wikipedia.org/wiki/Underscore">🧾</a></td></tr><tr><td>=</td><td>equals sign</td><td>이퀄, 는, 등호</td><td><a href="https://en.wikipedia.org/wiki/Equals_sign">🧾</a></td></tr><tr><td>+</td><td>plus sign</td><td>플러스, 더하기</td><td><a href="https://en.wikipedia.org/wiki/Plus_and_minus_signs#Plus_sign">🧾</a></td></tr><tr><td>[]</td><td>brackets</td><td>브라켓, 대괄호</td><td><a href="https://en.wikipedia.org/wiki/Bracket#Square_brackets">🧾</a></td></tr><tr><td>{}</td><td>braces</td><td>중괄호</td><td><a href="https://en.wikipedia.org/wiki/Bracket#Curly_brackets">🧾</a></td></tr><tr><td>\</td><td>backslash</td><td>백슬래시, 역슬래시, 원화</td><td><a href="https://en.wikipedia.org/wiki/Backslash">🧾</a></td></tr><tr><td>;</td><td>semicolon</td><td>세미콜론</td><td><a href="https://en.wikipedia.org/wiki/Semicolon">🧾</a></td></tr><tr><td>:</td><td>colon</td><td>콜론</td><td><a href="https://en.wikipedia.org/wiki/Colon_(punctuation)">🧾</a></td></tr><tr><td>‘</td><td>apostrophe</td><td>아포스트로피, 싱글 쿼테이션, 작은 따옴표</td><td><a href="https://en.wikipedia.org/wiki/Apostrophe">🧾</a></td></tr><tr><td>“</td><td>quotation</td><td>쿼테이션, 큰 따옴표</td><td><a href="https://en.wikipedia.org/wiki/Quotation_mark">🧾</a></td></tr><tr><td>,</td><td>comma</td><td>콤마</td><td><a href="https://en.wikipedia.org/wiki/Comma">🧾</a></td></tr><tr><td>.</td><td>dot, period, full stop</td><td>마침표</td><td><a href="https://en.wikipedia.org/wiki/Full_stop">🧾</a></td></tr><tr><td>&lt;&gt;</td><td>angle brackets</td><td>대소구분</td><td><a href="https://en.wikipedia.org/wiki/Bracket#Angle_brackets">🧾</a></td></tr><tr><td>/</td><td>slash</td><td>슬래시, 나누기</td><td><a href="https://en.wikipedia.org/wiki/Slash_(punctuation)">🧾</a></td></tr><tr><td>?</td><td>question mark</td><td>물음표</td><td><a href="https://en.wikipedia.org/wiki/Question_mark">🧾</a></td></tr></tbody></table><ul><li>특수문자로 된 연산자에 대해 구글링 할 때, 키워드를 알아야한다</li><li>위키피디아에 <code>https://en.wikipedia.org/wiki/&#123;특수문자&#125;</code> 를 입력해주면 바로 찾을 수 있었다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://en.wikipedia.org/wiki/">https://en.wikipedia.org/wiki/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/special-character/">special character</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/15/english-name-of-special-characters/#disqus_thread</comments>
       
     </item>
     
