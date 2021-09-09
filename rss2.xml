@@ -9,8 +9,42 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 08 Sep 2021 14:50:43 GMT</pubDate>
+    <pubDate>Thu, 09 Sep 2021 00:23:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>npm scripts pre post</title>
+      <link>https://chinsun9.github.io/2021/09/09/npm-scripts-pre-post/</link>
+      <guid>https://chinsun9.github.io/2021/09/09/npm-scripts-pre-post/</guid>
+      <pubDate>Thu, 09 Sep 2021 00:23:13 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight json&quot;&gt;&lt;figcaption&gt;&lt;span&gt;package.json&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/sp</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight json"><figcaption><span>package.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;prebuild&quot;</span>: <span class="string">&quot;echo 1&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;build&quot;</span>: <span class="string">&quot;echo 2&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;postbuild&quot;</span>: <span class="string">&quot;echo 3&quot;</span></span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>yarn build</code> or <code>npm run build</code> 했을 때 1,2,3 순서로 실행된다</li><li><code>pre</code>는 전처리, <code>post</code>는 후처리라고 생각하면 된다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.npmjs.com/cli/v7/using-npm/scripts">https://docs.npmjs.com/cli/v7/using-npm/scripts</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/ndoejs/">ndoejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/npm/">npm</category>
+      
+      <category domain="https://chinsun9.github.io/tags/ndoejs/">ndoejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/scripts/">scripts</category>
+      
+      <category domain="https://chinsun9.github.io/tags/pre/">pre</category>
+      
+      <category domain="https://chinsun9.github.io/tags/post/">post</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/09/09/npm-scripts-pre-post/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vscode devcontainers</title>
@@ -614,37 +648,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/18/postgresql-port-forwarding/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>github action practice</title>
-      <link>https://chinsun9.github.io/2021/08/17/github-action-practice/</link>
-      <guid>https://chinsun9.github.io/2021/08/17/github-action-practice/</guid>
-      <pubDate>Tue, 17 Aug 2021 02:54:36 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;깃허브 액션~!&lt;br&gt;내 프로젝트가 다른 환경에서도 잘 동작하는지 확인해보자&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>깃허브 액션~!<br>내 프로젝트가 다른 환경에서도 잘 동작하는지 확인해보자</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-action-practice20210809/preview.png" alt=" "></p><figure class="highlight yml"><figcaption><span>.github/workflows/github-actions.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">github</span> <span class="string">actions</span> <span class="string">practice</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">workflow_dispatch:</span></span><br><span class="line">    <span class="attr">branches:</span> [<span class="string">master</span>]</span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">test:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">$&#123;&#123;matrix.os&#125;&#125;</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">strategy:</span></span><br><span class="line">      <span class="attr">matrix:</span></span><br><span class="line">        <span class="attr">os:</span> [<span class="string">ubuntu-latest</span>, <span class="string">macos-latest</span>] <span class="comment"># https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions</span></span><br><span class="line">        <span class="attr">node-version:</span> [<span class="number">10.</span><span class="string">x</span>, <span class="number">11.</span><span class="string">x</span>, <span class="number">12.</span><span class="string">x</span>, <span class="number">13.</span><span class="string">x</span>, <span class="number">14.</span><span class="string">x</span>, <span class="number">15.</span><span class="string">x</span>, <span class="number">16.</span><span class="string">x</span>]</span><br><span class="line"></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span> <span class="comment"># 레포 클론할 때 필요</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Use</span> <span class="string">Node.js</span> <span class="string">$&#123;&#123;</span> <span class="string">matrix.node-version</span> <span class="string">&#125;&#125;</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-node@v2</span> <span class="comment"># 노드</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">$&#123;&#123;</span> <span class="string">matrix.node-version</span> <span class="string">&#125;&#125;</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">Rest</span> <span class="string">Dependencies</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Initiate</span> <span class="string">Test</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">npm</span> <span class="string">test</span></span><br></pre></td></tr></table></figure><ul><li><code>name</code> ; 원하는 이름을 설정해준다</li><li><code>on</code> ; 워크플로를 트리거하는 이벤트를 지정한다 (실행 조건)<ul><li><code>on: push</code> ; 이렇게 단일 값을 지정해 줄 수 있다</li><li><code>on: [push, pull_request]</code> ; 배열 값으로 지정해 줄 수도 있다</li><li>나는 <code>workflow_dispatch</code>를 사용했는데, 이거를 사용하면 수동으로 워크플로우를 시작해야 한다. 깃허브 액션은 <a href="https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions">사용량 제한</a>이 있어서 일단 아끼고 본다</li></ul></li><li><code>jobs.&lt;job_id&gt;.strategy.matrix</code> ; 워크플로를 실행할 환경을 설정한다</li><li><code>jobs.&lt;job_id&gt;.setps[*].uses</code> ; <code>actions/checkout@v2</code>, <code>actions/setup-node@v2</code>를 사용했다. <code>actions/checkout@v2</code>은 현재 레포를 테스트 환경으로 클론 할 때 필요한 것이고, <code>actions/setup-node@v2</code>는 노드 버전을 구성하는데 권장하는 방법이라고 한다</li><li><code>jobs.&lt;job_id&gt;.steps[*].run</code> ; 원하는 cli를 설정할 수 있다</li><li><code>jobs.&lt;job_id&gt;.steps[*].name</code> ; 각 단계에 이름을 붙여줄 수 있다. 깃허브 액션 페이지에서 로그를 식별할 때 도움을 준다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/actions/quickstart">https://docs.github.com/en/actions/quickstart</a></li><li><a href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions">https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions</a></li><li><a href="https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions">https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github-actions/">github actions</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/17/github-action-practice/#disqus_thread</comments>
       
     </item>
     
