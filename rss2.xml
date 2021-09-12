@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 10 Sep 2021 00:06:29 GMT</pubDate>
+    <pubDate>Sun, 12 Sep 2021 04:42:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>tabout tips</title>
+      <link>https://chinsun9.github.io/2021/09/12/tabout-tips/</link>
+      <guid>https://chinsun9.github.io/2021/09/12/tabout-tips/</guid>
+      <pubDate>Sun, 12 Sep 2021 04:42:26 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/tabout-tips20210912/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ta</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/tabout-tips20210912/preview.png" alt=" "></p><ul><li>tab을 눌렀을 때 자동완성 적용을 삭제한다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/tabout-tips20210912/1.png" alt=" "></p><ul><li>tabout의 when을 아래처럼 수정한다</li><li><code>editorTextFocus &amp;&amp; !editorHasMultipleSelections &amp;&amp; !inSnippetMode</code></li><li>기본값에서 자동완성 추천이 안 보일 경우 조건을 삭제해 주었다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/57938988/vscode-how-to-disable-tab-autocomplete">https://stackoverflow.com/questions/57938988/vscode-how-to-disable-tab-autocomplete</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/09/12/tabout-tips/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>npm install without dev dependencies</title>
@@ -84,12 +114,12 @@
       <content:encoded><![CDATA[<figure class="highlight json"><figcaption><span>package.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;prebuild&quot;</span>: <span class="string">&quot;echo 1&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;build&quot;</span>: <span class="string">&quot;echo 2&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;postbuild&quot;</span>: <span class="string">&quot;echo 3&quot;</span></span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>yarn build</code> or <code>npm run build</code> 했을 때 1,2,3 순서로 실행된다</li><li><code>pre</code>는 전처리, <code>post</code>는 후처리라고 생각하면 된다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.npmjs.com/cli/v7/using-npm/scripts">https://docs.npmjs.com/cli/v7/using-npm/scripts</a></li></ul>]]></content:encoded>
       
       
-      <category domain="https://chinsun9.github.io/categories/ndoejs/">ndoejs</category>
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
       
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
       
       <category domain="https://chinsun9.github.io/tags/npm/">npm</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ndoejs/">ndoejs</category>
       
       <category domain="https://chinsun9.github.io/tags/scripts/">scripts</category>
       
@@ -607,41 +637,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/21/js-copy-string-to-clipboard-without-select/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>ssh를 사용해 git clone 하기</title>
-      <link>https://chinsun9.github.io/2021/08/19/git-clone-using-ssh/</link>
-      <guid>https://chinsun9.github.io/2021/08/19/git-clone-using-ssh/</guid>
-      <pubDate>Thu, 19 Aug 2021 08:10:45 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;깃허브에서 클론 할 수 있는 방법 2가지(ssh, pat)를 정리한다&lt;/p&gt;
-&lt;h2 id=&quot;ssh로-클론&quot;&gt;&lt;a href=&quot;#ssh로-클론&quot; class=&quot;headerlink&quot; title=&quot;ssh로 클론&quot;&gt;&lt;/a&gt;ssh로 클론&lt;/h2&gt;&lt;h3 id=</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>깃허브에서 클론 할 수 있는 방법 2가지(ssh, pat)를 정리한다</p><h2 id="ssh로-클론"><a href="#ssh로-클론" class="headerlink" title="ssh로 클론"></a>ssh로 클론</h2><h3 id="ssh-key-생성"><a href="#ssh-key-생성" class="headerlink" title="ssh key 생성"></a>ssh key 생성</h3><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/git-clone-using-ssh20210806/preview.png" alt=" "></p><ul><li>git bash를 실행하여 진행한다</li></ul><figure class="highlight sh"><figcaption><span>git bash terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</span></span><br><span class="line"><span class="comment"># 새로운 ssh 키 생성</span></span><br><span class="line"><span class="comment"># 생성할 때 파일명과 비밀번호를 지정해 줄 수 있다</span></span><br><span class="line"><span class="comment"># 비밀번호는 입력하지 않는다 (엔터키로 스킵)</span></span><br><span class="line"><span class="comment"># 비밀번호까지 지정해주고 싶으면 아래 링크를 참고하자</span></span><br><span class="line"><span class="comment"># https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/working-with-ssh-key-passphrases</span></span><br><span class="line"><span class="comment"># -C 옵션 뒤에는 자신의 이메일 등 적고 싶은 문구를 적는다</span></span><br><span class="line"><span class="comment"># ssh-keygen -t ed25519 -C &quot;chin_sung@naver.com&quot;</span></span><br><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;안녕하세요요요요요&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line"><span class="comment"># 공개키 내용을 전부 복사한다</span></span><br><span class="line">cat id_ed25519.pub</span><br><span class="line"><span class="comment"># output: ssh-ed25519 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx chin_sung@naver.com</span></span><br></pre></td></tr></table></figure><ul><li>나는 기본값으로 생성했다</li><li><em>~/.ssh/id_ed25519</em></li><li><em>~/.ssh/id_ed25519.pub</em></li><li><em>.pub</em> 파일이 이제 깃허브에 등록해야 하는 공개키이다</li><li><code>cat</code> 명령으로 읽어서 복사해두자</li></ul><h3 id="ssh-key-등록"><a href="#ssh-key-등록" class="headerlink" title="ssh key 등록"></a>ssh key 등록</h3><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/git-clone-using-ssh20210806/preview.png" alt=" "></p><ul><li><a href="https://github.com/settings/ssh/new">https://github.com/settings/ssh/new</a></li><li>깃허브 세팅으로 들어가 ssh키를 등록한다</li><li>위에서 복사한 <code>id_ed25519.pub</code>의 내용을 붙여 넣어주면 끝<!-- - 깃 계정 정보를 저장하지 않은 컴퓨터에서 시도해보면 체감할 수 있을 것이다 --></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh">https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh</a></li><li><a href="/2021/08/25/git-clone-using-ssh-key-passphrase/">ssh key passphrase 한번만 입력하기</a></li></ul><h3 id="PAT으로-클론"><a href="#PAT으로-클론" class="headerlink" title="PAT으로 클론"></a>PAT으로 클론</h3><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git clone https://&#123;pat&#125;@github.com/&#123;username&#125;/&#123;repo&#125;</span></span><br><span class="line">git <span class="built_in">clone</span> https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@github.com/chinsun9/my-private-repo.git</span><br></pre></td></tr></table></figure><ul><li>personal access token으로도 클론 할 수 있다. <a href="/2021/07/06/git-clone-using-pat/">자세히</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ssh/">ssh</category>
-      
-      <category domain="https://chinsun9.github.io/tags/clone/">clone</category>
-      
-      <category domain="https://chinsun9.github.io/tags/pat/">pat</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/19/git-clone-using-ssh/#disqus_thread</comments>
       
     </item>
     
