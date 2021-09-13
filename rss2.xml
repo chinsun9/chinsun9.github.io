@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sun, 12 Sep 2021 04:42:26 GMT</pubDate>
+    <pubDate>Mon, 13 Sep 2021 00:06:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>vscode git undo last commit</title>
+      <link>https://chinsun9.github.io/2021/09/13/vscode-git-undo-last-commit/</link>
+      <guid>https://chinsun9.github.io/2021/09/13/vscode-git-undo-last-commit/</guid>
+      <pubDate>Mon, 13 Sep 2021 00:06:53 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/9-R2GiAqyhY&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/9-R2GiAqyhY" frameborder="0" loading="lazy" allowfullscreen></iframe></div><ul><li>오…</li><li><code>alias.r1=! r1() &#123; git reset --soft HEAD~1 ; &#125; ; r1</code></li><li>나는 평소 이런 식으로 이전 커밋을 되돌렸다</li><li>직접 치려면 많이 긴 명령어라 줄여서 사용했는데,</li><li>이제는 <code>undo last commit</code>명령을 알아서 애용할 것 같다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/9-R2GiAqyhY">https://youtu.be/9-R2GiAqyhY</a></li><li><a href="https://www.youtube.com/channel/UCs5Y5_7XK8HLDX0SLNwkd3w">https://www.youtube.com/channel/UCs5Y5_7XK8HLDX0SLNwkd3w</a><ul><li>vscode 유튜브 채널이다. 여기서 이것저것 꿀팁을 알려준다</li></ul></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/commit/">commit</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/09/13/vscode-git-undo-last-commit/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>tabout tips</title>
@@ -604,39 +634,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/22/install-chocolatey/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>js 문자열 클립보드로 복사하기</title>
-      <link>https://chinsun9.github.io/2021/08/21/js-copy-string-to-clipboard-without-select/</link>
-      <guid>https://chinsun9.github.io/2021/08/21/js-copy-string-to-clipboard-without-select/</guid>
-      <pubDate>Sat, 21 Aug 2021 14:04:54 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;strong&gt;Clipboard API&lt;/strong&gt;를 사용할 수 있다&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example.js&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td </description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><strong>Clipboard API</strong>를 사용할 수 있다</p><figure class="highlight js"><figcaption><span>example.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">navigator.clipboard.writeText(gto9(text));</span><br></pre></td></tr></table></figure><ul><li>bye bye <code>document.execCommand(&quot;copy&quot;)</code></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard">https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/clipboard/">clipboard</category>
-      
-      <category domain="https://chinsun9.github.io/tags/copy/">copy</category>
-      
-      <category domain="https://chinsun9.github.io/tags/navigator/">navigator</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/21/js-copy-string-to-clipboard-without-select/#disqus_thread</comments>
       
     </item>
     
