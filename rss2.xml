@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 13 Sep 2021 00:06:53 GMT</pubDate>
+    <pubDate>Tue, 14 Sep 2021 00:26:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>git subtree split</title>
+      <link>https://chinsun9.github.io/2021/09/14/git-subtree-split/</link>
+      <guid>https://chinsun9.github.io/2021/09/14/git-subtree-split/</guid>
+      <pubDate>Tue, 14 Sep 2021 00:26:28 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;클라이언트랑 벡엔드가 함께 있는 레포를 분리해보자&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git subtree split&lt;/code&gt;로 분리할 수 있다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;sp</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>클라이언트랑 벡엔드가 함께 있는 레포를 분리해보자</p><ul><li><code>git subtree split</code>로 분리할 수 있다</li></ul><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git subtree split -P &#123;디렉터리&#125; -b &#123;브랜치명&#125;</span></span><br><span class="line">git subtree split -P server -b b-server</span><br></pre></td></tr></table></figure><ul><li>위처럼 명령하면, b-server 브랜치가 생성되고, server 디렉터리의 내용들로 채워진다</li><li>깃 히스토리도 살아있다</li><li><code>git checkout b-server</code> ; b-server 브랜치로 체크아웃한다</li><li>github에서 새로운 레포를 생성한다</li><li><code>git remote add new-server-origin &#123;~.git&#125;</code> ; 새로 생성한 레포를 리모트로 추가해준다</li><li><code>git push new-server-origin b-server</code> ; 새로운 리모트로 푸쉬한다</li><li><code>git checkout main</code> ; main 브랜치로 돌아온다</li><li>독립해버린 server 디렉터리를 삭제해준다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>독립시킨 server를 섭모듈로 가져올 때 참고 ; <a href="/2021/04/14/git-submodule-%EC%A4%91%EC%B2%A9%EB%90%9C-%EA%B9%83-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">git submodule 중첩된 깃 사용하기</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/subtree/">subtree</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/09/14/git-subtree-split/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vscode git undo last commit</title>
@@ -608,32 +640,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/22/one-commit-a-day/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>chocolatey, 패키지 매니저 설치</title>
-      <link>https://chinsun9.github.io/2021/08/22/install-chocolatey/</link>
-      <guid>https://chinsun9.github.io/2021/08/22/install-chocolatey/</guid>
-      <pubDate>Sun, 22 Aug 2021 04:22:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight ps1&quot;&gt;&lt;figcaption&gt;&lt;span&gt;administrator powershell terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;spa</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight ps1"><figcaption><span>administrator powershell terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ExecutionPolicy</span> Bypass <span class="literal">-Scope</span> <span class="keyword">Process</span> <span class="literal">-Force</span>; [<span class="type">System.Net.ServicePointManager</span>]::SecurityProtocol = [<span class="type">System.Net.ServicePointManager</span>]::SecurityProtocol <span class="operator">-bor</span> <span class="number">3072</span>; <span class="built_in">iex</span> ((<span class="built_in">New-Object</span> System.Net.WebClient).DownloadString(<span class="string">&#x27;https://community.chocolatey.org/install.ps1&#x27;</span>))</span><br></pre></td></tr></table></figure><ul><li>관리자 권한으로 파워셸 실행 후 명령 실행</li></ul><!-- react native 개발 전제 조건으로 node나 jdk 설치를 할 때 윈도우에서는 chocolatey를 사용해 설치하는 것을 권장하여 설치하게 됨  --><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://chocolatey.org/install">https://chocolatey.org/install</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/chocolatey/">chocolatey</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/22/install-chocolatey/#disqus_thread</comments>
       
     </item>
     
