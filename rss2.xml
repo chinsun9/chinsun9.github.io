@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 14 Sep 2021 00:26:28 GMT</pubDate>
+    <pubDate>Wed, 15 Sep 2021 01:49:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>git filename too long</title>
+      <link>https://chinsun9.github.io/2021/09/15/git-filename-too-long/</link>
+      <guid>https://chinsun9.github.io/2021/09/15/git-filename-too-long/</guid>
+      <pubDate>Wed, 15 Sep 2021 01:49:30 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Filename too long&lt;/code&gt; 에러가 나왔다&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;git&lt;/strong&gt;을 사용할 때 파일 패쓰명 길이에 제한이 있다는 것을 처음 알았다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li><code>Filename too long</code> 에러가 나왔다</li><li><strong>git</strong>을 사용할 때 파일 패쓰명 길이에 제한이 있다는 것을 처음 알았다</li></ul><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --system core.longpaths <span class="literal">true</span></span><br></pre></td></tr></table></figure><ul><li>간단하게 명령어 한 줄로 해결할 수 있었다</li></ul><h2 id="TMI"><a href="#TMI" class="headerlink" title="TMI"></a>TMI</h2><ul><li>나는 <code>gh-pages</code>를 사용하다가 위 에러를 만났다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://javacan.tistory.com/entry/window-git-filename-too-long-error">https://javacan.tistory.com/entry/window-git-filename-too-long-error</a></li><li><a href="https://stackoverflow.com/questions/22575662/filename-too-long-in-git-for-windows">https://stackoverflow.com/questions/22575662/filename-too-long-in-git-for-windows</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/config/">config</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/09/15/git-filename-too-long/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>git subtree split</title>
@@ -607,39 +639,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/25/git-clone-using-ssh-key-passphrase/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>1일 1커밋 소스</title>
-      <link>https://chinsun9.github.io/2021/08/22/one-commit-a-day/</link>
-      <guid>https://chinsun9.github.io/2021/08/22/one-commit-a-day/</guid>
-      <pubDate>Sun, 22 Aug 2021 10:37:29 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;1일 1커밋하는데 무슨 내용을 커밋하는 걸까?&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/one-commit-a-day20210822</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>1일 1커밋하는데 무슨 내용을 커밋하는 걸까?</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/one-commit-a-day20210822/preview.png" alt=" "></p><h2 id="1일-1커밋-소스"><a href="#1일-1커밋-소스" class="headerlink" title="1일 1커밋 소스"></a>1일 1커밋 소스</h2><ul><li>블로그</li><li>코테 연습</li><li>공부용 프로젝트</li><li>영단어</li><li>리팩토링</li></ul><ul><li>매일 같인 커밋하기로 정해둔 하나의 레포가 있는 것은 아니다</li><li>주로 <strong>블로그</strong> 포스트, <strong>코딩 테스트 연습</strong>할 때 사용하는 레포에 자주 커밋을 하고 있다</li><li>그 외에는 최근에 공부하는 nestjs, nextjs <strong>공부용 프로젝트</strong>도 있다</li><li>1일 1커밋을 지켜온지 이제 거의 일 년이 되어간다</li><li>1일 1커밋 초기에는 영단어 외우는 레포에 매일 <strong>영단어</strong> 정리했었다</li><li>블로그를 시작하면서 매일 배우는 것들을 블로그 포스트로 올리고 있다</li><li>특히 블로그를 깃허브 블로그로 시작하면서 잔디 관리에 큰 도움이 되었다</li></ul><h2 id="깃허브-블로그"><a href="#깃허브-블로그" class="headerlink" title="깃허브 블로그"></a>깃허브 블로그</h2><ul><li>글을 쓸 때는 최대한 고민 안 하고 쓰는 편이다</li><li>뭔가 새로운 활동이 있으면 바로 블로그에 초안 작성을 시작한다</li><li>내 개발 기록을 내 나름대로 정리해서 블로그에 남겨놓으면,</li><li>나중에 관련 지식이 필요할 때, 구글에서 검색하는 게 아니라 내 블로그에서 검색을 할 수 있다</li><li>다른 사람도 아니라 내가 작성한 글이기 때문에 빠르게 이해하고 탈분극 시킬 수 있다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/%EC%83%9D%EA%B0%81/">생각</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/commit/">commit</category>
-      
-      <category domain="https://chinsun9.github.io/tags/%EC%83%9D%EA%B0%81/">생각</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/22/one-commit-a-day/#disqus_thread</comments>
       
     </item>
     
