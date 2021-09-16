@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 15 Sep 2021 01:49:30 GMT</pubDate>
+    <pubDate>Thu, 16 Sep 2021 01:05:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>git checkout orphan</title>
+      <link>https://chinsun9.github.io/2021/09/16/git-checkout-orphan/</link>
+      <guid>https://chinsun9.github.io/2021/09/16/git-checkout-orphan/</guid>
+      <pubDate>Thu, 16 Sep 2021 01:05:58 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout --orphan new-branch</span><br></pre></td></tr></table></figure><ul><li>빈 브랜치를 생성해보자</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://git-scm.com/docs/git-checkout">https://git-scm.com/docs/git-checkout</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/checkout/">checkout</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/09/16/git-checkout-orphan/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>git filename too long</title>
@@ -605,40 +633,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/25/orm/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>ssh key passphrase 한번만 입력하기</title>
-      <link>https://chinsun9.github.io/2021/08/25/git-clone-using-ssh-key-passphrase/</link>
-      <guid>https://chinsun9.github.io/2021/08/25/git-clone-using-ssh-key-passphrase/</guid>
-      <pubDate>Wed, 25 Aug 2021 04:52:18 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/git-clone-using-ssh-key-passphrase20210825/preview.png&quot; a</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/git-clone-using-ssh-key-passphrase20210825/preview.png" alt=" "></p><ul><li>저번에 올린 글 <a href="/2021/08/19/git-clone-using-ssh/">ssh를 사용해 git clone 하기</a> 에서는 ssh키를 생성할 때 비밀번호, passphrase를 따로 생성하지 않고 진행하는 것을 알아보았다</li><li>비밀번호 생성을 하지 않은 이유는 비밀번호를 추가로 요구하기 때문이다</li><li>하지만 ssh키와 비밀번호까지 사용한다면 더욱 안전하게 사용할 수 있다</li><li>이번에는 비밀번호와 함께 ssh키를 생성하고, ssh-agent를 이용해서 암호를 요구하지 않도록 만들어보자!</li></ul><h2 id="결과"><a href="#결과" class="headerlink" title="결과"></a>결과</h2><ul><li>최초 셸 실행 때 ssh 비밀번호를 입력하면, 앞으로 비밀번호를 묻지 않는다</li><li>컴퓨터를 다시 켜면 물어본다</li></ul><h2 id="방법"><a href="#방법" class="headerlink" title="방법"></a>방법</h2><blockquote><p>(공식문서) <a href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/working-with-ssh-key-passphrases">https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/working-with-ssh-key-passphrases</a></p></blockquote><ul><li>사용하는 터미널에 따라 다른 프로필을 설정해줘야 한다</li><li>윈도우와 리눅스 모두 동일한 방법이다</li></ul><figure class="highlight sh"><figcaption><span>~/.bashrc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">env=~/.ssh/agent.env</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">agent_load_env</span></span> () &#123; <span class="built_in">test</span> -f <span class="string">&quot;<span class="variable">$env</span>&quot;</span> &amp;&amp; . <span class="string">&quot;<span class="variable">$env</span>&quot;</span> &gt;| /dev/null ; &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">agent_start</span></span> () &#123;</span><br><span class="line">    (<span class="built_in">umask</span> 077; ssh-agent &gt;| <span class="string">&quot;<span class="variable">$env</span>&quot;</span>)</span><br><span class="line">    . <span class="string">&quot;<span class="variable">$env</span>&quot;</span> &gt;| /dev/null ; &#125;</span><br><span class="line"></span><br><span class="line">agent_load_env</span><br><span class="line"></span><br><span class="line"><span class="comment"># agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2=agent not running</span></span><br><span class="line">agent_run_state=$(ssh-add -l &gt;| /dev/null 2&gt;&amp;1; <span class="built_in">echo</span> $?)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ ! <span class="string">&quot;<span class="variable">$SSH_AUTH_SOCK</span>&quot;</span> ] || [ <span class="variable">$agent_run_state</span> = 2 ]; <span class="keyword">then</span></span><br><span class="line">    agent_start</span><br><span class="line">    ssh-add</span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">&quot;<span class="variable">$SSH_AUTH_SOCK</span>&quot;</span> ] &amp;&amp; [ <span class="variable">$agent_run_state</span> = 1 ]; <span class="keyword">then</span></span><br><span class="line">    ssh-add</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">unset</span> env</span><br></pre></td></tr></table></figure><ul><li><em>윈도우에서는 git bash를 이용한다</em></li><li><code>vi ~/.bashrc</code> 명령해 vi 에디터로 위 내용을 추가해준다</li><li><code>i</code>키를 눌러 입력 모드로 가서 위 내용을 붙여 넣고,</li><li><code>esc</code>키를 눌러 입력 모드에서 나와서 <code>:wq</code>를 입력해 저장하고 나온다</li><li>터미널에 <code>source ~/.bashrc</code> 명령해 터미널을 새로고침 한다</li><li>ssh 비밀번호를 요구하는데, 이때 한번 인증을 하면 이후에 비밀번호를 입력하지 않아도 된다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/working-with-ssh-key-passphrases">https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/working-with-ssh-key-passphrases</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ssh/">ssh</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ssh-agent/">ssh-agent</category>
-      
-      <category domain="https://chinsun9.github.io/tags/bashrc/">bashrc</category>
-      
-      <category domain="https://chinsun9.github.io/tags/passphrase/">passphrase</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/25/git-clone-using-ssh-key-passphrase/#disqus_thread</comments>
       
     </item>
     
