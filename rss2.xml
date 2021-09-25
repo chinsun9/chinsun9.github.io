@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 24 Sep 2021 02:37:54 GMT</pubDate>
+    <pubDate>Sat, 25 Sep 2021 02:51:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>람다가 한번 호출했는데 여러 번 실행된다?!</title>
+      <link>https://chinsun9.github.io/2021/09/25/aws-lambda-tips/</link>
+      <guid>https://chinsun9.github.io/2021/09/25/aws-lambda-tips/</guid>
+      <pubDate>Sat, 25 Sep 2021 02:51:43 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/aws-lambda-tips20210924/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/aws-lambda-tips20210924/preview.png" alt=" "></p><ul><li>람다가 2회, 3회 중복 실행되는 경험을 한 적이 있다</li><li><code>구성 &gt; 일반 구성</code>으로 들어가 보면 메모리 및 제한 시간을 설정할 수 있다</li><li>제한 시간이 5초인 것을 10초로 늘려주어서 해결했다</li><li>람다는 제한 시간 안에 실행을 끝내지 못하면 실패하였다고 생각하여 설정한 재시도 횟수만큼 같은 함수를 재실행한다</li></ul><h2 id="TMI"><a href="#TMI" class="headerlink" title="TMI"></a>TMI</h2><ul><li>나는 람다에서 인터넷을 사용하여 어떤 api를 콜하는 로직이 있었다</li><li>람다는 스케쥴러를 통해서 트리거 된다</li><li>그런데 해당 api가 간헐적으로 여러 번 호출된 것을 확인하였고, 문제가 무엇인지 알아보다가</li><li>제한시간을 너무 짧게 둔 것이 문제임을 알게 되었다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/lambda/">lambda</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/09/25/aws-lambda-tips/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>text copy tips</title>
@@ -590,34 +620,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/29/tsconfig-baseUrl-eslint/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>js delete operator</title>
-      <link>https://chinsun9.github.io/2021/08/26/js-delete-operator/</link>
-      <guid>https://chinsun9.github.io/2021/08/26/js-delete-operator/</guid>
-      <pubDate>Thu, 26 Aug 2021 02:46:29 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example.js&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>example.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> user = &#123;</span><br><span class="line">  username: <span class="string">&#x27;sung&#x27;</span>,</span><br><span class="line">  password: <span class="string">&#x27;1234&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">delete</span> user.password;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(user);</span><br><span class="line"><span class="comment">// &#123; username: &#x27;sung&#x27; &#125;</span></span><br></pre></td></tr></table></figure><ul><li>객체의 속성을 제거한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/delete">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/delete</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/delete/">delete</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/26/js-delete-operator/#disqus_thread</comments>
       
     </item>
     
