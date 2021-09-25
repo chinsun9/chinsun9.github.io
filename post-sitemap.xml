@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/08/07/start-jest-with-typescript/</loc>
+        <lastmod>2021-09-25T10:33:52.348Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/09/25/aws-lambda-tips/</loc>
         <lastmod>2021-09-25T02:51:43.929Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -386,14 +394,6 @@
     <url>
         <loc>https://chinsun9.github.io/2021/06/17/my-first-github-package/</loc>
         <lastmod>2021-08-07T06:26:09.857Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/08/07/start-jest-with-typescript/</loc>
-        <lastmod>2021-08-07T04:10:10.175Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

@@ -37,7 +37,7 @@
 <li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/import-js/eslint-plugin-import/issues/1485#issuecomment-535351922">https://github.com/import-js/eslint-plugin-import/issues/1485#issuecomment-535351922</a></li>
 <li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.npmjs.com/package/eslint-import-resolver-typescript">https://www.npmjs.com/package/eslint-import-resolver-typescript</a></li>
 </ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2021-08-07T04:01:15.000Z" title="2021-08-07T04:01:15.000Z">2021-08-07</time>게시 됨</span><span class="level-item"><time datetime="2021-08-07T04:10:10.175Z" title="2021-08-07T04:10:10.175Z">2021-08-07</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/typescript/">typescript</a></span><span class="level-item">1분안에 읽기 (약 216 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/08/07/start-jest-with-typescript/">typescript에서 jest 쓰기</a></h1><div class="content"><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/start-jest-with-typescript20210807/preview.png" alt=" "></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2021-08-07T04:01:15.000Z" title="2021-08-07T04:01:15.000Z">2021-08-07</time>게시 됨</span><span class="level-item"><time datetime="2021-09-25T10:33:52.348Z" title="2021-09-25T10:33:52.348Z">2021-09-25</time>업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/typescript/">typescript</a></span><span class="level-item">2분안에 읽기 (약 243 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/08/07/start-jest-with-typescript/">typescript에서 jest 쓰기</a></h1><div class="content"><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/start-jest-with-typescript20210807/preview.png" alt=" "></p>
 <blockquote>
 <p>Jest encountered an unexpected token<br>SyntaxError: Cannot use import statement outside a module</p>
 </blockquote>
@@ -62,6 +62,11 @@
 
 <ul>
 <li><em>babel.config.js</em> 를 추가한다</li>
+</ul>
+<h2 id="eslint를-같이-사용하고-있다면"><a href="#eslint를-같이-사용하고-있다면" class="headerlink" title="eslint를 같이 사용하고 있다면"></a>eslint를 같이 사용하고 있다면</h2><figure class="highlight json"><figcaption><span>eslintrc.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;env&quot;</span>: &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="attr">&quot;jest&quot;</span>: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>eslintrc</strong> 에 env.jest를 true로 해준다</li>
 </ul>
 <h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul>
 <li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://jestjs.io/docs/getting-started#using-babel">https://jestjs.io/docs/getting-started#using-babel</a></li>
