@@ -8,6 +8,30 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/09/26/youtube-data-api-lambda-tips/</loc>
+        <lastmod>2021-09-26T13:55:07.429Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/24/%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B2%80%EC%83%89-api-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-09-26T13:53:28.601Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/23/%EB%8F%84%EB%A1%9C%EB%AA%85%EC%A3%BC%EC%86%8C-api-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2021-09-26T13:47:01.161Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/08/07/start-jest-with-typescript/</loc>
         <lastmod>2021-09-25T10:33:52.348Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1672,14 +1696,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/09/24/%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B2%80%EC%83%89-api-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-08-04T13:22:30.914Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/09/18/%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80-%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98/</loc>
         <lastmod>2021-08-04T13:22:18.424Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1922,14 +1938,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/09/21/%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-sam-%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-08-04T13:17:23.047Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/23/%EB%8F%84%EB%A1%9C%EB%AA%85%EC%A3%BC%EC%86%8C-api-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-08-04T13:17:07.464Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
