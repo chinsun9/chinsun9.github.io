@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 28 Sep 2021 04:43:08 GMT</pubDate>
+    <pubDate>Tue, 28 Sep 2021 05:00:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>npm repo command</title>
+      <link>https://chinsun9.github.io/2021/09/28/npm-repo-command/</link>
+      <guid>https://chinsun9.github.io/2021/09/28/npm-repo-command/</guid>
+      <pubDate>Tue, 28 Sep 2021 05:00:35 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;npm repo&lt;/code&gt; 명령으로 연결된 원격 레포 페이지를 바로 열어볼 수 있다&lt;/li&gt;
+&lt;li&gt;꿀기능이다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;조건&quot;&gt;&lt;a href=&quot;#조건&quot; class=&quot;headerlink&quot; title=</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li><code>npm repo</code> 명령으로 연결된 원격 레포 페이지를 바로 열어볼 수 있다</li><li>꿀기능이다</li></ul><h2 id="조건"><a href="#조건" class="headerlink" title="조건"></a>조건</h2><figure class="highlight json"><figcaption><span>package.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">&quot;repository&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;git&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;url&quot;</span>: <span class="string">&quot;https://github.com/chinsun9/chinsun9.github.io.git&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>package.json에 <code>repository</code> 필드가 존재해야 한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.npmjs.com/cli/v7/commands/npm-repo">https://docs.npmjs.com/cli/v7/commands/npm-repo</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/npm/">npm</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/09/28/npm-repo-command/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>유튜브 api가 aws 람다에서 실행이 안됨</title>
@@ -581,41 +613,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/08/31/eslint-react-hooks-exhaustive-deps/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>video to gif, gifify 윈도우10에서 사용하기</title>
-      <link>https://chinsun9.github.io/2021/08/30/video-to-gif/</link>
-      <guid>https://chinsun9.github.io/2021/08/30/video-to-gif/</guid>
-      <pubDate>Mon, 30 Aug 2021 07:05:25 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;gif를 활용하면 멋진 문서 만들 수 있다&lt;br&gt;동영상을 gif로 변환해주는 cli도구를 설치해보자&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/i</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>gif를 활용하면 멋진 문서 만들 수 있다<br>동영상을 gif로 변환해주는 cli도구를 설치해보자</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/video-to-gif20210828/preview.png" alt=" "></p><ul><li>비디오를 gif로 만들어주는 <strong>gifify</strong>라는 cli 도구가 있다</li><li>npm을 통해 설치할 수 있어서 얼른 설치해서 실행해 보았다</li></ul><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g gifify</span><br></pre></td></tr></table></figure><h2 id="필요-종속성-설치"><a href="#필요-종속성-설치" class="headerlink" title="필요 종속성 설치"></a>필요 종속성 설치</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/video-to-gif20210828/1.png" alt=" "></p><ul><li>나는 윈도우를 사용하고 있다</li><li>npm 설치로, 너무 반가운 마음에 바로 설치하고 실행해봤는데 동작하지 않았다…</li><li><a href="https://github.com/vvo/gifify#requirements">https://github.com/vvo/gifify#requirements</a></li><li>위 링크에 어떤 종속성이 설치되어야 하는지 알려주고 있다</li><li>맥에서 사용할 수 있는 brew 패키지 매니저를 통해 필요 종속성 설치를 안내하고 있다</li><li>필요한 종속성은 <code>nodejs</code>, <code>ffmpeg</code>, <code>convert</code>, <code>gifsicle</code> 이 있다</li><li>나는 윈도우라서 각 종속성 설치를 수동으로 해주었다</li><li>나는 ffmpeg, gifsicle, convert 순으로 설치했다</li><li>근데 전부 설치하고 보니까 ffmpeg와 convert는 ImageMagick 인스톨러를 통해 함께 설치할 수 있다</li></ul><h3 id="ImageMagick-ffmpeg-convert"><a href="#ImageMagick-ffmpeg-convert" class="headerlink" title="ImageMagick : ffmpeg, convert"></a>ImageMagick : ffmpeg, convert</h3><p>convert는 이미지매직에 포함되어있다. 그래서 이미지매직 인스톨러를 사용해서 설치해야 한다</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/video-to-gif20210828/4.png" alt=" "></p><ul><li><a href="http://www.imagemagick.org/script/download.php">http://www.imagemagick.org/script/download.php</a></li><li>스크롤을 아래로 내려서 <code>Windows Binary Release</code> 부분을 확인하여 다운로드한다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/video-to-gif20210828/2.png" alt=" "></p><ul><li>이미지매직 인스톨러에서 ffmpeg, convert, 환경변수 추가에 체크하고 인스톨한다</li><li>이렇게 convert, ffmpeg를 설치했다</li></ul><h3 id="gifsicle"><a href="#gifsicle" class="headerlink" title="gifsicle"></a>gifsicle</h3><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/video-to-gif20210828/3.png" alt=" "></p><ul><li><a href="https://eternallybored.org/misc/gifsicle/">https://eternallybored.org/misc/gifsicle/</a></li><li>gifsicle는 여기서 받을 수 있다</li><li>나는 64비트를 받았다</li></ul><h2 id="gifify-사용하기"><a href="#gifify-사용하기" class="headerlink" title="gifify 사용하기"></a>gifify 사용하기</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/video-to-gif20210828/preview.png" alt=" "></p><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gifify &#123;인풋 파일 경로&#125; -o &#123;아웃풋 파일 이름&#125;</span></span><br><span class="line">gifify input.mp4 -o output.gif</span><br></pre></td></tr></table></figure><ul><li><a href="https://github.com/vvo/gifify#command-line-usage">https://github.com/vvo/gifify#command-line-usage</a></li><li>더 디테일한 변환 옵션은 위 링크를 참고한다</li></ul><h2 id="후기"><a href="#후기" class="headerlink" title="후기"></a>후기</h2><ul><li>npm에서 설치할 수 있어서 간단하게 사용할 수 있을 거라 생각했다</li><li>그런데 필요한 종속성이 많이 있었고, 윈도우에서 사용하려면 수동으로 설치해줘야 했다</li><li>이렇게 여기저기서 설치하는 것이 귀찮고, 익숙하지 않은 사람은</li><li>곰플레이어같은 동영상 플레이어에서 제공하는 gif 변환을 사용하는 게 정신건강에 좋을 것 같다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/vvo/gifify#requirements">https://github.com/vvo/gifify#requirements</a></li><li><a href="http://www.imagemagick.org/script/download.php">http://www.imagemagick.org/script/download.php</a></li><li><a href="https://eternallybored.org/misc/gifsicle/">https://eternallybored.org/misc/gifsicle/</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/gif/">gif</category>
-      
-      <category domain="https://chinsun9.github.io/tags/video/">video</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ffmpeg/">ffmpeg</category>
-      
-      <category domain="https://chinsun9.github.io/tags/imagemagick/">imagemagick</category>
-      
-      <category domain="https://chinsun9.github.io/tags/convert/">convert</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/30/video-to-gif/#disqus_thread</comments>
       
     </item>
     
