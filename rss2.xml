@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 28 Sep 2021 05:00:35 GMT</pubDate>
+    <pubDate>Tue, 28 Sep 2021 05:03:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -21,15 +21,15 @@
         
         
       <description>&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;npm repo&lt;/code&gt; 명령으로 연결된 원격 레포 페이지를 바로 열어볼 수 있다&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm repo&lt;/code&gt; 명령으로 연결된 원격 레포 페이지를 브라우저로 바로 열어볼 수 있다&lt;/li&gt;
 &lt;li&gt;꿀기능이다&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;조건&quot;&gt;&lt;a href=&quot;#조건&quot; class=&quot;headerlink&quot; title=</description>
+&lt;h2 id=&quot;조건&quot;&gt;&lt;a href=&quot;#조건&quot; class=&quot;headerlink&quot; </description>
         
       
       
       
-      <content:encoded><![CDATA[<ul><li><code>npm repo</code> 명령으로 연결된 원격 레포 페이지를 바로 열어볼 수 있다</li><li>꿀기능이다</li></ul><h2 id="조건"><a href="#조건" class="headerlink" title="조건"></a>조건</h2><figure class="highlight json"><figcaption><span>package.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">&quot;repository&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;git&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;url&quot;</span>: <span class="string">&quot;https://github.com/chinsun9/chinsun9.github.io.git&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>package.json에 <code>repository</code> 필드가 존재해야 한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.npmjs.com/cli/v7/commands/npm-repo">https://docs.npmjs.com/cli/v7/commands/npm-repo</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<ul><li><code>npm repo</code> 명령으로 연결된 원격 레포 페이지를 브라우저로 바로 열어볼 수 있다</li><li>꿀기능이다</li></ul><h2 id="조건"><a href="#조건" class="headerlink" title="조건"></a>조건</h2><figure class="highlight json"><figcaption><span>package.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">&quot;repository&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;git&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;url&quot;</span>: <span class="string">&quot;https://github.com/chinsun9/chinsun9.github.io.git&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>package.json에 <code>repository</code> 필드가 존재해야 한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.npmjs.com/cli/v7/commands/npm-repo">https://docs.npmjs.com/cli/v7/commands/npm-repo</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/git/">git</category>
