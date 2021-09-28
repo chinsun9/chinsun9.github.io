@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 27 Sep 2021 12:08:11 GMT</pubDate>
+    <pubDate>Tue, 28 Sep 2021 04:43:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -25,7 +25,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/youtube-data-api-lambda-tips20210926/preview.png" alt=" "></p><ul><li>로컬에서는 잘 돌아가는데, 람다에 올리면 실행되지 않았다</li></ul><h2 id="체크해보기"><a href="#체크해보기" class="headerlink" title="체크해보기"></a>체크해보기</h2><ol><li>api 제한사항</li></ol><ul><li><code>api 및 서비스 &gt; YouTube Data API v3 &gt; 사용자 인증 정보 &gt; API 키 &gt; 애플리케이션 제한사항</code> 없음으로 설정했다</li></ul><ol start="2"><li>aws region</li></ol><ul><li><code>us-east-1</code>으로 올렸더니 일부 api가 <code>400, processingFailure</code> 에러를 반환했다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://console.cloud.google.com/apis/dashboard">https://console.cloud.google.com/apis/dashboard</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/youtube-data-api-lambda-tips20210926/preview.png" alt=" "></p><ul><li>로컬에서는 잘 돌아가는데, 람다에 올리면 실행되지 않았다</li></ul><h2 id="체크해보기"><a href="#체크해보기" class="headerlink" title="체크해보기"></a>체크해보기</h2><ol><li>api 제한사항</li></ol><ul><li>(gcp) <code>api 및 서비스 &gt; YouTube Data API v3 &gt; 사용자 인증 정보 &gt; API 키 &gt; 애플리케이션 제한사항</code> 없음으로 설정했다</li></ul><ol start="2"><li>aws region</li></ol><ul><li>(aws) <code>us-east-1</code>으로 올렸더니 일부 api가 <code>400, processingFailure</code> 에러를 반환했다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://console.cloud.google.com/apis/dashboard">https://console.cloud.google.com/apis/dashboard</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/using-api/">using api</category>
@@ -55,7 +55,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/aws-lambda-tips20210924/preview.png" alt=" "></p><ul><li>람다가 2회, 3회 중복 실행되는 경험을 한 적이 있다</li><li><code>구성 &gt; 일반 구성</code>으로 들어가 보면 메모리 및 제한 시간을 설정할 수 있다</li><li>제한 시간이 5초인 것을 10초로 늘려주어서 해결했다</li><li>람다는 제한 시간 안에 실행을 끝내지 못하면 실패하였다고 생각하여 설정한 재시도 횟수만큼 같은 함수를 재실행한다</li></ul><h2 id="TMI"><a href="#TMI" class="headerlink" title="TMI"></a>TMI</h2><ul><li>나는 람다에서 인터넷을 사용하여 어떤 api를 콜하는 로직이 있었다</li><li>람다는 스케쥴러를 통해서 트리거 된다</li><li>그런데 해당 api가 간헐적으로 여러 번 호출된 것을 확인하였고, 문제가 무엇인지 알아보다가</li><li>제한시간을 너무 짧게 둔 것이 문제임을 알게 되었다</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/aws-lambda-tips20210924/preview.png" alt=" "></p><ul><li>람다가 2회, 3회 중복 실행되는 경험을 한 적이 있다</li><li><code>구성 &gt; 일반 구성</code>으로 들어가 보면 메모리 및 제한 시간을 설정할 수 있다</li><li>제한 시간이 3초인 것을 5초로 늘려주어서 해결했다</li><li>람다는 제한 시간 안에 실행을 끝내지 못하면 실패하였다고 생각하여 설정한 재시도 횟수만큼 같은 함수를 재실행한다</li></ul><h2 id="TMI"><a href="#TMI" class="headerlink" title="TMI"></a>TMI</h2><ul><li>나는 람다에서 인터넷을 사용하여 어떤 api를 콜하는 로직이 있었다</li><li>람다는 스케쥴러를 통해서 트리거 된다</li><li>그런데 해당 api가 간헐적으로 여러 번 호출된 것을 확인하였고, 문제가 무엇인지 알아보다가</li><li>제한시간을 너무 짧게 둔 것이 문제임을 알게 되었다</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
