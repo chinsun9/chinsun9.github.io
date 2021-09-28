@@ -7,7 +7,7 @@ function setUtterancesTheme(theme) {
 
   const message = {
     type: 'set-theme',
-    theme: theme === 'dark' ? 'github-dark' : 'github-light',
+    theme: `github-${theme}`,
   };
 
   utterances.contentWindow.postMessage(message, 'https://utteranc.es');
@@ -39,18 +39,40 @@ window.addEventListener(
   false
 );
 
-// basic
+// favicon
 
+function setFaviconTheme(theme) {
+  const href = `https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/img/favicon-bold-color210928${
+    theme === 'dark' ? '-dark' : ''
+  }.svg?`;
+  document.querySelector(`head > link[rel="icon"]`).href = href;
+}
+
+const DISPLAY_DARK = '🌙';
+const DISPLAY_LIGHT = '🌞';
+
+function updateTheme(isDark) {
+  const theme = isDark ? 'dark' : 'light';
+  localStorage.setItem('theme', theme);
+  document.documentElement.setAttribute('data-color-scheme', theme);
+  document.body.classList[isDark ? 'add' : 'remove']('dark');
+  btn.innerText = isDark ? DISPLAY_DARK : DISPLAY_LIGHT;
+  setUtterancesTheme(theme);
+  setFaviconTheme(theme);
+}
+
+// basic
 function initTheme() {
   // chk local storage
   const theme = localStorage.getItem('theme');
   if (theme === 'dark') {
     document.body.classList.add('dark');
-    btn.innerText = '🌙';
+    btn.innerText = DISPLAY_DARK;
+    setFaviconTheme('dark');
     return;
   }
   if (theme === 'light') {
-    btn.innerText = '🌞';
+    btn.innerText = DISPLAY_LIGHT;
     return;
   }
 
@@ -61,46 +83,25 @@ function initTheme() {
   }
 
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  btn.innerText = isDark ? '🌙' : '🌞';
+  btn.innerText = isDark ? DISPLAY_DARK : DISPLAY_LIGHT;
+  setFaviconTheme(isDark ? 'dark' : 'light');
 }
 
 function toggleTheme() {
   console.log(`toggle theme`);
   document.body.classList.toggle('dark');
-
   const isDark = document.body.classList.contains('dark');
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  btn.innerText = isDark ? '🌙' : '🌞';
-  document.documentElement.setAttribute(
-    'data-color-scheme',
-    isDark ? 'dark' : 'light'
-  );
-  setUtterancesTheme(isDark ? 'dark' : 'light');
+  updateTheme(isDark);
 }
 
 window
   .matchMedia('(prefers-color-scheme: dark)')
   .addEventListener('change', (e) => {
-    const newColorScheme = e.matches ? 'dark' : 'light';
-    localStorage.setItem('theme', newColorScheme);
-
-    const isDark = newColorScheme === 'dark';
-    document.documentElement.setAttribute(
-      'data-color-scheme',
-      isDark ? 'dark' : 'light'
-    );
-    if (isDark) {
-      document.body.classList.add('dark');
-      btn.innerText = '🌙';
-      setUtterancesTheme('dark');
-      return;
-    }
-    document.body.classList.remove('dark');
-    btn.innerText = '🌞';
-    setUtterancesTheme('light');
+    const isDark = e.matches;
+    updateTheme(isDark);
   });
 
-btn.addEventListener('click', function (event) {
+btn.addEventListener('click', () => {
   toggleTheme();
 });
 

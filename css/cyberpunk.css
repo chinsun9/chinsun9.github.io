@@ -10261,6 +10261,9 @@ body > .section {
 [data-color-scheme="light"] {
   color-scheme: light;
 }
+body > section > div > div > div.column > div:nth-child(1) > div > div.level:nth-child(3) {
+  display: none;
+}
 .column-main {
   position: relative;
 }
