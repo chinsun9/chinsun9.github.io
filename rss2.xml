@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 05 Oct 2021 05:03:55 GMT</pubDate>
+    <pubDate>Tue, 05 Oct 2021 08:58:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>github 500 page</title>
+      <link>https://chinsun9.github.io/2021/10/05/github-500-page/</link>
+      <guid>https://chinsun9.github.io/2021/10/05/github-500-page/</guid>
+      <pubDate>Tue, 05 Oct 2021 08:58:17 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-500-page20211005/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-500-page20211005/preview.png" alt=" "></p><ul><li><p><a href="https://github.com/500">https://github.com/500</a></p></li><li><p>오… 처음 본다</p></li><li><p>마우스 움직이면 배경이 움직이는 건 404 페이지랑 똑같다!</p></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/404">https://github.com/404</a></li><li><a href="https://github.com/500">https://github.com/500</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/10/05/github-500-page/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>202109 검색 실적</title>
@@ -583,32 +611,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/09/01/ts-enum-spread/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>js array range</title>
-      <link>https://chinsun9.github.io/2021/08/31/js-array-range/</link>
-      <guid>https://chinsun9.github.io/2021/08/31/js-array-range/</guid>
-      <pubDate>Tue, 31 Aug 2021 05:10:05 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight ts&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example.ts&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight ts"><figcaption><span>example.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// https://stackoverflow.com/a/33457557</span></span><br><span class="line"><span class="keyword">const</span> range = <span class="function">(<span class="params">start: <span class="built_in">number</span>, end: <span class="built_in">number</span></span>) =&gt;</span></span><br><span class="line">  <span class="keyword">new</span> <span class="built_in">Array</span>(end - start).fill(<span class="number">0</span>).map(<span class="function">(<span class="params">_, idx</span>) =&gt;</span> start + idx);</span><br><span class="line"></span><br><span class="line"><span class="comment">// https://stackoverflow.com/a/10050831</span></span><br><span class="line"><span class="keyword">const</span> range = <span class="function">(<span class="params">start: <span class="built_in">number</span>, end: <span class="built_in">number</span></span>) =&gt;</span></span><br><span class="line">  [...new <span class="built_in">Array</span>(end - start).keys()].map(<span class="function">(<span class="params">idx</span>) =&gt;</span> start + idx);</span><br></pre></td></tr></table></figure><ul><li><code>keys()</code> 같은 걸 활용할 수도 있다니…</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/a/33457557">https://stackoverflow.com/a/33457557</a></li><li><a href="https://stackoverflow.com/a/10050831">https://stackoverflow.com/a/10050831</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/08/31/js-array-range/#disqus_thread</comments>
       
     </item>
     
