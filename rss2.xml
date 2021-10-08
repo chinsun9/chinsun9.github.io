@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 05 Oct 2021 08:58:17 GMT</pubDate>
+    <pubDate>Fri, 08 Oct 2021 11:06:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>깃허브 불필요한 파일 안 보기 hide files on github</title>
+      <link>https://chinsun9.github.io/2021/10/08/hide-files-on-github/</link>
+      <guid>https://chinsun9.github.io/2021/10/08/hide-files-on-github/</guid>
+      <pubDate>Fri, 08 Oct 2021 11:06:55 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;u</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/preview.png" alt=" "></p><ul><li>깃허브 탐색하다 보면 프로젝트 루트에 <code>.gitignore</code>부터 여러 가지 시작해서 그다지 중요하지 않는 파일들이 나열되어 있다</li><li><strong>hide files on github</strong> 크롬 익스텐션을 설치하면 깔끔하게 탐색할 수 있다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/1.png" alt=" "></p><ul><li>숨길 파일들을 직접 설정도 가능하다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/sindresorhus/hide-files-on-github">https://github.com/sindresorhus/hide-files-on-github</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/chrome/">chrome</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/10/08/hide-files-on-github/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>github 500 page</title>
@@ -579,38 +610,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/09/02/youtube-shortcuts/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>ts enum spread</title>
-      <link>https://chinsun9.github.io/2021/09/01/ts-enum-spread/</link>
-      <guid>https://chinsun9.github.io/2021/09/01/ts-enum-spread/</guid>
-      <pubDate>Wed, 01 Sep 2021 11:33:25 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight ts&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight ts"><figcaption><span>example</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">enum</span> TestStatus &#123;</span><br><span class="line">  PENDING,</span><br><span class="line">  ACCEPTED,</span><br><span class="line">  WRONG_ANSWER,</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.values(TestStatus));</span><br><span class="line"><span class="comment">// [ &#x27;PENDING&#x27;, &#x27;ACCEPTED&#x27;, &#x27;WRONG_ANSWER&#x27;, 0, 1, 2 ]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="built_in">enum</span> Actor &#123;</span><br><span class="line">  USER = <span class="string">&#x27;USER&#x27;</span>,</span><br><span class="line">  HOST = <span class="string">&#x27;HOST&#x27;</span>,</span><br><span class="line">  ADMIN = <span class="string">&#x27;ADMIN&#x27;</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.values(Actor));</span><br><span class="line"><span class="comment">// [ &#x27;USER&#x27;, &#x27;HOST&#x27;, &#x27;ADMIN&#x27; ]</span></span><br></pre></td></tr></table></figure><ul><li>일반 <code>Numeric enums</code>의 경우 멤버 이름과 값이 나온다</li><li><code>String enums</code>의 경우 값만 나온다</li><li>es2017 이상에서 사용할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/microsoft/TypeScript/issues/31268">https://github.com/microsoft/TypeScript/issues/31268</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/spread-syntax/">spread syntax</category>
-      
-      <category domain="https://chinsun9.github.io/tags/enum/">enum</category>
-      
-      <category domain="https://chinsun9.github.io/tags/es2017/">es2017</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/09/01/ts-enum-spread/#disqus_thread</comments>
       
     </item>
     
