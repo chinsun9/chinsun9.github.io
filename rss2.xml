@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 08 Oct 2021 11:06:55 GMT</pubDate>
+    <pubDate>Fri, 08 Oct 2021 11:18:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>playlist 202110</title>
+      <link>https://chinsun9.github.io/2021/10/08/playlist-202110/</link>
+      <guid>https://chinsun9.github.io/2021/10/08/playlist-202110/</guid>
+      <pubDate>Fri, 08 Oct 2021 11:18:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/videoseries?list=PLdEiQV70x8ZHTyCuGxIhCQI16wYkbSGV3&quot; frameborder=&quot;0&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="video-container"><iframe src="https://www.youtube.com/embed/videoseries?list=PLdEiQV70x8ZHTyCuGxIhCQI16wYkbSGV3" frameborder="0" loading="lazy" allowfullscreen></iframe></div><blockquote><p>~</p></blockquote>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/playlist/">playlist</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/playlist/">playlist</category>
+      
+      <category domain="https://chinsun9.github.io/tags/music/">music</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/10/08/playlist-202110/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>깃허브 불필요한 파일 안 보기 hide files on github</title>
@@ -26,7 +54,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/preview.png" alt=" "></p><ul><li>깃허브 탐색하다 보면 프로젝트 루트에 <code>.gitignore</code>부터 여러 가지 시작해서 그다지 중요하지 않는 파일들이 나열되어 있다</li><li><strong>hide files on github</strong> 크롬 익스텐션을 설치하면 깔끔하게 탐색할 수 있다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/1.png" alt=" "></p><ul><li>숨길 파일들을 직접 설정도 가능하다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/sindresorhus/hide-files-on-github">https://github.com/sindresorhus/hide-files-on-github</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/preview.png" alt=" "></p><ul><li>깃허브 탐색하다 보면 프로젝트 루트에 <code>.gitignore</code>부터 시작해서</li><li>탐색할 때 그다지 중요하지 않는 여러 파일들이 나열되어 있다</li><li><strong>hide files on github</strong> 크롬 익스텐션을 설치하면 깔끔하게 탐색할 수 있다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/1.png" alt=" "></p><ul><li>숨길 파일들을 직접 설정도 가능하다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/sindresorhus/hide-files-on-github">https://github.com/sindresorhus/hide-files-on-github</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
@@ -576,40 +604,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/09/03/create-typeorm-category/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>youtube shortcuts</title>
-      <link>https://chinsun9.github.io/2021/09/02/youtube-shortcuts/</link>
-      <guid>https://chinsun9.github.io/2021/09/02/youtube-shortcuts/</guid>
-      <pubDate>Thu, 02 Sep 2021 03:38:48 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;모두 토글키다&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;c ; caption ; 자막&lt;/li&gt;
-&lt;li&gt;f ; full screen ; 전체화면&lt;/li&gt;
-&lt;li&gt;m ; mute ; 음소거&lt;/li&gt;
-&lt;li&gt;k ; pause&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;shif</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>모두 토글키다</p><ul><li>c ; caption ; 자막</li><li>f ; full screen ; 전체화면</li><li>m ; mute ; 음소거</li><li>k ; pause</li></ul><ul><li>shift n ; 재생목록에서 다음 동영상</li><li>shift p ; 재생목록에서 이전 동영상</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/PVV1MduppSM">https://youtu.be/PVV1MduppSM</a></li><li><a href="https://support.google.com/youtube/answer/7631406?hl=ko">https://support.google.com/youtube/answer/7631406?hl=ko</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/youtube/">youtube</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/09/02/youtube-shortcuts/#disqus_thread</comments>
       
     </item>
     
