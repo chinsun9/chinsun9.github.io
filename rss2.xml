@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 08 Oct 2021 11:18:01 GMT</pubDate>
+    <pubDate>Sun, 10 Oct 2021 04:25:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>package.json 순서 정렬하기 sort-package-json</title>
+      <link>https://chinsun9.github.io/2021/10/10/sort-package-json/</link>
+      <guid>https://chinsun9.github.io/2021/10/10/sort-package-json/</guid>
+      <pubDate>Sun, 10 Oct 2021 04:25:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx sort-package-json</span><br></pre></td></tr></table></figure><ul><li>package.json를 수정하다가 문득 생각났다</li><li>어떤 걸 위에 작성하고, 아래 작성해야 하는지 순서를 어떻게</li><li>다른 npm 패키지 모듈을 참고해서 이런 순서로 적는 게 맞나 하다가</li><li><strong>package.json order</strong> 키워드로 검색했더니 바로 내가 찾는 게 나왔다</li></ul><h2 id="사용-방법"><a href="#사용-방법" class="headerlink" title="사용 방법"></a>사용 방법</h2><ul><li>너무 간단하다</li><li>그냥 package.json이 있는 디렉터리에서 <code>npx sort-package-json</code>를 실행하면 정렬이 완료된다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/keithamus/sort-package-json">https://github.com/keithamus/sort-package-json</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/npx/">npx</category>
+      
+      <category domain="https://chinsun9.github.io/tags/sort-package-json/">sort-package-json</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/10/10/sort-package-json/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>playlist 202110</title>
@@ -575,35 +605,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/09/04/js-number-comma/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>typeorm 카테고리 생성</title>
-      <link>https://chinsun9.github.io/2021/09/03/create-typeorm-category/</link>
-      <guid>https://chinsun9.github.io/2021/09/03/create-typeorm-category/</guid>
-      <pubDate>Fri, 03 Sep 2021 04:07:09 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;typeorm 공부해보자&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;공부-링크&quot;&gt;&lt;a href=&quot;#공부-링크&quot; class=&quot;headerlink&quot; title=&quot;공부 링크&quot;&gt;&lt;/a&gt;공부 링크&lt;/h2&gt;&lt;h3 id=&quot;with-nestjs&quot;&gt;&lt;a hre</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>typeorm 공부해보자</li></ul><h2 id="공부-링크"><a href="#공부-링크" class="headerlink" title="공부 링크"></a>공부 링크</h2><h3 id="with-nestjs"><a href="#with-nestjs" class="headerlink" title="with nestjs"></a>with nestjs</h3><ul><li>Database | 네스트JS ; <a href="https://docs.nestjs.kr/techniques/database">https://docs.nestjs.kr/techniques/database</a></li><li>SQL (TypeORM) | 네스트JS ; <a href="https://docs.nestjs.kr/recipes/sql-typeorm">https://docs.nestjs.kr/recipes/sql-typeorm</a></li></ul><h3 id="공식"><a href="#공식" class="headerlink" title="공식"></a>공식</h3><ul><li><a href="https://typeorm.io/">https://typeorm.io/</a></li><li><a href="https://github.com/typeorm/typeorm">https://github.com/typeorm/typeorm</a></li><li>example projects ; <a href="https://github.com/typeorm/typeorm#samples">https://github.com/typeorm/typeorm#samples</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/typeorm/">typeorm</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/category/">category</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/09/03/create-typeorm-category/#disqus_thread</comments>
       
     </item>
     
