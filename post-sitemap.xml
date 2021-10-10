@@ -8,6 +8,38 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/06/08/blog-update-utterances/</loc>
+        <lastmod>2021-10-10T05:59:54.199Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/06/15/blog-update-404/</loc>
+        <lastmod>2021-10-10T05:59:49.483Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/06/22/blog-fix-copy-button-not-dispalyed/</loc>
+        <lastmod>2021-10-10T05:59:36.169Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/02/20/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</loc>
+        <lastmod>2021-10-10T05:59:28.903Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2021/10/10/sort-package-json/</loc>
         <lastmod>2021-10-10T04:57:34.713Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1904,14 +1936,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2021/02/20/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%85%8C%EB%A7%88-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/</loc>
-        <lastmod>2021-08-04T13:19:07.923Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/09/17/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%8D%B8%EB%84%A4%EC%9D%BC-%EB%B0%94%EA%BE%B8%EA%B8%B0/</loc>
         <lastmod>2021-08-04T13:18:56.721Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2704,14 +2728,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2021/06/22/blog-fix-copy-button-not-dispalyed/</loc>
-        <lastmod>2021-06-23T01:33:20.910Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2021/05/21/%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9-vs-%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9/</loc>
         <lastmod>2021-06-18T10:56:13.200Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2800,14 +2816,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2021/06/15/blog-update-404/</loc>
-        <lastmod>2021-06-15T08:31:20.013Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2021/05/31/cdn/</loc>
         <lastmod>2021-06-12T12:52:09.297Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2833,14 +2841,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2021/06/08/202105-%EA%B2%80%EC%83%89-%EC%8B%A4%EC%A0%81/</loc>
-        <lastmod>2021-06-08T12:05:02.066Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/06/08/blog-update-utterances/</loc>
         <lastmod>2021-06-08T12:05:02.066Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
