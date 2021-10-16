@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 11 Oct 2021 12:24:35 GMT</pubDate>
+    <pubDate>Sat, 16 Oct 2021 06:15:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>blog fix 다크 모드 화면 깜박임 제거</title>
+      <link>https://chinsun9.github.io/2021/10/16/blog-fix-dark-mode-flicker/</link>
+      <guid>https://chinsun9.github.io/2021/10/16/blog-fix-dark-mode-flicker/</guid>
+      <pubDate>Sat, 16 Oct 2021 06:14:16 GMT</pubDate>
+      
+        
+        
+      <description>&lt;blockquote&gt;
+&lt;p&gt;화면을 넘어갈 때 눈뽕(기본 테마가 잠깐 렌더링 됨)을 해결하기&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;상황&quot;&gt;&lt;a href=&quot;#상황&quot; class=&quot;headerlink&quot; title=&quot;상황&quot;&gt;&lt;/a&gt;상황&lt;/h2&gt;&lt;p&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<blockquote><p>화면을 넘어갈 때 눈뽕(기본 테마가 잠깐 렌더링 됨)을 해결하기</p></blockquote><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><p><img src="/images/blog-fix-copy-button-not-dispalyed20210622/preview.gif" alt=" "></p><ul><li>다크 모드에서 계속 새로고침하고 있는 상황이다</li><li>중간에 번쩍하고 흰색이 보였다</li><li>다크 모드 사용 중에 이렇게 새로고침이나 페이지가 넘어갈 때마다 종종 흰색 화면으로 뒤덮이는 문제가 있었다</li></ul><ul><li>디폴트 테마 ; 화이트</li><li>설정한 테마 ; 다크</li><li>다크 모드이면 body에 dark 클래스 추가</li><li>다크 모드에서 새로고침이나 화면을 넘어갈 때 잠깐 흰색 화면이 보인다</li></ul><ul><li>해결해보자</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><p><img src="/images/blog-fix-dark-mode-flicker20210702/preview.png" alt=" "></p><ul><li>body 태그 바로 아래에 스크립트를 두어 렌더링을 막았다</li><li>html에 백그라운드 css가 있다면 삭제</li></ul><h2 id="알아낸-점"><a href="#알아낸-점" class="headerlink" title="알아낸 점"></a>알아낸 점</h2><ul><li>페이지가 넘어갈 때 이전 화면의 백그라운드가 유지된다 (이전 화면의 html이나 body의 백그라운드 컬러)</li><li>렌더링은 완전히 파싱이 끝난 후에 이뤄진다</li><li>중간에 스크립트를 두어 렌더링을 막을 수 있다(블로킹)</li><li>color-scheme css를 사용하면 스크롤바 다크 모드도 적용할 수 있다</li><li>color-scheme css를 사용하면 기본 백그라운드가 생긴다 (dkar일시 어두운 백그라운드)</li></ul><h2 id="다크-모드-체크리스트"><a href="#다크-모드-체크리스트" class="headerlink" title="다크 모드 체크리스트"></a>다크 모드 체크리스트</h2><ul><li><input disabled="" type="checkbox"> color-scheme css 사용하기</li><li><input disabled="" type="checkbox"> <code>html</code> 태그에 적용되는 백그라운드 색이 있다면 없애기</li><li><input disabled="" type="checkbox"> body 아래 테마 초기화하는 블로킹 스크립트 넣기</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.joshwcomeau.com/react/dark-mode/">https://www.joshwcomeau.com/react/dark-mode/</a></li><li><a href="https://github.com/joshwcomeau/dark-mode-minimal">https://github.com/joshwcomeau/dark-mode-minimal</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme">https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme</a></li><li><a href="https://chinsun9.github.io/dark-theme-practice/">https://chinsun9.github.io/dark-theme-practice/</a> (다크 모드상태로 계속 새로고침 해도 눈뽕이 없다!)</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
+      
+      <category domain="https://chinsun9.github.io/tags/dark-theme/">dark theme</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/10/16/blog-fix-dark-mode-flicker/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>로딩 아이콘 만들기 loading.io</title>
@@ -579,39 +612,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/09/09/npm-scripts-pre-post/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode devcontainers</title>
-      <link>https://chinsun9.github.io/2021/09/08/vscode-devcontainers/</link>
-      <guid>https://chinsun9.github.io/2021/09/08/vscode-devcontainers/</guid>
-      <pubDate>Wed, 08 Sep 2021 07:02:44 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-devcontainers20210908/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;u</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-devcontainers20210908/preview.png" alt=" "></p><ul><li>로컬에 있는 프로젝트를 고대로 도커 컨테이너로 가져와 작업 가능..!</li></ul><h2 id="쉽게"><a href="#쉽게" class="headerlink" title="쉽게"></a>쉽게</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/vscode-devcontainers20210908/1.png" alt=" "></p><ul><li><code>Remote-Containers: Add Development Container Configuration Files...</code></li><li>원하는 환경 선택!</li><li>그러면 <em>.devcontainer</em> 폴더와 그아래 <em>Dockerfile</em> 과 컨테이너 <em>devcontainer.json</em> 이 자동 생성된다</li><li><code>Remote-Containers: Reopen in Container</code>로 컨테이너에서 개발을 해볼 수 있겠다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://code.visualstudio.com/docs/remote/containers">https://code.visualstudio.com/docs/remote/containers</a></li><li><a href="https://code.visualstudio.com/docs/remote/containers-tutorial">https://code.visualstudio.com/docs/remote/containers-tutorial</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/docker/">docker</category>
-      
-      <category domain="https://chinsun9.github.io/tags/remote/">remote</category>
-      
-      <category domain="https://chinsun9.github.io/tags/container/">container</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/09/08/vscode-devcontainers/#disqus_thread</comments>
       
     </item>
     
