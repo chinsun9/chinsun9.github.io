@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 16 Oct 2021 06:15:18 GMT</pubDate>
+    <pubDate>Sat, 16 Oct 2021 15:32:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>깃허브 잔디 관리 1년차</title>
+      <link>https://chinsun9.github.io/2021/10/17/day-365th-of-github-grass-care/</link>
+      <guid>https://chinsun9.github.io/2021/10/17/day-365th-of-github-grass-care/</guid>
+      <pubDate>Sat, 16 Oct 2021 15:32:33 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/day-365th-of-github-grass-care20211016/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;드디어 완벽히 채워진 화분&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/day-365th-of-github-grass-care20211016/preview.png" alt=" "></p><ul><li>드디어 완벽히 채워진 화분</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/contributions-calendar/">contributions calendar</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/10/17/day-365th-of-github-grass-care/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>blog fix 다크 모드 화면 깜박임 제거</title>
@@ -578,40 +610,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/09/10/202108-search-performance-report/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>npm scripts pre post</title>
-      <link>https://chinsun9.github.io/2021/09/09/npm-scripts-pre-post/</link>
-      <guid>https://chinsun9.github.io/2021/09/09/npm-scripts-pre-post/</guid>
-      <pubDate>Thu, 09 Sep 2021 00:23:13 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight json&quot;&gt;&lt;figcaption&gt;&lt;span&gt;package.json&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/sp</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight json"><figcaption><span>package.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;prebuild&quot;</span>: <span class="string">&quot;echo 1&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;build&quot;</span>: <span class="string">&quot;echo 2&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;postbuild&quot;</span>: <span class="string">&quot;echo 3&quot;</span></span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><code>yarn build</code> or <code>npm run build</code> 했을 때 1,2,3 순서로 실행된다</li><li><code>pre</code>는 전처리, <code>post</code>는 후처리라고 생각하면 된다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.npmjs.com/cli/v7/using-npm/scripts">https://docs.npmjs.com/cli/v7/using-npm/scripts</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/npm/">npm</category>
-      
-      <category domain="https://chinsun9.github.io/tags/scripts/">scripts</category>
-      
-      <category domain="https://chinsun9.github.io/tags/pre/">pre</category>
-      
-      <category domain="https://chinsun9.github.io/tags/post/">post</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/09/09/npm-scripts-pre-post/#disqus_thread</comments>
       
     </item>
     
