@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 18 Oct 2021 01:44:41 GMT</pubDate>
+    <pubDate>Sat, 16 Oct 2021 15:32:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -68,9 +68,9 @@
       
       <category domain="https://chinsun9.github.io/tags/web/">web</category>
       
-      <category domain="https://chinsun9.github.io/tags/dark-theme/">dark theme</category>
-      
       <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
+      
+      <category domain="https://chinsun9.github.io/tags/dark-theme/">dark theme</category>
       
       
       <comments>https://chinsun9.github.io/2021/10/16/blog-fix-dark-mode-flicker/#disqus_thread</comments>
@@ -178,14 +178,13 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;/images/hide-files-on-github20211008/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;깃허브 탐색하다 보면 프로젝트 루트에 &lt;code&gt;.gitignore&lt;/code&gt;부터 시작해서&lt;/li</description>
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;u</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/hide-files-on-github20211008/preview.png" alt=" "></p><ul><li>깃허브 탐색하다 보면 프로젝트 루트에 <code>.gitignore</code>부터 시작해서</li><li>탐색할 때 그다지 중요하지 않는 여러 파일들이 나열되어 있다</li><li><strong>hide files on github</strong> 크롬 익스텐션을 설치하면 깔끔하게 탐색할 수 있다</li></ul><p><img src="/images/hide-files-on-github20211008/1.png" alt=" "></p><ul><li>숨길 파일들을 직접 설정도 가능하다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/sindresorhus/hide-files-on-github">https://github.com/sindresorhus/hide-files-on-github</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/preview.png" alt=" "></p><ul><li>깃허브 탐색하다 보면 프로젝트 루트에 <code>.gitignore</code>부터 시작해서</li><li>탐색할 때 그다지 중요하지 않는 여러 파일들이 나열되어 있다</li><li><strong>hide files on github</strong> 크롬 익스텐션을 설치하면 깔끔하게 탐색할 수 있다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/1.png" alt=" "></p><ul><li>숨길 파일들을 직접 설정도 가능하다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/sindresorhus/hide-files-on-github">https://github.com/sindresorhus/hide-files-on-github</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
