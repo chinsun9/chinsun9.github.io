@@ -9,8 +9,43 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 16 Oct 2021 15:32:33 GMT</pubDate>
+    <pubDate>Thu, 21 Oct 2021 07:07:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>blog update - 다크 테마용 favicon</title>
+      <link>https://chinsun9.github.io/2021/10/21/blog-update-favicon/</link>
+      <guid>https://chinsun9.github.io/2021/10/21/blog-update-favicon/</guid>
+      <pubDate>Thu, 21 Oct 2021 07:07:24 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;/images/blog-update-favicon20210928/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;테마를 전환할 때 favicon url도 업데이트한다&lt;/li&gt;
+&lt;li&gt;2개의 favicon 파일이 있</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="/images/blog-update-favicon20210928/preview.png" alt=" "></p><ul><li>테마를 전환할 때 favicon url도 업데이트한다</li><li>2개의 favicon 파일이 있다</li></ul><figure class="highlight js"><figcaption><span>theme.js:44</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setFaviconTheme</span>(<span class="params">theme</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> href = <span class="string">`https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/img/favicon-bold-color210928<span class="subst">$&#123;</span></span></span><br><span class="line"><span class="string"><span class="subst">    theme === <span class="string">&#x27;dark&#x27;</span> ? <span class="string">&#x27;-dark&#x27;</span> : <span class="string">&#x27;&#x27;</span></span></span></span><br><span class="line"><span class="string"><span class="subst">  &#125;</span>.svg?`</span>;</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">`head &gt; link[rel=&quot;icon&quot;]`</span>).href = href;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>svg에 어떻게 색을 넘길까..?</li><li>그냥 svg 2개 만들어서 토글하기</li><li>기존 테마 파일 리팩토링</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://brunch.co.kr/@ultra0034/129">https://brunch.co.kr/@ultra0034/129</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/dark-theme/">dark theme</category>
+      
+      <category domain="https://chinsun9.github.io/tags/svg/">svg</category>
+      
+      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
+      
+      <category domain="https://chinsun9.github.io/tags/favicon/">favicon</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/10/21/blog-update-favicon/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>깃허브 잔디 관리 1년차</title>
@@ -68,9 +103,9 @@
       
       <category domain="https://chinsun9.github.io/tags/web/">web</category>
       
-      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
-      
       <category domain="https://chinsun9.github.io/tags/dark-theme/">dark theme</category>
+      
+      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
       
       
       <comments>https://chinsun9.github.io/2021/10/16/blog-fix-dark-mode-flicker/#disqus_thread</comments>
@@ -178,13 +213,14 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;u</description>
+      <description>&lt;p&gt;&lt;img src=&quot;/images/hide-files-on-github20211008/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;깃허브 탐색하다 보면 프로젝트 루트에 &lt;code&gt;.gitignore&lt;/code&gt;부터 시작해서&lt;/li</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/preview.png" alt=" "></p><ul><li>깃허브 탐색하다 보면 프로젝트 루트에 <code>.gitignore</code>부터 시작해서</li><li>탐색할 때 그다지 중요하지 않는 여러 파일들이 나열되어 있다</li><li><strong>hide files on github</strong> 크롬 익스텐션을 설치하면 깔끔하게 탐색할 수 있다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/1.png" alt=" "></p><ul><li>숨길 파일들을 직접 설정도 가능하다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/sindresorhus/hide-files-on-github">https://github.com/sindresorhus/hide-files-on-github</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="/images/hide-files-on-github20211008/preview.png" alt=" "></p><ul><li>깃허브 탐색하다 보면 프로젝트 루트에 <code>.gitignore</code>부터 시작해서</li><li>탐색할 때 그다지 중요하지 않는 여러 파일들이 나열되어 있다</li><li><strong>hide files on github</strong> 크롬 익스텐션을 설치하면 깔끔하게 탐색할 수 있다</li></ul><p><img src="/images/hide-files-on-github20211008/1.png" alt=" "></p><ul><li>숨길 파일들을 직접 설정도 가능하다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/sindresorhus/hide-files-on-github">https://github.com/sindresorhus/hide-files-on-github</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
@@ -585,32 +621,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/09/10/npm-install-without-dev-dependencies/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>202108 검색 실적</title>
-      <link>https://chinsun9.github.io/2021/09/10/202108-search-performance-report/</link>
-      <guid>https://chinsun9.github.io/2021/09/10/202108-search-performance-report/</guid>
-      <pubDate>Fri, 10 Sep 2021 00:06:06 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202108-search-performance-report20210910/preview.png&quot; alt</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202108-search-performance-report20210910/preview.png" alt=" "></p>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/09/10/202108-search-performance-report/#disqus_thread</comments>
       
     </item>
     
