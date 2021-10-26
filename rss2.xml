@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sun, 24 Oct 2021 04:16:47 GMT</pubDate>
+    <pubDate>Tue, 26 Oct 2021 05:08:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>programmers weekly challenge</title>
+      <link>https://chinsun9.github.io/2021/10/26/programmers-weekly-challenge/</link>
+      <guid>https://chinsun9.github.io/2021/10/26/programmers-weekly-challenge/</guid>
+      <pubDate>Tue, 26 Oct 2021 05:08:35 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;12주 차까지 12문제 모두 풀었다!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/programmers-weekly-challenge20211025/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;!-- - 스샷에 모든 주차가 안나오긴 하는데..</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>12주 차까지 12문제 모두 풀었다!</p><p><img src="/images/programmers-weekly-challenge20211025/preview.png" alt=" "></p><!-- - 스샷에 모든 주차가 안나오긴 하는데.. --><!-- - 초반에는 array api를 활용하는 문제들이 많이 나왔다 --><ul><li>1주 차는 그냥 생각 없이 풀고 제출했는데, 다른 사람 풀이를 보니까 너무 쇼킹했다</li><li>좋아요 한번 받아보려고 새로운 문제 오픈되자마자 빠르게도 풀어보고, 제출하기 전에 코드 최대한 압축해서 제출도 해보았다</li><li>근데 좋아요 한 개도 못 받았다 ㅋㅋ ㅠㅠ</li><li>나름 짧게 잘 푼 것 같아 제출해도 항상 더 쇼킹한 풀이를 보았다..</li><li>어려운 문제가 나오면 포기할까 싶었는데, 나중에 스샷 찍었을 때 풀었다는 표식을 남기고 싶어서 끝까지 한 것 같다</li></ul><ul><li>시간제한도 없고 편하게 할 수 있어서 재밌었다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://programmers.co.kr/learn/challenges">https://programmers.co.kr/learn/challenges</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/programmers/">programmers</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/programmers/">programmers</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/10/26/programmers-weekly-challenge/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>cron 표현식</title>
@@ -27,7 +55,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/cron20211024/preview.png" alt=" "></p><blockquote><p>Cron syntax has five fields separated by a space, and each field represents a unit of time.</p><blockquote><p>┌───────────── minute (0 - 59)<br>│ ┌───────────── hour (0 - 23)<br>│ │ ┌───────────── day of the month (1 - 31)<br>│ │ │ ┌───────────── month (1 - 12 or JAN-DEC)<br>│ │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)<br>│ │ │ │ │<br>│ │ │ │ │<br>│ │ │ │ │<br>&nbsp;*&nbsp;&nbsp; *&nbsp;&nbsp; *&nbsp;&nbsp; *&nbsp;&nbsp; *</p></blockquote></blockquote><ul><li>크론 표현식 쓸 때마다 까먹는다</li><li>깃허브 액션 문서 보다가 잘 정리되어 있는 거 발견해서 스크랩한다</li></ul><!-- 리눅스 관련 내용은 그냥 aws 카테고리에 적자.. --><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule">https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule</a></li><li><a href="https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/services-cloudwatchevents-expressions.html">https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/services-cloudwatchevents-expressions.html</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="/images/cron20211024/preview.png" alt=" "></p><blockquote><p>Cron syntax has five fields separated by a space, and each field represents a unit of time.</p><blockquote><p>┌───────────── minute (0 - 59)<br>│ ┌───────────── hour (0 - 23)<br>│ │ ┌───────────── day of the month (1 - 31)<br>│ │ │ ┌───────────── month (1 - 12 or JAN-DEC)<br>│ │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)<br>│ │ │ │ │<br>│ │ │ │ │<br>│ │ │ │ │<br>&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*</p></blockquote></blockquote><ul><li>크론 표현식 쓸 때마다 까먹는다</li><li>깃허브 액션 문서 보다가 잘 정리되어 있는 거 발견해서 스크랩한다</li></ul><!-- 리눅스 관련 내용은 그냥 aws 카테고리에 적자.. --><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule">https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule</a></li><li><a href="https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/services-cloudwatchevents-expressions.html">https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/services-cloudwatchevents-expressions.html</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
@@ -59,7 +87,7 @@
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">@REM cd</span></span><br><span class="line"><span class="built_in">cd</span></span><br><span class="line"><span class="built_in">cd</span>..</span><br><span class="line"><span class="built_in">cd</span>,</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 줄바꿔서 계속 입력</span></span><br><span class="line"><span class="built_in">echo</span> <span class="number">1</span> ^</span><br><span class="line"><span class="number">2</span> ^</span><br><span class="line"><span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 폴더 생성</span></span><br><span class="line"><span class="built_in">mkdir</span> a/b/c</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 폴더 삭제</span></span><br><span class="line"><span class="built_in">rmdir</span> /s /q folder1_name folder2_name</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 프로세스 종료</span></span><br><span class="line"><span class="built_in">taskkill</span> /IM &quot;helloWorld.exe&quot; /F</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 새 파일 생성</span></span><br><span class="line"><span class="built_in">copy</span> <span class="built_in">con</span> new_file.txt</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 파일 이동</span></span><br><span class="line"><span class="comment">@REM 상위 디렉터리로 파일 이동</span></span><br><span class="line"><span class="built_in">move</span> folder1_name ..</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 상위 디렉터리에 있는 폴더1을 현재 디렉터리로 이동</span></span><br><span class="line"><span class="built_in">move</span> ../folder1_name .</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 배치 파일 위치로 cd</span></span><br><span class="line"><span class="built_in">pushd</span> &quot;%~dp0&quot;</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 심볼릭 링크 생성 삭제</span></span><br><span class="line"><span class="comment">@REM mklink /d [원본] [링크]</span></span><br><span class="line">mklink /d [링크위치] [링크위치를 기준으로 상대위치]</span><br><span class="line">mklink /d [절대위치] [절대위치]</span><br><span class="line"><span class="built_in">rmdir</span> [링크]</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://chinsun9.github.io/categories/cmd/">https://chinsun9.github.io/categories/cmd/</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">@REM cd</span></span><br><span class="line"><span class="built_in">cd</span></span><br><span class="line"><span class="built_in">cd</span>..</span><br><span class="line"><span class="built_in">cd</span>,</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 줄바꿔서 계속 입력</span></span><br><span class="line"><span class="built_in">echo</span> <span class="number">1</span> ^</span><br><span class="line"><span class="number">2</span> ^</span><br><span class="line"><span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 폴더 생성</span></span><br><span class="line"><span class="built_in">mkdir</span> a/b/c</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 폴더 삭제</span></span><br><span class="line"><span class="built_in">rmdir</span> /s /q folder1_name folder2_name</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 리네임</span></span><br><span class="line"><span class="built_in">rename</span> curName newName</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 프로세스 종료</span></span><br><span class="line"><span class="built_in">taskkill</span> /IM &quot;helloWorld.exe&quot; /F</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 새 파일 생성</span></span><br><span class="line"><span class="built_in">copy</span> <span class="built_in">con</span> new_file.txt</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 파일 이동</span></span><br><span class="line"><span class="comment">@REM 상위 디렉터리로 파일 이동</span></span><br><span class="line"><span class="built_in">move</span> folder1_name ..</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 상위 디렉터리에 있는 폴더1을 현재 디렉터리로 이동</span></span><br><span class="line"><span class="built_in">move</span> ../folder1_name .</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 배치 파일 위치로 cd</span></span><br><span class="line"><span class="built_in">pushd</span> &quot;%~dp0&quot;</span><br><span class="line"></span><br><span class="line"><span class="comment">@REM 심볼릭 링크 생성 삭제</span></span><br><span class="line"><span class="comment">@REM mklink /d [원본] [링크]</span></span><br><span class="line">mklink /d [링크위치] [링크위치를 기준으로 상대위치]</span><br><span class="line">mklink /d [절대위치] [절대위치]</span><br><span class="line"><span class="built_in">rmdir</span> [링크]</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://chinsun9.github.io/categories/cmd/">https://chinsun9.github.io/categories/cmd/</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
@@ -588,38 +616,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/09/15/git-filename-too-long/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>git subtree split</title>
-      <link>https://chinsun9.github.io/2021/09/14/git-subtree-split/</link>
-      <guid>https://chinsun9.github.io/2021/09/14/git-subtree-split/</guid>
-      <pubDate>Tue, 14 Sep 2021 00:26:28 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;클라이언트랑 벡엔드가 함께 있는 레포를 분리해보자&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;git subtree split&lt;/code&gt;로 분리할 수 있다&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;sp</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>클라이언트랑 벡엔드가 함께 있는 레포를 분리해보자</p><ul><li><code>git subtree split</code>로 분리할 수 있다</li></ul><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git subtree split -P &#123;디렉터리&#125; -b &#123;브랜치명&#125;</span></span><br><span class="line">git subtree split -P server -b b-server</span><br></pre></td></tr></table></figure><ul><li>위처럼 명령하면, b-server 브랜치가 생성되고, server 디렉터리의 내용들로 채워진다</li><li>깃 히스토리도 살아있다</li><li><code>git checkout b-server</code> ; b-server 브랜치로 체크아웃한다</li><li>github에서 새로운 레포를 생성한다</li><li><code>git remote add new-server-origin &#123;~.git&#125;</code> ; 새로 생성한 레포를 리모트로 추가해준다</li><li><code>git push new-server-origin b-server</code> ; 새로운 리모트로 푸쉬한다</li><li><code>git checkout main</code> ; main 브랜치로 돌아온다</li><li>독립해버린 server 디렉터리를 삭제해준다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>독립시킨 server를 섭모듈로 가져올 때 참고 ; <a href="/2021/04/14/git-submodule-%EC%A4%91%EC%B2%A9%EB%90%9C-%EA%B9%83-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">git submodule 중첩된 깃 사용하기</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/subtree/">subtree</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/09/14/git-subtree-split/#disqus_thread</comments>
       
     </item>
     
