@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 05 Nov 2021 14:10:49 GMT</pubDate>
+    <pubDate>Sat, 13 Nov 2021 07:29:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js primitive</title>
+      <link>https://chinsun9.github.io/2021/11/13/js-primitive/</link>
+      <guid>https://chinsun9.github.io/2021/11/13/js-primitive/</guid>
+      <pubDate>Sat, 13 Nov 2021 07:29:05 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight ts&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> PrimitiveType =</span><br><span class="line">  <span class="built_in">string</span> | <span class="built_in">number</span> | bigint | <span class="built_in">boolean</span> | <span class="literal">undefined</span> | symbol | <span class="literal">null</span>;</span><br></pre></td></tr></table></figure><ul><li>primitive value are immutable</li></ul><h2 id="array-fill"><a href="#array-fill" class="headerlink" title="array fill"></a>array fill</h2><figure class="highlight ts"><figcaption><span>Array.fill</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr1 = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">2</span>).fill(&#123;&#125;);</span><br><span class="line">arr1[<span class="number">0</span>].a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(arr1); <span class="comment">// [&#123;a:1&#125;, &#123;a:1&#125;] // 전부다 적용됨</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> arr2 = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">2</span>).fill(<span class="number">0</span>);</span><br><span class="line">arr2[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(arr2); <span class="comment">// [1, 0] // 하나만 적용됨</span></span><br></pre></td></tr></table></figure><h2 id="react-state"><a href="#react-state" class="headerlink" title="react state"></a>react state</h2><figure class="highlight ts"><figcaption><span>useState</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [state, setState] = useState(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">const</span> [state2, setstate2] = useState&lt;<span class="built_in">number</span>[]&gt;([]);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> onClickHandler = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  setState(<span class="number">1</span>); <span class="comment">// 제대로 렌더링 됨</span></span><br><span class="line"></span><br><span class="line">  state2.push(<span class="number">1</span>);</span><br><span class="line">  setstate2(state2); <span class="comment">// 레퍼런스가 달라지지 않아서 리렌더링 안됨</span></span><br><span class="line">  <span class="built_in">console</span>.log(&#123; state2 &#125;); <span class="comment">// 로그는 제대로 찍힘</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> onClickHandlerFix = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  setstate2(<span class="function">(<span class="params">prev</span>) =&gt;</span> [...prev, <span class="number">1</span>]); <span class="comment">// 레퍼런스를 바꿔줘야 리렌더링</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Glossary/Primitive">https://developer.mozilla.org/ko/docs/Glossary/Primitive</a></li><li>bigint ; <a href="https://youtu.be/jrPybxoSogs">https://youtu.be/jrPybxoSogs</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/primitive/">primitive</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/11/13/js-primitive/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>202110 검색 실적</title>
@@ -583,34 +611,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/09/17/git-branch-set-upstream-to/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>git checkout orphan</title>
-      <link>https://chinsun9.github.io/2021/09/16/git-checkout-orphan/</link>
-      <guid>https://chinsun9.github.io/2021/09/16/git-checkout-orphan/</guid>
-      <pubDate>Thu, 16 Sep 2021 01:05:58 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout --orphan new-branch</span><br></pre></td></tr></table></figure><ul><li>빈 브랜치를 생성해보자</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://git-scm.com/docs/git-checkout">https://git-scm.com/docs/git-checkout</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/checkout/">checkout</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/09/16/git-checkout-orphan/#disqus_thread</comments>
       
     </item>
     
