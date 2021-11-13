@@ -48,13 +48,12 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;/images/202110-search-performance-report20211105/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-</description>
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202110-search-performance-report20211105/preview.png&quot; alt</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/202110-search-performance-report20211105/preview.png" alt=" "></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202110-search-performance-report20211105/preview.png" alt=" "></p><!-- 1636789212942 -->]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
@@ -76,13 +75,12 @@
         
         
       <description>&lt;p&gt;12주 차까지 12문제 모두 풀었다!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/programmers-weekly-challenge20211025/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;!-- - 스샷에 모든 주차가 안나오긴 하는데..</description>
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/programmers-weekly-challenge2</description>
         
       
       
       
-      <content:encoded><![CDATA[<p>12주 차까지 12문제 모두 풀었다!</p><p><img src="/images/programmers-weekly-challenge20211025/preview.png" alt=" "></p><!-- - 스샷에 모든 주차가 안나오긴 하는데.. --><!-- - 초반에는 array api를 활용하는 문제들이 많이 나왔다 --><ul><li>1주 차는 그냥 생각 없이 풀고 제출했는데, 다른 사람 풀이를 보니까 너무 쇼킹했다</li><li>좋아요 한번 받아보려고 새로운 문제 오픈되자마자 빠르게도 풀어보고, 제출하기 전에 코드 최대한 압축해서 제출도 해보았다</li><li>근데 좋아요 한 개도 못 받았다 ㅋㅋ ㅠㅠ</li><li>나름 짧게 잘 푼 것 같아 제출해도 항상 더 쇼킹한 풀이를 보았다..</li><li>어려운 문제가 나오면 포기할까 싶었는데, 나중에 스샷 찍었을 때 풀었다는 표식을 남기고 싶어서 끝까지 한 것 같다</li></ul><ul><li>시간제한도 없고 편하게 할 수 있어서 재밌었다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://programmers.co.kr/learn/challenges">https://programmers.co.kr/learn/challenges</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p>12주 차까지 12문제 모두 풀었다!</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/programmers-weekly-challenge20211025/preview.png" alt=" "></p><!-- - 스샷에 모든 주차가 안나오긴 하는데.. --><!-- - 초반에는 array api를 활용하는 문제들이 많이 나왔다 --><ul><li>1주 차는 그냥 생각 없이 풀고 제출했는데, 다른 사람 풀이를 보니까 너무 쇼킹했다</li><li>좋아요 한번 받아보려고 새로운 문제 오픈되자마자 빠르게도 풀어보고, 제출하기 전에 코드 최대한 압축해서 제출도 해보았다</li><li>근데 좋아요 한 개도 못 받았다 ㅋㅋ ㅠㅠ</li><li>나름 짧게 잘 푼 것 같아 제출해도 항상 더 쇼킹한 풀이를 보았다..</li><li>어려운 문제가 나오면 포기할까 싶었는데, 나중에 스샷 찍었을 때 풀었다는 표식을 남기고 싶어서 끝까지 한 것 같다</li></ul><ul><li>시간제한도 없고 편하게 할 수 있어서 재밌었다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://programmers.co.kr/learn/challenges">https://programmers.co.kr/learn/challenges</a></li></ul><!-- 1636789234655 -->]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/programmers/">programmers</category>
@@ -103,14 +101,14 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;/images/cron20211024/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/cron20211024/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Cron syntax has five fields separated by a space, and each field</description>
+&lt;p&gt;Cr</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/cron20211024/preview.png" alt=" "></p><blockquote><p>Cron syntax has five fields separated by a space, and each field represents a unit of time.</p><blockquote><p>┌───────────── minute (0 - 59)<br>│ ┌───────────── hour (0 - 23)<br>│ │ ┌───────────── day of the month (1 - 31)<br>│ │ │ ┌───────────── month (1 - 12 or JAN-DEC)<br>│ │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)<br>│ │ │ │ │<br>│ │ │ │ │<br>│ │ │ │ │<br>&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*</p></blockquote></blockquote><ul><li>크론 표현식 쓸 때마다 까먹는다</li><li>깃허브 액션 문서 보다가 잘 정리되어 있는 거 발견해서 스크랩한다</li></ul><!-- 리눅스 관련 내용은 그냥 aws 카테고리에 적자.. --><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule">https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule</a></li><li><a href="https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/services-cloudwatchevents-expressions.html">https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/services-cloudwatchevents-expressions.html</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/cron20211024/preview.png" alt=" "></p><blockquote><p>Cron syntax has five fields separated by a space, and each field represents a unit of time.</p><blockquote><p>┌───────────── minute (0 - 59)<br>│ ┌───────────── hour (0 - 23)<br>│ │ ┌───────────── day of the month (1 - 31)<br>│ │ │ ┌───────────── month (1 - 12 or JAN-DEC)<br>│ │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)<br>│ │ │ │ │<br>│ │ │ │ │<br>│ │ │ │ │<br>&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*</p></blockquote></blockquote><ul><li>크론 표현식 쓸 때마다 까먹는다</li><li>깃허브 액션 문서 보다가 잘 정리되어 있는 거 발견해서 스크랩한다</li></ul><!-- 리눅스 관련 내용은 그냥 aws 카테고리에 적자.. --><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule">https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule</a></li><li><a href="https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/services-cloudwatchevents-expressions.html">https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/services-cloudwatchevents-expressions.html</a></li></ul><!-- 1636789248289 -->]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
@@ -193,15 +191,13 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;/images/blog-update-favicon20210928/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;테마를 전환할 때 favicon url도 업데이트한다&lt;/li&gt;
-&lt;li&gt;2개의 favicon 파일이 있</description>
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-update-favicon20210928/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/blog-update-favicon20210928/preview.png" alt=" "></p><ul><li>테마를 전환할 때 favicon url도 업데이트한다</li><li>2개의 favicon 파일이 있다</li></ul><figure class="highlight js"><figcaption><span>theme.js:44</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setFaviconTheme</span>(<span class="params">theme</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> href = <span class="string">`https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/img/favicon-bold-color210928<span class="subst">$&#123;</span></span></span><br><span class="line"><span class="string"><span class="subst">    theme === <span class="string">&#x27;dark&#x27;</span> ? <span class="string">&#x27;-dark&#x27;</span> : <span class="string">&#x27;&#x27;</span></span></span></span><br><span class="line"><span class="string"><span class="subst">  &#125;</span>.svg?`</span>;</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">`head &gt; link[rel=&quot;icon&quot;]`</span>).href = href;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>favicon으로 쓰이는 svg에 어떻게 색을 넘길까..?</li><li>그냥 svg 2개 만들어서 토글하기</li><li>기존 테마 파일 리팩토링</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://brunch.co.kr/@ultra0034/129">https://brunch.co.kr/@ultra0034/129</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-update-favicon20210928/preview.png" alt=" "></p><ul><li>테마를 전환할 때 favicon url도 업데이트한다</li><li>2개의 favicon 파일이 있다</li></ul><figure class="highlight js"><figcaption><span>theme.js:44</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setFaviconTheme</span>(<span class="params">theme</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> href = <span class="string">`https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/img/favicon-bold-color210928<span class="subst">$&#123;</span></span></span><br><span class="line"><span class="string"><span class="subst">    theme === <span class="string">&#x27;dark&#x27;</span> ? <span class="string">&#x27;-dark&#x27;</span> : <span class="string">&#x27;&#x27;</span></span></span></span><br><span class="line"><span class="string"><span class="subst">  &#125;</span>.svg?`</span>;</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">`head &gt; link[rel=&quot;icon&quot;]`</span>).href = href;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>favicon으로 쓰이는 svg에 어떻게 색을 넘길까..?</li><li>그냥 svg 2개 만들어서 토글하기</li><li>기존 테마 파일 리팩토링</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://brunch.co.kr/@ultra0034/129">https://brunch.co.kr/@ultra0034/129</a></li></ul><!-- 1636789280019 -->]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
@@ -228,16 +224,12 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;/images/day-365th-of-github-grass-care20211016/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;드디어 완벽히 채워진 화분&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/day-365th-of-github-grass-care20211016/preview.png&quot; alt=&quot;</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/day-365th-of-github-grass-care20211016/preview.png" alt=" "></p><ul><li>드디어 완벽히 채워진 화분</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/day-365th-of-github-grass-care20211016/preview.png" alt=" "></p><ul><li>드디어 완벽히 채워진 화분</li></ul><!-- 1636789298407   -->]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
@@ -268,7 +260,7 @@
       
       
       
-      <content:encoded><![CDATA[<blockquote><p>화면을 넘어갈 때 눈뽕(기본 테마가 잠깐 렌더링 됨)을 해결하기</p></blockquote><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><p><img src="/images/blog-fix-copy-button-not-dispalyed20210622/preview.gif" alt=" "></p><ul><li>다크 모드에서 계속 새로고침하고 있는 상황이다</li><li>중간에 번쩍하고 흰색이 보였다</li><li>다크 모드 사용 중에 이렇게 새로고침이나 페이지가 넘어갈 때마다 종종 흰색 화면으로 뒤덮이는 문제가 있었다</li></ul><ul><li>디폴트 테마 ; 화이트</li><li>설정한 테마 ; 다크</li><li>다크 모드이면 body에 dark 클래스 추가</li><li>다크 모드에서 새로고침이나 화면을 넘어갈 때 잠깐 흰색 화면이 보인다</li></ul><ul><li>해결해보자</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><p><img src="/images/blog-fix-dark-mode-flicker20210702/preview.png" alt=" "></p><ul><li>body 태그 바로 아래에 스크립트를 두어 렌더링을 막았다</li><li>html에 백그라운드 css가 있다면 삭제</li></ul><h2 id="알아낸-점"><a href="#알아낸-점" class="headerlink" title="알아낸 점"></a>알아낸 점</h2><ul><li>페이지가 넘어갈 때 이전 화면의 백그라운드가 유지된다 (이전 화면의 html이나 body의 백그라운드 컬러)</li><li>렌더링은 완전히 파싱이 끝난 후에 이뤄진다</li><li>중간에 스크립트를 두어 렌더링을 막을 수 있다(블로킹)</li><li>color-scheme css를 사용하면 스크롤바 다크 모드도 적용할 수 있다</li><li>color-scheme css를 사용하면 기본 백그라운드가 생긴다 (dkar일시 어두운 백그라운드)</li></ul><h2 id="다크-모드-체크리스트"><a href="#다크-모드-체크리스트" class="headerlink" title="다크 모드 체크리스트"></a>다크 모드 체크리스트</h2><ul><li><input disabled="" type="checkbox"> color-scheme css 사용하기</li><li><input disabled="" type="checkbox"> <code>html</code> 태그에 적용되는 백그라운드 색이 있다면 없애기</li><li><input disabled="" type="checkbox"> body 아래 테마 초기화하는 블로킹 스크립트 넣기</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.joshwcomeau.com/react/dark-mode/">https://www.joshwcomeau.com/react/dark-mode/</a></li><li><a href="https://github.com/joshwcomeau/dark-mode-minimal">https://github.com/joshwcomeau/dark-mode-minimal</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme">https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme</a></li><li><a href="https://chinsun9.github.io/dark-theme-practice/">https://chinsun9.github.io/dark-theme-practice/</a> (다크 모드상태로 계속 새로고침 해도 눈뽕이 없다!)</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><p>화면을 넘어갈 때 눈뽕(기본 테마가 잠깐 렌더링 됨)을 해결하기</p></blockquote><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-fix-copy-button-not-dispalyed20210622/preview.gif" alt=" "></p><ul><li>다크 모드에서 계속 새로고침하고 있는 상황이다</li><li>중간에 번쩍하고 흰색이 보였다</li><li>다크 모드 사용 중에 이렇게 새로고침이나 페이지가 넘어갈 때마다 종종 흰색 화면으로 뒤덮이는 문제가 있었다</li></ul><ul><li>디폴트 테마 ; 화이트</li><li>설정한 테마 ; 다크</li><li>다크 모드이면 body에 dark 클래스 추가</li><li>다크 모드에서 새로고침이나 화면을 넘어갈 때 잠깐 흰색 화면이 보인다</li></ul><ul><li>해결해보자</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-fix-dark-mode-flicker20210702/preview.png" alt=" "></p><ul><li>body 태그 바로 아래에 스크립트를 두어 렌더링을 막았다</li><li>html에 백그라운드 css가 있다면 삭제</li></ul><h2 id="알아낸-점"><a href="#알아낸-점" class="headerlink" title="알아낸 점"></a>알아낸 점</h2><ul><li>페이지가 넘어갈 때 이전 화면의 백그라운드가 유지된다 (이전 화면의 html이나 body의 백그라운드 컬러)</li><li>렌더링은 완전히 파싱이 끝난 후에 이뤄진다</li><li>중간에 스크립트를 두어 렌더링을 막을 수 있다(블로킹)</li><li>color-scheme css를 사용하면 스크롤바 다크 모드도 적용할 수 있다</li><li>color-scheme css를 사용하면 기본 백그라운드가 생긴다 (dkar일시 어두운 백그라운드)</li></ul><h2 id="다크-모드-체크리스트"><a href="#다크-모드-체크리스트" class="headerlink" title="다크 모드 체크리스트"></a>다크 모드 체크리스트</h2><ul><li><input disabled="" type="checkbox"> color-scheme css 사용하기</li><li><input disabled="" type="checkbox"> <code>html</code> 태그에 적용되는 백그라운드 색이 있다면 없애기</li><li><input disabled="" type="checkbox"> body 아래 테마 초기화하는 블로킹 스크립트 넣기</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.joshwcomeau.com/react/dark-mode/">https://www.joshwcomeau.com/react/dark-mode/</a></li><li><a href="https://github.com/joshwcomeau/dark-mode-minimal">https://github.com/joshwcomeau/dark-mode-minimal</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme">https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme</a></li><li><a href="https://chinsun9.github.io/dark-theme-practice/">https://chinsun9.github.io/dark-theme-practice/</a> (다크 모드상태로 계속 새로고침 해도 눈뽕이 없다!)</li></ul><!-- 1636789401533 -->]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
@@ -293,15 +285,14 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;/images/loading.io20211010/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/loading.io20211010/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;커스텀 로딩 아이콘을 만들 수 있다&lt;/li&gt;
-&lt;li&gt;gif, svg, css, png, apng 등 여러 형식을 지원</description>
+&lt;li&gt;커스텀</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="/images/loading.io20211010/preview.png" alt=" "></p><ul><li>커스텀 로딩 아이콘을 만들 수 있다</li><li>gif, svg, css, png, apng 등 여러 형식을 지원한다</li></ul><ul><li><code>css</code>로 받으면 html, css 코드 스니펫을 주는데, 너무 신기하다 ㅋㅋㅋ</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://loading.io/">https://loading.io/</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/loading.io20211010/preview.png" alt=" "></p><ul><li>커스텀 로딩 아이콘을 만들 수 있다</li><li>gif, svg, css, png, apng 등 여러 형식을 지원한다</li></ul><ul><li><code>css</code>로 받으면 html, css 코드 스니펫을 주는데, 너무 신기하다 ㅋㅋㅋ</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://loading.io/">https://loading.io/</a></li></ul><!-- 1636789414764 -->]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/web/">web</category>
