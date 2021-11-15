@@ -9,11 +9,11 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sun, 14 Nov 2021 06:44:18 GMT</pubDate>
+    <pubDate>Sun, 14 Nov 2021 13:08:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>ngrok</title>
+      <title>ngrok 내 웹앱 포트포워딩없이 https 공유하기</title>
       <link>https://chinsun9.github.io/2021/11/14/ngrok/</link>
       <guid>https://chinsun9.github.io/2021/11/14/ngrok/</guid>
       <pubDate>Sun, 14 Nov 2021 06:44:18 GMT</pubDate>
@@ -27,7 +27,7 @@
       
       
       
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/ngrok20210829/preview.png" alt=" "></p><ul><li><a href="https://ngrok.com/download">https://ngrok.com/download</a></li><li>포트포워딩없이 서버 외부에 공유하기</li><li>https로 열어준다</li><li>너무 간단하다</li><li>zip 받아서 원하는 곳에 풀고,</li><li>path 환경변수 등록해서 어디서든 cli에서 실행할 수 있다</li><li>근데 이거보다 더 쉬운 <code>localtunnel</code>이 있다</li></ul><h2 id="대안-localtunnel"><a href="#대안-localtunnel" class="headerlink" title="대안 ; localtunnel"></a>대안 ; localtunnel</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/ngrok20210829/1.png" alt=" "></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx localtunnel --port 3000</span><br></pre></td></tr></table></figure><ul><li>포트만 설정해주면 끝</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>localtunnel ; <a href="https://github.com/localtunnel/localtunnel">https://github.com/localtunnel/localtunnel</a></li><li><a href="https://www.softwaretestinghelp.com/ngrok-alternatives/">https://www.softwaretestinghelp.com/ngrok-alternatives/</a><ul><li>ngrok의 대안들</li></ul></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/ngrok20210829/preview.png" alt=" "></p><ul><li><a href="https://ngrok.com/download">https://ngrok.com/download</a></li><li>포트포워딩없이 서버 외부에 공유하기</li><li>https로 열어준다</li><li>너무 간단하다</li><li>zip 받아서 원하는 곳에 풀고,</li></ul><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ngrok http 3000</span><br></pre></td></tr></table></figure><ul><li><p>path 환경변수 등록해서 어디서든 cli에서 실행할 수 있다</p></li><li><p>근데 이거보다 더 쉬운 <code>localtunnel</code>이 있다</p></li></ul><h2 id="대안-localtunnel"><a href="#대안-localtunnel" class="headerlink" title="대안 ; localtunnel"></a>대안 ; localtunnel</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/ngrok20210829/1.png" alt=" "></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx localtunnel --port 3000</span><br></pre></td></tr></table></figure><ul><li>포트만 설정해주면 끝</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>localtunnel ; <a href="https://github.com/localtunnel/localtunnel">https://github.com/localtunnel/localtunnel</a></li><li><a href="https://www.softwaretestinghelp.com/ngrok-alternatives/">https://www.softwaretestinghelp.com/ngrok-alternatives/</a><ul><li>ngrok의 대안들</li></ul></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/web/">web</category>
