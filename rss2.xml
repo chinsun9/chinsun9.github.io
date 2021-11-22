@@ -9,8 +9,37 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sun, 21 Nov 2021 05:42:29 GMT</pubDate>
+    <pubDate>Mon, 22 Nov 2021 12:28:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>all unset</title>
+      <link>https://chinsun9.github.io/2021/11/22/css-all-unset/</link>
+      <guid>https://chinsun9.github.io/2021/11/22/css-all-unset/</guid>
+      <pubDate>Mon, 22 Nov 2021 12:28:41 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;못생긴 기본 스타일을 제거해보자&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/css-all-unset20211121/preview.pn</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>못생긴 기본 스타일을 제거해보자</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/css-all-unset20211121/preview.png" alt=" "></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>,</span><br><span class="line"><span class="selector-tag">button</span>,</span><br><span class="line"><span class="selector-tag">input</span> &#123;</span><br><span class="line">  all: unset;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="예전의-삽질들…"><a href="#예전의-삽질들…" class="headerlink" title="예전의 삽질들…"></a>예전의 삽질들…</h2><ul><li><a href="https://chinsun9.github.io/2020/10/08/a-tag-no-color/">https://chinsun9.github.io/2020/10/08/a-tag-no-color/</a></li><li><a href="https://chinsun9.github.io/2020/11/03/li-point-remove/">https://chinsun9.github.io/2020/11/03/li-point-remove/</a></li><li><a href="https://chinsun9.github.io/2020/12/15/input-number-%ED%99%94%EC%82%B4%ED%91%9C-%EC%97%86%EC%95%A0%EA%B8%B0/">https://chinsun9.github.io/2020/12/15/input-number-화살표-없애기/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/11/22/css-all-unset/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>eslint 빨간줄, 재시작</title>
@@ -574,34 +603,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/09/28/npm-repo-command/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>유튜브 api가 aws 람다에서 실행이 안됨</title>
-      <link>https://chinsun9.github.io/2021/09/26/youtube-data-api-lambda-tips/</link>
-      <guid>https://chinsun9.github.io/2021/09/26/youtube-data-api-lambda-tips/</guid>
-      <pubDate>Sun, 26 Sep 2021 13:55:07 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/youtube-data-api-lambda-tips20210926/preview.png&quot; alt=&quot; &quot;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/youtube-data-api-lambda-tips20210926/preview.png" alt=" "></p><ul><li>로컬에서는 잘 돌아가는데, 람다에 올리면 실행되지 않았다</li></ul><h2 id="체크해보기"><a href="#체크해보기" class="headerlink" title="체크해보기"></a>체크해보기</h2><ol><li>api 제한사항</li></ol><ul><li>(gcp) <code>api 및 서비스 &gt; YouTube Data API v3 &gt; 사용자 인증 정보 &gt; API 키 &gt; 애플리케이션 제한사항</code> 없음으로 설정했다</li></ul><ol start="2"><li>aws region</li></ol><ul><li>(aws) <code>us-east-1</code>으로 올렸더니 일부 api가 <code>400, processingFailure</code> 에러를 반환했다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://console.cloud.google.com/apis/dashboard">https://console.cloud.google.com/apis/dashboard</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/using-api/">using api</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/googleapis/">googleapis</category>
-      
-      <category domain="https://chinsun9.github.io/tags/youtube-data-api/">youtube data api</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/09/26/youtube-data-api-lambda-tips/#disqus_thread</comments>
       
     </item>
     
