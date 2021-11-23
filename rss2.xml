@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 22 Nov 2021 12:28:41 GMT</pubDate>
+    <pubDate>Tue, 23 Nov 2021 13:41:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>git rebase</title>
+      <link>https://chinsun9.github.io/2021/11/23/git-rebase/</link>
+      <guid>https://chinsun9.github.io/2021/11/23/git-rebase/</guid>
+      <pubDate>Tue, 23 Nov 2021 13:41:40 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span cla</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase main</span><br></pre></td></tr></table></figure><ul><li>main branch와 현재 브랜치가 충돌이 나서 자동 병합이 안될 떄</li><li>rebase를 톨해 로컬에서 충돌을 해결할 수 있다</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/git/">git</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/git/">git</category>
+      
+      <category domain="https://chinsun9.github.io/tags/rebase/">rebase</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/11/23/git-rebase/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>all unset</title>
@@ -26,7 +54,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>못생긴 기본 스타일을 제거해보자</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/css-all-unset20211121/preview.png" alt=" "></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>,</span><br><span class="line"><span class="selector-tag">button</span>,</span><br><span class="line"><span class="selector-tag">input</span> &#123;</span><br><span class="line">  all: unset;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="예전의-삽질들…"><a href="#예전의-삽질들…" class="headerlink" title="예전의 삽질들…"></a>예전의 삽질들…</h2><ul><li><a href="https://chinsun9.github.io/2020/10/08/a-tag-no-color/">https://chinsun9.github.io/2020/10/08/a-tag-no-color/</a></li><li><a href="https://chinsun9.github.io/2020/11/03/li-point-remove/">https://chinsun9.github.io/2020/11/03/li-point-remove/</a></li><li><a href="https://chinsun9.github.io/2020/12/15/input-number-%ED%99%94%EC%82%B4%ED%91%9C-%EC%97%86%EC%95%A0%EA%B8%B0/">https://chinsun9.github.io/2020/12/15/input-number-화살표-없애기/</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p>못생긴 기본 스타일을 제거해보자</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/css-all-unset20211121/preview.png" alt=" "></p><figure class="highlight css"><figcaption><span>style.css</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>,</span><br><span class="line"><span class="selector-tag">button</span>,</span><br><span class="line"><span class="selector-tag">input</span> &#123;</span><br><span class="line">  all: unset;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="예전의-삽질들…"><a href="#예전의-삽질들…" class="headerlink" title="예전의 삽질들…"></a>예전의 삽질들…</h2><ul><li><a href="https://chinsun9.github.io/2020/10/08/a-tag-no-color/">https://chinsun9.github.io/2020/10/08/a-tag-no-color/</a></li><li><a href="https://chinsun9.github.io/2020/11/03/li-point-remove/">https://chinsun9.github.io/2020/11/03/li-point-remove/</a></li><li><a href="https://chinsun9.github.io/2020/12/15/input-number-%ED%99%94%EC%82%B4%ED%91%9C-%EC%97%86%EC%95%A0%EA%B8%B0/">https://chinsun9.github.io/2020/12/15/input-number-화살표-없애기/</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/web/">web</category>
@@ -571,38 +599,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/10/05/202109-search-performance-report/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>npm repo command</title>
-      <link>https://chinsun9.github.io/2021/09/28/npm-repo-command/</link>
-      <guid>https://chinsun9.github.io/2021/09/28/npm-repo-command/</guid>
-      <pubDate>Tue, 28 Sep 2021 05:00:35 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;npm repo&lt;/code&gt; 명령으로 연결된 원격 레포 페이지를 브라우저로 바로 열어볼 수 있다&lt;/li&gt;
-&lt;li&gt;꿀기능이다&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;조건&quot;&gt;&lt;a href=&quot;#조건&quot; class=&quot;headerlink&quot; </description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li><code>npm repo</code> 명령으로 연결된 원격 레포 페이지를 브라우저로 바로 열어볼 수 있다</li><li>꿀기능이다</li></ul><h2 id="조건"><a href="#조건" class="headerlink" title="조건"></a>조건</h2><figure class="highlight json"><figcaption><span>package.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">&quot;repository&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;git&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;url&quot;</span>: <span class="string">&quot;https://github.com/chinsun9/chinsun9.github.io.git&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>package.json에 <code>repository</code> 필드가 존재해야 한다</li><li><code>npm init -y</code>명령을 사용하면 알아서 git config를 읽어서 해당 필드들을 채워준다</li></ul><h2 id="npm-bug"><a href="#npm-bug" class="headerlink" title="npm bug"></a>npm bug</h2><p><code>npm bug</code>, <code>npm bugs</code>, <code>npm issue</code></p><ul><li>issue 페이지를 바로 열어볼 수 있다!</li><li>repo와 마찬가지로 <code>bugs</code> 필드가 존재해야 한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.npmjs.com/cli/v7/commands/npm-repo">https://docs.npmjs.com/cli/v7/commands/npm-repo</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/npm/">npm</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/09/28/npm-repo-command/#disqus_thread</comments>
       
     </item>
     
