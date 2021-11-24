@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 23 Nov 2021 13:41:40 GMT</pubDate>
+    <pubDate>Wed, 24 Nov 2021 13:01:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>7777</title>
+      <link>https://chinsun9.github.io/2021/11/24/7777/</link>
+      <guid>https://chinsun9.github.io/2021/11/24/7777/</guid>
+      <pubDate>Wed, 24 Nov 2021 13:01:16 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/777720211122/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;7777 커밋&lt;/</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/777720211122/preview.png" alt=" "></p><ul><li>7777 커밋</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/commit/">commit</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/11/24/7777/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>git rebase</title>
@@ -20,12 +50,12 @@
       
         
         
-      <description>&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span cla</description>
+      <description>&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br</description>
         
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase main</span><br></pre></td></tr></table></figure><ul><li>main branch와 현재 브랜치가 충돌이 나서 자동 병합이 안될 떄</li><li>rebase를 톨해 로컬에서 충돌을 해결할 수 있다</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase main</span><br></pre></td></tr></table></figure><ul><li>main branch와 현재 브랜치가 충돌이 나서 자동 병합이 안될 떄</li><li>rebase를 톨해 로컬에서 충돌을 해결할 수 있다</li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/git/">git</category>
@@ -573,32 +603,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/10/05/github-500-page/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>202109 검색 실적</title>
-      <link>https://chinsun9.github.io/2021/10/05/202109-search-performance-report/</link>
-      <guid>https://chinsun9.github.io/2021/10/05/202109-search-performance-report/</guid>
-      <pubDate>Tue, 05 Oct 2021 05:01:47 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202109-search-performance-report20211005/preview.png&quot; alt</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202109-search-performance-report20211005/preview.png" alt=" "></p>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/10/05/202109-search-performance-report/#disqus_thread</comments>
       
     </item>
     
