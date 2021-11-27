@@ -9,74 +9,8 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 27 Nov 2021 13:59:34 GMT</pubDate>
+    <pubDate>Wed, 24 Nov 2021 13:01:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>emotion css prop</title>
-      <link>https://chinsun9.github.io/2021/11/27/emotion-css-prop20211127-1/</link>
-      <guid>https://chinsun9.github.io/2021/11/27/emotion-css-prop20211127-1/</guid>
-      <pubDate>Sat, 27 Nov 2021 13:59:34 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/emotion-css-prop20211127/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;figur</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/emotion-css-prop20211127/preview.png" alt=" "></p><figure class="highlight json"><figcaption><span>tsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;compilerOptions&quot;</span>: &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="attr">&quot;jsxImportSource&quot;</span>: <span class="string">&quot;@emotion/react&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>jsx 엘리먼트에서 css 속성을 사용할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://emotion.sh/docs/typescript#css-prop">https://emotion.sh/docs/typescript#css-prop</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/react/">react</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/react/">react</category>
-      
-      <category domain="https://chinsun9.github.io/tags/css/">css</category>
-      
-      <category domain="https://chinsun9.github.io/tags/styled-components/">styled-components</category>
-      
-      <category domain="https://chinsun9.github.io/tags/emotion/">emotion</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/11/27/emotion-css-prop20211127-1/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>emotion css prop</title>
-      <link>https://chinsun9.github.io/2021/11/27/emotion-css-prop/</link>
-      <guid>https://chinsun9.github.io/2021/11/27/emotion-css-prop/</guid>
-      <pubDate>Sat, 27 Nov 2021 13:58:53 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/emotion-css-prop20211127/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;figur</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/emotion-css-prop20211127/preview.png" alt=" "></p><figure class="highlight json"><figcaption><span>tsconfig.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;compilerOptions&quot;</span>: &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="attr">&quot;jsxImportSource&quot;</span>: <span class="string">&quot;@emotion/react&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>jsx 엘리먼트에서 css 속성을 사용할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://emotion.sh/docs/typescript#css-prop">https://emotion.sh/docs/typescript#css-prop</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/react/">react</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/react/">react</category>
-      
-      <category domain="https://chinsun9.github.io/tags/css/">css</category>
-      
-      <category domain="https://chinsun9.github.io/tags/styled-components/">styled-components</category>
-      
-      <category domain="https://chinsun9.github.io/tags/emotion/">emotion</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/11/27/emotion-css-prop/#disqus_thread</comments>
-      
-    </item>
     
     <item>
       <title>7777</title>
@@ -610,6 +544,65 @@
       
       
       <comments>https://chinsun9.github.io/2021/10/08/playlist-202110/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>깃허브 불필요한 파일 안 보기 hide files on github</title>
+      <link>https://chinsun9.github.io/2021/10/08/hide-files-on-github/</link>
+      <guid>https://chinsun9.github.io/2021/10/08/hide-files-on-github/</guid>
+      <pubDate>Fri, 08 Oct 2021 11:06:55 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;u</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/preview.png" alt=" "></p><ul><li>깃허브 탐색하다 보면 프로젝트 루트에 <code>.gitignore</code>부터 시작해서</li><li>탐색할 때 그다지 중요하지 않는 여러 파일들이 나열되어 있다</li><li><strong>hide files on github</strong> 크롬 익스텐션을 설치하면 깔끔하게 탐색할 수 있다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/1.png" alt=" "></p><ul><li>숨길 파일들을 직접 설정도 가능하다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/sindresorhus/hide-files-on-github">https://github.com/sindresorhus/hide-files-on-github</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/chrome/">chrome</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/10/08/hide-files-on-github/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>github 500 page</title>
+      <link>https://chinsun9.github.io/2021/10/05/github-500-page/</link>
+      <guid>https://chinsun9.github.io/2021/10/05/github-500-page/</guid>
+      <pubDate>Tue, 05 Oct 2021 08:58:17 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-500-page20211005/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-500-page20211005/preview.png" alt=" "></p><ul><li><p><a href="https://github.com/500">https://github.com/500</a></p></li><li><p>오… 처음 본다</p></li><li><p>마우스 움직이면 배경이 움직이는 건 404 페이지랑 똑같다!</p></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/404">https://github.com/404</a></li><li><a href="https://github.com/500">https://github.com/500</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/10/05/github-500-page/#disqus_thread</comments>
       
     </item>
     
