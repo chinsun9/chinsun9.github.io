@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 24 Nov 2021 13:01:16 GMT</pubDate>
+    <pubDate>Sat, 27 Nov 2021 14:45:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>\&#39;JSX\&#39; is not defined.</title>
+      <link>https://chinsun9.github.io/2021/11/27/JSX-is-not-defined/</link>
+      <guid>https://chinsun9.github.io/2021/11/27/JSX-is-not-defined/</guid>
+      <pubDate>Sat, 27 Nov 2021 14:45:57 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;eslint가 JSX를 못 알아먹는다&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/JSX-is-not-defined20211127/pr</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>eslint가 JSX를 못 알아먹는다</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/JSX-is-not-defined20211127/preview.png" alt=" "></p><figure class="highlight json"><figcaption><span>.eslintrc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;globals&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;JSX&quot;</span>: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/eslint/">eslint</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/react/">react</category>
+      
+      <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
+      
+      <category domain="https://chinsun9.github.io/tags/JSX/">JSX</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/11/27/JSX-is-not-defined/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>7777</title>
@@ -575,34 +606,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/10/08/hide-files-on-github/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>github 500 page</title>
-      <link>https://chinsun9.github.io/2021/10/05/github-500-page/</link>
-      <guid>https://chinsun9.github.io/2021/10/05/github-500-page/</guid>
-      <pubDate>Tue, 05 Oct 2021 08:58:17 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-500-page20211005/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;l</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-500-page20211005/preview.png" alt=" "></p><ul><li><p><a href="https://github.com/500">https://github.com/500</a></p></li><li><p>오… 처음 본다</p></li><li><p>마우스 움직이면 배경이 움직이는 건 404 페이지랑 똑같다!</p></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/404">https://github.com/404</a></li><li><a href="https://github.com/500">https://github.com/500</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/10/05/github-500-page/#disqus_thread</comments>
       
     </item>
     
