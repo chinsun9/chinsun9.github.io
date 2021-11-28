@@ -9,8 +9,37 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 27 Nov 2021 15:01:36 GMT</pubDate>
+    <pubDate>Sun, 28 Nov 2021 02:10:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>first-child vs first-of-type</title>
+      <link>https://chinsun9.github.io/2021/11/28/first-child-vs-first-of-type/</link>
+      <guid>https://chinsun9.github.io/2021/11/28/first-child-vs-first-of-type/</guid>
+      <pubDate>Sun, 28 Nov 2021 02:10:05 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/first-child-vs-first-of-type20211116/1.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/first-child-vs-first-of-type20211116/1.png" alt=" "></p><blockquote><p>The pseudo class “:first-child” is potentially unsafe when doing server-side rendering. Try changing it to “:first-of-type”.<br>The pseudo class “:nth-child” is potentially unsafe when doing server-side rendering. Try changing it to “:nth-of-type”.</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/first-child-vs-first-of-type20211116/preview.png" alt=" "></p><ul><li>first-child를 사용하면 콘솔에 에러가 찍힌다</li><li>그러면서 first-of-type을 사용하라고 알린다</li><li>이참에 둘의 차이를 알아보았다</li></ul><!-- * ie8 시절에 사용하던 것이 first-child이고, 요즘엔 first-of-type을 사용한다 --><figure class="highlight html"><figcaption><span>example.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-tag">h1</span><span class="selector-pseudo">:first</span>-child &#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">color</span>: red;</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="css">  <span class="selector-tag">h4</span><span class="selector-pseudo">:first</span>-of-type &#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">color</span>: green;</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>first-child로 빨간색이 된다<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h4</span>&gt;</span>first-of-type으로 인해 초록색이 된다<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h4</span>&gt;</span>first-of-type으로 인해 초록색이 된다<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>효과를 안 받는다<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.geeksforgeeks.org/difference-between-first-child-and-first-of-type-selector-in-css/">https://www.geeksforgeeks.org/difference-between-first-child-and-first-of-type-selector-in-css/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/11/28/first-child-vs-first-of-type/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>JSX is not defined.</title>
@@ -575,37 +604,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/10/08/playlist-202110/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>깃허브 불필요한 파일 안 보기 hide files on github</title>
-      <link>https://chinsun9.github.io/2021/10/08/hide-files-on-github/</link>
-      <guid>https://chinsun9.github.io/2021/10/08/hide-files-on-github/</guid>
-      <pubDate>Fri, 08 Oct 2021 11:06:55 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;u</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/preview.png" alt=" "></p><ul><li>깃허브 탐색하다 보면 프로젝트 루트에 <code>.gitignore</code>부터 시작해서</li><li>탐색할 때 그다지 중요하지 않는 여러 파일들이 나열되어 있다</li><li><strong>hide files on github</strong> 크롬 익스텐션을 설치하면 깔끔하게 탐색할 수 있다</li></ul><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/hide-files-on-github20211008/1.png" alt=" "></p><ul><li>숨길 파일들을 직접 설정도 가능하다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/sindresorhus/hide-files-on-github">https://github.com/sindresorhus/hide-files-on-github</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/extension/">extension</category>
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/chrome/">chrome</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/10/08/hide-files-on-github/#disqus_thread</comments>
       
     </item>
     
