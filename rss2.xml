@@ -9,8 +9,34 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 16 Dec 2021 13:07:50 GMT</pubDate>
+    <pubDate>Sat, 18 Dec 2021 11:31:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>202111 검색 실적</title>
+      <link>https://chinsun9.github.io/2021/12/18/202111-search-performance-report/</link>
+      <guid>https://chinsun9.github.io/2021/12/18/202111-search-performance-report/</guid>
+      <pubDate>Sat, 18 Dec 2021 11:31:43 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202111-search-performance-report20211216/preview.png&quot; alt</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202111-search-performance-report20211216/preview.png" alt=" "></p>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/12/18/202111-search-performance-report/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>ie11로 접속하면 edge가 켜짐</title>
@@ -578,40 +604,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/10/16/blog-fix-dark-mode-flicker/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>로딩 아이콘 만들기 loading.io</title>
-      <link>https://chinsun9.github.io/2021/10/11/loading-io/</link>
-      <guid>https://chinsun9.github.io/2021/10/11/loading-io/</guid>
-      <pubDate>Mon, 11 Oct 2021 12:24:35 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/loading.io20211010/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;커스텀</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/loading.io20211010/preview.png" alt=" "></p><ul><li>커스텀 로딩 아이콘을 만들 수 있다</li><li>gif, svg, css, png, apng 등 여러 형식을 지원한다</li></ul><ul><li><code>css</code>로 받으면 html, css 코드 스니펫을 주는데, 너무 신기하다 ㅋㅋㅋ</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://loading.io/">https://loading.io/</a></li></ul><!-- 1636789414764 -->]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/svg/">svg</category>
-      
-      <category domain="https://chinsun9.github.io/tags/loading/">loading</category>
-      
-      <category domain="https://chinsun9.github.io/tags/icon/">icon</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/10/11/loading-io/#disqus_thread</comments>
       
     </item>
     
