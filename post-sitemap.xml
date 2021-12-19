@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/12/19/promise-all-vs-allSettled/</loc>
+        <lastmod>2021-12-19T09:52:47.352Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/21/npm-cli/</loc>
+        <lastmod>2021-12-18T12:32:09.574Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/10/28/Promise-%EC%97%B0%EC%8A%B5/</loc>
         <lastmod>2021-12-18T11:33:14.219Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1218,14 +1234,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/05/otp-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-08-04T13:39:15.260Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/21/npm-%EB%AA%85%EB%A0%B9%EC%96%B4/</loc>
-        <lastmod>2021-08-04T13:38:57.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
