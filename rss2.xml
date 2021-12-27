@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 22 Dec 2021 14:32:29 GMT</pubDate>
+    <pubDate>Mon, 27 Dec 2021 14:11:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>aws lambda handler callback</title>
+      <link>https://chinsun9.github.io/2021/12/27/aws-lambda-handler-callback/</link>
+      <guid>https://chinsun9.github.io/2021/12/27/aws-lambda-handler-callback/</guid>
+      <pubDate>Mon, 27 Dec 2021 14:11:44 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight ts&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;</span><br><span class="line">  APIGatewayProxyCallback,</span><br><span class="line">  APIGatewayProxyEvent,</span><br><span class="line">  APIGatewayProxyResult,</span><br><span class="line">  Context,</span><br><span class="line">&#125; <span class="keyword">from</span> <span class="string">&#x27;aws-lambda&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; makeResponse &#125; <span class="keyword">from</span> <span class="string">&#x27;./makeResponse&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; service &#125; <span class="keyword">from</span> <span class="string">&#x27;./service&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> handler = <span class="keyword">async</span> (</span><br><span class="line">  _e: APIGatewayProxyEvent,</span><br><span class="line">  _c: Context,</span><br><span class="line">  callback: APIGatewayProxyCallback</span><br><span class="line">): <span class="built_in">Promise</span>&lt;APIGatewayProxyResult | <span class="literal">undefined</span>&gt; =&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> response;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> res = <span class="keyword">await</span> service();</span><br><span class="line">    response = makeResponse(<span class="number">200</span>, res);</span><br><span class="line">  &#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">    <span class="built_in">console</span>.error(err);</span><br><span class="line">    callback(err <span class="keyword">as</span> <span class="built_in">any</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> response;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>람다 로직에서 외부 api를 호출하는 경우가 있다</li><li>근데 종종이 운 나쁘게 실패할 때가 생긴다</li><li>람다는 에러가 발생하면 알아서 재시도를 한다</li><li>재시도를 시키기 위해 실패를 알려야 한다</li><li>catch에 잡히면 재시도를 했으면 좋겠다</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><ul><li>3번째 인자로 callback을 받고, catch에서 호출해준다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/35689730/aws-lambda-function-continues-for-a-bit-after-context-fail">https://stackoverflow.com/questions/35689730/aws-lambda-function-continues-for-a-bit-after-context-fail</a></li><li><a href="https://medium.com/@ron_73212/how-to-handle-aws-lambda-errors-like-a-pro-e5455b013d10">https://medium.com/@ron_73212/how-to-handle-aws-lambda-errors-like-a-pro-e5455b013d10</a></li><li><a href="https://aws.amazon.com/ko/about-aws/whats-new/2019/11/aws-lambda-supports-max-retry-attempts-event-age-asynchronous-invocations/">https://aws.amazon.com/ko/about-aws/whats-new/2019/11/aws-lambda-supports-max-retry-attempts-event-age-asynchronous-invocations/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://chinsun9.github.io/tags/labmda/">labmda</category>
+      
+      
+      <comments>https://chinsun9.github.io/2021/12/27/aws-lambda-handler-callback/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>typescript is keyword</title>
@@ -569,39 +597,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/10/22/cmd-pwd/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>blog update - 다크 테마용 favicon</title>
-      <link>https://chinsun9.github.io/2021/10/21/blog-update-favicon/</link>
-      <guid>https://chinsun9.github.io/2021/10/21/blog-update-favicon/</guid>
-      <pubDate>Thu, 21 Oct 2021 07:07:24 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-update-favicon20210928/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/blog-update-favicon20210928/preview.png" alt=" "></p><ul><li>테마를 전환할 때 favicon url도 업데이트한다</li><li>2개의 favicon 파일이 있다</li></ul><figure class="highlight js"><figcaption><span>theme.js:44</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setFaviconTheme</span>(<span class="params">theme</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> href = <span class="string">`https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/img/favicon-bold-color210928<span class="subst">$&#123;</span></span></span><br><span class="line"><span class="string"><span class="subst">    theme === <span class="string">&#x27;dark&#x27;</span> ? <span class="string">&#x27;-dark&#x27;</span> : <span class="string">&#x27;&#x27;</span></span></span></span><br><span class="line"><span class="string"><span class="subst">  &#125;</span>.svg?`</span>;</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">`head &gt; link[rel=&quot;icon&quot;]`</span>).href = href;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>favicon으로 쓰이는 svg에 어떻게 색을 넘길까..?</li><li>그냥 svg 2개 만들어서 토글하기</li><li>기존 테마 파일 리팩토링</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://brunch.co.kr/@ultra0034/129">https://brunch.co.kr/@ultra0034/129</a></li></ul><!-- 1636789280019 -->]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/svg/">svg</category>
-      
-      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
-      
-      <category domain="https://chinsun9.github.io/tags/favicon/">favicon</category>
-      
-      <category domain="https://chinsun9.github.io/tags/dark-theme/">dark theme</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/10/21/blog-update-favicon/#disqus_thread</comments>
       
     </item>
     
