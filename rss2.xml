@@ -9,8 +9,37 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 27 Dec 2021 14:11:44 GMT</pubDate>
+    <pubDate>Sat, 01 Jan 2022 07:52:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>typescript keyof</title>
+      <link>https://chinsun9.github.io/2022/01/01/typescript-keyof/</link>
+      <guid>https://chinsun9.github.io/2022/01/01/typescript-keyof/</guid>
+      <pubDate>Sat, 01 Jan 2022 07:52:05 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/typescript-keyof20211229/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;figur</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/typescript-keyof20211229/preview.png" alt=" "></p><figure class="highlight ts"><figcaption><span>example.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">type</span> User = &#123;</span><br><span class="line">  name: <span class="built_in">string</span>;</span><br><span class="line">  email: <span class="built_in">string</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> user: User = &#123;</span><br><span class="line">  name: <span class="string">&#x27;chinsung&#x27;</span>,</span><br><span class="line">  email: <span class="string">&#x27;chin_sung@naver.com&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// keyof User === &#x27;name&#x27; | &#x27;email&#x27;</span></span><br><span class="line"><span class="keyword">const</span> updateUser = <span class="function">(<span class="params">name: keyof User, value: <span class="built_in">string</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    ...user,</span><br><span class="line">    [name]: value,</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">updateUser(<span class="string">&#x27;&#x27;</span>); <span class="comment">// wow 자동완성!!</span></span><br></pre></td></tr></table></figure><ul><li>나이수</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.typescriptlang.org/docs/handbook/2/keyof-types.html">https://www.typescriptlang.org/docs/handbook/2/keyof-types.html</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/keyof/">keyof</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/01/typescript-keyof/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>aws lambda handler callback</title>
@@ -20,12 +49,12 @@
       
         
         
-      <description>&lt;figure class=&quot;highlight ts&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
+      <description>&lt;figure class=&quot;highlight ts&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example.ts&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</description>
         
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;</span><br><span class="line">  APIGatewayProxyCallback,</span><br><span class="line">  APIGatewayProxyEvent,</span><br><span class="line">  APIGatewayProxyResult,</span><br><span class="line">  Context,</span><br><span class="line">&#125; <span class="keyword">from</span> <span class="string">&#x27;aws-lambda&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; makeResponse &#125; <span class="keyword">from</span> <span class="string">&#x27;./makeResponse&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; service &#125; <span class="keyword">from</span> <span class="string">&#x27;./service&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> handler = <span class="keyword">async</span> (</span><br><span class="line">  _e: APIGatewayProxyEvent,</span><br><span class="line">  _c: Context,</span><br><span class="line">  callback: APIGatewayProxyCallback</span><br><span class="line">): <span class="built_in">Promise</span>&lt;APIGatewayProxyResult | <span class="literal">undefined</span>&gt; =&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> response;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> res = <span class="keyword">await</span> service();</span><br><span class="line">    response = makeResponse(<span class="number">200</span>, res);</span><br><span class="line">  &#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">    <span class="built_in">console</span>.error(err);</span><br><span class="line">    callback(err <span class="keyword">as</span> <span class="built_in">any</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> response;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>람다 로직에서 외부 api를 호출하는 경우가 있다</li><li>근데 종종이 운 나쁘게 실패할 때가 생긴다</li><li>람다는 에러가 발생하면 알아서 재시도를 한다</li><li>재시도를 시키기 위해 실패를 알려야 한다</li><li>catch에 잡히면 재시도를 했으면 좋겠다</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><ul><li>3번째 인자로 callback을 받고, catch에서 호출해준다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/35689730/aws-lambda-function-continues-for-a-bit-after-context-fail">https://stackoverflow.com/questions/35689730/aws-lambda-function-continues-for-a-bit-after-context-fail</a></li><li><a href="https://medium.com/@ron_73212/how-to-handle-aws-lambda-errors-like-a-pro-e5455b013d10">https://medium.com/@ron_73212/how-to-handle-aws-lambda-errors-like-a-pro-e5455b013d10</a></li><li><a href="https://aws.amazon.com/ko/about-aws/whats-new/2019/11/aws-lambda-supports-max-retry-attempts-event-age-asynchronous-invocations/">https://aws.amazon.com/ko/about-aws/whats-new/2019/11/aws-lambda-supports-max-retry-attempts-event-age-asynchronous-invocations/</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight ts"><figcaption><span>example.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;</span><br><span class="line">  APIGatewayProxyCallback,</span><br><span class="line">  APIGatewayProxyEvent,</span><br><span class="line">  APIGatewayProxyResult,</span><br><span class="line">  Context,</span><br><span class="line">&#125; <span class="keyword">from</span> <span class="string">&#x27;aws-lambda&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; makeResponse &#125; <span class="keyword">from</span> <span class="string">&#x27;./makeResponse&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; service &#125; <span class="keyword">from</span> <span class="string">&#x27;./service&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> handler = <span class="keyword">async</span> (</span><br><span class="line">  _e: APIGatewayProxyEvent,</span><br><span class="line">  _c: Context,</span><br><span class="line">  callback: APIGatewayProxyCallback</span><br><span class="line">): <span class="built_in">Promise</span>&lt;APIGatewayProxyResult | <span class="literal">undefined</span>&gt; =&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> response;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> res = <span class="keyword">await</span> service();</span><br><span class="line">    response = makeResponse(<span class="number">200</span>, res);</span><br><span class="line">  &#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">    <span class="built_in">console</span>.error(err);</span><br><span class="line">    callback(err <span class="keyword">as</span> <span class="built_in">any</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> response;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>람다 로직에서 외부 api를 호출하는 경우가 있다</li><li>근데 종종이 운 나쁘게 실패할 때가 생긴다</li><li>람다는 에러가 발생하면 알아서 재시도를 한다</li><li>재시도를 시키기 위해 실패를 알려야 한다</li><li>catch에 잡히면 재시도를 했으면 좋겠다</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><ul><li>3번째 인자로 callback을 받고, catch에서 호출해준다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/35689730/aws-lambda-function-continues-for-a-bit-after-context-fail">https://stackoverflow.com/questions/35689730/aws-lambda-function-continues-for-a-bit-after-context-fail</a></li><li><a href="https://medium.com/@ron_73212/how-to-handle-aws-lambda-errors-like-a-pro-e5455b013d10">https://medium.com/@ron_73212/how-to-handle-aws-lambda-errors-like-a-pro-e5455b013d10</a></li><li><a href="https://aws.amazon.com/ko/about-aws/whats-new/2019/11/aws-lambda-supports-max-retry-attempts-event-age-asynchronous-invocations/">https://aws.amazon.com/ko/about-aws/whats-new/2019/11/aws-lambda-supports-max-retry-attempts-event-age-asynchronous-invocations/</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
@@ -567,36 +596,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/10/23/cmd-commands/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>cmd pwd</title>
-      <link>https://chinsun9.github.io/2021/10/22/cmd-pwd/</link>
-      <guid>https://chinsun9.github.io/2021/10/22/cmd-pwd/</guid>
-      <pubDate>Fri, 22 Oct 2021 12:48:27 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;figcaption&gt;&lt;span&gt;cmd terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/spa</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight cmd"><figcaption><span>cmd terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ,</span><br></pre></td></tr></table></figure><figure class="highlight sh"><figcaption><span>sh terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br></pre></td></tr></table></figure><ul><li>현재 워킹 디렉터리 확인하기</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/cmd/">cmd</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/cmd/">cmd</category>
-      
-      <category domain="https://chinsun9.github.io/tags/pwd/">pwd</category>
-      
-      <category domain="https://chinsun9.github.io/tags/cd/">cd</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/10/22/cmd-pwd/#disqus_thread</comments>
       
     </item>
     
