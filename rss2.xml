@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sun, 02 Jan 2022 06:17:45 GMT</pubDate>
+    <pubDate>Fri, 07 Jan 2022 13:53:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js template literals</title>
+      <link>https://chinsun9.github.io/2022/01/07/js-template-literals/</link>
+      <guid>https://chinsun9.github.io/2022/01/07/js-template-literals/</guid>
+      <pubDate>Fri, 07 Jan 2022 13:53:33 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">wow</span>(<span class="params">strings, ...values</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(strings);</span><br><span class="line">  <span class="built_in">console</span>.log(values);</span><br><span class="line">  <span class="comment">// [&quot;안녕하세요. 제 이름은&quot;, &quot;입니다.&quot;, &quot;&quot;]</span></span><br><span class="line">  <span class="comment">// [&#x27;친성&#x27;, &#x27;와우 엄청난 문법이다&#x27;]</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> name = <span class="string">&#x27;친성&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> suffix = <span class="string">&#x27;와우 엄청난 문법이다&#x27;</span>;</span><br><span class="line">wow<span class="string">`안녕하세요. 제 이름은 <span class="subst">$&#123;pram&#125;</span> 입니다. <span class="subst">$&#123;suffix&#125;</span>`</span>;</span><br></pre></td></tr></table></figure><ul><li>와우</li><li>css in js 할 때 쓰던 문법인가?!</li></ul><h2 id="String-raw"><a href="#String-raw" class="headerlink" title="String.raw()"></a>String.raw()</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> filePath = <span class="built_in">String</span>.raw<span class="string">`C:\Development\profile\aboutme.html`</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`The file was uploaded from: <span class="subst">$&#123;filePath&#125;</span>`</span>);</span><br><span class="line"><span class="comment">// &quot;The file was uploaded from: C:\Development\profile\aboutme.html&quot;</span></span><br></pre></td></tr></table></figure><ul><li>오우.. <code>\</code>가 그대로 출력된다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/89pQ3Vc25GE">https://youtu.be/89pQ3Vc25GE</a> ; Stop Combining Strings The Old Way - Web Dev Simplified</li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/raw">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/raw</a></li><li><a href="https://blog.webdevsimplified.com/2020-03/tagged-template-literals/">https://blog.webdevsimplified.com/2020-03/tagged-template-literals/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/template-literals/">template literals</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/07/js-template-literals/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>git clone specific directory 특정 하위 디렉터리만 클론</title>
@@ -564,40 +592,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/10/26/programmers-weekly-challenge/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>cron 표현식</title>
-      <link>https://chinsun9.github.io/2021/10/24/cron/</link>
-      <guid>https://chinsun9.github.io/2021/10/24/cron/</guid>
-      <pubDate>Sun, 24 Oct 2021 04:16:47 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/cron20211024/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Cr</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/cron20211024/preview.png" alt=" "></p><blockquote><p>Cron syntax has five fields separated by a space, and each field represents a unit of time.</p><blockquote><p>┌───────────── minute (0 - 59)<br>│ ┌───────────── hour (0 - 23)<br>│ │ ┌───────────── day of the month (1 - 31)<br>│ │ │ ┌───────────── month (1 - 12 or JAN-DEC)<br>│ │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)<br>│ │ │ │ │<br>│ │ │ │ │<br>│ │ │ │ │<br>&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*</p></blockquote></blockquote><ul><li>크론 표현식 쓸 때마다 까먹는다</li><li>깃허브 액션 문서 보다가 잘 정리되어 있는 거 발견해서 스크랩한다</li></ul><!-- 리눅스 관련 내용은 그냥 aws 카테고리에 적자.. --><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule">https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule</a></li><li><a href="https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/services-cloudwatchevents-expressions.html">https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/services-cloudwatchevents-expressions.html</a></li></ul><!-- 1636789248289 -->]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/aws/">aws</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/linux/">linux</category>
-      
-      <category domain="https://chinsun9.github.io/tags/cron/">cron</category>
-      
-      <category domain="https://chinsun9.github.io/tags/rate/">rate</category>
-      
-      <category domain="https://chinsun9.github.io/tags/schedule/">schedule</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/10/24/cron/#disqus_thread</comments>
       
     </item>
     
