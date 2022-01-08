@@ -8,6 +8,54 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2021/10/16/blog-fix-dark-mode-flicker/</loc>
+        <lastmod>2022-01-08T10:50:59.775Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/10/08/a-tag-no-color/</loc>
+        <lastmod>2022-01-08T04:56:21.285Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/21/%EC%BB%A4%EC%8A%A4%ED%85%80-404-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
+        <lastmod>2022-01-08T04:55:40.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/18/%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%9D%B8%ED%84%B4-%ED%82%A4%ED%8C%A8%EB%93%9C-%EB%88%84%EB%A5%B4%EA%B8%B0/</loc>
+        <lastmod>2022-01-08T04:17:25.642Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/18/%ED%95%B8%EB%93%9C%ED%8F%B0-%EB%B2%88%ED%98%B8-%EA%B0%80%EB%A6%AC%EA%B8%B0/</loc>
+        <lastmod>2022-01-08T04:17:22.677Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2021/07/06/regexp-lastIndex/</loc>
+        <lastmod>2022-01-08T04:17:20.280Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2022/01/08/web-api-URLSearchParams/</loc>
         <lastmod>2022-01-08T02:55:02.098Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +66,6 @@
     <url>
         <loc>https://chinsun9.github.io/2022/01/07/js-template-literals/</loc>
         <lastmod>2022-01-07T16:06:33.572Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/10/16/blog-fix-dark-mode-flicker/</loc>
-        <lastmod>2022-01-07T13:34:45.908Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1904,14 +1944,6 @@
     </url>
 
     <url>
-        <loc>https://chinsun9.github.io/2020/10/08/a-tag-no-color/</loc>
-        <lastmod>2021-08-04T13:24:34.412Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chinsun9.github.io/2020/10/07/%ED%98%84%EC%9E%AC-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC%EC%97%90%EC%84%9C-cmd%EC%97%B4%EA%B8%B0/</loc>
         <lastmod>2021-08-04T13:24:29.232Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1922,14 +1954,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/09/18/%ED%96%89%EB%A0%AC%EC%9D%98-%EB%8D%A7%EC%85%88/</loc>
         <lastmod>2021-08-04T13:24:24.089Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/18/%ED%95%B8%EB%93%9C%ED%8F%B0-%EB%B2%88%ED%98%B8-%EA%B0%80%EB%A6%AC%EA%B8%B0/</loc>
-        <lastmod>2021-08-04T13:24:18.092Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2010,22 +2034,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/12/%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/</loc>
         <lastmod>2021-08-04T13:23:11.615Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/21/%EC%BB%A4%EC%8A%A4%ED%85%80-404-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
-        <lastmod>2021-08-04T13:22:43.644Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/18/%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%9D%B8%ED%84%B4-%ED%82%A4%ED%8C%A8%EB%93%9C-%EB%88%84%EB%A5%B4%EA%B8%B0/</loc>
-        <lastmod>2021-08-04T13:22:37.421Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2858,14 +2866,6 @@
     <url>
         <loc>https://chinsun9.github.io/2021/07/01/why-official-docs-difficult/</loc>
         <lastmod>2021-07-06T13:27:15.671Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2021/07/06/regexp-lastIndex/</loc>
-        <lastmod>2021-07-06T13:27:15.670Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
