@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Fri, 07 Jan 2022 13:53:33 GMT</pubDate>
+    <pubDate>Sat, 08 Jan 2022 02:55:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>URLSearchParams location.search 파싱하기</title>
+      <link>https://chinsun9.github.io/2022/01/08/web-api-URLSearchParams/</link>
+      <guid>https://chinsun9.github.io/2022/01/08/web-api-URLSearchParams/</guid>
+      <pubDate>Sat, 08 Jan 2022 02:55:02 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>example</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> getPageNumber = <span class="function">() =&gt;</span> <span class="keyword">new</span> URLSearchParams(location.search).get(<span class="string">&#x27;p&#x27;</span>);</span><br></pre></td></tr></table></figure><blockquote><p>example.com/hello/world?p=1</p></blockquote><p>이런 url이 있을 때 param <code>p</code>를 꺼내볼 수 있다</p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/search">https://developer.mozilla.org/en-US/docs/Web/API/Location/search</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/API/URLSearchParams">https://developer.mozilla.org/ko/docs/Web/API/URLSearchParams</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/web-api/">web api</category>
+      
+      <category domain="https://chinsun9.github.io/tags/URLSearchParams/">URLSearchParams</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/08/web-api-URLSearchParams/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js template literals</title>
@@ -25,7 +55,7 @@
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">wow</span>(<span class="params">strings, ...values</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(strings);</span><br><span class="line">  <span class="built_in">console</span>.log(values);</span><br><span class="line">  <span class="comment">// [&quot;안녕하세요. 제 이름은&quot;, &quot;입니다.&quot;, &quot;&quot;]</span></span><br><span class="line">  <span class="comment">// [&#x27;친성&#x27;, &#x27;와우 엄청난 문법이다&#x27;]</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> name = <span class="string">&#x27;친성&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> suffix = <span class="string">&#x27;와우 엄청난 문법이다&#x27;</span>;</span><br><span class="line">wow<span class="string">`안녕하세요. 제 이름은 <span class="subst">$&#123;pram&#125;</span> 입니다. <span class="subst">$&#123;suffix&#125;</span>`</span>;</span><br></pre></td></tr></table></figure><ul><li>와우</li><li>css in js 할 때 쓰던 문법인가?!</li></ul><h2 id="String-raw"><a href="#String-raw" class="headerlink" title="String.raw()"></a>String.raw()</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> filePath = <span class="built_in">String</span>.raw<span class="string">`C:\Development\profile\aboutme.html`</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`The file was uploaded from: <span class="subst">$&#123;filePath&#125;</span>`</span>);</span><br><span class="line"><span class="comment">// &quot;The file was uploaded from: C:\Development\profile\aboutme.html&quot;</span></span><br></pre></td></tr></table></figure><ul><li>오우.. <code>\</code>가 그대로 출력된다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/89pQ3Vc25GE">https://youtu.be/89pQ3Vc25GE</a> ; Stop Combining Strings The Old Way - Web Dev Simplified</li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/raw">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/raw</a></li><li><a href="https://blog.webdevsimplified.com/2020-03/tagged-template-literals/">https://blog.webdevsimplified.com/2020-03/tagged-template-literals/</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">wow</span>(<span class="params">strings, ...values</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(strings);</span><br><span class="line">  <span class="built_in">console</span>.log(values);</span><br><span class="line">  <span class="comment">// [&quot;안녕하세요. 제 이름은&quot;, &quot;입니다.&quot;, &quot;&quot;]</span></span><br><span class="line">  <span class="comment">// [&#x27;친성&#x27;, &#x27;와우 엄청난 문법이다&#x27;]</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> name = <span class="string">&#x27;친성&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> suffix = <span class="string">&#x27;와우 엄청난 문법이다&#x27;</span>;</span><br><span class="line">wow<span class="string">`안녕하세요. 제 이름은 <span class="subst">$&#123;name&#125;</span> 입니다. <span class="subst">$&#123;suffix&#125;</span>`</span>;</span><br></pre></td></tr></table></figure><ul><li>와우</li><li>css in js 할 때 쓰던 문법인가?!</li></ul><h2 id="String-raw"><a href="#String-raw" class="headerlink" title="String.raw()"></a>String.raw()</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> filePath = <span class="built_in">String</span>.raw<span class="string">`C:\Development\profile\aboutme.html`</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`The file was uploaded from: <span class="subst">$&#123;filePath&#125;</span>`</span>);</span><br><span class="line"><span class="comment">// &quot;The file was uploaded from: C:\Development\profile\aboutme.html&quot;</span></span><br></pre></td></tr></table></figure><ul><li>오우.. <code>\</code>가 그대로 출력된다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/89pQ3Vc25GE">https://youtu.be/89pQ3Vc25GE</a> ; Stop Combining Strings The Old Way - Web Dev Simplified</li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/raw">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/raw</a></li><li><a href="https://blog.webdevsimplified.com/2020-03/tagged-template-literals/">https://blog.webdevsimplified.com/2020-03/tagged-template-literals/</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
@@ -565,33 +595,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/11/05/202110-search-performance-report/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>programmers weekly challenge</title>
-      <link>https://chinsun9.github.io/2021/10/26/programmers-weekly-challenge/</link>
-      <guid>https://chinsun9.github.io/2021/10/26/programmers-weekly-challenge/</guid>
-      <pubDate>Tue, 26 Oct 2021 05:08:35 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;12주 차까지 12문제 모두 풀었다!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/programmers-weekly-challenge2</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>12주 차까지 12문제 모두 풀었다!</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/programmers-weekly-challenge20211025/preview.png" alt=" "></p><!-- - 스샷에 모든 주차가 안나오긴 하는데.. --><!-- - 초반에는 array api를 활용하는 문제들이 많이 나왔다 --><ul><li>1주 차는 그냥 생각 없이 풀고 제출했는데, 다른 사람 풀이를 보니까 너무 쇼킹했다</li><li>좋아요 한번 받아보려고 새로운 문제 오픈되자마자 빠르게도 풀어보고, 제출하기 전에 코드 최대한 압축해서 제출도 해보았다</li><li>근데 좋아요 한 개도 못 받았다 ㅋㅋ ㅠㅠ</li><li>나름 짧게 잘 푼 것 같아 제출해도 항상 더 쇼킹한 풀이를 보았다..</li><li>어려운 문제가 나오면 포기할까 싶었는데, 나중에 스샷 찍었을 때 풀었다는 표식을 남기고 싶어서 끝까지 한 것 같다</li></ul><ul><li>시간제한도 없고 편하게 할 수 있어서 재밌었다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://programmers.co.kr/learn/challenges">https://programmers.co.kr/learn/challenges</a></li></ul><!-- 1636789234655 -->]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/programmers/">programmers</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/programmers/">programmers</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/10/26/programmers-weekly-challenge/#disqus_thread</comments>
       
     </item>
     
