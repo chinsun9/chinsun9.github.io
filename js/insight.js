@@ -9,9 +9,7 @@ function loadInsight(config, translation) {
   const $container = $main.find('.searchbox-body');
 
   function section(title) {
-    return $('<section>')
-      .addClass('searchbox-result-section')
-      .append($('<header>').text(title));
+    return $('<section>').addClass('searchbox-result-section').append($('<header>').text(title));
   }
 
   function merge(ranges) {
@@ -29,7 +27,7 @@ function loadInsight(config, translation) {
     return result;
   }
 
-  function findAndHighlight(text, matches, maxlen, isTitle) {
+  function findAndHighlight(text, matches, maxlen) {
     if (!Array.isArray(matches) || !matches.length || !text) {
       return maxlen ? text.slice(0, maxlen) : text;
     }
@@ -61,7 +59,6 @@ function loadInsight(config, translation) {
       last = sumRange[0];
     }
 
-    if (ranges[0] && isTitle) result += text.slice(0, ranges[0]);
     for (let i = 0; i < ranges.length; i++) {
       const range = ranges[i];
       result += text.slice(last, Math.min(range[0], sumRange[0] + maxlen));
@@ -72,10 +69,7 @@ function loadInsight(config, translation) {
       last = range[1];
       if (i === ranges.length - 1) {
         if (maxlen) {
-          result += text.slice(
-            range[1],
-            Math.min(text.length, sumRange[0] + maxlen + 1)
-          );
+          result += text.slice(range[1], Math.min(text.length, sumRange[0] + maxlen + 1));
         } else {
           result += text.slice(range[1]);
         }
@@ -92,23 +86,17 @@ function loadInsight(config, translation) {
       : '';
 
     return `<a class="searchbox-result-item" href="${url}">
-              <span class="searchbox-result-icon">
-                  <i class="fa fa-${icon}" />
-              </span>
-              <span class="searchbox-result-content">
-                  <span class="searchbox-result-title">
-                      ${title}
-                      ${subtitle}
-                  </span>
-                  ${
-                    preview
-                      ? '<span class="searchbox-result-preview">' +
-                        preview +
-                        '</span>'
-                      : ''
-                  }
-              </span>
-          </a>`;
+            <span class="searchbox-result-icon">
+                <i class="fa fa-${icon}" />
+            </span>
+            <span class="searchbox-result-content">
+                <span class="searchbox-result-title">
+                    ${title}
+                    ${subtitle}
+                </span>
+                ${preview ? '<span class="searchbox-result-preview">' + preview + '</span>' : ''}
+            </span>
+        </a>`;
   }
 
   function sectionFactory(keywords, type, array) {
@@ -119,7 +107,7 @@ function loadInsight(config, translation) {
       case 'POSTS':
       case 'PAGES':
         $searchItems = array.map((item) => {
-          const title = findAndHighlight(item.title, keywords, 100, true);
+          const title = findAndHighlight(item.title, keywords);
           const text = findAndHighlight(item.text, keywords, 100);
           return searchItem('file', title, null, text, item.link);
         });
@@ -127,15 +115,9 @@ function loadInsight(config, translation) {
       case 'CATEGORIES':
       case 'TAGS':
         $searchItems = array.map((item) => {
-          const name = findAndHighlight(item.name, keywords, 100);
-          const slug = findAndHighlight(item.slug, keywords, 100);
-          return searchItem(
-            type === 'CATEGORIES' ? 'folder' : 'tag',
-            name,
-            slug,
-            null,
-            item.link
-          );
+          const name = findAndHighlight(item.name, keywords);
+          const slug = findAndHighlight(item.slug, keywords);
+          return searchItem(type === 'CATEGORIES' ? 'folder' : 'tag', name, slug, null, item.link);
         });
         break;
       default:
@@ -271,16 +253,9 @@ function loadInsight(config, translation) {
 
   function searchResultToDOM(keywords, searchResult) {
     $container.empty();
-    $container.append(
-      `<a href="https://www.google.com/search?q=${keywords} site:https://chinsun9.github.io" target="_blank">🔍 google에서 검색 결과 보기 </a>`
-    );
     for (const key in searchResult) {
       $container.append(
-        sectionFactory(
-          parseKeywords(keywords),
-          key.toUpperCase(),
-          searchResult[key]
-        )
+        sectionFactory(parseKeywords(keywords), key.toUpperCase(), searchResult[key]),
       );
     }
   }
