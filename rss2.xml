@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 08 Jan 2022 02:55:02 GMT</pubDate>
+    <pubDate>Sun, 09 Jan 2022 06:00:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>로컬에서 vscode live server로 spa 실행하기</title>
+      <link>https://chinsun9.github.io/2022/01/09/live-server-for-react-spa/</link>
+      <guid>https://chinsun9.github.io/2022/01/09/live-server-for-react-spa/</guid>
+      <pubDate>Sun, 09 Jan 2022 05:55:38 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/live-server-for-react-spa20220108/preview.png&quot; alt=&quot; &quot;&gt;&lt;/</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/live-server-for-react-spa20220108/preview.png" alt=" "></p><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>live server로 리액트 빌드 결과를 실행해보고 싶었다</li><li>github pages로 호스팅하기 때문에 basePath?가 있었다</li><li>live server에서 일단 로컬로 실행해보고 싶었는데,</li><li>basePath와 spa를 어떻게 실행해 볼 수 있을까?</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><figure class="highlight json"><figcaption><span>.vscode\settings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// .vscode\settings.json</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;liveServer.settings.mount&quot;</span>: [[<span class="string">&quot;/go-home-time&quot;</span>, <span class="string">&quot;./&quot;</span>]], <span class="comment">// package.json에 homepage필드가 있는 경우</span></span><br><span class="line">  <span class="attr">&quot;liveServer.settings.file&quot;</span>: <span class="string">&quot;index.html&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/ritwickdey/vscode-live-server/blob/master/docs/settings.md">https://github.com/ritwickdey/vscode-live-server/blob/master/docs/settings.md</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
+      
+      <category domain="https://chinsun9.github.io/tags/live-server/">live server</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/09/live-server-for-react-spa/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>URLSearchParams location.search 파싱하기</title>
@@ -569,32 +597,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/11/13/js-primitive/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>202110 검색 실적</title>
-      <link>https://chinsun9.github.io/2021/11/05/202110-search-performance-report/</link>
-      <guid>https://chinsun9.github.io/2021/11/05/202110-search-performance-report/</guid>
-      <pubDate>Fri, 05 Nov 2021 14:10:49 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202110-search-performance-report20211105/preview.png&quot; alt</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202110-search-performance-report20211105/preview.png" alt=" "></p><!-- 1636789212942 -->]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/11/05/202110-search-performance-report/#disqus_thread</comments>
       
     </item>
     
