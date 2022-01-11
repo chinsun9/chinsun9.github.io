@@ -11879,3 +11879,20 @@ html[data-color-scheme='dark'] body .searchbox a {
 html[data-color-scheme='dark'] body .breadcrumb li.is-active a {
   color: #d4d4d4;
 }
+html[data-color-scheme='dark'] .gsc-control-cse {
+  background-color: transparent;
+  border: none;
+}
+html[data-color-scheme='dark'] .gsc-control-cse * {
+  border: none;
+}
+html[data-color-scheme='dark'] .gsc-control-cse .gsc-adBlock {
+  display: none;
+}
+html[data-color-scheme='dark'] .gsc-control-cse .gs-webResult .gs-snippet,
+html[data-color-scheme='dark'] .gsc-control-cse .gs-fileFormatType {
+  color: #7a7a7a;
+}
+html[data-color-scheme='dark'] .gsc-control-cse .gcsc-find-more-on-google {
+  color: #fff;
+}
