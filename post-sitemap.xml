@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2020/10/16/js%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D/</loc>
+        <lastmod>2022-01-11T14:03:29.261Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2022/01/11/language-code-timezone-code/</loc>
+        <lastmod>2022-01-11T13:51:39.787Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2020/10/21/cmd-%ED%8F%B4%EB%8D%94-%EC%82%AD%EC%A0%9C-rmdir/</loc>
         <lastmod>2022-01-10T13:15:05.706Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1490,14 +1506,6 @@
     <url>
         <loc>https://chinsun9.github.io/2020/11/19/JSON-stringify-%EC%98%88%EC%81%98%EA%B2%8C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-08-04T13:36:52.060Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/10/16/js%ED%8C%8C%EC%9D%BC%EB%AA%A9%EB%A1%9D/</loc>
-        <lastmod>2021-08-04T13:36:47.074Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
