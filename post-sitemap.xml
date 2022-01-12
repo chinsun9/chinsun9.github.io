@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2022/01/13/ReDoS-attacks/</loc>
+        <lastmod>2022-01-12T15:29:21.631Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2022/01/12/test-npm-package-without-publishing/</loc>
         <lastmod>2022-01-12T12:30:50.734Z</lastmod>
         <changefreq>weekly</changefreq>
