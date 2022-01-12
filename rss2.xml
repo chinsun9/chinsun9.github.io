@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 11 Jan 2022 13:51:39 GMT</pubDate>
+    <pubDate>Wed, 12 Jan 2022 12:30:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>퍼블리쉬없이 npm 패키지 테스트하기</title>
+      <link>https://chinsun9.github.io/2022/01/12/test-npm-package-without-publishing/</link>
+      <guid>https://chinsun9.github.io/2022/01/12/test-npm-package-without-publishing/</guid>
+      <pubDate>Wed, 12 Jan 2022 12:30:50 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># pwd: npm package</span></span><br><span class="line">npm link</span><br><span class="line"></span><br><span class="line"><span class="comment"># pwd: other project</span></span><br><span class="line">npm link -S &#123;packagename&#125;</span><br></pre></td></tr></table></figure><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>패키지를 업데이트하고 퍼블리쉬한다</li><li>해당 패키지를 사용하는 프로젝트에서 install 한다</li><li>테스트한다</li><li>퍼블리쉬를 해야지 확인할 수 있는 불편함이 있다. 테스트용 퍼블리쉬를 할 때마다 버전이 계속 증가한다</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><ul><li><code>npm link</code> 명령을 통해 퍼블리쉬 없이 테스트해볼 수 있다</li><li>글로벌 모듈이 설치되는 위치에 심볼릭 링크가 추가된다</li><li><code>npm link -S &#123;packagename&#125;</code>명령으로 로컬의 패키지를 설치한다<!-- - `npm unlink {packagename}`으로 삭제할 수 있다 --></li></ul><br/><ul><li><code>npm r -g &#123;packagename&#125;</code> 테스트를 다 끝내서 필요 없어졌다면 심볼릭 링크를 삭제</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.jamesqquick.com/blog/how-to-test-npm-packages-locally">https://www.jamesqquick.com/blog/how-to-test-npm-packages-locally</a></li><li><a href="https://docs.npmjs.com/cli/v8/commands/npm-link">https://docs.npmjs.com/cli/v8/commands/npm-link</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      <category domain="https://chinsun9.github.io/tags/npm/">npm</category>
+      
+      <category domain="https://chinsun9.github.io/tags/package/">package</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/12/test-npm-package-without-publishing/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>우리나라 언어 코드, 타임존 코드</title>
@@ -566,35 +596,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/11/21/eslint-tips/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>eslint --init 으로 쉽게 eslint 세팅하기</title>
-      <link>https://chinsun9.github.io/2021/11/20/eslint-init/</link>
-      <guid>https://chinsun9.github.io/2021/11/20/eslint-init/</guid>
-      <pubDate>Sat, 20 Nov 2021 06:07:39 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;이전에 react eslint 관련해서 여러 글을 작성했다 (다 엄청난 삽질이었다…)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/es</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>이전에 react eslint 관련해서 여러 글을 작성했다 (다 엄청난 삽질이었다…)</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/eslint-init20210807/preview.png" alt=" "></p><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx eslint --init</span><br></pre></td></tr></table></figure><ul><li>위 명령으로 한 번에 해결</li><li>방향키로 선택 선택 넘어가면, 알아서 환경을 세팅해준다</li></ul><h2 id="CRA와-eslint-–init해서-프로젝트-세팅하는-과정"><a href="#CRA와-eslint-–init해서-프로젝트-세팅하는-과정" class="headerlink" title="CRA와 eslint –init해서 프로젝트 세팅하는 과정"></a>CRA와 eslint –init해서 프로젝트 세팅하는 과정</h2><figure class="highlight sh"><figcaption><span>termial</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># CRA로 리액트 프로젝트 시작</span></span><br><span class="line">yarn create react-app . --template typescript</span><br><span class="line"></span><br><span class="line"><span class="comment"># eslint --init 으로 eslint 세팅</span></span><br><span class="line">yarn eslint --init</span><br><span class="line">√ How would you like to use ESLint? · style</span><br><span class="line">√ What <span class="built_in">type</span> of modules does your project use? · esm</span><br><span class="line">√ Which framework does your project use? · react</span><br><span class="line">√ Does your project use TypeScript? · Yes</span><br><span class="line">√ Where does your code run? · browser</span><br><span class="line">√ How would you like to define a style <span class="keyword">for</span> your project? · guide</span><br><span class="line">√ Which style guide <span class="keyword">do</span> you want to follow? · airbnb</span><br><span class="line">√ What format <span class="keyword">do</span> you want your config file to be <span class="keyword">in</span>? · JSON</span><br><span class="line">√ Would you like to install them now with npm? · No</span><br></pre></td></tr></table></figure><ul><li>입맛대로 답변한다</li><li>특히 마지막 <code>Would you like to install them now with npm?</code> 물음에는 No로 답변한다</li><li><code>No</code>로 답변하고 필요한 종속성을 yarn으로 설치해준다</li><li>(Yes로 답변하면, npm으로 설치되며 package-lock.json이 생성된다)</li></ul><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 콘솔에 적힌 종속성들을 복사해서 적절히 편집하고 실행한다</span></span><br><span class="line"><span class="comment"># 여러 버전들을 나열해서 알려주는데, 그중에서 최신 버전을 다운받았다</span></span><br><span class="line">yarn add -D \</span><br><span class="line">    eslint-plugin-react@^7.21.5 \</span><br><span class="line">    @typescript-eslint/eslint-plugin@latest \</span><br><span class="line">    eslint-config-airbnb@latest \</span><br><span class="line">    eslint@^7.2.0 \</span><br><span class="line">    eslint-plugin-import@^2.22.1 \</span><br><span class="line">    eslint-plugin-jsx-a11y@^6.4.1 \</span><br><span class="line">    eslint-plugin-react-hooks@^4 \</span><br><span class="line">    @typescript-eslint/parser@latest</span><br></pre></td></tr></table></figure><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># eslint와 prettier를 함께 쓰려면 아래도 함께 설치한다</span></span><br><span class="line">yarn add -D \</span><br><span class="line">    prettier  \</span><br><span class="line">    eslint-plugin-prettier  \</span><br><span class="line">    eslint-config-prettier</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://eslint.org/docs/user-guide/getting-started">https://eslint.org/docs/user-guide/getting-started</a></li><li><a href="https://github.com/chinsun9/react-ts-template/tree/v20210827">https://github.com/chinsun9/react-ts-template/tree/v20210827</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/11/20/eslint-init/#disqus_thread</comments>
       
     </item>
     
