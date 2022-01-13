@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2022/01/13/nullish-coalescing-operator/</loc>
+        <lastmod>2022-01-13T12:55:52.471Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2022/01/13/ReDoS-attacks/</loc>
-        <lastmod>2022-01-12T15:29:21.631Z</lastmod>
+        <lastmod>2022-01-13T12:55:14.729Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
