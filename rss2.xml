@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 13 Jan 2022 12:55:52 GMT</pubDate>
+    <pubDate>Thu, 13 Jan 2022 13:44:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -31,10 +31,10 @@
       <content:encoded><![CDATA[<!-- thumbnail: /images/nullish-coalescing-operator20220108/preview.png --><!-- ![ ]() --><figure class="highlight js"><figcaption><span>example.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">false</span> || <span class="string">&#x27;hi&#x27;</span>; <span class="comment">// hi</span></span><br><span class="line"><span class="literal">false</span> ?? <span class="string">&#x27;hi&#x27;</span>; <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="number">0</span> || <span class="string">&#x27;hi&#x27;</span>; <span class="comment">// hi</span></span><br><span class="line"><span class="number">0</span> ?? <span class="string">&#x27;hi&#x27;</span>; <span class="comment">// 0</span></span><br><span class="line"></span><br><span class="line"><span class="literal">null</span> ?? <span class="string">&#x27;hi&#x27;</span>; <span class="comment">// hi</span></span><br><span class="line"><span class="literal">undefined</span> ?? <span class="string">&#x27;hi&#x27;</span>; <span class="comment">// hi</span></span><br></pre></td></tr></table></figure><ul><li>falsy 값(‘’, 0, false)을 포함한 값을 제공하기 위해 사용할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator</a></li></ul>]]></content:encoded>
       
       
-      <category domain="https://chinsun9.github.io/categories/js/">js</category>
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
       
       
-      <category domain="https://chinsun9.github.io/tags/js/">js</category>
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
       
       
       <comments>https://chinsun9.github.io/2022/01/13/nullish-coalescing-operator/#disqus_thread</comments>
