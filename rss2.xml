@@ -9,8 +9,36 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Thu, 13 Jan 2022 13:44:42 GMT</pubDate>
+    <pubDate>Sun, 16 Jan 2022 02:30:52 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>encodeuricomponent vs encodeuri</title>
+      <link>https://chinsun9.github.io/2022/01/16/encodeuricomponent-vs-encodeuri/</link>
+      <guid>https://chinsun9.github.io/2022/01/16/encodeuricomponent-vs-encodeuri/</guid>
+      <pubDate>Sun, 16 Jan 2022 02:30:52 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;mdn example&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>mdn example</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> set1 = <span class="string">&#x27;;,/?:@&amp;=+$&#x27;</span>; <span class="comment">// Reserved Characters</span></span><br><span class="line"><span class="keyword">var</span> set2 = <span class="string">&quot;-_.!~*&#x27;()&quot;</span>; <span class="comment">// Unescaped Characters</span></span><br><span class="line"><span class="keyword">var</span> set3 = <span class="string">&#x27;#&#x27;</span>; <span class="comment">// Number Sign</span></span><br><span class="line"><span class="keyword">var</span> set4 = <span class="string">&#x27;ABC abc 123&#x27;</span>; <span class="comment">// Alphanumeric Characters + Space</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURI</span>(set1)); <span class="comment">// ;,/?:@&amp;=+$</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURI</span>(set2)); <span class="comment">// -_.!~*&#x27;()</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURI</span>(set3)); <span class="comment">// #</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURI</span>(set4)); <span class="comment">// ABC%20abc%20123 (the space gets encoded as %20)</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURIComponent</span>(set1)); <span class="comment">// %3B%2C%2F%3F%3A%40%26%3D%2B%24</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURIComponent</span>(set2)); <span class="comment">// -_.!~*&#x27;()</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURIComponent</span>(set3)); <span class="comment">// %23</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURIComponent</span>(set4)); <span class="comment">// ABC%20abc%20123 (the space gets encoded as %20)</span></span><br></pre></td></tr></table></figure><ul><li>새롭게 url을 생성하는 과정에서는 <code>encodeURIComponent</code>를 쓰면될 것 같다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/4540753/should-i-use-encodeuri-or-encodeuricomponent-for-encoding-urls/4540785">https://stackoverflow.com/questions/4540753/should-i-use-encodeuri-or-encodeuricomponent-for-encoding-urls/4540785</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/encodeuri/">encodeuri</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/16/encodeuricomponent-vs-encodeuri/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>?? vs ||</title>
@@ -569,34 +597,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/11/24/7777/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>git rebase</title>
-      <link>https://chinsun9.github.io/2021/11/23/git-rebase/</link>
-      <guid>https://chinsun9.github.io/2021/11/23/git-rebase/</guid>
-      <pubDate>Tue, 23 Nov 2021 13:41:40 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase main</span><br></pre></td></tr></table></figure><ul><li>main branch와 현재 브랜치가 충돌이 나서 자동 병합이 안될 떄</li><li>rebase를 톨해 로컬에서 충돌을 해결할 수 있다</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/git/">git</category>
-      
-      <category domain="https://chinsun9.github.io/tags/rebase/">rebase</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/11/23/git-rebase/#disqus_thread</comments>
       
     </item>
     

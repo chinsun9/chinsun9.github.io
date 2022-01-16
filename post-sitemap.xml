@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2022/01/16/encodeuricomponent-vs-encodeuri/</loc>
+        <lastmod>2022-01-16T02:30:52.335Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/09/21/npm-cli/</loc>
+        <lastmod>2022-01-16T02:28:48.147Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2022/01/13/nullish-coalescing-operator/</loc>
         <lastmod>2022-01-13T13:44:42.471Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -186,14 +202,6 @@
     <url>
         <loc>https://chinsun9.github.io/2021/12/19/promise-all-vs-allSettled/</loc>
         <lastmod>2021-12-19T10:09:05.789Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/09/21/npm-cli/</loc>
-        <lastmod>2021-12-18T12:32:09.574Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
