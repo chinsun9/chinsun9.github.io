@@ -9,8 +9,37 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sun, 16 Jan 2022 02:30:52 GMT</pubDate>
+    <pubDate>Tue, 18 Jan 2022 12:13:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>github loading gif</title>
+      <link>https://chinsun9.github.io/2022/01/18/github-loading-gif/</link>
+      <guid>https://chinsun9.github.io/2022/01/18/github-loading-gif/</guid>
+      <pubDate>Tue, 18 Jan 2022 12:13:47 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-loading-gif20211021/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-loading-gif20211021/preview.png" alt=" "></p><p><img src="https://github.githubassets.com/images/mona-loading-dark.gif" alt=" "></p><ul><li>홀리…</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.githubassets.com/images/mona-loading-dark.gif">https://github.githubassets.com/images/mona-loading-dark.gif</a></li><li><a href="https://github.githubassets.com/images/mona-loading.gif">https://github.githubassets.com/images/mona-loading.gif</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/github/">github</category>
+      
+      <category domain="https://chinsun9.github.io/tags/gif/">gif</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/18/github-loading-gif/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>encodeuricomponent vs encodeuri</title>
@@ -567,36 +596,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/11/27/JSX-is-not-defined/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>7777</title>
-      <link>https://chinsun9.github.io/2021/11/24/7777/</link>
-      <guid>https://chinsun9.github.io/2021/11/24/7777/</guid>
-      <pubDate>Wed, 24 Nov 2021 13:01:16 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/777720211122/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;7777 커밋&lt;/</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/777720211122/preview.png" alt=" "></p><ul><li>7777 커밋</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/commit/">commit</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/11/24/7777/#disqus_thread</comments>
       
     </item>
     
