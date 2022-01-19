@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 18 Jan 2022 12:13:47 GMT</pubDate>
+    <pubDate>Wed, 19 Jan 2022 12:26:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>현재 포커스된 엘리먼트 가져오기 js</title>
+      <link>https://chinsun9.github.io/2022/01/19/how-to-get-current-focus-element-in-js/</link>
+      <guid>https://chinsun9.github.io/2022/01/19/how-to-get-current-focus-element-in-js/</guid>
+      <pubDate>Wed, 19 Jan 2022 12:26:15 GMT</pubDate>
+      
+        
+        
+      <description>&lt;!-- thumbnail: /images/how-to-get-current-focus-element-in-js20220118/preview.png --&gt;
+&lt;!-- ![ ]() --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;document.activeElemen</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<!-- thumbnail: /images/how-to-get-current-focus-element-in-js20220118/preview.png --><!-- ![ ]() --><ul><li><code>document.activeElement</code></li><li>현재 포커스 된 엘리먼트가 OO이라면 같은 조건문을 활용할 수 있겠다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/497094/how-do-i-find-out-which-dom-element-has-the-focus">https://stackoverflow.com/questions/497094/how-do-i-find-out-which-dom-element-has-the-focus</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/API/Document/activeElement">https://developer.mozilla.org/ko/docs/Web/API/Document/activeElement</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/19/how-to-get-current-focus-element-in-js/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>github loading gif</title>
@@ -565,37 +595,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/11/28/first-child-vs-first-of-type/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>JSX is not defined.</title>
-      <link>https://chinsun9.github.io/2021/11/27/JSX-is-not-defined/</link>
-      <guid>https://chinsun9.github.io/2021/11/27/JSX-is-not-defined/</guid>
-      <pubDate>Sat, 27 Nov 2021 14:45:57 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;eslint가 JSX를 못 알아먹는다&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/JSX-is-not-defined20211127/pr</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>eslint가 JSX를 못 알아먹는다</p><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/JSX-is-not-defined20211127/preview.png" alt=" "></p><figure class="highlight json"><figcaption><span>.eslintrc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;globals&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;JSX&quot;</span>: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/eslint/">eslint</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/react/">react</category>
-      
-      <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
-      
-      <category domain="https://chinsun9.github.io/tags/JSX/">JSX</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/11/27/JSX-is-not-defined/#disqus_thread</comments>
       
     </item>
     
