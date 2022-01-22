@@ -144,3 +144,21 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(document.querySelector('input.searchbox-input'));
+
+
+const clickSearchButton = () =>
+    document.querySelector('a.navbar-item.search').click();
+
+window.addEventListener('keydown', e => {
+    // esc로 검색창 끄기
+    if (e.key === 'Escape' && document.querySelector('.searchbox.show')) {
+        clickSearchButton();
+        return;
+    }
+
+    // ctrl k 로 검색창 여닫기
+    if (!(e.ctrlKey && e.key.toLowerCase() === 'k')) return;
+    e.preventDefault();
+    clickSearchButton();
+});
+
