@@ -135,3 +135,12 @@
         $('.navbar-main .catalogue').on('click', toggleToc);
     }
 }(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
+
+// 검색창 인풋 오토포커스
+
+const observer = new IntersectionObserver(entries => {
+    if (!entries[0].intersectionRatio) return;
+    document.querySelector('input.searchbox-input').focus();
+});
+
+observer.observe(document.querySelector('input.searchbox-input'));

@@ -133,6 +133,12 @@ html[data-color-scheme='dark'] body code {
 html[data-color-scheme='dark'] body article.article .content img {
   border: 1px solid #37373d;
 }
+html[data-color-scheme='dark'] body .searchbox {
+  color: #fff;
+}
+html[data-color-scheme='dark'] body .searchbox .gs-spelling {
+  color: inherit;
+}
 html[data-color-scheme='dark'] body .searchbox .searchbox-body {
   background-color: #252526 !important;
   border-top: none;
