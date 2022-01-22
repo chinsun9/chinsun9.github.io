@@ -178,9 +178,6 @@ html[data-color-scheme='dark'] .gsc-control-cse {
 html[data-color-scheme='dark'] .gsc-control-cse * {
   border: none;
 }
-html[data-color-scheme='dark'] .gsc-control-cse .gsc-adBlock {
-  display: none;
-}
 html[data-color-scheme='dark'] .gsc-control-cse .gs-webResult .gs-snippet,
 html[data-color-scheme='dark'] .gsc-control-cse .gs-fileFormatType {
   color: #7a7a7a;
