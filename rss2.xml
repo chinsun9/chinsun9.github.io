@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 22 Jan 2022 09:11:50 GMT</pubDate>
+    <pubDate>Sat, 22 Jan 2022 17:07:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>blog update 검색창 열기 단축키 추가</title>
+      <link>https://chinsun9.github.io/2022/01/23/blog-update-search-modal-shortcut/</link>
+      <guid>https://chinsun9.github.io/2022/01/23/blog-update-search-modal-shortcut/</guid>
+      <pubDate>Sat, 22 Jan 2022 17:07:29 GMT</pubDate>
+      
+        
+        
+      <description>&lt;!-- thumbnail: /images/blog-update-search-modal-shortcut20220122/preview.png
+![ ]() --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;이제 &lt;code&gt;ctrl + k&lt;/code&gt; 키로 검색창을 열고 닫을 수 </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<!-- thumbnail: /images/blog-update-search-modal-shortcut20220122/preview.png![ ]() --><ul><li>이제 <code>ctrl + k</code> 키로 검색창을 열고 닫을 수 있다!</li><li><code>esc</code> 키로 검색창을 닫을 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://chinsun9.github.io/2022/01/22/web-api-IntersectionObserver/">https://chinsun9.github.io/2022/01/22/web-api-IntersectionObserver/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog/">blog</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/blog/">blog</category>
+      
+      <category domain="https://chinsun9.github.io/tags/observer/">observer</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/23/blog-update-search-modal-shortcut/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>IntersectionObserver 화면에 특정 엘리먼트가 보이면?!</title>
@@ -569,37 +601,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/12/16/redirect-ie11-to-edge-like-stackoverflow/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>eslint ignorePatterns</title>
-      <link>https://chinsun9.github.io/2021/12/04/eslint-ignorePatterns/</link>
-      <guid>https://chinsun9.github.io/2021/12/04/eslint-ignorePatterns/</guid>
-      <pubDate>Sat, 04 Dec 2021 13:27:09 GMT</pubDate>
-      
-        
-        
-      <description>&lt;blockquote&gt;
-&lt;p&gt;린트하고 싶지 않은 디렉터리를 설정해줄 수 있다&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/ima</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<blockquote><p>린트하고 싶지 않은 디렉터리를 설정해줄 수 있다</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/eslint-ignorePatterns20211128/preview.png" alt=" "></p><ul><li>스토리북이 src 밑에 있어서 린트가 같이 적용되었다</li><li>eslint가 스토리북 디렉터리를 무시하도록 해보자</li></ul><figure class="highlight json"><figcaption><span>.eslintrc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">&quot;ignorePatterns&quot;</span>: [<span class="string">&quot;/src/stories/**/*&quot;</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>루트 경로부터 표현해야 한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://eslint.org/docs/user-guide/configuring/ignoring-code">https://eslint.org/docs/user-guide/configuring/ignoring-code</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/eslint/">eslint</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/eslint/">eslint</category>
-      
-      <category domain="https://chinsun9.github.io/tags/storybook/">storybook</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/12/04/eslint-ignorePatterns/#disqus_thread</comments>
       
     </item>
     
