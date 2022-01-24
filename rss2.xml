@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 22 Jan 2022 17:07:29 GMT</pubDate>
+    <pubDate>Mon, 24 Jan 2022 13:54:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>toptal utilities</title>
+      <link>https://chinsun9.github.io/2022/01/24/toptal-utilities/</link>
+      <guid>https://chinsun9.github.io/2022/01/24/toptal-utilities/</guid>
+      <pubDate>Mon, 24 Jan 2022 13:54:09 GMT</pubDate>
+      
+        
+        
+      <description>&lt;!--
+thumbnail: /images/toptal-utilities20220122/preview.png
+![ ]() --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;gitignore 파일 생성하는데 주로 사용했었는데&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;다른 유용한 도구</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<!--thumbnail: /images/toptal-utilities20220122/preview.png![ ]() --><ul><li><p>gitignore 파일 생성하는데 주로 사용했었는데</p></li><li><p>다른 유용한 도구들도 많이 있었다!</p></li><li><p><a href="https://www.toptal.com/developers/webdevchecklist">https://www.toptal.com/developers/webdevchecklist</a> ; 우와우우 한번 둘러봐야겠다</p></li><li><p><a href="https://www.toptal.com/developers/css/sprite-generator/">https://www.toptal.com/developers/css/sprite-generator/</a> ; 스프라이트 생성기도 있고</p></li><li></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.toptal.com/utilities-tools">https://www.toptal.com/utilities-tools</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/24/toptal-utilities/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>blog update 검색창 열기 단축키 추가</title>
@@ -566,41 +599,6 @@
       
       
       <comments>https://chinsun9.github.io/2021/12/18/202111-search-performance-report/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>ie11로 접속하면 edge가 켜짐</title>
-      <link>https://chinsun9.github.io/2021/12/16/redirect-ie11-to-edge-like-stackoverflow/</link>
-      <guid>https://chinsun9.github.io/2021/12/16/redirect-ie11-to-edge-like-stackoverflow/</guid>
-      <pubDate>Thu, 16 Dec 2021 13:07:50 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;stackoverflow를 ie11에서 접속 시도하면 edge가 켜진다 🎇&lt;/li&gt;
-&lt;li&gt;궁금해서 알아봤는데, 자체적으로 할 수 있는 게 아니였다&lt;/li&gt;
-&lt;li&gt;마소에 메일을 보내고 리스트에 추가가 되어야한다&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li>stackoverflow를 ie11에서 접속 시도하면 edge가 켜진다 🎇</li><li>궁금해서 알아봤는데, 자체적으로 할 수 있는 게 아니였다</li><li>마소에 메일을 보내고 리스트에 추가가 되어야한다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/63731061/how-do-i-redirect-ie11-to-edge-like-stack-overflow">https://stackoverflow.com/questions/63731061/how-do-i-redirect-ie11-to-edge-like-stack-overflow</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ie11/">ie11</category>
-      
-      <category domain="https://chinsun9.github.io/tags/stackoverflow/">stackoverflow</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/12/16/redirect-ie11-to-edge-like-stackoverflow/#disqus_thread</comments>
       
     </item>
     
