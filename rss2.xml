@@ -9,8 +9,40 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 24 Jan 2022 13:54:10 GMT</pubDate>
+    <pubDate>Mon, 24 Jan 2022 15:27:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>dark css generator</title>
+      <link>https://chinsun9.github.io/2022/01/25/dark-css-generator/</link>
+      <guid>https://chinsun9.github.io/2022/01/25/dark-css-generator/</guid>
+      <pubDate>Mon, 24 Jan 2022 15:27:44 GMT</pubDate>
+      
+        
+        
+      <description>&lt;!-- thumbnail: /images/dark-css-generator20220122/preview.png
+![ ]() --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://nighteye.app/dark-css-generator/&quot;&gt;https</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<!-- thumbnail: /images/dark-css-generator20220122/preview.png![ ]() --><ul><li><a href="https://nighteye.app/dark-css-generator/">https://nighteye.app/dark-css-generator/</a></li><li>웹 사이트 주소를 넣으면 다크모드일 때 css를 제작해준다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://nighteye.app/dark-css-generator/">https://nighteye.app/dark-css-generator/</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/dark-theme/">dark theme</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/25/dark-css-generator/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>toptal utilities</title>
@@ -32,7 +64,7 @@ thumbnail: /images/toptal-utilities20220122/preview.png
       
       
       
-      <content:encoded><![CDATA[<!--thumbnail: /images/toptal-utilities20220122/preview.png![ ]() --><ul><li><p>gitignore 파일 생성하는데 주로 사용했었는데</p></li><li><p>다른 유용한 도구들도 많이 있었다!</p></li><li><p><a href="https://www.toptal.com/developers/webdevchecklist">https://www.toptal.com/developers/webdevchecklist</a> ; 우와우우 한번 둘러봐야겠다</p></li><li><p><a href="https://www.toptal.com/developers/css/sprite-generator/">https://www.toptal.com/developers/css/sprite-generator/</a> ; 스프라이트 생성기도 있고</p></li><li></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.toptal.com/utilities-tools">https://www.toptal.com/utilities-tools</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<!--thumbnail: /images/toptal-utilities20220122/preview.png![ ]() --><ul><li><p>gitignore 파일 생성하는데 주로 사용했었는데</p></li><li><p>다른 유용한 도구들도 많이 있었다!</p></li><li><p><a href="https://www.toptal.com/developers/webdevchecklist">https://www.toptal.com/developers/webdevchecklist</a> ; 우와우우 한번 둘러봐야겠다</p></li><li><p><a href="https://www.toptal.com/developers/css/sprite-generator/">https://www.toptal.com/developers/css/sprite-generator/</a> ; 스프라이트 생성기도 있고</p></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.toptal.com/utilities-tools">https://www.toptal.com/utilities-tools</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/web/">web</category>
@@ -573,32 +605,6 @@ thumbnail: /images/toptal-utilities20220122/preview.png
       
       
       <comments>https://chinsun9.github.io/2021/12/19/promise-all-vs-allSettled/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>202111 검색 실적</title>
-      <link>https://chinsun9.github.io/2021/12/18/202111-search-performance-report/</link>
-      <guid>https://chinsun9.github.io/2021/12/18/202111-search-performance-report/</guid>
-      <pubDate>Sat, 18 Dec 2021 11:31:43 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202111-search-performance-report20211216/preview.png&quot; alt</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202111-search-performance-report20211216/preview.png" alt=" "></p>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/12/18/202111-search-performance-report/#disqus_thread</comments>
       
     </item>
     
