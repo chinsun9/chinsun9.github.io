@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 24 Jan 2022 15:27:44 GMT</pubDate>
+    <pubDate>Tue, 25 Jan 2022 12:21:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>headless</title>
+      <link>https://chinsun9.github.io/2022/01/25/headless/</link>
+      <guid>https://chinsun9.github.io/2022/01/25/headless/</guid>
+      <pubDate>Tue, 25 Jan 2022 12:21:53 GMT</pubDate>
+      
+        
+        
+      <description>&lt;ul&gt;
+&lt;li&gt;GUI 없는 환경을 의미한다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- puppeteer 관련 서치하다가 접한 키워드 --&gt;
+
+&lt;h2 id=&quot;참고&quot;&gt;&lt;a href=&quot;#참고&quot; class=&quot;headerlink&quot; title=&quot;참고&quot;&gt;&lt;/a&gt;참고&lt;/h2&gt;&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<ul><li>GUI 없는 환경을 의미한다</li></ul><!-- puppeteer 관련 서치하다가 접한 키워드 --><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/4647719/what-does-headless-mean">https://stackoverflow.com/questions/4647719/what-does-headless-mean</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
+      
+      <category domain="https://chinsun9.github.io/tags/headless/">headless</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/25/headless/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>dark css generator</title>
@@ -577,34 +610,6 @@ thumbnail: /images/toptal-utilities20220122/preview.png
       
       
       <comments>https://chinsun9.github.io/2021/12/22/typescript-is-keyword/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>promise all vs allSettled</title>
-      <link>https://chinsun9.github.io/2021/12/19/promise-all-vs-allSettled/</link>
-      <guid>https://chinsun9.github.io/2021/12/19/promise-all-vs-allSettled/</guid>
-      <pubDate>Sun, 19 Dec 2021 09:52:47 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>example</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> promise1 = <span class="built_in">Promise</span>.resolve(<span class="number">3</span>);</span><br><span class="line"><span class="keyword">const</span> promise2 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span></span><br><span class="line">  <span class="built_in">setTimeout</span>(reject, <span class="number">100</span>, <span class="string">&#x27;foo&#x27;</span>)</span><br><span class="line">);</span><br><span class="line"><span class="keyword">const</span> promises = [promise1, promise2];</span><br><span class="line"></span><br><span class="line"><span class="built_in">Promise</span>.allSettled(promises)</span><br><span class="line">  .then(<span class="function">(<span class="params">results</span>) =&gt;</span> results.forEach(<span class="function">(<span class="params">result</span>) =&gt;</span> <span class="built_in">console</span>.log(result.status))) <span class="comment">// 여기에 걸림</span></span><br><span class="line">  .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> <span class="built_in">console</span>.error(err));</span><br><span class="line"><span class="comment">// &gt; &quot;fulfilled&quot;</span></span><br><span class="line"><span class="comment">// &gt; &quot;rejected&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Promise</span>.all(promises)</span><br><span class="line">  .then(<span class="function">(<span class="params">results</span>) =&gt;</span> results.forEach(<span class="function">(<span class="params">result</span>) =&gt;</span> <span class="built_in">console</span>.log(result.status)))</span><br><span class="line">  .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> <span class="built_in">console</span>.error(err)); <span class="comment">// 여기에 걸림</span></span><br><span class="line"><span class="comment">// &gt; foo</span></span><br></pre></td></tr></table></figure><ul><li>all은 한개라도 실패하면 종료</li><li>allSettled은 실패하더라도 모든 프로미스 실행</li></ul><h2 id="allSettled-값-꺼내쓰기"><a href="#allSettled-값-꺼내쓰기" class="headerlink" title="allSettled 값 꺼내쓰기"></a>allSettled 값 꺼내쓰기</h2><figure class="highlight ts"><figcaption><span>example allSettled</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [job1, job2] = <span class="keyword">await</span> <span class="built_in">Promise</span>.allSettled(promiseJobs);</span><br><span class="line"><span class="keyword">if</span> (job1.status === <span class="string">&#x27;rejected&#x27;</span>) <span class="keyword">throw</span> job1.reason;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(job1.value);</span><br></pre></td></tr></table></figure><ul><li>rejected : reason에서 실패사유를</li><li>fulfilled : value에서 값을 꺼내 쓸 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/promise/">promise</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/12/19/promise-all-vs-allSettled/#disqus_thread</comments>
       
     </item>
     
