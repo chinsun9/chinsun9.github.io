@@ -9,8 +9,38 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Tue, 25 Jan 2022 12:21:53 GMT</pubDate>
+    <pubDate>Thu, 27 Jan 2022 12:33:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>semantic-versioning</title>
+      <link>https://chinsun9.github.io/2022/01/27/semantic-versioning/</link>
+      <guid>https://chinsun9.github.io/2022/01/27/semantic-versioning/</guid>
+      <pubDate>Thu, 27 Jan 2022 12:33:41 GMT</pubDate>
+      
+        
+        
+      <description>&lt;!-- thumbnail: /images/semantic-versioning20210808/preview.png
+![ ]() --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/kK4Meix58R4&quot;&gt;https://youtu.be</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<!-- thumbnail: /images/semantic-versioning20210808/preview.png![ ]() --><ul><li><a href="https://youtu.be/kK4Meix58R4">https://youtu.be/kK4Meix58R4</a></li></ul><figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">npm version -h</span><br><span class="line"></span><br><span class="line"><span class="comment"># 호환가능 버그수정</span></span><br><span class="line">npm version patch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 호환가능 기능 추가</span></span><br><span class="line">npm version minor</span><br><span class="line"></span><br><span class="line"><span class="comment"># 호환불가 변경 사항</span></span><br><span class="line">npm version major</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li>keyword; semver</li><li><a href="https://docs.npmjs.com/about-semantic-versioning">https://docs.npmjs.com/about-semantic-versioning</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/01/27/semantic-versioning/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>headless</title>
@@ -579,37 +609,6 @@ thumbnail: /images/toptal-utilities20220122/preview.png
       
       
       <comments>https://chinsun9.github.io/2021/12/27/aws-lambda-handler-callback/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>typescript is keyword</title>
-      <link>https://chinsun9.github.io/2021/12/22/typescript-is-keyword/</link>
-      <guid>https://chinsun9.github.io/2021/12/22/typescript-is-keyword/</guid>
-      <pubDate>Wed, 22 Dec 2021 14:32:29 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/typescript-is-keyword20211218/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/typescript-is-keyword20211218/preview.png" alt=" "></p><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isValidPostAttributes</span>(<span class="params"></span></span></span><br><span class="line"><span class="function"><span class="params">  attributes: <span class="built_in">any</span></span></span></span><br><span class="line"><span class="function"><span class="params"></span>): <span class="title">attributes</span> <span class="title">is</span> <span class="title">PostMarkdownAttributes</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> attributes?.title;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><a href="https://remix.run/docs/en/v1/tutorials/blog#pulling-from-a-data-source">remix 튜토리얼</a>하다가 요상한 문법을 보았다</li><li>any같은 <code>.</code> 찍으면 자동완성 안뜨는 타입들을 특정 타입으로 좁혀줘서, 자동완성 지원도 받을 수 있다</li></ul><figure class="highlight ts"><figcaption><span>example</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isNumber</span>(<span class="params">x: <span class="built_in">any</span></span>): <span class="title">x</span> <span class="title">is</span> <span class="title">number</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> x === <span class="string">&#x27;number&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isString</span>(<span class="params">x: <span class="built_in">any</span></span>): <span class="title">x</span> <span class="title">is</span> <span class="title">string</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">typeof</span> x === <span class="string">&#x27;string&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">hello</span>(<span class="params">value: <span class="built_in">any</span></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (isNumber(value)) &#123;</span><br><span class="line">    <span class="keyword">return</span> value.toFixed();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (isString(value)) &#123;</span><br><span class="line">    <span class="keyword">return</span> value.length;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">`hello error`</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>any로 받았는데, 타입 가드를 통과하면</li><li>해당 타입처럼 다룰 수 있다</li><li><code>as</code>로 강제 캐스팅하여 사용하지 않아도 된다!</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">https://www.typescriptlang.org/docs/handbook/advanced-types.html</a></li><li><a href="https://typescript-kr.github.io/pages/advanced-types.html">https://typescript-kr.github.io/pages/advanced-types.html</a></li><li><a href="https://stackoverflow.com/questions/40081332/what-does-the-is-keyword-do-in-typescript">https://stackoverflow.com/questions/40081332/what-does-the-is-keyword-do-in-typescript</a></li><li><a href="https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates">https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates</a></li><li><a href="https://youtu.be/S4ewVsq8JV0">https://youtu.be/S4ewVsq8JV0</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/typescript/">typescript</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/typescript/">typescript</category>
-      
-      <category domain="https://chinsun9.github.io/tags/predicates/">predicates</category>
-      
-      <category domain="https://chinsun9.github.io/tags/type-guards/">type guards</category>
-      
-      
-      <comments>https://chinsun9.github.io/2021/12/22/typescript-is-keyword/#disqus_thread</comments>
       
     </item>
     
