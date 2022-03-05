@@ -9,7 +9,7 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 05 Mar 2022 04:33:13 GMT</pubDate>
+    <pubDate>Sat, 05 Mar 2022 13:02:38 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -20,13 +20,13 @@
       
         
         
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/js-number-format20220305/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/js-number-format20220305/preview.gif&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
 &lt;block</description>
         
       
       
       
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/js-number-format20220305/preview.png" alt=" "></p><blockquote><p>1천, 1만, 1.1만</p></blockquote><ul><li>숫자 표기가 길어질 때가 있다. 짧게 단위를 붙여서 표기해보자</li></ul><figure class="highlight ts"><figcaption><span>example.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> compactNumberFormatter = <span class="keyword">new</span> <span class="built_in">Intl</span>.NumberFormat(<span class="string">&#x27;ko&#x27;</span>, &#123;</span><br><span class="line">  notation: <span class="string">&#x27;compact&#x27;</span>,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">compactNumber</span>(<span class="params"><span class="built_in">number</span>: <span class="built_in">number</span></span>): <span class="title">string</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> compactNumberFormatter.format(<span class="built_in">number</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/zJdD1MrXds8">https://youtu.be/zJdD1MrXds8</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/js-number-format20220305/preview.gif" alt=" "></p><blockquote><p>1천, 1만, 1.1만</p></blockquote><ul><li>숫자 표기가 길어질 때가 있다. 짧게 단위를 붙여서 표기해보자</li></ul><figure class="highlight ts"><figcaption><span>example.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> compactNumberFormatter = <span class="keyword">new</span> <span class="built_in">Intl</span>.NumberFormat(<span class="string">&#x27;ko&#x27;</span>, &#123;</span><br><span class="line">  notation: <span class="string">&#x27;compact&#x27;</span>,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">compactNumber</span>(<span class="params"><span class="built_in">number</span>: <span class="built_in">number</span></span>): <span class="title">string</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> compactNumberFormatter.format(<span class="built_in">number</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/zJdD1MrXds8">https://youtu.be/zJdD1MrXds8</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
