@@ -9,8 +9,37 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 26 Feb 2022 07:06:30 GMT</pubDate>
+    <pubDate>Sat, 05 Mar 2022 04:33:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>1K 1천 1.1천 같이 숫자를 포맷하기</title>
+      <link>https://chinsun9.github.io/2022/03/05/js-number-format/</link>
+      <guid>https://chinsun9.github.io/2022/03/05/js-number-format/</guid>
+      <pubDate>Sat, 05 Mar 2022 04:33:13 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/js-number-format20220305/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
+&lt;block</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/js-number-format20220305/preview.png" alt=" "></p><blockquote><p>1천, 1만, 1.1만</p></blockquote><ul><li>숫자 표기가 길어질 때가 있다. 짧게 단위를 붙여서 표기해보자</li></ul><figure class="highlight ts"><figcaption><span>example.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> compactNumberFormatter = <span class="keyword">new</span> <span class="built_in">Intl</span>.NumberFormat(<span class="string">&#x27;ko&#x27;</span>, &#123;</span><br><span class="line">  notation: <span class="string">&#x27;compact&#x27;</span>,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">compactNumber</span>(<span class="params"><span class="built_in">number</span>: <span class="built_in">number</span></span>): <span class="title">string</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> compactNumberFormatter.format(<span class="built_in">number</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://youtu.be/zJdD1MrXds8">https://youtu.be/zJdD1MrXds8</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/format/">format</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/03/05/js-number-format/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>input director</title>
@@ -592,36 +621,6 @@ thumbnail: /images/toptal-utilities20220122/preview.png
       
       
       <comments>https://chinsun9.github.io/2022/01/09/live-server-for-react-spa/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>URLSearchParams location.search 파싱하기</title>
-      <link>https://chinsun9.github.io/2022/01/08/web-api-URLSearchParams/</link>
-      <guid>https://chinsun9.github.io/2022/01/08/web-api-URLSearchParams/</guid>
-      <pubDate>Sat, 08 Jan 2022 02:55:02 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;example&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>example</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> getPageNumber = <span class="function">() =&gt;</span> <span class="keyword">new</span> URLSearchParams(location.search).get(<span class="string">&#x27;p&#x27;</span>);</span><br></pre></td></tr></table></figure><blockquote><p>example.com/hello/world?p=1</p></blockquote><p>이런 url이 있을 때 param <code>p</code>를 꺼내볼 수 있다</p><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/search">https://developer.mozilla.org/en-US/docs/Web/API/Location/search</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/API/URLSearchParams">https://developer.mozilla.org/ko/docs/Web/API/URLSearchParams</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/web-api/">web api</category>
-      
-      <category domain="https://chinsun9.github.io/tags/URLSearchParams/">URLSearchParams</category>
-      
-      
-      <comments>https://chinsun9.github.io/2022/01/08/web-api-URLSearchParams/#disqus_thread</comments>
       
     </item>
     
