@@ -9,8 +9,43 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 05 Mar 2022 13:02:38 GMT</pubDate>
+    <pubDate>Sun, 06 Mar 2022 02:31:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js void operator, no-floating-promises</title>
+      <link>https://chinsun9.github.io/2022/03/06/js-void-operator/</link>
+      <guid>https://chinsun9.github.io/2022/03/06/js-void-operator/</guid>
+      <pubDate>Sun, 06 Mar 2022 02:31:28 GMT</pubDate>
+      
+        
+        
+      <description>&lt;!-- thumbnail: /images/js-void-operator20220305/preview.png
+![ ]() --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;void&lt;/code&gt; ; 주어진 표현식을 평가하고 undefined를 반환합니다.&lt;/li&gt;
+&lt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<!-- thumbnail: /images/js-void-operator20220305/preview.png![ ]() --><ul><li><code>void</code> ; 주어진 표현식을 평가하고 undefined를 반환합니다.</li></ul><h2 id="프로미스-다룰-때-주의할-점"><a href="#프로미스-다룰-때-주의할-점" class="headerlink" title="프로미스 다룰 때 주의할 점"></a>프로미스 다룰 때 주의할 점</h2><ul><li><code>no-floating-promises</code>라는 룰이 있는데, 프로미스를 핸들하라는 것이다</li><li>무시하고 싶은 경우에 <code>void</code>를 붙여줄 수 있는데,</li><li>이 경우 내부에서 throw하는 에러를 외부에서 받지 못한다 (= catch에 안걸린다)</li></ul><figure class="highlight ts"><figcaption><span>example.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> f = <span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="keyword">throw</span> <span class="built_in">Error</span>(<span class="string">&#x27;에러 발생&#x27;</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="built_in">void</span> f();</span><br><span class="line">&#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(error); <span class="comment">// not work!</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/void">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/void</a></li><li><a href="https://github.com/typescript-eslint/typescript-eslint/blob/v4.22.0/packages/eslint-plugin/docs/rules/no-floating-promises.md">https://github.com/typescript-eslint/typescript-eslint/blob/v4.22.0/packages/eslint-plugin/docs/rules/no-floating-promises.md</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/javascript/">javascript</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/promise/">promise</category>
+      
+      <category domain="https://chinsun9.github.io/tags/void/">void</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/03/06/js-void-operator/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>1K 1천 1.1천 같이 숫자를 포맷하기</title>
@@ -593,34 +628,6 @@ thumbnail: /images/toptal-utilities20220122/preview.png
       
       
       <comments>https://chinsun9.github.io/2022/01/10/202112-search-performance-report/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>로컬에서 vscode live server로 spa 실행하기</title>
-      <link>https://chinsun9.github.io/2022/01/09/live-server-for-react-spa/</link>
-      <guid>https://chinsun9.github.io/2022/01/09/live-server-for-react-spa/</guid>
-      <pubDate>Sun, 09 Jan 2022 05:55:38 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/live-server-for-react-spa20220108/preview.png&quot; alt=&quot; &quot;&gt;&lt;/</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/live-server-for-react-spa20220108/preview.png" alt=" "></p><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>live server로 리액트 빌드 결과를 실행해보고 싶었다</li><li>github pages로 호스팅하기 때문에 basePath?가 있었다</li><li>live server에서 일단 로컬로 실행해보고 싶었는데,</li><li>basePath와 spa를 어떻게 실행해 볼 수 있을까?</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><figure class="highlight json"><figcaption><span>.vscode\settings.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// .vscode\settings.json</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;liveServer.settings.mount&quot;</span>: [[<span class="string">&quot;/go-home-time&quot;</span>, <span class="string">&quot;./&quot;</span>]], <span class="comment">// package.json에 homepage필드가 있는 경우</span></span><br><span class="line">  <span class="attr">&quot;liveServer.settings.file&quot;</span>: <span class="string">&quot;index.html&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.com/ritwickdey/vscode-live-server/blob/master/docs/settings.md">https://github.com/ritwickdey/vscode-live-server/blob/master/docs/settings.md</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/vscode/">vscode</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/vscode/">vscode</category>
-      
-      <category domain="https://chinsun9.github.io/tags/live-server/">live server</category>
-      
-      
-      <comments>https://chinsun9.github.io/2022/01/09/live-server-for-react-spa/#disqus_thread</comments>
       
     </item>
     
