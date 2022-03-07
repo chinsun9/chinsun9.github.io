@@ -9,8 +9,41 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sun, 06 Mar 2022 02:31:28 GMT</pubDate>
+    <pubDate>Mon, 07 Mar 2022 04:59:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>iframe 속 querySelector</title>
+      <link>https://chinsun9.github.io/2022/03/07/queryselector-iframe/</link>
+      <guid>https://chinsun9.github.io/2022/03/07/queryselector-iframe/</guid>
+      <pubDate>Mon, 07 Mar 2022 04:59:41 GMT</pubDate>
+      
+        
+        
+      <description>&lt;!-- thumbnail: /images/queryselector-iframe20220305/preview.png
+![ ]() --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iframe 속 엘리먼트를 탐색해보자&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;contentWindow&lt;/cod</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<!-- thumbnail: /images/queryselector-iframe20220305/preview.png![ ]() --><ul><li>iframe 속 엘리먼트를 탐색해보자</li><li><code>contentWindow</code></li></ul><figure class="highlight ts"><figcaption><span>exampel.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> iframeEl = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;iframe#target&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(iframeEl.contentWindow.document.body.querySelectorAll(<span class="string">&#x27;a&#x27;</span>));</span><br></pre></td></tr></table></figure><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/26630519/queryselector-for-web-elements-inside-iframe">https://stackoverflow.com/questions/26630519/queryselector-for-web-elements-inside-iframe</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/contentWindow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/contentWindow</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/03/07/queryselector-iframe/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>js void operator, no-floating-promises</title>
@@ -602,32 +635,6 @@ thumbnail: /images/toptal-utilities20220122/preview.png
       
       
       <comments>https://chinsun9.github.io/2022/01/11/language-code-timezone-code/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>202112 검색 실적</title>
-      <link>https://chinsun9.github.io/2022/01/10/202112-search-performance-report/</link>
-      <guid>https://chinsun9.github.io/2022/01/10/202112-search-performance-report/</guid>
-      <pubDate>Sun, 09 Jan 2022 17:01:42 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202112-search-performance-report20220109/preview.png&quot; alt</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202112-search-performance-report20220109/preview.png" alt=" "></p>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
-      
-      
-      <comments>https://chinsun9.github.io/2022/01/10/202112-search-performance-report/#disqus_thread</comments>
       
     </item>
     
