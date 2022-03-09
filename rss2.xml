@@ -9,8 +9,34 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 07 Mar 2022 04:59:41 GMT</pubDate>
+    <pubDate>Wed, 09 Mar 2022 06:42:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>202202 검색 실적</title>
+      <link>https://chinsun9.github.io/2022/03/09/202202-search-performance-report/</link>
+      <guid>https://chinsun9.github.io/2022/03/09/202202-search-performance-report/</guid>
+      <pubDate>Wed, 09 Mar 2022 06:42:51 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202202-search-performance-report20220309/preview.png&quot; alt</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202202-search-performance-report20220309/preview.png" alt=" "></p>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/03/09/202202-search-performance-report/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>iframe 속 querySelector</title>
@@ -603,38 +629,6 @@ thumbnail: /images/toptal-utilities20220122/preview.png
       
       
       <comments>https://chinsun9.github.io/2022/01/12/test-npm-package-without-publishing/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>우리나라 언어 코드, 타임존 코드</title>
-      <link>https://chinsun9.github.io/2022/01/11/language-code-timezone-code/</link>
-      <guid>https://chinsun9.github.io/2022/01/11/language-code-timezone-code/</guid>
-      <pubDate>Tue, 11 Jan 2022 13:51:39 GMT</pubDate>
-      
-        
-        
-      <description>&lt;!-- thumbnail: /images/language-code-timezone-code20220108/preview.png --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ISO 639-1 코드 ; &lt;code&gt;ko&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;TZ database na</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<!-- thumbnail: /images/language-code-timezone-code20220108/preview.png --><ul><li>ISO 639-1 코드 ; <code>ko</code></li><li>TZ database name ; <code>Asia/Seoul</code></li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes</a></li><li><a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">https://en.wikipedia.org/wiki/List_of_tz_database_time_zones</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ISO/">ISO</category>
-      
-      
-      <comments>https://chinsun9.github.io/2022/01/11/language-code-timezone-code/#disqus_thread</comments>
       
     </item>
     
