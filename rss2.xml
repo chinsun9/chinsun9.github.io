@@ -9,8 +9,39 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Wed, 09 Mar 2022 06:42:51 GMT</pubDate>
+    <pubDate>Sat, 12 Mar 2022 02:10:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>텍스트 드래그 방지 css</title>
+      <link>https://chinsun9.github.io/2022/03/12/user-select-none-css/</link>
+      <guid>https://chinsun9.github.io/2022/03/12/user-select-none-css/</guid>
+      <pubDate>Sat, 12 Mar 2022 02:10:45 GMT</pubDate>
+      
+        
+        
+      <description>&lt;!-- thumbnail: /images/user-select-none-css20220312/preview.png
+![ ]() --&gt;
+
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<!-- thumbnail: /images/user-select-none-css20220312/preview.png![ ]() --><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.hello</span> &#123;</span><br><span class="line">  user-select: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>유저가 드래그해서 텍스트 같은게 선택되지 않도록 할 수 있다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/CSS/user-select">https://developer.mozilla.org/ko/docs/Web/CSS/user-select</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      <category domain="https://chinsun9.github.io/tags/css/">css</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/03/12/user-select-none-css/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>202202 검색 실적</title>
@@ -599,36 +630,6 @@ thumbnail: /images/toptal-utilities20220122/preview.png
       
       
       <comments>https://chinsun9.github.io/2022/01/13/ReDoS-attacks/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>퍼블리쉬없이 npm 패키지 테스트하기</title>
-      <link>https://chinsun9.github.io/2022/01/12/test-npm-package-without-publishing/</link>
-      <guid>https://chinsun9.github.io/2022/01/12/test-npm-package-without-publishing/</guid>
-      <pubDate>Wed, 12 Jan 2022 12:30:50 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight sh&quot;&gt;&lt;figcaption&gt;&lt;span&gt;terminal&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight sh"><figcaption><span>terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># pwd: npm package</span></span><br><span class="line">npm link</span><br><span class="line"></span><br><span class="line"><span class="comment"># pwd: other project</span></span><br><span class="line">npm link -S &#123;packagename&#125;</span><br></pre></td></tr></table></figure><h2 id="상황"><a href="#상황" class="headerlink" title="상황"></a>상황</h2><ul><li>패키지를 업데이트하고 퍼블리쉬한다</li><li>해당 패키지를 사용하는 프로젝트에서 install 한다</li><li>테스트한다</li><li>퍼블리쉬를 해야지 확인할 수 있는 불편함이 있다. 테스트용 퍼블리쉬를 할 때마다 버전이 계속 증가한다</li></ul><h2 id="해결"><a href="#해결" class="headerlink" title="해결"></a>해결</h2><ul><li><code>npm link</code> 명령을 통해 퍼블리쉬 없이 테스트해볼 수 있다</li><li>글로벌 모듈이 설치되는 위치에 심볼릭 링크가 추가된다</li><li><code>npm link -S &#123;packagename&#125;</code>명령으로 로컬의 패키지를 설치한다<!-- - `npm unlink {packagename}`으로 삭제할 수 있다 --></li></ul><br/><ul><li><code>npm r -g &#123;packagename&#125;</code> 테스트를 다 끝내서 필요 없어졌다면 심볼릭 링크를 삭제</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://www.jamesqquick.com/blog/how-to-test-npm-packages-locally">https://www.jamesqquick.com/blog/how-to-test-npm-packages-locally</a></li><li><a href="https://docs.npmjs.com/cli/v8/commands/npm-link">https://docs.npmjs.com/cli/v8/commands/npm-link</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/nodejs/">nodejs</category>
-      
-      <category domain="https://chinsun9.github.io/tags/npm/">npm</category>
-      
-      <category domain="https://chinsun9.github.io/tags/package/">package</category>
-      
-      
-      <comments>https://chinsun9.github.io/2022/01/12/test-npm-package-without-publishing/#disqus_thread</comments>
       
     </item>
     
