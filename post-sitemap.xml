@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chinsun9.github.io/2022/03/13/innerText-vs-textContent/</loc>
+        <lastmod>2022-03-13T10:06:01.969Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chinsun9.github.io/2020/11/12/chrome-dev-tool/</loc>
+        <lastmod>2022-03-12T02:30:41.950Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chinsun9.github.io/2022/03/12/user-select-none-css/</loc>
         <lastmod>2022-03-12T02:10:45.796Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -3345,14 +3361,6 @@
 
     <url>
         <loc>https://chinsun9.github.io/2021/05/31/cdn/</loc>
-        <lastmod>2021-11-01T09:13:01.798Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chinsun9.github.io/2020/11/12/chrome-dev-tool/</loc>
         <lastmod>2021-11-01T09:13:01.798Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

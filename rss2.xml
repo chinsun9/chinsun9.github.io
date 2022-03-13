@@ -9,8 +9,34 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Sat, 12 Mar 2022 02:10:45 GMT</pubDate>
+    <pubDate>Sun, 13 Mar 2022 10:06:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>innerText vs textContent</title>
+      <link>https://chinsun9.github.io/2022/03/13/innerText-vs-textContent/</link>
+      <guid>https://chinsun9.github.io/2022/03/13/innerText-vs-textContent/</guid>
+      <pubDate>Sun, 13 Mar 2022 10:06:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/innerText-vs-textContent20211213/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/innerText-vs-textContent20211213/preview.png" alt=" "></p><ul><li>textContext는 script, style 요소를 포함</li><li>innerText는 사람이 읽을 수 있는 요소만</li></ul><blockquote><p>innerText의 CSS 고려로 인해, innerText 값을 읽으면 최신 계산값을 반영하기 위해 리플로우가 발생합니다. (리플로우 계산은 비싸므로 가능하면 피해야 합니다)</p></blockquote><ul><li>라고한다. 아직 무슨 느낌인지 잘 모르겠다.</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://developer.mozilla.org/ko/docs/Web/API/Node/textContent">https://developer.mozilla.org/ko/docs/Web/API/Node/textContent</a></li><li><a href="https://developer.mozilla.org/ko/docs/Glossary/Reflow">https://developer.mozilla.org/ko/docs/Glossary/Reflow</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/web/">web</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/web/">web</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/03/13/innerText-vs-textContent/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>텍스트 드래그 방지 css</title>
@@ -599,37 +625,6 @@ thumbnail: /images/toptal-utilities20220122/preview.png
       
       
       <comments>https://chinsun9.github.io/2022/01/13/nullish-coalescing-operator/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>ReDoS attacks</title>
-      <link>https://chinsun9.github.io/2022/01/13/ReDoS-attacks/</link>
-      <guid>https://chinsun9.github.io/2022/01/13/ReDoS-attacks/</guid>
-      <pubDate>Wed, 12 Jan 2022 15:29:21 GMT</pubDate>
-      
-        
-        
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/jbgutierrez/path-parse/commit/09e1086512bd50f2767b8c32fa74c0ff0be4c8cd&quot;&gt;https://github.com/jbgutierrez/</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<ul><li><a href="https://github.com/jbgutierrez/path-parse/commit/09e1086512bd50f2767b8c32fa74c0ff0be4c8cd">https://github.com/jbgutierrez/path-parse/commit/09e1086512bd50f2767b8c32fa74c0ff0be4c8cd</a></li><li>diff 보다가 눈에 띄는 키워드가 있어서 찾아보았다<!-- 완전 우연하게.. 평소에 안하는 행동 --></li><li>알고리즘 복잡도 공격 ㄷㄷㄷ. 정규식 평가에 매우 긴 시간을 걸리게 한다</li></ul><h2 id="테스트"><a href="#테스트" class="headerlink" title="테스트"></a>테스트</h2><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/ReDoS-attacks20220108/preview.png" alt=" "></p><figure class="highlight js"><figcaption><span>example.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.time(<span class="number">0</span>);</span><br><span class="line">/^(([a-z])+.)+[A-Z]([a-z])+$/g.test(<span class="string">&#x27;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.timeEnd(<span class="number">0</span>);</span><br></pre></td></tr></table></figure><ul><li><code>a</code>가 많아질수록 급격하게 평가하는데 오래 걸리는 모습이다</li><li>복잡한 정규식을 짤 때 성능 테스트가 동반되어야 할 것 같다</li><li>인풋의 길이 등 사전에 필터링해줄 수 있는 것들은 필터링해주면 좋을 것 같다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://en.wikipedia.org/wiki/ReDoS">https://en.wikipedia.org/wiki/ReDoS</a></li><li><a href="https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS">https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/keyword/">keyword</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/keyword/">keyword</category>
-      
-      <category domain="https://chinsun9.github.io/tags/ReDos/">ReDos</category>
-      
-      <category domain="https://chinsun9.github.io/tags/reg-exp/">reg exp</category>
-      
-      
-      <comments>https://chinsun9.github.io/2022/01/13/ReDoS-attacks/#disqus_thread</comments>
       
     </item>
     
