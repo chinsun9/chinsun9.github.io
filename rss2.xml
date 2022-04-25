@@ -9,8 +9,34 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 21 Mar 2022 13:09:14 GMT</pubDate>
+    <pubDate>Mon, 25 Apr 2022 11:47:04 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>202203 검색 실적</title>
+      <link>https://chinsun9.github.io/2022/04/25/202203-search-performance-report/</link>
+      <guid>https://chinsun9.github.io/2022/04/25/202203-search-performance-report/</guid>
+      <pubDate>Mon, 25 Apr 2022 11:47:04 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202203-search-performance-report20220425/preview.png&quot; alt</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202203-search-performance-report20220425/preview.png" alt=" "></p>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/04/25/202203-search-performance-report/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>vite react-ts에서 emotion css prop 쓰기</title>
@@ -257,6 +283,34 @@
       
       
       <comments>https://chinsun9.github.io/2022/02/26/input-director/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>202201 검색 실적</title>
+      <link>https://chinsun9.github.io/2022/02/25/202201-search-performance-report/</link>
+      <guid>https://chinsun9.github.io/2022/02/25/202201-search-performance-report/</guid>
+      <pubDate>Fri, 25 Feb 2022 11:48:01 GMT</pubDate>
+      
+        
+        
+      <description>&lt;!-- date: 2022-04-25 20:48:01 --&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202201-search-perform</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<!-- date: 2022-04-25 20:48:01 --><p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202201-search-performance-report20220425/preview.png" alt=" "></p>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/02/25/202201-search-performance-report/#disqus_thread</comments>
       
     </item>
     
@@ -574,63 +628,6 @@ thumbnail: /images/toptal-utilities20220122/preview.png
       
       
       <comments>https://chinsun9.github.io/2022/01/19/how-to-get-current-focus-element-in-js/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>github loading gif</title>
-      <link>https://chinsun9.github.io/2022/01/18/github-loading-gif/</link>
-      <guid>https://chinsun9.github.io/2022/01/18/github-loading-gif/</guid>
-      <pubDate>Tue, 18 Jan 2022 12:13:47 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-loading-gif20211021/preview.png&quot; alt=&quot; &quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/github-loading-gif20211021/preview.png" alt=" "></p><p><img src="https://github.githubassets.com/images/mona-loading-dark.gif" alt=" "></p><ul><li>홀리…</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://github.githubassets.com/images/mona-loading-dark.gif">https://github.githubassets.com/images/mona-loading-dark.gif</a></li><li><a href="https://github.githubassets.com/images/mona-loading.gif">https://github.githubassets.com/images/mona-loading.gif</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/etc/">etc</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/github/">github</category>
-      
-      <category domain="https://chinsun9.github.io/tags/gif/">gif</category>
-      
-      
-      <comments>https://chinsun9.github.io/2022/01/18/github-loading-gif/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>encodeuricomponent vs encodeuri</title>
-      <link>https://chinsun9.github.io/2022/01/16/encodeuricomponent-vs-encodeuri/</link>
-      <guid>https://chinsun9.github.io/2022/01/16/encodeuricomponent-vs-encodeuri/</guid>
-      <pubDate>Sun, 16 Jan 2022 02:30:52 GMT</pubDate>
-      
-        
-        
-      <description>&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;mdn example&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<figure class="highlight js"><figcaption><span>mdn example</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> set1 = <span class="string">&#x27;;,/?:@&amp;=+$&#x27;</span>; <span class="comment">// Reserved Characters</span></span><br><span class="line"><span class="keyword">var</span> set2 = <span class="string">&quot;-_.!~*&#x27;()&quot;</span>; <span class="comment">// Unescaped Characters</span></span><br><span class="line"><span class="keyword">var</span> set3 = <span class="string">&#x27;#&#x27;</span>; <span class="comment">// Number Sign</span></span><br><span class="line"><span class="keyword">var</span> set4 = <span class="string">&#x27;ABC abc 123&#x27;</span>; <span class="comment">// Alphanumeric Characters + Space</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURI</span>(set1)); <span class="comment">// ;,/?:@&amp;=+$</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURI</span>(set2)); <span class="comment">// -_.!~*&#x27;()</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURI</span>(set3)); <span class="comment">// #</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURI</span>(set4)); <span class="comment">// ABC%20abc%20123 (the space gets encoded as %20)</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURIComponent</span>(set1)); <span class="comment">// %3B%2C%2F%3F%3A%40%26%3D%2B%24</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURIComponent</span>(set2)); <span class="comment">// -_.!~*&#x27;()</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURIComponent</span>(set3)); <span class="comment">// %23</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">encodeURIComponent</span>(set4)); <span class="comment">// ABC%20abc%20123 (the space gets encoded as %20)</span></span><br></pre></td></tr></table></figure><ul><li>새롭게 url을 생성하는 과정에서는 <code>encodeURIComponent</code>를 쓰면될 것 같다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/4540753/should-i-use-encodeuri-or-encodeuricomponent-for-encoding-urls/4540785">https://stackoverflow.com/questions/4540753/should-i-use-encodeuri-or-encodeuricomponent-for-encoding-urls/4540785</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      <category domain="https://chinsun9.github.io/tags/encodeuri/">encodeuri</category>
-      
-      
-      <comments>https://chinsun9.github.io/2022/01/16/encodeuricomponent-vs-encodeuri/#disqus_thread</comments>
       
     </item>
     
