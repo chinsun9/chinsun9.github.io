@@ -9,8 +9,34 @@
     <atom:link href="https://chinsun9.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>친성의 개발 블로그</description>
-    <pubDate>Mon, 25 Apr 2022 11:47:04 GMT</pubDate>
+    <pubDate>Fri, 06 May 2022 13:00:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>202204 검색 실적</title>
+      <link>https://chinsun9.github.io/2022/05/06/202204-search-performance-report/</link>
+      <guid>https://chinsun9.github.io/2022/05/06/202204-search-performance-report/</guid>
+      <pubDate>Fri, 06 May 2022 13:00:46 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202204-search-performance-report20220506/10k.png&quot; alt=&quot; &quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202204-search-performance-report20220506/10k.png" alt=" "><br><img src="https://cdn.jsdelivr.net/gh/chinsun9/chinsun9.github.io@master/images/202204-search-performance-report20220506/preview.png" alt=" "></p>]]></content:encoded>
+      
+      
+      <category domain="https://chinsun9.github.io/categories/blog-history/">blog history</category>
+      
+      
+      <category domain="https://chinsun9.github.io/tags/blog-history/">blog history</category>
+      
+      
+      <comments>https://chinsun9.github.io/2022/05/06/202204-search-performance-report/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>202203 검색 실적</title>
@@ -598,36 +624,6 @@ thumbnail: /images/toptal-utilities20220122/preview.png
       
       
       <comments>https://chinsun9.github.io/2022/01/22/web-api-IntersectionObserver/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>현재 포커스된 엘리먼트 가져오기 js</title>
-      <link>https://chinsun9.github.io/2022/01/19/how-to-get-current-focus-element-in-js/</link>
-      <guid>https://chinsun9.github.io/2022/01/19/how-to-get-current-focus-element-in-js/</guid>
-      <pubDate>Wed, 19 Jan 2022 12:26:15 GMT</pubDate>
-      
-        
-        
-      <description>&lt;!-- thumbnail: /images/how-to-get-current-focus-element-in-js20220118/preview.png --&gt;
-&lt;!-- ![ ]() --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;document.activeElemen</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<!-- thumbnail: /images/how-to-get-current-focus-element-in-js20220118/preview.png --><!-- ![ ]() --><ul><li><code>document.activeElement</code></li><li>현재 포커스 된 엘리먼트가 OO이라면 같은 조건문을 활용할 수 있겠다</li></ul><h2 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h2><ul><li><a href="https://stackoverflow.com/questions/497094/how-do-i-find-out-which-dom-element-has-the-focus">https://stackoverflow.com/questions/497094/how-do-i-find-out-which-dom-element-has-the-focus</a></li><li><a href="https://developer.mozilla.org/ko/docs/Web/API/Document/activeElement">https://developer.mozilla.org/ko/docs/Web/API/Document/activeElement</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://chinsun9.github.io/categories/web/">web</category>
-      
-      
-      <category domain="https://chinsun9.github.io/tags/web/">web</category>
-      
-      
-      <comments>https://chinsun9.github.io/2022/01/19/how-to-get-current-focus-element-in-js/#disqus_thread</comments>
       
     </item>
     
